@@ -1,0 +1,19 @@
+characters = {
+
+	anarchy = {
+		name = anarchy
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_anarchy"
+            		}
+        	}
+		country_leader = {
+			desc = "anarchy_desc"
+			expire = "1950.1.1"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+	}
+}

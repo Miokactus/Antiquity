@@ -1,0 +1,9 @@
+﻿l_english:
+ fascism: "Nationalism"
+ fascism_desc: "Nation Ideals"
+ communism: "Socialism"
+ communism_desc: "Popular Revolts"
+ democratic: "Democracy"
+ democratic_desc: "Electoral Regime"
+ neutrality: "Authoritarianism"
+ neutrality_desc: "Hybrid Regime"

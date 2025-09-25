@@ -1,0 +1,22 @@
+state={
+	id=1019
+	name="STATE_1019"
+	provinces={
+		704 6690 11651 11666 
+	}
+	manpower = 15000
+	
+	state_category = rural
+
+	history={
+		owner = ROE
+		add_core_of = ROE
+		victory_points = {
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

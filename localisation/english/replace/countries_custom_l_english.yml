@@ -1,0 +1,33 @@
+﻿l_english:
+ AAN: "Anarchy"
+ AAN_DEF: "Anarchy"
+ AAN_ADJ: "Anarchists"
+ 
+ ROE: "Roman Empire"
+ ROE_DEF: "the Central Government of the Roman Empire"
+ ROE_ADJ: "Romans"
+
+ MAU: "Kingdom of Mauretania"
+ MAU_DEF: "Kingdom of Mauretania"
+ MAU_ADJ: "Mauretanian"
+ MAU_ROE_neutrality_subject: "Client State of Mauretania"
+
+ THR: "Sapaean Kingdom"
+ THR_DEF: "the Sapaean Kingdom"
+ THR_ADJ: "Sapaean"
+
+ LYC: "Lycian League"
+ LYC_DEF: "the Lycian League"
+ LYC_ADJ: "Lycian"
+
+ BOP: "Kingdom of the Cimmerian Bosporus"
+ BOP_DEF: "the Kingdom of the Cimmerian Bosporus"
+ BOP_ADJ: "Cimmerian"
+
+ CAP: "Kingdom of Cappadocia"
+ CAP_DEF: "the Kingdom of Cappadocia"
+ CAP_ADJ: "Cappadocian"
+
+ PON: "Kingdom of Pontus"
+ PON_DEF: "the Kingdom of Pontus"
+ PON_ADJ: "Pontian"

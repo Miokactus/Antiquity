@@ -1,0 +1,44 @@
+﻿capital = 137
+
+oob = "BOP_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Tiberius Julius Aspurgus Philoromaios"
+	desc = "ASPURGUS_DESC"
+	picture = GFX_leader_BOP_aspurgus
+	expire = "37.5.4"
+	ideology = despotism
+	traits = {
+	}
+}
+
+ROE = { 
+	set_autonomy = {
+    	target = BOP
+    	autonomous_state = autonomy_puppet
+	}
+}
+
+# Starting tech
+set_technology = {
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 10
+	communism = 0
+	neutrality = 70
+}
+ 
+add_ideas = limited_exports
+add_ideas = limited_conscription
+add_ideas = civilian_economy

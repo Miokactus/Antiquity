@@ -1,0 +1,44 @@
+﻿capital = 348
+
+oob = "CAP_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Archelaus of Cappadocia"
+	desc = "CAPPADOCIA_DESC"
+	picture = GFX_leader_CAP_archelaus
+	expire = "17.5.4"
+	ideology = despotism
+	traits = {
+	}
+}
+
+ROE = { 
+	set_autonomy = {
+    	target = CAP
+    	autonomous_state = autonomy_puppet
+	}
+}
+
+# Starting tech
+set_technology = {
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 10
+	communism = 0
+	neutrality = 70
+}
+ 
+add_ideas = limited_exports
+add_ideas = limited_conscription
+add_ideas = civilian_economy

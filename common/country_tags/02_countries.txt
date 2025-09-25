@@ -1,0 +1,8 @@
+AAN = "countries/Anarchy.txt"
+ROE = "countries/Roman_Empire.txt"
+MAU = "countries/Mauretania.txt"
+LYC = "countries/Lycia.txt"
+THR = "countries/Thracia.txt"
+BOP = "countries/Bosporan_Kingdom.txt"
+CAP = "countries/Cappadocian_Kingdom.txt"
+PON = "countries/Pontus.txt"

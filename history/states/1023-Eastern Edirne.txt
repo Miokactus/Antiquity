@@ -1,0 +1,15 @@
+state={
+	id=1023
+	name="STATE_1023"
+	provinces={
+		11829 
+	}
+	manpower=1814936
+	history = {
+		owner = ROE
+		add_core_of = ROE
+	}
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

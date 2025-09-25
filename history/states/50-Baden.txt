@@ -1,0 +1,18 @@
+state={
+	id=50
+	name="STATE_50"
+	resources={
+		aluminium=6.000
+	}
+	provinces={
+		519 694 6555 6581 9517 9545 11486 11499 
+	}
+	history = {
+		owner = AAN
+		add_core_of = GER
+	}
+	manpower=3076854
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

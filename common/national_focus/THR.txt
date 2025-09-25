@@ -1,0 +1,17 @@
+focus_tree = {
+	id = AAB_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = THR
+		}
+	}
+
+	default = no
+
+	continuous_focus_position = { x = 50 y = 1500 }
+	
+}

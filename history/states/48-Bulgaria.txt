@@ -1,0 +1,19 @@
+state={
+	id=48
+	name="STATE_48"
+	resources={
+		aluminium=2.000
+	}
+	provinces={
+		793 935 949 965 3971 9771 11754 
+	}
+	manpower=1685989
+	history = {
+		owner = ROE
+		add_core_of = ROE
+		add_core_of = BUL
+	}
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

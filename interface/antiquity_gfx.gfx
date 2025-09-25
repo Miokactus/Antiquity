@@ -1,0 +1,59 @@
+spriteTypes = {
+
+## IDEOLOGIES GFX ##
+####################
+
+### OTHERS ###
+##############
+
+## ANARCHY GFX ##
+
+    spriteType = {
+        name = "GFX_leader_anarchy"
+        texturefile = "gfx/characters/anarchy.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+## ROMAN EMPIRE GFX ##
+
+    spriteType = {
+        name = "GFX_leader_ROE_augustus"
+        texturefile = "gfx/characters/ROE_augustus.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+## MAURETANIA GFX ##
+
+    spriteType = {
+        name = "GFX_leader_BOP_aspurgus"
+        texturefile = "gfx/characters/BOP_aspurgus.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+    spriteType = {
+        name = "GFX_leader_LYC_government"
+        texturefile = "gfx/characters/LYC_government.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+    spriteType = {
+        name = "GFX_leader_THR_rescuporis"
+        texturefile = "gfx/characters/THR_rescuporis.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+    spriteType = {
+        name = "GFX_leader_PON_pythodoris"
+        texturefile = "gfx/characters/PON_pythodoris.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+    spriteType = {
+        name = "GFX_leader_CAP_archelaus"
+        texturefile = "gfx/characters/CAP_archelaus.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+}

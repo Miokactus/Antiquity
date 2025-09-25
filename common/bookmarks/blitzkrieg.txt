@@ -1,0 +1,83 @@
+bookmarks = {
+	bookmark = {
+		name = "AUGUSTUSDEATH_NAME"
+		desc = "AUGUSTUSDEATH_DESC"
+		date = 14.1.1.1
+		picture = "GFX_select_date_1939"
+	
+		ROE = {
+			history = ROE_AUGUSTUSDEATH_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		MAU = {
+			history = MAU_AUGUSTUSDEATH_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		LYC = {
+			history = LYC_AUGUSTUSDEATH_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		BOP = {
+			history = BOP_AUGUSTUSDEATH_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		THR = {
+			history = THR_AUGUSTUSDEATH_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		PON = {
+			history = PON_AUGUSTUSDEATH_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		CAP = {
+			history = CAP_AUGUSTUSDEATH_DESC
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_BLITZKRIEG_DESC"
+		}
+
+		# minors from DLC ####
+
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}
