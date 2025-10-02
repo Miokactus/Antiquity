@@ -23,6 +23,13 @@ spriteTypes = {
 ## MAURETANIA GFX ##
 
     spriteType = {
+        name = "GFX_leader_MAU_juba_ii"
+        texturefile = "gfx/characters/MAU_juba_ii.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+    spriteType = {
         name = "GFX_leader_BOP_aspurgus"
         texturefile = "gfx/characters/BOP_aspurgus.dds" # The folder and filename don't matter, as long as they are correct
     }
@@ -47,7 +54,6 @@ spriteTypes = {
         name = "GFX_leader_PON_pythodoris"
         texturefile = "gfx/characters/PON_pythodoris.dds" # The folder and filename don't matter, as long as they are correct
     }
-
 
 
     spriteType = {

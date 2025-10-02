@@ -1,0 +1,15 @@
+state={
+	id=1042
+	name="STATE_1042"
+	provinces={
+		4397 7280 9988 10016 12297 
+	}
+	history = {
+		owner = XIN
+		add_core_of = XIN
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

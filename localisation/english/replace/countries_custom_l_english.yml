@@ -3,6 +3,9 @@
  AAN_DEF: "Anarchy"
  AAN_ADJ: "Anarchists"
  
+
+## ROMAN EMPIRE NAMES ##
+
  ROE: "Roman Empire"
  ROE_DEF: "the Central Government of the Roman Empire"
  ROE_ADJ: "Romans"
@@ -31,3 +34,47 @@
  PON: "Kingdom of Pontus"
  PON_DEF: "the Kingdom of Pontus"
  PON_ADJ: "Pontian"
+
+ NAB: "Kingdom of Nabatea"
+ NAB_DEF: "the Kingdom of Nabatea"
+ NAB_ADJ: "Nabatean"
+
+ JUD: "Kingdom of Judea"
+ JUD_DEF: "the Kingdom of Judea"
+ JUD_ADJ: "Judean"
+
+    ## CAUCASUS NAMES ##
+
+ CLC: "Egrisi"
+ CLC_DEF: "the Egrisi"
+ CLC_ADJ: "Egrisi"
+
+ IBR: "Kingdom of Iveria"
+ IBR_DEF: "the Kingdom of Iveria"
+ IBR_ADJ: "Iveria"
+
+ ARR: "Armenia Maior"
+ ARR_DEF: "the Kingdom of Greater Armenia"
+ ARR_ADJ: "Armenian"
+
+ CCA: "Aghwank State"
+ CCA_DEF: "the Aghwank State"
+ CCA_ADJ: "Aghwank"
+
+ PTH: "Arsacid Empire"
+ PTH_DEF: "the Arsacid Empire"
+ PTH_ADJ: "Arsacid"
+
+## ORIENT NAMES ##
+
+ XIN: "Xin Dynasty"
+ XIN_DEF: "the Xin Dynasty"
+ XIN_ADJ: "Chinese"
+
+ WPC: "Western Protectorates of China"
+ WPC_DEF: "the Western Protectorates of China"
+ WPC_ADJ: "Chinese"
+
+ ANN: "Han Dynasty"
+ ANN_DEF: "the Han Dynasty"
+ ANN_ADJ: "Chinese"

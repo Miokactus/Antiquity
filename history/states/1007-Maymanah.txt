@@ -12,7 +12,8 @@ state={
 		7448 7584 10896 12248 12877 
 	}
 	history={
-		owner = AAN
+		owner = PTH
+		add_core_of = PTH
 		buildings = {
 			infrastructure = 1 
 		}

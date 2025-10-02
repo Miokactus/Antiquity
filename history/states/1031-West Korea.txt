@@ -1,0 +1,19 @@
+state={
+	id=1031
+	name="STATE_1031"
+	provinces={
+		912 3912 4052 9790 9795 9918 11835 11896 
+	}
+	manpower = 1500
+	history={
+		owner = XIN
+		add_core_of = XIN
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

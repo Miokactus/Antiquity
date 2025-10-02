@@ -13,7 +13,8 @@ state={
 
 	}
 	history={
-		owner = AAN
+		owner = PTH
+		add_core_of = PTH
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1

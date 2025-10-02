@@ -12,7 +12,8 @@ state = {
 
 	history = {
 
-		owner = AAN
+		owner = PTH
+		add_core_of = PTH
 		add_core_of = IRQ
 
 		victory_points = {

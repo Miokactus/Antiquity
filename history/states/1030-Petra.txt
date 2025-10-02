@@ -1,0 +1,18 @@
+state={
+	id=1030
+	name="STATE_1030"
+	provinces={
+		1015 4017 4115 
+	}
+	history = {
+		owner = NAB
+		add_core_of = NAB
+		victory_points = {
+			4017 15
+		}
+	}
+	state_category = rural
+	manpower= 15
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

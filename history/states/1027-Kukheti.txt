@@ -1,0 +1,15 @@
+state={
+	id=1027
+	name="STATE_1027"
+	provinces={
+		1599 4534 4605 6436 9702 12309 
+	}
+	manpower = 15
+	history = {
+		owner = IBR
+		add_core_of = IBR
+	}
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

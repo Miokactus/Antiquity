@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = AAN
+		owner = PTH
+		add_core_of = PTH
 		victory_points = {
 			8040 3 
 		}

@@ -41,8 +41,8 @@ bookmarks = {
 			}
 		}
 
-		THR = {
-			history = THR_AUGUSTUSDEATH_DESC
+		PTH = {
+			history = PTH_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
 			}
@@ -50,7 +50,7 @@ bookmarks = {
 			}
 		}
 
-		PON = {
+		XIN = {
 			history = PON_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
@@ -73,6 +73,96 @@ bookmarks = {
 		}
 
 		# minors from DLC ####
+
+		JUD = {
+			history = JUD_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		NAB = {
+			history = NAB_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		PON = {
+			history = NAB_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		WPC = {
+			history = NAB_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		THR = {
+			history = THR_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		ARR = {
+			history = THR_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		IBR = {
+			history = THR_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		CLC = {
+			history = THR_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		CCA = {
+			history = THR_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
 
 
 		effect = {

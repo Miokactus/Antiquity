@@ -8,5 +8,6 @@ tags={
 	"Utilities"
 	"Technologies"
 }
+replace_path="gfx/loadingscreens"
 name="Antiquity"
-supported_version="1.16.9"
+supported_version="1.16.10"

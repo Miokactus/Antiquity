@@ -11,7 +11,8 @@ state={
 	state_category = city
 
 	history={
-		owner = AAN
+		owner = PTH
+		add_core_of = PTH
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

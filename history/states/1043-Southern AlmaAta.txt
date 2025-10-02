@@ -1,0 +1,15 @@
+state={
+	id=1043
+	name="STATE_1043"
+	provinces={
+		1675 1825 4224 4316 4391 4768 5062 10408 12511 12583 13147 
+	}
+	history={
+		owner = WPC
+		add_core_of = WPC
+	}
+	manpower=1500
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

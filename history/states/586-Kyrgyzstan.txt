@@ -9,7 +9,8 @@ state={
 	}
 
 	history={
-		owner = AAN
+		owner = WPC
+		add_core_of = WPC
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2

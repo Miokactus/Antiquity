@@ -1,0 +1,15 @@
+state={
+	id=1037
+	name="STATE_1037"
+	provinces={
+		7491 8099 10357 10414 12333 
+	}
+	history = {
+		owner = PTH
+		add_core_of = PTH
+	}
+	manpower=1500
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+state={
+	id=1035
+	name="STATE_1035"
+	provinces={
+		5014 10811 
+	}
+	history = {
+		owner = ARR
+		add_core_of = ARR
+	}
+	manpower=1500
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

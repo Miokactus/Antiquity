@@ -11,7 +11,8 @@ state={
 		2017 2062 2078 1948 2101
 	}
 	history={
-		owner = AAN
+		owner = PTH
+		add_core_of = PTH
 		buildings = {
 			infrastructure = 0
 		}

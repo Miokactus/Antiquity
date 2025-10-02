@@ -1,0 +1,15 @@
+state={
+	id=1029
+	name="STATE_1029"
+	provinces={
+		1544 4574 4591 7001 10089
+	}
+	history = {
+		owner = NAB
+		add_core_of = NAB
+	}
+	state_category = rural
+	manpower= 15
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
