@@ -1,0 +1,15 @@
+state={
+	id=1050
+	name="STATE_1050"
+	provinces={
+		1238 7363 7391 7447 10130 10190 10274 12275 
+	}
+	history={
+		owner = CER
+		add_core_of = CER
+	}
+	manpower = 15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

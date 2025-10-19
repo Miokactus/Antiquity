@@ -1,0 +1,15 @@
+state={
+	id=1057
+	name="STATE_1057"
+	provinces={
+		2092 7080 
+	}
+	history={
+		owner = YAU
+		add_core_of = YAU
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

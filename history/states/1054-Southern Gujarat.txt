@@ -1,0 +1,15 @@
+state={
+	id=1054
+	name="STATE_1054"
+	provinces={
+		4090 4132 7165 7207 9975 12037 12092 
+	}
+	history={
+		owner = SAV
+		add_core_of = SAV
+	}
+	manpower = 15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

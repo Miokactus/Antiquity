@@ -6,7 +6,7 @@ state={
 	
 	state_category = town
 	resources={
-		tungsten=4 # was: 6
+		# # was: 6
 		aluminium=3 # was: 4
 	}
 
@@ -20,7 +20,7 @@ state={
 			3150 1 #Dundee
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2 #was: 6
 			dockyard = 2
 		}
 		add_core_of = ENG

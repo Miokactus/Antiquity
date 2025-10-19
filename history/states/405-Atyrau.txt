@@ -6,8 +6,8 @@ state={
 	}
 	manpower=4137910
 	history = {
-		owner = PTH
-		add_core_of = PTH
+		owner = AAN
+		add_core_of = AAN
 	}
 	buildings_max_level_factor=1.000
 	state_category=city

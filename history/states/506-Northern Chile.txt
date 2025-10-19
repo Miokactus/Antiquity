@@ -6,7 +6,7 @@ state = {
 	state_category = town
 
 	resources = {
-		tungsten = 42 # In replacement of Nitrate
+		#= 42 # In replacement of Nitrate
 	}
 
 	history = {
@@ -16,8 +16,8 @@ state = {
 		add_claim_by = BOL
 
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 2
+			industrial_complex = 1
 			dockyard = 1
 			#
 			12994 = {

@@ -10,9 +10,9 @@ state={
 	history={
 		owner = AAN
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 5
+			infrastructure = 2 #was: 6
+			industrial_complex = 1
+			#
 			#
 			7798 = {
 				naval_base = 4

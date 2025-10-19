@@ -9,7 +9,8 @@ state={
 		victory_points = {
 			1910 1
 		}
-		owner = AAN
+		owner = IDS
+		add_core_of = IDS
 		buildings = {
 			infrastructure = 1
 		}

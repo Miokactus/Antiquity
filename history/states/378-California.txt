@@ -14,9 +14,9 @@ state={
 	history={
 		owner = AAN
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 6
+			infrastructure = 2 #was: 6
+			industrial_complex = 1
+			#
 			dockyard = 2
 			#0
 			1562 = {
@@ -47,7 +47,7 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 7
+				#
 			}
 		}
 	}

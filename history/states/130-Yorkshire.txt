@@ -22,9 +22,8 @@ state={
 			9315 15
 		}
 		buildings = {
-			infrastructure = 4 #was: 7
-			arms_factory = 2
-			industrial_complex = 3
+			industrial_complex = 1
+			#
 			#0
 			11297 = {
 				naval_base = 5
@@ -33,8 +32,8 @@ state={
 		add_core_of = ENG
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 3
-				industrial_complex = 4
+				#
+				#
 			}
 		}
 	}

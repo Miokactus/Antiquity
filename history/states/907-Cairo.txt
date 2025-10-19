@@ -3,12 +3,15 @@ state={
 	name="STATE_907"
 	manpower = 6454865
 	state_category=town
+	resources = {
+		grain = 3
+	}
 
 	history={
 		owner = ROE
 		add_core_of = ROE
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			#
 			

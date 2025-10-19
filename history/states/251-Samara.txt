@@ -15,8 +15,8 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 3 #was: 5
-			arms_factory = 2
+			infrastructure = 2 #was: 5
+			industrial_complex = 1
 			#
 
 			# Kuybyshev Hydroelectric Station
@@ -26,7 +26,7 @@ state = {
 		
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 3
+				#
 			}
 		}
 	}

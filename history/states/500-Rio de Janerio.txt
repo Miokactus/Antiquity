@@ -10,9 +10,9 @@ state={
 		owner = AAN
 		add_core_of = BRA
 		buildings = {
-			infrastructure = 3 #was: 6
-			arms_factory = 2
-			industrial_complex = 4
+			infrastructure = 2 #was: 6
+			industrial_complex = 1
+			#
 			dockyard = 2
 			#
 			10980 = {

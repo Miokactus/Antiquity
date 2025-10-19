@@ -16,9 +16,9 @@ state = {
 		add_core_of = URG
 
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			arms_factory = 1
-			industrial_complex = 4
+			#
 			dockyard = 1
 			#
 			10362 = {

@@ -32,8 +32,8 @@ bookmarks = {
 			}
 		}
 
-		BOP = {
-			history = BOP_AUGUSTUSDEATH_DESC
+		IDS = {
+			history = IDS_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
 			}
@@ -51,7 +51,7 @@ bookmarks = {
 		}
 
 		XIN = {
-			history = PON_AUGUSTUSDEATH_DESC
+			history = XIN_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
 			}
@@ -59,8 +59,8 @@ bookmarks = {
 			}
 		}
 
-		CAP = {
-			history = CAP_AUGUSTUSDEATH_DESC
+		XAI = {
+			history = XAI_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
 			}
@@ -73,6 +73,26 @@ bookmarks = {
 		}
 
 		# minors from DLC ####
+
+		BOP = {
+			history = BOP_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		CAP = {
+			history = CAP_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
 
 		JUD = {
 			history = JUD_AUGUSTUSDEATH_DESC
@@ -95,7 +115,7 @@ bookmarks = {
 		}
 
 		PON = {
-			history = NAB_AUGUSTUSDEATH_DESC
+			history = PON_AUGUSTUSDEATH_DESC
 			minor = yes
 			ideology = neutrality
 			ideas={
@@ -105,7 +125,7 @@ bookmarks = {
 		}
 
 		WPC = {
-			history = NAB_AUGUSTUSDEATH_DESC
+			history = WPC_AUGUSTUSDEATH_DESC
 			minor = yes
 			ideology = neutrality
 			ideas={
@@ -125,7 +145,7 @@ bookmarks = {
 		}
 
 		ARR = {
-			history = THR_AUGUSTUSDEATH_DESC
+			history = ARR_AUGUSTUSDEATH_DESC
 			minor = yes
 			ideology = neutrality
 			ideas={
@@ -135,7 +155,7 @@ bookmarks = {
 		}
 
 		IBR = {
-			history = THR_AUGUSTUSDEATH_DESC
+			history = IBR_AUGUSTUSDEATH_DESC
 			minor = yes
 			ideology = neutrality
 			ideas={
@@ -145,7 +165,7 @@ bookmarks = {
 		}
 
 		CLC = {
-			history = THR_AUGUSTUSDEATH_DESC
+			history = CLC_AUGUSTUSDEATH_DESC
 			minor = yes
 			ideology = neutrality
 			ideas={
@@ -155,7 +175,27 @@ bookmarks = {
 		}
 
 		CCA = {
-			history = THR_AUGUSTUSDEATH_DESC
+			history = CCA_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		MMD = {
+			history = MMD_AUGUSTUSDEATH_DESC
+			minor = yes
+			ideology = neutrality
+			ideas={
+			}
+			focuses = {
+			}
+		}
+
+		YAU = {
+			history = YAU_AUGUSTUSDEATH_DESC
 			minor = yes
 			ideology = neutrality
 			ideas={

@@ -2,13 +2,13 @@ state={
 	id=521
 	name="STATE_521"
 	resources={
-		tungsten=24.000
+		#4.000
 	}
 
 	history={
 		owner = AAN
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			#
 			7564 = {

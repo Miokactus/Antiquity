@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = AAN
+		owner = XAI
+		add_core_of = XAI
 		buildings = {
 			infrastructure = 1
 		}

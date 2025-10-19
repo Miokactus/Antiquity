@@ -65,6 +65,10 @@
  PTH_DEF: "the Arsacid Empire"
  PTH_ADJ: "Arsacid"
 
+ SOP: "Kindom of Sophene"
+ SOP_DEF: "the Kingdom of Sophene"
+ SOP_ADJ: "Sophene"
+
 ## ORIENT NAMES ##
 
  XIN: "Xin Dynasty"
@@ -78,3 +82,95 @@
  ANN: "Han Dynasty"
  ANN_DEF: "the Han Dynasty"
  ANN_ADJ: "Chinese"
+
+ XAI: "Xiongnu Empire"
+ XAI_DEF: "the Xiongnu Empire"
+ XAI_ADJ: "Xiongnu"
+
+ YUZ: "Nomadic Tribes of Yuezhi"
+ YUZ_DEF: "the Nomadic Tribes of Yuezhi"
+ YUZ_ADJ: "Yuezhi"
+
+ ## INDIAN NAMES ##
+
+ AYD: "Āy Dynasty"
+ AYD_DEF: "the Āy Dynasty"
+ AYD_ADJ: "Aydan"
+
+ CER: "Chera Dynasty"
+ CER_DEF: "the Chera Dynasty"
+ CER_ADJ: "Cheran"
+
+ SAV: "Satavahana Dynasty"
+ SAV_DEF: "the Satavahana Dynasty"
+ SAV_ADJ: "Satavahanan"
+
+ CLO: "Chola Dynasty"
+ CLO_DEF: "the Chola Dynasty"
+ CLO_ADJ: "Cholan"
+
+ PDA: "Pandyas of Madurai"
+ PDA_DEF: "the Pandyas of Madurai"
+ PDA_ADJ: "Pandyas"
+
+ MTH: "Mahakṣatrapa"
+ MTH_DEF: "the Mahakṣatrapa"
+ MTH_ADJ: "Mahakṣatrapan"
+
+ MMD: "Mahameghavahana Dynasty"
+ MMD_DEF: "the Mahameghavahana Dynasty"
+ MMD_ADJ: "Mahameghavahanan"
+
+ MTI: "Mitra dynasty of Kosambi"
+ MTI_DEF: "the Mitra dynasty of Kosambi"
+ MTI_ADJ: "Mitran"
+
+ IDS: "Indo-Scythians State"
+ IDS_DEF: "the Indo-Scythians State"
+ IDS_ADJ: "Indo-Scythian"
+
+ CTU: "Chutu Dynasty"
+ CTU_DEF: "the Chutu Dynasty"
+ CTU_ADJ: "Chutu"
+
+ YAU: "Yaudheya Republic"
+ YAU_DEF: "the Yaudheya Republic"
+ YAU_ADJ: "Yaudheyan"
+
+ SAT: "Samatata Kingdom"
+ SAT_DEF: "the Samatata Kingdom"
+ SAT_ADJ: "Samatatan"
+
+ ANU: "Anuradhapura Kingdom"
+ ANU_DEF: "the Anuradhapura Kingdom"
+ ANU_ADJ: "Anuradhapuran"
+
+ ## KOREAN NAMES ##
+
+ MAH: "Mahan Confederacy"
+ MAH_DEF: "the Mahan Confederacy"
+ MAH_ADJ: "Mahan"
+
+ BYE: "Byeonhan Confederacy"
+ BYE_DEF: "the Byeonhan Confederacy"
+ BYE_ADJ: "Byeonhan"
+
+ JIN: "Jinhan Confederacy"
+ JIN_DEF: "the Jinhan Confederacy"
+ JIN_ADJ: "Jinhan"
+
+ EYE: "Dongye"
+ EYE_DEF: "Dongye"
+ EYE_ADJ: "Dongyan"
+
+ OKJ: "Okjeo"
+ OKJ_DEF: "Okjeo"
+ OKJ_ADJ: "Okjeo"
+
+ GOR: "Kingdom of Goguryeo"
+ GOR_DEF: "the Kingdom of Goguryeo"
+ GOR_ADJ: "Goguryeo"
+
+ BAE: "Baekje"
+ BAE_DEF: "Baekje"
+ BAE_ADJ: "Baekje"

@@ -3,13 +3,14 @@ state={
 	name="STATE_431"
 	resources={
 		steel=13.000
-		# tungsten=11.000
+		# #1.000
 	}
 
 	history={
-		owner = AAN
+		owner = SAT
+		add_core_of = SAT
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			industrial_complex = 1
 			dockyard = 1
 			#

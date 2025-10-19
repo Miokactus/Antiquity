@@ -1,0 +1,15 @@
+state={
+	id=1051
+	name="STATE_1051"
+	provinces={
+		4327 4416 7265 
+	}
+	history={
+		owner = PDA
+		add_core_of = PDA
+	}
+	manpower = 15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

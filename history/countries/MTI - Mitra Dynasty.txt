@@ -1,0 +1,39 @@
+﻿capital = 1060
+
+oob = "NAB_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Sarpamitra"
+	desc = "WANGMANG_DESC"
+	picture = GFX_leader_PON_pythodoris
+	expire = "30.5.4"
+	ideology = despotism
+	traits = {
+	}
+}
+
+# Starting tech
+set_technology = {
+}
+
+convoys = 10
+
+
+set_politics = {
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 10
+	communism = 0
+	neutrality = 70
+}
+ 
+add_ideas = limited_exports
+add_ideas = limited_conscription
+add_ideas = civilian_economy

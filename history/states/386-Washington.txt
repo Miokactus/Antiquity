@@ -11,7 +11,7 @@ state = {
 		add_core_of = USA
 
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2 #was: 6
 			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 1
@@ -37,7 +37,7 @@ state = {
 		1939.1.1 = {
 			buildings = {
 				7315 = {
-					air_facility = 1 # Boeing Factories
+					# 1 # Boeing Factories
 				}
 			}
 		}

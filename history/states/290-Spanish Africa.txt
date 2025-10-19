@@ -8,7 +8,7 @@ state={
 		4199 7215 12087 12100 
 	}
 	history = {
-		owner = MAU
+		owner = ROE
 		add_core_of = MAU
 	}
 	manpower=744000

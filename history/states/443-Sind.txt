@@ -7,8 +7,9 @@ state={
 	state_category = city
 
 	history={
-		owner = PTH
-		add_core_of = PTH
+		owner = IDS
+		add_core_of = IDS
+		add_core_of = AAN
 		add_core_of = RAJ
 		add_core_of = SIN
 		victory_points = {

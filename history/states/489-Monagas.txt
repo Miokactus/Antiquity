@@ -14,7 +14,7 @@ state={
 		owner = AAN
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 			1944 = {
 				naval_base = 5
 			}

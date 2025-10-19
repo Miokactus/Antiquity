@@ -2,14 +2,14 @@
 
 oob = "NAB_14"
 
-set_research_slots = 3
+set_research_slots = 2
 
 create_country_leader = {
 	name = "Wang Mang"
 	desc = "WANGMANG_DESC"
 	picture = GFX_leader_PON_pythodoris
 	expire = "30.5.4"
-	ideology = despotism
+	ideology = chinese_reformism
 	traits = {
 	}
 }
@@ -18,20 +18,25 @@ create_country_leader = {
 set_technology = {
 }
 
+convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 20
-	fascism = 10
-	communism = 0
-	neutrality = 70
+	democratic = 5
+	fascism = 3
+	communism = 52
+	neutrality = 40
 }
  
 add_ideas = limited_exports
 add_ideas = limited_conscription
-add_ideas = civilian_economy
+add_ideas = {
+	civilian_economy 
+	an_empire_of_peoples
+	bad_industry
+}

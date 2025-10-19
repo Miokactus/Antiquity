@@ -11,9 +11,9 @@ state={
 	history={
 		owner = AAN
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2 #was: 6
 			arms_factory = 1
-			industrial_complex = 6
+			#
 			#
 
 		}
@@ -23,9 +23,9 @@ state={
 		}
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 7
+				#
 				6710 = {
-					land_facility = 1 # Detroit Arsenal
+					# 1 # Detroit Arsenal
 				}
 			}
 		}

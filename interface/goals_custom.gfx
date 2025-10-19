@@ -1,0 +1,29 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_goal_roman_augustus_death"
+	texturefile = "gfx/interface/goals/roman_augustus_death.dds"	
+	}		
+	
+	SpriteType = {
+	name = "GFX_goal_roman_tiberius_ok"
+	texturefile = "gfx/interface/goals/roman_tiberius_ok.dds"		
+	}
+
+	SpriteType = {
+	name = "GFX_goal_roman_tiberius_nope"
+	texturefile = "gfx/interface/goals/roman_tiberius_nope.dds"	
+	}
+
+
+	################
+	##PLACEHOLDER###
+	################
+
+	
+	SpriteType = {
+		name = "GFX_focus_PLACEHOLDER"
+		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
+	}
+
+}

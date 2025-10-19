@@ -1,0 +1,15 @@
+state={
+	id=1044
+	name="STATE_1044"
+	provinces={
+		848 4004 6928 9981 10083 
+	}
+	history={
+		owner = EYE
+		add_core_of = EYE
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

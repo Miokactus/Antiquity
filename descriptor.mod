@@ -9,5 +9,7 @@ tags={
 	"Technologies"
 }
 replace_path="gfx/loadingscreens"
+replace_path="common/ideas"
 name="Antiquity"
 supported_version="1.16.10"
+remote_file_id="3578714029"

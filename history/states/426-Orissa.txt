@@ -13,7 +13,8 @@ state={
 	}
 
 	history={
-		owner = AAN
+		owner = MMD
+		add_core_of = MMD
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1

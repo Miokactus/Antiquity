@@ -7,6 +7,9 @@ ideologies = {
 			conservatism = {
 			}
 
+			decentralised_democracy = {
+			}
+
 		}
 
 		dynamic_faction_names = {
@@ -66,6 +69,10 @@ ideologies = {
 		types = {
 
 			anarchist_communism = {
+			}
+
+			chinese_reformism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 		}
 
@@ -170,6 +177,10 @@ ideologies = {
 
 			anarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			nomadism = {
+				can_be_randomly_selected = no
 			}
 
 		}

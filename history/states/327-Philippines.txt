@@ -9,9 +9,9 @@ state=
 	{
 		owner = AAN
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			arms_factory = 1
-			industrial_complex = 3
+			#
 			#
 			10265 = {
 				naval_base = 5

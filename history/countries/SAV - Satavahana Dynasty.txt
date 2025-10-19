@@ -1,0 +1,44 @@
+﻿capital = 427
+
+oob = "NAB_14"
+
+set_research_slots = 2
+
+create_country_leader = {
+	name = "Kshatrapa Interregnum"
+	desc = "WANGMANG_DESC"
+	picture = GFX_leader_PON_pythodoris
+	expire = "50.5.4"
+	ideology = despotism
+	traits = {
+	}
+}
+
+IDS = { 
+	set_autonomy = {
+    	target = SAV
+    	autonomous_state = autonomy_dominion
+	}
+}
+
+# Starting tech
+set_technology = {
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 10
+	communism = 0
+	neutrality = 70
+}
+ 
+add_ideas = limited_exports
+add_ideas = limited_conscription
+add_ideas = civilian_economy

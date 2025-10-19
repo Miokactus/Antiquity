@@ -1,0 +1,68 @@
+characters = {
+
+	augustus_emperor = {
+		name = "Imperator Caesar Augustus"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_ROE_augustus"
+            		}
+        	}
+		country_leader = {
+			desc = "augustus_desc"
+			expire = "14.8.19"
+			ideology = despotism
+			traits = {
+				ROE_first_roman_emperor
+			}
+		}
+	}
+
+	tiberius_emperor = {
+		name = "Tiberius Julius Caesar Augustus"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_ROE_tiberius"
+            		}
+        	}
+		country_leader = {
+			desc = "tiberius_desc"
+			expire = "37.3.16"
+			ideology = despotism
+			traits = {
+				
+			}
+		}
+	}
+
+	roman_senate_oligarchism = {
+		name = "Senate of Rome"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_LYC_government"
+            		}
+        	}
+		country_leader = {
+			desc = "senate_roman"
+			expire = "50.8.19"
+			ideology = oligarchism
+			traits = {
+			}
+		}
+	}
+
+	roman_senate_democratic = {
+		name = "Senate of the Peoples"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_LYC_government"
+            		}
+        	}
+		country_leader = {
+			desc = "senate_roman_democratic"
+			expire = "50.8.19"
+			ideology = decentralised_democracy
+			traits = {
+			}
+		}
+	}
+}

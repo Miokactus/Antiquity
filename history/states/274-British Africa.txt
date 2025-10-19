@@ -6,7 +6,7 @@ state = {
 
 	resources = {
 		steel = 8 
-		tungsten = 8 
+		#= 8 
 		chromium = 4
 	} #Maganese
 

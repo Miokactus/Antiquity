@@ -1,0 +1,15 @@
+state={
+	id=1064
+	name="STATE_1064"
+	provinces={
+		800 861 927 946 6905 6947 9841 9883 11781 11823 11850 
+	}
+	history={
+		owner = GOR
+		add_core_of = GOR
+	}
+	manpower=1500
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

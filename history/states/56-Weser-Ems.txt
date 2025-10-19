@@ -25,8 +25,8 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 2
+			industrial_complex = 1
 			dockyard = 2
 			fuel_silo = 1
 			241 = {
@@ -37,10 +37,10 @@ state = {
 		
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 4
+				#
 				dockyard = 3
 				241 = {
-					naval_facility = 1 # Wilhelmshaven Naval Dockyards
+					# 1 # Wilhelmshaven Naval Dockyards
 				}
 			}
 		}

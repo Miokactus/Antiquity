@@ -21,7 +21,6 @@ state = {
 			6946 1 
 		}
 		buildings = {
-			infrastructure = 4 #was: 8
 			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 3
@@ -37,8 +36,8 @@ state = {
 		add_core_of = TOS
 		1939.1.1 = {
 			buildings = {
-				arms_factory = 2
-				industrial_complex = 2
+				industrial_complex = 1
+				industrial_complex = 1
 			}
 		}
 	}

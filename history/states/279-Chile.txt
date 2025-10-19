@@ -7,7 +7,7 @@ state = {
 	
 	resources = {
 		steel = 14 # was: 24, then 16
-		tungsten = 8 # In replacement of nitrate
+		#= 8 # In replacement of nitrate
 		chromium = 4 # in replacement of nitrate
 	}
 
@@ -17,9 +17,9 @@ state = {
 		add_core_of = CHL
 
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			arms_factory = 1
-			industrial_complex = 3 # was 5
+			# # was 5
 			dockyard = 2
 			#
 			8222 = {

@@ -6,7 +6,7 @@ state = {
 	state_category = town
 	
 	resources = {
-		tungsten = 95 #was 150 # was: 300
+		#= 95 #was 150 # was: 300
 	}
 
 	history = {
@@ -25,7 +25,7 @@ state = {
 
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 
 			# Cabril Dam
 			#11885 = { dam = 1 }

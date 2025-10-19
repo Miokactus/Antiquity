@@ -1,5 +1,5 @@
 focus_tree = {
-	id = AAB_focus
+	id = ROE_focus
 	
 	country = {
 		factor = 0
@@ -14,4 +14,90 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1500 }
 	
+
+
+	#Death of Augustus
+	focus = {
+		id = ROE_augustus_death
+		icon = GFX_goal_roman_augustus_death
+		x = 10
+		y = 2
+		cost = 2
+		available = { 
+			date > 14.8.16 
+			has_global_flag = AUG_DEATH
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.1
+		}
+	}
+
+
+	#The New Emperor
+	focus = {
+		id = ROE_the_new_emperor
+		icon = GFX_focus_AFG_retire_the_uncles
+		relative_position_id = ROE_augustus_death
+		x = 0		
+		y = 1
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_augustus_death }
+		completion_reward = {
+		}
+	}
+
+
+	#Follow Augustus' Will
+	focus = {
+		id = ROE_follow_augustus_will
+		icon = GFX_goal_roman_tiberius_ok
+		relative_position_id = ROE_augustus_death
+		x = 6
+		y = 2
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_new_emperor }
+		mutually_exclusive = { focus = ROE_reject_the_will }
+		completion_reward = {
+			
+		}
+	}
+
+
+	#Reject the Will
+	focus = {
+		id = ROE_reject_the_will
+		icon = GFX_goal_roman_tiberius_nope
+		relative_position_id = ROE_augustus_death
+		x = -6
+		y = 2
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_new_emperor }
+		mutually_exclusive = { focus = ROE_follow_augustus_will }
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
 }

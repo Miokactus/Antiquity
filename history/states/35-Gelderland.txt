@@ -7,8 +7,8 @@ state={
 		add_core_of = ROE
 		add_core_of = HOL
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 5
+			infrastructure = 2
+			#
 
 		}
 		victory_points = {

@@ -22,9 +22,8 @@ state={
 			11293 10 #Dublin
 		}
 		buildings = {
-			infrastructure = 4
 			arms_factory = 1
-			industrial_complex = 5
+			#
 			#
 			11293 = {
 				naval_base = 6

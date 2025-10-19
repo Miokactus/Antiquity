@@ -4,7 +4,7 @@ state = {
 	manpower = 2044500
 
 	resources = {
-		tungsten = 60 # was: 102.000
+		#= 60 # was: 102.000
 		steel = 2 # was: 2.000
 	}
 	
@@ -18,7 +18,7 @@ state = {
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
-			industrial_complex = 5
+			#
 			#
 		}
 		

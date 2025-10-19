@@ -1,0 +1,49 @@
+technologies = {
+    secret_tech_nuclear = {
+        
+        allow = {
+            always = no
+        }
+
+        enable_building = {
+            building = nuclear_facility
+            level = 1
+        }
+    }
+
+	secret_tech_sea = {
+        
+        allow = {
+            always = no
+        }
+
+        enable_building = {
+            building = naval_facility
+            level = 1
+        }
+    }
+
+	secret_tech_land = {
+        
+        allow = {
+            always = no
+        }
+
+        enable_building = {
+            building = land_facility
+            level = 1
+        }
+    }
+
+	secret_tech_air = {
+        
+        allow = {
+            always = no
+        }
+
+        enable_building = {
+            building = air_facility
+            level = 1
+        }
+    }
+}

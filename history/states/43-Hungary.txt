@@ -13,9 +13,9 @@ state={
 	history={
 		owner = AAN
 		buildings = {
-			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 4
+			infrastructure = 2
+			#
+			#
 			#
 		}
 		victory_points = {

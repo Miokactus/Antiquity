@@ -1,0 +1,18 @@
+leader_traits = {
+	XAI_nomadic_leader = {
+		random = no
+		political_power_gain = 0.1
+
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ROE_first_roman_emperor = {
+		random = no
+		political_power_gain = 0.2
+		stability_factor = 0.15
+	}
+
+}

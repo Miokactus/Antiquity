@@ -15,9 +15,8 @@ state={
 			6380 50 
 		}
 		buildings = {
-			infrastructure = 4 #was: 8
-			arms_factory = 7
-			industrial_complex = 3
+			#
+			#
 			#0
 			6380 = {
                 landmark_kremlin = {
@@ -31,10 +30,10 @@ state={
 		add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
-				industrial_complex = 4
+				#
 				arms_factory = 10
 				3391 = {
-					land_facility = 1 # Mytischi
+					# 1 # Mytischi
 				}
 			}
 		}

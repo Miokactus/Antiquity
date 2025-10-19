@@ -7,7 +7,7 @@ state = {
 	state_category = town # Was city
 
 	resources = {
-		tungsten = 3
+		#= 3
 	}
 
 	history = {
@@ -17,7 +17,7 @@ state = {
 		add_core_of = BRA
 
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			industrial_complex = 1 # Was 3
 			## Added through focus later
 

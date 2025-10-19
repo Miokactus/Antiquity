@@ -17,7 +17,6 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 4 #was: 8
 			arms_factory = 1
 			industrial_complex = 1
 			dockyard = 2
@@ -34,14 +33,14 @@ state = {
 			}
 			13070 = {
 				# HM Dockyard, Chatham
-				naval_facility = 1
+				# 1
 			}
 		}
 		
 		1939.1.1 = {
 			buildings = {
 				dockyard = 3
-				industrial_complex = 2
+				industrial_complex = 1
 			}
 		}
 

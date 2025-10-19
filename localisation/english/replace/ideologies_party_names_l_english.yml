@@ -1,9 +1,19 @@
 ﻿l_english:
  fascism: "Nationalism"
  fascism_desc: "Nation Ideals"
- communism: "Socialism"
- communism_desc: "Popular Revolts"
+ communism: "Reformism"
+ communism_desc: "Reformist Regime"
  democratic: "Democracy"
  democratic_desc: "Electoral Regime"
  neutrality: "Authoritarianism"
  neutrality_desc: "Hybrid Regime"
+
+ decentralised_democracy: "Decentralised Democracy"
+ decentralised_democracy_desc: ""
+
+ chinese_reformism: "Chinese Reformism"
+ chinese_reformism_desc: "Initiated by Wang Mang, the first and only emperor of the Xin Dynasty, Chinese Reformism is aimed to reform the old society of the Han, giving more rights to peasants and abolishing old traditions considered barbaric at the time. Widely disapproved by the Han elites, chinese reformism aims to modernise China."
+
+
+ nomadism: "Nomadism"
+ nomadism_desc: "Nomadism is caracterised by the permanent movement of people around. Nomadic societies are often traditionalists and against sedentarisation. Nightmare of the states, nomadic societies are still very popular in 14."

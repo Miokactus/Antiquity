@@ -10,7 +10,7 @@ state={
 	}
 
 	history={
-		owner = MAU
+		owner = ROE
 		add_core_of = MAU
 		add_core_of = ALG
 

@@ -3,7 +3,7 @@ state={
 	name="STATE_723"
 	manpower = 547198
 	resources={
-		tungsten=4 # was: 6
+		# # was: 6
 	}
 
 	state_category = rural
@@ -12,7 +12,7 @@ state={
 	history={
 		owner = AAN
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			#
 			2197 = {
 				naval_base = 1

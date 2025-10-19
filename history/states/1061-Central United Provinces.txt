@@ -1,0 +1,15 @@
+state={
+	id=1061
+	name="STATE_1061"
+	provinces={
+		1377 1983 4299 5055 7064 9973 12137 12777 12786 
+	}
+	history={
+		owner = MTH
+		add_core_of = MTH
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

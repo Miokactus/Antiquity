@@ -2,21 +2,18 @@
 
 oob = "ROE_14"
 
-set_research_slots = 0
+set_research_slots = 2
 
-create_country_leader = {
-	name = "Imperator Caesar Augustus"
-	desc = "IMPERATOR_AUGUSTUS_DESC"
-	picture = GFX_leader_ROE_augustus
-	expire = "14.8.19"
-	ideology = despotism
-	traits = {
-	}
-}
+recruit_character = augustus_emperor
+recruit_character = tiberius_emperor
+recruit_character = roman_senate_oligarchism
+recruit_character = roman_senate_democratic
 
 # Starting tech
 set_technology = {
 }
+
+convoys = 35
 
 
 set_politics = {
@@ -32,6 +29,11 @@ set_popularities = {
 	neutrality = 70
 }
  
-add_ideas = limited_exports
-add_ideas = limited_conscription
-add_ideas = civilian_economy
+add_ideas = {
+	limited_exports
+	limited_conscription 
+	civilian_economy
+	poor_industry
+	one_party_monopoly
+	an_empire_of_peoples
+}

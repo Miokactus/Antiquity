@@ -5,8 +5,9 @@ state={
 	manpower = 3859239
 	resources={
 		oil=1 # was: 2
-		tungsten = 3 #maganese
+		#= 3 #maganese
 		steel = 3 #Maganese
+		grain = 2
 		
 	}
 	
@@ -24,7 +25,7 @@ state={
 			1071 1 
 		}		
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			industrial_complex = 1
 			#
 			4076 = {

@@ -3,14 +3,13 @@ state={
 	name="STATE_527"
 	resources={
 		steel=18.000
-		tungsten=28.000
 	}
 	provinces={
-		852 898 906 959 978 3803 3852 3860 3904 3981 6822 6922 6928 6944 6963 9899 11775 11828 11878 
+		852 906 959 978 3803 3852 3904 3981 6822 6922 9899 11775 11878 
 	}
-	history = {
-		owner = AAN
-		add_core_of = AAN
+	history={
+		owner = OKJ
+		add_core_of = OKJ
 	}
 	manpower=6774200
 	buildings_max_level_factor=1.000

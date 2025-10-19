@@ -28,7 +28,7 @@ state = {
 
 		buildings = {
 
-			infrastructure = 3
+			infrastructure = 2
 			dockyard = 1
 			#
 
@@ -51,7 +51,7 @@ state = {
 			buildings = {
 				dockyard = 2
 				3686 = {
-					naval_facility = 1 # Sevastopol Naval Facilties
+					# 1 # Sevastopol Naval Facilties
 				}
 			}
 		}

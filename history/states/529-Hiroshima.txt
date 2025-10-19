@@ -10,16 +10,15 @@ state = {
 		add_core_of = JAP
 
 		buildings = {
-			infrastructure = 4 #was: 7
 			#
 			dockyard = 2
-			arms_factory = 2
-			industrial_complex = 2
+			industrial_complex = 1
+			industrial_complex = 1
 
 			1092 = {
 				naval_base = 10
 				# Kure Naval Arsenal
-				naval_facility = 1
+				# 1
 			}
 
 			# Taishakugawa Dam
@@ -38,8 +37,8 @@ state = {
 		1939.1.1 = {
 			buildings = {
 				dockyard = 3
-				arms_factory = 3
-				industrial_complex = 3
+				#
+				#
 			}
 		}
 

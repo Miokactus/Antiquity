@@ -6,7 +6,7 @@ state={
 		owner = ROE
 		add_core_of = ROE
 		buildings = {
-			infrastructure = 3 #was: 6
+			infrastructure = 2 #was: 6
 			industrial_complex = 1
 
 		}

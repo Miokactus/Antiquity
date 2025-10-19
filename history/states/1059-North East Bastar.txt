@@ -1,0 +1,15 @@
+state={
+	id=1059
+	name="STATE_1059"
+	provinces={
+		1510 7497 7574 8120 10401 12375 12480 
+	}
+	history={
+		owner = MTI
+		add_core_of = MTI
+	}
+	manpower=5000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

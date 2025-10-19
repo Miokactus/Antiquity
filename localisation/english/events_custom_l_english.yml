@@ -1,0 +1,7 @@
+﻿l_english:
+ ## ROMAN EMPIRE EVENTS ##
+
+ rome_event.1.t: "The Death of the Emperor"
+ rome_event.1.d: "So Augustus fell sick and died.\nLivia incurred some suspicion in connexion with his death, in view of the fact that he had secretly sailed over to the island to see Agrippa and seemed about to become completely reconciled with him.\nFor she was afraid, some say, that Augustus would bring him back to make him sovereign, and so smeared with poison some figs that were still on trees from which Augustus was wont to gather the fruit with his own hands; then she ate those that had not been smeared, offering the poisoned ones to him.\nAt any rate, from this or some other cause he became ill, and sending for his associates, he told them all his wishes, adding finally: \"I found Rome of clay; I leave it to you of marble.\"\nHe did not thereby refer literally to the appearance of its buildings, but rather to the strength of the empire. And by asking them for their applause, after the manner of the comic actors, as if at the close of a mime, he ridiculed most tellingly the whole life of man. Thus on the nineteenth day of August, the day on which he had first become consul, he passed away, having lived seventy-five years, ten months, and twenty-six days (he had been born on the twenty-third of September), and having been sole ruler, from the time of his victory at Actium forty-four years lacking thirteen days."
+ rome_event.1.a: "The Gods have Spoken."
+ rome_event.1.b: "Gloria!"

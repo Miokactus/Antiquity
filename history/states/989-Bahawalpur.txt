@@ -6,7 +6,8 @@ state={
 	}
 
 	history={
-		owner = AAN
+		owner = IDS
+		add_core_of = IDS
 		add_core_of = RJP
 		buildings = {
 			infrastructure = 1

@@ -4,13 +4,14 @@ state={
 
 	history={
 		add_core_of = BAN
-		owner = AAN
+		owner = SAT
+		add_core_of = SAT
 		victory_points = {
 			11929 1 
 		}
 		buildings = {
-			infrastructure = 3 #was: 5
-			industrial_complex = 2
+			infrastructure = 2 #was: 5
+			industrial_complex = 1
 			11968 = {
 				naval_base = 3
 

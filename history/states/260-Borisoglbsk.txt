@@ -9,7 +9,7 @@ state={
 	history={
 		owner = AAN
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 2 #was: 5
 			arms_factory = 1
 			synthetic_refinery = 1 #NSB
 		}
@@ -20,7 +20,7 @@ state={
 		1939.1.1 = {
 			buildings = {
 				9448 = {
-					air_facility = 1
+					# 1
 				}
 			}
 			
