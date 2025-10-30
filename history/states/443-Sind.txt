@@ -10,8 +10,8 @@ state={
 		owner = IDS
 		add_core_of = IDS
 		add_core_of = AAN
-		add_core_of = RAJ
-		add_core_of = SIN
+		
+		
 		victory_points = {
 			3456 25 
 		}
@@ -22,7 +22,7 @@ state={
 				naval_base = 4
 			}
 		}
-		add_core_of = PAK
+		
 
 	}
 

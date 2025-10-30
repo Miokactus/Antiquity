@@ -21,9 +21,9 @@ state = {
 			}
 		}
 		add_core_of = ROE
-		add_core_of = YUG
-		add_core_of = CRO
-		add_core_of = LBV
+		
+		
+		
 
 		### CHANGED TO A MROE ROBUST SYSTEM
 		##CONTROLLED BY ROELY AT GAME START -> ROELIAN NAMES

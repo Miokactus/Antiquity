@@ -7,7 +7,7 @@ state={
 	
 	manpower = 1335010
 	resources={
-		oil=41 # was: 58
+		gold_ingot=41 # was: 58
 	}
 
 	history={
@@ -24,7 +24,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = VEN
+		
 		victory_points = {
 			8113 5 
 		}

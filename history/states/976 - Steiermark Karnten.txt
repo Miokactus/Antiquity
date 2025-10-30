@@ -14,7 +14,7 @@ state = {
 
 		owner = ROE
 		add_core_of = ROE
-		add_core_of = AUS
+		
 
 		buildings = {
 			infrastructure = 2 
@@ -36,7 +36,7 @@ state = {
 		1938.3.12 = {
 			owner = AAN
 			controller = GER
-			add_core_of = GER
+			
 		}
 	}
 

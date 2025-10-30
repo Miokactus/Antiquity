@@ -30,7 +30,7 @@ state = {
 			}
 		}
 		add_core_of = ROE
-		add_core_of = SPM
+		
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 10

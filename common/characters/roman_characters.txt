@@ -65,4 +65,23 @@ characters = {
 			}
 		}
 	}
+
+
+	comitia_of_rome = {
+		name = "Comitia"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_ROE_comitia"
+            	}
+        	}
+		country_leader = {
+			desc = "comitia_roman_reformist"
+			expire = "50.8.19"
+			ideology = popular_assemblies
+			traits = {
+			}
+		}
+	}
+
+
 }

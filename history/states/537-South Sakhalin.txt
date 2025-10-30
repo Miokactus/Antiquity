@@ -3,14 +3,14 @@ state= {
 	name="STATE_537"
 	manpower = 295196
 	resources={
-		oil=3 # was: 4
+		gold_ingot=3 # was: 4
 	}
 	
 	state_category = rural
 
 	history= {
 		owner = AAN
-		add_core_of = JAP
+		
 		
 		buildings = {
 			infrastructure = 2

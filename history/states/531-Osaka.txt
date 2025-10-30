@@ -11,7 +11,7 @@ state = {
 	history = {
 
 		owner = AAN
-		add_core_of = JAP
+		
 
 		buildings = {
 			industrial_complex = 1

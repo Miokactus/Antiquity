@@ -3,8 +3,8 @@ state = {
 	name = "STATE_334"
 	manpower = 2168600
 	resources = {
-		rubber = 75 # was: 138
-		oil = 5 # was: 10
+		wood = 75 # was: 138
+		gold_ingot = 5 # was: 10
 	}
 	
 	state_category = rural
@@ -12,7 +12,7 @@ state = {
 	history = {
 
 		owner = AAN
-		add_core_of = INS
+		
 
 		victory_points = {
 			10237 1 

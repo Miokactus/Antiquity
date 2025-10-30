@@ -31,7 +31,7 @@ state = {
 			}
 		}
 		add_core_of = ROE
-		add_core_of = TTS
+		
 
 		1939.1.1 = {
 			buildings = {

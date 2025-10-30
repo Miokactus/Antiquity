@@ -1,6 +1,6 @@
 ﻿capital = 330
 
-oob = "NAB_14"
+oob = "XAI_14"
 
 set_research_slots = 1
 
@@ -35,4 +35,7 @@ set_popularities = {
  
 add_ideas = limited_exports
 add_ideas = limited_conscription
-add_ideas = civilian_economy
+add_ideas = {
+	civilian_economy
+	nomadic_society
+}

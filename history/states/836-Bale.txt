@@ -30,9 +30,9 @@ state = {
 		}
 		
 		owner = AAN
-		add_core_of = ETH
-		add_core_of = SOM
-		add_core_of = ORO
+		
+		
+		
 
 		1936.6.1 = {
 			owner = AAN

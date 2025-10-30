@@ -22,7 +22,7 @@ state = {
 			}
 		}
 		add_core_of = ROE
-		add_core_of = PAP
+		
 	}
 
 	provinces = {

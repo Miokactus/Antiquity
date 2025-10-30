@@ -9,9 +9,9 @@ state={
 	history={
 		owner = WPC
 		add_core_of = WPC
-		add_core_of = SIK
-		add_core_of = CHI
-		add_core_of = PRC
+		
+		
+		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

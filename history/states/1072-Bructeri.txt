@@ -1,0 +1,15 @@
+state={
+	id=1072
+	name="STATE_1072"
+	provinces={
+		495 3398 9443 
+	}
+	history = {
+		owner = BRU
+		add_core_of = BRU
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,5 +1,16 @@
 technologies = {
 	
+	airbase_secret = {
+
+		enable_building = {
+			building = air_base
+			level = 1
+		}
+		
+		research_cost = 26
+		start_year = 1933
+	}
+
 	early_transport_plane = {
 
 		enable_equipments = {

@@ -12,15 +12,13 @@ state = {
 
 		owner = ROE
 		add_core_of = ROE
-		add_core_of = BEL
+		
 
 		victory_points = {
 			3516 5 # Namur
 		}
 
-		victory_points = {
-			11519 10 # Liege
-		}
+	
 
 		victory_points = {
 			9536 3 # Charleroi

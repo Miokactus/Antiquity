@@ -9,9 +9,6 @@ state={
 		owner = ROE
 		add_core_of = ROE
 		victory_points = {
-			3938 30 
-		}
-		victory_points = {
 			858 1
 		}
 		buildings = {
@@ -21,7 +18,7 @@ state={
 			#
 
 		}
-		add_core_of = SPR
+		
 
 	}
 

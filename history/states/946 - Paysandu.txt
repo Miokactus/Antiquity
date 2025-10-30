@@ -7,13 +7,13 @@ state = {
 	state_category = rural
 	
 	resources = {
-		oil = 3 
+		gold_ingot = 3 
 	}
 
 	history = {
 
 		owner = AAN
-		add_core_of = URG
+		
 
 		buildings = {
 			infrastructure = 1

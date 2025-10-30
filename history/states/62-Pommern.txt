@@ -8,9 +8,10 @@ state = {
 
 	history = {
 
-		owner = AAN
-		add_core_of = GER
-		add_core_of = PRE
+		owner = VNI
+		add_core_of = VNI
+		
+		
 
 		victory_points = {
 			9388 1 # Stralsund

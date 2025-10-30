@@ -5,13 +5,13 @@ state = {
 	state_category = pastoral
 	
 	resources = {
-		rubber = 1.000
+		wood = 1.000
 	}
 
 	history = {
 
 		owner = AAN
-		add_core_of = ANG
+		
 
 		buildings = {
 			infrastructure = 1

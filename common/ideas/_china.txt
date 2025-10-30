@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		
+	## XIN CHINA ##
+		
+		XIN_illegitimate_regime = {
+			name = "Illegitimate Regime"
+			allowed_civil_war = { always = yes }
+			picture = ICE_general_strike
+			modifier = {
+				neutrality_drift = 0.03
+				communism_drift = -0.05
+				democratic_drift = -0.05
+				fascism_drift = 0.03
+			}
+		}
+
+
+
+		
+	}
+}

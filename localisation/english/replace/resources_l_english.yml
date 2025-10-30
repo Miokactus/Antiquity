@@ -2,3 +2,14 @@
  FUEL_RESOURCE: "Grain"
  PRODUCTION_MATERIALS_GRAIN: "Grain"
  grain_desc: "Grain is used to feed your population and armies. If your level of grain reserves is too low, famines might occur, armies will rise up and your country will fall into a state of despair."
+ PRODUCTION_MATERIALS_GOLD_INGOT: "Gold"
+ PRODUCTION_MATERIALS_WOOD: "Wood"
+ wood_desc: ""
+ PRODUCTION_MATERIALS_STEEL: "Iron"
+ steel_desc: "Iron."
+
+
+ temporary_state_resource_grain: "Grain"
+ temporary_state_resource_wood: "Wood"
+ temporary_state_resource_steel: "Iron"
+ temporary_state_resource_gold_ingot: "Gold"

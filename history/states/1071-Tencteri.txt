@@ -1,0 +1,15 @@
+state={
+	id=1071
+	name="STATE_1071"
+	provinces={
+		6444 6488 
+	}
+	history = {
+		owner = TNI
+		add_core_of = TNI
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

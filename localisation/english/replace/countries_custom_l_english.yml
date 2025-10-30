@@ -1,6 +1,6 @@
 ﻿l_english:
- AAN: "Anarchy"
- AAN_DEF: "Anarchy"
+ AAN: "Unorganised Cultures"
+ AAN_DEF: "Unorganised Cultures"
  AAN_ADJ: "Anarchists"
  
 
@@ -68,6 +68,10 @@
  SOP: "Kindom of Sophene"
  SOP_DEF: "the Kingdom of Sophene"
  SOP_ADJ: "Sophene"
+
+ DAC: "Administration of Dacia"
+ DAC_DEF: "the Administration of Dacia"
+ DAC_ADJ: "Dacians"
 
 ## ORIENT NAMES ##
 
@@ -174,3 +178,112 @@
  BAE: "Baekje"
  BAE_DEF: "Baekje"
  BAE_ADJ: "Baekje"
+
+
+ ## GERMANIC NAMES OF TRIBES ##
+
+ FRI: "Frisia"
+ FRI_DEF: "the Tribe of the Frisi"
+ FRI_ADJ: "Frisi"
+
+ CMI: "Camavi"
+ CMI_DEF: "the Tribe of the Camavi"
+ CMI_ADJ: "Camavi"
+
+ AMV: "Amsivari"
+ AMV_DEF: "the Tribe of the Amsivari"
+ AMV_ADJ: "Amsivari"
+
+ CAU: "Cauci"
+ CAU_DEF: "the Tribe of the Cauci"
+ CAU_ADJ: "Cauci"
+
+ CSU: "Chasuari"
+ CSU_DEF: "the Tribe of the Chasuari"
+ CSU_ADJ: "Chasuari"
+
+ BRU: "Bruceti"
+ BRU_DEF: "the Tribe of the Bruceti"
+ BRU_ADJ: "Bruceti"
+
+ USP: "Usipeti"
+ USP_DEF: "the Tribe of the Usipeti"
+ USP_ADJ: "Usipeti"
+
+ TNI: "Tencteri"
+ TNI_DEF: "the Tribe of the Tencteri"
+ TNI_ADJ: "Tencteri"
+
+ SGI: "Sigambri"
+ SGI_DEF: "the Tribe of the Sigambri"
+ SGI_ADJ: "Sigambri"
+
+ ANI: "Angrivari"
+ ANI_DEF: "the Tribe of the Angrivari"
+ ANI_ADJ: "Angrivari"
+
+ VNI: "Viruni"
+ VNI_DEF: "the Tribe of the Viruni"
+ VNI_ADJ: "Viruni"
+
+ SXA: "Saxones"
+ SXA_DEF: "the Tribe of the Saxones"
+ SXA_ADJ: "Saxones"
+
+ AGL: "Angli"
+ AGL_DEF: "the Tribe of the Angli"
+ AGL_ADJ: "Angli"
+
+ CRD: "Caridi"
+ CRD_DEF: "the Tribe of the Caridi"
+ CRD_ADJ: "Caridi"
+
+ LGI: "Longobardi"
+ LGI_DEF: "the Tribe of the Longobardi"
+ LGI_ADJ: "Longobardi"
+
+ CRS: "Cherusci"
+ CRS_DEF: "the Tribe of the Cherusci"
+ CRS_ADJ: "Cherusci"
+
+ CTT: "Catti"
+ CTT_DEF: "the Tribe of the Catti"
+ CTT_ADJ: "Catti"
+
+ AGI: "Angili"
+ AGI_DEF: "the Tribe of the Angili"
+ AGI_ADJ: "Angili"
+
+ VGI: "Vangioni"
+ VGI_DEF: "the Tribe of the Vangioni"
+ VGI_ADJ: "Vangioni"
+
+ ERR: "Ermunduri"
+ ERR_DEF: "the Tribe of the Ermunduri"
+ ERR_ADJ: "Ermunduri"
+
+ NMI: "Nemeti"
+ NMI_DEF: "the Tribe of the Nemeti"
+ NMI_ADJ: "Nemeti"
+
+ TBI: "Triboci"
+ TBI_DEF: "the Tribe of the Triboci"
+ TBI_ADJ: "Triboci"
+
+ NSE: "Naristae"
+ NSE_DEF: "the Tribe of the Naristae"
+ NSE_ADJ: "Naristae"
+
+ MRA: "Marcoma"
+ MRA_DEF: "the Tribe of the Marcoma"
+ MRA_ADJ: "Marcoma"
+
+ SNI: "Senoni"
+ SNI_DEF: "the Tribe of the Senoni"
+ SNI_ADJ: "Senoni"
+
+ ## AFRICA NAMES ##
+
+ GOM: "Kingdom of the Garamantes"
+ GOM_DEF: "the Kingdom of the Garamantes"
+ GOM_ADJ: "Garamantes"

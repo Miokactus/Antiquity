@@ -7,7 +7,7 @@ set_research_slots = 1
 create_country_leader = {
 	name = "Rajuvula"
 	desc = "WANGMANG_DESC"
-	picture = GFX_leader_PON_pythodoris
+	picture = GFX_leader_generic_building_1
 	expire = "30.5.4"
 	ideology = despotism
 	traits = {
@@ -18,7 +18,7 @@ create_country_leader = {
 set_technology = {
 }
 
-convoys = 15
+set_convoys = 15
 
 set_politics = {
 	ruling_party = neutrality

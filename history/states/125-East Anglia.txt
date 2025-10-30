@@ -8,7 +8,7 @@ state = {
 	history = {
 
 		owner = AAN
-		add_core_of = ENG
+		
 
 		victory_points = { 
 			271 2 # Ipswich

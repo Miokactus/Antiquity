@@ -11,10 +11,7 @@ state={
 		owner = XAI
 		add_core_of = XAI
 		victory_points = {
-			4801 10
-		}
-		victory_points = {
-			7799 1 
+			10623 10
 		}
 		buildings = {
 			infrastructure = 1
@@ -23,7 +20,7 @@ state={
 			#
 
 		}
-		add_core_of = MON
+		
 
 	}
 

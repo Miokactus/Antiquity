@@ -1,0 +1,15 @@
+state={
+	id=1070
+	name="STATE_1070"
+	provinces={
+		529 3524 9482 9486 9547 
+	}
+	history = {
+		owner = SGI
+		add_core_of = SGI
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -33,6 +33,7 @@ IDS = "countries/Indo_Scythian.txt"
 CTU = "countries/Chutu_Dynasty.txt"
 NAB = "countries/Nabatea.txt"
 
+## KOREA [FLAGS NEEDED]
 MAH = "countries/Mahan_Confederacy.txt"
 BYE = "countries/Byeonhan_Confederacy.txt"
 JIN = "countries/Jinhan_Confederacy.txt"
@@ -40,3 +41,39 @@ EYE = "countries/Dongye.txt"
 OKJ = "countries/Okjeo.txt"
 GOR = "countries/Goguryeo.txt"
 BAE = "countries/Baekje.txt"
+
+## GERMANIA [FLAGS NEEDED]
+FRI = "countries/Frisia.txt"
+CMI = "countries/Camavi.txt"
+AMV = "countries/Amsivari.txt"
+CAU = "countries/Cauci.txt"
+CSU = "countries/Chasuari.txt"
+USP = "countries/Usipeti.txt"
+SGI = "countries/Sigambri.txt"
+TNI = "countries/Tencteri.txt"
+CTT = "countries/Catti.txt"
+VGI = "countries/Vangioni.txt"
+NMI = "countries/Nemeti.txt"
+TBI = "countries/Triboci.txt"
+ERR = "countries/Ermunduri.txt"
+NSE = "countries/Naristae.txt"
+MRA = "countries/Marcoma.txt"
+AGI = "countries/Angili.txt"
+CRS = "countries/Cherusci.txt"
+ANI = "countries/Angrivari.txt"
+SXA = "countries/Saxones.txt"
+AGL = "countries/Angli.txt"
+VNI = "countries/Viruni.txt"
+CRD = "countries/Caridi.txt"
+LGI = "countries/Longobardi.txt"
+SNI = "countries/Senoni.txt"
+BRU = "countries/Bruceti.txt"
+
+## EASTERN EUROPE [FLAGS NEEDED]
+DAC = "countries/Dacia.txt"
+
+## BRITANNIA [FLAGS NEEDED]
+
+## AFRICA [FLAGS NEEDED]
+GOM = "countries/Garamantes.txt"
+

@@ -14,13 +14,13 @@ state={
 		owner = ROE
 		add_core_of = ROE
 		victory_points = {
-			575 5
+			575 2
 		}
 		victory_points = {
-			11483 10
+			11483 5
 		}
 		victory_points = {
-			11548 15
+			11548 5
 		}
 		buildings = {
 			#
@@ -29,7 +29,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = FRA
+		
 		1939.1.1 = {
 			buildings = {
 				#

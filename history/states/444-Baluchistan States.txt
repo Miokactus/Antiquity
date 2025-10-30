@@ -5,15 +5,15 @@ state={
 		1179 5043 7917  12761 12774 
 	}
 	resources={
-		oil=3
+		gold_ingot=3
 	}
 	manpower=364000
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000
 	history={
-		add_core_of = PAK
-		add_core_of = BLC
+		
+		
 		owner = PTH
 		add_core_of = PTH
 		buildings = {

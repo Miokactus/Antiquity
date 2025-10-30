@@ -5,11 +5,11 @@ state={
 		aluminium=6.000
 	}
 	provinces={
-		519 694 6555 6581 9517 9545 11486 11499 
+		519 694 9517 11486 11499 
 	}
 	history = {
-		owner = AAN
-		add_core_of = GER
+		owner = TBI
+		add_core_of = TBI
 	}
 	manpower=3076854
 	buildings_max_level_factor=1.000

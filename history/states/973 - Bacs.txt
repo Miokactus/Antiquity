@@ -7,8 +7,9 @@ state = {
 
 	history = {
 
-		owner = AAN
-		add_core_of = HUN
+		owner = DAC
+		add_core_of = DAC
+		
 
 		buildings = {
 			infrastructure = 2

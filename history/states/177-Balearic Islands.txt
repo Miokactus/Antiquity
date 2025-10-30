@@ -13,7 +13,7 @@ state = {
 
 		owner = ROE
 		add_core_of = ROE
-		add_core_of = SPR
+		
 		add_claim_by = CAT
 
 		buildings = {

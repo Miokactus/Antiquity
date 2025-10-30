@@ -1,8 +1,9 @@
 ﻿l_english:
- autonomy_dominion:0 "Influenced State"
+ autonomy_dominion:0 "Protectorate"
  autonomy_supervised_state:0 "Supervised State"
  autonomy_colony:0 "Personal Union"
  autonomy_puppet:0 "Client State"
  autonomy_integrated_puppet:0 "Lordship"
  autonomy_annex:0 "Annexed"
  autonomy_free:0 "Free"
+ autonomy_indian_custom: "Influenced State"

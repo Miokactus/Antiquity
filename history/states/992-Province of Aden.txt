@@ -9,8 +9,8 @@ state = {
 	history = {
 
 		owner = AAN
-		add_core_of = YEM
-		add_core_of = FSA
+		
+		
 
 		victory_points = {
 			5074 2 # Aden 

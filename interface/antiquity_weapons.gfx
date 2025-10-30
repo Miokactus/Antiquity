@@ -1,0 +1,37 @@
+spriteTypes = {
+
+## IDEOLOGIES GFX ##
+####################
+
+### OTHERS ###
+##############
+
+## GENERIC ##
+
+    spriteType = {
+        name = "GFX_infantry_roman_weapon0_medium" 
+        texturefile = "gfx/interface/technologies/roman_weapon0.dds"
+    }
+
+    SpriteType = {
+		name = "GFX_archetype_infantry_equipment_medium"
+		texturefile = "gfx/interface/archetypes/archetype_roman_weapon.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/roman_weapon0.dds"
+	}
+
+
+
+
+
+
+
+    SpriteType = {
+		name = "GFX_convoy_medium"
+		texturefile = "gfx/interface/technologies/antiquity_convoy.dds"
+	}
+
+}

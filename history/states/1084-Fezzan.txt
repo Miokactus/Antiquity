@@ -1,0 +1,15 @@
+state={
+	id=1084
+	name="STATE_1084"
+	provinces={
+		5004 12022 
+	}
+	history = {
+		owner = GOM
+		add_core_of = GOM
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

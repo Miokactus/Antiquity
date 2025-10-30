@@ -27,9 +27,9 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = YUG
+		
 		#add_claim_by = ROE #added by focus
-		add_core_of = CRO
+		
 	}
 
 	provinces={

@@ -1,13 +1,13 @@
 ﻿capital = 291
 
-oob = "NAB_14"
+oob = "PTH_14"
 
 set_research_slots = 2
 
 create_country_leader = {
 	name = "Artabanus II"
 	desc = "ARTABANUS_DESC"
-	picture = GFX_leader_PON_pythodoris
+	picture = GFX_leader_generic_building_2
 	expire = "30.5.4"
 	ideology = despotism
 	traits = {
@@ -18,7 +18,7 @@ create_country_leader = {
 set_technology = {
 }
 
-convoys = 45
+set_convoys = 45
 
 set_politics = {
 	ruling_party = neutrality

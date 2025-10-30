@@ -1,0 +1,15 @@
+state={
+	id=1066
+	name="STATE_1066"
+	provinces={
+		68 391 3314 
+	}
+	history = {
+		owner = FRI
+		add_core_of = FRI
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

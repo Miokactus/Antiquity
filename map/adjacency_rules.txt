@@ -12,48 +12,48 @@
 # The 'name' property is how you refer to the rule in adjacencies.csv
 
 #Suez Canal
-adjacency_rule =
-{
-	name = "SUEZ_CANAL"
-
-	contested =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	enemy =
-	{
-		army = no
-		navy = no
-		submarine = no
-		trade = no
-	}
-	friend =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	neutral =
-	{
-		army = yes
-		navy = yes
-		submarine = yes
-		trade = yes
-	}
-	
-	required_provinces = { 12049 1155 4073 9947 }
-
-	is_disabled = {
-		always = yes
-	}
-	
-	icon = 12049
-	offset = { 1 0 -6 }
-}
+#adjacency_rule =
+#{
+#	name = "SUEZ_CANAL"
+#
+#	contested =
+#	{
+#		army = no
+#		navy = no
+#		submarine = no
+#		trade = no
+#	}
+#	enemy =
+#	{
+#		army = no
+#		navy = no
+#		submarine = no
+#		trade = no
+#	}
+#	friend =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	neutral =
+#	{
+#		army = yes
+#		navy = yes
+#		submarine = yes
+#		trade = yes
+#	}
+#	
+#	required_provinces = { 12049 1155 4073 9947 }
+#
+#	is_disabled = {
+#		always = yes
+#	}
+#	
+#	icon = 12049
+#	offset = { 1 0 -6 }
+#}
 
 #Gibraltar Strait
 adjacency_rule =
@@ -94,6 +94,69 @@ adjacency_rule =
 	icon = 5407	
 	offset = { -31.0 0.0 -2.0 }
 }
+
+
+#Eastern Danube Entry
+adjacency_rule = {
+	name = "Detroit of the Eastern Danube"
+
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = yes
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 687 3701 }
+	
+	icon = 687	
+	offset = { 0.0 0.0 0.0 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
 adjacency_rule =

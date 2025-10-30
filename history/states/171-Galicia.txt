@@ -9,7 +9,7 @@ state={
 	history={
 		owner = ROE
 		add_core_of = ROE
-		add_core_of = GLC
+		
 		victory_points = {
 			758 5
 		}
@@ -25,7 +25,7 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = SPR
+		
 	}
 
 	provinces={

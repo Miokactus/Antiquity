@@ -7,7 +7,7 @@ state = {
 	history = {
 
 		owner = AAN
-		add_core_of = ENG
+		
 
 		victory_points = { 
 			3501 20 # Dover

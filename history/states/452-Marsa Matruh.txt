@@ -21,7 +21,7 @@ state={
 			9989 1 #Sidi Barrani
 		}
 
-		add_core_of = EGY
+		
 	}
 
 	provinces={

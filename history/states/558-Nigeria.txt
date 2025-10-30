@@ -5,13 +5,13 @@ state = {
 	state_category = rural
 
 	resources = {
-		rubber = 2.000
+		wood = 2.000
 	}
 
 	history = {
 
 		owner = AAN
-		add_core_of = NGA
+		
 
 		buildings = {
 			infrastructure = 2

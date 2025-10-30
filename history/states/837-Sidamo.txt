@@ -3,7 +3,7 @@ state = {
 	name = "STATE_837"
 	manpower = 950000
 	resources = {
-		rubber = 3
+		wood = 3
 	}
 	
 	state_category = rural
@@ -37,9 +37,9 @@ state = {
 		}
 		
 		owner = AAN
-		add_core_of = ETH
-		add_core_of = SID
-		add_core_of = ORO
+		
+		
+		
 
 		1936.6.1 = {
 			owner = AAN

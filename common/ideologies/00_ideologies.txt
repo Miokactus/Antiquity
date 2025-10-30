@@ -7,6 +7,15 @@ ideologies = {
 			conservatism = {
 			}
 
+			liberalism = {
+			}
+
+			socialism = {
+			}
+
+			populism = {
+			}
+
 			decentralised_democracy = {
 			}
 
@@ -68,11 +77,29 @@ ideologies = {
 
 		types = {
 
+			marxism = {
+			}
+
+			leninism = {
+			}
+
+			stalinism = {
+			}
+
+			anti_revisionism = {
+			}
+
 			anarchist_communism = {
 			}
 
 			chinese_reformism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			popular_assemblies = {
+			}
+
+			monarcho_socialism = {
 			}
 		}
 
@@ -122,7 +149,19 @@ ideologies = {
 
 		types = {
 
+			nazism = {
+			}
+
+			gen_nazism = {
+			}
+
 			fascism_ideology = {
+			}
+
+			falangism = {
+			}
+
+			rexism = {
 			}
 
 		}
@@ -175,12 +214,27 @@ ideologies = {
 			oligarchism = {
 			}
 
+			moderatism = {
+			}
+
+			centrism = {
+			}
+
+			absolutism = {
+			}
+
 			anarchism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			nomadism = {
 				can_be_randomly_selected = no
+			}
+
+			tribalism = {
+			}
+
+			military_junta = {
 			}
 
 		}

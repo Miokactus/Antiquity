@@ -8,12 +8,13 @@ recruit_character = augustus_emperor
 recruit_character = tiberius_emperor
 recruit_character = roman_senate_oligarchism
 recruit_character = roman_senate_democratic
+recruit_character = comitia_of_rome
 
 # Starting tech
 set_technology = {
 }
 
-convoys = 35
+set_convoys = 35
 
 
 set_politics = {

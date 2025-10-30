@@ -5,8 +5,9 @@ state={
 		619 3617 3623 9621 
 	}
 	history = {
-		owner = AAN
-		add_core_of = YUG
+		owner = DAC
+		add_core_of = DAC
+		
 	}
 	manpower=838621
 	buildings_max_level_factor=1.000

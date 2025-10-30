@@ -5,14 +5,14 @@ state = {
 	manpower = 918619
 
 	resources = {
-		oil = 10 # was: 12
+		gold_ingot = 10 # was: 12
 	}
 
 	history = {
 
 		owner = PTH
 		add_core_of = PTH
-		add_core_of = PER
+		
 
 		victory_points = {
 			8117 3 

@@ -3,8 +3,78 @@ spriteTypes = {
 ## IDEOLOGIES GFX ##
 ####################
 
+    spriteType = {
+        name = "GFX_ideology_communism_group"
+        texturefile = "gfx/interface/ideologies/communism.dds" # The folder and filename don't matter, as long as they are correct
+    }
+	
+	spriteType = {
+        name = "GFX_ideology_monarcho_socialism"
+        texturefile = "gfx/interface/ideologies/monarchosocialism.dds" # The folder and filename don't matter, as long as they are correct
+    }
+	
+	spriteType = {
+        name = "GFX_ideology_resistance_council"
+        texturefile = "gfx/interface/ideologies/resistancecouncil.dds" # The folder and filename don't matter, as long as they are correct
+    }
+	
+	spriteType = {
+        name = "GFX_ideology_military_junta"
+        texturefile = "gfx/interface/ideologies/militaryjunta.dds" # The folder and filename don't matter, as long as they are correct
+    }
+	
+	spriteType = {
+        name = "GFX_ideology_absolutism"
+        texturefile = "gfx/interface/ideologies/absolutism.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_chinese_reformism"
+        texturefile = "gfx/interface/ideologies/chinese_reformism.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_nomadism"
+        texturefile = "gfx/interface/ideologies/nomadism.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
 ### OTHERS ###
 ##############
+
+## GENERIC ##
+
+    spriteType = {
+        name = "GFX_leader_generic_building_1"
+        texturefile = "gfx/characters/generic_building_1.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_generic_building_2"
+        texturefile = "gfx/characters/generic_building_3.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_generic_building_3"
+        texturefile = "gfx/characters/generic_building_3.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+    spriteType = {
+        name = "GFX_leader_german_generic1"
+        texturefile = "gfx/characters/german_generic1.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_german_generic2"
+        texturefile = "gfx/characters/german_generic2.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_german_generic3"
+        texturefile = "gfx/characters/german_generic3.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
 
 ## ANARCHY GFX ##
 
@@ -24,6 +94,19 @@ spriteTypes = {
         name = "GFX_leader_ROE_tiberius"
         texturefile = "gfx/characters/ROE_tiberius.dds" # The folder and filename don't matter, as long as they are correct
     }
+
+    spriteType = {
+        name = "GFX_leader_ROE_comitia"
+        texturefile = "gfx/characters/ROE_comitia.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+## XIN DYNASTY ##
+
+    spriteType = {
+        name = "GFX_leader_XIN_wang_mang"
+        texturefile = "gfx/characters/XIN_wang_mang.dds"
+    }
+
 
 ## MAURETANIA GFX ##
 

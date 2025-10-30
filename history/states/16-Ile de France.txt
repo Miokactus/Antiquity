@@ -10,10 +10,10 @@ state = {
 
 		owner = ROE
 		add_core_of = ROE
-		add_core_of = FRA
+		
 
 		victory_points = {
-			11506 50 # Paris
+			11506 15 # Paris
 		}
 
 		buildings = {

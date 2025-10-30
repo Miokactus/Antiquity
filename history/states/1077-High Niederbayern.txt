@@ -1,0 +1,15 @@
+state={
+	id=1077
+	name="STATE_1077"
+	provinces={
+		532 3541 3571 11497 
+	}
+	history = {
+		owner = NSE
+		add_core_of = NSE
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

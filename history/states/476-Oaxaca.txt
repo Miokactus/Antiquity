@@ -7,7 +7,7 @@ state={
 	state_category = rural
 
 	resources={
-		oil=8
+		gold_ingot=8
 	}
 	
 	history={
@@ -19,7 +19,7 @@ state={
 				naval_base = 2
 			}
 		}
-		add_core_of = MEX
+		
 		victory_points = {
 			10889 1
 		}

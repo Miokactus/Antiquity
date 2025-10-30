@@ -1,0 +1,15 @@
+state={
+	id=1078
+	name="STATE_1078"
+	provinces={
+		526 6218 6263 6298 6377 9238 9264 9375 
+	}
+	history = {
+		owner = CAU
+		add_core_of = CAU
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

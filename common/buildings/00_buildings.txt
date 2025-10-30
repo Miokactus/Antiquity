@@ -37,7 +37,7 @@ buildings = {
 		infrastructure = yes
 		value = 1
 
-		show_modifier = yes
+		show_modifier = no
 		allied_build = yes
 
 		infrastructure_construction_effect = yes
@@ -50,10 +50,8 @@ buildings = {
 			}
 		}
 		state_modifiers = {
-			modifiers = {
-				required_garrison_factor = -0.01
-				resistance_target = -0.01
-			}
+			required_garrison_factor = -0.01
+			resistance_target = -0.01
 		}
 	}
 
@@ -88,6 +86,7 @@ buildings = {
 
 	air_base = {
 		show_on_map = 1
+		hide_if_missing_tech = yes
 		base_cost = 1250
 		icon_frame = 5
 		air_base = yes
@@ -266,7 +265,7 @@ buildings = {
 		hide_if_missing_tech = yes
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		local_resources_rubber = 1 # May use local_resources_ + any resource name
+		#local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -304,6 +303,77 @@ buildings = {
 			shares_slots = yes
 		}
 	}
+
+
+
+
+
+	mine = {
+		show_on_map = 0
+		base_cost = 9000
+		local_resources_steel = 1
+		local_resources_gold_ingot = 1
+		icon_frame = 28
+		value = 5
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		per_level_extra_cost = 500
+		state_modifiers = {
+			temporary_state_resource_steel = 1
+			temporary_state_resource_gold_ingot = 2
+		}
+		
+		level_cap = {
+			shares_slots = no
+			state_max = 2
+		}
+	}
+
+	farm = {
+		show_on_map = 0
+		base_cost = 7500
+		local_resources_grain = 1
+		icon_frame = 29
+		value = 5
+		infrastructure_construction_effect = yes	
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				weekly_manpower = 100
+			}
+		}
+		state_modifiers = {
+			temporary_state_resource_grain = 2
+		}
+		
+		level_cap = {
+			shares_slots = no
+			state_max = 2
+		}
+	}
+
+	woodwork = {
+		show_on_map = 0
+		base_cost = 5000
+		local_resources_wood = 1
+		icon_frame = 30
+		value = 5
+		infrastructure_construction_effect = yes	
+		show_modifier = yes
+		state_modifiers = {
+			temporary_state_resource_wood = 2
+		}
+		
+		level_cap = {
+			shares_slots = no
+			state_max = 3
+		}
+	}
+
+
+
+
+
 
 	radar_station = {
 		show_on_map = 1

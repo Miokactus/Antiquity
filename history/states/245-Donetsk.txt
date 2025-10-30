@@ -8,7 +8,7 @@ state = {
 	history =  {
 
 		owner = AAN
-		add_core_of = SOV
+		
 
 		buildings = {
 			infrastructure = 2 #was: 5

@@ -18,7 +18,7 @@ create_country_leader = {
 set_technology = {
 }
 
-convoys = 5
+set_convoys = 5
 
 set_politics = {
 	ruling_party = neutrality

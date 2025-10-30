@@ -4,13 +4,14 @@ state={
 	manpower = 2598400
 	resources={
 		steel=4 # was: 6
-		oil = 2 # was: 4
+		gold_ingot = 2 # was: 4
 	}
 
 	state_category = city
 
 	history={
-		owner = AAN
+		owner = MRA
+		add_core_of = MRA
 		victory_points = {
 			3569 20
 		}
@@ -22,7 +23,7 @@ state={
 			#
 
 		}
-		add_core_of = CZE
+		
 
 		1939.3.14 = {
 			owner = AAN

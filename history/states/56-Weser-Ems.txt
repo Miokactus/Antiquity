@@ -1,54 +1,15 @@
-state = {
-	id = 56
-	name = "STATE_56"
-	manpower = 2058467
-	
-	state_category = city
-
+state={
+	id=56
+	name="STATE_56"
+	provinces={
+		241 309 336 11264 11360 
+	}
 	history = {
-
-		owner = AAN
-		add_core_of = GER
-		add_core_of = HAN
-		add_core_of = PRE
-
-		victory_points = {
-			241 5 # Wilhelmshaven
-		}
-
-		victory_points = {
-			11360 1 # Emden
-		}
-
-		victory_points = {
-			11388 5 # Münster
-		}
-
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			dockyard = 2
-			fuel_silo = 1
-			241 = {
-				naval_base = 8
-			}
-			#
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				#
-				dockyard = 3
-				241 = {
-					# 1 # Wilhelmshaven Naval Dockyards
-				}
-			}
-		}
+		owner = AMV
+		add_core_of = AMV
 	}
-
-	provinces = {
-		241 247 309 336 3234 9281 11233 11264 11360 11388 
-	}
-
-	local_supplies = 14.0 
+	manpower=2058467
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=14.000
 }

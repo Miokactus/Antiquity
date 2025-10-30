@@ -9,7 +9,7 @@ state={
 	history={
 		owner = YAU
 		add_core_of = YAU
-		add_core_of = CIP
+		
 		buildings = {
 			infrastructure = 1
 		}

@@ -3,11 +3,12 @@ state={
 	name="STATE_88"
 	resources={
 		steel=5.000
-		oil=3.000
+		gold_ingot=3.000
 	}
 
 	history={
 		owner = AAN
+		add_core_of = AAN
 		victory_points = {
 			9427 20 
 		}
@@ -24,7 +25,7 @@ state={
 			#
 
 		}
-		add_core_of = POL
+		
 
 	}
 

@@ -3,11 +3,10 @@ state={
 	name="STATE_515"
 	
 	state_category = wasteland
-	impassable = yes
 
 	history={
 		owner = AAN
-		add_core_of = NGR
+		
 
 	}
 

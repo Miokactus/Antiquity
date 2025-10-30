@@ -1,9 +1,9 @@
 resources = {
 
-	oil = {
+	gold_ingot = {
 		icon_frame = 1
 		cic = 0.125
-		convoys = 0.1
+		convoys = 0.5
 	}
 
 	aluminium = {
@@ -12,22 +12,22 @@ resources = {
 		convoys = 0.1
 	}
 
-	rubber = {
+	wood = {
 		icon_frame = 3
 		cic = 0.125
-		convoys = 0.1
+		convoys = 0.3
 	}
 	
 	grain = {
 		icon_frame = 4
 		cic = 0.125
-		convoys = 0.1
+		convoys = 0.15
 	}
 	
 	steel = {
 		icon_frame = 5
 		cic = 0.125
-		convoys = 0.1
+		convoys = 0.3
 	}
 	
 	chromium = {

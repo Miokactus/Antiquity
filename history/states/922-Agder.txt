@@ -14,7 +14,7 @@ state = {
 		}
 		
 		owner = AAN
-		add_core_of = NOR
+		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

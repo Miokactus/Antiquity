@@ -3,14 +3,15 @@ state={
 	name="STATE_661"
 	manpower = 17617
 	
-	state_category = wasteland
+	state_category = rural
 	
 	history={
-		owner = AAN
+		owner = GOM
+		add_core_of = GOM
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = LBA
+		
 	}
 	
 	provinces={

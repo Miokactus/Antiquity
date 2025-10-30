@@ -168,6 +168,16 @@
  BUILDING_STATE_MODIFIER_FORMATTER_HEADING: "$BUILDING|H$ state modifiers:"
  SPECIAL_FACILITY_BUILDING: "$NAME|Y$"
 
+ mine: "Mine"
+ mine_plural: "Mines"
+ mine_desc: ""
+ farm: "Farm"
+ farm_plural: "Farms"
+ farm_desc: ""
+ woodwork: "Woodwork"
+ woodwork_plural: "Woodworks"
+ woodwork_desc: ""
+
 
 
 

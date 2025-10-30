@@ -9,13 +9,13 @@ state = {
 		aluminium = 1
 	}
 	resources = {
-		oil = 1
+		gold_ingot = 1
 	}
 
 	history = {
 
 		owner = AAN
-		add_core_of = CHL
+		
 
 		buildings = {
 			infrastructure = 1

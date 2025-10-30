@@ -11,7 +11,7 @@ state={
 	history={
 		owner = WPC
 		add_core_of = WPC
-		add_core_of = KAZ
+		
 		buildings = {
 			infrastructure = 2
 			#
@@ -20,7 +20,7 @@ state={
 		victory_points = {
 			1591 3 
 		}
-		add_core_of = SOV
+		
 		1939.1.1 = {
 			buildings = {
 				#

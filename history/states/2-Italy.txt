@@ -29,7 +29,7 @@ state = {
             }
 		}
 		add_core_of = ROE
-		add_core_of = PAP
+		
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 1

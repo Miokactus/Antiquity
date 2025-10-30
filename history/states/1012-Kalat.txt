@@ -10,9 +10,9 @@ state={
 	history = {
 		owner = PTH
 		add_core_of = PTH
-		add_core_of = KLT
-		add_core_of = PAK
-		add_core_of = BLC
+		
+		
+		
 
 		buildings = {
 			infrastructure = 1 #was: 5

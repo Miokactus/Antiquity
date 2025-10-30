@@ -8,7 +8,7 @@ state=
 	impassable = yes
 	
 	history= {
-		add_core_of = SUD
+		
 		owner = AAN
 		buildings = {
 			infrastructure = 0

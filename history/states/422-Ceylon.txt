@@ -2,7 +2,7 @@ state={
 	id=422
 	name="STATE_422"
 	resources={
-		rubber=60.000
+		wood=60.000
 	}
 	provinces={
 		1213 4219 7260 10229 10287 12258 

@@ -1,0 +1,15 @@
+state={
+	id=1073
+	name="STATE_1073"
+	provinces={
+		561 571 3299 6540 
+	}
+	history = {
+		owner = NSE
+		add_core_of = NSE
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -6,7 +6,7 @@ state = {
 	state_category = rural
 	
 	resources = {
-		oil = 10 # was: 26 and then 19, but was split into 2 different states
+		gold_ingot = 10 # was: 26 and then 19, but was split into 2 different states
 	}
 
 	history = {
@@ -25,8 +25,8 @@ state = {
 			7624 1 # Derbent
 		}
 
-		add_core_of = SOV
-		add_core_of = DAG
+		
+		
 
 	}
 

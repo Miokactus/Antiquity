@@ -4,7 +4,7 @@ state={
 	name="STATE_447"
 	manpower = 3859239
 	resources={
-		oil=1 # was: 2
+		gold_ingot=1 # was: 2
 		#= 3 #maganese
 		steel = 3 #Maganese
 		grain = 2
@@ -33,7 +33,7 @@ state={
 			}
 		}
 
-		add_core_of = EGY
+		
 	}
 
 	provinces={

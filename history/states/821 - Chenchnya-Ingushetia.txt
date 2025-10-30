@@ -7,7 +7,7 @@ state = {
 	state_category = rural
 	
 	resources={
-		oil = 9 # was split from Dagestan which had 19 oil, and retained 10
+		gold_ingot = 9 # was split from Dagestan which had 19 gold_ingot, and retained 10
 	}
 
 	history = {
@@ -18,8 +18,8 @@ state = {
 		victory_points = {
 			3672 5 
 		}
-		add_core_of = SOV
-		add_core_of = CIN
+		
+		
 	}
 
 	provinces = {

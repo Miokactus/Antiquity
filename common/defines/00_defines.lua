@@ -427,8 +427,8 @@ NCountry = {
 	FUEL_LEASE_CONVOY_RATIO = 0.0005,				-- num convoys needed per fuel land lease
 
 	STARTING_FUEL_RATIO = 0.25,						-- starting fuel ratio compared to max fuel for countries
-	BASE_FUEL_GAIN_PER_OIL = 0.8,						-- base amount of fuel gained hourly per excess oil
-	BASE_FUEL_GAIN = 0.5,							-- base amount of fuel gained hourly, independent of excess oil
+	BASE_FUEL_GAIN_PER_OIL = 0.3,						-- base amount of fuel gained hourly per excess oil
+	BASE_FUEL_GAIN = 0.2,							-- base amount of fuel gained hourly, independent of excess oil
 	BASE_FUEL_CAPACITY = 15000,						-- base amount of fuel capacity
 
 	SCORCHED_EARTH_STATE_COST = 5,					-- pp cost to scorch a state
@@ -1164,12 +1164,12 @@ NMilitary = {
 	ARMY_MAX_FUEL_FLOW_MULT = 2.0,					-- max fuel ratio that an army can get per hour, multiplied by supply situation
 
 	ARMY_FUEL_COST_MULT = 0.5,						-- fuel cost multiplier for all army related stuff
-	ARMY_COMBAT_FUEL_MULT =   1.0,					-- fuel consumption ratio in combat (plus ARMY_MOVEMENT_FUEL_MULT if you are also moving. ie offensive combat)
-	ARMY_TRAINING_FUEL_MULT = 1.0,					-- fuel consumption ratio while training
-	ARMY_MOVEMENT_FUEL_MULT = 1.0,					-- fuel consumption ratio while moving
+	ARMY_COMBAT_FUEL_MULT =   5.0,					-- fuel consumption ratio in combat (plus ARMY_MOVEMENT_FUEL_MULT if you are also moving. ie offensive combat)
+	ARMY_TRAINING_FUEL_MULT = 3.0,					-- fuel consumption ratio while training
+	ARMY_MOVEMENT_FUEL_MULT = 2.0,					-- fuel consumption ratio while moving
 	ARMY_NAVAL_TRANSFER_FUEL_MULT = 0.0,			-- fuel consumption ratio while naval transferring
 	ARMY_STRATEGIC_DEPLOYMENT_FUEL_MULT = 0.0,		-- fuel consumption ratio while doing strategic deployment
-	ARMY_IDLE_FUEL_MULT = 0.25,						-- fuel consumption ratio while just existing
+	ARMY_IDLE_FUEL_MULT = 0.3,						-- fuel consumption ratio while just existing
 	FUEL_EFFICIENCY_RAID_MULTIPLIER = 1.0,			-- convoy raid multiplier for fuel sunk
 
 	FUEL_FLOW_PENALTY_FOR_SUPPLY_CHUNK_EDGE_RATIO = 0.5, -- supply flow that is limited by control of incoming edge provinces will have lesser effect on fuel flow

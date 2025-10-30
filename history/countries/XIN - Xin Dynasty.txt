@@ -1,13 +1,13 @@
 ﻿capital = 744
 
-oob = "NAB_14"
+oob = "XIN_14"
 
 set_research_slots = 2
 
 create_country_leader = {
 	name = "Wang Mang"
 	desc = "WANGMANG_DESC"
-	picture = GFX_leader_PON_pythodoris
+	picture = GFX_leader_XIN_wang_mang
 	expire = "30.5.4"
 	ideology = chinese_reformism
 	traits = {
@@ -18,7 +18,7 @@ create_country_leader = {
 set_technology = {
 }
 
-convoys = 50
+set_convoys = 50
 
 set_politics = {
 	ruling_party = communism
@@ -39,4 +39,5 @@ add_ideas = {
 	civilian_economy 
 	an_empire_of_peoples
 	bad_industry
+	XIN_illegitimate_regime
 }

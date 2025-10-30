@@ -11,8 +11,8 @@ state = {
 	
 	history = {
 
-		owner = AAN
-		add_core_of = CZE
+		owner = MRA
+		add_core_of = MRA
 
 		victory_points = {
 			557 1
@@ -32,7 +32,7 @@ state = {
 		1938.9.30 = {
 			owner = AAN
 			controller = GER
-			add_core_of = GER
+			
 		}
 
 	}

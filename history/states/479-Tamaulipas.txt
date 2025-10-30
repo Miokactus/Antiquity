@@ -6,15 +6,15 @@ state = {
 	state_category = town
 
 	resources = {
-		oil = 9
+		gold_ingot = 9
 		#steel=2 moved to Guerrero
 	}
 	
 	history = {
 
 		owner = AAN
-		add_core_of = MEX
-		add_core_of = RIG
+		
+		
 
 		buildings = {
 			infrastructure = 2

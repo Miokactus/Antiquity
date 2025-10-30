@@ -6,8 +6,8 @@ state = {
 	state_category = town
 	
 	resources = {
-		rubber = 150 # was: 268
-		oil = 12 # was: 24
+		wood = 150 # was: 268
+		gold_ingot = 12 # was: 24
 		aluminium = 28 # was: 50
 	}
 
@@ -15,7 +15,7 @@ state = {
 	history = {
 
 		owner = AAN
-		add_core_of = INS
+		
 
 		victory_points = {
 			4652 1 

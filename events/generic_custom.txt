@@ -1,0 +1,100 @@
+################
+#Generic EVENTS#
+################
+
+add_namespace = generic_custom
+
+#Grain shortage
+country_event = {
+	id = generic_custom.1
+	title = generic_custom.1.t
+	desc = generic_custom.1.d
+	
+	trigger = {
+		always = no
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = no
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = generic_custom.1.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		add_stability = -0.1
+		add_political_power = -30
+		PREV = { set_country_flag = grain_1 }
+	}
+}
+
+
+#Grain shortage 2
+country_event = {
+	id = generic_custom.2
+	title = generic_custom.2.t
+	desc = generic_custom.2.d
+	
+	trigger = {
+		always = no
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = no
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = generic_custom.2.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		add_stability = -0.2
+		add_political_power = -80
+		PREV = { 
+			set_country_flag = grain_2
+			clr_country_flag = grain_1
+		}
+	}
+}
+
+
+#Grain shortage 3
+country_event = {
+	id = generic_custom.3
+	title = generic_custom.3.t
+	desc = generic_custom.3.d
+	
+	trigger = {
+		always = no
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = no
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = generic_custom.3.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		add_stability = -0.3
+		add_political_power = -120
+		PREV = {
+			start_civil_war = {
+    			# Original country's ideology changes to communism
+    			ideology = communism
+    			# Breakaway gets old ideology of ROOT
+    			size = 0.1
+    			states = {
+   				}
+				states_filter = {
+        			is_capital = yes
+    			}
+    			keep_political_leader = no
+    			keep_political_party_members = yes
+			}
+			set_country_flag = revolt_of_the_people
+		}
+		PREV = {
+			clr_country_flag = grain_2
+		}
+	}
+}

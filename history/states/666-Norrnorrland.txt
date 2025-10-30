@@ -13,8 +13,8 @@ state = {
 	history = { 
 
 		owner = AAN
-		add_core_of = SWE
-		add_core_of = SMI
+		
+		
 		
 
 		victory_points = {

@@ -2,7 +2,7 @@ state={
 	id=229
 	name="STATE_229"
 	resources={
-		oil=70 # was: 126.000
+		gold_ingot=70 # was: 126.000
 	}
 
 	history={
@@ -20,8 +20,8 @@ state={
 			fuel_silo = 1
 			#
 		}
-		add_core_of = SOV
-		add_core_of = AZR
+		
+		
 
 	}
 

@@ -1,0 +1,15 @@
+state={
+	id=1076
+	name="STATE_1076"
+	provinces={
+		6555 6581 9545 9557 11529 
+	}
+	history = {
+		owner = ERR
+		add_core_of = ERR
+	}
+	manpower=15000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

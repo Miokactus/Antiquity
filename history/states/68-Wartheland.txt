@@ -11,8 +11,8 @@ state = {
 	history = {
 
 		owner = AAN
-		add_core_of = GER
-		add_core_of = PRE
+		
+		
 
 		victory_points = {
 			3473 1 # Küstrin

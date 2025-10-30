@@ -8,7 +8,7 @@ state={
 	
 	resources={
 		steel=20 # was: 40
-		oil=5 # was: 10
+		gold_ingot=5 # was: 10
 		aluminium=8 # was: 16
 	}
 
@@ -19,7 +19,7 @@ state={
 			industrial_complex = 1
 			#
 		}
-		add_core_of = USA
+		
 		victory_points = {
 			853 3 
 		}

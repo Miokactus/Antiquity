@@ -18,7 +18,7 @@ create_country_leader = {
 set_technology = {
 }
 
-convoys = 10
+set_convoys = 10
 
 
 set_politics = {

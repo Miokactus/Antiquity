@@ -12,7 +12,7 @@ state = {
 		
 		owner = ROE
 		add_core_of = ROE
-		add_core_of = EGY
+		
 
 		buildings = {
 			infrastructure = 2

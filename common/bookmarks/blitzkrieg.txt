@@ -9,6 +9,9 @@ bookmarks = {
 			history = ROE_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
+				poor_industry
+				one_party_monopoly
+				an_empire_of_peoples
 			}
 			focuses = {
 			}
@@ -54,6 +57,7 @@ bookmarks = {
 			history = XIN_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
+				XIN_illegitimate_regime
 			}
 			focuses = {
 			}

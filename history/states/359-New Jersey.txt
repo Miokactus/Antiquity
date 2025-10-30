@@ -14,7 +14,7 @@ state={
 		buildings = {
 
 		}
-		add_core_of = USA
+		
 	}
 
 	provinces={
