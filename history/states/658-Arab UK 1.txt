@@ -1,35 +1,18 @@
-state = {
-	id = 658
-	name = "STATE_658"
-	manpower = 170200
-	resources = {
-		gold_ingot = 5 # was: 6
+state={
+	id=658
+	name="STATE_658"
+	resources={
+		gold_ingot=5.000
 	}
-	
-	state_category = pastoral
-
-
+	provinces={
+		2048 4932 7960 8108 10904 
+	}
 	history = {
-		
-		owner = AAN
-		
-
-		victory_points = {
-			7960 1 # Abu Dhabi
-		}
-
-		buildings = {
-			infrastructure = 1
-			7960 = {
-				naval_base = 3
-			}
-		}
-
+		owner = MZN
+		add_core_of = MZN
 	}
-
-	provinces = {
-		2048 7960 8108 10904 
-	}
-
-	local_supplies = 4.0 
+	manpower=170200
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=4.000
 }

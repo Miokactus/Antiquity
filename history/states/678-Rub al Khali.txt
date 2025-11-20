@@ -1,19 +1,11 @@
 state={
 	id=678
 	name="STATE_678"
-
-	history={
-		owner = AAN
-		buildings = {
-			infrastructure = 0
-
-		}
-		
-
-	}
-
 	provinces={
-		4932 5081 8118 12740 
+		5081 8118 12740 
+	}
+	history = {
+		owner = AAN
 	}
 	manpower=42
 	buildings_max_level_factor=1.000

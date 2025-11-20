@@ -1,0 +1,37 @@
+capital = 832
+
+oob = "MES_14"
+ 
+set_research_slots = 1
+
+create_country_leader = {
+    name = "City State's Government"
+    desc = "CITY_COUNCIL_DESC"
+    picture = GFX_leader_generic_mesoamerica2
+    expire = "88.5.4"
+    ideology = oligarchism_comm
+    traits = {
+    }
+}
+
+set_technology = {
+}
+
+set_politics = {
+    ruling_party = communism
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    fascism = 10
+    communism = 70
+    neutrality = 10
+}
+
+add_ideas = {
+    limited_exports
+    limited_conscription
+    civilian_economy
+}

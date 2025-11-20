@@ -1,0 +1,38 @@
+capital = 832
+
+oob = "AMR_14"
+ 
+set_research_slots = 1
+
+create_country_leader = {
+    name = "Proto-Chiefdom"
+    desc = "NATIVES_NORTH_DESC"
+    picture = GFX_leader_generic_hopewell1
+    expire = "88.5.4"
+    ideology = tribalism
+    traits = {
+    }
+}
+
+set_technology = {
+}
+
+set_politics = {
+    ruling_party = neutrality
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 10
+    fascism = 10
+    communism = 0
+    neutrality = 80
+}
+
+add_ideas = {
+    limited_exports
+    limited_conscription
+    civilian_economy
+    AME_tribal_societies
+}

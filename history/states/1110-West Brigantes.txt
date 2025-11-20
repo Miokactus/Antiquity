@@ -1,0 +1,15 @@
+state={
+	id=1110
+	name="STATE_1110"
+	provinces={
+		9310 11237 
+	}
+	history = {
+		owner = BIG
+		add_core_of = BIG
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

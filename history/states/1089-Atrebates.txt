@@ -1,0 +1,15 @@
+state={
+	id=1089
+	name="STATE_1089"
+	provinces={
+		6103 9239 11333 11471 
+	}
+	history={
+		owner = ATB
+		add_core_of = ATB
+	}
+	manpower=25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

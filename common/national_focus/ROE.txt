@@ -12,15 +12,14 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1500 }
+	continuous_focus_position = { x = 50 y = 3500 }
 	
-
-
+	
 	#Death of Augustus
 	focus = {
 		id = ROE_augustus_death
 		icon = GFX_goal_roman_augustus_death
-		x = 10
+		x = 15
 		y = 2
 		cost = 2
 		available = { 
@@ -61,7 +60,7 @@ focus_tree = {
 		id = ROE_follow_augustus_will
 		icon = GFX_goal_roman_tiberius_ok
 		relative_position_id = ROE_augustus_death
-		x = 6
+		x = 7
 		y = 2
 		cost = 4
 		available = { 
@@ -82,7 +81,7 @@ focus_tree = {
 		id = ROE_reject_the_will
 		icon = GFX_goal_roman_tiberius_nope
 		relative_position_id = ROE_augustus_death
-		x = -6
+		x = -7
 		y = 2
 		cost = 4
 		available = { 
@@ -97,7 +96,416 @@ focus_tree = {
 		}
 	}
 
+	#A New Dynasty
+	focus = {
+		id = ROE_a_new_dynasty
+		icon = GFX_SOV_romanov_reconstruction_ccp_2d_sov_compatibility
+		relative_position_id = ROE_reject_the_will
+		x = 4
+		y = 1
+		cost = 4
+		available = { 
+			has_completed_focus = ROE_prevent_a_coup
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_reject_the_will }
+		mutually_exclusive = { focus = ROE_a_different_way }
+		completion_reward = {
+			
+		}
+	}
+
+	#Prevent a Coup
+	focus = {
+		id = ROE_prevent_a_coup
+		icon = GFX_focus_BRA_end_the_state_of_emergency
+		relative_position_id = ROE_reject_the_will
+		x = 0
+		y = 2
+		cost = 3
+		available = { 
+			NOT = { has_country_flag = roman_military_coupdetat }
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_reject_the_will }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+### NO MORE EMPERORS PATH ###
+#############################
+
+	#Put an End to the Emperors
+	focus = {
+		id = ROE_put_an_end_to_the_emperors
+		icon = GFX_focus_AUS_disregard_the_treaties
+		relative_position_id = ROE_reject_the_will
+		x = -4
+		y = 1
+		cost = 4
+		available = { 
+			has_completed_focus = ROE_prevent_a_coup
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_reject_the_will }
+		mutually_exclusive = { focus = ROE_a_new_dynasty }
+		completion_reward = {
+			
+		}
+	}
+
+	#Convene the Senate
+	focus = {
+		id = ROE_convene_the_senate
+		icon = GFX_SOV_the_faithful_servant_of_lenin_ccp_2d_sov_compatibility
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 0
+		y = 1
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_put_an_end_to_the_emperors }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#The Senate takes control!
+	focus = {
+		id = ROE_the_senate_takes_control
+		icon = GFX_SOV_great_commander_ccp_2d_sov_compatibility
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 2
+		y = 2
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_convene_the_senate }
+		mutually_exclusive = { focus = ROE_the_senate_is_dissolved }
+		completion_reward = {
+			
+		}
+	}
+
+	#Solidify Control
+	focus = {
+		id = ROE_solidify_control
+		icon = GFX_focus_PER_communist_afghanistan_intervention
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 2
+		y = 3
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_senate_takes_control }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#Appease the Generals
+	focus = {
+		id = ROE_appease_the_generals
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 3
+		y = 4
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_senate_takes_control }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#Grant Gifts to the Populations
+	focus = {
+		id = ROE_grant_gifts
+		icon = GFX_focus_SWE_refuge_from_war
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 1
+		y = 4
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_senate_takes_control }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#Proclaim the Republic
+	focus = {
+		id = ROE_proclaim_the_republic
+		icon = GFX_goal_roman_republic
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 2
+		y = 5
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_solidify_control }
+		prerequisite = { focus = ROE_appease_the_generals }
+		prerequisite = { focus = ROE_grant_gifts }
+		mutually_exclusive = { }
+		completion_reward = {
+			ROE = { country_event = rome_event.3 }
+			set_cosmetic_tag = romanrepublicback
+		}
+	}
 
 
+
+
+
+
+
+
+	#The Senate is dissolved!
+	focus = {
+		id = ROE_the_senate_is_dissolved
+		icon = GFX_SOV_policy_of_collective_security_ccp_2d_sov_compatibility
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -2
+		y = 2
+		cost = 4
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_convene_the_senate }
+		mutually_exclusive = { focus = ROE_the_senate_takes_control }
+		completion_reward = {
+			
+		}
+	}
+
+
+### ROMAN EMPIRE NEW EMPEROR PATH ###
+#####################################
+
+## RISE OF A ROMAN EMPEROR ##
+
+	#Rise of A Roman Emperor
+	focus = {
+		id = ROE_the_rise_of_a_roman_emperor
+		icon = GFX_focus_AUS_lawmaking_leniency
+		relative_position_id = ROE_a_new_dynasty
+		x = 2
+		y = 2
+		cost = 4
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_a_new_dynasty }
+		mutually_exclusive = { focus = ROE_the_rise_of_a_foreign_emperor }
+		completion_reward = {
+			
+		}
+	}
+
+## RISE OF A FOREIGN EMPEROR ##
+
+	#Rise of A Foreign Emperor
+	focus = {
+		id = ROE_the_rise_of_a_foreign_emperor
+		icon = GFX_focus_ARG_defense_and_democracy
+		relative_position_id = ROE_a_new_dynasty
+		x = -2
+		y = 2
+		cost = 4
+		available = { 
+		
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_a_new_dynasty }
+		mutually_exclusive = { focus = ROE_the_rise_of_a_roman_emperor }
+		completion_reward = {
+			complete_national_focus = ROE_the_choice
+		}
+	}
+
+	#The Choice
+	focus = {
+		id = ROE_the_choice
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		relative_position_id = ROE_augustus_death
+		x = 17
+		y = 0
+		cost = 4
+		available = { 
+			has_completed_focus = ROE_the_rise_of_a_foreign_emperor
+		}
+		allow_branch = { }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#A Jewish Emperor
+	focus = {
+		id = ROE_a_jewish_emperor
+		icon = GFX_focus_ARG_defense_and_democracy
+		relative_position_id = ROE_the_choice
+		x = 3
+		y = 1
+		cost = 4
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_choice }
+		mutually_exclusive = { focus = ROE_push_east focus = ROE_a_gallo_emperor }
+		completion_reward = {
+			
+		}
+	}
+
+	#A Gallo-roman Emperor
+	focus = {
+		id = ROE_a_gallo_emperor
+		icon = GFX_focus_ARG_defense_and_democracy
+		relative_position_id = ROE_the_choice
+		x = -3
+		y = 1
+		cost = 4
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_choice }
+		mutually_exclusive = { focus = ROE_push_east focus = ROE_a_jewish_emperor }
+		completion_reward = {
+			
+		}
+	}
+
+	#Push East
+	focus = {
+		id = ROE_push_east
+		icon = GFX_focus_ARG_defense_and_democracy
+		relative_position_id = ROE_the_choice
+		x = 0
+		y = 1
+		cost = 4
+		available = { 
+			has_opinion = {
+    			target = XIN
+    			value > 80
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_choice }
+		mutually_exclusive = { focus = ROE_a_gallo_emperor focus = ROE_a_jewish_emperor }
+		completion_reward = {
+			
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	## THE COUP
+
+	#The Choice
+	focus = {
+		id = ROE_the_coup
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		relative_position_id = ROE_augustus_death
+		x = -7
+		y = 13
+		cost = 4
+		available = { 
+			has_country_flag = roman_military_coupdetat
+		}
+		allow_branch = { }
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
 
 }

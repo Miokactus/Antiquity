@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = "augustus_desc"
 			expire = "14.8.19"
-			ideology = despotism
+			ideology = despotism_comm
 			traits = {
 				ROE_first_roman_emperor
 			}
@@ -27,14 +27,14 @@ characters = {
 		country_leader = {
 			desc = "tiberius_desc"
 			expire = "37.3.16"
-			ideology = despotism
+			ideology = despotism_comm
 			traits = {
 				
 			}
 		}
 	}
 
-	roman_senate_oligarchism = {
+	roman_senate_oligarchism_comm = {
 		name = "Senate of Rome"
 		portraits = {
             	civilian = {
@@ -44,7 +44,7 @@ characters = {
 		country_leader = {
 			desc = "senate_roman"
 			expire = "50.8.19"
-			ideology = oligarchism
+			ideology = oligarchism_comm
 			traits = {
 			}
 		}
@@ -78,6 +78,39 @@ characters = {
 			desc = "comitia_roman_reformist"
 			expire = "50.8.19"
 			ideology = popular_assemblies
+			traits = {
+			}
+		}
+	}
+
+
+	roman_army = {
+		name = "Roman General Staff"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_ROE_comitia"
+            	}
+        	}
+		country_leader = {
+			desc = "roman_army"
+			expire = "150.8.19"
+			ideology = military_junta
+			traits = {
+			}
+		}
+	}
+
+	decentralised_tribes = {
+		name = "Decentralised Tribes"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_generic_german2"
+            	}
+        	}
+		country_leader = {
+			desc = "tribes_desc"
+			expire = "150.8.19"
+			ideology = tribalism
 			traits = {
 			}
 		}

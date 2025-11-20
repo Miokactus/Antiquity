@@ -6,6 +6,7 @@ state={
 	history={
 		owner = NAB
 		add_core_of = NAB
+		add_core_of = EGI
 		buildings = {
 			infrastructure = 1
 

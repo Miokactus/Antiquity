@@ -12,7 +12,8 @@ state={
 		victory_points = {
 			3296 1 #Ventspils
 		}
-		owner = AAN
+		owner = AES
+		add_core_of = AES
 		buildings = {
 			infrastructure = 2 #was: 5
 			9262 = {

@@ -10,7 +10,8 @@ state=
 	state_category = rural
 	
 	history={
-		owner = AAN
+		owner = AKM
+		add_core_of = AKM
 		
 		victory_points = { #Massaua
 			12766 1

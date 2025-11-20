@@ -1,0 +1,15 @@
+state={
+	id=1097
+	name="STATE_1097"
+	provinces={
+		284 3373 
+	}
+	history = {
+		owner = EPD
+		add_core_of = EPD
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

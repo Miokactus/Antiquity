@@ -1,0 +1,15 @@
+state={
+	id=1111
+	name="STATE_1111"
+	provinces={
+		7394 11267 
+	}
+	history = {
+		owner = UDA
+		add_core_of = UDA
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

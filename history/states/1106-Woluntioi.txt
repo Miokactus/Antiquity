@@ -1,0 +1,15 @@
+state={
+	id=1106
+	name="STATE_1106"
+	provinces={
+		3242 11303 
+	}
+	history = {
+		owner = WLT
+		add_core_of = WLT
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

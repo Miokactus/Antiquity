@@ -8,7 +8,8 @@ state = {
 
 	history = {
 
-		owner = AAN
+		owner = HKM
+		add_core_of = HKM
 		
 		
 

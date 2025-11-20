@@ -1,0 +1,16 @@
+state={
+	id=1182
+	name="STATE_1182"
+	provinces={
+		4976 12821 
+	}
+	history = {
+		owner = QTB
+		add_core_of = QTB
+		victory_points = { 4976 2 }
+	}
+	manpower=24000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

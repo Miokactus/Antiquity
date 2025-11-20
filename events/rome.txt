@@ -3,6 +3,7 @@
 ############################
 
 add_namespace = rome_event
+add_namespace = roman_news
 
 #Augustus' Death!
 country_event = {
@@ -34,5 +35,91 @@ country_event = {
 		name = rome_event.1.b
 		ai_chance = { factor = 1 }
 		set_global_flag = AUG_DEATH
+	}
+}
+
+
+#Military Coup d'Etat
+country_event = {
+	id = rome_event.2
+	title = rome_event.2.t
+	desc = rome_event.2.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.2.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		set_country_flag = roman_military_coupdetat
+		remove_ideas = pax_romana
+		set_politics = {
+    		ruling_party = fascism
+    		elections_allowed = no
+    		election_frequency = 48
+		}
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.5
+		}
+	}
+}
+
+#The Senate Restores the Republic!
+country_event = {
+	id = rome_event.3
+	title = rome_event.3.t
+	desc = rome_event.3.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.3.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		set_country_flag = roman_military_coupdetat
+		remove_ideas = pax_romana
+		set_politics = {
+    		ruling_party = fascism
+    		elections_allowed = no
+    		election_frequency = 48
+		}
+		add_popularity = {
+    		ideology = fascism
+    		popularity = 0.5
+		}
+	}
+}
+
+
+#Military Coup d'Etat in Rome [news]
+news_event = {
+	id = roman_news.1
+	title = roman_news.1.t
+	desc = roman_news.1.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = {
+		name = roman_news.1.a
+		ai_chance = { factor = 20 }
 	}
 }

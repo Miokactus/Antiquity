@@ -13,7 +13,8 @@ state={
 		victory_points = {
 			9566 1
 		}
-		owner = AAN
+		owner = SAR
+		add_core_of = SAR
 		buildings = {
 			infrastructure = 2 #was: 5
 		}

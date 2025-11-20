@@ -5,8 +5,10 @@ state={
 		4562 4603 11976 
 	}
 	history = {
-		#add_core_of =
-		owner = AAN
+		add_core_of = NAB
+		owner = NAB
+
+		add_claim_by = EGI
 	}
 	manpower=932000
 	buildings_max_level_factor=1.000

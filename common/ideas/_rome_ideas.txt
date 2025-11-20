@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		
+	## GENERIC ##
+		
+		pax_romana = {
+			name = "Pax Romana"
+			allowed_civil_war = { always = yes }
+			picture = ITA_new_roman_empire_ns
+			modifier = {
+				stability_factor = 0.2
+				political_power_cost = -0.5
+				communism_drift = 0.01
+			}
+		}
+
+	}
+}

@@ -4,7 +4,8 @@ state={
 	name="STATE_810"
 
 	history={
-		owner = AAN
+		owner = FNI
+		add_core_of = FNI
 		victory_points = {
 			6222 3 #Jelgava
 		}

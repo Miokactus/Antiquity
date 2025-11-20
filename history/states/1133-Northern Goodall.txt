@@ -1,0 +1,15 @@
+state={
+	id=1133
+	name="STATE_1133"
+	provinces={
+		695 6782 9684 11641 11685 11714 
+	}
+	history = {
+		owner = GDF
+		add_core_of = GDF
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

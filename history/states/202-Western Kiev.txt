@@ -11,7 +11,8 @@ state={
 	state_category = city
 
 	history={
-		owner = AAN
+		owner = TSA
+		add_core_of = TSA
 		victory_points = {
 			525 25
 		}

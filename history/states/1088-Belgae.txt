@@ -1,0 +1,15 @@
+state={
+	id=1088
+	name="STATE_1088"
+	provinces={
+		6489 9458 
+	}
+	history={
+		owner = BGA
+		add_core_of = BGA
+	}
+	manpower=25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

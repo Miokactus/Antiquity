@@ -1,40 +1,18 @@
-
 state={
 	id=129
 	name="STATE_129"
-	manpower = 2212021
-	
-	state_category = city
-	
 	resources={
-		steel=11 # was: 20
+		steel=11.000
 	}
-
-	history={
-		owner = AAN
-		victory_points = {
-			6237 10 #Nottingham
-		}
-		victory_points = {
-			11279 3 #Leicester
-		}
-		buildings = {
-			industrial_complex = 1
-			industrial_complex = 1
-			#
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				#
-				industrial_complex = 1
-			}
-		}
-	}
-
 	provinces={
-		364 3353 6237 9250 9268 9322 11279 
+		364 3353 6237 9250 9322 11279 
 	}
-
-	local_supplies=0.0 
+	history={
+		owner = CRL
+		add_core_of = CRL
+	}
+	manpower=2212021
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

@@ -9,19 +9,23 @@ create_country_leader = {
 	desc = "WANGMANG_DESC"
 	picture = GFX_leader_generic_building_1
 	expire = "30.5.4"
-	ideology = despotism
+	ideology = despotism_comm
 	traits = {
 	}
 }
 
 # Starting tech
 set_technology = {
+	infantry_weapons
+	basic_train
+	early_destroyer
+	transport
 }
 
 set_convoys = 15
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -29,8 +33,8 @@ set_politics = {
 set_popularities = {
 	democratic = 20
 	fascism = 10
-	communism = 0
-	neutrality = 70
+	communism = 70
+	neutrality = 0
 }
  
 add_ideas = limited_exports

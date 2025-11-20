@@ -1,30 +1,15 @@
-
 state={
 	id=121
-	name="STATE_121" # Lothian
-	manpower = 1431624
-	
-	state_category = city
-
-	history={
-		
-		owner = AAN
-		victory_points = { 9392 10 }
-		victory_points = { 6300 1 }
-		buildings = {
-			industrial_complex = 1
-			dockyard = 1
-			#
-			6300 = {
-				naval_base = 5
-			}
-		}
-		
-	}
-
+	name="STATE_121"
 	provinces={
-		159 6300 9314 9383 9392 11378 
+		9314 11299 11378 
 	}
-
-	local_supplies=0.0 
+	history = {
+		owner = ODN
+		add_core_of = ODN
+	}
+	manpower=1431624
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

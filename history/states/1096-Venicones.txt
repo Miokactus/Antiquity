@@ -1,0 +1,15 @@
+state={
+	id=1096
+	name="STATE_1096"
+	provinces={
+		159 6300 
+	}
+	history = {
+		owner = VIE
+		add_core_of = VIE
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

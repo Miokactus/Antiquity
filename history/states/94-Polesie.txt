@@ -3,7 +3,8 @@ state={
 	name="STATE_94"
 
 	history={
-		owner = AAN
+		owner = TSA
+		add_core_of = TSA
 		buildings = {
 			infrastructure = 2
 

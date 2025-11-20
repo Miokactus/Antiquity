@@ -1,46 +1,18 @@
-
 state={
 	id=130
 	name="STATE_130"
-	manpower = 4762495
-	
-	state_category = metropolis
-	
 	resources={
-		steel=71 # was: 120
+		steel=71.000
 	}
-
-	history={
-		owner = AAN
-		victory_points = {
-			9379 10 
-		}
-		victory_points = {
-			11297 5 
-		}
-		victory_points = {
-			9315 15
-		}
-		buildings = {
-			industrial_complex = 1
-			#
-			#0
-			11297 = {
-				naval_base = 5
-			}
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				#
-				#
-			}
-		}
-	}
-
 	provinces={
-		6268 9269 9315 9332 9379 9397 11297 11317 11382 
+		9269 9332 11297 11317 
 	}
-
-	local_supplies=0.0 
+	manpower=4762495
+	history={
+		owner = PRI
+		add_core_of = PRI
+	}
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
 }

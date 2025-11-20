@@ -7,6 +7,8 @@ state={
 	history = {
 		owner = JUD
 		add_core_of = JUD
+		
+		add_claim_by = EGI
 		victory_points = {
 			1086 15
 		}

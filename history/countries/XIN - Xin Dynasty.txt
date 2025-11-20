@@ -4,18 +4,15 @@ oob = "XIN_14"
 
 set_research_slots = 2
 
-create_country_leader = {
-	name = "Wang Mang"
-	desc = "WANGMANG_DESC"
-	picture = GFX_leader_XIN_wang_mang
-	expire = "30.5.4"
-	ideology = chinese_reformism
-	traits = {
-	}
-}
+recruit_character = wang_mang
 
 # Starting tech
 set_technology = {
+	infantry_weapons = 1
+	support_weapons = 1
+	basic_train = 1
+	early_destroyer = 1
+	transport = 1
 }
 
 set_convoys = 50

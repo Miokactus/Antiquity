@@ -1,0 +1,15 @@
+state={
+	id=1116
+	name="STATE_1116"
+	provinces={
+		10886 
+	}
+	history = {
+		owner = MMY
+		add_core_of = MMY
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

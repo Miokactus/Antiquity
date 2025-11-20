@@ -15,6 +15,11 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/roman_tiberius_nope.dds"	
 	}
 
+	SpriteType = {
+	name = "GFX_goal_roman_republic"
+	texturefile = "gfx/interface/goals/roman_republic.dds"	
+	}
+
 
 	################
 	##PLACEHOLDER###

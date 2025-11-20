@@ -5,7 +5,8 @@ state = {
 
 	history = {
 
-		owner = AAN
+		owner = MAA
+		add_core_of = MAA
 		
 
 		victory_points = {

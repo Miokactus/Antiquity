@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		owner = AAN
+		owner = FNI
+		add_core_of = FNI
 		victory_points = {
 			11349 1
 		}

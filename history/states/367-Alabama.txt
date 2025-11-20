@@ -1,38 +1,15 @@
-
 state={
 	id=367
 	name="STATE_367"
-	manpower = 2646247
-	
-	state_category = city
-
-	history={
-		owner = AAN
-		buildings = {
-			infrastructure = 2 #was: 5
-			#
-			7480 = {
-				naval_base = 3
-			}
-		}
-		
-		victory_points = {
-			7480 1 
-		}
-		victory_points = {
-			12735 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				#
-			}
-		}
-
-	}
-
 	provinces={
-		492 860 1587 4594 4622 4756 5059 7422 7480 7640 10192 10520 11509 11942 12735 12803 
+		860 4594 11509 
 	}
-
-	local_supplies=0.0 
+	history = {
+		owner = SCC
+		add_core_of = SCC
+	}
+	manpower=2646247
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

@@ -6,19 +6,27 @@ set_research_slots = 2
 
 recruit_character = augustus_emperor
 recruit_character = tiberius_emperor
-recruit_character = roman_senate_oligarchism
+recruit_character = roman_senate_oligarchism_comm
 recruit_character = roman_senate_democratic
 recruit_character = comitia_of_rome
+recruit_character = roman_army
+recruit_character = decentralised_tribes
 
 # Starting tech
 set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	support_weapons = 1
+	basic_train = 1
+	early_destroyer = 1
+	transport = 1
 }
 
 set_convoys = 35
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -26,8 +34,8 @@ set_politics = {
 set_popularities = {
 	democratic = 20
 	fascism = 10
-	communism = 0
-	neutrality = 70
+	communism = 70
+	neutrality = 0
 }
  
 add_ideas = {
@@ -37,4 +45,5 @@ add_ideas = {
 	poor_industry
 	one_party_monopoly
 	an_empire_of_peoples
+	pax_romana
 }

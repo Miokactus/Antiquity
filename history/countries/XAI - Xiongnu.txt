@@ -33,9 +33,9 @@ set_popularities = {
 	neutrality = 70
 }
  
-add_ideas = limited_exports
-add_ideas = limited_conscription
 add_ideas = {
+	limited_exports
+	limited_conscription
 	civilian_economy
 	nomadic_society
 }

@@ -6,7 +6,8 @@ state = {
 
 	history = {
 
-		owner = AAN
+		owner = SAR
+		add_core_of = SAR
 		
 		
 

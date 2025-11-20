@@ -1,0 +1,16 @@
+state={
+	id=1123
+	name="STATE_1123"
+	provinces={
+		8089 
+	}
+	history = {
+		owner = AAN
+		
+		victory_points = { 8089 3 }
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

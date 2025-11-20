@@ -1,0 +1,15 @@
+state={
+	id=1167
+	name="STATE_1167"
+	provinces={
+		4464 7524 7668 
+	}
+	history = {
+		owner = MCK
+		add_core_of = MCK
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

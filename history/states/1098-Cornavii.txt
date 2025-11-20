@@ -1,0 +1,15 @@
+state={
+	id=1098
+	name="STATE_1098"
+	provinces={
+		131 11064 13270 
+	}
+	history = {
+		owner = CRV
+		add_core_of = CRV
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

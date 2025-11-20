@@ -3,10 +3,10 @@ characters = {
 	anarchy = {
 		name = anarchy
 		portraits = {
-            	civilian = {
-                	large = "GFX_leader_anarchy"
-            		}
-        	}
+            civilian = {
+                large = "GFX_leader_anarchy"
+            }
+        }
 		country_leader = {
 			desc = "anarchy_desc"
 			expire = "1950.1.1"
@@ -16,4 +16,72 @@ characters = {
 			}
 		}
 	}
+
+	anarchy_a = {
+		name = anarchy
+		portraits = {
+            civilian = {
+                large = "GFX_leader_anarchy"
+            }
+        }
+		country_leader = {
+			desc = "anarchy_desc"
+			expire = "1950.1.1"
+			ideology = tribalism
+			traits = {
+				
+			}
+		}
+	}
+
+	anarchy_b = {
+		name = anarchy
+		portraits = {
+            civilian = {
+                large = "GFX_leader_anarchy"
+            }
+        }
+		country_leader = {
+			desc = "anarchy_desc"
+			expire = "1950.1.1"
+			ideology = tribalism
+			traits = {
+				
+			}
+		}
+	}
+
+	artabanus_ii = {
+		name = "Artabanus II"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_generic_building_2"
+            }
+        }
+		country_leader = {
+			desc = "ARTABANUS_DESC"
+			expire = "80.5.4"
+			ideology = despotism_comm
+			traits = {
+				
+			}
+		}
+	}
+
+	wang_mang = {
+		name = "Wang Mang"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_wang_mang"
+            }
+        }
+		country_leader = {
+			desc = "WANGMANG_DESC"
+			expire = "50.5.4"
+			ideology = chinese_reformism
+			traits = {
+			}
+		}
+	}
+
 }

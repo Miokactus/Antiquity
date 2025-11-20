@@ -3,7 +3,8 @@ state={
 	name="STATE_407"
 
 	history={
-		owner = AAN
+		owner = SAR
+		add_core_of = SAR
 		
 		buildings = {
 			infrastructure = 2

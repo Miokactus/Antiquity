@@ -7,9 +7,8 @@ state = {
 	
 	history = {
 
-		owner = AAN
-		
-		add_claim_by = PRE
+		owner = AES
+		add_core_of = AES
 
 		victory_points = {
 			3288 3 # Klaipeda/Memel

@@ -1,0 +1,15 @@
+state={
+	id=1115
+	name="STATE_1115"
+	provinces={
+		11238 11257 11371 
+	}
+	history = {
+		owner = ERD
+		add_core_of = ERD
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

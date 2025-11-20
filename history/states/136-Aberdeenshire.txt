@@ -12,7 +12,8 @@ state={
 
 	history={
 		
-		owner = AAN
+		owner = TAX
+		add_core_of = TAX
 		victory_points = {
 			200 5 #Aberdeen
 		}

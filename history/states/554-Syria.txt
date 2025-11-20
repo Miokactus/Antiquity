@@ -7,6 +7,8 @@ state={
 	history = {
 		owner = NAB
 		add_core_of = NAB
+
+		add_claim_by = EGI
 	}
 	manpower=547797
 	buildings_max_level_factor=1.000

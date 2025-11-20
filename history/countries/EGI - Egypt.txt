@@ -1,0 +1,37 @@
+capital = 832
+
+oob = "ARA_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+    name = "Regent Council of Egypt"
+    desc = "MONARCH_DESC"
+    picture = GFX_leader_monarchy_generic1
+    expire = "88.5.4"
+    ideology = monarchism
+    traits = {
+    }
+}
+
+set_technology = {
+}
+
+set_politics = {
+    ruling_party = communism
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 10
+    communism = 80
+    neutrality = 10
+}
+
+add_ideas = {
+    limited_exports
+    limited_conscription
+    civilian_economy
+}

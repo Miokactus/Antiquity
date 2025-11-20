@@ -1,0 +1,16 @@
+state={
+	id=1174
+	name="STATE_1174"
+	provinces={
+		5736 
+	}
+	history = {
+		owner = LOL
+		add_core_of = LOL
+		victory_points = { 5736 5 }
+	}
+	manpower=24000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,15 @@
+state={
+	id=1148
+	name="STATE_1148"
+	provinces={
+		1881 6696 
+	}
+	history = {
+		owner = COC
+		add_core_of = COC
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

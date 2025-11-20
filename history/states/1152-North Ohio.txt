@@ -1,0 +1,15 @@
+state={
+	id=1152
+	name="STATE_1152"
+	provinces={
+		882 3687 6890 13154
+	}
+	history = {
+		owner = FAA
+		
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

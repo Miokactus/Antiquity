@@ -8,7 +8,8 @@ state={
 		victory_points = {
 			3230 5
 		}
-		owner = AAN
+		owner = VDN
+		add_core_of = VDN
 		buildings = {
 			infrastructure = 2
 		}

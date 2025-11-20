@@ -1,0 +1,29 @@
+﻿l_english:
+ rome_event.2.t: "Military coup d'Etat in Rome!"
+ rome_event.2.d: "Reports coming from the Imperial Capital are worrying as a legio announced having restored order in the city after manifestations began."
+ rome_event.2.a: "Pro Roma!"
+
+ rome_event.3.t: "The Senates Restores the Republic!"
+ rome_event.3.d: ""
+ rome_event.3.a: "For the Republic!"
+
+ roman_news.1.t: "Military coup d'Etat in Rome!"
+ roman_news.1.d: "Reports coming from the Imperial Capital are worrying as a legio announced having restored order in the city after manifestations began."
+ roman_news.1.a: "The Roman Order Crumbles."
+
+
+
+ ## DECISIONS
+
+ roman_military_coup: "Military Coup"
+
+
+ ## COUNTRY FLAGS
+
+ roman_military_coupdetat: "The Military has coup'ed the State"
+
+ ## COUNTRY COMESTIC TAGS
+
+ romanrepublicback: "Roman Republic"
+ romanrepublicback_DEF: "the Restored Roman Republic"
+ romanrepublicback_ADJ: "Roman"

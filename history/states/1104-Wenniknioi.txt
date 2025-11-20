@@ -1,0 +1,15 @@
+state={
+	id=1104
+	name="STATE_1104"
+	provinces={
+		337 
+	}
+	history = {
+		owner = WNO
+		add_core_of = WNO
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

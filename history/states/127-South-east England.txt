@@ -1,54 +1,15 @@
-state = {
-	id = 127
-	name = "STATE_127" # Sussex
-	manpower = 3193383
-	state_category = large_city
-
-	history = {
-
-		owner = AAN
-		
-
-		victory_points = { 
-			3501 20 # Dover
-		}
-		victory_points = { 
-			9458 15 # Portsmouth
-		}
-
-		buildings = {
-			arms_factory = 1
-			industrial_complex = 1
-			dockyard = 2
-			fuel_silo = 1
-			anti_air_building = 2
-			radar_station = 1
-			#0
-			3501 = {
-				naval_base = 6
-				coastal_bunker = 3
-			}
-			9458 = {
-				naval_base = 10
-			}
-			13070 = {
-				# HM Dockyard, Chatham
-				# 1
-			}
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				dockyard = 3
-				industrial_complex = 1
-			}
-		}
-
+state={
+	id=127
+	name="STATE_127"
+	provinces={
+		507 11446 13070 
 	}
-
-	provinces = {
-		507 3501 6489 9458 11446 13070 
+	history={
+		owner = RGN
+		add_core_of = RGN
 	}
-
-	local_supplies = 16.0 
+	manpower=3193383
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=16.000
 }

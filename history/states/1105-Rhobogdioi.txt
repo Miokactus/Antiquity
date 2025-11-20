@@ -1,0 +1,15 @@
+state={
+	id=1105
+	name="STATE_1105"
+	provinces={
+		276 385 3329 
+	}
+	history = {
+		owner = RBG
+		add_core_of = RBG
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

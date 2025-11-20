@@ -1,0 +1,45 @@
+crisis = {
+	roman_military_coup = {
+
+		icon = generic_civil_support
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = ROE
+    	}
+
+		available = {
+			ROE = {
+				has_completed_focus = ROE_prevent_a_coup
+				NOT = { 
+					has_country_flag = roman_military_coupdetat
+				}
+			}
+		}
+
+		days_mission_timeout = 5
+
+		activation = {
+			ROE = {
+				has_completed_focus = ROE_reject_the_will
+				NOT = { has_country_flag = roman_military_coupdetat }
+			}
+		}
+		visible = {
+			original_tag = ROE
+		}
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+				}
+				ROE = { country_event = rome_event.2 }
+			}
+			hidden_effect = { 
+				news_event = roman_news.1
+			}
+		}
+	}
+}

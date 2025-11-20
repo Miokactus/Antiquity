@@ -3,7 +3,8 @@ state = {
 	name = "STATE_881" # Karagandy
 
 	history = {
-		owner = AAN
+		owner = SCY
+		add_core_of = SCY
 		#victory_points = {
 		#	7597 1
 		#}

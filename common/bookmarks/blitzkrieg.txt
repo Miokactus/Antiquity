@@ -9,11 +9,14 @@ bookmarks = {
 			history = ROE_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
-				poor_industry
+				ROE_pax_romana
 				one_party_monopoly
 				an_empire_of_peoples
 			}
 			focuses = {
+				ROE_follow_augustus_will
+				ROE_proclaim_the_republic
+				ROE_a_new_dynasty
 			}
 		}
 

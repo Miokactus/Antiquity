@@ -6,8 +6,8 @@ state = {
 	
 	history = {
 	
-		owner = AAN
-		
+		owner = PPC
+		add_core_of = PPC
 		
 
 		victory_points = {

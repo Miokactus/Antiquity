@@ -1,29 +1,15 @@
-
 state={
 	id=135
 	name="STATE_135"
-	manpower = 941400
-
-	state_category = town
-
-	history={
-		owner = AAN
-		buildings = {
-			infrastructure = 2 #was: 6
-			#
-		}
-		victory_points = {
-			7394 5 #Cork
-		}
-		victory_points = {
-			6313 1 #Limerick
-		}
-		
-	}
-
 	provinces={
-		6289 6313 6405 7394 9284 9310 9405 11237 11267 11334 
+		6313 11334 
 	}
-
-	local_supplies=0.0 
+	history = {
+		owner = GGA
+		add_core_of = GGA
+	}
+	manpower=941400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

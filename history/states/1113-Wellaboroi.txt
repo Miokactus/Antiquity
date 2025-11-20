@@ -1,0 +1,15 @@
+state={
+	id=1113
+	name="STATE_1113"
+	provinces={
+		6289 6405 9284 
+	}
+	history = {
+		owner = WLI
+		add_core_of = WLI
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

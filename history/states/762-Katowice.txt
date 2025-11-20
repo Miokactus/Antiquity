@@ -13,10 +13,8 @@ state = {
 
 	history = {
 		
-		owner = AAN
-		
-		
-		add_claim_by = PRE
+		owner = LUG
+		add_core_of = LUG
 
 		victory_points = {
 			6464 5 # Katovice

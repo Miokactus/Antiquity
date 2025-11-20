@@ -1,0 +1,15 @@
+state={
+	id=1102
+	name="STATE_1102"
+	provinces={
+		3159 
+	}
+	history = {
+		owner = DLG
+		add_core_of = DLG
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

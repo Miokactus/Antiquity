@@ -1,0 +1,16 @@
+state={
+	id=1178
+	name="STATE_1178"
+	provinces={
+		1766 2015 12119 
+	}
+	history = {
+		owner = SUL
+		add_core_of = SUL
+		victory_points = { 1766 5 }
+	}
+	manpower=24000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

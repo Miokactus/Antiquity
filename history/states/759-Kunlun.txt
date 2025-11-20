@@ -2,22 +2,14 @@ state={
 	id=759
 	name="STATE_759"
 	provinces={
-		1698 1943 2074 4947 5736 10315 
+		1698 1943 2074 4947 10315 
+	}
+	history = {
+		owner = AAN
+		add_core_of = AAN
 	}
 	manpower=70000
 	buildings_max_level_factor=1.000
-	state_category = wasteland
-	history={
-		owner = AAN
-		
-		
-		
-		buildings = {
-			infrastructure = 1
-
-		}
-
-	}
-
-	local_supplies=0.0 
+	state_category=wasteland
+	local_supplies=0.000
 }

@@ -1,0 +1,16 @@
+state={
+	id=1181
+	name="STATE_1181"
+	provinces={
+		4924 
+	}
+	history = {
+		owner = SHA
+		add_core_of = SHA
+		victory_points = { 4924 2 }
+	}
+	manpower=24000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

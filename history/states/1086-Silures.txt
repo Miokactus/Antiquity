@@ -1,0 +1,15 @@
+state={
+	id=1086
+	name="STATE_1086"
+	provinces={
+		253 377 407 3241 6301 
+	}
+	history={
+		owner = SLE
+		add_core_of = SLE
+	}
+	manpower=25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -9,7 +9,7 @@ state={
 	}
 	history = {
 		owner = AAN
-		add_core_of = AAN
+		
 	}
 	manpower=7536266
 	buildings_max_level_factor=1.000

@@ -1,0 +1,628 @@
+
+#scripted_diplomatic_actions = {
+#
+#	action_key = { # will be used in most localizations
+#	
+#		# root is the initiator of action and this is the target country
+#		allowed = { #if action is valid
+#			always = yes
+#		}
+#		visible = { #if action is visible on gui
+#			always = yes
+#		}
+#		selectable = { #if action is selectable on gui
+#			always = yes
+#		}
+#
+#		requires_acceptance = yes # if true the action will require acceptance of target country
+#		cost = 10 # pp cost, can be zero
+#		command_power = 10 # cp cost, can be zero
+#
+#		cost_string = loc_key # if you have a custom cost, use this loc to display it
+#		show_acceptance_on_action_button = yes # set to no if acceptance shouldn't be displayed on the action button
+#
+#		icon = 1 # icon frame to use in notification
+#
+#       #for effects/triggers/variables, root is the sender and this is receiver
+#
+#		# runs when the action is sent
+#		on_sent_effect = {
+#		}
+#
+#		# runs when the action is properly sent and accepted
+#		complete_effect = {
+#		}
+#
+#		# runs when the action is properly sent and rejected
+#		reject_effect = {
+#		}
+#
+#		# SEND POPUP CUSTOMIZATION
+#		# use diplomatic_action as context in scripted gui
+#		# send_scripted_gui = send_scripted_gui_name # if specified, the diplomatic action will use this scripted gui before sending the request. the player (or ai) can make changes on that gui and store stuff as variable to customize action
+#		reset_send_effect = { # if action has a send scripted gui, this effect will be used for clearing the state of gui (will run when player opens the scripted gui by sending the action or when ai proposes action
+#			# clear action
+#			if = {
+#				limit = { 
+#					root = {
+#						is_ai = yes
+#					}
+#				}
+#				# initialize for ai
+#			}
+#		}
+#		can_be_sent = { # send button will be disabled if no
+#			always = yes
+#		}
+#		send_description = loc_key_send # if there is no scripted gui, this desc will be used in send yes/no pop up
+#
+#
+#		# RECEIVE POPUP CUSTOMIZATION
+#		# use diplomatic_action as context in scripted gui
+#		# receive_scripted_gui = receive_scripted_gui_name #if specified the receiver of the action will get this scripted gui instead of yes-no popup when they receive the propose
+#		reset_receive_effect = {
+#			# clear action
+#			if = {
+#				limit = { 
+#					is_ai = yes
+#				}
+#				# change stuff for ai
+#			}
+#		}
+#		can_be_accepted = { # accept button will be disabled if no
+#			always = yes
+#		}
+#		receive_description = loc_key_receive # if there is no scripted gui, this desc will be used in send yes/no pop up
+#
+#		
+#		# PLAYER FEEDBACK ON ACCEPT/REJECT
+#		accept_title = loc_key_accept #can be overridden to customize accepted/rejected pop ups for the sender
+#		accept_description = loc_key_accept_desc
+#		reject_title = loc_key_reject
+#		reject_description = loc_key_reject_desc
+#	
+#		
+#		# AI
+#		# a list of ai_will_do entries that will be used to decide if AI should accept or reject a request
+#		ai_acceptance = {
+#			condition = { # name is used for loc
+#				base = 100
+#			}
+#		}
+#
+#		# ai_will_do to decide if AI should send this action or not
+#		ai_desire = {
+#			base = -1
+#			modifier = {
+#				ROOT = {
+#					tag = ENG
+#				}
+#				tag = GER
+#				add = 1000
+#			}
+#		}
+#	}
+#}
+
+
+
+
+
+
+scripted_diplomatic_actions = {
+
+	
+
+	ask_tributary = {
+	
+		# root is the initiator of action and this is the target country
+		allowed = {
+			always = yes
+		}
+		visible = {
+            ROOT = { 
+                AND = { 
+                    is_puppet = no
+                    NOT = { has_country_flag = is_tributary }
+                }
+            }
+            PREV = {
+                NOT = { PREV = { is_subject_of = ROOT }}
+            }
+		}
+		selectable = { 
+            NOT = { has_country_flag = is_tributary }
+            is_neighbor_of = ROOT
+			ROOT = {
+                strength_ratio = {
+                    tag = PREV
+                    ratio > 1.1
+                }
+            }
+            NOT = { 
+				PREV = { 
+					OR = { 
+						is_subject_of = ROOT 
+						is_subject = yes
+					}
+				}
+			}
+			
+			NOT = { 
+				PREV = { 
+					OR = { 
+						tag = AAN 
+						tag = FAL
+						tag = FAA
+					}
+				}
+			}
+		}
+
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes # set to no if acceptance shouldn't be displayed on the action button
+		cost = 50
+
+		icon = 1
+
+		on_sent_effect = {
+			
+		}
+
+		complete_effect = {
+			PREV = {
+				set_temp_variable = { oldgov = var:THIS.current_party_ideology_group }
+				set_temp_variable = { demoldgov = var:THIS.party_popularity_100@democratic }
+				set_temp_variable = { olioldgov = var:THIS.party_popularity_100@communism }
+				set_temp_variable = { tyraoldgov = var:THIS.party_popularity_100@fascism }
+				set_temp_variable = { triboldgov = var:THIS.party_popularity_100@neutrality }
+                add_ideas = tributary_state
+                add_political_power = -50
+                set_country_flag = is_tributary
+            }
+            ROOT = {
+                add_ideas = receiving_tribute
+                add_political_power = 50
+                give_guarantee = PREV
+                set_autonomy = {
+                    target = PREV
+                    autonomous_state = autonomy_tributary
+                    end_wars = no
+                    end_civil_wars = no
+                }
+				PREV = {
+					set_politics = {
+    					ruling_party = var:oldgov
+    					elections_allowed = no
+    					election_frequency = 48
+					}
+					set_popularities = {
+						democratic = var:demoldgov
+						communism = var:olioldgov
+						fascism = var:tyraoldgov
+						neutrality = var:triboldgov
+					}
+				}
+            }
+		}
+		
+		reject_effect = {
+			
+		}
+		
+		send_scripted_gui = pd_offer_peace_deal
+		reset_send_effect = {
+		}
+		
+		can_be_sent = { # send button will be disabled if no
+			
+		}
+		
+		receive_scripted_gui = pd_offer_peace_deal_receive
+
+		ai_desire = {
+			base = -100
+			modifier = {
+				
+			}
+		}
+		
+		ai_acceptance = {
+			tribute_base_reluctance = {
+				base = -50
+			}
+			
+			tribute_war_support = {
+				base = 0
+				modifier = {
+					set_temp_variable = { ws = var:THIS.has_war_support }
+					multiply_temp_variable = { ws = -100 }
+					round_temp_variable = ws
+					add_to_temp_variable = { ws = 20 }
+					add = var:ws
+				}
+			}
+			
+			tribute_stability = {
+				base = 0
+				modifier = {
+					set_temp_variable = { s = var:THIS.has_stability }
+					multiply_temp_variable = { s = 150 }
+					round_temp_variable = s
+					add_to_temp_variable = { s = -120 }
+					add = var:s
+				}
+			}
+			
+			tribute_strength_ratio = {
+				base = 0
+				modifier = {
+					set_temp_variable = { str = THIS.enemies_strength_ratio@ROOT }
+					multiply_temp_variable = { str = 100 }
+					round_temp_variable = str
+					subtract_from_temp_variable = { str = -100 }
+					clamp_temp_variable = {
+						var = str
+						max = 1000
+					}
+					add = var:str
+				}
+			}
+			
+			#tribute_proposal_cost = {
+			#	base = 0
+			#	modifier = {
+			#		set_temp_variable = { tc = ROOT.pd_total_cost }
+			#		multiply_temp_variable = { tc = -1 }
+			#		add = tc
+			#	}
+			#}
+			
+			tribute_geopolitics = {
+				base = 0
+				modifier = {
+					add = -25
+					is_major = yes
+				}
+				modifier = {
+					add = -50
+					is_in_faction = yes
+				}
+				modifier = {
+					# while threat < 0.2 -> 0, later -100 for each 0.1
+					set_temp_variable = { wt = global.threat }
+					multiply_temp_variable = { wt = 60 }
+					round_temp_variable = wt
+					add_to_temp_variable = { wt = -20 }
+					clamp_temp_variable = {
+						var = wt
+						max = 0
+					}
+					add = var:wt
+				}
+			}
+		}
+	}
+
+    eject_tributary = {
+	
+		# root is the initiator of action and this is the target country
+		allowed = {
+			always = yes
+		}
+		visible = {
+            PREV = {
+                is_subject_of = ROOT
+                has_autonomy_state = autonomy_tributary
+            }
+		}
+		selectable = { 
+            has_country_flag = is_tributary
+            PREV = { 
+                is_subject_of = ROOT 
+                has_autonomy_state = autonomy_tributary
+            }
+		}
+
+		requires_acceptance = no
+		show_acceptance_on_action_button = yes # set to no if acceptance shouldn't be displayed on the action button
+		cost = 20
+
+		icon = 1
+
+		on_sent_effect = {
+			
+		}
+
+		complete_effect = {
+			ROOT = {
+                remove_ideas = receiving_tribute
+                add_political_power = 50
+                diplomatic_relation = {
+                    country = PREV
+                    relation = guarantee
+                    active = no
+                }
+                set_autonomy = {
+                    target = PREV
+                    autonomous_state = autonomy_free
+                }
+            }
+            PREV = {
+                remove_ideas = tributary_state
+                add_political_power = 50
+                clr_country_flag = is_tributary
+            }
+		}
+		
+		reject_effect = {
+			
+		}
+		
+		send_scripted_gui = pd_offer_peace_deal
+		reset_send_effect = {
+		}
+		
+		can_be_sent = { # send button will be disabled if no
+			
+		}
+		
+		receive_scripted_gui = pd_offer_peace_deal_receive
+
+		ai_desire = {
+			base = -100
+			modifier = {
+				
+			}
+		}
+		
+		ai_acceptance = {
+			tribute_base_reluctance = {
+				base = -50
+			}
+			
+			tribute_war_support = {
+				base = 0
+				modifier = {
+					set_temp_variable = { ws = var:THIS.has_war_support }
+					multiply_temp_variable = { ws = -100 }
+					round_temp_variable = ws
+					add_to_temp_variable = { ws = 20 }
+					add = var:ws
+				}
+			}
+			
+			tribute_stability = {
+				base = 0
+				modifier = {
+					set_temp_variable = { s = var:THIS.has_stability }
+					multiply_temp_variable = { s = 150 }
+					round_temp_variable = s
+					add_to_temp_variable = { s = -120 }
+					add = var:s
+				}
+			}
+			
+			tribute_strength_ratio = {
+				base = 0
+				modifier = {
+					set_temp_variable = { str = THIS.enemies_strength_ratio@ROOT }
+					multiply_temp_variable = { str = 100 }
+					round_temp_variable = str
+					subtract_from_temp_variable = { str = -100 }
+					clamp_temp_variable = {
+						var = str
+						max = 1000
+					}
+					add = var:str
+				}
+			}
+			
+			#tribute_proposal_cost = {
+			#	base = 0
+			#	modifier = {
+			#		set_temp_variable = { tc = ROOT.pd_total_cost }
+			#		multiply_temp_variable = { tc = -1 }
+			#		add = tc
+			#	}
+			#}
+			
+			tribute_geopolitics = {
+				base = 0
+				modifier = {
+					add = -25
+					is_major = yes
+				}
+				modifier = {
+					add = -50
+					is_in_faction = yes
+				}
+				modifier = {
+					# while threat < 0.2 -> 0, later -100 for each 0.1
+					set_temp_variable = { wt = global.threat }
+					multiply_temp_variable = { wt = 60 }
+					round_temp_variable = wt
+					add_to_temp_variable = { wt = -20 }
+					clamp_temp_variable = {
+						var = wt
+						max = 0
+					}
+					add = var:wt
+				}
+			}
+		}
+	}
+
+
+
+
+    rebel_tributary = {
+	
+		# root is the initiator of action and this is the target country
+		allowed = {
+			always = yes
+		}
+		visible = {
+            ROOT = { 
+                has_country_flag = is_tributary 
+            }
+		}
+		selectable = { 
+            ROOT = { 
+                has_country_flag = is_tributary
+                is_subject_of = PREV
+                has_autonomy_state = autonomy_tributary
+            }
+		}
+
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes # set to no if acceptance shouldn't be displayed on the action button
+		cost = 0
+
+		icon = 1
+
+		on_sent_effect = {
+			
+		}
+
+		complete_effect = {
+			PREV = {
+                remove_ideas = receiving_tribute
+                add_political_power = -50
+                diplomatic_relation = {
+                    country = PREV
+                    relation = guarantee
+                    active = no
+                }
+                set_autonomy = {
+                    target = ROOT
+                    autonomous_state = autonomy_free
+                }
+            }
+            ROOT = {
+                remove_ideas = tributary_state
+                add_political_power = 50
+                clr_country_flag = is_tributary
+            }
+		}
+		
+		reject_effect = {
+			PREV = {
+                remove_ideas = receiving_tribute
+                diplomatic_relation = {
+                    country = PREV
+                    relation = guarantee
+                    active = no
+                }
+                set_autonomy = {
+                    target = ROOT
+                    autonomous_state = autonomy_free
+                }
+                create_wargoal = {
+                    type = puppet_wargoal_focus
+                    target = ROOT
+                }
+            }
+            ROOT = {
+                remove_ideas = tributary_state
+                add_political_power = 50
+                clr_country_flag = is_tributary
+            }
+		}
+		
+		send_scripted_gui = pd_offer_peace_deal
+		reset_send_effect = {
+			ROOT = { clr_country_flag = pd_root_gives }
+			reset_peace_deal_proposal = yes
+		}
+		
+		can_be_sent = { # send button will be disabled if no
+			
+		}
+		
+		receive_scripted_gui = pd_offer_peace_deal_receive
+
+		ai_desire = {
+			base = 0
+			modifier = {
+				
+			}
+		}
+		
+		ai_acceptance = {
+			tribute_base_reluctance = {
+				base = -50
+			}
+			
+			tribute_war_support = {
+				base = 0
+				modifier = {
+					set_temp_variable = { ws = var:THIS.has_war_support }
+					multiply_temp_variable = { ws = -100 }
+					round_temp_variable = ws
+					add_to_temp_variable = { ws = 50 }
+					add = var:ws
+				}
+			}
+			
+			tribute_stability = {
+				base = 0
+				modifier = {
+					set_temp_variable = { s = var:THIS.has_stability }
+					multiply_temp_variable = { s = -150 }
+					round_temp_variable = s
+					add_to_temp_variable = { s = 100 }
+					add = var:s
+				}
+			}
+			
+			tribute_strength_ratio = {
+				base = 0
+				modifier = {
+					set_temp_variable = { str = THIS.enemies_strength_ratio@ROOT }
+					multiply_temp_variable = { str = -50 }
+					round_temp_variable = str
+					subtract_from_temp_variable = { str = 50 }
+					clamp_temp_variable = {
+						var = str
+						max = 1000
+					}
+					add = var:str
+				}
+			}
+			
+			#tribute_proposal_cost = {
+			#	base = 0
+			#	modifier = {
+			#		set_temp_variable = { tc = ROOT.pd_total_cost }
+			#		multiply_temp_variable = { tc = -1 }
+			#		add = tc
+			#	}
+			#}
+			
+			tribute_geopolitics = {
+				base = 0
+				modifier = {
+					add = -50
+					is_major = yes
+				}
+				modifier = {
+					add = -75
+					is_in_faction = yes
+				}
+				modifier = {
+					# while threat < 0.2 -> 0, later -100 for each 0.1
+					set_temp_variable = { wt = global.threat }
+					multiply_temp_variable = { wt = -1000 }
+					round_temp_variable = wt
+					add_to_temp_variable = { wt = 200 }
+					clamp_temp_variable = {
+						var = wt
+						max = 0
+					}
+					add = var:wt
+				}
+			}
+		}
+	}
+}

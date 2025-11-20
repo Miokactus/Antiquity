@@ -1,0 +1,16 @@
+state={
+	id=1119
+	name="STATE_1119"
+	provinces={
+		2008 2011 
+	}
+	history = {
+		owner = TTH
+		add_core_of = TTH
+		victory_points = { 2008 12 }
+	}
+	manpower = 25000
+	state_category = large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -9,7 +9,7 @@ state={
 	history={
 		owner = IDS
 		add_core_of = IDS
-		add_core_of = AAN
+		
 		
 		
 		victory_points = {

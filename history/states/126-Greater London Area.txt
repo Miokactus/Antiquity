@@ -1,48 +1,15 @@
 state={
 	id=126
 	name="STATE_126"
-	manpower=9824296
-	
-	state_category = megalopolis
-
-	history={
-		owner = AAN
-		victory_points = {
-			6103 50 
-		}
-		buildings = {
-			#
-			#
-			dockyard = 1
-			anti_air_building = 5
-			radar_station = 1
-			#0
-			11374 = {
-				naval_base = 10
-			}
-
-			6103 = { 
-			    landmark_big_ben = {
-			        allowed = {
-			            has_dlc = "Gotterdammerung"
-			        }
-			        level = 1
-			    }
-			}
-
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				#
-				#
-			}
-		}
-	}
-
 	provinces={
-		6103 9239 11333 11374 
+		221 11374 
 	}
-
-	local_supplies=0.0 
+	history={
+		owner = TVE
+		add_core_of = TVE
+	}
+	manpower=9824296
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+	local_supplies=0.000
 }

@@ -9,7 +9,7 @@ create_country_leader = {
 	desc = "PONTUS_DESC"
 	picture = GFX_leader_nomadic_leader_xai
 	expire = "38.5.4"
-	ideology = despotism
+	ideology = nomadism
 	traits = {
 	}
 }

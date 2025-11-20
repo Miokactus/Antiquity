@@ -1,0 +1,15 @@
+state={
+	id=1153
+	name="STATE_1153"
+	provinces={
+		880 6705 11800 
+	}
+	history = {
+		owner = OHC
+		add_core_of = OHC
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

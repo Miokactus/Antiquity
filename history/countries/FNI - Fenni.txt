@@ -1,0 +1,40 @@
+capital = 330
+
+oob = "TRI_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Nomadic Tribes"
+	desc = "COUNCIL_OF_PEOPLES_DESC"
+	picture = GFX_leader_generic_nomadic_tribes3
+	expire = "92.5.4"
+	ideology = nomadism
+	traits = {
+	}
+}
+
+# Starting tech
+set_technology = {
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 10
+	communism = 0
+	neutrality = 70
+}
+
+add_ideas = {
+	limited_exports
+	limited_conscription
+	civilian_economy
+	nomadic_society
+}

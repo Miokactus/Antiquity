@@ -1,40 +1,19 @@
-
 state={
 	id=374
 	name="STATE_374"
-	manpower = 2396039
-	
-	state_category = city
-	
 	resources={
-		gold_ingot=60 # was: 100
-		aluminium=20 # was: 32
+		gold_ingot=60.000
+		aluminium=20.000
 	}
-
-
-	history={
-		owner = AAN
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			#
-		}
-		
-		victory_points = {
-			1806 1 
-		}
-
-		1939.1.1 = {
-			buildings = {
-				#
-			}
-		}
-
-	}
-
 	provinces={
-		1618 1806 2043 4919 5103 6803 7762 7904 7945 8025 9822 10702 10798 11743 11802 12624 
+		1618 1806 4919 5103 6803 7762 7904 8025 9822 10702 10798 11743 11802 12624 
 	}
-
-	local_supplies=0.0 
+	history = {
+		owner = AAN
+		
+	}
+	manpower=2396039
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

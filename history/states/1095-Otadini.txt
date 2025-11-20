@@ -1,0 +1,15 @@
+state={
+	id=1095
+	name="STATE_1095"
+	provinces={
+		6320 9392 
+	}
+	history = {
+		owner = ODN
+		add_core_of = ODN
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

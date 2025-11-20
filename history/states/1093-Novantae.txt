@@ -1,0 +1,15 @@
+state={
+	id=1093
+	name="STATE_1093"
+	provinces={
+		6350 9237 
+	}
+	history = {
+		owner = NOV
+		add_core_of = NOV
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

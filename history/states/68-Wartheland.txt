@@ -10,7 +10,8 @@ state = {
 
 	history = {
 
-		owner = AAN
+		owner = LUG
+		add_core_of = LUG
 		
 		
 

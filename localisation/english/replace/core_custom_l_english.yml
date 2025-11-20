@@ -2059,3 +2059,33 @@
  CHANGE_DESIGN_FOLDER_POPUP_BODY: "Select an existing folder to move this design to, or enter a name to create a new folder."
  OVERWRITE_EXISTING: "Overwrite the template this was created from?"
  OVERWRITE_EXISTING_DESIGN_DESC: "§GClick§! to toggle overwrite design setting.\nThis design was created from an existing template. If this is checked, then the existing design will be overwritten."
+
+
+
+
+ NOT_DISCOVERED_AMERICAS_TOOLTIP: "§RYou have not yet discovered the Americas.§!"
+ NOT_DISCOVERED_AMERICAS_FROM_AMERICAS_TOOLTIP: "§RYou have not yet discovered the others continents.§!"
+
+ welcome_event.1.t: "Welcome in Hearts of Marbles! [ALPHA]"
+ welcome_event.1.d: "Welcome and first of all, thanks for playing my mod! I'm Mioka, a small developer and this is my first (technically second) 'big overhaul' mod!\nThis mod is set in 14 AD, or the year the Emperor Augustus died. I tried to feature every known areas/political entities known at the time and give content to countries that mostly don't have content in other mods, soo yeah! I hope you'll like it!\nDon't hesitate to tell me what you liked or didn't liked and, let's play!"
+ welcome_event.1.a: "Gloria!"
+ generic_custom.4.t: "Something Out West"
+ generic_custom.4.d: "Holy crap! How did you do that? Discovering the Americas in 14? Wowa!"
+ generic_custom.4.a: "What? What are they saying?"
+
+ is_tributary: "Is paying a tribute"
+ ASK_TRIBUTARY: "Ask for tribute"
+ ASK_TRIBUTARY_TITLE: "Ask for tribute"
+ ASK_TRIBUTARY_ACTION_DESC: "Ask for a tribute from this country."
+ REBEL_TRIBUTARY: "Rebel against our overlord"
+ REBEL_TRIBUTARY_TITLE: "Put an end to the tribute"
+ REBEL_TRIBUTARY_ACTION_DESC: "We had enough! Rebel against our overlord."
+ EJECT_TRIBUTARY: "Eject tributary"
+ EJECT_TRIBUTARY_TITLE: "Put an end to the tribute"
+ EJECT_TRIBUTARY_ACTION_DESC: "We no longer have any interests in this country."
+ tribute_base_reluctance: "Base reluctance"
+ tribute_geopolitics: "State of the world"
+ tribute_proposal_cost: "Proposal cost"
+ tribute_stability: "Stability factor"
+ tribute_strength_ratio: "Strength ratio"
+ tribute_war_support: "War support"

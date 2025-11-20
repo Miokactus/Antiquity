@@ -29,7 +29,8 @@ state = {
 			13242 2 
 		}
 		
-		owner = AAN
+		owner = AKM
+		add_core_of = AKM
 		
 		
 

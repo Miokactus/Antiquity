@@ -1,0 +1,15 @@
+state={
+	id=1087
+	name="STATE_1087"
+	provinces={
+		3422 3463 6351 9484 
+	}
+	history={
+		owner = DRG
+		add_core_of = DRG
+	}
+	manpower=25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

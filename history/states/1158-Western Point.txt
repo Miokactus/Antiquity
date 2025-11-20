@@ -1,0 +1,15 @@
+state={
+	id=1158
+	name="STATE_1158"
+	provinces={
+		1341 1764 7875 10249 10700 12205 12276 
+	}
+	history = {
+		owner = PPC
+		add_core_of = PPC
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

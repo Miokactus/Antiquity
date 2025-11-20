@@ -1,0 +1,15 @@
+state={
+	id=1085
+	name="STATE_1085"
+	provinces={
+		3274 11361 
+	}
+	history={
+		owner = DMA
+		add_core_of = DMA
+	}
+	manpower=25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

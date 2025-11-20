@@ -1,0 +1,15 @@
+state={
+	id=1177
+	name="STATE_1177"
+	provinces={
+		4973 10911 
+	}
+	history = {
+		owner = AAN
+		add_core_of = AAN
+	}
+	manpower=24000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

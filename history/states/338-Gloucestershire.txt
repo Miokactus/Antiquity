@@ -1,33 +1,18 @@
-
 state={
 	id=338
 	name="STATE_338"
-	manpower = 1800615
 	resources={
-		steel=9 # was: 16
+		steel=9.000
 	}
-
-	state_category = city
-
-	history={
-		owner = AAN
-		victory_points = {
-			3369 5 
-		}
-		buildings = {
-			arms_factory = 1
-			industrial_complex = 1
-			#
-			3369 = {
-				naval_base = 2
-			}
-		}
-		
-	}
-
 	provinces={
-		3369 6221 6351 6378 9484 11471 
+		3369 6221 6378 
 	}
-
-	local_supplies=0.0 
+	history={
+		owner = DBN
+		add_core_of = DBN
+	}
+	manpower=1800615
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

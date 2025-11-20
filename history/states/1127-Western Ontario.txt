@@ -1,0 +1,15 @@
+state={
+	id=1127
+	name="STATE_1127"
+	provinces={
+		602 777 4775 10718 12582 13159
+	}
+	history = {
+		owner = LLC
+		add_core_of = LLC
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

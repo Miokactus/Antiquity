@@ -1,0 +1,15 @@
+state={
+	id=1141
+	name="STATE_1141"
+	provinces={
+		1586 7306 7458 7539 10478 
+	}
+	history = {
+		owner = HHC
+		add_core_of = HHC
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

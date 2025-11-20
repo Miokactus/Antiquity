@@ -1,0 +1,15 @@
+state={
+	id=1099
+	name="STATE_1099"
+	provinces={
+		9075 11161 
+	}
+	history = {
+		owner = CLI
+		add_core_of = CLI
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

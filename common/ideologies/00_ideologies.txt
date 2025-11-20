@@ -1,6 +1,6 @@
 ideologies = {
 
-	democratic = {
+	democratic = { #DEMOCRACY
 
 		types = {
 
@@ -8,15 +8,24 @@ ideologies = {
 			}
 
 			liberalism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			socialism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			populism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			decentralised_democracy = {
+			}
+
+			popular_assemblies = {
+			}
+
+			monarcho_socialism = {
 			}
 
 		}
@@ -73,33 +82,45 @@ ideologies = {
 	}
 
 
-	communism = {
+	communism = { #OLIGARCHY
 
 		types = {
 
 			marxism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			leninism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			stalinism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			anti_revisionism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			anarchist_communism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			oligarchism_comm = {
+			}
+
+			despotism_comm = {
 			}
 
 			chinese_reformism = {
 				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
-			popular_assemblies = {
+			city_state = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
-			monarcho_socialism = {
+			monarchism = {
 			}
 		}
 
@@ -111,7 +132,7 @@ ideologies = {
 			"FACTION_NAME_COMMUNIST_5"
 		}
 
-		color = { 145 27 27 }
+		color = { 107 70 73 }
 
 		war_impact_on_world_tension = 0.75		#Commie less threatening
 		faction_impact_on_world_tension = 0.5
@@ -145,23 +166,34 @@ ideologies = {
 		ai_give_core_state_control_threshold = 10
 	}
 
-	fascism = {
+	fascism = { #TYRANNY
 
 		types = {
 
 			nazism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			gen_nazism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			fascism_ideology = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			falangism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			rexism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
+			}
+
+			absolutism = {
+			}
+
+			military_junta = {
 			}
 
 		}
@@ -174,7 +206,7 @@ ideologies = {
 			"FACTION_NAME_FASCIST_5"
 		}
 
-		color = { 104 66 28 }
+		color = { 11 11 11 }
 
 		war_impact_on_world_tension = 1.0			#evil!
 		faction_impact_on_world_tension = 1.0
@@ -204,23 +236,24 @@ ideologies = {
 		ai_give_core_state_control_threshold = 10000
 	}
 
-	neutrality = {
+	neutrality = { #TRIBALISM
 
 		types = {
 
 			despotism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			oligarchism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			moderatism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			centrism = {
-			}
-
-			absolutism = {
+				can_be_randomly_selected = no # won't be assigned to randomly generated country leaders
 			}
 
 			anarchism = {
@@ -228,13 +261,9 @@ ideologies = {
 			}
 
 			nomadism = {
-				can_be_randomly_selected = no
 			}
 
 			tribalism = {
-			}
-
-			military_junta = {
 			}
 
 		}

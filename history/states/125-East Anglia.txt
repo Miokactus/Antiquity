@@ -1,41 +1,15 @@
-state = {
-	id = 125
-	name = "STATE_125"
-	manpower = 1363174
-	
-	state_category = city
-
-	history = {
-
-		owner = AAN
-		
-
-		victory_points = { 
-			271 2 # Ipswich
-		}
-
-		victory_points = { 
-			322 3 # Norwich
-		}
-
-		buildings = {
-			arms_factory = 1
-			#
-			anti_air_building = 2
-			radar_station = 1
-			#0
-
-			271 = {
-				naval_base = 3
-			}
-
-		}
-		
+state={
+	id=125
+	name="STATE_125"
+	provinces={
+		296 11221 11253 
 	}
-
-	provinces = {
-		221 271 296 322 3287 11221 11253 
+	history={
+		owner = CVL
+		add_core_of = CLV
 	}
-
-	local_supplies = 0.0 
+	manpower=1363174
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

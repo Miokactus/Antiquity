@@ -7,6 +7,8 @@ state={
 	history = {
 		owner = NAB
 		add_core_of = NAB
+
+		add_claim_by = EGI
 	}
 	state_category = rural
 	manpower= 15

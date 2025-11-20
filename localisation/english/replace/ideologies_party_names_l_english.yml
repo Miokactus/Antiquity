@@ -1,29 +1,45 @@
 ﻿l_english:
- fascism: "Nationalism"
- fascism_desc: "National Authority"
- communism: "Reformism"
- communism_desc: "Reformist Regime"
- democratic: "Democracy"
+ fascism: "Tyrannical"
+ fascism_noun: "Tyranny"
+ fascism_desc: "Authoritarian Regime"
+ communism: "Oligarchic"
+ communism_noun: "Oligarchy"
+ communism_desc: "Hybrid Regime"
+ democratic: "Democratic"
+ democratic_noun: "Democracy"
  democratic_desc: "Electoral Regime"
- neutrality: "Authoritarianism"
- neutrality_desc: "Hybrid Regime"
+ neutrality: "Tribal"
+ neutrality_noun: "Tribalism"
+ neutrality_desc: "Tribal Authority"
 
+## DEMOCRACY SUBIDEOLOGIES
  popular_assemblies: "Popular Assemblies"
  popular_assemblies_desc: ""
-
  decentralised_democracy: "Decentralised Democracy"
  decentralised_democracy_desc: ""
-
- chinese_reformism: "Chinese Reformism"
- chinese_reformism_desc: "Initiated by Wang Mang, the first and only emperor of the Xin Dynasty, Chinese Reformism is aimed to reform the old society of the Han, giving more rights to peasants and abolishing old traditions considered barbaric at the time. Widely disapproved by the Han elites, chinese reformism aims to modernise China."
  monarcho_socialism: "Social Monarchism"
  monarcho_socialism_desc: "Combining social elements like a small degree of democracy, it still keeps the figure of the monarch, combining both principles into one."
 
+## TRIBALISM SUBIDEOLOGIES
  tribalism: "Tribalism"
  tribalism_desc: "Organised around the notion of tribes, or chiefdoms, tribalism is a loose political organisation, not a state but not anomie either. Tribes have a leader, social norms, cultural acceptation of others and characteristics uniques at each of them."
  nomadism: "Nomadism"
  nomadism_desc: "Nomadism is caracterised by the permanent movement of people around. Nomadic societies are often traditionalists and against sedentarisation. Nightmare of the states, nomadic societies are still very popular in 14."
+
+## TYRANNY SUBIDEOLOGIES
  absolutism: "Monarchism"
  absolutism_desc: "Agrou the bad monarchists!"
+
+## OLIGARCHY SUBIDEOLOGIES
  military_junta: "Military Junta"
  military_junta_desc: "A government led by a committee of military leaders."
+ chinese_reformism: "Chinese Reformism"
+ chinese_reformism_desc: "Initiated by Wang Mang, the first and only emperor of the Xin Dynasty, Chinese Reformism is aimed to reform the old society of the Han, giving more rights to peasants and abolishing old traditions considered barbaric at the time. Widely disapproved by the Han elites, chinese reformism aims to modernise China."
+ despotism_comm: "Despotic"
+ despotism_comm_desc: "Despotism is a form of government in which a single person rules with absolute power."
+ oligarchism_comm: "Oligarchic"
+ oligarchism_comm_desc: "Oligarchy is a form of government in which a group of people rule with absolute power."
+ city_state: "City-State Authority"
+ city_state_desc: "City-State Administration"
+ monarchism: "Monarchism"
+ monarchism_desc: "Characterised by having a proeminent political figure, often a king or queen, monarchism is helped by the aristocracy of the country where it is in place."

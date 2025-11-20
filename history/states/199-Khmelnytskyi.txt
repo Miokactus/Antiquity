@@ -10,7 +10,8 @@ state={
 		victory_points = {
 			3457 3
 		}
-		owner = AAN
+		owner = TSA
+		add_core_of = TSA
 		buildings = {
 			infrastructure = 2 #was: 5
 			industrial_complex = 1

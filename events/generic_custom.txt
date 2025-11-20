@@ -3,6 +3,49 @@
 ################
 
 add_namespace = generic_custom
+add_namespace = welcome_event
+
+#Grain shortage
+country_event = {
+	id = welcome_event.1
+	title = welcome_event.1.t
+	desc = welcome_event.1.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = welcome_event.1.a
+		ai_chance = { factor = 20 }
+		set_global_flag = AMERICAS_HIDDEN
+	}
+}
+
+## A New Continent
+country_event = {
+	id = generic_custom.4
+	title = generic_custom.4.t
+	desc = generic_custom.4.d
+	
+	trigger = {
+		NOT = { has_global_flag = AMERICAS_HIDDEN }
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = generic_custom.4.a
+		ai_chance = { factor = 20 }
+	}
+}
+
+
 
 #Grain shortage
 country_event = {

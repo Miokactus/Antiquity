@@ -1,0 +1,14 @@
+state={
+	id=1171
+	name="STATE_1171"
+	provinces={
+		1559 7543 10355 
+	}
+	history = {
+		owner = FAL
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

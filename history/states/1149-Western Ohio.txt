@@ -1,0 +1,15 @@
+state={
+	id=1149
+	name="STATE_1149"
+	provinces={
+		1445 4527 9796 10448 
+	}
+	history = {
+		owner = OHC
+		add_core_of = OHC
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

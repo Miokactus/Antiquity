@@ -9,6 +9,8 @@ state={
 	history={
 		owner = ROE
 		add_core_of = ROE
+
+		add_claim_by = EGI
 		victory_points = {
 			792 5 
 		}

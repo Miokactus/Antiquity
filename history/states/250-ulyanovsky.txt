@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		owner = AAN
+		owner = SCY
+		add_core_of = SCY
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

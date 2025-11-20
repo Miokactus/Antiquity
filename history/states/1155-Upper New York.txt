@@ -1,0 +1,15 @@
+state={
+	id=1155
+	name="STATE_1155"
+	provinces={
+		734 3697 3702 3733 3747 6795 11650 11680 13157
+	}
+	history = {
+		owner = NYH
+		add_core_of = NYH
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

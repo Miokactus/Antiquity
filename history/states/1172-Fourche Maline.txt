@@ -1,0 +1,15 @@
+state={
+	id=1172
+	name="STATE_1172"
+	provinces={
+		1503 4522 5001 6968 7485 7945 12401 
+	}
+	history = {
+		owner = FMC
+		add_core_of = FMC
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

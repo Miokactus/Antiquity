@@ -4,9 +4,27 @@ spriteTypes = {
 ####################
 
     spriteType = {
-        name = "GFX_ideology_communism_group"
-        texturefile = "gfx/interface/ideologies/communism.dds" # The folder and filename don't matter, as long as they are correct
+        name = "GFX_ideology_democratic_group"
+        texturefile = "gfx/interface/ideologies/democratic_group.dds" # The folder and filename don't matter, as long as they are correct
     }
+
+    spriteType = {
+        name = "GFX_ideology_neutrality_group"
+        texturefile = "gfx/interface/ideologies/neutrality_group.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_communism_group"
+        texturefile = "gfx/interface/ideologies/communism_group.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_fascism_group"
+        texturefile = "gfx/interface/ideologies/fascism_group.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
 	
 	spriteType = {
         name = "GFX_ideology_monarcho_socialism"
@@ -73,6 +91,70 @@ spriteTypes = {
     spriteType = {
         name = "GFX_leader_german_generic3"
         texturefile = "gfx/characters/german_generic3.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+    spriteType = {
+        name = "GFX_leader_generic_mesoamerica1"
+        texturefile = "gfx/characters/generic_mesoamerica1.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_generic_mesoamerica2"
+        texturefile = "gfx/characters/generic_mesoamerica2.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+    spriteType = {
+        name = "GFX_leader_generic_hopewell1"
+        texturefile = "gfx/characters/generic_hopewell1.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_generic_hopewell2"
+        texturefile = "gfx/characters/generic_hopewell2.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_generic_hopewell3"
+        texturefile = "gfx/characters/generic_hopewell2.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+
+    spriteType = {
+        name = "GFX_leader_monarchy_generic1"
+        texturefile = "gfx/characters/monarchy_generic1.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_monarchy_generic2"
+        texturefile = "gfx/characters/monarchy_generic2.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_monarchy_generic3"
+        texturefile = "gfx/characters/monarchy_generic3.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+
+    spriteType = {
+        name = "GFX_leader_generic_nomadic_tribes1"
+        texturefile = "gfx/characters/generic_nomadic_tribes1.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_generic_nomadic_tribes2"
+        texturefile = "gfx/characters/generic_nomadic_tribes2.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_generic_nomadic_tribes3"
+        texturefile = "gfx/characters/generic_nomadic_tribes3.dds" # The folder and filename don't matter, as long as they are correct
     }
 
 

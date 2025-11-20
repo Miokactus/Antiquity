@@ -6,7 +6,8 @@ state = {
 
 	history = {
 
-		owner = AAN
+		owner = VDN
+		add_core_of = VDN
 		
 		
 

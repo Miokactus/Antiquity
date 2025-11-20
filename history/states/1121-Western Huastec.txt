@@ -1,0 +1,15 @@
+state={
+	id=1121
+	name="STATE_1121"
+	provinces={
+		2083 12721 
+	}
+	history = {
+		owner = HAT
+		add_core_of = HAT
+	}
+	manpower = 25000
+	state_category = rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -9,7 +9,7 @@ create_country_leader = {
 	desc = "WANGMANG_DESC"
 	picture = GFX_leader_PON_pythodoris
 	expire = "50.5.4"
-	ideology = despotism
+	ideology = despotism_comm
 	traits = {
 	}
 }
@@ -28,7 +28,7 @@ set_technology = {
 
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = communism
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -36,8 +36,8 @@ set_politics = {
 set_popularities = {
 	democratic = 20
 	fascism = 10
-	communism = 0
-	neutrality = 70
+	communism = 70
+	neutrality = 0
 }
  
 add_ideas = limited_exports

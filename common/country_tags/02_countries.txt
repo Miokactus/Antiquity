@@ -1,3 +1,4 @@
+## EUROPE AND INDIA
 AAN = "countries/Anarchy.txt"
 ROE = "countries/Roman_Empire.txt"
 MAU = "countries/Mauretania.txt"
@@ -71,9 +72,129 @@ BRU = "countries/Bruceti.txt"
 
 ## EASTERN EUROPE [FLAGS NEEDED]
 DAC = "countries/Dacia.txt"
+SCY = "countries/Scythians.txt"
+SAR = "countries/Sarmates.txt"
+TSA = "countries/Tsaroubintsy.txt"
+LUG = "countries/Lugii.txt"
+VDN = "countries/Venedi.txt"
+FNI = "countries/Fenni.txt"
+AES = "countries/Aesti.txt"
+STI = "countries/Sitonnes.txt"
 
 ## BRITANNIA [FLAGS NEEDED]
+DMN = "countries/Damnonii.txt"
+DRG = "countries/Durotriges.txt"
+ATB = "countries/Atrebates.txt"
+BGA = "countries/Belgae.txt"
+RGN = "countries/Regni.txt"
+CTC = "countries/Cantiaci.txt"
+DMA = "countries/Demetae.txt"
+SLE = "countries/Silures.txt"
+DBN = "countries/Dobunni.txt"
+CVL = "countries/Catuvellauni.txt"
+TVE = "countries/Trinovantes.txt"
+ICC = "countries/Iceni.txt"
+ORE = "countries/Ordovices.txt"
+CMO = "countries/Cornovii.txt"
+CRL = "countries/Corieltauvi.txt"
+BGE = "countries/Brigantes.txt"
+PRI = "countries/Parisi.txt"
+
+NOV = "countries/Novantae.txt"
+SGA = "countries/Selgovae.txt"
+ODN = "countries/Otadini.txt"
+NDM = "countries/Northern_Damnonii.txt"
+VIE = "countries/Venicones.txt"
+EPD = "countries/Epidii.txt"
+TAX = "countries/Taexali.txt"
+CLI = "countries/Caledonii.txt"
+CRE = "countries/Creones.txt"
+CRG = "countries/Carnonagae.txt"
+CEI = "countries/Caereni.txt"
+STE = "countries/Smertae.txt"
+CRV = "countries/Cornavii.txt"
+DLG = "countries/Decantae_Lugi.txt"
+
+## IRELAND [FLAGS NEEDED]
+WNO = "countries/Wenniknioi.txt"
+ERD = "countries/Erdinoi.txt"
+MGT = "countries/Magnatai.txt"
+AVE = "countries/Auteinoi.txt"
+GGA = "countries/Ganganoi.txt"
+UDA = "countries/Usdiai.txt"
+WLI = "countries/Wellaboroi.txt"
+IWR = "countries/Iwernoi.txt"
+BIG = "countries/Irish_Brigantes.txt"
+KRD = "countries/Koriondoi.txt"
+MNP = "countries/Manapioi.txt"
+KKO = "countries/Kaukoi.txt"
+EBN = "countries/Eblanioi.txt"
+WLT = "countries/Woluntioi.txt"
+DRI = "countries/Darinoi.txt"
+RBG = "countries/Rhobogdioi.txt"
+
 
 ## AFRICA [FLAGS NEEDED]
 GOM = "countries/Garamantes.txt"
 
+EGI = "countries/Egypt.txt"
+KUS = "countries/Kush.txt"
+AKM = "countries/Aksum.txt"
+
+
+## ARABIA [FLAGS NEEDED]
+HKM = "countries/Saba.txt"
+SHA = "countries/Sheba.txt"
+QTB = "countries/Qataban.txt"
+HDT = "countries/Hadramaut.txt"
+MZN = "countries/Mazun.txt"
+GRH = "countries/Gerrha.txt"
+MAA = "countries/Maan.txt"
+BMY = "countries/Blemmyes.txt"
+
+
+## MESOAMERICA [FLAGS NEEDED]
+MMY = "countries/Maya.txt"
+CHP = "countries/Capacha.txt"
+CPA = "countries/Chupicuaro.txt"
+TTH = "countries/Teotihuacan.txt"
+HAT = "countries/Huastec.txt"
+ZPT = "countries/Zapotec.txt"
+TTC = "countries/Totonac.txt"
+
+## NORTH AMERICA [FLAGS NEEDED]
+LLC = "countries/Laurel.txt"
+PPC = "countries/Point.txt"
+THC = "countries/Trempeleau.txt"
+GDF = "countries/Goodall.txt"
+CCC = "countries/Couture.txt"
+SGC = "countries/Saugeen.txt"
+NYH = "countries/NewYork.txt"
+HHC = "countries/Havana.txt"
+OHC = "countries/Ohio_Hopewell.txt"
+KCH = "countries/KansasCity.txt"
+COC = "countries/Crab.txt"
+CHC = "countries/Cooper.txt"
+FMC = "countries/Fourche.txt"
+MIE = "countries/Miller.txt"
+COA = "countries/Copena.txt"
+MCC = "countries/Mill_Creek.txt"
+MCK = "countries/Marksville.txt"
+PRT = "countries/Porter.txt"
+SRS = "countries/Santa_Rosa.txt"
+SCC = "countries/Swift_Creek.txt"
+
+FAL = "countries/Filler_NoRecords.txt"
+FAA = "countries/Filler_NoRecords_North.txt"
+
+
+## SOUTH AMERICA [FLAGS NEEDED]
+
+
+
+## ASIA [FLAGS NEEDED]
+SUL = "countries/Shule.txt"
+KKC = "countries/Kucha.txt"
+LOL = "countries/Loulan.txt"
+NYA = "countries/Niya.txt"
+KHT = "countries/Khotan.txt"

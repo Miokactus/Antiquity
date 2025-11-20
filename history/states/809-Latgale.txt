@@ -4,7 +4,8 @@ state={
 	name="STATE_809"
 
 	history={
-		owner = AAN
+		owner = AES
+		add_core_of = AES
 		victory_points = {
 			310 3 #Daugavpils
 		}

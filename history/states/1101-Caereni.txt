@@ -1,0 +1,15 @@
+state={
+	id=1101
+	name="STATE_1101"
+	provinces={
+		9090 
+	}
+	history = {
+		owner = CEI
+		add_core_of = CEI
+	}
+	manpower = 25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

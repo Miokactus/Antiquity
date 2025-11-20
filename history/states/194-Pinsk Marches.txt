@@ -7,7 +7,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = AAN
+		owner = TSA
+		add_core_of = TSA
 		buildings = {
 			infrastructure = 2
 			#

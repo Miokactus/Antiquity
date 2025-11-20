@@ -9,8 +9,9 @@ state={
 		552 3283 3438 3485 3510 3545 6462 6534 6595 9470 9570 11401 11414 11517 
 	}
 	history = {
-		owner = AAN
-		add_core_of = AAN
+		owner = LUG
+		add_core_of = LUG
+		
 	}
 	manpower=3052726
 	buildings_max_level_factor=1.000

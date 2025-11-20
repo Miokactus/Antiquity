@@ -1,0 +1,15 @@
+state={
+	id=1090
+	name="STATE_1090"
+	provinces={
+		3501 
+	}
+	history={
+		owner = CTC
+		add_core_of = CTC
+	}
+	manpower=25000
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -3,6 +3,26 @@ ideas = {
 		
 	## GENERIC ##
 		
+		tributary_state = {
+			name = "Tributary State"
+			allowed_civil_war = { always = yes }
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				political_power_cost = 0.1
+			}
+		}
+
+		receiving_tribute = {
+			name = "Receiving Tribute"
+			allowed_civil_war = { always = yes }
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				political_power_cost = -0.1
+			}
+		}
+
+
+
 		democratic_tradition = {
 			name = "Democratic Tradition"
 			allowed_civil_war = { always = yes }
