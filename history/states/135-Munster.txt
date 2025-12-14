@@ -8,7 +8,7 @@ state={
 		owner = GGA
 		add_core_of = GGA
 	}
-	manpower=941400
+	manpower=31400
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

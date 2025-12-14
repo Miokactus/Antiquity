@@ -4,7 +4,7 @@ state={
 	provinces={
 		11829 
 	}
-	manpower=1814936
+	manpower=281493
 	history = {
 		owner = ROE
 		add_core_of = ROE

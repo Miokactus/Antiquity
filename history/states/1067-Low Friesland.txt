@@ -4,11 +4,14 @@ state={
 	provinces={
 		6241 6286 9363 9403 
 	}
+	resources = {
+		wood = 2
+	}
 	history = {
 		owner = CMI
 		add_core_of = CMI
 	}
-	manpower=15000
+	manpower=95000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

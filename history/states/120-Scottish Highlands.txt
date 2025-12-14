@@ -12,7 +12,7 @@ state={
 		owner = CRG
 		add_core_of = CRG
 	}
-	manpower=247873
+	manpower=37873
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

@@ -11,7 +11,7 @@ state={
 		owner = CLO
 		add_core_of = CLO
 	}
-	manpower=24993300
+	manpower=393300
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

@@ -8,7 +8,7 @@ state={
 		owner = HHC
 		add_core_of = HHC
 	}
-	manpower=7630651
+	manpower=76306
 	buildings_max_level_factor=1.000
 	state_category=megalopolis
 	local_supplies=0.000

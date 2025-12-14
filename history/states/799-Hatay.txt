@@ -5,7 +5,9 @@ state={
 		12029 
 	}
 	manpower = 234379
-	
+	resources = {
+		grain = 4
+	}
 	state_category = enclave
 
 	history= {

@@ -7,6 +7,9 @@ state={
 	history = {
 		owner = TNI
 		add_core_of = TNI
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower=15000
 	state_category = rural

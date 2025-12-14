@@ -11,7 +11,7 @@ state={
 		owner = TBI
 		add_core_of = TBI
 	}
-	manpower=2056854
+	manpower=130568
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

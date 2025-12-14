@@ -8,7 +8,7 @@ state={
 		owner = FRI
 		add_core_of = FRI
 	}
-	manpower=2364000
+	manpower=236400
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=14.000

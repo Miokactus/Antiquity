@@ -8,7 +8,7 @@ state={
 		owner = SCC
 		add_core_of = SCC
 	}
-	manpower=2908504
+	manpower=29085
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

@@ -5,11 +5,14 @@ state={
 		1194 9945 10113 
 	}
 	state_category=rural
-	manpower=15000
+	manpower=39000
 	history = {
 		owner = ROE
 		add_core_of = MAU
 		add_core_of = ROE
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -8,7 +8,7 @@ state={
 		owner = CLC
 		add_core_of = CLC
 	}
-	manpower=2457844
+	manpower=245784
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

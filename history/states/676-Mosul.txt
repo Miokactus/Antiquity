@@ -3,6 +3,7 @@ state={
 	name="STATE_676"
 	resources={
 		gold_ingot=8.000
+		grain = 3
 	}
 	provinces={
 		1600 1938 3916 6826 8123 10106 10793 10804 12372 

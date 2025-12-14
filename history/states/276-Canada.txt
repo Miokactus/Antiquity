@@ -8,7 +8,7 @@ state={
 		owner = PPC
 		add_core_of = PPC
 	}
-	manpower=3117017
+	manpower=31170
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

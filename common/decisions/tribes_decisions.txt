@@ -1,0 +1,49 @@
+tribal_actions = {
+	do_a_raid = {
+
+		icon = generic_civil_support
+		days_re_enable = 100
+		cost = 25
+		allowed = {
+			has_government = neutrality
+    	}
+		available = {
+			has_manpower > 500
+		}
+		visible = {
+			has_government = neutrality
+		}
+		target_root_trigger = { TAG = ROOT }
+		target_array = neighbors
+		complete_effect = {
+			if = {
+				limit = {
+					FROM = {
+						has_equipment = {
+    						infantry_equipment_1 > 150
+						}
+					}
+				}
+				ROOT = { 
+					add_war_support = 0.05
+					add_political_power = 70
+					FROM = {
+						add_manpower = -500
+						add_political_power = -70
+						add_war_support = -0.05
+					}
+				}
+				else = {
+					add_war_support = -0.05
+					add_manpower = -500
+					FROM = {
+						add_war_support = 0.05
+						add_political_power = 50
+					}
+				}
+			}
+		}
+		timeout_effect = {
+		}
+	}
+}

@@ -8,7 +8,7 @@ state={
 		owner = XIN
 		add_core_of = XIN
 	}
-	manpower=15000
+	manpower=298000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

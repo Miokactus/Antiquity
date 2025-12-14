@@ -7,8 +7,11 @@ state={
 	history = {
 		owner = MAU
 		add_core_of = MAU
+		buildings = {
+			infrastructure = 2
+		}
 	}
-	manpower=811486
+	manpower=16114
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000

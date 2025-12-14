@@ -4,7 +4,7 @@ state={
 	provinces={
 		6967 9769 9783 9888 9902 9919 
 	}
-	manpower=1358394
+	manpower=135839
 	history = {
 		owner = THR
 		add_core_of = THR

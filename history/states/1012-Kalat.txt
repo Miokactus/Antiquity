@@ -6,7 +6,11 @@ state={
 	}
 	state_category = town
 	manpower = 480164
-
+	resources = {
+		wood = 3
+		grain = 2
+		gold_ingot = 3
+	}
 	history = {
 		owner = PTH
 		add_core_of = PTH

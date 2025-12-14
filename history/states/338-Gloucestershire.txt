@@ -11,7 +11,7 @@ state={
 		owner = DBN
 		add_core_of = DBN
 	}
-	manpower=1800615
+	manpower=60615
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

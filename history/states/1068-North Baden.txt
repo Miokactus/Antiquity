@@ -7,8 +7,11 @@ state={
 	history = {
 		owner = NMI
 		add_core_of = NMI
+		buildings = {
+			infrastructure = 2
+		}
 	}
-	manpower=15000
+	manpower=125000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

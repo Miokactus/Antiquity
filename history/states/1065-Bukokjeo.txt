@@ -8,7 +8,7 @@ state={
 		owner = GOR
 		add_core_of = GOR
 	}
-	manpower=1500
+	manpower=130000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

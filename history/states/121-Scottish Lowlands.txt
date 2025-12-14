@@ -8,7 +8,7 @@ state={
 		owner = ODN
 		add_core_of = ODN
 	}
-	manpower=1431624
+	manpower=54316
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

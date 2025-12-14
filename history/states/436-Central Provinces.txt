@@ -1,13 +1,15 @@
 state={
 	id=436
 	name="STATE_436"
-	resources={
-		chromium=4.000
+	resources = {
+		wood = 3
+		grain = 2
+		gold_ingot = 3
 	}
 	provinces={
 		4883 4950 7430 7619 10030 10171 10872 12781 
 	}
-	manpower=17990937
+	manpower=1799090
 	history = {
 		owner = SAV
 		add_core_of = SAV

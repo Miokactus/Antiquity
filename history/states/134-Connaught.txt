@@ -8,7 +8,7 @@ state={
 		owner = AVE
 		add_core_of = AVE
 	}
-	manpower=667100
+	manpower=37100
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=13.000

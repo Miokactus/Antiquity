@@ -2,12 +2,12 @@
 state={
 	id=17
 	name="STATE_17" # Lorraine
-	manpower = 1517500
+	manpower = 15175
 	
 	state_category = city
 	
 	resources={
-		steel=28 # was: 48
+		steel = 8 # was: 48
 	}
 
 	history={

@@ -2,7 +2,7 @@ state={
 	id=129
 	name="STATE_129"
 	resources={
-		steel=11.000
+		steel = 1.000
 	}
 	provinces={
 		364 3353 6237 9250 9322 11279 
@@ -11,7 +11,7 @@ state={
 		owner = CRL
 		add_core_of = CRL
 	}
-	manpower=2212021
+	manpower=51202
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

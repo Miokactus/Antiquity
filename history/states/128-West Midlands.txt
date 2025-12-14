@@ -2,7 +2,7 @@ state={
 	id=128
 	name="STATE_128"
 	resources={
-		steel=27.000
+		steel = 7.000
 	}
 	provinces={
 		6270 7239 9268 9297 
@@ -11,7 +11,7 @@ state={
 		owner = DBN
 		add_core_of = DBN
 	}
-	manpower=3685235
+	manpower=38523
 	buildings_max_level_factor=1.000
 	state_category=metropolis
 	local_supplies=0.000

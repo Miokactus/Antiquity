@@ -4,7 +4,8 @@ state={
 	name="STATE_342" # Antalya
 	manpower = 362689
 	resources={
-		chromium=35 # was: 46
+		chromium=5 # was: 46
+		gold_ingot = 8
 	}
 	state_category = rural
 

@@ -11,7 +11,7 @@ state={
 		owner = MCK
 		add_core_of = MCK
 	}
-	manpower=2101592
+	manpower=21015
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

@@ -1,0 +1,84 @@
+################
+#Generic EVENTS#
+################
+
+add_namespace = tribal
+
+#TRIBAL GO FOR RAID [SENDER]
+country_event = {
+	id = tribal.1
+	title = tribal.1.t
+	desc = tribal.1.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = tribal.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+##TRIBAL GO FOR RAID [RECEIVER]
+country_event = {
+	id = tribal.2
+	title = tribal.2.t
+	desc = tribal.2.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tribal.2.a
+		ai_chance = { factor = 1 }
+		if = {
+			has_manpower > 1000
+		}
+	}
+}
+
+
+##TRIBAL GO FOR RAID [SENDER VICTORY]
+country_event = {
+	id = tribal.3
+	title = tribal.3.t
+	desc = tribal.3.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tribal.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+##TRIBAL GO FOR RAID [RECEIVER VICTORY]
+country_event = {
+	id = tribal.4
+	title = tribal.4.t
+	desc = tribal.4.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tribal.4.a
+		ai_chance = { factor = 1 }
+	}
+}

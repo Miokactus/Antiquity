@@ -2,7 +2,7 @@
 state={
 	id=429
 	name="STATE_429" #Bombay
-	manpower = 18928000
+	manpower = 1892800
 	state_category = town 
 	
 	resources={

@@ -8,7 +8,10 @@ state={
 		owner = CRD
 		add_core_of = CRD
 	}
-	manpower=15000
+	resources = {
+		wood = 6
+	}
+	manpower=155000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

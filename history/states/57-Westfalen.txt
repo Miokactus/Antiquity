@@ -8,7 +8,7 @@ state={
 		owner = ANI
 		add_core_of = ANI
 	}
-	manpower=5109333
+	manpower=51093
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

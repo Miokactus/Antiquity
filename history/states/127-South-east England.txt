@@ -8,7 +8,7 @@ state={
 		owner = RGN
 		add_core_of = RGN
 	}
-	manpower=3193383
+	manpower=41933
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=16.000

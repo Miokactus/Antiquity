@@ -6,6 +6,7 @@ state = {
 
 	resources = {
 		gold_ingot = 10 # was: 12
+		grain = 2
 	}
 
 	history = {

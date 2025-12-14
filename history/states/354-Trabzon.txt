@@ -4,7 +4,7 @@ state={
 	provinces={
 		3979 9886 9932 
 	}
-	manpower=1031129
+	manpower=231129
 	history = {
 		add_core_of = PON
 		owner = PON

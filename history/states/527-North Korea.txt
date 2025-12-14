@@ -2,7 +2,7 @@ state={
 	id=527
 	name="STATE_527"
 	resources={
-		steel=18.000
+		steel = 8.000
 	}
 	provinces={
 		852 906 959 978 3803 3852 3904 3981 6822 6922 9899 11775 11878 
@@ -11,7 +11,7 @@ state={
 		owner = OKJ
 		add_core_of = OKJ
 	}
-	manpower=6774200
+	manpower=277420
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

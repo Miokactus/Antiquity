@@ -4,7 +4,7 @@ state={
 	provinces={
 		912 3912 4052 9790 9795 9918 11835 11896 
 	}
-	manpower = 1500
+	manpower = 150500
 	history={
 		owner = XIN
 		add_core_of = XIN

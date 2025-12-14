@@ -1,10 +1,12 @@
 state = {
 	id = 16
 	name = "STATE_16"
-	manpower = 7038500
+	manpower = 103850
 	
 	state_category = metropolis
-	
+	resources = {
+		wood = 3
+	}
 
 	history = {
 
@@ -18,7 +20,7 @@ state = {
 
 		buildings = {
 			anti_air_building = 3
-			#
+			infrastructure = 2
 
             9523 = {
 			    landmark_eiffel_tower = {

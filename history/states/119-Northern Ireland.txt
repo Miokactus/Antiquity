@@ -11,7 +11,7 @@ state={
 		owner = DRI
 		add_core_of = DRI
 	}
-	manpower=1198537
+	manpower=51985
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

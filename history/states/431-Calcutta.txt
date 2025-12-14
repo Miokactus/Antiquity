@@ -2,7 +2,7 @@ state={
 	id=431
 	name="STATE_431"
 	resources={
-		steel=13.000
+		steel = 3.000
 		# #1.000
 	}
 
@@ -29,7 +29,7 @@ state={
 	provinces={
 		1159 1609 1656 4062 4204 4245 4644 7220 7475 7537 7565 7593 10077 12050 12338 
 	}
-	manpower=18778100
+	manpower=2778100
 	buildings_max_level_factor=1.000
 	state_category=city
 

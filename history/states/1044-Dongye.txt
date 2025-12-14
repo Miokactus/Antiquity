@@ -8,7 +8,7 @@ state={
 		owner = EYE
 		add_core_of = EYE
 	}
-	manpower=15000
+	manpower=95000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

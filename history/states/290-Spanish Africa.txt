@@ -10,8 +10,11 @@ state={
 	history = {
 		owner = ROE
 		add_core_of = MAU
+		buildings = {
+			infrastructure = 2
+		}
 	}
-	manpower=744000
+	manpower=67440
 	buildings_max_level_factor=1.000
 	state_category=rural
 	local_supplies=0.000

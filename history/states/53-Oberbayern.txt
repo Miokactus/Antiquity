@@ -8,7 +8,7 @@ state={
 		owner = ROE
 		add_core_of = ROE
 	}
-	manpower=1453365
+	manpower=145336
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=7.000

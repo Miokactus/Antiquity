@@ -133,6 +133,8 @@ ideas = {
 			allowed_civil_war = { NOT = { has_government = fascism } }
 			picture = ETH_national_studs
 			modifier = {
+				army_speed_factor = 0.25
+				army_org_factor = -0.3
 				consumer_goods_factor = -0.2
 				production_speed_buildings_factor = -0.3
 				industrial_capacity_factory = -0.3

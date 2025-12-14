@@ -8,7 +8,7 @@ state={
 		owner = IDS
 		add_core_of = IDS
 	}
-	manpower=11786000
+	manpower=1178600
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=9.000

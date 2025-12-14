@@ -11,7 +11,7 @@ state={
 		owner = ERR
 		add_core_of = ERR
 	}
-	manpower=2476250
+	manpower=247620
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

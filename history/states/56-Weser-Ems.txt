@@ -8,7 +8,7 @@ state={
 		owner = AMV
 		add_core_of = AMV
 	}
-	manpower=2058467
+	manpower=205846
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=14.000

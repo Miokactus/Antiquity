@@ -2,6 +2,9 @@ state={
 	id=89
 	name="STATE_89"
 
+	resources = {
+		gold_ingot = 5
+	}
 	history={
 		victory_points = {
 			11411 1
@@ -24,7 +27,7 @@ state={
 	provinces={
 		3743 6431 6460 6483 9425 11411 11550 
 	}
-	manpower=2180300
+	manpower=218030
 	buildings_max_level_factor=1.000
 	state_category=town
 

@@ -8,7 +8,7 @@ state={
 		owner = AAN
 		
 	}
-	manpower=5224174
+	manpower=522417
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

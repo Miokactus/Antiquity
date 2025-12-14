@@ -4,11 +4,14 @@ state={
 	provinces={
 		9823 11759 11871 
 	}
+	resources = {
+		grain = 3
+	}
 	history = {
 		owner = ROE
 		add_core_of = ROE
 	}
-	manpower=1500
+	manpower=67500
 	state_category=rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

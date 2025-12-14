@@ -9,7 +9,7 @@ state={
 		add_core_of = TTH
 		victory_points = { 2008 12 }
 	}
-	manpower = 25000
+	manpower = 250000
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

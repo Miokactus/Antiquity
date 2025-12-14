@@ -4,7 +4,7 @@ state={
 	provinces={
 		1459 4629 7682 10488 10530 10660 11687 
 	}
-	manpower=4137910
+	manpower=413791
 	history = {
 		owner = YUZ
 		add_core_of = YUZ

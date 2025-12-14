@@ -8,7 +8,7 @@ state={
 		owner = JIN
 		add_core_of = JIN
 	}
-	manpower = 15000
+	manpower = 75000
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -2,7 +2,7 @@
 state={
 	id=447
 	name="STATE_447"
-	manpower = 3859239
+	manpower = 1259239
 	resources={
 		gold_ingot=1 # was: 2
 		#= 3 #maganese

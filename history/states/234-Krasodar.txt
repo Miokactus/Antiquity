@@ -12,7 +12,7 @@ state={
 		add_core_of = BOP
 		owner = BOP
 	}
-	manpower=2903371
+	manpower=290337
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=9.000

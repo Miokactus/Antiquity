@@ -2,11 +2,13 @@
 state={
 	id=24
 	name="STATE_24"
-	manpower = 1546300
+	manpower = 15463
 	
 	
 	state_category = large_town
-
+	resources = {
+		wood = 2
+	}
 	history={
 		owner = ROE
 		add_core_of = ROE
@@ -18,12 +20,12 @@ state={
 		}
 		buildings = {
 			industrial_complex = 1
-
+			infrastructure = 2
 		}
 		
 		1939.1.1 = {
 			buildings = {
-				#
+				infrastructure = 2
 			}
 		}
 	}

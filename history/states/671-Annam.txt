@@ -12,7 +12,7 @@ state={
 		owner = AAN
 		
 	}
-	manpower=11528000
+	manpower=1528000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

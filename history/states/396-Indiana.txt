@@ -8,7 +8,7 @@ state={
 		owner = FAA
 		
 	}
-	manpower=3238501
+	manpower=32385
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	local_supplies=0.000

@@ -8,7 +8,7 @@ state={
 		owner = OHC
 		add_core_of = OHC
 	}
-	manpower=1901974
+	manpower=90197
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

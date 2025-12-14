@@ -8,7 +8,7 @@ state={
 		owner = CHP
 		add_core_of = CHP
 	}
-	manpower = 25000
+	manpower = 95000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

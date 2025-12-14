@@ -7,7 +7,7 @@ state={
 	provinces={
 		732 3718 6552 6723 6739 9527 
 	}
-	manpower=2297983
+	manpower=229798
 	history = {
 		owner = MRA
 		add_core_of = MRA

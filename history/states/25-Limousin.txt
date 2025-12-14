@@ -2,8 +2,11 @@
 state={
 	id=25
 	name="STATE_25"
-	manpower = 1343700
-
+	manpower = 33437
+	resources = {
+		wood = 4
+		grain = 2
+	}
 
 	state_category = large_town
 	history={

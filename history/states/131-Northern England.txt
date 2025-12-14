@@ -2,7 +2,7 @@ state={
 	id=131
 	name="STATE_131"
 	resources={
-		steel=18.000
+		steel = 8.000
 	}
 	provinces={
 		351 11270 
@@ -11,7 +11,7 @@ state={
 		owner = BGE
 		add_core_of = BGE
 	}
-	manpower=2128860
+	manpower=21288
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=14.000
