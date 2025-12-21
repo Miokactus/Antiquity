@@ -168,4 +168,116 @@ characters = {
 	}
 
 
+
+
+
+
+	#####################
+	### FIELD MARSHAL ###
+	#####################
+
+	ROE_germanicus_general = {
+		name = "Germanicus Julius Caesar"
+		portraits = {
+            	army = {
+					small = "GFX_idea_ROE_germanicus"
+                	large = "GFX_leader_ROE_germanicus"
+            	}
+        	}
+		field_marshal = {
+			traits = { brilliant_strategist war_hero }
+    		skill = 4
+    		attack_skill = 4
+    		defense_skill = 2
+    		planning_skill = 3
+    		logistics_skill = 3
+		}
+		advisor = {
+            slot = high_command
+            idea_token = germanicus_general
+            ledger = army
+            allowed = { original_tag = ROE } # Optional, doesn't change anything.
+            available = {
+            }
+            traits = { army_chief_planning_3 }
+        }
+	}
+
+	################
+	### GENERALS ###
+	################
+
+	ROE_aulus_caecina = {
+		name = "Aulus Caecina Severus"
+		portraits = {
+            	army = {
+					large = "GFX_leader_ROE_generic_statue"
+					small = "GFX_idea_empty_generic"
+            	}
+        	}
+		corps_commander = {
+			traits = { skirmisher }
+    		skill = 3
+    		attack_skill = 4
+    		defense_skill = 3
+    		planning_skill = 3
+    		logistics_skill = 1
+		}
+		advisor = {
+            slot = high_command
+            idea_token = aulus_caecina
+            ledger = army
+            allowed = { original_tag = ROE } # Optional, doesn't change anything.
+            available = {
+            }
+            traits = { army_chief_organizational_1 }
+        }
+	}
+
+	ROE_generalem_fortuitum = {
+		name = "Generalem Fortuitum"
+		portraits = {
+            	army = {
+					large = "GFX_leader_ROE_generic_statue"
+					small = "GFX_idea_empty_generic"
+            	}
+        	}
+		corps_commander = {
+			traits = { trickster }
+    		skill = 2
+    		attack_skill = 4
+    		defense_skill = 2
+    		planning_skill = 4
+    		logistics_skill = 3
+		}
+		advisor = {
+            slot = high_command
+            idea_token = generalem_fortuitum
+            ledger = army
+            allowed = { original_tag = ROE } # Optional, doesn't change anything.
+            available = {
+            }
+            traits = { army_cavalry_1 }
+        }
+	}
+
+	ROE_dux_amissus = {
+		name = "Dux Amissus"
+		portraits = {
+            	army = {
+					large = "GFX_leader_ROE_generic_statue"
+					small = "GFX_idea_empty_generic"
+            	}
+        	}
+		corps_commander = {
+			traits = { infantry_leader }
+    		skill = 2
+    		attack_skill = 4
+    		defense_skill = 2
+    		planning_skill = 4
+    		logistics_skill = 3
+		}
+	}
+
+
 }

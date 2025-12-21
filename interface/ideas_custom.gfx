@@ -10,4 +10,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/north_america_view.dds"	
 	}
 
+	SpriteType = {
+		name = "GFX_idea_ROE_germanicus"
+		texturefile = "gfx/interface/ideas/ROE_germanicus.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_idea_empty_generic"
+		texturefile = "gfx/interface/ideas/empty_generic.dds"	
+	}
+
 }

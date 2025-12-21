@@ -22,6 +22,7 @@
  women_rights_rome_tooltip: "§GOnce the process of assimilation is done, we will obtain a bonus!§!"
  ROE_extend_the_citizenship_tooltip: "§GWe will grant roman citizenship to long-lasting allies in some of our provinces.§!"
  german_tribes_failed: "We will be forced to retreat from §Y[FROM.GetNameDef]'s§! territories."
+ ROE_german_campaign_tooltip: "We will have the possibility to either §Galign the tribes§! or §Rcrush them§!!"
 
  ## COUNTRY FLAGS
 

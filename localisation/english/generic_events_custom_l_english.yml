@@ -1,0 +1,15 @@
+﻿l_english:
+ ## ROMAN EMPIRE EVENTS ##
+
+ generic_custom.10.t: "[FROM.GetNameDef] Asks for a Tribute!"
+ generic_custom.10.d: ""
+ generic_custom.10.a: "We have no other choices.."
+ generic_custom.10.b: "Never!"
+
+ generic_custom.11.t: "§G[FROM.GetNameDef]§! Accepts to be a Tributary!"
+ generic_custom.11.d: ""
+ generic_custom.11.a: "They know their position."
+ 
+ generic_custom.12.t: "§R[FROM.GetNameDef]§! Refuses to be a Tributary!"
+ generic_custom.12.d: ""
+ generic_custom.12.a: "War it is!"

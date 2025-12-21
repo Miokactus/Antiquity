@@ -210,6 +210,11 @@ spriteTypes = {
         texturefile = "gfx/characters/ROE_military_council.dds" # The folder and filename don't matter, as long as they are correct
     }
 
+    spriteType = {
+        name = "GFX_leader_ROE_generic_statue"
+        texturefile = "gfx/characters/ROE_generic_statue.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
 
 ## CLIENT STATES OF ROME GFX ##
 

@@ -15,6 +15,11 @@ recruit_character = roman_army
 recruit_character = decentralised_tribes
 recruit_character = ROE_jesus_christ
 
+recruit_character = ROE_germanicus_general
+recruit_character = ROE_aulus_caecina
+recruit_character = ROE_generalem_fortuitum
+recruit_character = ROE_dux_amissus
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -57,7 +62,7 @@ set_variable = {
 add_dynamic_modifier = { modifier = ROE_citizenship }
 
 add_ideas = {
-	limited_exports
+	export_focus
 	limited_conscription 
 	civilian_economy
 	poor_industry

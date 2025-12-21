@@ -164,14 +164,36 @@ country_event = {
 	major = no
 	option = { ## YES -> becomes tributary
 		name = generic_custom.10.a
-		ai_chance = { factor = 20 }
+		ai_chance = { 
+			base = 10
+			modifier = {
+				FROM = {
+					has_opinion = {
+						target = ROOT
+    					value > 70
+					}
+				}
+				add = 10
+			}
+		}
 		FROM = { 
 			country_event = generic_custom.11
 		}
 	}
 	option = { ## NO -> nothing happens
 		name = generic_custom.10.b
-		ai_chance = { factor = 20 }
+		ai_chance = { 
+			base = 10
+			modifier = {
+				FROM = {
+					has_opinion = {
+						target = ROOT
+    					value < 30
+					}
+				}
+				add = 10
+			}
+		}
 		FROM = { 
 			country_event = generic_custom.12
 		}

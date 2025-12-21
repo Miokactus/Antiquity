@@ -36,7 +36,9 @@ set_popularities = {
 }
 
 add_ideas = {
-    limited_exports
+    export_focus
     limited_conscription
     civilian_economy
+    poor_industry
+	one_party_monopoly
 }

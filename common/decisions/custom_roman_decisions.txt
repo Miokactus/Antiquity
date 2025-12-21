@@ -14,7 +14,7 @@ crisis = {
 			}
 		}
 
-		days_mission_timeout = 60
+		days_mission_timeout = 80
 
 		activation = {
 			ROE = {
@@ -96,7 +96,7 @@ germania_campaign = {
 		target_root_trigger = { TAG = ROOT }
 		target_array = neighbors 
 		war_with_on_complete = FROM
-		days_remove = 2
+		days_remove = 20
 		target_trigger = {
         	FROM = {
            		AND = {
@@ -137,13 +137,15 @@ germania_campaign = {
     			type = puppet_wargoal_focus
     			target = FROM
 			}
-			FROM = {
+			hidden_effect = { 
+				FROM = {
 				random_owned_controlled_state = {
 					create_unit = {
     					division = "name = \"Barbarische Armee\" division_template = \"Barbarische Armee\" start_experience_factor = 0.6 start_manpower_factor = 0.9"
     					owner = FROM
-						count = 3
+						count = 2
 					}
+				}
 				}
 			}
 		}
@@ -179,7 +181,7 @@ germania_campaign = {
 				}
         	}
     	}
-		cost = 100
+		cost = 125
 		allowed = {
 			original_tag = ROE
     	}
@@ -232,7 +234,7 @@ germania_campaign = {
 				NOT = { has_war_with = ROOT }
 			}
 		}
-		days_mission_timeout = 100
+		days_mission_timeout = 120
 		activation = {
 			
 		}
@@ -247,7 +249,7 @@ germania_campaign = {
 			}
 			ROOT = {
 				add_war_support = -0.05
-				add_stability = -0.1
+				add_stability = -0.05
 			}
 		}
 	}

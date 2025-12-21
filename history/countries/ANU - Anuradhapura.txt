@@ -33,6 +33,6 @@ set_popularities = {
 	neutrality = 0
 }
  
-add_ideas = limited_exports
+add_ideas = export_focus
 add_ideas = limited_conscription
 add_ideas = civilian_economy

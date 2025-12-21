@@ -31,7 +31,7 @@ set_popularities = {
 }
  
 add_ideas = {
-	limited_exports
+	export_focus
 	limited_conscription
 	civilian_economy
 	PTH_decentralised_structure

@@ -76,7 +76,6 @@ ideas = {
 				stability_factor = -0.1
 				war_support_factor = 0.15
 				conscription_factor = -0.1
-				political_power_gain = 0.5
 			}
 		}
 
@@ -90,8 +89,75 @@ ideas = {
 				compliance_growth = 0.15
 				stability_factor = 0.1
 				war_support_factor = -0.1
-				political_power_cost = -0.3
+				political_power_gain = 0.5
 				conscription_factor = 0.1
+			}
+		}
+
+
+
+
+		ROE_southern_integration = {
+			name = "Southern Integration"
+			allowed_civil_war = { always = yes }
+			picture = FRA_matignon_agreements
+			on_remove = {
+			}
+			modifier = {
+				compliance_growth = 0.1
+				political_power_cost = -0.3
+			}
+			targeted_modifier = {
+				tag = MAU
+				autonomy_gain = -0.4
+			}
+		}
+
+		ROE_eastern_integration = {
+			name = "Eastern Integration"
+			allowed_civil_war = { always = yes }
+			picture = FRA_national_mobilization_focus
+			on_remove = {
+			}
+			modifier = {
+				compliance_growth = 0.1
+				political_power_cost = -0.3
+			}
+			targeted_modifier = {
+				tag = THR
+				autonomy_gain = -0.2
+			}
+			targeted_modifier = {
+				tag = PON
+				autonomy_gain = -0.2
+			}
+			targeted_modifier = {
+				tag = CAP
+				autonomy_gain = -0.2
+			}
+			targeted_modifier = {
+				tag = LYC
+				autonomy_gain = -0.2
+			}
+		}
+
+		ROE_levantine_integration = {
+			name = "Levantine Integration"
+			allowed_civil_war = { always = yes }
+			picture = COG_the_invisible_roof
+			on_remove = {
+			}
+			modifier = {
+				compliance_growth = 0.1
+				political_power_cost = -0.3
+			}
+			targeted_modifier = {
+				tag = NAB
+				autonomy_gain = -0.2
+			}
+			targeted_modifier = {
+				tag = JUD
+				autonomy_gain = -0.4
 			}
 		}
 

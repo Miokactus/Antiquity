@@ -1434,6 +1434,348 @@ country_event = {
 
 
 
+#Deal with the Arsacid [DISMANTLE ARMENIA + PUPPET STATE FOR ROME - Sender]
+country_event = {
+	id = rome_event.12
+	title = rome_event.12.t
+	desc = rome_event.12.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Yes (annex east armenia + puppet armenian state for Rome)
+		name = rome_event.12.a
+		ai_chance = { 
+			base = 10
+			modifier = {
+				FROM = {
+					has_opinion = {
+						target = ROOT
+    					value > 70
+					}
+				}
+				add = 10
+			}
+		}
+		FROM = {
+			country_event = rome_event.13
+		}
+		ARR = {
+			country_event = rome_event.13
+		}
+	}
+	option = { ## Let's arrange a compromise (Rome annex Sophene and western armenia, Arsacid eastern armenia, rump armenian state)
+		name = rome_event.12.b
+		ai_chance = { 
+			base = 10
+		}
+		FROM = {
+			country_event = rome_event.14
+		}
+		ARR = {
+			country_event = rome_event.14
+		}
+	}
+	option = { ## No!
+		name = rome_event.12.c
+		ai_chance = { 
+			base = 10
+			modifier = {
+				FROM = {
+					has_opinion = {
+						target = ROOT
+    					value < 30
+					}
+				}
+				add = 15
+			}
+		}
+		FROM = {
+			country_event = rome_event.15
+		}
+		ARR = {
+			country_event = rome_event.15
+		}
+	}
+}
+
+#Deal with the Arsacid [DISMANTLE ARMENIA - Answer 1]
+country_event = {
+	id = rome_event.13
+	title = rome_event.13.t
+	desc = rome_event.13.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Yes!
+		name = rome_event.13.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { tag = ARR }
+		}
+		ROE = {
+			transfer_state = 353
+			transfer_state = 1025
+			set_autonomy = {
+				target = SOP
+    			autonomous_state = autonomy_puppet
+    			end_wars = yes
+    			end_civil_wars = yes
+			}
+			set_autonomy = {
+				target = ARR
+    			autonomous_state = autonomy_tributary
+    			end_wars = yes
+    			end_civil_wars = yes
+			}
+		}
+		PTH = {
+			transfer_state = 1034
+			transfer_state = 1000
+			transfer_state = 419
+			transfer_state = 1035
+			transfer_state = 352
+		}
+	}
+	option = { ## Yes (armenia)
+		name = rome_event.13.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			tag = ARR
+		}
+	}
+}
+
+#Deal with the Arsacid [DISMANTLE ARMENIA - Answer 2]
+country_event = {
+	id = rome_event.14
+	title = rome_event.14.t
+	desc = rome_event.14.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Compromise YES
+		name = rome_event.14.a
+		ai_chance = { factor = 40 }
+		trigger = {
+			NOT = { tag = ARR }
+		}
+		ROE = {
+			transfer_state = 353
+			transfer_state = 1025
+			set_autonomy = {
+				target = SOP
+    			autonomous_state = autonomy_puppet
+    			end_wars = yes
+    			end_civil_wars = yes
+			}
+		}
+		PTH = {
+			transfer_state = 1034
+			transfer_state = 1000
+			transfer_state = 419
+			transfer_state = 1035
+		}
+	}
+	option = { ## Compromise NO
+		name = rome_event.14.b
+		ai_chance = { factor = 10 }
+		trigger = {
+			NOT = { tag = ARR }
+		}
+		353 = {
+			add_claim_by = ROE
+		}
+		1025 = {
+			add_claim_by = ROE
+		}
+		350 = {
+			add_claim_by = ROE
+		}
+	}
+	option = { ## Compromise (armenia)
+		name = rome_event.14.c
+		ai_chance = { factor = 20 }
+		trigger = {
+			tag = ARR
+		}
+	}
+}
+
+#Deal with the Arsacid [DISMANTLE ARMENIA - Answer 3]
+country_event = {
+	id = rome_event.15
+	title = rome_event.15.t
+	desc = rome_event.15.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## No
+		name = rome_event.15.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { tag = ARR }
+		}
+		create_wargoal = {
+    		type = puppet_wargoal_focus
+    		target = ARR
+		}
+		353 = {
+			add_claim_by = ROE
+		}
+		1025 = {
+			add_claim_by = ROE
+		}
+		350 = {
+			add_claim_by = ROE
+		}
+	}
+	option = { ## No (armenia)
+		name = rome_event.15.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			tag = ARR
+		}
+	}
+}
+
+
+#Deal with Armenia [DISMANTLE ARSACID - Sender]
+country_event = {
+	id = rome_event.16
+	title = rome_event.16.t
+	desc = rome_event.16.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Yes!
+		name = rome_event.16.a
+		ai_chance = { factor = 10 }
+		trigger = {
+		}
+		FROM = { country_event = rome_event.17 }
+	}
+	option = { ## No!
+		name = rome_event.16.b
+		ai_chance = { factor = 10 }
+		trigger = {
+		}
+		FROM = {
+			country_event = rome_event.18
+			set_country_flag = armenia_refused_arsacid_interv
+		}
+	}
+}
+
+#Deal with Armenia [DISMANTLE ARSACID - Yes]
+country_event = {
+	id = rome_event.17
+	title = rome_event.17.t
+	desc = rome_event.17.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Yes!
+		name = rome_event.17.a
+		ai_chance = { factor = 10 }
+		trigger = {
+		}
+		create_wargoal = {
+    		type = take_state_focus
+    		target = PTH
+			generator = { 680 676 1186 }
+    		expire = 180
+		}
+		ARR = {
+			create_wargoal = {
+    			type = take_state_focus
+    			target = PTH
+				generator = { 420 1001 }
+    			expire = 180
+			}
+		}
+	}
+}
+
+#Deal with Armenia [DISMANTLE ARSACID - No]
+country_event = {
+	id = rome_event.18
+	title = rome_event.18.t
+	desc = rome_event.18.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Damn it! We need to coup them then!
+		name = rome_event.18.a
+		ai_chance = { factor = 10 }
+		trigger = {
+		}
+		353 = {
+			add_claim_by = ROE
+		}
+		1025 = {
+			add_claim_by = ROE
+		}
+		350 = {
+			add_claim_by = ROE
+		}
+		680 = {
+			add_claim_by = ROE
+		}
+		676 = {
+			add_claim_by = ROE
+		}
+		1186 = {
+			add_claim_by = ROE
+		}
+	}
+}
+
+
+
+
+
 
 
 #Military Coup d'Etat in Rome [news]

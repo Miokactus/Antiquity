@@ -61,6 +61,44 @@
  rome_event.11.a: "The end of an Era."
 
 
+
+ rome_event.12.t: "A Roman Deal: Carve up Armenia"
+ rome_event.12.d: ""
+ rome_event.12.a: "Yes"
+ rome_event.12.b: "Why not a compromise?"
+ rome_event.12.c: "No!"
+
+ rome_event.13.t: "A Roman Deal: Carve up Armenia, Yes!"
+ rome_event.13.d: ""
+ rome_event.13.a: "Armenia, finally!"
+ rome_event.13.b: "We are doomed!"
+
+ rome_event.14.t: "A Roman Deal: Carve up Armenia, A Compromise?"
+ rome_event.14.d: ""
+ rome_event.14.a: "Why not."
+ rome_event.14.b: "No! Who do you think we are?"
+ rome_event.14.c: "It's better than nothing, I suppose.."
+
+ rome_event.15.t: "A Roman Deal: Carve up Armenia, No!"
+ rome_event.15.d: ""
+ rome_event.15.a: "Mobilise the Armies! With or without them, we'll get what we want!"
+ rome_event.15.b: "Glory to Armenia!"
+
+
+ rome_event.16.t: "A Roman Deal: Carve up the Arsacid"
+ rome_event.16.d: ""
+ rome_event.16.a: "Onwards! Mobilise the armies!"
+ rome_event.16.b: "We can't risk our destruction!"
+
+ rome_event.17.t: "A Roman Deal: Carve up the Arsacid, Yes!"
+ rome_event.17.d: ""
+ rome_event.17.a: "To Ctesiphon!"
+
+ rome_event.18.t: "A Roman Deal: Carve up the Arsacid, No!"
+ rome_event.18.d: ""
+ rome_event.18.a: "Arg! We'll need to.. do some shady things."
+
+
  ## ROMAN EMPIRE NEWS EVENTS ##
 
  roman_news.1.t: "Military coup d'Etat in Rome!"
