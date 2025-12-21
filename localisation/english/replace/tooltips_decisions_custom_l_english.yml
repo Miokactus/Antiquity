@@ -1,0 +1,48 @@
+﻿l_english:
+ ## DECISIONS
+
+ germania_campaign: "The Germania Campaign"
+ raid_local_tribes: "Raid §R[FROM.GetNameDef]§!"
+ sway_local_tribes: "Sway §G[FROM.GetNameDef]§!"
+ retreating_from_tribal_lands: "Retreat from §Y[FROM.GetNameDef]§!"
+
+ roman_citizenship: "The Roman Citizenship"
+ expand_to_the_gauls: "Extend to the Gauls"
+ expand_to_hispania: "Extend to Hispania"
+ expand_to_illyricum: "Extend to the Illyricum"
+
+
+ roman_military_coup: "Military Coup"
+ roman_deestablishment: "Client States Break Away"
+
+ ## TOOLTIPS
+
+ ROE_provinces_need_high_opinion_tooltip: "Warning! The states need to have a significant opinion of us to remain loyal."
+ peace_rome: "Rome has been lost."
+ women_rights_rome_tooltip: "§GOnce the process of assimilation is done, we will obtain a bonus!§!"
+ ROE_extend_the_citizenship_tooltip: "§GWe will grant roman citizenship to long-lasting allies in some of our provinces.§!"
+ german_tribes_failed: "We will be forced to retreat from §Y[FROM.GetNameDef]'s§! territories."
+
+ ## COUNTRY FLAGS
+
+ roman_military_coupdetat: "The Military has coup'ed the State"
+ roman_stabilised_democracy: "Democracy has been stabilised inside of the Empire"
+ ROE_countdown_to_breakaway: "Countdown to Breakaway"
+ 
+ ROE_senators: "Senatus"
+ ROE_senators_long: "Factio Senatus - Oligarchism"
+
+ ## COUNTRY COMESTIC TAGS
+
+ romanrepublicback: "Roman Republic"
+ romanrepublicback_DEF: "the Restored Roman Republic"
+ romanrepublicback_ADJ: "Roman"
+ ROE_magnificentempire: "Universal Democratic Empire"
+ ROE_magnificentempire_DEF: "the Universal Democratic Empire"
+ ROE_magnificentempire_ADJ: "Universal"
+ ROE_magnificientsenatorialempire: "Magnificient Senatorial Empire"
+ ROE_magnificientsenatorialempire_DEF: "the Magnificient Senatorial Empire"
+ ROE_magnificientsenatorialempire_ADJ: "Roman"
+ ROE_thegreatempire: "Universal Roman Empire"
+ ROE_thegreatempire_DEF: "the Universal Roman Empire"
+ ROE_thegreatempire_ADJ: "Roman"

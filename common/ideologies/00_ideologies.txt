@@ -28,6 +28,10 @@ ideologies = {
 			monarcho_socialism = {
 			}
 
+			jesus_theocracy = {
+				can_be_randomly_selected = no
+			}
+
 		}
 
 		dynamic_faction_names = {
@@ -120,6 +124,10 @@ ideologies = {
 			}
 
 			monarchism = {
+			}
+
+			jesus_monarchism = {
+				can_be_randomly_selected = no
 			}
 		}
 

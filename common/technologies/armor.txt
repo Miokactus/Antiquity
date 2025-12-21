@@ -19,14 +19,14 @@ technologies = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = motorised_infantry
+						has_tech = carriage_infantry
 					}
 
 					load_oob = "unlock_tanks_mot"
 				}
 				if = {
 					limit = {
-						NOT = { has_tech = motorised_infantry }
+						NOT = { has_tech = carriage_infantry }
 					}
 
 					load_oob = "unlock_tanks"
@@ -105,14 +105,14 @@ technologies = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = motorised_infantry
+						has_tech = carriage_infantry
 					}
 
 					load_oob = "unlock_tanks_mot"
 				}
 				if = {
 					limit = {
-						NOT = { has_tech = motorised_infantry }
+						NOT = { has_tech = carriage_infantry }
 					}
 
 					load_oob = "unlock_tanks"
@@ -1597,14 +1597,14 @@ technologies = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_tech = motorised_infantry
+						has_tech = carriage_infantry
 					}
 
 					load_oob = "unlock_tanks_mot"
 				}
 				if = {
 					limit = {
-						NOT = { has_tech = motorised_infantry }
+						NOT = { has_tech = carriage_infantry }
 					}
 
 					load_oob = "unlock_tanks"

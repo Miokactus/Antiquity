@@ -16,6 +16,7 @@ create_country_leader = {
 
 # Starting tech
 set_technology = {
+	infantry_weapons = 1
 }
 
 set_convoys = 10

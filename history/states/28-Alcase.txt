@@ -6,15 +6,12 @@ state={
 	
 	state_category = city
 	resources={
-		steel=42 #was 100 # was: 236
+		steel=12 #was 100 # was: 236
 	}
 
 	history={
 		owner = ROE
 		add_core_of = ROE
-		add_dynamic_modifier = {
-			modifier = FRA_maginot_line_dynamic_modifier
-		}
 		#victory_points = { 6529 1 }
 		#victory_points = { 549 1 }
 		victory_points = { 678 5 }
@@ -22,32 +19,19 @@ state={
 		victory_points = { 9559 5 }
 		buildings = {
 			549 = {
-				bunker = 10
+				bunker = 2
 
 			}
 			678 = {
-				bunker = 10
-
-			}
-			3629 = {
-				bunker = 10
+				bunker = 3
 
 			}
 			6529 = {
-				bunker = 10
+				bunker = 2
 			}
 			9503 = {
-				bunker = 10
+				bunker = 3
 			}
-			9559 = {
-				bunker = 10
-
-			}
-			11502 = {
-				bunker = 10
-
-			}
-			anti_air_building = 5
 			#
 
 		}

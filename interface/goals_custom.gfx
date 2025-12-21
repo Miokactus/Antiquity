@@ -21,6 +21,28 @@ spriteTypes = {
 	}
 
 
+
+	SpriteType = {
+	name = "GFX_goal_north_africa"
+	texturefile = "gfx/interface/goals/north_africa.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_german_attack"
+	texturefile = "gfx/interface/goals/german_attack.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_german_crushing"
+	texturefile = "gfx/interface/goals/german_crushing.dds"	
+	}
+
+	SpriteType = {
+	name = "GFX_goal_alexandria_library"
+	texturefile = "gfx/interface/goals/alexandria_library.dds"	
+	}
+
+
 	################
 	##PLACEHOLDER###
 	################

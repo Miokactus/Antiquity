@@ -1,0 +1,35 @@
+characters = {
+
+	JUD_herodian_tetrachy = {
+		name = "Herodian Tetrarchy"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_generic_building_1"
+            }
+        }
+		country_leader = {
+			desc = "HERODIAN_DESC"
+			expire = "25.5.4"
+			ideology = despotism_comm
+			traits = {
+			}
+		}
+	}
+
+	JUD_jesus_christ = {
+		name = "Jesus Christ"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_jesus_christ"
+            }
+        }
+		country_leader = {
+			desc = "JESUS_DESC"
+			expire = "250.5.4"
+			ideology = jesus_theocracy
+			traits = {
+			}
+		}
+	}
+
+}

@@ -6,6 +6,7 @@ state = {
 	
 	resources = {
 		chromium = 6 
+		grain = 4
 	}
 
 	history = {

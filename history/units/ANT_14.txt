@@ -1,0 +1,16 @@
+division_template = {
+	name = "Peasant's Union"
+	is_locked = yes
+	force_allow_recruiting = yes
+	regiments = { # 5
+			irregular_infantry = {  x = 0 y = 0 }
+			irregular_infantry = {  x = 0 y = 1 }
+	}
+	
+	support = {
+
+	}
+}
+
+units = {
+}

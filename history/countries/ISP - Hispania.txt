@@ -1,0 +1,40 @@
+capital = 167
+
+oob = "ISP_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+    name = "Roman Army in Hispania"
+    desc = "MONARCH_DESC"
+    picture = GFX_leader_ROE_military_council
+    expire = "88.5.4"
+    ideology = military_junta
+    traits = {
+    }
+}
+
+set_technology = {
+	infantry_weapons = 1
+    transport = 1
+    basic_train = 1
+}
+
+set_politics = {
+    ruling_party = fascism
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 60
+    communism = 20
+    neutrality = 20
+}
+
+add_ideas = {
+    limited_exports
+    limited_conscription
+    civilian_economy
+}

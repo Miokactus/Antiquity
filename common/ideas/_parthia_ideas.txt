@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		
+	## PARTHIAN EMPIRE ##
+		
+		PTH_decentralised_structure = {
+			name = "Decentralised Government Structure"
+			allowed_civil_war = { always = yes }
+			picture = AFG_economic_regionalism
+			modifier = {
+				stability_factor = 0.15
+				political_power_cost = 0.5
+				army_org_factor = -0.12
+			}
+		}
+
+	}
+}

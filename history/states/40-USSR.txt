@@ -5,7 +5,10 @@ state={
 	manpower = 2107451
 	
 	state_category = large_town
-
+	resources={
+		gold_ingot = 3
+		grain = 2
+	}
 	history={
 		owner = XAI
 		add_core_of = XAI

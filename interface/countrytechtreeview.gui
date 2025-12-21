@@ -347,6 +347,13 @@ guiTypes = {
 			}
 
 			gridboxtype = {
+				name = "tech_carriage_tree"
+				position = { x = 140 y = 620 }
+				slotsize = { width = 70 height = 70 }
+				format = "LEFT"
+			}
+
+			gridboxtype = {
 				name = "marines_tree"
 				position = { x = 140 y = 825 }
 				slotsize = { width = 70 height = 70 }
@@ -591,7 +598,7 @@ guiTypes = {
 				format = "LEFT"
 			}
 			gridboxtype = {
-				name = "motorised_infantry_tree"
+				name = "carriage_infantry_tree"
 				position = { x = 100 y = 220 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"

@@ -1,0 +1,67 @@
+characters = {
+
+	wang_mang = {
+		name = "Wang Mang"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_wang_mang"
+            }
+        }
+		country_leader = {
+			desc = "WANGMANG_DESC"
+			expire = "50.5.4"
+			ideology = chinese_reformism
+			traits = {
+			}
+		}
+	}
+
+	liu_xiu = {
+		name = "Liu Xiu"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_liu_xiu"
+            }
+        }
+		country_leader = {
+			desc = "LIU_XIU_DESC"
+			expire = "50.5.4"
+			ideology = absolutism
+			traits = {
+			}
+		}
+	}
+
+	peasant_councils = {
+		name = "Peasant's Councils"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_peasant_councils"
+            }
+        }
+		country_leader = {
+			desc = "PEASANTS_DESC"
+			expire = "250.5.4"
+			ideology = popular_assemblies
+			traits = {
+			}
+		}
+	}
+
+	tribal_institutions = {
+		name = "Tribal Institutions"
+		portraits = {
+            civilian = {
+                large = "generic_nomadic_tribes2"
+            }
+        }
+		country_leader = {
+			desc = "TRIBAL_DESC"
+			expire = "250.5.4"
+			ideology = tribalism
+			traits = {
+			}
+		}
+	}
+
+}

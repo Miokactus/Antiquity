@@ -4,6 +4,9 @@ state={
 	provinces={
 		1556 10380 10407 12353 12381 
 	}
+	resources={
+		grain = 2
+	}
 	history = {
 		owner = SCC
 		add_core_of = SCC

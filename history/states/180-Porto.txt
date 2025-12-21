@@ -5,7 +5,9 @@ state={
 	manpower = 1104600
 	
 	state_category = large_town
-
+	resources={
+		gold_ingot = 3
+	}
 	history={
 		owner = ROE
 		add_core_of = ROE

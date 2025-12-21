@@ -1,6 +1,6 @@
 division_template = {
 	name = "Barbarische Armee"
-	division_cap = 3
+	division_cap = 5
 	is_locked = yes
 	force_allow_recruiting = yes
 	regiments = { # 5
@@ -12,6 +12,12 @@ division_template = {
 	support = {
 
 	}
+}
+
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 2000
+    producer = ROOT
 }
 
 units = {

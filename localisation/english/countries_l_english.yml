@@ -35,6 +35,47 @@
  ROE_communism_party_long: "Senatus Imperialis - Despots"
  ROE_neutrality_party: "Gentes Barbaricae"
  ROE_neutrality_party_long: "Gentes Barbaricae"
+ 
+ ## RUMP ROMAN EMPIRE STATES NAMES ##
+ ####################################
+
+ GAL: "Federation of the Gauls"
+ GAL_DEF: "the Federation of the Gauls"
+ GAL_ADJ: "Gallo-roman"
+
+ ISP: "Kingdom of Hispania"
+ ISP_DEF: "the Kingdom of Hispania"
+ ISP_fascism: "Province of Hispania"
+ ISP_fascism_DEF: "the Province of Hispania"
+ ISP_ADJ: "Hispanian"
+
+ IST: "Kingdom of Illyricum"
+ IST_DEF: "the Kingdom of Illyria"
+ IST_ADJ: "Illyrian"
+
+ GRS: "Confederation of Greek States"
+ GRS_DEF: "the Confederation of Greek States"
+ GRS_ADJ: "Greek"
+
+ ANT: "Union of Anatolia"
+ ANT_DEF: "the Union of Anatolia"
+ ANT_ADJ: "Anatolian"
+
+ CRT: "Republic of Carthage"
+ CRT_DEF: "the Republic of Carthage"
+ CRT_ADJ: "Carthaginian"
+
+ RRO: "Res publica Romana"
+ RRO_DEF: "the Res publica Romana"
+ RRO_ADJ: "Roman"
+
+ AAS: "Austrian State"
+ AAS_DEF: "the Austrian State"
+ AAS_neutrality: "Austrian Horde"
+ AAS_neutrality_DEF: "the Austrian Horde"
+ AAS_ADJ: "Austrian"
+
+
 
  ##
 
@@ -69,6 +110,8 @@
 
  JUD: "Kingdom of Judea"
  JUD_DEF: "the Kingdom of Judea"
+ JUDkingdomofgod: "Kingdom of God"
+ JUDkingdomofgod_DEF: "the Holy Kingdom of God, of which the Populations are Elected by Him"
  JUD_ADJ: "Judean"
 
    ## EASTERN EUROPE NAMES ##

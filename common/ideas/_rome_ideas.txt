@@ -2,6 +2,27 @@ ideas = {
 	country = {
 		
 	## GENERIC ##
+
+		one_party_monopoly = {
+			name = "Rome's Absolute Monopoly"
+			allowed_civil_war = { always = yes }
+			picture = AFG_parliament_building
+			cancel = {
+    			ROOT = {
+					2 = {
+						NOT = { is_controlled_by = ROOT }
+					}
+				}
+			}
+			on_remove = {
+    			add_political_power = -200
+				add_stability = -0.2
+			}
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = 0.15
+			}
+		}
 		
 		pax_romana = {
 			name = "Pax Romana"
@@ -11,6 +32,66 @@ ideas = {
 				stability_factor = 0.2
 				political_power_cost = -0.5
 				communism_drift = 0.01
+			}
+		}
+
+		ROE_remnants_of_patriarchal_society = {
+			name = "Remnants of a Patriarchal Society"
+			allowed_civil_war = { always = yes }
+			picture = DEN_occupation_laws
+			on_remove = {
+    			add_ideas = {
+					ROE_womens_rights
+				}
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.2
+				conscription_factor = 0.1
+			}
+		}
+
+
+		ROE_womens_rights = {
+			name = "Women's Rights"
+			allowed_civil_war = { always = yes }
+			picture = DEN_occupation_laws
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = -0.3
+				conscription_factor = 0.2
+			}
+		}
+
+
+		ROE_crush_german_tribes = {
+			name = "Crush the German Tribes"
+			allowed_civil_war = { always = yes }
+			picture = DEN_occupation_laws
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.15
+				conscription_factor = -0.1
+				political_power_gain = 0.5
+			}
+		}
+
+		ROE_integrate_german_tribes = {
+			name = "Integrate the German Tribes"
+			allowed_civil_war = { always = yes }
+			picture = DEN_occupation_laws
+			on_remove = {
+			}
+			modifier = {
+				compliance_growth = 0.15
+				stability_factor = 0.1
+				war_support_factor = -0.1
+				political_power_cost = -0.3
+				conscription_factor = 0.1
 			}
 		}
 

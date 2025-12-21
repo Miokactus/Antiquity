@@ -87,7 +87,7 @@ focus_tree = {
 		id = motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = army_effort }
-		bypass = { has_tech = motorised_infantry }
+		bypass = { has_tech = carriage_infantry }
 		x = 1
 		y = 1
 		relative_position_id = army_effort
@@ -101,7 +101,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 1.0
-				technology = motorised_infantry
+				technology = carriage_infantry
 			}
 		}
 	}
@@ -179,14 +179,14 @@ focus_tree = {
 				name = motorized_bonus
 				ahead_reduction = 2
 				uses = 1
-				category = motorized_equipment
+				category = carriage_equipment
 			}
 			IF = {
 				limit = {
-					has_tech = motorised_infantry
+					has_tech = carriage_infantry
 				}
 				add_equipment_to_stockpile = { 
-					type = motorized_equipment
+					type = carriage_equipment
 					amount = 1
 				}
 			}
@@ -2543,56 +2543,6 @@ focus_tree = {
 
 
 
-	focus = {
-		id = onwards_to_conquest
-		icon = GFX_goal_generic_demand_territory
-		x = 25
-		y = 0
-		cost = 10
-		available = {
-			is_ai = yes
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
 	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
-
-	focus = {
-		id = crush_your_neighbours
-		icon = GFX_goal_generic_demand_territory
-		x = 24
-		y = 1
-		cost = 15
-		prerequisite = { focus = onwards_to_conquest }
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = cc_custom
-		}
-	}
-
-	focus = {
-		id = crush_your_neighbours2
-		icon = GFX_goal_generic_demand_territory
-		x = 26
-		y = 1
-		cost = 15
-		prerequisite = { focus = onwards_to_conquest }
-	
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 120
-		}
-	}
 
 }

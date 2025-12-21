@@ -7,6 +7,10 @@ state={
 	history = {
 		owner = CLC
 		add_core_of = CLC
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=245784
 	buildings_max_level_factor=1.000

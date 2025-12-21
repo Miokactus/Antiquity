@@ -1,0 +1,22 @@
+state={
+	id=1186
+	name="STATE_1186"
+	provinces={
+		4951 12413 
+	}
+	resources={
+		gold_ingot= 12
+		grain = 5
+	}
+	history = {
+		owner = PTH
+		add_core_of = PTH
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	state_category = rural
+	manpower=198050
+	buildings_max_level_factor=1
+	local_supplies=0
+}

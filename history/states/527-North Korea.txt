@@ -10,6 +10,9 @@ state={
 	history={
 		owner = OKJ
 		add_core_of = OKJ
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	manpower=277420
 	buildings_max_level_factor=1.000

@@ -10,6 +10,10 @@ state={
 	history = {
 		owner = CMI
 		add_core_of = CMI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=95000
 	state_category = rural

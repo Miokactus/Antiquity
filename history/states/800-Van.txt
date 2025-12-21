@@ -1,7 +1,12 @@
 state={
 	id=800
 	name="STATE_800" #Van
-
+	resources={
+		gold_ingot=6 # was: 14
+		wood=5
+		steel=2
+		grain = 3
+	}
 	history={
 		owner = ARR
 		add_core_of = ARR

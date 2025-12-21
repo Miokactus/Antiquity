@@ -7,6 +7,9 @@ state={
 	history={
 		owner = BAE
 		add_core_of = BAE
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower = 15000
 	state_category = town

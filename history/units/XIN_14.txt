@@ -1,3 +1,9 @@
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 3600
+    producer = XIN
+}
+
 set_variable = { clan_levy_cap = var:max_manpower_k }
 division_template = {
     name = "Chinese Levy"
@@ -5,12 +11,11 @@ division_template = {
     division_names_group = LEVY_INF_01
     template_counter = 3
     force_allow_recruiting = yes
-    division_cap = 0
+    division_cap = 35
     regiments = {
         irregular_infantry = { x = 0 y = 0 }
         irregular_infantry = { x = 0 y = 1 }
         irregular_infantry = { x = 1 y = 0 }
-        irregular_infantry = { x = 1 y = 1 }
     }
     priority = 0
 }
@@ -28,7 +33,11 @@ division_template = {
         infantry = { x = 1 y = 0 }
         infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
     }
+    priority = 5
 }
 
 units = {
@@ -42,4 +51,356 @@ units = {
         start_experience_factor = 0.3
         start_equipment_factor = 0.7
     }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+        location = 7418 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+        location = 7418 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+        location = 7418 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+        location = 7418 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+        location = 7418 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+
+
+
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+        location = 11752 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+        location = 11752 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+        location = 11752 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+        location = 11752 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+        location = 11752 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+
+
+
+
+
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+        location = 10899 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+        location = 10899 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+        location = 10899 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+        location = 10899 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+        location = 10899 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+        location = 10899 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+        location = 10899 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+
+
+
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+        location = 11771 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+        location = 11771 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+        location = 11771 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+        location = 11771 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+        location = 11771 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+
+
+
+
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+        location = 4052 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+        location = 4052 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+        location = 4052 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+
+
+
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+        location = 10068 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+        location = 10068 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+        location = 10068 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+        location = 10068 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+        location = 10068 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+
+
+
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+        location = 7137 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+        location = 7137 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+    division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+        location = 7137 # Chang'an 
+        division_template = "Chinese Infantry"
+        start_experience_factor = 0.3
+        start_equipment_factor = 0.7
+    }
+
 }

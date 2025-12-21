@@ -10,8 +10,14 @@ state={
 		victory_points = {
 			9833 10
 		}
+		buildings = {
+			infrastructure = 2
+			9833 = {
+				naval_base = 2
+			}
+		}
 	}
-	manpower=1042276
+	manpower=204227
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

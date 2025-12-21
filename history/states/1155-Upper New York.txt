@@ -4,6 +4,9 @@ state={
 	provinces={
 		734 3697 3702 3733 3747 6795 11650 11680 13157
 	}
+	resources={
+		grain = 3
+	}
 	history = {
 		owner = NYH
 		add_core_of = NYH

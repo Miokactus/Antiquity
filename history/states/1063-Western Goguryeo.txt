@@ -7,9 +7,13 @@ state={
 	history={
 		owner = GOR
 		add_core_of = GOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
 	}
 	manpower=270500
-	state_category = rural
+	state_category = large_town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

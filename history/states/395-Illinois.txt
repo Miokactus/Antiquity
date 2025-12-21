@@ -4,6 +4,10 @@ state={
 	provinces={
 		720 1527 4590 6737 7611 9450 9682 10339 10393 10457 10461 11589 12312 12365 12368 12497 12697 
 	}
+	resources={
+		gold_ingot = 3
+		grain = 5
+	}
 	history = {
 		owner = HHC
 		add_core_of = HHC

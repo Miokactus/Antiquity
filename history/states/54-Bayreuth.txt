@@ -1,12 +1,21 @@
 state={
 	id=54
 	name="STATE_54"
+	resources = {
+		wood = 5
+		gold_ingot = 2
+	}
 	provinces={
 		586 3474 6421 9416 9572 11404 11544 
 	}
 	history = {
 		owner = ERR
 		add_core_of = ERR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
 	}
 	manpower=250815
 	buildings_max_level_factor=1.000

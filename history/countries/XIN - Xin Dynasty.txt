@@ -5,6 +5,9 @@ oob = "XIN_14"
 set_research_slots = 2
 
 recruit_character = wang_mang
+recruit_character = liu_xiu
+recruit_character = peasant_councils
+recruit_character = tribal_institutions
 
 # Starting tech
 set_technology = {
@@ -15,6 +18,12 @@ set_technology = {
 	transport = 1
 }
 
+set_rule = {
+    can_join_factions = no
+	can_create_factions = yes
+}
+
+set_war_support = 0.25
 set_convoys = 50
 
 set_politics = {
@@ -24,17 +33,20 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 5
+	democratic = 25
 	fascism = 3
-	communism = 52
-	neutrality = 40
+	communism = 42
+	neutrality = 30
 }
  
-add_ideas = limited_exports
-add_ideas = limited_conscription
 add_ideas = {
+	limited_exports
+	limited_conscription
 	civilian_economy 
 	an_empire_of_peoples
 	bad_industry
 	XIN_illegitimate_regime
+	XIN_peasant_support_fading
+	XIN_unsustainable_army
+	XIN_poor_sino_xiongnu_relations
 }

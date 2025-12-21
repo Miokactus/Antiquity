@@ -4,6 +4,10 @@ state={
 	provinces={
 		2008 2011 
 	}
+	resources={
+		gold_ingot = 3
+		grain = 2
+	}
 	history = {
 		owner = TTH
 		add_core_of = TTH

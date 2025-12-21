@@ -7,6 +7,8 @@ state= {
 		#5 # was: 20
 		steel= 15 # was: 20
 		chromium = 3 # was: 4
+		grain = 6
+		gold_ingot = 2
 	}
 
 	history= {

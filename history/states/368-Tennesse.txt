@@ -2,7 +2,7 @@ state={
 	id=368
 	name="STATE_368"
 	resources={
-		steel=60.000
+		steel=10.000
 	}
 	provinces={
 		913 1758 1987 7791 8014 8083 10281 10657 10824 10909 12501 12670 

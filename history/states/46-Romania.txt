@@ -3,7 +3,7 @@ state = {
 	name = "STATE_46" # Muntenia
 	manpower = 317140 # was 4461400
 	resources = {
-		gold_ingot = 24 # was: 70
+		gold_ingot = 2 # was: 70
 	}
 
 	state_category = city

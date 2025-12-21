@@ -1,12 +1,18 @@
 state={
 	id=1042
 	name="STATE_1042"
+	resources = {
+		grain = 2
+	}
 	provinces={
 		4397 7280 9988 10016 12297 
 	}
 	history = {
 		owner = XIN
 		add_core_of = XIN
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	manpower=105000
 	state_category = rural

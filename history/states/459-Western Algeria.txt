@@ -6,13 +6,13 @@ state={
 	state_category = town
 	
 	resources={
-		steel=65 # was:26 was: 36
+		steel=15 # was:26 was: 36
 	}
 
 	history={
 		owner = ROE
 		add_core_of = MAU
-		
+		add_core_of = CRT
 
 		victory_points = {
 			1145 5 

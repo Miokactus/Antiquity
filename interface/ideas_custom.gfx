@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_roman_restricted_citizenship"
+		texturefile = "gfx/interface/ideas/roman_restricted_citizenship.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_idea_north_america_view"
+		texturefile = "gfx/interface/ideas/north_america_view.dds"	
+	}
+
+}

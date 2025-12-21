@@ -8,8 +8,17 @@ state={
 	history = {
 		owner = ROE
 		add_core_of = ROE
+		victory_points = {
+			11829 3
+		}
+		buildings = {
+			infrastructure = 2
+			11829 = {
+				naval_base = 2
+			}
+		}
 	}
 	buildings_max_level_factor=1.000
 	state_category=large_town
-	local_supplies=0.000
+	local_supplies=2.000
 }

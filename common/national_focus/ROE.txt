@@ -12,14 +12,14 @@ focus_tree = {
 
 	default = no
 
-	continuous_focus_position = { x = 50 y = 3500 }
+	continuous_focus_position = { x = 50 y = 5000 }
 	
 	
 	#Death of Augustus
 	focus = {
 		id = ROE_augustus_death
 		icon = GFX_goal_roman_augustus_death
-		x = 15
+		x = 20
 		y = 2
 		cost = 2
 		available = { 
@@ -71,7 +71,6 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_new_emperor }
 		mutually_exclusive = { focus = ROE_reject_the_will }
 		completion_reward = {
-			
 		}
 	}
 
@@ -111,7 +110,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROE_reject_the_will }
-		mutually_exclusive = { focus = ROE_a_different_way }
+		mutually_exclusive = { focus = ROE_put_an_end_to_the_emperors }
 		completion_reward = {
 			
 		}
@@ -158,7 +157,6 @@ focus_tree = {
 		prerequisite = { focus = ROE_reject_the_will }
 		mutually_exclusive = { focus = ROE_a_new_dynasty }
 		completion_reward = {
-			
 		}
 	}
 
@@ -169,7 +167,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 0
 		y = 1
-		cost = 4
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -178,7 +176,15 @@ focus_tree = {
 		prerequisite = { focus = ROE_put_an_end_to_the_emperors }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			set_politics = {
+				ruling_party = communism
+				long_name = ROE_senators_long
+    			name = ROE_senators
+			}
+			promote_character = {
+    			character = roman_senate_oligarchism_comm
+    			ideology = oligarchism_comm
+			}
 		}
 	}
 
@@ -189,7 +195,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 2
 		y = 2
-		cost = 4
+		cost = 6
 		available = { 
 		}
 		search_filters = {
@@ -269,7 +275,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 2
 		y = 5
-		cost = 4
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -281,9 +287,100 @@ focus_tree = {
 		mutually_exclusive = { }
 		completion_reward = {
 			ROE = { country_event = rome_event.3 }
-			set_cosmetic_tag = romanrepublicback
 		}
 	}
+
+	#Renovate the Senate
+	focus = {
+		id = ROE_renovate_the_senate
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 3
+		y = 6
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_proclaim_the_republic}
+		mutually_exclusive = { }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+
+	#Aristocrats, Assemble!
+	focus = {
+		id = ROE_aristocrats_assemble
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 4
+		y = 7
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_renovate_the_senate }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+
+	#More Rights for the Oligarchs!
+	focus = {
+		id = ROE_more_rights_for_the_oligarchs
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 2
+		y = 7
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_renovate_the_senate }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+    			popularity = 0.1
+			}
+			add_political_power = 150
+		}
+	}
+
+	#The Senate's Absolute Control
+	focus = {
+		id = ROE_the_senate_absolute_control
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 3
+		y = 8
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_more_rights_for_the_oligarchs }
+		prerequisite = { focus = ROE_aristocrats_assemble }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+    			popularity = 0.1
+			}
+		}
+	}
+
+
 
 
 
@@ -299,7 +396,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -2
 		y = 2
-		cost = 4
+		cost = 6
 		available = { 
 		}
 		search_filters = {
@@ -308,7 +405,746 @@ focus_tree = {
 		prerequisite = { focus = ROE_convene_the_senate }
 		mutually_exclusive = { focus = ROE_the_senate_takes_control }
 		completion_reward = {
-			
+			country_event = rome_event.4
+			add_stability = -0.05
+		}
+	}
+
+	#Appeal to the People
+	focus = {
+		id = ROE_appeal_to_the_people
+		icon = GFX_focus_BEL_v_for_victory
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -4
+		y = 3
+		cost = 4
+		available = { 
+			has_country_flag = ROE_countdown_to_breakaway
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_senate_is_dissolved }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#Purge Disloyal Generals
+	focus = {
+		id = ROE_purge_disloyal_generals
+		icon = GFX_focus_GER_integration_of_puppet_economies
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 0
+		y = 3
+		cost = 4
+		available = { 
+			has_country_flag = ROE_countdown_to_breakaway
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_senate_is_dissolved }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_stability = 0.05
+			if = {
+				add_days_mission_timeout = {
+    				mission = roman_deestablishment
+    				days = 40
+				}
+			}
+		}
+	}
+
+	#Secure Loyal States
+	focus = {
+		id = ROE_secure_loyal_states
+		icon = GFX_focus_generic_the_suez
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -2
+		y = 3
+		cost = 4
+		available = { 
+			has_country_flag = ROE_countdown_to_breakaway
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_senate_is_dissolved }
+		mutually_exclusive = { }
+		completion_reward = {
+			custom_effect_tooltip = ROE_provinces_need_high_opinion_tooltip
+			if = { 
+				limit = { 
+					any_subject_country = {
+						has_opinion = { target = ROE value > 50 }
+					}
+				}
+				PREV = {
+					set_country_flag = roman_province_loyal
+				}
+			}
+			add_days_mission_timeout = {
+    			mission = roman_deestablishment
+    			days = 30
+			}
+		}
+	}
+
+	#Power to the Comitia!
+	focus = {
+		id = ROE_power_to_the_comitia
+		icon = GFX_goal_support_democracy
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -2
+		y = 4.5
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_appeal_to_the_people }
+		prerequisite = { focus = ROE_purge_disloyal_generals }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+			set_country_flag = roman_stabilised_democracy
+		}
+	}
+
+	#Develop democratic sentiment
+	focus = {
+		id = ROE_develop_democratic_sentiment
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -3
+		y = 6
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_power_to_the_comitia }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+    			popularity = 0.1
+			}
+		}
+	}
+
+	#Develop the Farms
+	focus = {
+		id = ROE_develop_the_farms
+		icon = GFX_focus_generic_farmland
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 0
+		y = 6
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_power_to_the_comitia focus = ROE_proclaim_the_republic}
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Public Offices
+	focus = {
+		id = ROE_public_offices
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 0
+		y = 7
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_develop_democratic_sentiment focus = ROE_develop_the_farms }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#Grant more Rights to Women
+	focus = {
+		id = ROE_grant_more_rights_to_women
+		icon = GFX_focus_AUS_womens_education_initiative
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -4
+		y = 7
+		cost = 6
+		available = { 
+			has_completed_focus = ROE_power_to_the_comitia
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_develop_democratic_sentiment focus = ROE_develop_the_farms }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_political_power = -150
+			add_stability = -0.1
+			add_timed_idea = {
+				idea = ROE_remnants_of_patriarchal_society
+				days = 1095
+			}
+			custom_effect_tooltip = women_rights_rome_tooltip
+		}
+	}
+
+	#Extend the Citizenship
+	focus = {
+		id = ROE_extend_the_citizenship
+		icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -2
+		y = 8
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_grant_more_rights_to_women }
+		prerequisite = { focus = ROE_public_offices }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_stability = 0.1
+			custom_effect_tooltip = ROE_extend_the_citizenship_tooltip
+		}
+	}
+
+	#A Shining Example of Democracy!
+	focus = {
+		id = ROE_shining_example_of_democracy
+		icon = GFX_focus_generic_democratic_europe
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -2
+		y = 9
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_extend_the_citizenship }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+    			popularity = 0.1
+			}
+		}
+	}
+
+	#Protect the Grand Library of Alexandria
+	focus = {
+		id = ROE_protect_the_grand_library_of_alexandria
+		icon = GFX_goal_alexandria_library
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -6
+		y = 9
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_extend_the_citizenship }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	#Mobilise the Armies
+	focus = {
+		id = ROE_mobilise_the_armies
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -2
+		y = 10
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_shining_example_of_democracy }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Oppress the Germans
+	focus = {
+		id = ROE_oppress_the_germans
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -4
+		y = 10
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_shining_example_of_democracy }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Towards Subjects Integration
+	focus = {
+		id = ROE_towards_subjects_integration
+		icon = GFX_SOV_intensify_pilot_training_program_ccp_2d_sov_compatibility
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = 3
+		y = 10
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_shining_example_of_democracy focus = ROE_the_senate_absolute_control }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Southern Integration
+	focus = {
+		id = ROE_southern_integration
+		icon = GFX_goal_north_africa
+		relative_position_id = ROE_towards_subjects_integration
+		x = -2
+		y = 1
+		cost = 8
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_towards_subjects_integration }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Eastern Integration
+	focus = {
+		id = ROE_eastern_integration
+		icon = GFX_SOV_demand_balkan_submission_ccp_2d_sov_compatibility
+		relative_position_id = ROE_towards_subjects_integration
+		x = 0
+		y = 1
+		cost = 8
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_towards_subjects_integration }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Levant Integration
+	focus = {
+		id = ROE_levant_integration
+		icon = GFX_focus_GER_align_middle_east
+		relative_position_id = ROE_towards_subjects_integration
+		x = 2
+		y = 1
+		cost = 8
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_towards_subjects_integration }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#From Britannia to Asia!
+	focus = {
+		id = ROE_from_britannia_to_asia
+		icon = GFX
+		relative_position_id = ROE_towards_subjects_integration
+		x = 0
+		y = 4
+		cost = 8
+		available = { 
+			461 = {
+				is_owned_by = ROE
+			}
+			454 = {
+				is_owned_by = ROE
+			}
+			1030 = {
+				is_owned_by = ROE
+			}
+			349 = {
+				is_owned_by = ROE
+			}
+			355 = {
+				is_owned_by = ROE
+			}
+			341 = {
+				is_owned_by = ROE
+			}
+			342 = {
+				is_owned_by = ROE
+			}
+			2 = {
+				is_owned_by = ROE
+			}
+			14 = {
+				is_owned_by = ROE
+			}
+			PTH = {
+				OR = { 
+					exists = no
+					is_puppet_of = ROE
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_southern_integration }
+		prerequisite = { focus = ROE_eastern_integration }
+		prerequisite = { focus = ROE_levant_integration }
+		mutually_exclusive = { }
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ROE_power_to_the_comitia
+				}
+				set_cosmetic_tag = ROE_magnificentempire
+			}
+			if = {
+				limit = {
+					has_completed_focus = ROE_the_senate_takes_control
+				}
+				set_cosmetic_tag = ROE_magnificientsenatorialempire
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = { 
+							has_completed_focus = ROE_power_to_the_comitia
+							has_completed_focus = ROE_the_senate_takes_control
+						}
+					}
+				}
+				set_cosmetic_tag = ROE_thegreatempire
+			}
+		}
+	}
+
+	#Restart the German Campaigns
+	focus = {
+		id = ROE_restart_the_germania_campaign
+		icon = GFX_goal_german_attack
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -5
+		y = 11
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_oppress_the_germans }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Create more Military Manufactures
+	focus = {
+		id = ROE_create_more_military_manufactures
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -1
+		y = 11
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_mobilise_the_armies }
+		prerequisite = { focus = ROE_oppress_the_germans }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Integrate German Tribes
+	focus = {
+		id = ROE_integrate_german_tribes
+		icon = GFX_focus_CZE_german_puppet
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -4
+		y = 12
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_restart_the_germania_campaign }
+		mutually_exclusive = { focus = ROE_crush_the_tribes }
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROE_integrate_german_tribes
+				days = 864
+			}
+		}
+	}
+
+	#Crush German Tribes
+	focus = {
+		id = ROE_crush_the_tribes
+		icon = GFX_goal_german_crushing
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -6
+		y = 12
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_restart_the_germania_campaign }
+		mutually_exclusive = { focus = ROE_integrate_german_tribes }
+		completion_reward = {
+			add_timed_idea = {
+				idea = ROE_crush_german_tribes
+				days = 864
+			}
+		}
+	}
+
+	#Look East
+	focus = {
+		id = ROE_look_east
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -3
+		y = 13
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_crush_the_tribes focus = ROE_integrate_german_tribes }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Negociate for Armenia
+	focus = {
+		id = ROE_negociate_for_armenia
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -3
+		y = 14
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_look_east }
+		mutually_exclusive = { focus = ROE_democracy_in_the_arsacid }
+		completion_reward = {
+		}
+	}
+
+	#Democracy in the Arsacid Empire
+	focus = {
+		id = ROE_democracy_in_the_arsacid
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -1
+		y = 14
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_look_east }
+		mutually_exclusive = { focus = ROE_negociate_for_armenia }
+		completion_reward = {
+		}
+	}
+
+	#Look North
+	focus = {
+		id = ROE_look_north
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -5
+		y = 13
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_crush_the_tribes focus = ROE_integrate_german_tribes }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#The Unthinkable
+	focus = {
+		id = ROE_the_unthinkable
+		icon = GFX
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -7
+		y = 13
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_crush_the_tribes focus = ROE_integrate_german_tribes }
+		mutually_exclusive = { }
+		completion_reward = {
 		}
 	}
 
@@ -323,7 +1159,7 @@ focus_tree = {
 		id = ROE_the_rise_of_a_roman_emperor
 		icon = GFX_focus_AUS_lawmaking_leniency
 		relative_position_id = ROE_a_new_dynasty
-		x = 2
+		x = 1
 		y = 2
 		cost = 4
 		available = { 
@@ -339,6 +1175,725 @@ focus_tree = {
 		}
 	}
 
+	## Shared focus?
+
+	#Weaken the Senate
+	focus = {
+		id = ROE_weaken_the_senate
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 1
+		y = 4
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_chose_germanicus focus = ROE_recall_marcus }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Emprison Generals
+	focus = {
+		id = ROE_emprison_generals
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 1
+		y = 5
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_weaken_the_senate }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	##### MARCUS AGRIPPA SUBPATH (more civilianish)
+
+	#Recall Marcus Agrippa
+	focus = {
+		id = ROE_recall_marcus
+		icon = GFX_focus_AUS_lawmaking_leniency
+		relative_position_id = ROE_a_new_dynasty
+		x = 4
+		y = 3
+		cost = 8
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_rise_of_a_roman_emperor }
+		mutually_exclusive = { focus = ROE_chose_germanicus }
+		completion_reward = {
+			promote_character = {
+    			character = marcus_agrippa_emperor
+    			ideology = despotism_comm
+			}
+		}
+	}
+
+	#The Triomphant Son
+	focus = {
+		id = ROE_the_triomphant_son
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 3
+		y = 4
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_recall_marcus }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Hold Games
+	focus = {
+		id = ROE_hold_games
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 5
+		y = 4
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_recall_marcus }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Avenge the Exile
+	focus = {
+		id = ROE_avenge_the_exile
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 4
+		y = 5
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_hold_games }
+		prerequisite = { focus = ROE_the_triomphant_son }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#A New Era of Games
+	focus = {
+		id = ROE_a_new_era_of_games
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 3
+		y = 6
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_avenge_the_exile }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Industrial Development
+	focus = {
+		id = ROE_industrial_development
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 5
+		y = 6
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_avenge_the_exile }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Encourage Fishing
+	focus = {
+		id = ROE_encourage_fishing
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 7
+		y = 6
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_avenge_the_exile }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#### GERMANICUS SUBPATH (militaristic)
+
+	#Chose Germanicus
+	focus = {
+		id = ROE_chose_germanicus
+		icon = GFX_focus_AUS_lawmaking_leniency
+		relative_position_id = ROE_a_new_dynasty
+		x = -2
+		y = 3
+		cost = 8
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_the_rise_of_a_roman_emperor }
+		mutually_exclusive = { focus = ROE_recall_marcus }
+		completion_reward = {
+			promote_character = {
+    			character = germanicus_emperor
+    			ideology = despotism_comm
+			}
+		}
+	}
+
+	#Towards militarisation
+	focus = {
+		id = ROE_towards_militarisation
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = -3
+		y = 4
+		cost = 7
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_chose_germanicus }
+		mutually_exclusive = { }
+		completion_reward = {
+			upgrade_economy_law = yes
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Prepare for the Germans
+	focus = {
+		id = ROE_prepare_for_the_germans
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = -1
+		y = 4
+		cost = 7
+		available = { 
+			has_completed_focus = ROE_towards_militarisation
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_chose_germanicus }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = arms_factory
+    				level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Create new Manufactures
+	focus = {
+		id = ROE_create_new_manufactures
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = -2
+		y = 5
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_prepare_for_the_germans }
+		prerequisite = { focus = ROE_towards_militarisation }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+
+
+
+
+	#Woodwork Development
+	focus = {
+		id = ROE_woodworks_development
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 1
+		y = 7
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_create_new_manufactures focus = ROE_industrial_development }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = woodwork
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = woodwork
+    				level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = woodwork
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Appease the Farmers
+	focus = {
+		id = ROE_appease_the_farmers
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 1
+		y = 8
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_woodworks_development }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Open New Mines
+	focus = {
+		id = ROE_open_new_mines
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = -1
+		y = 8
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_woodworks_development }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = mine
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = mine
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	#Reinforce the Local Governments
+	focus = {
+		id = ROE_reinforce_the_local_governments
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 3
+		y = 8
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_woodworks_development }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#War, war, war!
+	focus = {
+		id = ROE_war_war
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 1
+		y = 9
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_open_new_mines }
+		prerequisite = { focus = ROE_appease_the_farmers }
+		prerequisite = { focus = ROE_reinforce_the_local_governments }
+		mutually_exclusive = { }
+		completion_reward = {
+			upgrade_economy_law = yes
+			add_war_support = 0.1
+		}
+	}
+
+	#Our Duty to Guard the Border
+	focus = {
+		id = ROE_our_duty_to_guard
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = -1
+		y = 10
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_war_war }
+		mutually_exclusive = { }
+		completion_reward = {
+			7 = {
+				add_building_construction = {
+    				type = bunker
+    				level = 1
+    				instant_build = yes
+    				province = {
+        				all_provinces = yes
+        				limit_to_border = yes
+        				limit_to_victory_point > 1
+    				}
+				}
+			}
+			35 = {
+				add_building_construction = {
+    				type = bunker
+    				level = 1
+    				instant_build = yes
+    				province = {
+        				all_provinces = yes
+        				limit_to_border = yes
+        				limit_to_victory_point > 1
+    				}
+				}
+			}
+			1022 = {
+				add_building_construction = {
+    				type = bunker
+    				level = 2
+    				instant_build = yes
+    				province = {
+        				all_provinces = yes
+        				limit_to_border = yes
+        				limit_to_victory_point > 1
+    				}
+				}
+			}
+			42 = {
+				add_building_construction = {
+    				type = bunker
+    				level = 2
+    				instant_build = yes
+    				province = {
+        				all_provinces = yes
+        				limit_to_border = yes
+        				limit_to_victory_point > 1
+    				}
+				}
+			}
+			1017 = {
+				add_building_construction = {
+    				type = bunker
+    				level = 2
+    				instant_build = yes
+    				province = {
+        				all_provinces = yes
+        				limit_to_border = yes
+        				limit_to_victory_point > 1
+    				}
+				}
+			}
+		}
+	}
+
+	#Demand Local Tribes Submission
+	focus = {
+		id = ROE_demand_local_tribes_submission
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 1
+		y = 10
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_war_war }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#Look to the Eastern Menaces
+	focus = {
+		id = ROE_look_to_the_eastern_menace
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 3
+		y = 10
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_war_war }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#Dacian Expeditions
+	focus = {
+		id = ROE_dacian_expedition
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 5
+		y = 11
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_look_to_the_eastern_menace }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#Strike a Deal with Armenia
+	focus = {
+		id = ROE_strike_a_deal_with_armenia
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 3
+		y = 11
+		cost = 6
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_look_to_the_eastern_menace }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
+	#Our Northern Neighbours
+	focus = {
+		id = ROE_our_northern_neighbours
+		icon = GFX
+		relative_position_id = ROE_a_new_dynasty
+		x = 0
+		y = 11
+		cost = 6
+		available = {
+			57 = {
+				is_owned_by = ROE
+			}
+			50 = {
+				is_owned_by = ROE
+			}
+			1070 = {
+				is_owned_by = ROE
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_our_duty_to_guard }
+		prerequisite = { focus = ROE_demand_local_tribes_submission }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+	}
+
 ## RISE OF A FOREIGN EMPEROR ##
 
 	#Rise of A Foreign Emperor
@@ -346,7 +1901,7 @@ focus_tree = {
 		id = ROE_the_rise_of_a_foreign_emperor
 		icon = GFX_focus_ARG_defense_and_democracy
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -1
 		y = 2
 		cost = 4
 		available = { 
@@ -367,8 +1922,8 @@ focus_tree = {
 		id = ROE_the_choice
 		icon = GFX_focus_BRA_reach_out_to_military_dem
 		relative_position_id = ROE_augustus_death
-		x = 17
-		y = 0
+		x = 8
+		y = 23
 		cost = 4
 		available = { 
 			has_completed_focus = ROE_the_rise_of_a_foreign_emperor
@@ -419,7 +1974,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROE_the_choice }
-		mutually_exclusive = { focus = ROE_push_east focus = ROE_a_gallo_emperor }
+		mutually_exclusive = { focus = ROE_search_east focus = ROE_a_gallo_emperor }
 		completion_reward = {
 			
 		}
@@ -440,7 +1995,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROE_the_choice }
-		mutually_exclusive = { focus = ROE_push_east focus = ROE_a_jewish_emperor }
+		mutually_exclusive = { focus = ROE_search_east focus = ROE_a_jewish_emperor }
 		completion_reward = {
 			
 		}
@@ -448,7 +2003,7 @@ focus_tree = {
 
 	#Push East
 	focus = {
-		id = ROE_push_east
+		id = ROE_search_east
 		icon = GFX_focus_ARG_defense_and_democracy
 		relative_position_id = ROE_the_choice
 		x = 0
@@ -486,13 +2041,12 @@ focus_tree = {
 
 	## THE COUP
 
-	#The Choice
+	#The Coup
 	focus = {
 		id = ROE_the_coup
 		icon = GFX_focus_BRA_reach_out_to_military_dem
-		relative_position_id = ROE_augustus_death
-		x = -7
-		y = 13
+		x = 13
+		y = 25
 		cost = 4
 		available = { 
 			has_country_flag = roman_military_coupdetat
@@ -507,5 +2061,120 @@ focus_tree = {
 			
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	## MILITARY TREE ##
+	###################
+
+
+	#Reform the Imperial Army
+	focus = {
+		id = ROE_reform_the_imperial_army
+		icon = GFX
+		relative_position_id = ROE_augustus_death
+		x = 18
+		y = 0
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Form New Legions
+	focus = {
+		id = ROE_form_new_legions
+		icon = GFX
+		relative_position_id = ROE_reform_the_imperial_army
+		x = 1
+		y = 1
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_reform_the_imperial_army }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Integrate Calvary
+	focus = {
+		id = ROE_integrate_cavalry
+		icon = GFX
+		relative_position_id = ROE_reform_the_imperial_army
+		x = -1
+		y = 1
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_reform_the_imperial_army }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Towards a Volunteer Army
+	focus = {
+		id = ROE_towards_a_volunteer_army
+		icon = GFX
+		relative_position_id = ROE_reform_the_imperial_army
+		x = -3
+		y = 2
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_reform_the_imperial_army }
+		mutually_exclusive = { focus = ROE_return_to_conscription }
+		completion_reward = {
+		}
+	}
+
+	#Return to Conscription
+	focus = {
+		id = ROE_return_to_conscription
+		icon = GFX
+		relative_position_id = ROE_reform_the_imperial_army
+		x = -5
+		y = 2
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_reform_the_imperial_army }
+		mutually_exclusive = { focus = ROE_towards_a_volunteer_army }
+		completion_reward = {
+		}
+	}
+
+
 
 }

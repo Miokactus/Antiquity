@@ -5,3 +5,72 @@
  rome_event.1.d: "So Augustus fell sick and died.\nLivia incurred some suspicion in connexion with his death, in view of the fact that he had secretly sailed over to the island to see Agrippa and seemed about to become completely reconciled with him.\nFor she was afraid, some say, that Augustus would bring him back to make him sovereign, and so smeared with poison some figs that were still on trees from which Augustus was wont to gather the fruit with his own hands; then she ate those that had not been smeared, offering the poisoned ones to him.\nAt any rate, from this or some other cause he became ill, and sending for his associates, he told them all his wishes, adding finally: \"I found Rome of clay; I leave it to you of marble.\"\nHe did not thereby refer literally to the appearance of its buildings, but rather to the strength of the empire. And by asking them for their applause, after the manner of the comic actors, as if at the close of a mime, he ridiculed most tellingly the whole life of man. Thus on the nineteenth day of August, the day on which he had first become consul, he passed away, having lived seventy-five years, ten months, and twenty-six days (he had been born on the twenty-third of September), and having been sole ruler, from the time of his victory at Actium forty-four years lacking thirteen days."
  rome_event.1.a: "The Gods have Spoken."
  rome_event.1.b: "Gloria!"
+
+ rome_event.2.t: "Military coup d'Etat in Rome!"
+ rome_event.2.d: "Reports coming from the Imperial Capital are worrying as a legio announced having restored order in the city after manifestations began."
+ rome_event.2.a: "Pro Roma!"
+
+ rome_event.3.t: "The Senate Restores the Republic!"
+ rome_event.3.d: "The Senate have assumed control over common affairs. Following the rejecting of Augustus' will and Tiberius' nomination, the Senate had already declared its intention of reestablishing the old Republic. Today, this dream is no longer only a dream but a fact. The Republic is back, in all its glory, and for another milennia!"
+ rome_event.3.a: "Gloria to the Republic!"
+
+ rome_event.4.t: "The Senate is Dissolved!"
+ rome_event.4.d: "Dissolved, democracy and event chain."
+ rome_event.4.a: "Oligarchy no more!"
+ 
+ rome_event.5.t: "The Client States declares Independence!"
+ rome_event.5.d: "The main states under our protection have declared independence! Thus start the fall of our Empire."
+ rome_event.5.a: "The Empire is Falling Apart!"
+
+
+
+
+ rome_event.6.t: "The Grand Revolt (Anatolia and Carthage)"
+ rome_event.6.d: ""
+ rome_event.6.a: "Like a phenix, we rise again! (PLAY AS CARTHAGE)"
+ rome_event.6.b: "Our turn! (PLAY AS ANATOLIA)"
+ rome_event.6.c: "I never liked Carthage anyway."
+
+ rome_event.7.t: "The Grand Revolt (Gaul and Hispania)"
+ rome_event.7.d: ""
+ rome_event.7.a: "Free, at last! (PLAY AS GAUL)"
+ rome_event.7.b: "For the Empire! (PLAY AS HISPANIA)"
+ rome_event.7.c: "Caesar would roll in his grave!"
+
+ rome_event.8.t: "The Grand Revolt (Greece and Istria)"
+ rome_event.8.d: ""
+ rome_event.8.a: "Our path lies ahead. (PLAY AS ISTRIA)"
+ rome_event.8.b: "Alexander shall rise again! (PLAY AS THE GREEK STATES)"
+ rome_event.8.c: "Ungrateful bastards!"
+
+ rome_event.9.t: "The Grand Revolt (Egypt)"
+ rome_event.9.d: ""
+ rome_event.9.a: "The Phareon Rises Again! (PLAY AS EGYPT)"
+ rome_event.9.b: "Arg! The final blow!"
+
+ rome_event.10.t: "The Grand Revolt (Rome and Austrian State)"
+ rome_event.10.d: ""
+ rome_event.10.a: "We will be back! (PLAY AS ROME)"
+ rome_event.10.b: "A shame. (PLAY AS THE AUSTRIAN STATE)"
+
+
+
+
+ rome_event.11.t: "The Fall of Rome!"
+ rome_event.11.d: "Rome has fallen. In its ashes lies generals, rebellions, instability: rump states of a now-gone glorious past."
+ rome_event.11.a: "The end of an Era."
+
+
+ ## ROMAN EMPIRE NEWS EVENTS ##
+
+ roman_news.1.t: "Military coup d'Etat in Rome!"
+ roman_news.1.d: "Reports coming from the Imperial Capital are worrying as a legio announced having restored order in the city after manifestations began."
+ roman_news.1.a: "The Roman Order Crumbles."
+
+ roman_news.2.t: "Roman Client States proclaim independence!"
+ roman_news.2.d: ""
+ roman_news.2.a: "Howdy!"
+
+ roman_news.3.t: "The fall of Rome!"
+ roman_news.3.d: ""
+ roman_news.3.a: "Howdy!"

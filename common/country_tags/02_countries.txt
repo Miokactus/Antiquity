@@ -34,6 +34,19 @@ IDS = "countries/Indo_Scythian.txt"
 CTU = "countries/Chutu_Dynasty.txt"
 NAB = "countries/Nabatea.txt"
 
+## ROMAN RUMP STATES
+GAL = "countries/Gaul.txt"
+ISP = "countries/Hispania.txt"
+IST = "countries/Istria.txt"
+GRS = "countries/Greek_State.txt"
+ANT = "countries/Anatolia.txt"
+CRT = "countries/Carthage.txt"
+RRO = "countries/Rome.txt"
+AAS = "countries/Austrian_State.txt"
+
+
+
+
 ## KOREA [FLAGS NEEDED]
 MAH = "countries/Mahan_Confederacy.txt"
 BYE = "countries/Byeonhan_Confederacy.txt"

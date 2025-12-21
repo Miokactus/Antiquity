@@ -3,7 +3,7 @@
 equipments = {
 
 	infantry_equipment = {
-		year = 1936
+		year = 14
 	
 		is_archetype = yes
 		picture = GFX_infantry_roman_weapon0_medium
@@ -21,7 +21,7 @@ equipments = {
 
 		#Defensive Abilities
 		defense = 20
-		breakthrough = 2
+		breakthrough = 3
 		hardness = 0
 		armor_value = 0
 
@@ -45,7 +45,7 @@ equipments = {
 	}
 
 	infantry_equipment_0 = {
-		year = 1918
+		year = 10
 		picture = GFX_infantry_roman_weapon0_medium
 		fuel_consumption = 0.1
 	
@@ -59,9 +59,9 @@ equipments = {
 
 	# Regular infantry  1936
 	infantry_equipment_1 = {
-		year = 1936
+		year = 18
 	
-		picture = GFX_infantry_roman_weapon0_medium
+		picture = GFX_infantry_roman_weapon1_medium
 		archetype = infantry_equipment
 		parent = infantry_equipment_0
 		priority = 10
@@ -83,10 +83,10 @@ equipments = {
 
 	# Improved weapons  ~1939
 	infantry_equipment_2 = {
-		year = 1939
+		year = 22
 		fuel_consumption = 0.1
 	
-		picture = GFX_infantry_roman_weapon0_medium
+		picture = GFX_infantry_roman_weapon2_medium
 		archetype = infantry_equipment
 		parent = infantry_equipment_1
 		priority = 10
@@ -112,10 +112,10 @@ equipments = {
 	
 	# Advanced weapons  ~1942
 	infantry_equipment_3 = {
-		year = 1942
+		year = 28
 		fuel_consumption = 0.1
 	
-		picture = GFX_infantry_roman_weapon0_medium
+		picture = GFX_infantry_roman_weapon3_medium
 		archetype = infantry_equipment
 		parent = infantry_equipment_2
 		priority = 10

@@ -68,6 +68,7 @@ country_event = {
     		ideology = fascism
     		popularity = 0.5
 		}
+		add_stability = -0.1
 	}
 }
 
@@ -89,19 +90,1350 @@ country_event = {
 		name = rome_event.3.a
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
-		set_country_flag = roman_military_coupdetat
+		ROE = { set_cosmetic_tag = romanrepublicback }
 		remove_ideas = pax_romana
+		add_stability = 0.05
+	}
+}
+
+#The Senate is Dissolved!
+country_event = {
+	id = rome_event.4
+	title = rome_event.4.t
+	desc = rome_event.4.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.4.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
 		set_politics = {
-    		ruling_party = fascism
-    		elections_allowed = no
-    		election_frequency = 48
+    		ruling_party = democratic
+    		elections_allowed = yes
+    		election_frequency = 24
 		}
 		add_popularity = {
-    		ideology = fascism
-    		popularity = 0.5
+    		ideology = democratic
+    		popularity = 0.25
+		}
+		set_country_flag = ROE_countdown_to_breakaway
+	}
+}
+
+#The Roman State Fractures!
+country_event = {
+	id = rome_event.5
+	title = rome_event.5.t
+	desc = rome_event.5.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.5.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		country_event = {
+			id = rome_event.6
+			days = 5
+		}
+		clr_country_flag = ROE_countdown_to_breakaway
+		ROE = {
+			if = { 
+				limit = {
+					any_subject_country = {
+						is_subject_of = ROE
+					}
+				}
+				RRO = {
+					set_autonomy = {
+    					target = ROE
+    					autonomous_state = autonomy_dominion
+    					end_wars = no
+    					end_civil_wars = no
+					}
+					set_autonomy = {
+    					target = ROE
+    					autonomous_state = autonomy_free
+    					end_wars = no
+    					end_civil_wars = no
+					}
+				}
+			}
 		}
 	}
 }
+
+
+
+
+
+
+#The Grand Revolt [Anatolia and Carthage]
+country_event = {
+	id = rome_event.6
+	title = rome_event.6.t
+	desc = rome_event.6.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.6.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		CRT = {
+			transfer_state = 1020
+			transfer_state = 290
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 1021
+			transfer_state = 458
+			transfer_state = 665
+			transfer_state = 115
+			transfer_state = 116
+			transfer_state = 448
+			transfer_state = 449
+			add_state_core = 1020
+			add_state_core = 290
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 1021
+			add_state_core = 458
+			add_state_core = 665
+			add_state_core = 115
+			add_state_core = 116
+			add_state_core = 448
+			add_state_core = 449
+		}
+		hidden_effect = { 
+		ANT = {
+			transfer_state = 1023
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 343
+			transfer_state = 346
+			transfer_state = 49
+			transfer_state = 356
+			transfer_state = 345
+			transfer_state = 344
+			transfer_state = 1036
+			transfer_state = 799
+			transfer_state = 677
+			transfer_state = 1185
+			transfer_state = 553
+			add_state_core = 1023
+			add_state_core = 347
+			add_state_core = 340
+			add_state_core = 339
+			add_state_core = 343
+			add_state_core = 346
+			add_state_core = 49
+			add_state_core = 356
+			add_state_core = 345
+			add_state_core = 344
+			add_state_core = 1036
+			add_state_core = 799
+			add_state_core = 677
+			add_state_core = 1185
+			add_state_core = 553
+		}
+		}
+		CRT = { 
+			change_tag_from = ROOT 
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.7
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+	option = {
+		name = rome_event.6.b
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		ANT = {
+			transfer_state = 1023
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 343
+			transfer_state = 346
+			transfer_state = 49
+			transfer_state = 356
+			transfer_state = 345
+			transfer_state = 344
+			transfer_state = 1036
+			transfer_state = 799
+			transfer_state = 677
+			transfer_state = 1185
+			transfer_state = 553
+			add_state_core = 1023
+			add_state_core = 347
+			add_state_core = 340
+			add_state_core = 339
+			add_state_core = 343
+			add_state_core = 346
+			add_state_core = 49
+			add_state_core = 356
+			add_state_core = 345
+			add_state_core = 344
+			add_state_core = 1036
+			add_state_core = 799
+			add_state_core = 677
+			add_state_core = 1185
+			add_state_core = 553
+		}
+		hidden_effect = {
+		CRT = {
+			transfer_state = 1020
+			transfer_state = 290
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 1021
+			transfer_state = 458
+			transfer_state = 665
+			transfer_state = 115
+			transfer_state = 116
+			transfer_state = 448
+			transfer_state = 449
+			add_state_core = 1020
+			add_state_core = 290
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 1021
+			add_state_core = 458
+			add_state_core = 665
+			add_state_core = 115
+			add_state_core = 116
+			add_state_core = 448
+			add_state_core = 449
+		}
+		}
+		ANT = { 
+			change_tag_from = ROOT 
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.7
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+	option = {
+		name = rome_event.6.c
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		CRT = {
+			transfer_state = 1020
+			transfer_state = 290
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 1021
+			transfer_state = 458
+			transfer_state = 665
+			transfer_state = 115
+			transfer_state = 116
+			transfer_state = 448
+			transfer_state = 449
+			add_state_core = 1020
+			add_state_core = 290
+			add_state_core = 459
+			add_state_core = 460
+			add_state_core = 1021
+			add_state_core = 458
+			add_state_core = 665
+			add_state_core = 115
+			add_state_core = 116
+			add_state_core = 448
+			add_state_core = 449
+		}
+		ANT = {
+			transfer_state = 1023
+			transfer_state = 347
+			transfer_state = 340
+			transfer_state = 339
+			transfer_state = 343
+			transfer_state = 346
+			transfer_state = 49
+			transfer_state = 356
+			transfer_state = 345
+			transfer_state = 344
+			transfer_state = 1036
+			transfer_state = 799
+			transfer_state = 677
+			transfer_state = 1185
+			transfer_state = 553
+			add_state_core = 1023
+			add_state_core = 347
+			add_state_core = 340
+			add_state_core = 339
+			add_state_core = 343
+			add_state_core = 346
+			add_state_core = 49
+			add_state_core = 356
+			add_state_core = 345
+			add_state_core = 344
+			add_state_core = 1036
+			add_state_core = 799
+			add_state_core = 677
+			add_state_core = 1185
+			add_state_core = 553
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.7
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+}
+
+#The Grand Revolt [Gaul and Hispania]
+country_event = {
+	id = rome_event.7
+	title = rome_event.7.t
+	desc = rome_event.7.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.7.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		GAL = {
+			transfer_state = 14
+			transfer_state = 15
+			transfer_state = 29
+			transfer_state = 785
+			transfer_state = 6
+			transfer_state = 7
+			transfer_state = 35
+			transfer_state = 977
+			transfer_state = 34
+			transfer_state = 980
+			transfer_state = 1022
+			transfer_state = 42
+			transfer_state = 8
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 16
+			transfer_state = 30
+			transfer_state = 23
+			transfer_state = 24
+			transfer_state = 27
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 19
+			transfer_state = 806
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 26
+			transfer_state = 20
+			transfer_state = 32
+			transfer_state = 21
+			transfer_state = 845
+		}
+		hidden_effect = {
+		GAL = {
+			add_state_core = 14
+			add_state_core = 15
+			add_state_core = 29
+			add_state_core = 785
+			add_state_core = 6
+			add_state_core = 7
+			add_state_core = 35
+			add_state_core = 977
+			add_state_core = 34
+			add_state_core = 980
+			add_state_core = 1022
+			add_state_core = 42
+			add_state_core = 8
+			add_state_core = 28
+			add_state_core = 17
+			add_state_core = 18
+			add_state_core = 16
+			add_state_core = 30
+			add_state_core = 23
+			add_state_core = 24
+			add_state_core = 27
+			add_state_core = 33
+			add_state_core = 25
+			add_state_core = 19
+			add_state_core = 806
+			add_state_core = 31
+			add_state_core = 22
+			add_state_core = 26
+			add_state_core = 20
+			add_state_core = 32
+			add_state_core = 21
+			add_state_core = 845
+		}
+		ISP = {
+			transfer_state = 171
+			transfer_state = 790
+			transfer_state = 792
+			transfer_state = 172
+			transfer_state = 174
+			transfer_state = 791
+			transfer_state = 176
+			transfer_state = 166
+			transfer_state = 794
+			transfer_state = 165
+			transfer_state = 177
+			transfer_state = 180
+			transfer_state = 112
+			transfer_state = 181
+			transfer_state = 795
+			transfer_state = 179
+			transfer_state = 170
+			transfer_state = 788
+			transfer_state = 41
+			transfer_state = 793
+			transfer_state = 167
+			transfer_state = 168
+			transfer_state = 175
+			transfer_state = 169
+			transfer_state = 173
+			transfer_state = 789
+			transfer_state = 118
+		}
+		ISP = {
+			add_state_core = 171
+			add_state_core = 790
+			add_state_core = 792
+			add_state_core = 172
+			add_state_core = 174
+			add_state_core = 791
+			add_state_core = 176
+			add_state_core = 166
+			add_state_core = 794
+			add_state_core = 165
+			add_state_core = 177
+			add_state_core = 180
+			add_state_core = 112
+			add_state_core = 181
+			add_state_core = 795
+			add_state_core = 179
+			add_state_core = 170
+			add_state_core = 788
+			add_state_core = 41
+			add_state_core = 793
+			add_state_core = 167
+			add_state_core = 168
+			add_state_core = 175
+			add_state_core = 169
+			add_state_core = 173
+			add_state_core = 789
+			add_state_core = 118
+		}
+		}
+		GAL = {
+			change_tag_from = ROOT
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.8
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+	option = {
+		name = rome_event.7.b
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		hidden_effect = {
+		GAL = {
+			transfer_state = 14
+			transfer_state = 15
+			transfer_state = 29
+			transfer_state = 785
+			transfer_state = 6
+			transfer_state = 7
+			transfer_state = 35
+			transfer_state = 977
+			transfer_state = 34
+			transfer_state = 980
+			transfer_state = 1022
+			transfer_state = 42
+			transfer_state = 8
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 16
+			transfer_state = 30
+			transfer_state = 23
+			transfer_state = 24
+			transfer_state = 27
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 19
+			transfer_state = 806
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 26
+			transfer_state = 20
+			transfer_state = 32
+			transfer_state = 21
+			transfer_state = 845
+		}
+		GAL = {
+			add_state_core = 14
+			add_state_core = 15
+			add_state_core = 29
+			add_state_core = 785
+			add_state_core = 6
+			add_state_core = 7
+			add_state_core = 35
+			add_state_core = 977
+			add_state_core = 34
+			add_state_core = 980
+			add_state_core = 1022
+			add_state_core = 42
+			add_state_core = 8
+			add_state_core = 28
+			add_state_core = 17
+			add_state_core = 18
+			add_state_core = 16
+			add_state_core = 30
+			add_state_core = 23
+			add_state_core = 24
+			add_state_core = 27
+			add_state_core = 33
+			add_state_core = 25
+			add_state_core = 19
+			add_state_core = 806
+			add_state_core = 31
+			add_state_core = 22
+			add_state_core = 26
+			add_state_core = 20
+			add_state_core = 32
+			add_state_core = 21
+			add_state_core = 845
+		}
+		ISP = {
+			add_state_core = 171
+			add_state_core = 790
+			add_state_core = 792
+			add_state_core = 172
+			add_state_core = 174
+			add_state_core = 791
+			add_state_core = 176
+			add_state_core = 166
+			add_state_core = 794
+			add_state_core = 165
+			add_state_core = 177
+			add_state_core = 180
+			add_state_core = 112
+			add_state_core = 181
+			add_state_core = 795
+			add_state_core = 179
+			add_state_core = 170
+			add_state_core = 788
+			add_state_core = 41
+			add_state_core = 793
+			add_state_core = 167
+			add_state_core = 168
+			add_state_core = 175
+			add_state_core = 169
+			add_state_core = 173
+			add_state_core = 789
+			add_state_core = 118
+		}
+		}
+		ISP = {
+			transfer_state = 171
+			transfer_state = 790
+			transfer_state = 792
+			transfer_state = 172
+			transfer_state = 174
+			transfer_state = 791
+			transfer_state = 176
+			transfer_state = 166
+			transfer_state = 794
+			transfer_state = 165
+			transfer_state = 177
+			transfer_state = 180
+			transfer_state = 112
+			transfer_state = 181
+			transfer_state = 795
+			transfer_state = 179
+			transfer_state = 170
+			transfer_state = 788
+			transfer_state = 41
+			transfer_state = 793
+			transfer_state = 167
+			transfer_state = 168
+			transfer_state = 175
+			transfer_state = 169
+			transfer_state = 173
+			transfer_state = 789
+			transfer_state = 118
+		}
+		ISP = {
+			change_tag_from = ROOT
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.8
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+	option = {
+		name = rome_event.7.c
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		hidden_effect = {
+		GAL = {
+			transfer_state = 14
+			transfer_state = 15
+			transfer_state = 29
+			transfer_state = 785
+			transfer_state = 6
+			transfer_state = 7
+			transfer_state = 35
+			transfer_state = 977
+			transfer_state = 34
+			transfer_state = 980
+			transfer_state = 1022
+			transfer_state = 42
+			transfer_state = 8
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 16
+			transfer_state = 30
+			transfer_state = 23
+			transfer_state = 24
+			transfer_state = 27
+			transfer_state = 33
+			transfer_state = 25
+			transfer_state = 19
+			transfer_state = 806
+			transfer_state = 31
+			transfer_state = 22
+			transfer_state = 26
+			transfer_state = 20
+			transfer_state = 32
+			transfer_state = 21
+			transfer_state = 845
+		}
+		GAL = {
+			add_state_core = 14
+			add_state_core = 15
+			add_state_core = 29
+			add_state_core = 785
+			add_state_core = 6
+			add_state_core = 7
+			add_state_core = 35
+			add_state_core = 977
+			add_state_core = 34
+			add_state_core = 980
+			add_state_core = 1022
+			add_state_core = 42
+			add_state_core = 8
+			add_state_core = 28
+			add_state_core = 17
+			add_state_core = 18
+			add_state_core = 16
+			add_state_core = 30
+			add_state_core = 23
+			add_state_core = 24
+			add_state_core = 27
+			add_state_core = 33
+			add_state_core = 25
+			add_state_core = 19
+			add_state_core = 806
+			add_state_core = 31
+			add_state_core = 22
+			add_state_core = 26
+			add_state_core = 20
+			add_state_core = 32
+			add_state_core = 21
+			add_state_core = 845
+		}
+		ISP = {
+			transfer_state = 171
+			transfer_state = 790
+			transfer_state = 792
+			transfer_state = 172
+			transfer_state = 174
+			transfer_state = 791
+			transfer_state = 176
+			transfer_state = 166
+			transfer_state = 794
+			transfer_state = 165
+			transfer_state = 177
+			transfer_state = 180
+			transfer_state = 112
+			transfer_state = 181
+			transfer_state = 795
+			transfer_state = 179
+			transfer_state = 170
+			transfer_state = 788
+			transfer_state = 41
+			transfer_state = 793
+			transfer_state = 167
+			transfer_state = 168
+			transfer_state = 175
+			transfer_state = 169
+			transfer_state = 173
+			transfer_state = 789
+			transfer_state = 118
+		}
+		ISP = {
+			add_state_core = 171
+			add_state_core = 790
+			add_state_core = 792
+			add_state_core = 172
+			add_state_core = 174
+			add_state_core = 791
+			add_state_core = 176
+			add_state_core = 166
+			add_state_core = 794
+			add_state_core = 165
+			add_state_core = 177
+			add_state_core = 180
+			add_state_core = 112
+			add_state_core = 181
+			add_state_core = 795
+			add_state_core = 179
+			add_state_core = 170
+			add_state_core = 788
+			add_state_core = 41
+			add_state_core = 793
+			add_state_core = 167
+			add_state_core = 168
+			add_state_core = 175
+			add_state_core = 169
+			add_state_core = 173
+			add_state_core = 789
+			add_state_core = 118
+		}
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.8
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+}
+
+#The Grand Revolt [Greece and Istria]
+country_event = {
+	id = rome_event.8
+	title = rome_event.8.t
+	desc = rome_event.8.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.8.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		IST = {
+			transfer_state = 102
+			transfer_state = 853
+			transfer_state = 103
+			transfer_state = 163
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 934
+			transfer_state = 802
+			transfer_state = 108
+			transfer_state = 803
+			transfer_state = 48
+		}
+		THR = {
+			transfer_state = 801
+			transfer_state = 77
+			transfer_state = 971
+		}
+		hidden_effect = {
+		IST = {
+			add_state_core = 102
+			add_state_core = 853
+			add_state_core = 103
+			add_state_core = 163
+			add_state_core = 109
+			add_state_core = 104
+			add_state_core = 804
+			add_state_core = 107
+			add_state_core = 105
+			add_state_core = 934
+			add_state_core = 802
+			add_state_core = 108
+			add_state_core = 803
+			add_state_core = 48
+		}
+		THR = {
+			add_state_core = 801
+			add_state_core = 77
+			add_state_core = 971
+		}
+		GRS = {
+			add_state_core = 970
+			add_state_core = 44
+			add_state_core = 106
+			add_state_core = 805
+			add_state_core = 185
+			add_state_core = 731
+			add_state_core = 184
+			add_state_core = 47
+			add_state_core = 186
+			add_state_core = 187
+			add_state_core = 182
+			add_state_core = 183
+		}
+		GRS = {
+			transfer_state = 970
+			transfer_state = 44
+			transfer_state = 106
+			transfer_state = 805
+			transfer_state = 185
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 47
+			transfer_state = 186
+			transfer_state = 187
+			transfer_state = 182
+			transfer_state = 183
+		}
+		}
+		IST = {
+			change_tag_from = ROOT
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.9
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+	option = {
+		name = rome_event.8.b
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		hidden_effect = {
+		IST = {
+			transfer_state = 102
+			transfer_state = 853
+			transfer_state = 103
+			transfer_state = 163
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 934
+			transfer_state = 802
+			transfer_state = 108
+			transfer_state = 803
+			transfer_state = 48
+		}
+		IST = {
+			add_state_core = 102
+			add_state_core = 853
+			add_state_core = 103
+			add_state_core = 163
+			add_state_core = 109
+			add_state_core = 104
+			add_state_core = 804
+			add_state_core = 107
+			add_state_core = 105
+			add_state_core = 934
+			add_state_core = 802
+			add_state_core = 108
+			add_state_core = 803
+			add_state_core = 48
+		}
+		THR = {
+			add_state_core = 801
+			add_state_core = 77
+			add_state_core = 971
+		}
+		GRS = {
+			add_state_core = 970
+			add_state_core = 44
+			add_state_core = 106
+			add_state_core = 805
+			add_state_core = 185
+			add_state_core = 731
+			add_state_core = 184
+			add_state_core = 47
+			add_state_core = 186
+			add_state_core = 187
+			add_state_core = 182
+			add_state_core = 183
+		}
+		}
+		THR = {
+			transfer_state = 801
+			transfer_state = 77
+			transfer_state = 971
+		}
+		GRS = {
+			transfer_state = 970
+			transfer_state = 44
+			transfer_state = 106
+			transfer_state = 805
+			transfer_state = 185
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 47
+			transfer_state = 186
+			transfer_state = 187
+			transfer_state = 182
+			transfer_state = 183
+		}
+		GRS = {
+			change_tag_from = ROOT
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.9
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+	option = {
+		name = rome_event.8.c
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		hidden_effect = {
+		IST = {
+			transfer_state = 102
+			transfer_state = 853
+			transfer_state = 103
+			transfer_state = 163
+			transfer_state = 109
+			transfer_state = 104
+			transfer_state = 804
+			transfer_state = 107
+			transfer_state = 105
+			transfer_state = 934
+			transfer_state = 802
+			transfer_state = 108
+			transfer_state = 803
+			transfer_state = 48
+		}
+		GRS = {
+			transfer_state = 970
+			transfer_state = 44
+			transfer_state = 106
+			transfer_state = 805
+			transfer_state = 185
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 47
+			transfer_state = 186
+			transfer_state = 187
+			transfer_state = 182
+			transfer_state = 183
+		}
+		IST = {
+			add_state_core = 102
+			add_state_core = 853
+			add_state_core = 103
+			add_state_core = 163
+			add_state_core = 109
+			add_state_core = 104
+			add_state_core = 804
+			add_state_core = 107
+			add_state_core = 105
+			add_state_core = 934
+			add_state_core = 802
+			add_state_core = 108
+			add_state_core = 803
+			add_state_core = 48
+		}
+		THR = {
+			add_state_core = 801
+			add_state_core = 77
+			add_state_core = 971
+		}
+		GRS = {
+			add_state_core = 970
+			add_state_core = 44
+			add_state_core = 106
+			add_state_core = 805
+			add_state_core = 185
+			add_state_core = 731
+			add_state_core = 184
+			add_state_core = 47
+			add_state_core = 186
+			add_state_core = 187
+			add_state_core = 182
+			add_state_core = 183
+		}
+		}
+		THR = {
+			transfer_state = 801
+			transfer_state = 77
+			transfer_state = 971
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.9
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+}
+
+#The Grand Revolt [Egypt]
+country_event = {
+	id = rome_event.9
+	title = rome_event.9.t
+	desc = rome_event.9.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.9.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		EGI = {
+			transfer_state = 450
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 452
+			transfer_state = 447
+			transfer_state = 446
+			transfer_state = 907
+			transfer_state = 456
+			transfer_state = 457
+		}
+		EGI = {
+			change_tag_from = ROOT
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.10
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+	option = {
+		name = rome_event.9.b
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		EGI = {
+			transfer_state = 450
+			transfer_state = 663
+			transfer_state = 451
+			transfer_state = 452
+			transfer_state = 447
+			transfer_state = 446
+			transfer_state = 907
+			transfer_state = 456
+			transfer_state = 457
+		}
+		ROE = {
+			country_event = {
+				id = rome_event.10
+				days = 15
+				random_days = 10
+			}
+		}
+	}
+}
+
+#The Grand Revolt [Rome and Austrian State]
+country_event = {
+	id = rome_event.10
+	title = rome_event.10.t
+	desc = rome_event.10.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = {
+		name = rome_event.10.a
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		RRO = {
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 849
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 161
+			transfer_state = 114
+			transfer_state = 1
+			transfer_state = 158
+			transfer_state = 735
+			transfer_state = 851
+			transfer_state = 159
+			transfer_state = 850
+			transfer_state = 160
+			transfer_state = 153
+			transfer_state = 151
+			transfer_state = 846
+			transfer_state = 847
+			transfer_state = 3
+			transfer_state = 848
+			transfer_state = 39
+			transfer_state = 736
+			transfer_state = 852
+		}
+		hidden_effect = {
+		AAS = {
+			transfer_state = 153
+			transfer_state = 1017
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 1018
+			transfer_state = 152
+			transfer_state = 976
+			transfer_state = 1019
+			transfer_state = 975
+			transfer_state = 155
+			transfer_state = 974
+		}
+		AAS = {
+			add_state_core = 153
+			add_state_core = 1017
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 1018
+			add_state_core = 152
+			add_state_core = 976
+			add_state_core = 1019
+			add_state_core = 975
+			add_state_core = 155
+			add_state_core = 974
+		}
+		RRO = {
+			add_state_core = 156
+			add_state_core = 117
+			add_state_core = 849
+			add_state_core = 2
+			add_state_core = 157
+			add_state_core = 162
+			add_state_core = 161
+			add_state_core = 114
+			add_state_core = 1
+			add_state_core = 158
+			add_state_core = 735
+			add_state_core = 851
+			add_state_core = 159
+			add_state_core = 850
+			add_state_core = 160
+			add_state_core = 153
+			add_state_core = 151
+			add_state_core = 846
+			add_state_core = 847
+			add_state_core = 3
+			add_state_core = 848
+			add_state_core = 39
+			add_state_core = 736
+			add_state_core = 852
+		}
+		ROE = {
+			delete_units = {
+				division_template = "Legio"
+			}
+			delete_units = {
+				division_template = "Praetoriae Custodes"
+			}
+		}
+		}
+		RRO = { 
+			change_tag_from = ROOT 
+		}
+		country_event = rome_event.11
+	}
+	option = {
+		name = rome_event.10.b
+		ai_chance = { factor = 20 }
+		original_recipient_only = yes
+		hidden_effect = {
+		RRO = {
+			transfer_state = 156
+			transfer_state = 117
+			transfer_state = 849
+			transfer_state = 2
+			transfer_state = 157
+			transfer_state = 162
+			transfer_state = 161
+			transfer_state = 114
+			transfer_state = 1
+			transfer_state = 158
+			transfer_state = 735
+			transfer_state = 851
+			transfer_state = 159
+			transfer_state = 850
+			transfer_state = 160
+			transfer_state = 151
+			transfer_state = 846
+			transfer_state = 847
+			transfer_state = 3
+			transfer_state = 848
+			transfer_state = 39
+			transfer_state = 736
+			transfer_state = 852
+		}
+		AAS = {
+			add_state_core = 153
+			add_state_core = 1017
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 1018
+			add_state_core = 152
+			add_state_core = 976
+			add_state_core = 1019
+			add_state_core = 975
+			add_state_core = 155
+			add_state_core = 974
+		}
+		RRO = {
+			add_state_core = 156
+			add_state_core = 117
+			add_state_core = 849
+			add_state_core = 2
+			add_state_core = 157
+			add_state_core = 162
+			add_state_core = 161
+			add_state_core = 114
+			add_state_core = 1
+			add_state_core = 158
+			add_state_core = 735
+			add_state_core = 851
+			add_state_core = 159
+			add_state_core = 850
+			add_state_core = 160
+			add_state_core = 153
+			add_state_core = 151
+			add_state_core = 846
+			add_state_core = 847
+			add_state_core = 3
+			add_state_core = 848
+			add_state_core = 39
+			add_state_core = 736
+			add_state_core = 852
+		}
+		ROE = {
+			delete_units = {
+				division_template = "Legio"
+			}
+			delete_units = {
+				division_template = "Praetoriae Custodes"
+			}
+		}
+		}
+		AAS = {
+			transfer_state = 153
+			transfer_state = 1017
+			transfer_state = 52
+			transfer_state = 53
+			transfer_state = 1018
+			transfer_state = 152
+			transfer_state = 976
+			transfer_state = 1019
+			transfer_state = 975
+			transfer_state = 155
+			transfer_state = 974
+		}
+		AAS = {
+			change_tag_from = ROOT
+		}
+		country_event = rome_event.11
+		ROE = {
+			delete_units = {
+				division_template = "Legio"
+			}
+			delete_units = {
+				division_template = "Praetoriae Custodes"
+			}
+		}
+	}
+}
+
+
+#The Fall of Rome!
+country_event = {
+	id = rome_event.11
+	title = rome_event.11.t
+	desc = rome_event.11.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = {
+		name = rome_event.11.a
+		ai_chance = { factor = 20 }
+	}
+}
+
+
+
+
+
 
 
 #Military Coup d'Etat in Rome [news]
@@ -120,6 +1452,46 @@ news_event = {
 	major = yes
 	option = {
 		name = roman_news.1.a
+		ai_chance = { factor = 20 }
+	}
+}
+
+#Client States break away [news]
+news_event = {
+	id = roman_news.2
+	title = roman_news.2.t
+	desc = roman_news.2.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = {
+		name = roman_news.2.a
+		ai_chance = { factor = 20 }
+	}
+}
+
+#Roman Collapse [news]
+news_event = {
+	id = roman_news.3
+	title = roman_news.3.t
+	desc = roman_news.3.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = {
+		name = roman_news.3.a
 		ai_chance = { factor = 20 }
 	}
 }

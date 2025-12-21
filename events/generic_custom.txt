@@ -141,3 +141,106 @@ country_event = {
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+## Tribal Sway [TRIBAL RECEIVE]
+country_event = {
+	id = generic_custom.10
+	title = generic_custom.10.t
+	desc = generic_custom.10.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## YES -> becomes tributary
+		name = generic_custom.10.a
+		ai_chance = { factor = 20 }
+		FROM = { 
+			country_event = generic_custom.11
+		}
+	}
+	option = { ## NO -> nothing happens
+		name = generic_custom.10.b
+		ai_chance = { factor = 20 }
+		FROM = { 
+			country_event = generic_custom.12
+		}
+	}
+}
+
+## Tribal Sway [ROOT RECEIVE]
+country_event = {
+	id = generic_custom.11
+	title = generic_custom.11.t
+	desc = generic_custom.11.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## YES -> becomes tributary
+		name = generic_custom.11.a
+		ai_chance = { factor = 20 }
+		FROM = {
+				set_temp_variable = { oldgov = var:THIS.current_party_ideology_group }
+				set_temp_variable = { demoldgov = var:THIS.party_popularity_100@democratic }
+				set_temp_variable = { olioldgov = var:THIS.party_popularity_100@communism }
+				set_temp_variable = { tyraoldgov = var:THIS.party_popularity_100@fascism }
+				set_temp_variable = { triboldgov = var:THIS.party_popularity_100@neutrality }
+                add_political_power = -50
+                set_country_flag = is_tributary
+            }
+            ROOT = {
+                add_political_power = 50
+                set_autonomy = {
+                    target = FROM
+                    autonomous_state = autonomy_tributary
+                    end_wars = no
+                    end_civil_wars = no
+                }
+			FROM = {
+				set_politics = {
+    				ruling_party = var:oldgov
+    				elections_allowed = no
+    				election_frequency = 48
+				}
+				set_popularities = {
+					democratic = var:demoldgov
+					communism = var:olioldgov
+					fascism = var:tyraoldgov
+					neutrality = var:triboldgov
+				}
+			}
+        }
+	}
+}
+
+## Tribal Sway [ROOT RECEIVE]
+country_event = {
+	id = generic_custom.12
+	title = generic_custom.12.t
+	desc = generic_custom.12.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## NO -> arg!
+		name = generic_custom.12.a
+		ai_chance = { factor = 20 }
+	}
+}

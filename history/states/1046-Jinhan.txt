@@ -1,6 +1,10 @@
 state={
 	id=1046
 	name="STATE_1046"
+	resources = {
+		wood = 3
+		gold_ingot = 1
+	}
 	provinces={
 		1081 4056 4086 7121 12089 
 	}

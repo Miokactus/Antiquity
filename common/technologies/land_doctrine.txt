@@ -229,7 +229,7 @@ technologies = {
 		ai_research_weights = {
 			armor = 1.0
 			defensive = -2.0
-			motorized_equipment = 3.0
+			carriage_equipment = 3.0
 			cat_mechanized_equipment = 5.0
 		}
 	}
@@ -350,7 +350,7 @@ technologies = {
 		
 		ai_research_weights = {
 			armor = 2.0
-			motorized_equipment = 2.0
+			carriage_equipment = 2.0
 			cat_mechanized_equipment = 2.0
 		}
 	}
@@ -1819,7 +1819,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -1867,7 +1867,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 2.5
-			motorized_equipment = 2.0
+			carriage_equipment = 2.0
 		}
 	}
 	
@@ -1912,7 +1912,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -1969,7 +1969,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2032,7 +2032,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 			cat_mechanized_equipment = 1.0
 		}
 	}
@@ -2083,7 +2083,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 			cat_mechanized_equipment = 1.0
 		}
 	}
@@ -2142,7 +2142,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2195,7 +2195,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 			cat_mechanized_equipment = 1.0
 		}
 	}
@@ -2252,7 +2252,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2304,7 +2304,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2366,7 +2366,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2427,7 +2427,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2488,7 +2488,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2540,7 +2540,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2596,7 +2596,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	
@@ -2643,7 +2643,7 @@ technologies = {
 		
 		ai_research_weights = {
 			infantry_weapons = 1.5
-			motorized_equipment = 1.0
+			carriage_equipment = 1.0
 		}
 	}
 	

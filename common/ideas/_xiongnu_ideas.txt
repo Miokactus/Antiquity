@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		
+	## GENERIC ##
+		
+		XAI_poor_sino_xiongnu_relations = {
+			name = "Poor Sino-Xiongnu Relations"
+			allowed_civil_war = { always = yes }
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+    			tag = XIN    # this can also take a variable that stores a scope
+				trade_cost_for_target_factor = 1
+				trade_opinion_factor = -1
+			}
+			modifier = {
+				war_support_factor = 0.15
+				political_power_cost = -0.5
+			}
+		}
+
+	}
+}

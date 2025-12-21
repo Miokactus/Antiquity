@@ -11,6 +11,10 @@ state={
 	history = {
 		owner = MRA
 		add_core_of = MRA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
 	}
 	manpower=449260
 	buildings_max_level_factor=1.000

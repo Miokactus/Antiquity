@@ -2,17 +2,21 @@ state={
 	id=1010
 	name="STATE_1010"
 	resources={
-		gold_ingot=3.000
+		gold_ingot=3
 	}
 	provinces={
-		1631 4440 4951 12413 
+		1631 4440 
 	}
 	history = {
-		#add_core_of =
 		owner = AAN
+		add_core_of = AAN
+		buildings = {
+			infrastructure = 1
+		}
 	}
+	state_category = rural
 	manpower=479801
-	buildings_max_level_factor=1.000
+	buildings_max_level_factor=1
 	state_category=rural
-	local_supplies=0.000
+	local_supplies=0
 }

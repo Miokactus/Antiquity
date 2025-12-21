@@ -7,6 +7,9 @@ state={
 	history = {
 		owner = IBR
 		add_core_of = IBR
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower=5100
 	state_category = rural

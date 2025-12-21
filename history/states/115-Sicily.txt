@@ -41,7 +41,7 @@ state = {
 
 		}
 		add_core_of = ROE
-		
+		add_claim_by = CRT
 
 	}
 

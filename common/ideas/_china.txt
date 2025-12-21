@@ -12,11 +12,80 @@ ideas = {
 				communism_drift = -0.05
 				democratic_drift = -0.05
 				fascism_drift = 0.03
+				stability_factor = -0.1
+				consumer_goods_factor = 0.3
 			}
 		}
 
+		XIN_peasant_support = {
+			name = "Peasant's Support"
+			allowed_civil_war = { always = yes }
+			picture = chi_chinese_support
+			modifier = {
+				political_power_cost = -0.3
+				stability_factor = 0.15
+			}
+		}
 
+		XIN_peasant_no_support = {
+			name = "No Peasant's Support"
+			allowed_civil_war = { always = yes }
+			picture = POL_the_peasants_strike
+			modifier = {
+				consumer_goods_factor = 0.4
+				political_power_cost = 0.6
+				stability_factor = -0.2
+				conscription_factor = -0.5
+			}
+		}
 
+		XIN_peasant_support_fading = {
+			name = "Peasant's Support Fading"
+			allowed_civil_war = { always = yes }
+			picture = POL_looming_peasants_strike
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_cost = 0.3
+				stability_factor = -0.1
+				conscription_factor = -0.3
+			}
+		}
+
+		XIN_unsustainable_army = {
+			name = "Unsustainable Army"
+			allowed_civil_war = { always = yes }
+			cancel = {
+    			has_army_manpower = {
+    				size < 150000
+				} 
+			}
+			picture = SPR_disbanded_army
+			modifier = {
+				consumer_goods_factor = 0.2
+				political_power_cost = 0.5
+				stability_factor = -0.1
+				training_time_factor = 0.5
+				industrial_capacity_factory = -0.3
+				army_attack_factor = -0.3
+				army_attack_speed_factor = -0.3
+			}
+		}
+
+		XIN_poor_sino_xiongnu_relations = {
+			name = "Poor Sino-Xiongnu Relations"
+			allowed_civil_war = { always = yes }
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+    			tag = XAI    # this can also take a variable that stores a scope
+				trade_cost_for_target_factor = 1
+				trade_opinion_factor = -1
+			}
+			modifier = {
+				political_power_cost = -0.5
+				stability_factor = -0.1
+				war_support_factor = 0.15
+			}
+		}
 		
 	}
 }

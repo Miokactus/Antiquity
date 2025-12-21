@@ -7,10 +7,10 @@ bookmarks = {
 	
 		ROE = {
 			history = ROE_AUGUSTUSDEATH_DESC
-			ideology = neutrality
+			ideology = communism
 			ideas={
-				ROE_pax_romana
-				one_party_monopoly
+				pax_romana
+				ROE_restricted_citizenship
 				an_empire_of_peoples
 			}
 			focuses = {
@@ -22,7 +22,7 @@ bookmarks = {
 
 		MAU = {
 			history = MAU_AUGUSTUSDEATH_DESC
-			ideology = neutrality
+			ideology = communism
 			ideas={
 			}
 			focuses = {
@@ -31,7 +31,7 @@ bookmarks = {
 
 		LYC = {
 			history = LYC_AUGUSTUSDEATH_DESC
-			ideology = neutrality
+			ideology = communism
 			ideas={
 			}
 			focuses = {
@@ -40,7 +40,7 @@ bookmarks = {
 
 		IDS = {
 			history = IDS_AUGUSTUSDEATH_DESC
-			ideology = neutrality
+			ideology = communism
 			ideas={
 			}
 			focuses = {
@@ -49,8 +49,9 @@ bookmarks = {
 
 		PTH = {
 			history = PTH_AUGUSTUSDEATH_DESC
-			ideology = neutrality
+			ideology = communism
 			ideas={
+				PTH_decentralised_structure
 			}
 			focuses = {
 			}
@@ -58,9 +59,11 @@ bookmarks = {
 
 		XIN = {
 			history = XIN_AUGUSTUSDEATH_DESC
-			ideology = neutrality
+			ideology = communism
 			ideas={
 				XIN_illegitimate_regime
+				XIN_unsustainable_army
+				XIN_peasant_support_fading
 			}
 			focuses = {
 			}
@@ -70,6 +73,8 @@ bookmarks = {
 			history = XAI_AUGUSTUSDEATH_DESC
 			ideology = neutrality
 			ideas={
+				nomadic_society
+				XAI_poor_sino_xiongnu_relations
 			}
 			focuses = {
 			}

@@ -30,6 +30,9 @@ set_popularities = {
 	neutrality = 0
 }
  
-add_ideas = limited_exports
-add_ideas = limited_conscription
-add_ideas = civilian_economy
+add_ideas = {
+	limited_exports
+	limited_conscription
+	civilian_economy
+	PTH_decentralised_structure
+}

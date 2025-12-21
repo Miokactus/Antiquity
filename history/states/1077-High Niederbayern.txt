@@ -7,9 +7,13 @@ state={
 	history = {
 		owner = NSE
 		add_core_of = NSE
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=15000
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

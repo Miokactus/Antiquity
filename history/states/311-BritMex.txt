@@ -4,6 +4,9 @@ state={
 	provinces={
 		2077 4991 
 	}
+	resources={
+		gold_ingot = 3
+	}
 	history = {
 		owner = MMY
 		add_core_of = MMY

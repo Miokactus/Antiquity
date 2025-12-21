@@ -6,21 +6,19 @@ state = {
 	state_category = town
 	
 	resources = {
-		gold_ingot = 15 # was: 22
+		gold_ingot = 8 # was: 22
 	}
 
 	history = {
 
 		owner = PTH
 		add_core_of = PTH
-		
-		add_claim_by = KUR
 
 		victory_points = {
-			2097 10 # Baghdad
+			2097 30 # Ctesiphon
 		}
 		victory_points = {
-			7994 1 # Karbala 
+			7994 8 # Babylon 
 		}
 		victory_points = {
 			3795 2 # Tikrit 

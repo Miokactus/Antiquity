@@ -1,6 +1,14 @@
 ideas = {
 
 	country = {
+		totaler_krieg_economy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		}
+
+
 		add_production_efficiency = {
 			allowed = {
 				always = no

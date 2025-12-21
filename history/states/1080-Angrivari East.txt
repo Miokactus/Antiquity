@@ -1,15 +1,24 @@
 state={
 	id=1080
 	name="STATE_1080"
+	resources = {
+		wood = 5
+		gold_ingot = 2
+	}
 	provinces={
 		11402 11468 
 	}
 	history = {
 		owner = ANI
 		add_core_of = ANI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
 	}
 	manpower=85000
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

@@ -7,6 +7,10 @@ state={
 	history = {
 		owner = FRI
 		add_core_of = FRI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=236400
 	buildings_max_level_factor=1.000

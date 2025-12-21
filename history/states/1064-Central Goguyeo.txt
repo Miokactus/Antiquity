@@ -1,12 +1,20 @@
 state={
 	id=1064
 	name="STATE_1064"
+	resources = {
+		grain = 2
+		gold_ingot = 2
+	}
 	provinces={
 		800 861 927 946 6905 6947 9841 9883 11781 11823 11850 
 	}
 	history={
 		owner = GOR
 		add_core_of = GOR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
 	}
 	manpower=67500
 	state_category = rural

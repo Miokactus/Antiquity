@@ -1,3 +1,9 @@
+add_equipment_to_stockpile = {
+    type = infantry_equipment
+    amount = 26000
+    producer = ROE
+}
+
 division_template = {
 	name = "Legio"
 	is_locked = yes

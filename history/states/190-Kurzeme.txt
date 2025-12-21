@@ -4,7 +4,10 @@ state={
 	name="STATE_190"
 	
 	state_category = rural
-	
+	resources={
+		gold_ingot = 3
+		grain = 2
+	}
 	history={
 		victory_points = {
 			9262 3

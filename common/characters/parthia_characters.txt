@@ -1,0 +1,21 @@
+characters = {
+
+	artabanus_ii = {
+		name = "Artabanus II"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_PTH_artabanus_ii"
+            }
+        }
+		country_leader = {
+			desc = "ARTABANUS_DESC"
+			expire = "80.5.4"
+			ideology = despotism_comm
+			traits = {
+				
+			}
+		}
+	}
+
+
+}

@@ -11,7 +11,7 @@ tribal_actions = {
 			has_manpower > 500
 		}
 		visible = {
-			has_government = neutrality
+			always = no
 		}
 		target_root_trigger = { TAG = ROOT }
 		target_array = neighbors

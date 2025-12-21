@@ -7,6 +7,11 @@ state={
 	history = {
 		owner = ANI
 		add_core_of = ANI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+		}
 	}
 	manpower=51093
 	buildings_max_level_factor=1.000

@@ -41,3 +41,12 @@ receiving_tribute = {
     }
     political_power_gain = trib_pol # Variable value
 }
+
+ROE_citizenship = {
+	name = "Roman Citizenship"
+    icon = GFX_idea_roman_restricted_citizenship
+    enable = { always = yes }
+	conscription_factor = var:roman_citizenship_mob
+    stability_factor = var:roman_citizenship_stab
+	political_power_cost = var:roman_citizenship_pol
+}

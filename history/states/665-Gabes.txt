@@ -5,7 +5,7 @@ state={
 	history={
 		owner = ROE
 		add_core_of = ROE
-		
+		add_core_of = CRT
 		victory_points = {
 			7005 1 
 		}

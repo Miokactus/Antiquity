@@ -19,7 +19,6 @@ state = {
 		}
 
 		buildings = {
-			anti_air_building = 3
 			infrastructure = 2
 
             9523 = {

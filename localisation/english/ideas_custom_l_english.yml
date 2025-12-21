@@ -2,8 +2,21 @@
  AAN_anarchy: "Archaïc System"
 
  XIN_illegitimate_regime_desc: "The Xin Dynasty was established by an impostor, a conspirator behind the Han's order. While he might have taken the power in China, underground agents and resistance cells still exist, and many would prefer to see the come back of the Han Dynasty, than continue to see Wang Mang and his policies."
- nomadic_society_desc: "We are no State, we are no defined lands, we are Peoples, peoples travelling the steppes and moving. We aren't stable, we aren't 'controllable', we are free. Such is the way of living, in a nomadic society."
+ XIN_peasant_support_fading_desc: "The current regime is beginning to lose support from the peasants, which were the ones to put the Xin Dynasty on the throne. This might be problematic in the future, especially if the situation worsens."
+ XIN_unsustainable_army_desc: "We mobilised so much to defend against the Xiongnu in the north and the rebels in the south, but we cannot keep that many soldiers in line without consequences."
+ XIN_poor_sino_xiongnu_relations_desc: "Our relations with the Xiongnu are very low. If we continue, they might chose to attack us."
 
+ PTH_decentralised_structure_desc: "Our Empire is vast and wide, and to keep in check these numerous regions, we are forced to adopt a decentralised approach, guaranting stability in the realm. This however results in some satraps wanting to break free from us."
+
+ XAI_poor_sino_xiongnu_relations_desc: "Our relations with the Chinese are very low. If they don't want to talk or trade with us, we'll need to intervene."
+
+ pax_romana_desc: "Established by Augustus following the restoration of our Republic, the Pax Romana stabilised our nation and mmakes us feared by other states."
+ ROE_restricted_citizenship_desc: "Even if we extended the roman citizenship to many cities, there is still so many people that are not rightful citizens of Rome. We must either allow them to participate in roman affairs, or force them into submission."
+ ROE_citizenship: "Roman Citizenship"
+ ROE_citizenship_desc: "The Romans."
+ one_party_monopoly_desc: "Rome's supremacy over the Empire is a powerful symbol. Whoever controls Rome controls the Empire, and everything with it.\n\§RLosing Rome would mean losing everything.§!"
+
+ nomadic_society_desc: "We are no State, we are no defined lands, we are Peoples, peoples travelling the steppes and moving. We aren't stable, we aren't 'controllable', we are free. Such is the way of living, in a nomadic society."
 
  ## TOOLTIPS ##
 

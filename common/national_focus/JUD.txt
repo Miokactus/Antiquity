@@ -13,5 +13,26 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1500 }
+
+	#Death of Augustus
+	focus = {
+		id = JUD_kingdom_of_god
+		icon = GFX_goal_roman_augustus_death
+		x = 10
+		y = 2
+		cost = 2
+		available = { 
+			has_country_leader = {
+				character = JUD_jesus_christ
+				ruling_only = yes
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			set_cosmetic_tag = JUDkingdomofgod
+		}
+	}
 	
 }

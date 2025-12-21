@@ -7,6 +7,11 @@ state={
 	history={
 		owner = ANU
 		add_core_of = ANU
+		buildings = {
+			7344 = {
+				naval_base = 2
+			}
+		}
 	}
 	manpower = 96000
 	state_category = rural

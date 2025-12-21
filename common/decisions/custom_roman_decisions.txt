@@ -11,13 +11,10 @@ crisis = {
 		available = {
 			ROE = {
 				has_completed_focus = ROE_prevent_a_coup
-				NOT = { 
-					has_country_flag = roman_military_coupdetat
-				}
 			}
 		}
 
-		days_mission_timeout = 5
+		days_mission_timeout = 60
 
 		activation = {
 			ROE = {
@@ -35,11 +32,442 @@ crisis = {
 			if = {
 				limit = {
 				}
-				ROE = { country_event = rome_event.2 }
+				ROE = { 
+					country_event = rome_event.2
+					add_stability = -0.05
+				}
 			}
 			hidden_effect = { 
 				news_event = roman_news.1
 			}
+		}
+	}
+
+
+	roman_deestablishment = {
+
+		icon = generic_civil_support
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = ROE
+    	}
+
+		available = {
+			ROE = {
+				has_completed_focus = ROE_the_senate_is_dissolved
+				has_country_flag = roman_stabilised_democracy
+			}
+		}
+
+		days_mission_timeout = 40
+
+		activation = {
+			ROE = {
+				has_completed_focus = ROE_the_senate_is_dissolved
+				NOT = { has_country_flag = roman_stabilised_democracy }
+			}
+		}
+		visible = {
+			original_tag = ROE
+		}
+		complete_effect = {
+		}
+
+		timeout_effect = {
+			if = {
+				limit = {
+				}
+				ROE = { country_event = rome_event.5 }
+			}
+			hidden_effect = { 
+				news_event = roman_news.2
+			}
+		}
+	}
+}
+
+
+germania_campaign = {
+
+	raid_local_tribes = {
+		fire_only_once = yes
+		icon = generic_civil_support
+		target_root_trigger = { TAG = ROOT }
+		target_array = neighbors 
+		war_with_on_complete = FROM
+		days_remove = 2
+		target_trigger = {
+        	FROM = {
+           		AND = {
+					is_neighbor_of = ROOT
+					is_on_same_continent_as = ROE
+				}
+				NOT = {
+					tag = PTH
+					tag = XIN
+					tag = AAN
+					tag = SAR
+					is_subject_of = PTH
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					ROOT = {
+						OR = { 
+							has_wargoal_against = FROM
+							has_active_mission = sway_local_tribes
+						}
+					}
+				}
+        	}
+    	}
+		cost = 100
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			
+		}
+		visible = {
+			original_tag = ROE
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = FROM
+			}
+			FROM = {
+				random_owned_controlled_state = {
+					create_unit = {
+    					division = "name = \"Barbarische Armee\" division_template = \"Barbarische Armee\" start_experience_factor = 0.6 start_manpower_factor = 0.9"
+    					owner = FROM
+						count = 3
+					}
+				}
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+	sway_local_tribes = {
+		fire_only_once = yes
+		icon = generic_civil_support
+		target_root_trigger = { TAG = ROOT }
+		target_array = neighbors 
+		target_trigger = {
+        	FROM = {
+           		AND = {
+					is_neighbor_of = ROOT
+					is_on_same_continent_as = ROE
+				}
+				NOT = {
+					tag = PTH
+					tag = XIN
+					tag = AAN
+					tag = SAR
+					is_subject_of = PTH
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					ROOT = {
+						OR = { 
+							has_wargoal_against = FROM
+							has_active_mission = raid_local_tribes
+						}
+					}
+				}
+        	}
+    	}
+		cost = 100
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			
+		}
+		visible = {
+			original_tag = ROE
+		}
+		complete_effect = {
+			FROM = {
+				country_event = generic_custom.10
+			}
+		}
+		remove_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+
+
+	retreating_from_tribal_lands = {
+		target_array = neighbors 
+		target_trigger = {
+        	FROM = {
+           		AND = {
+					is_neighbor_of = ROOT
+					is_on_same_continent_as = ROOT
+					has_war_with = ROOT
+				}
+				NOT = {
+					tag = PTH
+					tag = XIN
+					tag = AAN
+					tag = SAR
+					is_subject_of = PTH
+					is_subject_of = ROOT
+				}
+        	}
+    	}
+		icon = generic_civil_support
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = ROE
+    	}
+
+		available = {
+			FROM = {
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		days_mission_timeout = 100
+		activation = {
+			
+		}
+		visible = {
+			original_tag = ROE
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			white_peace = {
+    			tag = FROM
+			}
+			ROOT = {
+				add_war_support = -0.05
+				add_stability = -0.1
+			}
+		}
+	}
+
+}
+
+
+
+roman_citizenship = {
+
+	expand_to_the_gauls = {
+		fire_only_once = yes
+		icon = generic_civil_support
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 16
+    			state = 19
+				state = 14
+				state = 15
+				state = 29
+				state = 785
+				state = 6
+				state = 7
+				state = 35
+				state = 977
+				state = 34
+				state = 980
+				state = 1022
+				state = 42
+				state = 8
+				state = 28
+				state = 17
+				state = 18
+				state = 30
+				state = 23
+				state = 24
+				state = 27
+				state = 33
+				state = 25
+				state = 806
+				state = 31
+				state = 26
+				state = 20
+				state = 845
+				state = 22
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 100
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			ROOT = {
+				16 = {
+					is_owned_by = ROOT
+				}
+				14 = {
+					is_owned_by = ROOT
+				}
+				19 = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ROE_extend_the_citizenship
+		}
+		complete_effect = {
+			add_to_variable = {
+    			var = roman_citizenship_mob
+				value = 0.15
+			}
+			add_to_variable = {
+    			var = roman_citizenship_stab
+				value = 0.02
+			}
+			add_to_variable = {
+    			var = roman_citizenship_pol
+				value = -0.1
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+	expand_to_hispania = {
+		fire_only_once = yes
+		icon = generic_civil_support
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 171
+				state = 790
+				state = 792
+				state = 172
+				state = 174
+				state = 791
+				state = 176
+				state = 166
+				state = 794
+				state = 165
+				state = 177
+				state = 180
+				state = 112
+				state = 181
+				state = 795
+				state = 179
+				state = 170
+				state = 788
+				state = 41
+				state = 793
+				state = 167
+				state = 168
+				state = 175
+				state = 169
+				state = 173
+				state = 789
+				state = 118
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 100
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			ROOT = {
+				167 = {
+					is_owned_by = ROOT
+				}
+				112 = {
+					is_owned_by = ROOT
+				}
+				165 = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ROE_extend_the_citizenship
+		}
+		complete_effect = {
+			add_to_variable = {
+    			var = roman_citizenship_mob
+				value = 0.15
+			}
+			add_to_variable = {
+    			var = roman_citizenship_stab
+				value = 0.02
+			}
+			add_to_variable = {
+    			var = roman_citizenship_pol
+				value = -0.1
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+
+	expand_to_illyricum = {
+		fire_only_once = yes
+		icon = generic_civil_support
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 102
+				state = 853
+				state = 103
+				state = 163
+				state = 109
+				state = 104
+				state = 804
+				state = 107
+				state = 105
+				state = 934
+				state = 802
+				state = 108
+				state = 803
+				state = 48
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 150
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			ROOT = {
+				163 = {
+					is_owned_by = ROOT
+				}
+				107 = {
+					is_owned_by = ROOT
+				}
+				802 = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = ROE_extend_the_citizenship
+		}
+		complete_effect = {
+			add_to_variable = {
+    			var = roman_citizenship_mob
+				value = 0.15
+			}
+			add_to_variable = {
+    			var = roman_citizenship_stab
+				value = 0.02
+			}
+			add_to_variable = {
+    			var = roman_citizenship_pol
+				value = -0.1
+			}
+		}
+		timeout_effect = {
 		}
 	}
 }

@@ -1,5 +1,13 @@
 spriteTypes = {
 
+## PUPPETS GFX ##
+#################
+
+    spriteType = {
+        name = "GFX_autonomy_tributary_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_tributary_puppet.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
 ## IDEOLOGIES GFX ##
 ####################
 
@@ -178,19 +186,32 @@ spriteTypes = {
     }
 
     spriteType = {
+        name = "GFX_leader_ROE_marcus_agrippa"
+        texturefile = "gfx/characters/ROE_marcus_agrippa.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_ROE_germanicus"
+        texturefile = "gfx/characters/ROE_germanicus.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
         name = "GFX_leader_ROE_comitia"
         texturefile = "gfx/characters/ROE_comitia.dds" # The folder and filename don't matter, as long as they are correct
     }
 
-## XIN DYNASTY ##
+    spriteType = {
+        name = "GFX_leader_ROE_senate_rome"
+        texturefile = "gfx/characters/ROE_senate_rome.dds" # The folder and filename don't matter, as long as they are correct
+    }
 
     spriteType = {
-        name = "GFX_leader_XIN_wang_mang"
-        texturefile = "gfx/characters/XIN_wang_mang.dds"
+        name = "GFX_leader_ROE_military_council"
+        texturefile = "gfx/characters/ROE_military_council.dds" # The folder and filename don't matter, as long as they are correct
     }
 
 
-## MAURETANIA GFX ##
+## CLIENT STATES OF ROME GFX ##
 
     spriteType = {
         name = "GFX_leader_MAU_juba_ii"
@@ -238,5 +259,35 @@ spriteTypes = {
         texturefile = "gfx/characters/nomadic_leader_xai.dds" # The folder and filename don't matter, as long as they are correct
     }
 
+## JUDEA ##
+
+    spriteType = {
+        name = "GFX_leader_jesus_christ"
+        texturefile = "gfx/characters/jesus_christ.dds"
+    }
+
+## XIN DYNASTY ##
+
+    spriteType = {
+        name = "GFX_leader_XIN_wang_mang"
+        texturefile = "gfx/characters/XIN_wang_mang.dds"
+    }
+
+    spriteType = {
+        name = "GFX_leader_XIN_liu_xiu"
+        texturefile = "gfx/characters/XIN_liu_xiu.dds"
+    }
+
+    spriteType = {
+        name = "GFX_leader_XIN_peasant_councils"
+        texturefile = "gfx/characters/XIN_peasant_councils.dds"
+    }
+
+## PARTHIA GFX ##
+
+    spriteType = {
+        name = "GFX_leader_PTH_artabanus_ii"
+        texturefile = "gfx/characters/PTH_artabanus_ii.dds"
+    }
 
 }

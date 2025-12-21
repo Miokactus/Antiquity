@@ -19,6 +19,8 @@
  decentralised_democracy_desc: ""
  monarcho_socialism: "Social Monarchism"
  monarcho_socialism_desc: "Combining social elements like a small degree of democracy, it still keeps the figure of the monarch, combining both principles into one."
+ jesus_theocracy: "Social Theocracy"
+ jesus_theocracy_desc: "Jesus Christ!"
 
 ## TRIBALISM SUBIDEOLOGIES
  tribalism: "Tribalism"
@@ -29,10 +31,10 @@
 ## TYRANNY SUBIDEOLOGIES
  absolutism: "Monarchism"
  absolutism_desc: "Agrou the bad monarchists!"
-
-## OLIGARCHY SUBIDEOLOGIES
  military_junta: "Military Junta"
  military_junta_desc: "A government led by a committee of military leaders."
+
+## OLIGARCHY SUBIDEOLOGIES
  chinese_reformism: "Chinese Reformism"
  chinese_reformism_desc: "Initiated by Wang Mang, the first and only emperor of the Xin Dynasty, Chinese Reformism is aimed to reform the old society of the Han, giving more rights to peasants and abolishing old traditions considered barbaric at the time. Widely disapproved by the Han elites, chinese reformism aims to modernise China."
  despotism_comm: "Despotic"
@@ -43,3 +45,5 @@
  city_state_desc: "City-State Administration"
  monarchism: "Monarchism"
  monarchism_desc: "Characterised by having a proeminent political figure, often a king or queen, monarchism is helped by the aristocracy of the country where it is in place."
+ jesus_monarchism: "Theocratical Monarchism"
+ jesus_monarchism_desc: "Jesus Christ but as an official Emperor!"

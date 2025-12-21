@@ -478,7 +478,7 @@ technologies = {
 		start_year = 3
 		folder = {
 			name = infantry_folder
-			position = { x = 1 y = @3 }
+			position = { x = 3 y = @3 }
 		}
 
 		categories = {
@@ -1521,30 +1521,23 @@ technologies = {
 		}
 	}
 
-	tech_trucks = {
+	tech_carriage = {
 
 		enable_subunits = {
-			mot_anti_tank_brigade
-			mot_artillery_brigade
-			mot_anti_air_brigade
+			
 		}
 
 		enable_equipments = {
-			motorized_equipment_0
+			carriage_equipment_0
 		}
 
 		enable_equipment_modules = {
-			tank_wheeled_suspension
+			
 		}
 
 
 		path = {
-			leads_to_tech = motorised_infantry
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = armored_car1
+			leads_to_tech = carriage_infantry
 			research_cost_coeff = 1
 		}
 
@@ -1552,12 +1545,12 @@ technologies = {
 		start_year = 3
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = -1 }
+			position = { x = 0 y = 1 }
 		}
 
 		categories = {
-			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
+			carriage_equipment
+			mio_cat_tech_all__mechanized
 			infantry_tech
 		}
 		special_project_specialization = { specialization_land }
@@ -1586,14 +1579,14 @@ technologies = {
 		}
 	}
 
-	motorised_infantry = {
+	carriage_infantry = {
 
 		enable_subunits = {
-			motorized
+			
 		}
 
 		enable_equipments = {
-			motorized_equipment_1
+			carriage_equipment_1
 		}
 
 		#enable_equipment_modules = {
@@ -1602,18 +1595,14 @@ technologies = {
 
 		on_research_complete_limit = {
 			NOT = {
-				has_template_containing_unit = motorized
+				has_template_containing_unit = carriage_infantry
 			}
 		}
 		on_research_complete = {
-			hidden_effect = {
-				load_oob = "unlock_motorized"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
-			leads_to_tech = mechanised_infantry
+			leads_to_tech = heavy_infantry
 			research_cost_coeff = 1
 		}
 
@@ -1625,7 +1614,7 @@ technologies = {
 		start_year = 3
 		folder = {
 			name = infantry_folder
-			position = { x = 0 y = @3 }
+			position = { x = 0 y = @5 }
 		}
 
 		folder = {
@@ -1634,11 +1623,11 @@ technologies = {
 		}
 
 		sub_technologies = {
-			motorized_rocket_unit
+			
 		}
 
 		categories = {
-			motorized_equipment
+			carriage_equipment
 			mio_cat_tech_all_motorized_mechanized
 			infantry_tech
 		}
@@ -1712,7 +1701,7 @@ technologies = {
 		sub_tech_index = 1
 
 		categories = {
-			motorized_equipment
+			carriage_equipment
 			armor
 			cat_armored_cars
 		}
@@ -1754,7 +1743,7 @@ technologies = {
 		sub_tech_index = 1
 
 		categories = {
-			motorized_equipment
+			carriage_equipment
 			armor
 			cat_armored_cars
 		}
@@ -1801,18 +1790,18 @@ technologies = {
 		}
 	}
 
-	mechanised_infantry = {
+	heavy_infantry = {
 
 		enable_subunits = {
-			mechanized
+			
 		}
 
 		enable_equipments = {
-			mechanized_equipment_1
+			heavy_carriage_equipment_1
 		}
 
 		enable_equipment_modules = {
-			tank_half_track_suspension
+			
 		}
 
 		motorized = {
@@ -1832,12 +1821,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = mechanised_infantry2
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = amphibious_mechanized_infantry
+			leads_to_tech = heavy_infantry2
 			research_cost_coeff = 1
 		}
 
@@ -1849,7 +1833,7 @@ technologies = {
 		}
 
 		categories = {
-			motorized_equipment
+			carriage_equipment
 			mio_cat_tech_all_motorized_mechanized
 			infantry_tech
 			cat_mechanized_equipment
@@ -1895,14 +1879,14 @@ technologies = {
 
 	
 
-	mechanised_infantry2 = {
+	heavy_infantry2 = {
 
 		enable_equipments = {
-			mechanized_equipment_2
+			heavy_carriage_equipment_2
 		}
 
 		path = {
-			leads_to_tech = mechanised_infantry3
+			leads_to_tech = heavy_infantry3
 			research_cost_coeff = 1
 		}
 
@@ -1914,7 +1898,7 @@ technologies = {
 		}
 
 		categories = {
-			motorized_equipment
+			carriage_equipment
 			mio_cat_tech_all_motorized_mechanized
 			infantry_tech
 			cat_mechanized_equipment
@@ -1926,10 +1910,10 @@ technologies = {
 		}
 	}
 
-	mechanised_infantry3 = {
+	heavy_infantry3 = {
 
 		enable_equipments = {
-			mechanized_equipment_3
+			heavy_carriage_equipment_3
 		}
 
 		mechanized = {
@@ -1945,7 +1929,7 @@ technologies = {
 		}
 
 		categories = {
-			motorized_equipment
+			carriage_equipment
 			mio_cat_tech_all_motorized_mechanized
 			infantry_tech
 			cat_mechanized_equipment
@@ -2246,7 +2230,7 @@ technologies = {
 		sub_tech_index = 1
 
 		categories = {
-			motorized_equipment
+			carriage_equipment
 			armor
 			cat_armored_cars
 		}

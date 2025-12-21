@@ -383,11 +383,11 @@ sub_units = {
 		supply_consumption = 0.065
 	
 		# this is what moves us and sets speed
-		transport = motorized_equipment
+		transport = carriage_equipment
 	
 		need = {
 			infantry_equipment = 100
-			motorized_equipment = 35
+			carriage_equipment = 35
 		}
 
 		forest = {
