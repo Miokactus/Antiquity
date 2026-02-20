@@ -7,7 +7,9 @@ state={
 	state_category = town
 	
 	buildings_max_level_factor=1.000
-
+	resources = {
+		grain = 3
+	}
 	history={
 		owner = XIN
 		add_core_of = XIN
@@ -15,10 +17,13 @@ state={
 		
 		buildings = {
 			infrastructure = 2 #was: 5
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 		victory_points = {
-			9958 1 
+			9958 2
+		}
+		victory_points = {
+			11931 10
 		}
 
 		1938.10.25 = {		

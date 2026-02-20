@@ -48,7 +48,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_ROE_generic_attack
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -136,7 +136,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_ROE_generic_attack
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -190,7 +190,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_ROE_generic_fight
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -420,7 +420,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_ROE_forest_ambush
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -862,7 +862,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_ROE_generic_attack
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1136,7 +1136,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_ROE_generic_fight
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1201,7 +1201,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1419,7 +1419,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_ROE_generic_attack
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1443,7 +1443,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1513,7 +1513,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1566,7 +1566,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1628,7 +1628,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1672,7 +1672,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1705,7 +1705,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1741,7 +1741,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1778,6 +1778,80 @@ country_event = {
 
 
 
+
+
+#Generic Rome going to war [RELIGIOUS POWERFUL]
+country_event = {
+	id = rome_event.100
+	title = rome_event.100.t
+	desc = rome_event.100.d
+	trigger = {}
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## May the Gods be with us.
+		name = rome_event.100.a
+		ai_chance = { factor = 10 }
+		trigger = {
+		}
+		random_list = { 
+			15 = {
+				set_country_flag = rome_gods_no
+				country_event = rome_event.101
+			}
+			5 = {
+				set_country_flag = rome_gods_yes
+				country_event = rome_event.101
+			}
+		}
+	}
+}
+
+#Generic Rome going to war [GOT CUCKED]
+country_event = {
+	id = rome_event.101
+	title = rome_event.101.t
+	desc = rome_event.101.d
+	trigger = {}
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## This is no matter of the Gods, onwards!
+		name = rome_event.101.a
+		ai_chance = { factor = 10 }
+		trigger = { has_country_flag = rome_gods_no }
+		clr_country_flag = rome_gods_no
+		add_ideas = ROE_unfaithful_government
+	}
+	option = { ## The Gods are with us, we'll win!
+		name = rome_event.101.b
+		ai_chance = { factor = 10 }
+		trigger = { has_country_flag = rome_gods_yes }
+		clr_country_flag = rome_gods_yes
+		add_ideas = ROE_blessed_by_the_gods
+	}
+	option = { ## We shall wait then.
+		name = rome_event.101.c
+		ai_chance = { factor = 10 }
+		trigger = { has_country_flag = rome_gods_no }
+		clr_country_flag = rome_gods_no
+		every_country = {
+    		limit = {
+        		any_country = {
+                	has_war_with = PREV
+        		}
+    		}
+    		white_peace = PREV
+		}
+		add_political_power = 150
+	}
+}
+
+
+
+
 #Military Coup d'Etat in Rome [news]
 news_event = {
 	id = roman_news.1
@@ -1787,7 +1861,7 @@ news_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_news_event_destroyers
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1807,7 +1881,7 @@ news_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_news_event_052
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -1827,7 +1901,7 @@ news_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_news_event_worker_protests
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }

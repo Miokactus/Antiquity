@@ -85,6 +85,47 @@ crisis = {
 			}
 		}
 	}
+
+}
+
+propaganda_efforts = {
+	crisis_of_faith = {
+		icon = generic_civil_support
+		fire_only_once = yes
+		days_remove = 40
+		cost = 150
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			has_political_power > 100
+			fuel_ratio > 0.5
+			ROE = {
+				has_idea = ROE_unfaithful_government
+				has_war = no
+			}
+		}
+		visible = {
+			original_tag = ROE
+		}
+		complete_effect = {
+			party_leader = {
+    			limit = {
+    			    has_ideology = roman_paternalism
+    			}
+				ROE = {
+    				add_popularity = {
+    					ideology = communism
+    					popularity = 0.1
+					}
+				}
+			}
+			set_fuel_ratio = 0.1
+		}
+		remove_effect = {
+			remove_ideas = ROE_unfaithful_government
+		}
+	}
 }
 
 
@@ -108,6 +149,11 @@ germania_campaign = {
 					tag = XIN
 					tag = AAN
 					tag = SAR
+					tag = DAC
+					tag = GET
+					tag = MRA
+					tag = QUA
+					tag = VBI
 					is_subject_of = PTH
 					is_subject_of = ROOT
 					has_war_with = ROOT
@@ -151,6 +197,17 @@ germania_campaign = {
 		}
 		timeout_effect = {
 		}
+		ai_will_do = {
+    		base = 50
+			modifier = {
+				add = 150
+				has_war_support > 0.3
+			}
+			modifier = {
+				add = 150
+				date > 15.3.1
+			}
+		}
 	}
 
 	sway_local_tribes = {
@@ -169,6 +226,11 @@ germania_campaign = {
 					tag = XIN
 					tag = AAN
 					tag = SAR
+					tag = DAC
+					tag = GET
+					tag = MRA
+					tag = QUA
+					tag = VBI
 					is_subject_of = PTH
 					is_subject_of = ROOT
 					has_war_with = ROOT
@@ -200,6 +262,13 @@ germania_campaign = {
 		}
 		timeout_effect = {
 		}
+		ai_will_do = {
+    		base = 50
+			modifier = {
+				add = 150
+				has_war_support < 0.3
+			}
+		}
 	}
 
 
@@ -213,18 +282,25 @@ germania_campaign = {
 					has_war_with = ROOT
 				}
 				NOT = {
+					tag = CRS
 					tag = PTH
 					tag = XIN
 					tag = AAN
 					tag = SAR
+					tag = DAC
+					tag = GET
+					tag = MRA
+					tag = QUA
+					tag = VBI
 					is_subject_of = PTH
 					is_subject_of = ROOT
+					is_ally_with = CRS
 				}
         	}
     	}
 		icon = generic_civil_support
 		fire_only_once = yes
-
+		is_good = no
 		allowed = {
 			original_tag = ROE
     	}
@@ -234,7 +310,7 @@ germania_campaign = {
 				NOT = { has_war_with = ROOT }
 			}
 		}
-		days_mission_timeout = 120
+		days_mission_timeout = 160
 		activation = {
 			
 		}
@@ -250,6 +326,124 @@ germania_campaign = {
 			ROOT = {
 				add_war_support = -0.05
 				add_stability = -0.05
+			}
+		}
+	}
+
+
+	end_of_war = {
+		target = { CRS ROE }
+		target_trigger = {
+        	FROM = {
+				AND = {
+					tag = CRS
+					has_war_with = ROOT
+				}
+        	}
+    	}
+		icon = generic_civil_support
+		fire_only_once = yes
+		is_good = no
+		allowed = {
+			OR = {
+				original_tag = ROE
+				original_tag = CRS
+			}
+    	}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = ROE_cities_fight_germans
+				OR = {
+					ROE = {
+						OR = {
+							FROM = {
+								NOT = { has_war_with = ROOT }
+							}
+							OR = {
+								1079 = {
+									is_controlled_by = ROE
+								}
+								AND = {
+									1075 = {
+										is_controlled_by = ROE
+									}
+									1072 = {
+										is_controlled_by = ROE
+									}
+									OR = {
+										1070 = {
+											is_controlled_by = ROE
+										}
+										1078 = {
+											is_controlled_by = ROE
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		days_mission_timeout = 360
+		activation = {
+			
+		}
+		visible = {
+			OR = {
+				original_tag = ROE
+				original_tag = CRS
+			}
+		}
+		complete_effect = {
+			ROE = {
+				white_peace = {
+    				tag = FROM
+				}
+				add_war_support = 0.05
+				add_stability = 0.1
+				add_timed_idea = {
+    				idea = ROE_avenged_teutoburg
+    				days = 460
+				}
+				add_manpower = 1502
+				set_country_flag = ROE_defeated_arminius
+			}
+			CRS = {
+				add_war_support = 0.05
+				add_stability = 0.1
+				remove_ideas = CRS_teutoburg_victory
+				add_timed_idea = {
+    				idea = CRS_lost_to_the_romans
+    				days = 360
+				}
+				dismantle_faction = yes
+			}
+			FROM = {
+				give_military_access = ROE
+			}
+		}
+		timeout_effect = {
+			ROE = {
+				white_peace = {
+    				tag = FROM
+				}
+				add_war_support = -0.1
+				add_stability = -0.1
+				add_timed_idea = {
+    				idea = ROE_lost_to_germans
+    				days = 560
+				}
+				set_country_flag = ROE_lost_to_germans
+			}
+			CRS = {
+				add_war_support = 0.05
+				add_stability = 0.1
+				swap_ideas = {
+					remove_idea = CRS_teutoburg_victory
+					add_idea = CRS_domination_over_the_romans
+				}
 			}
 		}
 	}
@@ -335,6 +529,13 @@ roman_citizenship = {
 		}
 		timeout_effect = {
 		}
+		ai_will_do = {
+    		base = 50
+			modifier = {
+				add = 100
+				has_political_power > 150 ## focus on smaller things
+			}
+		}
 	}
 
 	expand_to_hispania = {
@@ -409,6 +610,13 @@ roman_citizenship = {
 		}
 		timeout_effect = {
 		}
+		ai_will_do = {
+    		base = 30
+			modifier = {
+				add = 100
+				has_political_power > 150 ## focus on smaller things
+			}
+		}
 	}
 
 
@@ -470,6 +678,13 @@ roman_citizenship = {
 			}
 		}
 		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 15
+			modifier = {
+				add = 90
+				has_political_power > 200 ## focus on other things
+			}
 		}
 	}
 }

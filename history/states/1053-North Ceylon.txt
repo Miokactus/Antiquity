@@ -8,6 +8,7 @@ state={
 		owner = ANU
 		add_core_of = ANU
 		buildings = {
+			infrastructure = 1
 			7344 = {
 				naval_base = 2
 			}

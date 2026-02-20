@@ -6,24 +6,84 @@ ideas = {
 		XIN_illegitimate_regime = {
 			name = "Illegitimate Regime"
 			allowed_civil_war = { always = yes }
-			picture = ICE_general_strike
+			picture = man_low_legitimacy
 			modifier = {
-				neutrality_drift = 0.03
-				communism_drift = -0.05
-				democratic_drift = -0.05
+				communism_drift = -0.02
+				democratic_drift = 0.03
 				fascism_drift = 0.03
 				stability_factor = -0.1
 				consumer_goods_factor = 0.3
+				power_balance_weekly = -0.001
 			}
 		}
+
+		XIN_legitimate_dynasty = {
+			name = "Legitimate Dynasty"
+			allowed_civil_war = { always = yes }
+			picture = man_low_legitimacy5
+			modifier = {
+				communism_drift = 0.05
+				stability_factor = 0.2
+				consumer_goods_factor = -0.2
+			}
+		}
+
+
+		XIN_fertile_yellow_river = {
+			name = "Fertile Yellow River"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_specialized_dietery_requirements
+			cancel = {
+				NOT = {
+					614 = {
+						is_owned_by = ROOT
+					}
+					597 = {
+						is_owned_by = ROOT
+					}
+					615 = {
+						is_owned_by = ROOT
+					}
+					607 = {
+						is_owned_by = ROOT
+					}
+					622 = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.2
+				political_power_cost = -0.5
+				stability_factor = 0.05
+				power_balance_weekly = 0.003
+			}
+		}
+
 
 		XIN_peasant_support = {
 			name = "Peasant's Support"
 			allowed_civil_war = { always = yes }
 			picture = chi_chinese_support
 			modifier = {
+				consumer_goods_factor = -0.2
 				political_power_cost = -0.3
 				stability_factor = 0.15
+				communism_drift = 0.05
+			}
+		}
+
+		XIN_peasant_support_rising = {
+			name = "Peasant's Support Rising"
+			allowed_civil_war = { always = yes }
+			picture = ICE_thungur_hnifur
+			modifier = {
+				consumer_goods_factor = -0.1
+				political_power_cost = 0.1
+				stability_factor = -0.05
+				conscription_factor = -0.2
+				power_balance_weekly = 0.0001
+				communism_drift = 0.08
 			}
 		}
 
@@ -36,6 +96,10 @@ ideas = {
 				political_power_cost = 0.6
 				stability_factor = -0.2
 				conscription_factor = -0.5
+				power_balance_weekly = -0.05
+				army_core_attack_factor = -0.2
+				army_core_defence_factor = -0.3
+				army_attack_speed_factor = -0.2
 			}
 		}
 
@@ -48,6 +112,19 @@ ideas = {
 				political_power_cost = 0.3
 				stability_factor = -0.1
 				conscription_factor = -0.3
+				power_balance_weekly = -0.001
+			}
+		}
+
+		XIN_open_revolt = {
+			name = "Open Revolt"
+			allowed_civil_war = { always = yes }
+			picture = chi_war_of_resistance3
+			modifier = {
+				consumer_goods_factor = 0.6
+				political_power_cost = 0.6
+				stability_factor = -0.3
+				conscription_factor = -0.7
 			}
 		}
 
@@ -55,9 +132,12 @@ ideas = {
 			name = "Unsustainable Army"
 			allowed_civil_war = { always = yes }
 			cancel = {
-    			has_army_manpower = {
-    				size < 150000
-				} 
+				OR = {
+    				has_army_manpower = {
+    					size < 200000
+					} 
+					has_idea = partial_economic_mobilisation
+				}
 			}
 			picture = SPR_disbanded_army
 			modifier = {
@@ -65,7 +145,7 @@ ideas = {
 				political_power_cost = 0.5
 				stability_factor = -0.1
 				training_time_factor = 0.5
-				industrial_capacity_factory = -0.3
+				industrial_capacity_factory = -0.2
 				army_attack_factor = -0.3
 				army_attack_speed_factor = -0.3
 			}
@@ -84,6 +164,85 @@ ideas = {
 				political_power_cost = -0.5
 				stability_factor = -0.1
 				war_support_factor = 0.15
+			}
+		}
+
+		XIN_normal_sino_xiongnu_relations = {
+			name = "Normal Sino-Xiongnu Relations"
+			allowed_civil_war = { always = yes }
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+    			tag = XAI    # this can also take a variable that stores a scope
+				trade_cost_for_target_factor = -0.5
+				trade_opinion_factor = 0.5
+			}
+			modifier = {
+				political_power_cost = -0.5
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+
+
+		XIN_famine_problem = {
+			name = "Famine Problem"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_state_of_famine_country
+			modifier = {
+				base_fuel_gain_factor = -0.75
+				fuel_gain_factor = -0.75
+				max_fuel_factor = 1
+			}
+		}
+
+		XIN_famine_problem1 = {
+			name = "Risk of Famine"
+			allowed_civil_war = { always = yes }
+			picture = raj_risk_of_famine
+			modifier = {
+				base_fuel_gain_factor = -0.2
+				fuel_gain_factor = -0.2
+				max_fuel_factor = 1.5
+			}
+		}
+		
+		XIN_famine_problem2 = {
+			name = "Overcame Famine"
+			allowed_civil_war = { always = yes }
+			picture = ICE_thungur_hnifur
+			modifier = {
+				stability_factor = 0.1
+				weekly_manpower = 1000
+				max_fuel_factor = 1.5
+			}
+		}
+
+		XIN_reformed_income_tax = {
+			name = "Reformed Income Tax"
+			allowed_civil_war = { always = yes }
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				consumer_goods_factor = -0.15
+				stability_factor = 0.1
+				political_power_gain = 0.5
+			}
+		}
+
+
+
+
+
+		CHI_popular_uprising = {
+			name = "Popular Uprising"
+			allowed_civil_war = { always = yes }
+			picture = chi_chinese_support
+			modifier = {
+				consumer_goods_factor = -0.2
+				political_power_cost = -0.5
+				stability_factor = 0.1
+				army_attack_factor = 0.2
+				army_attack_speed_factor = 0.2
+				training_time = -0.5
 			}
 		}
 		

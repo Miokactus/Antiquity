@@ -12,8 +12,8 @@ state={
 		victory_points = {
 			6652 1
 		}
-		owner = DAC
-		add_core_of = DAC
+		owner = GET
+		add_core_of = GET
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

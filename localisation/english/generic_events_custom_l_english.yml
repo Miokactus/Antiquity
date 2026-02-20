@@ -2,14 +2,56 @@
  ## ROMAN EMPIRE EVENTS ##
 
  generic_custom.10.t: "[FROM.GetNameDef] Asks for a Tribute!"
- generic_custom.10.d: ""
+ generic_custom.10.d: "An envoy from Rome arrived at our gates today, demanding that we submit to his authority and pay them tribute. The envoy explained that the Empire would take responsibility for our defence in exchange for an annual tribute."
  generic_custom.10.a: "We have no other choices.."
  generic_custom.10.b: "Never!"
 
  generic_custom.11.t: "§G[FROM.GetNameDef]§! Accepts to be a Tributary!"
- generic_custom.11.d: ""
+ generic_custom.11.d: "Our envoy has returned! The tribes to which we asked tribute agreed and we therefore entered an alliance with them."
  generic_custom.11.a: "They know their position."
  
  generic_custom.12.t: "§R[FROM.GetNameDef]§! Refuses to be a Tributary!"
- generic_custom.12.d: ""
- generic_custom.12.a: "War it is!"
+ generic_custom.12.d: "Our envoy has returned! The tribes to which we asked tribute refused, sending back our envoy with harsh words and calling us 'Non meliores quam porci!'. We cannot yet engage into war with them, but we must remember their defiance."
+ generic_custom.12.a: "These fools!"
+
+ ## OTHERS
+
+ generic_custom.13.t: "The Jinhan-Byeonhan Unification"
+ generic_custom.13.d: "Some random korean state unifying with its puppet."
+ generic_custom.13.a: "Who?"
+
+
+
+
+ ## NEWS EVENT [CITIES]
+ city_fall_event.1.t: "The Fall of [2.GetCapitalVictoryPointName]!"
+ city_fall_event.1.d: "[2.GetCapitalVictoryPointName] has fallen, millions must cry."
+ city_fall_event.1.a: "Holy!"
+ city_fall_event.1.b: "Arg! Disastrous!"
+
+ city_fall_event.2.t: "The Liberation of [2.GetCapitalVictoryPointName]!"
+ city_fall_event.2.d: "[2.GetCapitalVictoryPointName] is back, millions must larp."
+ city_fall_event.2.a: "Yes!"
+ city_fall_event.2.b: "Oh?"
+
+
+ city_fall_event.3.t: "The Fall of [291.GetCapitalVictoryPointName]!"
+ city_fall_event.3.d: "[291.GetCapitalVictoryPointName] has fallen, millions must cry."
+ city_fall_event.3.a: "Holy!"
+ city_fall_event.3.b: "Arg! Disastrous!"
+
+ city_fall_event.4.t: "The Liberation of [291.GetCapitalVictoryPointName]!"
+ city_fall_event.4.d: "[291.GetCapitalVictoryPointName] is back, millions must larp."
+ city_fall_event.4.a: "Yes!"
+ city_fall_event.4.b: "Oh?"
+
+
+ city_fall_event.5.t: "The Fall of [744.GetCapitalVictoryPointName]!"
+ city_fall_event.5.d: "[744.GetCapitalVictoryPointName] has fallen, millions must cry."
+ city_fall_event.5.a: "Holy!"
+ city_fall_event.5.b: "Arg! Disastrous!"
+
+ city_fall_event.6.t: "The Liberation of [744.GetCapitalVictoryPointName]!"
+ city_fall_event.6.d: "[744.GetCapitalVictoryPointName] is back, millions must larp."
+ city_fall_event.6.a: "Yes!"
+ city_fall_event.6.b: "Oh?"

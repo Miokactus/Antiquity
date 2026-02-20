@@ -1,0 +1,110 @@
+XAI_wants_the_protectorates = {
+    allowed = {
+        original_tag = XAI
+    }
+    enable = {
+        WPC = {
+            NOT = {
+                is_subject_of = XAI
+            }
+		}
+    }
+    abort = {
+        WPC = {
+			is_subject_of = XAI
+		}
+    }
+    ai_strategy = {
+        type = conquer
+        id = WPC
+        value = 20000
+    }
+	ai_strategy = {
+        type = antagonize
+        id = WPC
+        value = 20000
+    }
+    ai_strategy = {
+        type = consider_weak
+        id = WPC
+        value = 20000
+    }
+    ai_strategy = {
+        type = ignore
+        id = WPC
+        value = -20000
+    }
+}
+
+XAI_wants_the_protectorates = {
+    allowed = {
+        original_tag = XAI
+    }
+    enable = {
+        WPC = {
+            NOT = {
+                is_subject_of = XIN
+            }
+		}
+    }
+    abort = {
+        WPC = {
+			is_subject_of = XIN
+		}
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = WPC
+        value = 10000
+        target = generate_wargoal
+    }
+}
+
+XAI_hostile_towards_china = {
+    allowed = {
+        original_tag = XAI
+    }
+    enable = {
+        OR = {
+            XIN = { 
+                OR = {
+                    country_exists = XIN
+                    NOT = { is_subject_of = XAI }
+                }
+            }
+            ANN = { 
+                OR = {
+                    country_exists = ANN
+                    NOT = { is_subject_of = XAI }
+                }
+            }
+        }
+    }
+    abort = {
+        OR = {
+            XIN = { 
+                OR = { 
+                    exists = no
+                    is_subject_of = XAI
+                }
+            }
+            ANN = { 
+                OR = { 
+                    is_subject_of = XAI
+                }
+            }
+        }
+    }
+	ai_strategy = {
+        type = antagonize
+        id = XIN
+        value = 10000
+    }
+
+	ai_strategy = {
+        type = antagonize
+        id = ANN
+        value = 10000
+    }
+    
+}

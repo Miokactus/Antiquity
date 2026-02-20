@@ -43,6 +43,102 @@ spriteTypes = {
 	}
 
 
+
+
+
+
+	## CHINA
+
+	SpriteType = {
+		name = "GFX_focus_XIN_expedition_to_daqin"
+		texturefile = "gfx/interface/goals/XIN_expedition_to_daqin.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_XIN_fight_against_inflation"
+		texturefile = "gfx/interface/goals/XIN_fight_against_inflation.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_focus_XIN_mass_nationalisation"
+	texturefile = "gfx/interface/goals/XIN_mass_nationalisation.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_focus_XIN_monopoly_on_salt"
+	texturefile = "gfx/interface/goals/XIN_monopoly_on_salt.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_focus_XIN_new_market_regulation"
+	texturefile = "gfx/interface/goals/XIN_new_market_regulation.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_focus_XIN_push_bronze_coins"
+	texturefile = "gfx/interface/goals/XIN_push_bronze_coins.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_focus_XIN_question_on_iron"
+	texturefile = "gfx/interface/goals/XIN_question_on_iron.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_focus_XIN_restore_gold_standard"
+	texturefile = "gfx/interface/goals/XIN_restore_gold_standard.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_focus_XIN_unholy_alliance"
+	texturefile = "gfx/interface/goals/XIN_unholy_alliance.dds"
+	}
+
+
+
+
+
+	SpriteType = {
+	name = "GFX_focus_XIN_contain_goguryeo2"
+	texturefile = "gfx/interface/goals/XIN_contain_goguryeo2.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_XIN_encourage_grain_production"
+	texturefile = "gfx/interface/goals/XIN_encourage_grain_production.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_XIN_eternal_xin_dynasty"
+	texturefile = "gfx/interface/goals/XIN_eternal_xin_dynasty.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_XIN_hands_free_on_the_economy"
+	texturefile = "gfx/interface/goals/XIN_hands_free_on_the_economy.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_XIN_imperial_government_influence"
+	texturefile = "gfx/interface/goals/XIN_imperial_government_influence.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_XIN_korean_problem"
+	texturefile = "gfx/interface/goals/XIN_korean_problem.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_XIN_purge_bureaucrats"
+	texturefile = "gfx/interface/goals/XIN_purge_bureaucrats.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_XIN_redistribute_lands_from_the_nobility"
+	texturefile = "gfx/interface/goals/XIN_redistribute_lands_from_the_nobility.dds"
+}
+
+
 	################
 	##PLACEHOLDER###
 	################

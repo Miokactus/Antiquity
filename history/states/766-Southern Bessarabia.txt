@@ -12,8 +12,8 @@ state=
 		}
 		
 		
-		owner = SAR
-		add_core_of = SAR
+		owner = RHO
+		add_core_of = RHO
 		buildings = {
 			infrastructure = 2
 			dockyard = 1

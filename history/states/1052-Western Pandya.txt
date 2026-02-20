@@ -7,6 +7,9 @@ state={
 	history={
 		owner = PDA
 		add_core_of = PDA
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower = 160000
 	state_category = rural

@@ -1,0 +1,39 @@
+﻿l_english:
+ ## CATEGORIES
+ unification_decisions: "Unification of Lands"
+
+ ## OPINION MODIFIERS
+
+ allies_of_china: "Allies of China"
+ stood_with_us: "Stood with Us"
+ allowed_raids_in_our_territory: "Allowed Raids in our Territory"
+ forbid_raids_in_our_territory: "Stopped Raids in our Territory"
+
+ ## DECISIONS
+ restore_the_kushite_empire: "Restore the Kushite Empire"
+ unify_the_lands_of_the_germans: "Unify the Lands of the Germans"
+ crisis_of_faith: "Crisis of Faith"
+ end_of_war: "End of the War"
+
+ ## COSMETIC TAGS
+ KUS_kushite_empire: "Kushite Empire"
+ KUS_kushite_empire_DEF: "the Restored Kushite Empire"
+ KUS_kushite_empire_ADJ: "Kushite"
+
+ germanic_empire: "Germanic Empire"
+ germanic_empire_DEF: "the Germanic Empire"
+ germanic_empire_ADJ: "German"
+ germanic_empire_communism: "Holy Germanic Empire"
+ germanic_empire_communism_DEF: "the Holy Germanic Empire"
+ germanic_empire_fascism: "Magnificent Holy Romanised Empire of the Germanic Peoples"
+ germanic_empire_fascism_DEF: "the Magnificent Holy Romanised Empire of the Germanic Peoples"
+ germanic_empire_fascism_ADJ: "Germaroman"
+
+ ## TOOLTIPS
+ germanic_empire_tooltip_owns: "§GWe need to control every germanic states in Europe!§!"
+
+ ## TRAITS
+ arminius_trait: "Arminius, Defender of All Germans"
+
+ ## FACTIONS
+ CRS_faction: "Anti-Römische Liga"

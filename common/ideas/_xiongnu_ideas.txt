@@ -18,5 +18,21 @@ ideas = {
 			}
 		}
 
+		XAI_normal_sino_xiongnu_relations = {
+			name = "Normal Sino-Xiongnu Relations"
+			allowed_civil_war = { always = yes }
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+    			tag = XIN    # this can also take a variable that stores a scope
+				trade_cost_for_target_factor = -0.5
+				trade_opinion_factor = 0.5
+			}
+			modifier = {
+				political_power_cost = -0.5
+				stability_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+
 	}
 }

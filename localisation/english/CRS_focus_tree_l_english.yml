@@ -1,0 +1,35 @@
+﻿l_english:
+## TRAITS
+allied_of_the_romans: "Allied to the Romans"
+king_of_the_germans: "King of the Germans"
+
+## CUSTOM EFFECT TOOLTIPS
+CRS_integrate_other_tribes: "We will begin §Yintegrating§! the german tribes in our faction."
+CRS_warning_death_arminius: "In case of a §Groyal proclamation§! by Arminius, pro-romans elements could §Rrise up!§!"
+CRS_royal_arminius: "We will enact §Lpurges inside of the nobility§! to ensure that no one will stand in the way of our anti-roman §Ycrusade§!!"
+CRS_invite_germans: "We will be able to invite §Gother germanic tribes§! into our §Yalliance§! to fight the §RRomans!§!"
+
+
+## EVENTS
+
+ crs_event.1.t: "Rome is Attacking Fellow Germanic Tribes!"
+ crs_event.1.d: "Messengers from local tribes are bringing terrible news to our tribe: it seems that Rome finally decided to restart their attacks in our lands, striking at fellow germanic tribes."
+ crs_event.1.a: "Sound the bells, to war!"
+ crs_event.1.b: "We need to wait."
+
+ crs_event.2.t: "Arminius Killed!"
+ crs_event.2.d: "This morning, reports that Arminius was killed began to flood in. Perpetrated by a part of the pro-romans nobility, they accused Arminius of wanting to become king and create a monarchic institution in our nation."
+ crs_event.2.a: "A new page for our tribe."
+
+
+
+## FOCUS TREE
+ CRS_industrial_effort: "Industrial Effort"
+ CRS_construction_effort: "Construction Effort"
+ CRS_construction_effort_2: "Construction Effort 2"
+ CRS_construction_effort_3: "Construction Effort 3"
+ CRS_infrastructure_effort: "Infrastructure Effort"
+ CRS_infrastructure_effort_2: "Infrastructure Effort 2"
+ CRS_production_effort: "Production Effort"
+ CRS_production_effort_2: "Production Effort 2"
+ CRS_production_effort_3: "Production Effort 3"

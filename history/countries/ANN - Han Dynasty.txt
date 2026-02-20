@@ -1,39 +1,43 @@
-﻿capital = 1030
+﻿capital = 607
 
-oob = "NAB_14"
+oob = "ANN_14"
 
 set_research_slots = 1
 
-create_country_leader = {
-	name = "Liu Xuan"
-	desc = "THRACE_DESC"
-	picture = GFX_leader_PON_pythodoris
-	expire = "25.11.4"
-	ideology = despotism_comm
-	traits = {
-	}
-}
+recruit_character = ANN_liu_xiu
+recruit_character = ANN_liu_xiu_oligarch
+recruit_character = ANN_peasant_councils
+recruit_character = ANN_tribal_institutions
+
+recruit_character = feng_yi
+recruit_character = deng_yu
+recruit_character = geng_yan
+recruit_character = geng_chun
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	convoys = 1
 }
 
 set_convoys = 50
 
 set_politics = {
-	ruling_party = communism
+	ruling_party = fascism
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	democratic = 20
-	fascism = 10
-	communism = 70
+	democratic = 25
+	fascism = 60
+	communism = 15
 	neutrality = 0
 }
  
-add_ideas = limited_exports
-add_ideas = limited_conscription
-add_ideas = civilian_economy
+add_ideas = {
+	limited_exports
+	limited_conscription
+	low_economic_mobilisation
+	XIN_legitimate_dynasty
+}

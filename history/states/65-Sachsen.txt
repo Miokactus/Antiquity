@@ -10,6 +10,13 @@ state={
 	history = {
 		owner = LGI
 		add_core_of = LGI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			514 1
+		}
 	}
 	manpower=125925
 	buildings_max_level_factor=1.000

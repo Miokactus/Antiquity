@@ -1,0 +1,21 @@
+PTH_hostile_towards_rome = {
+    allowed = {
+        original_tag = PTH
+    }
+    enable = {
+        country_exists = ROE
+    }
+    abort = {
+		NOT = { country_exists = ROE }
+    }
+	ai_strategy = {
+        type = antagonize
+        id = ROE
+        value = 200
+    }
+    ai_strategy = {
+        type = contain
+        id = ROE
+        value = 25
+    }
+}

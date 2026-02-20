@@ -1,0 +1,114 @@
+ideas = {
+	country = {
+		
+	## GENERIC ##
+		
+		CRS_teutoburg_victory = {
+			name = "Teutoburg Victory"
+			allowed_civil_war = { always = yes }
+			picture = FRA_national_mobilization_focus
+			modifier = {
+				army_org_factor = 0.2
+				training_time_factor = -0.2
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+
+		CRS_lost_to_the_romans = {
+			name = "Defeated by the Romans"
+			allowed_civil_war = { always = yes }
+			picture = BEL_the_kings_surrender
+			modifier = {
+				army_org_factor = -0.2
+				training_time_factor = 0.3
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+
+		CRS_domination_over_the_romans = {
+			name = "Domination over the Romans"
+			allowed_civil_war = { always = yes }
+			picture = GER_german_military
+			modifier = {
+				army_org_factor = 0.3
+				training_time_factor = -0.3
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+
+		CRS_interal_infighting = {
+			name = "Infighting over the Romans"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_partition_chaos_bad
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				political_power_cost = 0.5
+			}
+		}
+
+		CRS_pro_romans_cooperation = {
+			name = "Pro-Roman Cooperation"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_partition_chaos_less_bad
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				political_power_cost = 0.3
+			}
+		}
+
+		CRS_purge_of_the_pro_romans = {
+			name = "Pro-Romans Faction Purged"
+			allowed_civil_war = { always = yes }
+			picture = generic_purge
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_cost = -0.3
+			}
+		}
+
+		CRS_enacted_levies = {
+			name = "Enacted Levies"
+			allowed_civil_war = { always = yes }
+			picture = SOV_rehabilitated_military_ns_nsb_ccp_sov_compatibility
+			modifier = {
+				army_org_factor = -0.05
+				training_time_factor = -0.5
+				stability_factor = -0.05
+			}
+		}
+
+		CRS_enacted_levies1 = {
+			name = "Guerilla Warfare"
+			allowed_civil_war = { always = yes }
+			picture = SOV_rehabilitated_military_ns_nsb_ccp_sov_compatibility
+			modifier = {
+				army_org_factor = 0.1
+				training_time_factor = -0.5
+				stability_factor = -0.05
+				army_defence_factor = 0.1
+				dig_in_speed_factor = 0.1
+			}
+		}
+
+		CRS_enacted_levies2 = {
+			name = "A New Way of War"
+			allowed_civil_war = { always = yes }
+			picture = SOV_rehabilitated_military_ns_nsb_ccp_sov_compatibility
+			modifier = {
+				army_org_factor = 0.15
+				training_time_factor = -0.5
+				stability_factor = -0.05
+				army_defence_factor = 0.15
+				dig_in_speed_factor = 0.2
+				org_loss_when_moving = -0.1
+			}
+		}
+
+	}
+}

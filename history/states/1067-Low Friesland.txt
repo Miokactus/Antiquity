@@ -14,6 +14,9 @@ state={
 			infrastructure = 1
 			industrial_complex = 1
 		}
+		victory_points = {
+			6241 1
+		}
 	}
 	manpower=95000
 	state_category = rural

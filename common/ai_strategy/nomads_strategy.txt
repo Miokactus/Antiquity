@@ -1,0 +1,67 @@
+nomads_dont_like_romans_and_parthians = {
+    allowed = {
+        OR = {
+            tag = SAR
+            tag = SCY
+            tag = YUZ
+            tag = EAR
+            tag = TSA
+            tag = FNI
+        }
+    }
+    enable = {
+        always = yes
+    }
+    abort = {
+        always = no
+    }
+    ai_strategy = {
+        type = antagonize
+        id = ROE
+        value = 10000
+    }
+    ai_strategy = {
+        type = ignore
+        id = ROE
+        value = -10000
+    }
+	ai_strategy = {
+        type = antagonize
+        id = PTH
+        value = 10000
+    }
+    ai_strategy = {
+        type = ignore
+        id = PTH
+        value = -10000
+    }
+}
+
+nomads_build_cavalry = {
+    allowed = {
+        OR = {
+            tag = SAR
+            tag = SCY
+            tag = YUZ
+            tag = EAR
+            tag = TSA
+            tag = FNI
+        }
+    }
+    enable = {
+        always = yes
+    }
+    abort = {
+        always = no
+    }
+    ai_strategy = {
+        type = role_ratio
+        id = cavalry
+        value = 300
+    }
+    ai_strategy = {
+        type = unit_ratio
+        id = cavalry
+        value = 300
+    }
+}

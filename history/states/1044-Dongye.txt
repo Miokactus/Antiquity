@@ -7,6 +7,9 @@ state={
 	history={
 		owner = EYE
 		add_core_of = EYE
+		victory_points = {
+			6928 2
+		}
 	}
 	manpower=95000
 	buildings_max_level_factor=1.000

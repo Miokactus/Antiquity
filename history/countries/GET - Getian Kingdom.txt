@@ -1,0 +1,40 @@
+﻿capital = 46
+
+oob = "GET_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "King Dicomes of the Gatians"
+	desc = "DICOMES_DESC"
+	picture = GFX_leader_monarchy_generic2
+	expire = "120.5.4"
+	ideology = oligarchism_comm
+	traits = {
+	}
+}
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	fascism = 10
+	communism = 65
+	neutrality = 20
+}
+ 
+add_ideas = {
+	civilian_economy 
+	limited_conscription
+	limited_exports
+}

@@ -5,11 +5,14 @@ state={
 		1148 4103 7021 9936 10036 10115 11912 11958 12011 
 	}
 	history={
-		owner = EYE
-		add_core_of = EYE
+		owner = EYA
+		add_core_of = EYA
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
+		}
+		victory_points = {
+			7021 2
 		}
 	}
 	manpower=15000

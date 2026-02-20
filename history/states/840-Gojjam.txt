@@ -21,17 +21,16 @@ state = {
 			scope = ETH
 		}
 		
-		buildings = {
-			# infrastructure = 1
-		}
-		
 		victory_points = { 
 			13242 2 
 		}
 		
 		owner = AKM
 		add_core_of = AKM
-		
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 		
 
 		1936.6.1 = {

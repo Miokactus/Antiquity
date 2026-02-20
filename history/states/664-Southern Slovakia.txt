@@ -15,8 +15,8 @@ state = {
 	
 	history = {
 
-		owner = DAC
-		add_core_of = DAC
+		owner = QUA
+		add_core_of = QUA
 
 		buildings = {
 			infrastructure = 2 #was: 6
@@ -24,7 +24,7 @@ state = {
 		}
 
 		victory_points = {
-			6573 1 # Kosice
+			3716 1 # Kosice
 		}
 
 		
@@ -50,7 +50,7 @@ state = {
 	}
 	
 	provinces = {
-		3565 3716 6561 6573 9537 11679 
+		3716 6561 11679 
 	}
 
 	local_supplies = 3.0 

@@ -18,6 +18,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 		}
 		if = {
 			limit = {
@@ -38,7 +39,7 @@ state={
 		652 4583 6935 7470 11880 12376 13121 
 	}
 	manpower = 365490
-	state_category = rural
+	state_category = town
 
 	local_supplies=0.0 
 }

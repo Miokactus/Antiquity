@@ -8,6 +8,11 @@ state={
 		owner = KHT
 		add_core_of = KHT
 		victory_points = { 8112 5 }
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
 	}
 	manpower=24000
 	state_category = town

@@ -1,14 +1,24 @@
 ﻿capital = 1063
 
-oob = "NAB_14"
+oob = "GOR_14"
 
 set_research_slots = 1
 
 create_country_leader = {
-	name = "King of Goguryeo"
-	desc = "WANGMANG_DESC"
+	name = "Yurimyeong"
+	desc = "Yurimyeong_DESC"
 	picture = GFX_leader_PON_pythodoris
-	expire = "30.5.4"
+	expire = "18.10.4"
+	ideology = despotism_comm
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Daemusin"
+	desc = "Daemusin_DESC"
+	picture = GFX_leader_PON_pythodoris
+	expire = "44.10.4"
 	ideology = despotism_comm
 	traits = {
 	}

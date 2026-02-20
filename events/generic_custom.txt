@@ -4,6 +4,7 @@
 
 add_namespace = generic_custom
 add_namespace = welcome_event
+add_namespace = city_fall_event
 
 #Grain shortage
 country_event = {
@@ -264,5 +265,215 @@ country_event = {
 	option = { ## NO -> arg!
 		name = generic_custom.12.a
 		ai_chance = { factor = 20 }
+	}
+}
+
+
+
+## Jinhan-Byeonhan Unification
+country_event = {
+	id = generic_custom.13
+	title = generic_custom.13.t
+	desc = generic_custom.13.d
+	
+	trigger = {
+		date > 15.03.16
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = generic_custom.13.a
+		ai_chance = { factor = 20 }
+		hidden_effect = {
+			JIN = {
+				annex_country = {
+    				target = BYE
+    				transfer_troops = yes
+				}
+				1047 = {
+					add_core_of = JIN
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Fall of Rome
+news_event = {
+	id = city_fall_event.1
+	title = city_fall_event.1.t
+	desc = city_fall_event.1.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_news_event_048
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = { ## Great!
+		name = city_fall_event.1.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { TAG = ROE }
+		}
+	}
+	option = { ## No!
+		name = city_fall_event.1.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			TAG = ROE
+		}
+	}
+}
+## Liberation of Rome
+news_event = {
+	id = city_fall_event.2
+	title = city_fall_event.2.t
+	desc = city_fall_event.2.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_news_event_048
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = { ## Great!
+		name = city_fall_event.2.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			TAG = ROE
+		}
+	}
+	option = { ## No!
+		name = city_fall_event.2.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { TAG = ROE }
+		}
+	}
+}
+
+## Fall of Ctesiphon
+news_event = {
+	id = city_fall_event.3
+	title = city_fall_event.3.t
+	desc = city_fall_event.3.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_news_event_048
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = { ## Great!
+		name = city_fall_event.3.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { TAG = PTH }
+		}
+	}
+	option = { ## No!
+		name = city_fall_event.3.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			TAG = PTH
+		}
+	}
+}
+## Liberation of Ctesiphon
+news_event = {
+	id = city_fall_event.4
+	title = city_fall_event.4.t
+	desc = city_fall_event.4.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_news_event_048
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = { ## Great!
+		name = city_fall_event.4.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			TAG = PTH
+		}
+	}
+	option = { ## No!
+		name = city_fall_event.4.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { TAG = PTH }
+		}
+	}
+}
+
+## Fall of Chang'an
+news_event = {
+	id = city_fall_event.5
+	title = city_fall_event.5.t
+	desc = city_fall_event.5.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_news_event_048
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = { ## Great!
+		name = city_fall_event.5.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { TAG = XIN }
+		}
+	}
+	option = { ## No!
+		name = city_fall_event.5.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			TAG = XIN
+		}
+	}
+}
+## Liberation of Chang'an
+news_event = {
+	id = city_fall_event.6
+	title = city_fall_event.6.t
+	desc = city_fall_event.6.d
+	
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_news_event_048
+	mean_time_to_happen = { days = 1 }
+	major = yes
+	option = { ## Great!
+		name = city_fall_event.6.a
+		ai_chance = { factor = 20 }
+		trigger = {
+			TAG = XIN
+		}
+	}
+	option = { ## No!
+		name = city_fall_event.6.b
+		ai_chance = { factor = 20 }
+		trigger = {
+			NOT = { TAG = XIN }
+		}
 	}
 }

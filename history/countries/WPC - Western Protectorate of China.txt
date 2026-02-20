@@ -5,11 +5,11 @@ oob = "NAB_14"
 set_research_slots = 1
 
 create_country_leader = {
-	name = "Assembly of the Provinces"
+	name = "Protectorate Authority"
 	desc = "THRACE_DESC"
 	picture = GFX_leader_PON_pythodoris
-	expire = "50.5.4"
-	ideology = despotism_comm
+	expire = "150.5.4"
+	ideology = colonial_government
 	traits = {
 	}
 }
@@ -17,7 +17,7 @@ create_country_leader = {
 XIN = { 
 	set_autonomy = {
     	target = WPC
-    	autonomous_state = autonomy_puppet
+    	autonomous_state = autonomy_tributary
 	}
 }
 

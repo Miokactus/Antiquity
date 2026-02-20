@@ -1,0 +1,448 @@
+XIN_heaven_mandate = {
+    initial_value = 0
+    left_side = XIN_open_revolt_side
+    right_side = XIN_legitimate_dynasty_side
+    decision_category = mandate_of_heaven
+
+    ### Neutral Range
+    range = {
+        id = XIN_mandate_neutral_range
+        icon = generic_constitutional_guarantees
+
+        min = -0.1
+        max = 0.1
+        modifier = {
+        }
+	    on_activate = {}
+	    on_deactivate = {}
+    }
+
+    ### Open Revolt
+    side = {
+        id = XIN_open_revolt_side
+        icon = GFX_focus_CHL_union_of_hispanic_republics
+
+        range = {
+            id = XIN_open_revolt_side_low_control_range
+            min = -0.3
+            max = -0.1
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_rising
+                    add_idea = XIN_peasant_support_fading
+                }
+		    }
+	        on_deactivate = {
+            }
+        }
+
+        range = {
+            id = XIN_open_revolt_side_medium_control_range
+            min = -0.6
+            max = -0.3
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_no_support
+                    add_idea = XIN_peasant_support_fading
+                }
+            }
+            on_deactivate = {
+	        }
+        }
+
+        range = {
+            id = XIN_open_revolt_side_high_control_range
+            min = -0.9
+            max = -0.6
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_fading
+                    add_idea = XIN_peasant_no_support
+                }
+	        }
+	        on_deactivate = {
+	        }
+        }
+
+        range = {
+            id = XIN_open_revolt_side_total_control_range
+            min = -1
+            max = -0.9
+            modifier = {
+            }
+	        on_activate = {
+                add_ideas = XIN_open_revolt
+	        }
+	        on_deactivate = {
+                remove_ideas = XIN_open_revolt
+	        }
+        }
+    }
+
+
+    ### Legitimate Dynasty
+    side = {
+        id = XIN_legitimate_dynasty_side
+        icon = GFX_focus_generic_monarchist_sentiment
+
+        range = {
+            id = XIN_legitimate_dynasty_side_low_control_range
+            min = 0.1
+            max = 0.3
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_fading
+                    add_idea = XIN_peasant_support_rising
+                }
+	        }
+	        on_deactivate = {	
+	        }
+        }
+
+        range = {
+            id = XIN_legitimate_dynasty_side_medium_control_range
+            min = 0.3
+            max = 0.6
+            modifier = {
+            }
+	        on_activate = {
+	        }
+	        on_deactivate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support
+                    add_idea = XIN_peasant_support_rising
+                }
+	        }
+        }
+
+        range = {
+            id = XIN_legitimate_dynasty_side_high_control_range
+            min = 0.6
+            max = 0.9
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_rising
+                    add_idea = XIN_peasant_support
+                }
+	        }
+	        on_deactivate = {
+			    swap_ideas = {
+                    remove_idea = XIN_legitimate_dynasty
+                    add_idea = XIN_illegitimate_regime
+                }
+	        }
+        }
+
+        range = {
+            id = XIN_legitimate_dynasty_side_total_control_range
+            min = 0.9
+            max = 1
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_illegitimate_regime
+                    add_idea = XIN_legitimate_dynasty
+                }
+	        }
+	        on_deactivate = {
+	        }
+        }
+    }
+}
+
+
+XIN_heaven_mandate_claimant = {
+    initial_value = 0
+    left_side = CHI_open_revolt_side
+    right_side = CHI_legitimate_dynasty_side
+    decision_category = mandate_of_heaven_claim
+
+    ### Neutral Range
+    range = {
+        id = CHI_mandate_neutral_range
+        icon = generic_constitutional_guarantees
+
+        min = -0.1
+        max = 0.1
+        modifier = {
+        }
+	    on_activate = {}
+	    on_deactivate = {}
+    }
+
+    ### Open Revolt
+    side = {
+        id = CHI_open_revolt_side
+        icon = GFX_focus_CHL_union_of_hispanic_republics
+
+        range = {
+            id = CHI_open_revolt_side_low_control_range
+            min = -0.3
+            max = -0.1
+            modifier = {
+            }
+	        on_activate = {
+		    }
+	        on_deactivate = {
+            }
+        }
+
+        range = {
+            id = CHI_open_revolt_side_medium_control_range
+            min = -0.9
+            max = -0.3
+            modifier = {
+            }
+	        on_activate = {
+                custom_effect_tooltip = CHI_mandate_of_heaven_claimlost
+                every_country = {
+                    limit = {
+                        has_power_balance = {
+                            id = XIN_heaven_mandate
+                        }
+                    }
+                    country_event = {
+                        id = china_hidden_event.2
+                    }
+                }
+                hidden_effect = {
+                    remove_power_balance = {
+                        id = XIN_heaven_mandate_claimant
+                    }
+                    ANN = {
+                        every_core_state = {
+                            remove_claim_by = ROOT
+                        }
+                    }
+                }
+            }
+            on_deactivate = {
+	        }
+        }
+
+        #range = {
+        #    id = CHI_open_revolt_side_high_control_range
+        #    min = -0.9
+        #    max = -0.6
+        #    modifier = {
+        #    }
+	    #    on_activate = {
+        #        swap_ideas = {
+        #            remove_idea = XIN_peasant_support_fading
+        #            add_idea = XIN_peasant_no_support
+        #        }
+	    #    }
+	    #    on_deactivate = {
+	    #    }
+        #}
+
+        range = {
+            id = CHI_open_revolt_side_total_control_range
+            min = -1
+            max = -0.9
+            modifier = {
+            }
+	        on_activate = {
+                add_ideas = XIN_open_revolt
+	        }
+	        on_deactivate = {
+                remove_ideas = XIN_open_revolt
+	        }
+        }
+    }
+
+
+    ### Legitimate Dynasty
+    side = {
+        id = CHI_legitimate_dynasty_side
+        icon = GFX_focus_generic_monarchist_sentiment
+
+        range = {
+            id = CHI_legitimate_dynasty_side_low_control_range
+            min = 0.1
+            max = 0.3
+            modifier = {
+            }
+	        on_activate = {
+                every_country = {
+                    limit = {
+                        has_power_balance = {
+                            id = XIN_heaven_mandate
+                        }
+                    }
+                    country_event = {
+                        id = china_hidden_event.1
+                    }
+                }
+	        }
+	        on_deactivate = {	
+	        }
+        }
+
+        range = {
+            id = CHI_legitimate_dynasty_side_medium_control_range
+            min = 0.3
+            max = 0.9
+            modifier = {
+            }
+	        on_activate = {
+                every_country = {
+                    limit = {
+                        has_power_balance = {
+                            id = XIN_heaven_mandate
+                        }
+                        power_balance_value = {
+                            id = XIN_heaven_mandate
+                            value < 0.5
+                        }
+                    }
+                    country_event = {
+                        id = china_hidden_event.3
+                    }
+                    custom_effect_tooltip = CHI_mandate_of_heaven
+                }
+                hidden_effect = {
+                    every_country = {
+                        limit = {
+                            has_power_balance = {
+                                id = XIN_heaven_mandate
+                            }
+                            power_balance_value = {
+                                id = XIN_heaven_mandate
+                                value < 0.5
+                            }
+                        }
+                        remove_power_balance = {
+                            id = XIN_heaven_mandate
+                        }
+                        set_power_balance = {
+                            id = XIN_heaven_mandate_claimant
+                            set_value = 0
+                        }
+                        every_other_country = {
+                            limit = {
+                                has_power_balance = {
+                                    id = XIN_heaven_mandate_claimant
+                                }
+                            }
+                            remove_power_balance = {
+                                id = XIN_heaven_mandate_claimant
+                            }
+                        }
+                    }
+                    set_temp_variable = { temp = ROOT.stability }
+                    ANN = {
+                        every_core_state = {
+                            add_claim_by = ROOT
+                        }
+                    }
+                    set_power_balance = {
+                        id = XIN_heaven_mandate
+                        set_value = temp
+                    }
+                }
+	        }
+	        on_deactivate = {
+	        }
+        }
+
+        #range = {
+        #    id = CHI_legitimate_dynasty_side_high_control_range
+        #    min = 0.6
+        #    max = 0.9
+        #    modifier = {
+        #    }
+	    #    on_activate = {
+        #        swap_ideas = {
+        #            remove_idea = XIN_peasant_support_rising
+        #            add_idea = XIN_peasant_support
+        #        }
+	    #    }
+	    #    on_deactivate = {
+		#	    swap_ideas = {
+        #            remove_idea = XIN_legitimate_dynasty
+        #            add_idea = XIN_illegitimate_regime
+        #        }
+	    #    }
+        #}
+
+        range = {
+            id = CHI_legitimate_dynasty_side_total_control_range
+            min = 0.9
+            max = 1
+            modifier = {
+            }
+	        on_activate = {
+                every_country = {
+                    limit = {
+                        has_power_balance = {
+                            id = XIN_heaven_mandate
+                        }
+                        power_balance_value = {
+                            id = XIN_heaven_mandate
+                            value > 0.5
+                        }
+                    }
+                    country_event = {
+                        id = china_hidden_event.3
+                    }
+                }
+                custom_effect_tooltip = CHI_mandate_of_heaven
+                hidden_effect = {
+                    every_country = {
+                        limit = {
+                            has_power_balance = {
+                                id = XIN_heaven_mandate
+                            }
+                            power_balance_value = {
+                                id = XIN_heaven_mandate
+                                value > 0.5
+                            }
+                        }
+                        remove_power_balance = {
+                            id = XIN_heaven_mandate
+                        }
+                        set_power_balance = {
+                            id = XIN_heaven_mandate_claimant
+                            set_value = 0
+                        }
+                        every_other_country = {
+                            limit = {
+                                has_power_balance = {
+                                    id = XIN_heaven_mandate_claimant
+                                }
+                            }
+                            remove_power_balance = {
+                                id = XIN_heaven_mandate_claimant
+                            }
+                        }
+                    }
+                    set_temp_variable = { temp = ROOT.stability }
+                    ANN = {
+                        every_core_state = {
+                            add_claim_by = ROOT
+                        }
+                    }
+                    set_power_balance = {
+                        id = XIN_heaven_mandate
+                        set_value = temp
+                    }
+                    
+                }
+	        }
+	        on_deactivate = {
+	        }
+        }
+    }
+}

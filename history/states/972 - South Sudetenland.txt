@@ -7,6 +7,8 @@ state = {
 	
 	resources = {
 		steel = 2
+		wood = 6
+		grain = 3
 	}
 	
 	history = {
@@ -21,6 +23,7 @@ state = {
 		buildings = {
 		
 			infrastructure = 2
+			arms_factory = 1
 			5283 = {
 				bunker = 1
 			}

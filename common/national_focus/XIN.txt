@@ -1,5 +1,5 @@
 focus_tree = {
-	id = AAB_focus
+	id = XIN_focus
 	
 	country = {
 		factor = 0
@@ -13,5 +13,1633 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1500 }
+
+	#The Fifth Column
+	focus = {
+		id = XIN_the_fifth_column
+		icon = GFX_SOV_collectivist_propaganda_ccp_2d_sov_compatibility
+		x = 10
+		y = 2
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = XIN_our_dynasty }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_connect_with_han_officials
+		icon = GFX
+		x = 8
+		y = 3
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_the_fifth_column }
+		mutually_exclusive = { }
+		completion_reward = {
+			ANN = {
+				add_war_support = 0.05
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_gather_support_from_the_populace
+		icon = GFX_focus_generic_support_the_left_right
+		x = 12
+		y = 3
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_the_fifth_column }
+		mutually_exclusive = { }
+		completion_reward = {
+			RYY = {
+				add_stability = 0.05
+				add_manpower = 15000
+			}
+			LLU = {
+				add_stability = 0.05
+				add_manpower = 18000
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_contacts_with_the_rebels
+		icon = GFX
+		x = 10
+		y = 4
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_connect_with_han_officials }
+		prerequisite = { focus = XIN_gather_support_from_the_populace }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_links_with_the_red_eyebrows
+		icon = GFX_focus_generic_red_flags
+		x = 8
+		y = 5
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_contacts_with_the_rebels }
+		mutually_exclusive = { }
+		completion_reward = {
+			ANN = {
+				add_political_power = 100
+				add_war_support = 0.05
+			}
+			RYY = {
+				add_political_power = 100
+				add_war_support = 0.1
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_seize_manufactures
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
+		x = 9
+		y = 6
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_links_with_the_red_eyebrows }
+		mutually_exclusive = { }
+		completion_reward = {
+			ANN = {
+				add_offsite_building = { 
+					type = arms_factory 
+					level = 2
+				}
+				add_offsite_building = { 
+					type = industrial_complex 
+					level = 1
+				}
+			}
+			RYY = {
+				add_offsite_building = { 
+					type = arms_factory 
+					level = 2
+				}
+				add_offsite_building = { 
+					type = industrial_complex 
+					level = 1
+				}
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_raid_officials_houses
+		icon = GFX
+		x = 7
+		y = 6
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_links_with_the_red_eyebrows }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_seek_liu_xuan_favours
+		icon = GFX
+		x = 12
+		y = 5
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_contacts_with_the_rebels }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_appeal_to_the_xiongnu
+		icon = GFX_focus_XIN_unholy_alliance
+		x = 13
+		y = 6
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_seek_liu_xuan_favours }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_legitimise_our_dynasty
+		icon = GFX
+		x = 11
+		y = 6
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_seek_liu_xuan_favours }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_establish_a_revolutionary_army
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 10
+		y = 7
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_contacts_with_the_rebels }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_recruit_han_generals
+		icon = GFX
+		x = 8
+		y = 8
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_establish_a_revolutionary_army }
+		mutually_exclusive = { }
+		completion_reward = {
+			RYY = {
+				recruit_character = fan_chong
+				recruit_character = pang_an
+				recruit_character = xu_xuan
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_create_peasants_militias
+		icon = GFX
+		x = 12
+		y = 8
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_establish_a_revolutionary_army }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_an_army_of_bandits
+		icon = GFX
+		x = 10
+		y = 9
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_recruit_han_generals }
+		prerequisite = { focus = XIN_create_peasants_militias }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_proclaim_liu_xuan_emperor
+		icon = GFX
+		x = 10
+		y = 10
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_an_army_of_bandits }
+		mutually_exclusive = { }
+		completion_reward = {
+			country_event = china_event.6
+			uncomplete_national_focus = {
+  				focus = XIN_the_fifth_column
+  				uncomplete_children = yes
+  				refund_political_power = no
+			}
+			complete_national_focus = {
+				focus = XIN_our_dynasty
+			}
+			set_country_flag = XIN_revolt_started
+		}
+	}
+
+
+
+
+	#Our Dynasty
+	focus = {
+		id = XIN_our_dynasty
+		icon = GFX_focus_XIN_eternal_xin_dynasty
+		x = 33
+		y = 2
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = XIN_the_fifth_column }
+		completion_reward = {
+		}
+	}
+
+
+
+
+	#Internal Affairs
+	focus = {
+		id = XIN_internal_affairs
+		icon = GFX_SOV_intervention_in_china_ccp_2d_sov_compatibility
+		x = 7
+		y = 1
+		relative_position_id = XIN_our_dynasty
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_our_dynasty }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_deal_with_the_peasantry
+		icon = GFX_focus_SWE_refuge_from_war
+		x = 3
+		y = 1
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_internal_affairs }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_the_yellow_river_dykes
+		icon = GFX
+		x = 1
+		y = 2
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_deal_with_the_peasantry }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_redistribute_from_nobility
+		icon = GFX_focus_XIN_redistribute_lands_from_the_nobility
+		x = 3
+		y = 2
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_deal_with_the_peasantry }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.1
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_establish_new_farmlands
+		icon = GFX_focus_generic_farmland
+		x = 5
+		y = 2
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+			606 = {
+				is_owned_by = ROOT
+			}
+			749 = {
+				is_owned_by = ROOT
+			}
+			620 = {
+				is_owned_by = ROOT
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_deal_with_the_peasantry }
+		mutually_exclusive = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XIN_famine_problem
+				add_idea = XIN_famine_problem1
+			}
+			606 = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			749 = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			620 = {
+				add_building_construction = {
+    				type = farm
+    				level = 2
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_reform_the_income_tax
+		icon = GFX_focus_PER_stage_mass_protests
+		x = 4
+		y = 3
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_redistribute_from_nobility }
+		prerequisite = { focus = XIN_establish_new_farmlands }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -0.05
+			}
+			country_event = china_event.56
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_forbid_slave_trading
+		icon = GFX_focus_AUS_lawmaking_leniency
+		x = 4
+		y = 4
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_reform_the_income_tax }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_mass_nationalisation
+		icon = GFX_focus_XIN_mass_nationalisation
+		x = 3
+		y = 5
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+			597 = {
+				is_owned_by = ROOT
+			}
+			614 = {
+				is_owned_by = ROOT
+			}
+			607 = {
+				is_owned_by = ROOT
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_crush_the_old_imperial_clan }
+		prerequisite = { focus = XIN_forbid_slave_trading }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.15
+			}
+			swap_ideas = {
+				remove_idea = XIN_famine_problem1
+				add_idea = XIN_famine_problem2
+			}
+			597 = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			614 = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			607 = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_further_weaken_the_nobles
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		x = 2
+		y = 3
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_redistribute_from_nobility }
+		prerequisite = { focus = XIN_establish_new_farmlands }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_crush_the_old_imperial_clan
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 2
+		y = 4
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_further_weaken_the_nobles }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+
+
+
+
+	#
+	focus = {
+		id = XIN_wang_mang_economics
+		icon = GFX_focus_generic_economic_recovery
+		x = -3
+		y = 1
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_internal_affairs }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_cement_the_reforms
+		icon = GFX_SOV_reformalize_the_role_of_the_patriarchate_ccp_2d_sov_compatibility
+		x = -4
+		y = 2
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_wang_mang_economics }
+		mutually_exclusive = { focus = XIN_stop_the_reforms }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -0.1
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_push_bronze_coins
+		icon = GFX_focus_XIN_push_bronze_coins
+		x = -5
+		y = 3
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_cement_the_reforms }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_new_market_regulations
+		icon = GFX_focus_XIN_new_market_regulation
+		x = -7
+		y = 4
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_push_bronze_coins }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.1
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_deal_with_inflation
+		icon = GFX_focus_XIN_fight_against_inflation
+		x = -5
+		y = 4
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_push_bronze_coins }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_new_mines_in_china
+		icon = GFX_focus_generic_mining_industry
+		x = -6
+		y = 5
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+			599 = {
+				is_owned_by = ROOT
+			}
+			622 = {
+				is_owned_by = ROOT
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_new_market_regulations }
+		prerequisite = { focus = XIN_deal_with_inflation }
+		mutually_exclusive = { }
+		completion_reward = {
+			599 = {
+				add_building_construction = {
+    				type = mine
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			622 = {
+				add_building_construction = {
+    				type = mine
+    				level = 2
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_fight_the_merchants
+		icon = GFX_focus_DEN_devalue_krone
+		x = -5
+		y = 6
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_new_market_regulations }
+		prerequisite = { focus = XIN_deal_with_inflation }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.05
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_stop_the_reforms
+		icon = GFX_focus_IRQ_decouple_from_the_pound
+		x = -2
+		y = 2
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_wang_mang_economics }
+		mutually_exclusive = { focus = XIN_cement_the_reforms }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -0.2
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_reestablish_the_old_gold_standard
+		icon = GFX_focus_XIN_restore_gold_standard
+		x = -1
+		y = 3
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_stop_the_reforms }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_free_hands_on_the_economy
+		icon = GFX_focus_XIN_hands_free_on_the_economy
+		x = -1
+		y = 4
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_reestablish_the_old_gold_standard }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_increase_the_merchants_influence
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = -1
+		y = 5
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_free_hands_on_the_economy }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -0.15
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_the_state_monopoly_on_salt
+		icon = GFX_focus_XIN_monopoly_on_salt
+		x = -3
+		y = 3
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_cement_the_reforms focus = XIN_stop_the_reforms }
+		mutually_exclusive = { }
+		completion_reward = {
+			country_event = {
+				id = china_event.50
+				days = 5
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_the_question_of_iron
+		icon = GFX_focus_XIN_question_on_iron
+		x = -3
+		y = 4
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_the_state_monopoly_on_salt }
+		mutually_exclusive = { }
+		completion_reward = {
+			country_event = {
+				id = china_event.51
+				days = 5
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_encourage_grain_production
+		icon = GFX_focus_XIN_encourage_grain_production
+		x = -3
+		y = 5
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_the_question_of_iron }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+
+	#
+	focus = {
+		id = XIN_imperial_gov_influence
+		icon = GFX_focus_XIN_imperial_government_influence
+		x = 0
+		y = 6
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_encourage_grain_production }
+		prerequisite = { focus = XIN_mass_nationalisation }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_purge_of_reluctant_bureaucrats
+		icon = GFX_focus_XIN_purge_bureaucrats
+		x = -2
+		y = 7
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_imperial_gov_influence }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_a_social_empire_for_the_peasants
+		icon = GFX_focus_FIN_socialist_welfare
+		x = 2
+		y = 7
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_imperial_gov_influence }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_the_eternal_xin_dynasty
+		icon = GFX_focus_XIN_eternal_xin_dynasty
+		x = 0
+		y = 8
+		relative_position_id = XIN_internal_affairs
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_purge_of_reluctant_bureaucrats }
+		prerequisite = { focus = XIN_a_social_empire_for_the_peasants }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+
+
+
+	#Towards the World
+	focus = {
+		id = XIN_towards_the_world
+		icon = GFX_focus_RAJ_to_shake_the_world
+		x = -9
+		y = 1
+		relative_position_id = XIN_our_dynasty
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_our_dynasty focus = XIN_the_fifth_column }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 500
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	#The Korean Problem
+	focus = {
+		id = XIN_the_korean_problem
+		icon = GFX_focus_XIN_korean_problem
+		x = 0
+		y = 1
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_towards_the_world }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = -20
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	#Increase Influence in the Leelang
+	focus = {
+		id = XIN_increase_influence_in_leelang
+		icon = GFX
+		x = 0
+		y = 2
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_the_korean_problem }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+	
+	#
+	focus = {
+		id = XIN_contain_goguryo
+		icon = GFX_focus_XIN_contain_goguryeo2
+		x = -1
+		y = 3
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_increase_influence_in_leelang }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_create_ties_with_smaller_korean_states
+		icon = GFX
+		x = 1
+		y = 3
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_increase_influence_in_leelang }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_further_colonisation_of_korea
+		icon = GFX
+		x = 0
+		y = 4
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_contain_goguryo }
+		prerequisite = { focus = XIN_create_ties_with_smaller_korean_states }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Sino-Xiongnu Relations
+	focus = {
+		id = XIN_sino_xiongnu_relations
+		icon = GFX
+		x = -5
+		y = 1
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_towards_the_world }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 500
+				is_historical_focus_on = yes
+			}
+		}
+	}
+
+	#Set up a Rival Gov.
+	focus = {
+		id = XIN_set_up_a_rival_government
+		icon = GFX_SOV_bringing_breakaways_back_to_the_fold_ccp_2d_sov_compatibility
+		x = -4
+		y = 2
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+			XAI = { exists = yes }
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_sino_xiongnu_relations }
+		mutually_exclusive = { focus = XIN_negociate_with_the_xiongnu }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.05
+			}
+			create_dynamic_country = {
+    			original_tag = XAI
+    			add_political_power = 100
+    			transfer_state = 621
+				transfer_state = 611
+				set_capital = {
+					state = 611
+					remember_old_capital = yes	
+				}
+				recruit_character = xubu_chanyu
+				promote_character = {
+    				character = xubu_chanyu
+    				ideology = nomadism
+				}
+				XIN = {
+					puppet = PREV
+				}
+				hidden_effect = {
+					set_politics = {
+						ruling_party = neutrality
+    					elections_allowed = no
+					}
+					set_popularities = {
+						democratic = 3
+						neutrality = 60
+						fascism = 5
+						communism = 32
+					}
+					621 = {
+						add_compliance = 80
+						cancel_resistance = yes
+					}
+					611 = {
+						add_compliance = 80
+						cancel_resistance = yes
+						create_unit = {
+    						division = "name = \"Xiongnu Defense Force\" division_template = \"Chinese Levy\" start_experience_factor = 0.3 start_manpower_factor = 0.7"
+    						owner = PREV
+							count = 2
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 5
+			modifier = {
+				add = 500
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = -1000
+				has_war = yes
+			}
+		}
+	}
+
+	#Set up a Rival Gov.
+	focus = {
+		id = XIN_appeal_to_unhappy_generals
+		icon = GFX_focus_BRA_reach_out_to_military_dem
+		x = -4
+		y = 3
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_set_up_a_rival_government }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Set up a Rival Gov.
+	focus = {
+		id = XIN_search_for_claimants
+		icon = GFX_goal_generic_more_territorial_claims
+		x = -5
+		y = 4
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_offer_vassalization focus = XIN_appeal_to_unhappy_generals }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Set up a Rival Gov.
+	focus = {
+		id = XIN_the_barbarians_of_the_steppe
+		icon = GFX_focus_generic_horse_studs
+		x = -3
+		y = 4
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_offer_vassalization focus = XIN_appeal_to_unhappy_generals }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#Set up a Rival Gov.
+	focus = {
+		id = XIN_strike_at_the_horseriders
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = -4
+		y = 5
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_search_for_claimants }
+		prerequisite = { focus = XIN_the_barbarians_of_the_steppe }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -0.15
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = XAI
+			}
+		}
+	}
+
+	#Negociate
+	focus = {
+		id = XIN_negociate_with_the_xiongnu
+		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
+		x = -6
+		y = 2
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+			XAI = { exists = yes }
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_sino_xiongnu_relations }
+		mutually_exclusive = { focus = XIN_set_up_a_rival_government }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -0.05
+			}
+		}
+	}
+
+	#Vassalization
+	focus = {
+		id = XIN_offer_vassalization
+		icon = GFX_focus_generic_subjugation
+		x = -6
+		y = 3
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_negociate_with_the_xiongnu }
+		mutually_exclusive = { focus = XIN_the_unholy_alliance }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.1
+			}
+			XAI = {
+				country_event = {
+					id = china_event.54
+					days = 5
+				}
+			}
+		}
+	}
+
+	#Unholy Alliance
+	focus = {
+		id = XIN_the_unholy_alliance
+		icon = GFX_focus_XIN_unholy_alliance
+		x = -8
+		y = 3
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_negociate_with_the_xiongnu }
+		mutually_exclusive = { focus = XIN_offer_vassalization }
+		completion_reward = {
+			add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -0.1
+			}
+			XAI = {
+				country_event = {
+					id = china_event.52
+					days = 5
+				}
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_normalisation_of_relations
+		icon = GFX_goal_generic_positive_trade_relations
+		x = -7
+		y = 4
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+			XAI = {
+				OR = {
+					is_ally_with = XIN
+					is_subject_of = XIN
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_offer_vassalization focus = XIN_the_unholy_alliance }
+		mutually_exclusive = { }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = XIN_poor_sino_xiongnu_relations
+				add_idea = XIN_normal_sino_xiongnu_relations
+			}
+			XAI = {
+				swap_ideas = {
+					remove_idea = XAI_poor_sino_xiongnu_relations
+					add_idea = XAI_normal_sino_xiongnu_relations
+				}
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_sino_xiongnu_populations_exchanges
+		icon = GFX_focus_generic_military_academy
+		x = -7
+		y = 5
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_normalisation_of_relations }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#The Western Protectorates
+	focus = {
+		id = XIN_western_protectorates
+		icon = GFX
+		x = 4
+		y = 1
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_towards_the_world }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_gateway_to_the_west
+		icon = GFX_focus_RAJ_the_silk_road
+		x = 4
+		y = 2
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_western_protectorates }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_protect_trade_with_india
+		icon = GFX_focus_RAJ_all_india_forward_bloc
+		x = 3
+		y = 3
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_gateway_to_the_west }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_diplomats_to_the_arsacid
+		icon = GFX_focus_PER_proclaim_greater_iran
+		x = 5
+		y = 3
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_gateway_to_the_west }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+
+	#
+	focus = {
+		id = XIN_expedition_to_daqin
+		icon = GFX_focus_XIN_expedition_to_daqin
+		x = 4
+		y = 4
+		relative_position_id = XIN_towards_the_world
+		cost = 6
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = XIN_protect_trade_with_india }
+		prerequisite = { focus = XIN_diplomats_to_the_arsacid }
+		mutually_exclusive = { }
+		completion_reward = {
+			SUL = {
+				country_event = { 
+					id = china_event.30 
+					days = 20
+				}
+			}
+			country_event = { 
+				id = china_event.30 
+				days = 20
+			}
+		}
+	}
 	
 }

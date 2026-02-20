@@ -63,24 +63,24 @@
 
 
  rome_event.12.t: "A Roman Deal: Carve up Armenia"
- rome_event.12.d: ""
+ rome_event.12.d: "An envoy from Rome arrived today at the Capital, with a deal.\n\They are asking us to put pression on Armenia to gain territories. We would get the eastern part of the country while Rome would get the eastern part and a de facto protectorate.\n\We cannot stand against Rome alone and they decided that even if we did not agree, they would attack Armenia and would get what they wanted, with or without us."
  rome_event.12.a: "Yes"
  rome_event.12.b: "Why not a compromise?"
  rome_event.12.c: "No!"
 
  rome_event.13.t: "A Roman Deal: Carve up Armenia, Yes!"
- rome_event.13.d: ""
+ rome_event.13.d: "The Arsacid agreed, finally Armenia is in our hands!"
  rome_event.13.a: "Armenia, finally!"
  rome_event.13.b: "We are doomed!"
 
  rome_event.14.t: "A Roman Deal: Carve up Armenia, A Compromise?"
- rome_event.14.d: ""
+ rome_event.14.d: "The Arsacid sent an envoy asking for a compromise. We would get the western part of Armenia and Sophene while they would get the eastern part of it. Armenia would be left alone, as a rump state."
  rome_event.14.a: "Why not."
  rome_event.14.b: "No! Who do you think we are?"
  rome_event.14.c: "It's better than nothing, I suppose.."
 
  rome_event.15.t: "A Roman Deal: Carve up Armenia, No!"
- rome_event.15.d: ""
+ rome_event.15.d: "The Arsacid refused, stating that they 'did not wish to engage in potential conflicts that could result in destabilising our nation'."
  rome_event.15.a: "Mobilise the Armies! With or without them, we'll get what we want!"
  rome_event.15.b: "Glory to Armenia!"
 
@@ -91,12 +91,12 @@
  rome_event.16.b: "We can't risk our destruction!"
 
  rome_event.17.t: "A Roman Deal: Carve up the Arsacid, Yes!"
- rome_event.17.d: ""
+ rome_event.17.d: "Armenia agreed to help us in destroying the Arsacid 'Empire', once and for all. Our armies shall ride before each others!"
  rome_event.17.a: "To Ctesiphon!"
 
  rome_event.18.t: "A Roman Deal: Carve up the Arsacid, No!"
  rome_event.18.d: ""
- rome_event.18.a: "Arg! We'll need to.. do some shady things."
+ rome_event.18.a: "Arg! We'll need to.. do some shady things then."
 
 
  ## ROMAN EMPIRE NEWS EVENTS ##

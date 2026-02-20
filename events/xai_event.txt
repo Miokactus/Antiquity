@@ -1,0 +1,148 @@
+################
+#XIONGNU EVENTS#
+################
+
+add_namespace = xai_event
+add_namespace = xai_china_event
+
+#Western Protectorates Overrun
+country_event = {
+	id = xai_event.1
+	title = xai_event.1.t
+	desc = xai_event.1.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = xai_event.1.a
+		ai_chance = { factor = 1 }
+		XIN = {
+			set_autonomy = {
+    			target = WPC
+    			autonomous_state = autonomy_free
+			}
+			country_event = {
+				id = xai_china_event.1
+				days = 3
+			}
+		}
+		589 = {
+			add_claim_by = XAI
+		}
+		618 = {
+			add_claim_by = XAI
+		}
+		586 = {
+			add_claim_by = XAI
+		}
+		1043 = {
+			add_claim_by = XAI
+		}
+		617 = {
+			add_claim_by = XAI
+		}
+	}
+	option = {
+		name = xai_event.1.b
+		ai_chance = { factor = 1 }
+		XIN = {
+			set_autonomy = {
+    			target = WPC
+    			autonomous_state = autonomy_free
+			}
+			country_event = {
+				id = xai_china_event.1
+				days = 3
+			}
+		}
+		589 = {
+			add_claim_by = XAI
+		}
+		618 = {
+			add_claim_by = XAI
+		}
+		586 = {
+			add_claim_by = XAI
+		}
+		1043 = {
+			add_claim_by = XAI
+		}
+		617 = {
+			add_claim_by = XAI
+		}
+	}
+}
+
+##
+country_event = {
+	id = xai_event.2
+	title = xai_event.2.t
+	desc = xai_event.2.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = xai_event.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+
+##
+country_event = {
+	id = xai_event.3
+	title = xai_event.3.t
+	desc = xai_event.3.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = xai_event.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+### XAI - CHINA EVENTS LINKED ##
+################################
+
+##
+country_event = {
+	id = xai_china_event.1
+	title = xai_china_event.1.t
+	desc = xai_china_event.1.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { ## Fuckers!
+		name = xai_china_event.1.a
+		ai_chance = { factor = 1 }
+	}
+}

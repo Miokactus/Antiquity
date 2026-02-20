@@ -1,0 +1,27 @@
+
+ai_focus_aggressive_XIN = {
+	research = {
+		offensive = 20.0
+		synth_resources = 1.0
+		motorized_equipment = 2.0
+		armor = 2.0
+	}
+}
+
+ai_focus_aggressive_ANN = {
+	research = {
+		offensive = 20.0
+		synth_resources = 1.0
+		motorized_equipment = 2.0
+		armor = 2.0
+	}
+}
+
+ai_focus_aggressive_GOR = {
+	research = {
+		offensive = 20.0
+		synth_resources = 1.0
+		motorized_equipment = 2.0
+		armor = 2.0
+	}
+}

@@ -7,8 +7,8 @@ state = {
 	
 	history = {
 		
-		owner = DAC
-		add_core_of = DAC
+		owner = VBI
+		add_core_of = VBI
 
 		buildings = {
 			infrastructure = 2

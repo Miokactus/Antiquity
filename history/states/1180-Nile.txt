@@ -9,6 +9,10 @@ state={
 		add_core_of = KUS
 		add_core_of = EGI
 		victory_points = { 4138 2 }
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=24000
 	state_category = rural

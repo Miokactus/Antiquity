@@ -1,0 +1,87 @@
+guiTypes = {
+	containerWindowType = {
+		name = "subideology"
+		position = {
+			x = 0
+			y = 0
+		}
+		instantTextboxType = {
+			name = "subideology_zzz"
+			position = { x = 97 y = 327 }
+			font = "hoi_17mbs"
+			text = "[?country_leader.GetIdeologyGroup]"
+			pdx_tooltip = "[?country_leader.GetIdeologyGroup]"
+			maxWidth = 205
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+	}
+
+} 
+
+guiTypes = {
+	containerWindowType = {
+		name = "subideology_diplo"
+		position = {
+			x = 254
+			y = 132
+		}
+		instantTextboxType = {
+			name = "subideology_zzz_diplo"
+			position = { x = 8 y = 13 }
+			font = "hoi_16mbs"
+			text = "[?country_leader.GetIdeologyGroup]"
+			pdx_tooltip = "[?country_leader.GetIdeologyGroup]"
+			maxWidth = 205
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+	}
+
+} 
+
+
+
+
+@FACTION_TEXT_X = 55
+@LOYALTY_TEXT_X = 240
+@POPULARITY_TEXT_X = 380
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 55
+@HEADERS_Y = 0
+guiTypes = {
+	containerWindowType = {
+		name = "xin_int_affairs"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = { width = 100% height= 210 }
+		instantTextboxType = {
+			name = "xin_int_affairs_zzz"
+			position = { x = 70 y = 35 }
+			font = "hoi_20mbs"
+			text = "Peasants' Support"
+			maxWidth = 205
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "xin_int_affairs_ps"
+			position = { x = 80 y = 60 }
+			font = "hoi_18mbs"
+			text = "peasants_support"
+			maxWidth = 205
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+	}
+} 

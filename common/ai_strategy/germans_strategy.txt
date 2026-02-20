@@ -1,0 +1,96 @@
+germans_dont_like_romans = {
+    allowed = {
+        OR = {
+        original_tag = FRI
+        original_tag = CMI
+        original_tag = AMV
+        original_tag = CAU
+        original_tag = CSU
+        original_tag = USP
+        original_tag = SGI
+        original_tag = TNI
+        original_tag = CTT
+        original_tag = VGI
+        original_tag = NMI
+        original_tag = TBI
+        original_tag = ERR
+        original_tag = NSE
+        original_tag = AGI
+        original_tag = CRS
+        original_tag = ANI
+        original_tag = SXA
+        original_tag = AGL
+        original_tag = VNI
+        original_tag = CRD
+        original_tag = LGI
+        original_tag = SNI
+        original_tag = BRU
+        }
+    }
+    enable = {
+        country_exists = ROE
+    }
+    abort = {
+        NOT = { country_exists = ROE }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = antagonize
+        id = ROE
+        value = 1000
+    }
+}
+
+germans_likes_amirinius = {
+    allowed = {
+        OR = {
+        original_tag = FRI
+        original_tag = CMI
+        original_tag = AMV
+        original_tag = CAU
+        original_tag = CSU
+        original_tag = USP
+        original_tag = SGI
+        original_tag = TNI
+        original_tag = CTT
+        original_tag = VGI
+        original_tag = NMI
+        original_tag = TBI
+        original_tag = ERR
+        original_tag = NSE
+        original_tag = AGI
+        original_tag = ANI
+        original_tag = SXA
+        original_tag = AGL
+        original_tag = VNI
+        original_tag = CRD
+        original_tag = LGI
+        original_tag = SNI
+        original_tag = BRU
+        }
+    }
+    enable = {
+        CRS = {
+			has_country_leader = {
+				character = CRS_arminius
+				ruling_only = yes
+			}
+		}
+    }
+    abort = {
+        CRS = {
+			NOT = { 
+				has_country_leader = {
+					character = CRS_arminius
+					ruling_only = yes
+				}
+			}
+		}
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = befriend
+        id = CRS
+        value = 10000
+    }
+}

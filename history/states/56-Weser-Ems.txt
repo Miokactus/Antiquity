@@ -7,6 +7,14 @@ state={
 	history = {
 		owner = AMV
 		add_core_of = AMV
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			241 1
+		}
 	}
 	manpower=205846
 	buildings_max_level_factor=1.000

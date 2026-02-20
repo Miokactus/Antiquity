@@ -8,6 +8,11 @@ state={
 		owner = SUL
 		add_core_of = SUL
 		victory_points = { 1766 5 }
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
 	}
 	manpower=24000
 	state_category = town

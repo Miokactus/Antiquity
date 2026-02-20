@@ -1,0 +1,46 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_report_event_XIN_peasants_revolt"
+        texturefile = "gfx/event_pictures/report_event_XIN_peasants_revolt.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_report_event_XIN_generic_battle"
+        texturefile = "gfx/event_pictures/report_event_XIN_generic_battle.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_report_event_XIN_generic_decoration"
+        texturefile = "gfx/event_pictures/report_event_XIN_generic_decoration.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_report_event_XIN_generic_emperor_talks"
+        texturefile = "gfx/event_pictures/report_event_XIN_generic_emperor_talks.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_report_event_XIN_generic_letter"
+        texturefile = "gfx/event_pictures/report_event_XIN_generic_letter.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+
+
+
+    spriteType = {
+        name = "GFX_report_event_ROE_generic_attack"
+        texturefile = "gfx/event_pictures/report_event_ROE_generic_attack.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_report_event_ROE_forest_ambush"
+        texturefile = "gfx/event_pictures/report_event_ROE_forest_ambush.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_report_event_ROE_generic_fight"
+        texturefile = "gfx/event_pictures/report_event_ROE_generic_fight.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+}

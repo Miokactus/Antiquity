@@ -90,7 +90,8 @@ guiTypes = {
 				position = { x= -2 y = 1s }
 			}
 		}
-		
+
+
 		containerWindowType = {
 			name = "ruling_party_info"
 			position = { x = 88 y = 305 }
@@ -106,18 +107,30 @@ guiTypes = {
 #				maxHeight = 20
 #			}
 			
+			
+
+
 			instantTextboxType = {
 				name = "ideology"
-				position = { x = 9 y = 8 }
+				position = { x = 9 y = 2 }
 				font = "hoi_18mbs"
 				text = "ideology"
 				maxWidth = 155
 				maxHeight = 20
 			}
+
+			#instantTextboxType = {
+			#	name = "subideology"
+			#	position = { x = 9 y = 23 }
+			#	font = "hoi_18mbs"
+			#	text = "subideology"
+			#	maxWidth = 155
+			#	maxHeight = 20
+			#}
 			
 			instantTextboxType = {
 				name = "elections"
-				position = { x = 9 y = 29 }
+				position = { x = 9 y = 36 }
 				font = "hoi_16mbs"
 				text = "elections"
 				maxWidth = 155

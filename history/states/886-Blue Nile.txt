@@ -7,6 +7,10 @@ state={
 	history = {
 		owner = AKM
 		add_core_of = AKM
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=661102
 	buildings_max_level_factor=1.000

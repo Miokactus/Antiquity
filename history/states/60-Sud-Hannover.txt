@@ -11,6 +11,13 @@ state={
 	history = {
 		owner = AGI
 		add_core_of = AGI
+		victory_points = {
+			482 2
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=30052
 	buildings_max_level_factor=1.000

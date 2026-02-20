@@ -1,18 +1,76 @@
 leader_traits = {
+	## Xiongnu
 	XAI_nomadic_leader = {
 		random = no
 		political_power_gain = 0.1
-
-
-		ai_will_do = {
-			factor = 1
-		}
 	}
 
+	## Rome
 	ROE_first_roman_emperor = {
 		random = no
 		political_power_gain = 0.2
 		stability_factor = 0.15
+	}
+
+	ROE_roman_emperor = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.05
+	}
+
+	## China
+	XIN_children_of_heaven = {
+		random = no
+		political_power_gain = 0.3
+		stability_factor = 0.05
+	}
+
+	## Xiongnu
+	XAI_chanyu = {
+		random = no
+		political_power_gain = 0.5
+		army_speed_factor = 0.15
+	}
+
+	XAI_chanyu_usurpator = {
+		random = no
+		political_power_gain = 0.2
+		army_speed_factor = 0.05
+	}
+
+	## Germans
+	arminius_trait = {
+		random = no
+		political_power_gain = 0.2
+		stability_factor = 0.1
+		war_support_factor = 0.1
+		targeted_modifier = {
+    		tag = ROE    # this can also take a variable that stores a scope
+			attack_bonus_against = 0.1
+    		defense_bonus_against = 0.20
+		}
+	}
+
+	allied_of_the_romans = {
+		random = no
+		stability_factor = -0.1
+		targeted_modifier = {
+    		tag = ROE    # this can also take a variable that stores a scope
+			attack_bonus_against = -0.1
+    		defense_bonus_against = -0.1
+		}
+	}
+
+	king_of_the_germans = {
+		random = no
+		political_power_gain = 0.5
+		stability_factor = 0.15
+		war_support_factor = 0.1
+		targeted_modifier = {
+    		tag = ROE    # this can also take a variable that stores a scope
+			attack_bonus_against = 0.1
+    		defense_bonus_against = 0.1
+		}
 	}
 
 }

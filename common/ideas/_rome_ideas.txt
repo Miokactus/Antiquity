@@ -16,11 +16,11 @@ ideas = {
 			}
 			on_remove = {
     			add_political_power = -200
-				add_stability = -0.2
+				add_stability = -0.15
 			}
 			modifier = {
 				political_power_cost = 0.2
-				stability_factor = 0.15
+				stability_factor = 0.05
 			}
 		}
 		
@@ -62,6 +62,61 @@ ideas = {
 				stability_factor = 0.1
 				political_power_cost = -0.3
 				conscription_factor = 0.2
+			}
+		}
+
+		ROE_avenged_teutoburg = {
+			name = "Avenged Teutoburg"
+			allowed_civil_war = { always = yes }
+			picture = FRA_scw_intervention_republicans_focus
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				political_power_cost = -0.5
+			}
+		}
+
+		ROE_lost_to_germans = {
+			name = "Defeated by the Germans"
+			allowed_civil_war = { always = yes }
+			picture = FRA_scw_intervention_nationalists_focus
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.05
+				political_power_cost = 0.5
+			}
+		}
+
+		ROE_unfaithful_government = {
+			name = "Unfaithful Government"
+			allowed_civil_war = { always = yes }
+			picture = ICE_general_strike
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				political_power_cost = 0.2
+				conscription_factor = -0.2
+			}
+		}
+
+		ROE_blessed_by_the_gods = {
+			name = "Blessed by the Gods"
+			allowed_civil_war = { always = yes }
+			picture = SOV_consolidate_power_ccp_sov_compatibility
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_cost = -0.5
+				conscription_factor = 0.2
+				offensive_war_stability_factor = -0.5
 			}
 		}
 

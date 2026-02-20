@@ -6,8 +6,8 @@ state={
 	state_category = rural
 	
 	history={
-		owner = DAC
-		add_core_of = DAC
+		owner = MRA
+		add_core_of = MRA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

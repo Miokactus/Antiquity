@@ -1,0 +1,78 @@
+characters = {
+	CRS_arminius = {
+		name = "Arminius"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_Arminius_portrait"
+            }
+			army = {
+				large = "GFX_leader_Arminius_portrait"
+				small = "GFX_idea_empty_generic"
+            }
+        }
+		country_leader = {
+			desc = "arminius_desc"
+			expire = "21.5.4"
+			ideology = chieftain
+			traits = {
+				arminius_trait
+			}
+		}
+		corps_commander = {
+    		skill = 3
+    		attack_skill = 4
+    		defense_skill = 4
+    		planning_skill = 3
+    		logistics_skill = 3
+		}
+	}
+
+	CRS_flavius = {
+		name = "Flavius"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_military_council"
+            }
+        }
+		country_leader = {
+			desc = "italicus_desc"
+			expire = "35.5.4"
+			ideology = military_junta
+			traits = {
+			}
+		}
+	}
+
+	CRS_italicus = {
+		name = "Italicus"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_Italicus_portrait"
+            }
+        }
+		country_leader = {
+			desc = "italicus_desc"
+			expire = "35.5.4"
+			ideology = chieftain
+			traits = {
+			}
+		}
+	}
+
+	CRS_segestes = {
+		name = "Caius Julius Segestes"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_Segestes_portrait"
+            }
+        }
+		country_leader = {
+			desc = "segestes_desc"
+			expire = "35.5.4"
+			ideology = oligarchism_comm
+			traits = {
+				allied_of_the_romans
+			}
+		}
+	}
+}

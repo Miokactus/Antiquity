@@ -1,0 +1,28 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_misc_report_event_XIN_generic_battle"
+		texturefile = "event_pictures/report_event_XIN_generic_battle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_misc_report_event_XIN_generic_decoration"
+		texturefile = "event_pictures/report_event_XIN_generic_decoration.dds"
+	}
+
+	spriteType = {
+		name = "GFX_misc_report_event_XIN_generic_emperor_talks"
+		texturefile = "event_pictures/report_event_XIN_generic_emperor_talks.dds"
+	}
+
+	spriteType = {
+		name = "GFX_misc_report_event_XIN_generic_letter"
+		texturefile = "event_pictures/report_event_XIN_generic_letter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_misc_report_event_XIN_peasants_revolt"
+		texturefile = "event_pictures/report_event_XIN_peasants_revolt.dds"
+	}
+
+}

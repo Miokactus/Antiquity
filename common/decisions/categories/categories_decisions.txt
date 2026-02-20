@@ -1,0 +1,221 @@
+## GENERIC
+unification_decisions = {
+    allowed = {
+        always = yes
+    }
+    visible = {
+        always = yes
+    }
+    priority = 0
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
+
+
+## TRIBAL
+tribal_actions = {
+    allowed = {
+        has_government = neutrality
+    }
+    visible = {
+        always = no
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+}
+
+## CRS
+alliance_germans = {
+    allowed = {
+        tag = CRS
+    }
+    visible = {
+        has_completed_focus = CRS_the_fight_of_all_germans
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+alliance_puppet = {
+    allowed = {
+        tag = CRS
+    }
+    visible = {
+        has_completed_focus = CRS_guardian_of_the_germans
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
+
+## ROMAN EMPIRE
+roman_citizenship = {
+    allowed = {
+        original_tag = ROE
+    }
+    visible = {
+        has_completed_focus = ROE_extend_the_citizenship
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+}
+
+germania_campaign = {
+    allowed = {
+        OR = {
+            original_tag = ROE
+            original_tag = CRS
+        }
+    }
+    visible = {
+        ROE = {
+            OR = { 
+                has_completed_focus = ROE_restart_the_germania_campaign
+                has_completed_focus = ROE_demand_local_tribes_submission
+                has_completed_focus = ROE_germanicus_campaigns
+            }
+            NOT = {
+                OR = {
+		    	    has_completed_focus = ROE_retire_germanicus
+                    has_country_flag = ROE_defeated_arminius
+                    has_country_flag = ROE_lost_to_germans
+                }
+		    }
+        }
+        CRS = {
+            ROE = {
+                OR = { 
+                    has_completed_focus = ROE_restart_the_germania_campaign
+                    has_completed_focus = ROE_demand_local_tribes_submission
+                    has_completed_focus = ROE_germanicus_campaigns
+                }
+                NOT = {
+                    OR = {
+		        	    has_completed_focus = ROE_retire_germanicus
+                        has_country_flag = ROE_defeated_arminius
+                        has_country_flag = ROE_lost_to_germans
+                    }
+		        }
+            }
+        }
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+}
+
+
+
+
+
+
+## XIN CHINA
+internal_affairs_xin = {
+    allowed = {
+        original_tag = XIN
+    }
+    visible = {
+        always = no
+        XIN = {
+            AND = { 
+                OR = { 
+                    has_idea = XIN_peasant_support_fading
+                    has_idea = XIN_peasant_support
+                    has_idea = XIN_peasant_no_support
+                }
+                has_completed_focus = XIN_internal_affairs
+            }
+        }
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+    scripted_gui = xin_internal_affairs_gui
+}
+
+mandate_of_heaven = {
+    allowed = {
+        any_country = {
+            has_power_balance = {
+    		    id = XIN_heaven_mandate
+			}
+        }
+    }
+    visible = {
+        has_power_balance = {
+			id = XIN_heaven_mandate
+		}
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
+mandate_of_heaven_claim = {
+    allowed = {
+        always = yes
+    }
+    visible = {
+        has_power_balance = {
+    	  	id = XIN_heaven_mandate_claimant
+		}
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
+the_chinese_army = {
+    allowed = {
+        original_tag = XIN
+    }
+    visible = {
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+}
+
+korean_situation_xin = {
+    allowed = {
+        original_tag = XIN
+    }
+    visible = {
+        XIN = {
+            has_completed_focus = XIN_the_korean_problem
+        }
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+}
+
+sino_xiongnu_relations = {
+    allowed = {
+        original_tag = XIN
+    }
+    visible = {
+        XIN = {
+            has_completed_focus = XIN_sino_xiongnu_relations
+        }
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+}

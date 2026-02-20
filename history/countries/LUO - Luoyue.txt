@@ -1,0 +1,40 @@
+﻿capital = 1042
+
+oob = "LUO_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Trung Sisters"
+	desc = "GOV_DESC"
+	picture = GFX_leader_XIN_peasant_councils
+	expire = "120.5.4"
+	ideology = popular_assemblies
+	traits = {
+	}
+}
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 65
+	fascism = 10
+	communism = 20
+	neutrality = 5
+}
+ 
+add_ideas = {
+	low_economic_conscription 
+	limited_conscription
+	limited_exports
+}

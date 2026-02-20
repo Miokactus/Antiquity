@@ -1,0 +1,181 @@
+﻿l_english:
+ ## EVENTS
+ china_event.1.t: "The Yellow River is About to Flood!"
+ china_event.1.d: "Our experts made an estimate that with the recent rain occuring across the country, the Yellow River might be on the point of flooding. Either we take action quickly, or we'll need to face the consequences of the flooding, for the best or for the worst."
+ china_event.1.a: "We need to prepare for the worst.."
+
+ china_event.2.t: "The Yellow River Floods!"
+ china_event.2.d: "It happened, the river flooded! Across the north-east, crops and houses are devastated! Peasants are already resorting to dire measures to try and survive, and our administrators are overwhealmed by the prices skyrocketing! The flood isn't even over, but we must prepare for terrible consequences!"
+ china_event.2.a: "Hopefully, our efforts will be enough."
+ china_event.2.b: "To the Temples!"
+
+ china_event.3.t: "The Yellow River Flood: Aftermath"
+ china_event.3.d: "The Court survived, but at what cost? We'll need an evaluation of the damages done to grasp the real destruction due to the river."
+ china_event.3.a: "Thanksfully, the damages were limited!"
+ china_event.3.b: "The Mandate of Heaven might be lost..."
+
+ china_event.4.t: "The Red Eyebrows' Rebellion!"
+ china_event.4.d: "Following the recent flooding, a group of bandits has been spotted in the east, calling themselves the 'Red Eyebrows'. This group is made up of peasants, too poor to live with what they have."
+ china_event.4.a: "Send the armies!"
+
+ china_event.5.t: "Lulin and Anhui Revolts!"
+ china_event.5.d: "Reports coming from Anhui and the southern provinces are worrying: more bandits are developing in these areas, terrorising our populations and robbing the villages! They even began attacking the provincial armies!"
+ china_event.5.a: "Crush these peasants!"
+
+
+
+
+
+ china_event.6.t: "The Red Eyebrows Break Away!"
+ china_event.6.d: "The peasants group known as the 'Red Eyebrows' just announced that they will no longer suffer the oppresion of our empire! They declared independence and seek to fight us!"
+ china_event.6.a: "The Mandate of Heaven is crumbling!"
+ china_event.6.b: "Seize the Palace!"
+
+ china_event.7.t: "Lulin Break Away!"
+ china_event.7.d: "The central part of our realm is now independent, known as the 'Lulins'! They sent a messenger, saying that they will no longer answer towards our government."
+ china_event.7.a: "My peasants..."
+ china_event.7.b: "Our place under the Sun!"
+
+ china_event.8.t: "Anhui Province Declares Independence!"
+ china_event.8.d: "Another one! The provinces of Anhui and others in the area declared that they will no longer be submitted to us, proclaiming the 'Anhui's Peasant Government'!"
+ china_event.8.a: "Crush these peasants!"
+ china_event.8.b: "For the Good of the Peasants!"
+
+ china_event.9.t: "Zhao Revolts!"
+ china_event.9.d: "News coming from the kingdom of Zhao are worrying: the kingdom, before submitted to us, has proclaimed their independence, refusing every orders coming from our capital."
+ china_event.9.a: "End this nonsense!"
+ china_event.9.b: "Who are we again?"
+
+ china_event.10.t: "The Province of Nanyue"
+ china_event.10.d: "Official communication from Nanyue:\n\ Due to the current situation within the realm, we, the administrators and governors of Nanyue, are forced to severe contacts with the current government of the Empire. We will therefore be assuming domestic affairs in the region."
+ china_event.10.a: "At least they're not claiming to be something else.."
+
+ china_event.11.t: "The Han in the South"
+ china_event.11.d: "Insights reported that the old Han aristocrats assembled in the south of the country, beginning their reclaiming of the Empire. Civil War is upon us."
+ china_event.11.a: "They're coming for me!"
+ china_event.11.b: "Time to make a move!"
+ china_event.11.c: "Consolidate our holdings!"
+
+ china_event.15.t: "The Reinstitution of the Han Dynasty!"
+ china_event.15.d: "Foreign groups have taken the imperial capital of the realm, therefore ending our control over the rest of the country. We are nothing more than a failed state now, and the Han can triumph in the city."
+ china_event.15.a: "We have lost the Mandate."
+
+ china_event.20.t: "The Chengjia Empire!"
+ china_event.20.d: ""
+ china_event.20.a: "What the hell? Sure."
+ china_event.20.b: "For the Empire!"
+
+
+
+ china_event.50.t: "Government Monopoly on Salt?"
+ china_event.50.d: "The monopoly on salt is an important revenue for the imperial government. However, it does impose heavy work on the peoples of the Empire, as the merchants especially, cannot fully trade this good across our territory.\n\nLetting it go would mean putting a strain on our small finances, but would in return, give us more legitimacy amongst the merchants class, that even if they are parasites, might be good to have in these dark times.\n\nEmperor, the choice is yours."
+ china_event.50.a: "Merchants be damned! We need the money!"
+ china_event.50.b: "Maybe this wasn't a good idea after all..."
+
+ china_event.51.t: "State Monopoly on Iron?"
+ china_event.51.d: "After salt, another essential good is subject to monopoly by the state. Indeed, the question of the government holding a majority of the iron in the Empire is seen by some, especially the Reformists, as hurtful to the economy and should be something of the past.\n\nNow, if we let go of our monopoly on iron, it may give us some support from the merchants and lower classes. However, we might not be able to control the prices of the iron, and we'll lose a portion of our income, meaning that our finances will really be stretched thin.\n\nWhat do you say, Emperor?"
+ china_event.51.a: "For the Empire!"
+ china_event.51.b: "Maybe let's ease it a bit..."
+
+ china_event.52.t: "An Unholy Alliance - Deal from China"
+ china_event.52.d: "An envoy from our southern neighbour has been spotted near the border: he was soon captured and started explaining why he was there. The intruder carried a letter for the Chanyu, asking for a possible alliance between our states.\n\nIt is said that the Chinese are on the brink of civil war and that they are trying to find allies in the region. They seem to have fallen as low as to ask us for it."
+ china_event.52.a: "What?"
+ china_event.52.b: "No alliance with the chinese!"
+
+ china_event.53.t: "An Unholy Alliance - Answer from the Xiongnu"
+ china_event.53.d: "The envoy who was kidnapped by the nomads have been spotted on the northern frontier: he was taken by guards on the border, asking to see the Emperor as quickly as possible, on the matter of the Xiongnu.\n\nOnce sheltered, he explained what happened in the barbarian steppes: we was taken in custody and dragged by horses to the capital of their kingdom before being received by their chief. While having a translator reading the letter to him, he seemed in disbelief, before asking for a scribe to come and write what seemed to be an answer to our proposal."
+ china_event.53.a: "I was sure it would work!"
+ china_event.53.b: "No, wait!"
+
+ china_event.54.t: "Vassalization - Submit to China!"
+ china_event.54.d: "The Chinese sent another envoy to our territory. They are asking us to submit to Wang Mang and expect a tribute to be made to the Emperor's palace in Chang'An soon enough, or they could declare war.\n\nSubmitting a tribute would essentially create a slave-master relation between our nations, making us the weaker link in this scenario. However, it could ensure that no war would be declared on us for some time, and maybe could be an advantage to prepare our armies."
+ china_event.54.a: "If this can stop the wars.."
+ china_event.54.b: "Never! The Xiongnu are not slaves!"
+
+ china_event.55.t: "Vassalization - Envoy from Xiongnu"
+ china_event.55.d: "Our envoy is back, and with it, news! He reported that the chief of the Xiongnu had taken a lot of time to think about it, even asking multiple times through his translator if he understood the request from our state.\n\nHe made this letter for us to read."
+ china_event.55.a: "Ahah! The Empire grows!"
+ china_event.55.b: "These barbarians! Kill them!"
+ china_event.55.c: "We need to be ready, then, we'll attack them."
+
+ china_event.56.t: "Reforming the Income Tax"
+ china_event.56.d: "The income tax introduced by our government was, at first, welcomed by the peasants. But now, many voices are growing against it, amongst rich peoples especially but around poor ones too.\n\nThe ministry has therefore come to the solution of reforming the tax, to either make the rich pay more, or to abolish it entirely."
+ china_event.56.a: "Lower the tax for the poor, rise it for the rich!"
+ china_event.56.b: "Abolish it!"
+
+        ## TRAVEL TO DAQIN EVENTS
+
+ china_event.30.t: "Envoy to Daqin - Shule"
+ china_event.30.d: "Our explorers have arrived to the city state of Shule, in the west of the farthest protectorates we have. From the letters arrived at the palace, they are describing peoples from the mountains, following the faith of buddhism.\n\nThey do not seem hostile and gave our explorers presents and letting them rest in their homes. We should maybe try to establish formal relations with them."
+ china_event.30.a: "A strange fellow indeed.."
+ china_event.30.b: "The ancient city in the mountains!"
+
+ china_event.31.t: "Envoy to Daqin - the Indo-Scythians"
+ china_event.31.d: "Our explorers have arrived to the people in the west of Tianzhu. They have been greeted with suprised looks when asked from where they came, and needed to find translators in the area for them to communicate with the locals.\n\nOther than this communication problem, they said that the peoples here were very nice and that they already had some things coming from our country."
+ china_event.31.a: "Greetings from the Hindus!"
+ china_event.31.b: "Peoples.. interesting peoples."
+
+ china_event.32.t: "Envoy to Daqin - Arsacid"
+ china_event.32.d: "Our explorers have arrived in the country we call Anxi. It is now officially one of the farthest point any subject of our kingdom has reached. In this place, they met with various locals, and even officials.\n\nThey remembered our first visit a few years ago and offered our explorers a home for the night. Here, they were met however with a choice: they could continue towards the Far West, where no one went. Or come back with what they already found."
+ china_event.32.a: "China?"
+ china_event.32.b: "Parthia really is something!"
+ china_event.32.c: "Maybe we should stop here."
+
+ china_event.33.t: "Envoy to Daqin - Coming to Syria"
+ china_event.33.d: "Emperor, incredible news have arrived! Our explorers finally reached the outskirts of Ta-ts'in, symbolising the arrival into Daqin.\n\nThey were met with exotic attire, with people in dresses, quite tall but not that different from the old Han dressing's manners. Our explorers have announced in their letters that they will continue until they find a see of some sort, then come back after talking to an official representation of these lands.\n\nMaybe we will find new allies!"
+ china_event.33.a: "From where?"
+ china_event.33.b: "Ta-ts'in [Syria] is surely exotic!"
+
+ china_event.34.t: "Envoy to Daqin - Alexandria"
+ china_event.34.d: "Our explorers finally arrived to the sea, in the city of Ali-san. It is said that this city is one of the greatest one in the whole of Daqin, spanding across hundred of li. Their infrastructure is incredible, as expected of a civilised country like us.\n\nThey also have a fine cloth which some people say is made from the down of \"water sheep\", but which is made, in fact, from the cocoons of wild silkworms. They blend all sorts of fragrances, and by boiling the juice, make a compound perfume.\n\nIn addition, they produce coins, golden and silver ones, by thousands. They have a mighty king that, when the times are dire, accept to step down if he is asked to do so.\n\nOur explorers will stay a bit longer to try to have a talk with officials of this city."
+ china_event.34.a: "Where are they going?"
+ china_event.34.b: "The great Ali-san [Alexandria]!"
+
+ china_event.35.t: "Envoy to Daqin - Last Seeing"
+ china_event.35.d: "Our explorers successfully contacted a man of power of this country. They discussed, and after some time, it is said that the Daqin officials couldn't provide what we wanted.\n\nIt is said that they couldn't establish a formal alliance with us, both because they didn't know much about our nation and that the people of Anxi would intentionally disrupt their efforts.\n\nThey ended the meeting on an exchange of gifts to come back to our nation."
+ china_event.35.a: "An alliance? Sorry, we can't."
+ china_event.35.b: "Sadly, we go home without much."
+
+ china_event.36.t: "Envoy to Daqin - Back Home"
+ china_event.36.d: "Our explorers finally came back to Chang'an today, with countless stories about the west of our country. It is said that numerous kingdoms inhabits the lands behind the mountains, with plenty of gifts! The Kingdom of Daqin is one of a kind, and we should try to send others explorers to it when we can! These lands are full of promises."
+ china_event.36.a: "What a travel!"
+
+ china_event.37.t: "Envoy to Daqin - Back Home"
+ china_event.37.d: "Our explorers are back from the western lands. Sadly, they stopped in Anxi, but they still discovered many things and brought back many gifts from their travel."
+ china_event.37.a: "We've only seen so much.."
+
+       ## MANDATE OF HEAVEN EVENTS
+
+ china_hidden_event.1.t: "The Mandate of Heaven is slipping!"
+ china_hidden_event.1.d: "Our envoys have arrived: they have grave news for the Empire. It seems that some agitators within the country are claiming to be the real emperors of China and thus claim that they hold the Mandate of Heaven and are the Children of it.\n\nOf course, we cannot kill them as they have many supporters, but we need to keep these usurpators on the spot, or else they could gather enough support and overthrow us!"
+ china_hidden_event.1.a: "Usurpators!"
+
+ china_hidden_event.2.t: "A Claimant of the Mandate has stopped!"
+ china_hidden_event.2.d: "It appears that a claimant of the Mandate has disappeared. They seemed to claim to come from a significant dynasty, but have now stopped in their usurpation of the throne and disappeared from the public."
+ china_hidden_event.2.a: "Great! We are the only Emperors."
+
+ china_hidden_event.3.t: "We've lost the Mandate!"
+ china_hidden_event.3.d: "Emperor, we have lost the Mandate.\n\nUsurpators have successfully convinced enough of our peasants that they were the rightful heir to the Empire. Under the overwhealming forces, we were forced to flee and hide in the depths of the Empire.\n\nBut not everything is lost: our claim to the Empire is still strong, and we must not be weakened! Glory to the Empire of China!"
+ china_hidden_event.3.a: "We'll claim it back!"
+
+
+
+ ## FLAGS
+ yellow_river_prevention: "We have taken Measures to Prevent the Flooding of the Yellow River"
+ yellow_river_flooded: "The Yellow River has Flooded"
+
+ ## TOOLTIPS
+ yellow_river_prevention_tooltip: "§GWe will prepare against the Yellow River's usual flooding.§!"
+
+ ## DECISIONS
+ appease_the_masses: "Appease the Masses"
+ help_the_peasants: "Help the Peasants"
+ prepare_the_yellow_river_flood: "Prepare for the Yellow River's Flood"
+ mandate_of_heaven: "The Mandate of Heaven"
+
+ ## COUNTRY COSMETIC
+ nyu_puppet_han: "Military Administration of Nanyue"
+ nyu_puppet_han_DEF: "the Military Administration of Nanyue"
+
+ ## TRAITS
+ XIN_children_of_heaven: "Child of Heaven"

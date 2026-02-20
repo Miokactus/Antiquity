@@ -10,8 +10,8 @@ state = {
 		victory_points = {
 			476 3
 		}
-		owner = TSA
-		add_core_of = TSA
+		owner = BST
+		add_core_of = BST
 		buildings = {
 			infrastructure = 2 #was: 5
 			#

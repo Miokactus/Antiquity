@@ -1,0 +1,814 @@
+internal_affairs_xin = {
+	agricultural_support1 = {
+		icon = generic_civil_support
+		days_re_enable = 100
+		cost = 50
+		allowed = {
+			original_tag = XIN
+    	}
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+            add_to_variable = {
+    			var = xin_peasant_support
+				value = 1
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+}
+
+the_chinese_army = {
+	disband = {
+		icon = generic_civil_support
+		days_re_enable = 1
+		cost = 20
+		allowed = {
+			original_tag = XIN
+    	}
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+			random_country_division = {
+                limit = {
+                    division_has_majority_template = infantry
+                }
+                destroy_unit = yes
+            }
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 20
+    		modifier = {
+        		add = -10
+        		has_war = yes
+    		}
+			modifier = {
+				add = -500
+				has_army_manpower = {
+    				size < 150000
+				}
+			}
+			modifier = {
+				add = 50
+				has_idea = XIN_unsustainable_army
+			}
+		}
+	}
+	disband_in_batch = {
+		icon = generic_civil_support
+		days_re_enable = 1
+		cost = 80
+		allowed = {
+			original_tag = XIN
+    	}
+		available = {
+		}
+		visible = {
+		}
+		complete_effect = {
+			random_country_division = {
+                limit = {
+                    division_has_majority_template = infantry
+                }
+                destroy_unit = yes
+            }
+			random_country_division = {
+                limit = {
+                    division_has_majority_template = infantry
+                }
+                destroy_unit = yes
+            }
+			random_country_division = {
+                limit = {
+                    division_has_majority_template = infantry
+                }
+                destroy_unit = yes
+            }
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 20
+    		modifier = {
+        		add = -100
+        		has_war = yes
+    		}
+			modifier = {
+				add = -500
+				has_army_manpower = {
+    				size < 150000
+				}
+			}
+			modifier = {
+				add = 50
+				has_idea = XIN_unsustainable_army
+			}
+		}
+	}
+}
+
+mandate_of_heaven = {
+	### TOWARDS LEGITIMATE DYNASTY
+	appease_the_masses = {
+		icon = generic_civil_support
+		days_re_enable = 50
+		cost = 20
+		allowed = {
+			has_power_balance = {
+    		    id = XIN_heaven_mandate
+			}
+    	}
+		available = {
+		}
+		visible = {
+            has_power_balance = {
+    		    id = XIN_heaven_mandate
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.05
+    			tooltip_side = XIN_legitimate_dynasty_side
+			}
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 120
+		}
+	}
+
+	help_the_peasants = {
+		icon = generic_civil_support
+		days_re_enable = 120
+		cost = 60
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.08
+    			tooltip_side = XIN_legitimate_dynasty_side
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = farm
+    				level = 2
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 75
+		}
+	}
+
+	prepare_the_yellow_river_flood = {
+		icon = generic_civil_support
+		days_re_enable = 365
+		cost = 120
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+    	}
+		available = {
+			NOT = { 
+				OR = { 
+					has_country_flag = yellow_river_flooded
+					has_country_flag = yellow_river_prevention
+				}
+			}
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 0.1
+    			tooltip_side = XIN_legitimate_dynasty_side
+			}
+			set_country_flag = yellow_river_prevention
+			custom_efffect_tooltip = yellow_river_prevention_tooltip
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 30
+			modifier = {
+				add = 250
+				has_political_power > 200 ## focus on smaller things
+			}
+		}
+	}
+
+	epic_decision = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = 1
+    			tooltip_side = XIN_legitimate_dynasty_side
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+
+	### TOWARDS OPEN REVOLT
+
+	epic_decision_bad = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate
+    			value = -1
+    			tooltip_side = XIN_open_revolt_side
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+
+
+	change = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+		}
+		complete_effect = {
+            remove_power_balance = {
+			    id = XIN_heaven_mandate
+			}
+            set_power_balance = {
+    		    id = XIN_heaven_mandate_claimant
+			    set_value = 0
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+	change2 = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate
+			}
+		}
+		complete_effect = {
+			
+		}
+		timeout_effect = {
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+mandate_of_heaven_claim = {
+	### TOWARDS LEGITIMATE DYNASTY
+	CHI_appease_the_masses = {
+		icon = generic_civil_support
+		days_re_enable = 50
+		cost = 20
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate_claimant
+    			value = 0.05
+    			tooltip_side = CHI_legitimate_dynasty_side
+			}
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 120
+		}
+	}
+
+	CHI_help_the_peasants = {
+		icon = generic_civil_support
+		days_re_enable = 120
+		cost = 60
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate_claimant
+    			value = 0.08
+    			tooltip_side = CHI_legitimate_dynasty_side
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = farm
+    				level = 2
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 75
+		}
+	}
+
+	CHI_prepare_the_yellow_river_flood = {
+		icon = generic_civil_support
+		days_re_enable = 365
+		cost = 120
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+    	}
+		available = {
+			NOT = { 
+				OR = { 
+					has_country_flag = yellow_river_flooded
+					has_country_flag = yellow_river_prevention
+				}
+			}
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate_claimant
+    			value = 0.1
+    			tooltip_side = CHI_legitimate_dynasty_side
+			}
+			set_country_flag = yellow_river_prevention
+			custom_efffect_tooltip = yellow_river_prevention_tooltip
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 30
+			modifier = {
+				add = 250
+				has_political_power > 200 ## focus on smaller things
+			}
+		}
+	}
+
+	CHI_epic_decision = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate_claimant
+    			value = 1
+    			tooltip_side = CHI_legitimate_dynasty_side
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+	CHI_epic_decision2 = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate_claimant
+    			value = 0.1
+    			tooltip_side = CHI_legitimate_dynasty_side
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+
+	### TOWARDS OPEN REVOLT
+
+	CHI_epic_decision_bad = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate_claimant
+    			value = -1
+    			tooltip_side = CHI_open_revolt_side
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+	CHI_epic_decision_bad2 = {
+		icon = generic_civil_support
+		cost = 1
+		allowed = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+    	}
+		available = {
+		}
+		visible = {
+			has_power_balance = {
+    			id = XIN_heaven_mandate_claimant
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XIN_heaven_mandate_claimant
+    			value = -0.1
+    			tooltip_side = CHI_legitimate_dynasty_side
+			}
+		}
+		timeout_effect = {
+		}
+	}
+}
+
+
+political_actions = {
+	claim_the_mandate = {
+		icon = generic_civil_support
+		days_re_enable = 100
+		cost = 50
+		allowed = {
+			any_country = {
+				exists = yes
+			}
+    	}
+		available = {
+			NOT = {
+				has_power_balance = {
+    				id = XIN_heaven_mandate
+				}
+				has_power_balance = {
+    				id = XIN_heaven_mandate_claimant
+				}
+			}
+			744 = {
+				is_owned_by = ROOT
+			}
+		}
+		visible = {
+			ROOT = {
+				OR = {
+					tag = LLU
+					tag = RYY
+					tag = ANH
+					tag = HEB
+					tag = CJG
+					tag = NYU
+					tag = LUO
+					tag = XIN
+					tag = XAI
+					tag = ANN
+				}
+				NOT = {
+					OR = {
+						has_power_balance = {
+    						id = XIN_heaven_mandate_claimant
+						}
+						has_power_balance = {
+    						id = XIN_heaven_mandate
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+				every_country = {
+                    limit = {
+						has_power_balance = {
+                            id = XIN_heaven_mandate_claimant
+                        }
+                    }
+                    remove_power_balance = {
+                        id = XIN_heaven_mandate_claimant
+                    }
+					drop_cosmetic_tag = yes
+                    every_other_country = {
+                        limit = {
+                            owns_state = 744
+                        }
+                        set_power_balance = {
+                    		id = XIN_heaven_mandate_claimant
+                    		set_value = 0
+                		}
+						set_cosmetic_tag = chinese_empire
+                    }
+                }
+				set_cosmetic_tag = chinese_empire
+				set_power_balance = {
+                    id = XIN_heaven_mandate_claimant
+                    set_value = 0
+                }
+		}
+		timeout_effect = {
+		}
+	}
+}
+
+
+
+
+
+	## OPEN REVOLT
+crisis = {
+
+	peasants_rebellion = {
+		icon = generic_civil_support
+		allowed = {
+			OR = {
+				tag = XIN
+				tag = RYY
+				tag = LLU
+			}
+    	}
+		available = {
+			AND = {
+				RYY = { exists = no }
+				LLU = { exists = no }
+			}
+			XIN = { exists = yes }
+		}
+		days_mission_timeout = 60
+		activation = {
+			has_global_flag = XIN_dynasty_collapse
+		}
+		visible = {
+			OR = {
+				tag = XIN
+				tag = RYY
+				tag = LLU
+			}
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			XIN = {
+				declare_war_on = {
+    				target = RYY
+    				type = annex_everything
+				}
+				declare_war_on = {
+    				target = LLU
+    				type = annex_everything
+				}
+				declare_war_on = {
+    				target = ANH
+    				type = annex_everything
+				}
+			}
+			clr_global_flag = XIN_dynasty_collapse
+		}
+	}
+
+	peasants_rebellion2 = {
+		icon = generic_civil_support
+		allowed = {
+			OR = {
+				tag = ANN
+				tag = RYY
+				tag = LLU
+			}
+    	}
+		available = {
+			OR = {
+				AND = {
+					RYY = { exists = no }
+					LLU = { exists = no }
+					ANN = { exists = yes }
+				}
+				AND = {
+					RYY = { exists = no }
+					LLU = { exists = yes }
+					ANN = { exists = no }
+				}
+				AND = {
+					RYY = { exists = yes }
+					LLU = { exists = no }
+					ANN = { exists = no }
+				}
+			}
+		}
+		days_mission_timeout = 160
+		activation = {
+			has_global_flag = XIN_dynasty_collapse2
+		}
+		visible = {
+			OR = {
+				tag = ANN
+				tag = RYY
+				tag = LLU
+			}
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			ANN = {
+				declare_war_on = {
+    				target = RYY
+    				type = annex_everything
+				}
+				declare_war_on = {
+    				target = LLU
+    				type = annex_everything
+				}
+				declare_war_on = {
+    				target = ANH
+    				type = annex_everything
+				}
+				if = {
+					limit = {
+						XIN = { exists = yes }
+					}
+					declare_war_on = {
+    					target = XIN
+    					type = annex_everything
+					}
+				}
+			}
+			clr_global_flag = XIN_dynasty_collapse2
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+korean_situation_xin = {
+
+}
+
+sino_xiongnu_relations = {
+
+}

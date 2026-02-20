@@ -1,0 +1,211 @@
+GOR_interest_towards_unification = {
+    allowed = {
+        original_tag = GOR
+    }
+    enable = {
+        OR = {
+        BAE = { exists = yes }
+        EYA = { exists = yes }
+        MAH = { exists = yes }
+        JIN = { exists = yes }
+        BYE = { exists = yes }
+        OKJ = { exists = yes }
+        }
+    }
+    abort = {
+		BAE = { exists = no }
+        EYA = { exists = no }
+        MAH = { exists = no }
+        JIN = { exists = no }
+        BYE = { exists = no }
+        BYE = { exists = no }
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = conquer
+        id = BAE
+        value = 100
+    }
+	ai_strategy = {
+        type = conquer
+        id = EYA
+        value = 100
+    }
+    ai_strategy = {
+        type = conquer
+        id = EYE
+        value = 100
+    }
+    ai_strategy = {
+        type = conquer
+        id = OKJ
+        value = 100
+    }
+
+    ai_strategy = {
+        type = antagonize
+        id = BAE
+        value = 100
+    }
+	ai_strategy = {
+        type = antagonize
+        id = EYA
+        value = 100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = EYE
+        value = 100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = OKJ
+        value = 100
+    }
+
+    ai_strategy = {
+        type = antagonize
+        id = MAH
+        value = 100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = JIN
+        value = 100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = BYE
+        value = 100
+    }
+}
+
+GOR_justify_wargoals = {
+    allowed = {
+        original_tag = GOR
+    }
+    enable = {
+        AND = {
+            OR = {
+                BAE = { exists = yes }
+                EYA = { exists = yes }
+                MAH = { exists = yes }
+                JIN = { exists = yes }
+                BYE = { exists = yes }
+                OKJ = { exists = yes }
+            }
+            date > 15.06.02
+        }
+    }
+    abort = {
+		BAE = { exists = no }
+        EYA = { exists = no }
+        MAH = { exists = no }
+        JIN = { exists = no }
+        BYE = { exists = no }
+        BYE = { exists = no }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = diplo_action_desire
+        id = OKJ
+        value = 10000
+        target = generate_wargoal
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = EYE
+        value = 5000
+        target = generate_wargoal
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = EYA
+        value = 3000
+        target = generate_wargoal
+    }
+    ai_strategy = {
+        type = diplo_action_desire
+        id = BAE
+        value = 2000
+        target = generate_wargoal
+    }
+}
+
+GOR_antagonize_china = {
+    allowed = {
+        original_tag = GOR
+    }
+    enable = {
+        1032 = {
+            OR = {
+                is_owned_by = XIN
+                is_owned_by = ANN
+            }
+        }
+        1031 = {
+            OR = {
+                is_owned_by = XIN
+                is_owned_by = ANN
+            }
+        }
+        716 = {
+            OR = {
+                is_owned_by = XIN
+                is_owned_by = ANN
+            }
+        }
+        745 = {
+            OR = {
+                is_owned_by = XIN
+                is_owned_by = ANN
+            }
+        }
+    }
+    abort = {
+        1032 = {
+            NOT = {
+                OR = {
+                    is_owned_by = XIN
+                    is_owned_by = ANN
+                }
+            }
+        }
+        1031 = {
+            NOT = {
+                OR = {
+                    is_owned_by = XIN
+                    is_owned_by = ANN
+                }
+            }
+        }
+        716 = {
+            NOT = {
+                OR = {
+                    is_owned_by = XIN
+                    is_owned_by = ANN
+                }
+            }
+        }
+        745 = {
+            NOT = {
+                OR = {
+                    is_owned_by = XIN
+                    is_owned_by = ANN
+                }
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = antagonize
+        id = ANN
+        value = 100
+    }
+    ai_strategy = {
+        type = antagonize
+        id = XIN
+        value = 100
+    }
+}

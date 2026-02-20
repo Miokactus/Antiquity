@@ -28,6 +28,9 @@ ideologies = {
 			monarcho_socialism = {
 			}
 
+			peasants_assemblies = {
+			}
+
 			jesus_theocracy = {
 				can_be_randomly_selected = no
 			}
@@ -52,7 +55,6 @@ ideologies = {
 			can_send_volunteers = yes
 			can_puppet = yes
 			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = yes
 			can_guarantee_other_ideologies = yes
 		}
 
@@ -127,6 +129,18 @@ ideologies = {
 			}
 
 			jesus_monarchism = {
+				can_be_randomly_selected = no
+			}
+
+			roman_paternalism = {
+				can_be_randomly_selected = no
+			}
+
+			parthian_nobility = {
+				can_be_randomly_selected = no
+			}
+
+			colonial_government = {
 				can_be_randomly_selected = no
 			}
 		}
@@ -269,6 +283,9 @@ ideologies = {
 			}
 
 			tribalism = {
+			}
+
+			chieftain = {
 			}
 
 		}

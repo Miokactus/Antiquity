@@ -5,9 +5,10 @@ state=
 	manpower = 2160100
 	
 	state_category = town
-	
-	history=
-	{
+	resources = {
+		grain = 2
+	}
+	history= {
 		owner = XIN
 		add_core_of = XIN
 		
@@ -18,8 +19,8 @@ state=
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 1
 		}
 
 		1938.10.25 = {

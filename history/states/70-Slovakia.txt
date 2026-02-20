@@ -9,13 +9,14 @@ state = {
 	state_category = city
 	
 	resources = {
-		#= 1 # was: 2
+		wood = 9
+		grain = 2
 	}
 
 	history = {
 
-		owner = DAC
-		add_core_of = DAC
+		owner = QUA
+		add_core_of = QUA
 		
 		buildings = {
 			infrastructure = 2

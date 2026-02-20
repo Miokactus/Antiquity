@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		owner = VDN
-		add_core_of = VDN
+		owner = EAR
+		add_core_of = EAR
 		victory_points = {
 			6380 50 
 		}

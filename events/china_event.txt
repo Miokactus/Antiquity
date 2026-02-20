@@ -1,0 +1,1649 @@
+##############
+#China EVENTS#
+##############
+
+add_namespace = china_event
+add_namespace = china_hidden_event
+
+#Someone is claiming the Mandate!
+country_event = {
+	id = china_hidden_event.1
+	title = china_hidden_event.1.t
+	desc = china_hidden_event.1.d
+	trigger = {
+    }
+	mean_time_to_happen = { days = 2 }
+	is_triggered_only = yes
+	picture = GFX_report_event_CHL_chillan_earthquake
+	option = {
+		name = china_hidden_event.1.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+#Claimant of the Mandate has stopped!
+country_event = {
+	id = china_hidden_event.2
+	title = china_hidden_event.2.t
+	desc = china_hidden_event.2.d
+	trigger = {
+    }
+	mean_time_to_happen = { days = 2 }
+	is_triggered_only = yes
+	picture = GFX_report_event_CHL_chillan_earthquake
+	option = { #Great!
+		name = china_hidden_event.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+#We've lost the Mandate
+country_event = {
+	id = china_hidden_event.3
+	title = china_hidden_event.3.t
+	desc = china_hidden_event.3.d
+	trigger = {
+    }
+	mean_time_to_happen = { days = 2 }
+	is_triggered_only = yes
+	picture = GFX_report_event_CHL_chillan_earthquake
+	option = { #Great!
+		name = china_hidden_event.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+
+
+
+
+
+#Yellow River About to Flood
+country_event = {
+	id = china_event.1
+	title = china_event.1.t
+	desc = china_event.1.d
+	trigger = {
+		date > 16.11.02
+		original_tag = XIN
+    }
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = yes
+	picture = GFX_report_event_CHL_chillan_earthquake
+	option = {
+		name = china_event.1.a
+		ai_chance = { factor = 1 }
+		country_event = { 
+			id = china_event.2
+			days = 10
+		}
+	}
+}
+
+#Yellow River is Flooding!
+country_event = {
+	id = china_event.2
+	title = china_event.2.t
+	desc = china_event.2.d
+	trigger = {
+    }
+	picture = GFX_report_event_CHL_chillan_earthquake
+	is_triggered_only = yes
+	option = { ## Hopefully, our efforts will be enough..
+		name = china_event.2.a
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = yellow_river_prevention }
+		set_country_flag = yellow_river_flooded
+		add_power_balance_value = {
+    		id = XIN_heaven_mandate
+    		value = -0.05
+    		tooltip_side = XIN_open_revolt_side
+		}
+		add_manpower = -120000
+		add_fuel = -50000
+		XIN = { 
+			country_event = {
+				id = china_event.3
+				days = 15
+			}
+		}
+	}
+	option = { ## Arg! China's Sorrow!
+		name = china_event.2.b
+		ai_chance = { factor = 1 }
+		trigger = { NOT = { has_country_flag = yellow_river_prevention }}
+		set_country_flag = yellow_river_flooded
+		add_power_balance_value = {
+    		id = XIN_heaven_mandate
+    		value = -0.1
+    		tooltip_side = XIN_open_revolt_side
+		}
+		add_manpower = -220000
+		add_fuel = -80000
+		XIN = { 
+			country_event = {
+				id = china_event.3
+				days = 15
+			}
+		}
+	}
+}
+
+#Recovering from the Flooding
+country_event = {
+	id = china_event.3
+	title = china_event.3.t
+	desc = china_event.3.d
+	trigger = {
+    }
+	picture = GFX_report_event_CHL_chillan_earthquake
+	is_triggered_only = yes
+	option = { ## Thanks to our preparations, the damages were limited.
+		name = china_event.3.a
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = yellow_river_prevention }
+		clr_country_flag = yellow_river_flooded
+		clr_country_flag = yellow_river_prevention
+		add_timed_idea = {
+			idea = XIN_fertile_yellow_river
+			days = 436
+		}
+	}
+	option = { ## A Sad Day for China..
+		name = china_event.3.b
+		ai_chance = { factor = 1 }
+		trigger = { NOT = { has_country_flag = yellow_river_prevention }}
+		clr_country_flag = yellow_river_flooded
+		add_timed_idea = {
+			idea = XIN_fertile_yellow_river
+			days = 365
+		}
+	}
+}
+
+
+
+
+
+
+
+
+#Peasants' Rebellion [Red Eyebrows]
+country_event = {
+	id = china_event.4
+	title = china_event.4.t
+	desc = china_event.4.d
+	fire_only_once = yes
+	trigger = {
+		tag = XIN
+		OR = {
+			AND = {
+				date > 16.04.01
+				XIN = {
+					power_balance_value = {
+    					id = XIN_heaven_mandate
+    					value < 0.35
+					}
+				}
+				NOT = { has_completed_focus = XIN_the_fifth_column }
+			}
+			has_completed_focus = XIN_links_with_the_red_eyebrows
+		}
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	option = { ## Red Eyebrows Rebellion!
+		name = china_event.4.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		XAI = {
+			country_event = {
+				id = xai_event.1
+				days = 5
+			}
+		}
+		597 = {
+			add_core_of = RYY
+			force_enable_resistance = {
+    			clear = no
+    			occupier = XIN
+    			occupied = RYY
+			}
+			start_resistance = yes
+			set_resistance = 59
+		}
+		743 = {
+			add_core_of = RYY
+			force_enable_resistance = {
+    			clear = no
+    			occupier = XIN
+    			occupied = RYY
+			} 
+			start_resistance = yes
+			set_resistance = 62
+		}
+		744 = {
+			add_core_of = RYY
+			force_enable_resistance = {
+    			clear = no
+    			occupier = XIN
+    			occupied = RYY
+			}
+			start_resistance = yes
+			set_resistance = 49
+		}
+		hidden_effect = {
+			country_event = {
+				id = china_event.5
+				days = 5
+			}
+		}
+	}
+}
+
+#Peasants' Rebellion [Lulin and Anhui]
+country_event = {
+	id = china_event.5
+	title = china_event.5.t
+	desc = china_event.5.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = XIN
+		OR = {
+			AND = {
+				has_completed_focus = XIN_links_with_the_red_eyebrows
+				has_completed_focus = XIN_create_peasants_militias
+			}
+			AND = {
+				date > 16.05.01
+				XIN = {
+					power_balance_value = {
+    					id = XIN_heaven_mandate
+    					value < 0.25
+					}
+				}
+				NOT = { has_completed_focus = XIN_the_fifth_column }
+			}
+		}
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	option = { ## Lulin Rebellion!
+		name = china_event.5.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		607 = {
+			add_core_of = LLU
+			force_enable_resistance = {
+    			clear = no
+    			occupier = XIN
+    			occupied = LLU
+			}
+			start_resistance = yes
+			set_resistance = 54
+		}
+		620 = {
+			add_core_of = LLU
+			force_enable_resistance = {
+    			clear = no
+    			occupier = XIN
+    			occupied = LLU
+			}
+			start_resistance = yes
+			set_resistance = 50
+		}
+		602 = {
+			add_core_of = LLU
+			force_enable_resistance = {
+    			clear = no
+    			occupier = XIN
+    			occupied = LLU
+			}
+			start_resistance = yes
+			set_resistance = 46
+		}
+
+		606 = {
+			add_core_of = ANH
+			force_enable_resistance = {
+				clear = no
+				occupier = XIN
+				occupied = ANH
+			}
+			start_resistance = yes
+			set_resistance = 55
+		}
+		598 = {
+			add_core_of = ANH
+			force_enable_resistance = {
+				clear = no
+				occupier = XIN
+				occupied = ANH
+			}
+			start_resistance = yes
+			set_resistance = 52
+		}
+		613 = {
+			add_core_of = ANH
+			force_enable_resistance = {
+				clear = no
+				occupier = XIN
+				occupied = ANH
+			}
+			start_resistance = yes
+			set_resistance = 48
+		}
+		749 = {
+			add_core_of = ANH
+			force_enable_resistance = {
+				clear = no
+				occupier = XIN
+				occupied = ANH
+			}
+			start_resistance = yes
+			set_resistance = 41
+		}
+		596 = {
+			add_core_of = ANH
+			force_enable_resistance = {
+				clear = no
+				occupier = XIN
+				occupied = ANH
+			}
+			start_resistance = yes
+			set_resistance = 38
+		}
+	}
+}
+
+
+#Peasants' Rebellion [Red Eyebrows Independent]
+country_event = {
+	id = china_event.6
+	title = china_event.6.t
+	desc = china_event.6.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = XIN
+		OR = {
+		has_completed_focus = XIN_proclaim_liu_xuan_emperor
+		AND = { 
+			date > 16.11.01
+			XIN = {
+				power_balance_value = {
+    				id = XIN_heaven_mandate
+    				value < -0.15
+				}
+			}
+			NOT = { has_completed_focus = XIN_the_fifth_column }
+		}
+		}
+    }
+	picture = GFX_report_event_XIN_peasants_revolt
+	option = { ## Red Eyebrows Rebellion Independent!
+		name = china_event.6.a
+		ai_chance = { factor = 1 }
+		trigger = { NOT = { has_completed_focus = XIN_the_fifth_column } }
+		RYY = {
+			transfer_state = 597
+			transfer_state = 743
+			load_oob = "RYY_14"
+		}
+		XAI = { 
+			country_event = {
+				id = xai_event.1
+				days = 8
+			}
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.7
+					days = 35
+				}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+			}
+		}
+	}
+	option = { ## Red Eyebrows Rebellion Independent! [CHANGE]
+		name = china_event.6.b
+		ai_chance = { factor = 1 }
+		trigger = { has_completed_focus = XIN_the_fifth_column }
+		RYY = {
+			transfer_state = 597
+			transfer_state = 743
+		}
+		RYY = {
+			change_tag_from = ROOT
+			load_oob = "RYY_14"
+		}
+		XAI = { 
+			country_event = {
+				id = xai_event.1
+				days = 8
+			}
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.7
+					days = 35
+				}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+			}
+		}
+	}
+}
+
+#Peasants' Rebellion [Lulin Independent]
+country_event = {
+	id = china_event.7
+	title = china_event.7.t
+	desc = china_event.7.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = XIN
+		OR = {
+			has_country_flag = XIN_revolt_started
+		AND = {
+			date > 17.03.01
+			XIN = {
+				power_balance_value = {
+    				id = XIN_heaven_mandate
+    				value < -0.25
+				}
+			}
+			NOT = { has_completed_focus = XIN_the_fifth_column }
+		}
+		}
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	option = { ## Lulin Rebellion Independent!
+		name = china_event.7.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		LLU = {
+			transfer_state = 607
+			transfer_state = 620
+			transfer_state = 602
+			load_oob = "LLU_14"
+			create_faction_from_template = {
+   				template = faction_template_regional
+   				name = peasants_rebellion_china
+   				icon = GFX_faction_logo_generic_2
+   				color = { 163 2 0 }
+			}
+			add_to_faction = RYY
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.8
+					days = 25
+				}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+			}
+			
+		}
+	}
+	option = { ## Lulin Rebellion Independent! [CHANGE]
+		name = china_event.7.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		LLU = {
+			transfer_state = 607
+			transfer_state = 620
+			transfer_state = 602
+		}
+		LLU = {
+			change_tag_from = ROOT
+			load_oob = "LLU_14"
+			create_faction_from_template = {
+   				template = faction_template_regional
+   				name = peasants_rebellion_china
+   				icon = GFX_faction_logo_generic_2
+   				color = { 163 2 0 }
+			}
+			add_to_faction = RYY
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.8
+					days = 25
+				}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+			}
+		}
+	}
+}
+
+
+#Peasants' Rebellion [Anhui Rebellion]
+country_event = {
+	id = china_event.8
+	title = china_event.8.t
+	desc = china_event.8.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = XIN
+		OR = {
+			has_country_flag = XIN_revolt_started
+		AND = {
+			date > 17.09.01
+			XIN = {
+				power_balance_value = {
+    				id = XIN_heaven_mandate
+    				value < -0.35
+				}
+			}
+			NOT = { has_completed_focus = XIN_the_fifth_column }
+		}
+		}
+    }
+	picture = GFX_report_event_XIN_peasants_revolt
+	option = { ## Anhui Rebellion Independent!
+		name = china_event.8.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		ANH = {
+			transfer_state = 606
+			transfer_state = 598
+			transfer_state = 613
+			transfer_state = 749
+			transfer_state = 596
+			add_state_core = 606
+			add_state_core = 598
+			add_state_core = 613
+			add_state_core = 749
+			add_state_core = 596
+			load_oob = "ANH_14"
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.9
+					days = 25
+				}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+			}
+		}
+	}
+	option = { ## Anhui Rebellion Independent! [CHANGE]
+		name = china_event.8.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		ANH = {
+			transfer_state = 606
+			transfer_state = 598
+			transfer_state = 613
+			transfer_state = 749
+			transfer_state = 596
+			add_state_core = 606
+			add_state_core = 598
+			add_state_core = 613
+			add_state_core = 749
+			add_state_core = 596
+		}
+		ANH = {
+			change_tag_from = ROOT
+			load_oob = "ANH_14"
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.9
+					days = 25
+				}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+				random_country_division = {
+                	limit = {
+                	    division_has_majority_template = infantry
+                	}
+                	destroy_unit = yes
+            	}
+			}
+		}
+	}
+}
+
+#Peasants' Rebellion [Hebei Rebellion]
+country_event = {
+	id = china_event.9
+	title = china_event.9.t
+	desc = china_event.9.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = XIN
+		OR = {
+			has_country_flag = XIN_revolt_started
+		AND = {
+			date > 18.03.01
+			XIN = {
+				power_balance_value = {
+    				id = XIN_heaven_mandate
+    				value < -0.3
+				}
+			}
+			NOT = { has_completed_focus = XIN_the_fifth_column }
+		}
+		}
+    }
+	picture = GFX_report_event_XIN_generic_decoration
+	option = { ## Hebei Rebellion Independent!
+		name = china_event.9.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		HEB = {
+			transfer_state = 614
+			transfer_state = 608
+			transfer_state = 609
+			transfer_state = 745
+			add_state_core = 614
+			add_state_core = 608
+			add_state_core = 609
+			add_state_core = 745
+			load_oob = "HEB_14"
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.10
+					days = 50
+				}
+			}
+			set_global_flag = XIN_dynasty_collapse
+		}
+	}
+	option = { ## Hebei Rebellion Independent! [CHANGE]
+		name = china_event.9.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		HEB = {
+			transfer_state = 614
+			transfer_state = 608
+			transfer_state = 609
+			transfer_state = 745
+			add_state_core = 614
+			add_state_core = 608
+			add_state_core = 609
+			add_state_core = 745
+		}
+		HEB = {
+			change_tag_from = ROOT
+			load_oob = "HEB_14"
+		}
+		hidden_effect = {
+			XIN = {
+				country_event = {
+					id = china_event.10
+					days = 50
+				}
+			}
+			set_global_flag = XIN_dynasty_collapse
+		}
+	}
+}
+
+
+
+#Province of Nanyue
+country_event = {
+	id = china_event.10
+	title = china_event.10.t
+	desc = china_event.10.d
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			has_country_flag = XIN_revolt_started
+		AND = {
+			date > 18.07.01
+			XIN = {
+				power_balance_value = {
+    				id = XIN_heaven_mandate
+    				value < -0.5
+				}
+			}
+			NOT = { has_completed_focus = XIN_the_fifth_column }
+		}
+		}
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	option = { ## Province of Nanyue Independent!
+		name = china_event.10.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		NYU = {
+			transfer_state = 1039
+			transfer_state = 594
+			transfer_state = 592
+			transfer_state = 728
+			transfer_state = 591
+			transfer_state = 729
+			
+			add_state_core = 1039
+			add_state_core = 594
+			add_state_core = 592
+			add_state_core = 728
+			add_state_core = 591
+			add_state_core = 729
+		}
+	}
+}
+
+#Han Dynasty in the South!
+country_event = {
+	id = china_event.11
+	title = china_event.11.t
+	desc = china_event.11.d
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = XIN
+			tag = RYY
+		}
+		744 = {
+			OR = {
+				is_owned_by = LLU
+				is_owned_by = RYY
+			}
+		}
+    }
+	picture = GFX_report_event_XIN_peasants_revolt
+	option = { ## Arg
+		name = china_event.11.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		ANN = {
+			transfer_state = 600
+			transfer_state = 595
+			transfer_state = 593
+			if = {
+				limit = {
+					AND = {
+						1041 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						1042 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+					}
+				}
+				transfer_state = 1041
+				transfer_state = 1042
+			}
+			if = {
+				limit = {
+					AND = {
+						605 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						750 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						748 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						603 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						325 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						599 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+					}
+				}
+				transfer_state = 605
+				transfer_state = 750
+				transfer_state = 748
+				transfer_state = 603
+				transfer_state = 325
+				transfer_state = 599
+				load_oob = "ANN_full"
+				else = {
+					load_oob = "ANN_partial"
+					set_capital = {
+						state = 595
+						remember_old_capital = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NYU = {
+						is_subject = no
+						has_war = no
+					}
+				}
+				set_autonomy = {
+    				target = NYU
+    				autonomous_state = autonomy_puppet
+				}
+				NYU = {
+					set_cosmetic_tag = nyu_puppet_han
+				}
+			}
+		}
+		set_global_flag = XIN_dynasty_collapse2
+	}
+	option = { ## Change from Red Eyebrows
+		name = china_event.11.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = RYY }
+		ANN = {
+			change_tag_from = ROOT
+		}
+	}
+	option = { ## Do Nothing
+		name = china_event.11.c
+		ai_chance = { factor = 1 }
+		trigger = { tag = RYY }
+	}
+}
+
+
+
+
+
+#Han Dynasty Reinstated
+country_event = {
+	id = china_event.15
+	title = china_event.15.t
+	desc = china_event.15.d
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			tag = RYY
+			tag = LLU
+		}
+		744 = {
+			AND = {
+				is_controlled_by = ANN
+				NOT = { 
+					OR = {
+						is_controlled_by = XIN
+						is_controlled_by = RYY
+						is_controlled_by = LLU
+					}
+				}
+			}
+		}
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	major = yes
+	option = { ## 
+		name = china_event.15.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		ANN = { 
+			annex_country = {
+    			target = XIN
+    			transfer_troops = yes
+			}
+			annex_country = {
+    			target = NYU
+    			transfer_troops = yes
+			}
+			change_tag_from = ROOT
+			set_capital = {
+				state = 744
+				remember_old_capital = yes
+			}
+		}
+		XIN = {
+			remove_power_balance = {
+				id = XIN_heaven_mandate
+			}
+		}
+		ANN = {
+			set_power_balance = {
+    			id = XIN_heaven_mandate
+				set_value = 0.35
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Peasants' Rebellion [Chengjia Rebellion]
+country_event = {
+	id = china_event.20
+	title = china_event.20.t
+	desc = china_event.20.d
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = XIN
+			tag = ANN
+		}
+		date > 25.02.01
+		OR = {
+			XIN = {
+				power_balance_value = {
+    				id = XIN_heaven_mandate
+    				value < -0.39
+				}
+			}
+			ANN = {
+				power_balance_value = {
+    				id = XIN_heaven_mandate
+    				value < -0.39
+				}
+			}
+		}
+    }
+	picture = GFX_report_event_XIN_peasants_revolt
+	option = { ## Chengjia Rebellion Independent!
+		name = china_event.20.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		CJG = {
+			transfer_state = 605
+			transfer_state = 750
+			transfer_state = 748
+			transfer_state = 603
+			transfer_state = 325
+			transfer_state = 599
+			add_state_core = 605
+			add_state_core = 750
+			add_state_core = 748
+			add_state_core = 603
+			add_state_core = 325
+			add_state_core = 599
+		}
+	}
+	option = { ## Chengjia Rebellion Independent! [CHANGE]
+		name = china_event.20.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		CJG = {
+			transfer_state = 605
+			transfer_state = 750
+			transfer_state = 748
+			transfer_state = 603
+			transfer_state = 325
+			transfer_state = 599
+			add_state_core = 605
+			add_state_core = 750
+			add_state_core = 748
+			add_state_core = 603
+			add_state_core = 325
+			add_state_core = 599
+		}
+		CJG = {
+			change_tag_from = ROOT
+		}
+	}
+}
+
+
+
+
+#Envoy to Daqin - Shule
+country_event = {
+	id = china_event.30
+	title = china_event.30.t
+	desc = china_event.30.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## A strange fellow indeed..
+		name = china_event.30.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = SUL }
+		add_political_power = 30
+		add_stability = 0.03
+	}
+	option = { ## The weird city in the mountains!
+		name = china_event.30.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		country_event = {
+			id = china_event.31
+			days = 25
+		}
+		IDS = {
+			country_event = {
+				id = china_event.31
+				days = 25
+			}
+		}
+	}
+}
+
+#Envoy to Daqin - Indo-Scythians
+country_event = {
+	id = china_event.31
+	title = china_event.31.t
+	desc = china_event.31.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## Greetings from the Hindus
+		name = china_event.31.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = IDS }
+		add_political_power = 35
+	}
+	option = { ## Peoples.. interesting peoples.
+		name = china_event.31.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		country_event = {
+			id = china_event.32
+			days = 25
+		}
+		PTH = {
+			country_event = {
+				id = china_event.32
+				days = 25
+			}
+		}
+	}
+}
+
+#Envoy to Daqin - Arsacid
+country_event = {
+	id = china_event.32
+	title = china_event.32.t
+	desc = china_event.32.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## China?
+		name = china_event.32.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = PTH }
+		add_political_power = 30
+	}
+	option = { ## Parthia is really something!
+		name = china_event.32.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		country_event = {
+			id = china_event.33
+			days = 25
+		}
+		ROE = {
+			country_event = {
+				id = china_event.33
+				days = 25
+			}
+		}
+	}
+	option = { ## Maybe we should stop here.
+		name = china_event.32.c
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		country_event = {
+			id = china_event.37
+			days = 60
+		}
+	}
+}
+
+#Envoy to Daqin - Coming to Syria
+country_event = {
+	id = china_event.33
+	title = china_event.33.t
+	desc = china_event.33.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## From where?
+		name = china_event.33.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+		add_political_power = 15
+	}
+	option = { ## Ta-ts'in [Syria] is surely exotic!
+		name = china_event.33.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		country_event = {
+			id = china_event.34
+			days = 15
+		}
+		ROE = {
+			country_event = {
+				id = china_event.34
+				days = 15
+			}
+		}
+	}
+}
+
+#Envoy to Daqin - Alexandria
+country_event = {
+	id = china_event.34
+	title = china_event.34.t
+	desc = china_event.34.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## Where are they going?
+		name = china_event.34.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+		add_political_power = 25
+	}
+	option = { ## Ali-san [Alexandria]
+		name = china_event.34.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		country_event = {
+			id = china_event.35
+			days = 20
+		}
+		ROE = {
+			country_event = {
+				id = china_event.35
+				days = 20
+			}
+		}
+	}
+}
+
+#Envoy to Daqin - Last Seeing
+country_event = {
+	id = china_event.35
+	title = china_event.35.t
+	desc = china_event.35.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## An alliance? Ah!
+		name = china_event.35.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+		add_political_power = 30
+	}
+	option = { ## Sadly, we go home without much.
+		name = china_event.35.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		country_event = {
+			id = china_event.36
+			days = 120
+		}
+	}
+}
+
+
+#Envoy to Daqin - Back Home [FROM ALEXANDRIA]
+country_event = {
+	id = china_event.36
+	title = china_event.36.t
+	desc = china_event.36.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## What a travel!
+		name = china_event.36.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_stability = 0.15
+		add_political_power = 200
+	}
+}
+
+#Envoy to Daqin - Back Home [FROM ARSACID]
+country_event = {
+	id = china_event.37
+	title = china_event.37.t
+	desc = china_event.37.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	option = { ## We've only seen so much..
+		name = china_event.37.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_stability = 0.05
+		add_political_power = 120
+	}
+}
+
+
+
+
+
+
+
+#State Monopoly on Salt?
+country_event = {
+	id = china_event.50
+	title = china_event.50.t
+	desc = china_event.50.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_emperor_talks
+	major = no
+	option = { ## Yes!
+		name = china_event.50.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = -150
+		add_stability = 0.05
+		add_offsite_building = { 
+			type = industrial_complex 
+			level = 2
+		}
+	}
+	option = { ## Monopoly? I'm no socialist!
+		name = china_event.50.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = 150
+		add_stability = 0.05
+	}
+}
+
+#State Monopoly on Iron?
+country_event = {
+	id = china_event.51
+	title = china_event.51.t
+	desc = china_event.51.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_emperor_talks
+	major = no
+	option = { ## Yes.
+		name = china_event.51.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = -150
+		594 = {
+			add_state_modifier = {
+    			modifier = {
+        			local_resources_factor = 0.2
+    			}
+			}
+		}
+		593 = {
+			add_state_modifier = {
+    			modifier = {
+        			local_resources_factor = 0.2
+    			}
+			}
+		}
+	}
+	option = { ## Let's drop it!
+		name = china_event.51.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = 150
+		594 = {
+			add_state_modifier = {
+    			modifier = {
+        			local_resources_factor = -0.3
+    			}
+			}
+		}
+		593 = {
+			add_state_modifier = {
+    			modifier = {
+        			local_resources_factor = -0.3
+    			}
+			}
+		}
+		592 = {
+			add_state_modifier = {
+    			modifier = {
+        			local_resources_factor = -0.3
+    			}
+			}
+		}
+	}
+}
+
+#Unholy Alliance - Sending
+country_event = {
+	id = china_event.52
+	title = china_event.52.t
+	desc = china_event.52.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	major = no
+	option = { ## Alright?
+		name = china_event.52.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		XIN = {
+			country_event = {
+				id = china_event.53
+				days = 5
+			}
+			set_country_flag = xiongnu_accepted_alliance
+		}
+		add_war_support = -0.05
+	}
+	option = { ## Hell no!
+		name = china_event.52.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		XIN = {
+			country_event = {
+				id = china_event.53
+				days = 5
+			}
+			set_country_flag = xiongnu_refused_alliance
+		}
+		add_war_support = 0.08
+	}
+}
+
+#Unholy Alliance - Answer
+country_event = {
+	id = china_event.53
+	title = china_event.53.t
+	desc = china_event.53.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	major = no
+	option = { ## Great!
+		name = china_event.53.a
+		ai_chance = { factor = 1 }
+		trigger = { XIN = { has_country_flag = xiongnu_accepted_alliance } }
+		clr_country_flag = xiongnu_accepted_alliance
+		create_faction_from_template = {
+   			template = faction_template_regional
+   			name = XIN_XAI_faction_name
+   			icon = GFX_faction_logo_generic_2
+   			color = { 255 244 96 }
+		}
+		add_to_faction = XAI
+		add_political_power = 100
+	}
+	option = { ## What? Oh.. [COMPLETES "SET UP A RIVAL GOVERNMENT", UNCOMPLETE THE BRANCH]
+		name = china_event.53.b
+		ai_chance = { factor = 1 }
+		trigger = { XIN = { has_country_flag = xiongnu_refused_alliance } }
+		clr_country_flag = xiongnu_refused_alliance
+		XIN = {
+			uncomplete_national_focus = {
+  				focus = XIN_the_unholy_alliance
+  				uncomplete_children = yes
+  				refund_political_power = no
+			}
+			complete_national_focus = {
+				focus = XIN_set_up_a_rival_government
+			}
+		}
+		add_political_power = 50
+	}
+}
+
+#Vassalization - Sending
+country_event = {
+	id = china_event.54
+	title = china_event.54.t
+	desc = china_event.54.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	major = no
+	option = { ## Submit
+		name = china_event.54.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		XIN = {
+			country_event = {
+				id = china_event.55
+				days = 5
+			}
+			set_country_flag = xiongnu_accepted_submission
+		}
+		add_war_support = -0.1
+	}
+	option = { ## Never!
+		name = china_event.54.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		XIN = {
+			country_event = {
+				id = china_event.55
+				days = 5
+			}
+			set_country_flag = xiongnu_refused_submission
+		}
+		add_war_support = 0.05
+	}
+}
+
+#Vassalization - Answer
+country_event = {
+	id = china_event.55
+	title = china_event.55.t
+	desc = china_event.55.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_letter
+	major = no
+	option = { ## Great!
+		name = china_event.55.a
+		ai_chance = { factor = 1 }
+		trigger = { XIN = { has_country_flag = xiongnu_accepted_submission } }
+		clr_country_flag = xiongnu_accepted_submission
+		hidden_effect = {
+		XAI = {
+			set_country_flag = is_tributary
+			set_temp_variable = { oldgov = var:THIS.current_party_ideology_group }
+			set_temp_variable = { demoldgov = var:THIS.party_popularity_100@democratic }
+			set_temp_variable = { olioldgov = var:THIS.party_popularity_100@communism }
+			set_temp_variable = { tyraoldgov = var:THIS.party_popularity_100@fascism }
+			set_temp_variable = { triboldgov = var:THIS.party_popularity_100@neutrality }
+            add_political_power = -50
+		}
+		XIN = {
+			set_autonomy = {
+    			target = XAI
+    			autonomous_state = autonomy_tributary
+    			end_wars = no
+    			end_civil_wars = no
+			}
+		}
+		XAI = {
+			set_politics = {
+    			ruling_party = var:oldgov
+    			elections_allowed = no
+    			election_frequency = 48
+			}
+			set_popularities = {
+				democratic = var:demoldgov
+				communism = var:olioldgov
+				fascism = var:tyraoldgov
+				neutrality = var:triboldgov
+			}
+		}
+		}
+	}
+	option = { ## Kill them.
+		name = china_event.55.b
+		ai_chance = { factor = 1 }
+		trigger = { XIN = { has_country_flag = xiongnu_refused_submission } }
+		clr_country_flag = xiongnu_refused_submission
+		create_wargoal = {
+    		type = puppet_wargoal_focus
+    		target = XAI
+		}
+	}
+	option = { ## We'll have them someday.
+		name = china_event.55.c
+		ai_chance = { factor = 1 }
+		trigger = { XIN = { has_country_flag = xiongnu_refused_submission } }
+		clr_country_flag = xiongnu_refused_submission
+		add_stability = 0.1
+	}
+}
+
+#Reform the Income Tax
+country_event = {
+	id = china_event.56
+	title = china_event.56.t
+	desc = china_event.56.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_emperor_talks
+	major = no
+	option = { ## Lower the tax for the poor, rise it for the rich!
+		name = china_event.56.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_power_balance_value = {
+    		id = XIN_heaven_mandate
+    		value = 0.05
+		}
+		add_ideas = XIN_reformed_income_tax
+	}
+	option = { ## Abolish the tax!
+		name = china_event.56.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_power_balance_value = {
+    		id = XIN_heaven_mandate
+    		value = 0.15
+		}
+		add_stability = 0.15
+		add_political_power = 150
+	}
+}

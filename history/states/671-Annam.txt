@@ -9,8 +9,8 @@ state={
 		1248 1302 4255 4379 7229 10137 10180 10309 
 	}
 	history = {
-		owner = AAN
-		
+		owner = SHY
+		add_core_of = SHY
 	}
 	manpower=1528000
 	buildings_max_level_factor=1.000

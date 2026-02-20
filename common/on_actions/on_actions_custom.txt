@@ -17,6 +17,16 @@ on_actions = {
 			}
         }
     }
+    
+    on_startup = {
+        effect = {
+            XIN = {
+                every_core_state = {
+                    add_core_of = ANN
+                }
+            }
+        }
+    }
 
     on_weekly = {
         effect = {
@@ -46,19 +56,91 @@ on_actions = {
                     }
                 }
                 PREV = {
-                    remove_ideas = receiving_tribute
                     add_political_power = -50
-                    diplomatic_relation = {
-                        country = PREV
-                        relation = guarantee
-                        active = no
-                    }
                 }
                 ROOT = {
-                    remove_ideas = tributary_state
                     add_political_power = 50
                     clr_country_flag = is_tributary
                 }
+            }
+        }
+    }
+
+
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    tag = ROE
+                    NOT = {
+                        has_completed_focus = ROE_restraint_religious_influence
+                    }
+                }
+                country_event = rome_event.100
+            }
+        }
+    }
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    tag = ROE
+                    CRS = { 
+                        exists = yes
+                        has_country_leader = {
+	                        character = CRS_arminius
+	                        ruling_only = yes
+                        }
+                    }
+                    FROM = {
+                        OR = {
+                            tag = USP
+                            tag = CMI
+                            tag = TNI
+                            tag = CTT
+                            tag = NMI
+                            tag = CSU
+                            tag = FRI
+                            tag = TBI
+                            tag = BRU
+                            tag = ANI
+                            tag = ERR
+                            tag = NSE
+                            tag = AMV
+                        }
+                    }
+                }
+                CRS = {
+                    country_event = crs_event.1
+                }
+            }
+        }
+    }
+    on_peace = {
+        effect = {
+            if = {
+                limit = {
+                   tag = ROE
+                   has_idea = ROE_blessed_by_the_gods
+                }
+                remove_ideas = ROE_blessed_by_the_gods
+            }
+        }
+    }
+
+
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    has_power_balance = {
+                        id = XIN_heaven_mandate
+                    }
+                }
+                add_power_balance_value = {
+    			    id = XIN_heaven_mandate
+    			    value = -0.05
+			    }
             }
         }
     }

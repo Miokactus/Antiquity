@@ -1,0 +1,78 @@
+on_actions = {
+    ## FALL OF ROME
+    #ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    TAG = ROOT
+                    NOT = { 
+                        TAG = ROE
+                    }
+                    FROM = { has_war_with = ROOT }
+                    FROM.FROM = { state = 2 }
+                }
+                news_event = city_fall_event.1
+            }
+            if = {
+                limit = {
+                    TAG = ROE
+                    FROM = { has_war_with = ROOT }
+                    FROM.FROM = { state = 2 }
+                }
+                news_event = city_fall_event.2
+            }
+        }
+    }
+    ## FALL OF CTESIPHON
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    TAG = ROOT
+                    NOT = { 
+                        TAG = PTH
+                    }
+                    FROM = { has_war_with = ROOT }
+                    FROM.FROM = { state = 291 }
+                }
+                news_event = city_fall_event.3
+            }
+            if = {
+                limit = {
+                    TAG = PTH
+                    FROM = { has_war_with = ROOT }
+                    FROM.FROM = { state = 291 }
+                }
+                news_event = city_fall_event.4
+            }
+        }
+    }
+    ## FALL OF CHANG'AN
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    TAG = ROOT
+                    NOT = { 
+                        TAG = XIN
+                    }
+                    FROM = { has_war_with = ROOT }
+                    FROM.FROM = { state = 744 }
+                }
+                news_event = city_fall_event.5
+            }
+            if = {
+                limit = {
+                    OR = {
+                        tag = XIN
+                        tag = ANN
+                    }
+                    FROM = { has_war_with = ROOT }
+                    FROM.FROM = { state = 744 }
+                }
+                news_event = city_fall_event.6
+            }
+        }
+    }
+}

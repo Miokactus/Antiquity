@@ -44,10 +44,18 @@ CRT = "countries/Carthage.txt"
 RRO = "countries/Rome.txt"
 AAS = "countries/Austrian_State.txt"
 
+## CHINESE WARLORDS
+LLU = "countries/Lulin.txt"
+RYY = "countries/Red_Eyebrows.txt"
+ANH = "countries/Anhui.txt"
+HEB = "countries/Hebei.txt"
+CJG = "countries/Chengjia.txt"
+NYU = "countries/Nanyue.txt"
+LUO = "countries/Luoyue.txt"
+SHY = "countries/Sa_Huynh.txt"
 
 
-
-## KOREA [FLAGS NEEDED]
+## KOREA
 MAH = "countries/Mahan_Confederacy.txt"
 BYE = "countries/Byeonhan_Confederacy.txt"
 JIN = "countries/Jinhan_Confederacy.txt"
@@ -55,25 +63,28 @@ EYE = "countries/Dongye.txt"
 OKJ = "countries/Okjeo.txt"
 GOR = "countries/Goguryeo.txt"
 BAE = "countries/Baekje.txt"
+EYA = "countries/Ye.txt"
+LLE = "countries/Lelang.txt"
 
-## GERMANIA [FLAGS NEEDED]
+## GERMANIA
 FRI = "countries/Frisia.txt"
 CMI = "countries/Camavi.txt"
 AMV = "countries/Amsivari.txt"
-CAU = "countries/Cauci.txt"
+CAU = "countries/Cauci.txt" ## Allied with Cherusci
 CSU = "countries/Chasuari.txt"
 USP = "countries/Usipeti.txt"
-SGI = "countries/Sigambri.txt"
+SGI = "countries/Sigambri.txt" ## Allied with Cherusci
 TNI = "countries/Tencteri.txt"
-CTT = "countries/Catti.txt"
+CTT = "countries/Catti.txt" ## Allied with Cherusci
 VGI = "countries/Vangioni.txt"
 NMI = "countries/Nemeti.txt"
 TBI = "countries/Triboci.txt"
 ERR = "countries/Ermunduri.txt"
 NSE = "countries/Naristae.txt"
+
 MRA = "countries/Marcoma.txt"
 AGI = "countries/Angili.txt"
-CRS = "countries/Cherusci.txt"
+CRS = "countries/Cherusci.txt" ## Cherusci!! Arminius!!
 ANI = "countries/Angrivari.txt"
 SXA = "countries/Saxones.txt"
 AGL = "countries/Angli.txt"
@@ -81,10 +92,16 @@ VNI = "countries/Viruni.txt"
 CRD = "countries/Caridi.txt"
 LGI = "countries/Longobardi.txt"
 SNI = "countries/Senoni.txt"
-BRU = "countries/Bruceti.txt"
+BRU = "countries/Bruceti.txt" ## Allied with Cherusci
 
-## EASTERN EUROPE [FLAGS NEEDED]
+## EASTERN EUROPE
+VBI = "countries/Visburgi.txt"
+QUA = "countries/Quadi.txt"
+GET = "countries/Getian.txt"
+BST = "countries/Bastarnae.txt"
+RHO = "countries/Rholes.txt"
 DAC = "countries/Dacia.txt"
+EAR = "countries/Early_Slavs.txt"
 SCY = "countries/Scythians.txt"
 SAR = "countries/Sarmates.txt"
 TSA = "countries/Tsaroubintsy.txt"

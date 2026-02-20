@@ -10,7 +10,7 @@ characters = {
 		country_leader = {
 			desc = "ARTABANUS_DESC"
 			expire = "80.5.4"
-			ideology = despotism_comm
+			ideology = parthian_nobility
 			traits = {
 				
 			}

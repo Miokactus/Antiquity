@@ -7,9 +7,14 @@ state={
 	history={
 		owner = PDA
 		add_core_of = PDA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
 	}
 	manpower = 152000
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

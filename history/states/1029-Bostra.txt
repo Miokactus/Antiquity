@@ -9,6 +9,10 @@ state={
 		add_core_of = NAB
 
 		add_claim_by = EGI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
 	state_category = rural
 	manpower= 15

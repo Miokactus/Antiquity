@@ -1,0 +1,150 @@
+################
+#Generic EVENTS#
+################
+
+add_namespace = crs_event
+
+#Rome is declaring war on germanic tribes!
+country_event = {
+	id = crs_event.1
+	title = crs_event.1.t
+	desc = crs_event.1.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # We shall defend our brothers!
+		name = crs_event.1.a
+		ai_chance = { factor = 1 }
+		declare_war_on = {
+        	target = ROE
+        	type = independence_wargoal
+		}
+	}
+	option = { # We'll wait.
+		name = crs_event.1.b
+		ai_chance = { factor = 0.2 }
+		add_war_support = -0.1
+		add_stability = -0.15
+	}
+}
+
+#Arminius killed!
+country_event = {
+	id = crs_event.2
+	title = crs_event.2.t
+	desc = crs_event.2.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # A new page for our tribe.
+		name = crs_event.2.a
+		ai_chance = { factor = 1 }
+		promote_character = {
+    		character = CRS_italicus
+    		ideology = chieftain
+		}
+	}
+}
+
+#Arminius crowned King!
+country_event = {
+	id = crs_event.3
+	title = crs_event.3.t
+	desc = crs_event.3.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Gloria!
+		name = crs_event.3.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = CRS }
+		add_trait = {
+     		character = CRS_arminius
+     		ideology = chieftain
+     		trait = king_of_the_germans
+		}
+	}
+	option = { # What!
+		name = crs_event.3.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+	}
+}
+
+
+#Request to join the Anti-Roman League
+country_event = {
+	id = crs_event.5
+	title = crs_event.5.t
+	desc = crs_event.5.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Yes
+		name = crs_event.5.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = crs_event.6
+				days = 5
+			}
+		}
+	}
+	option = { # Nope
+		name = crs_event.5.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = crs_event.7
+				days = 5
+			}
+		}
+	}
+}
+
+
+#Request to join the Anti-Roman League [YES]
+country_event = {
+	id = crs_event.6
+	title = crs_event.6.t
+	desc = crs_event.6.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Great!
+		name = crs_event.6.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_to_faction = FROM
+	}
+}
+
+#Request to join the Anti-Roman League [NO]
+country_event = {
+	id = crs_event.7
+	title = crs_event.7.t
+	desc = crs_event.7.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Fucker!
+		name = crs_event.7.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_opinion_modifier = {
+    		target = FROM
+    		modifier = faction_traitor
+		}
+	}
+}

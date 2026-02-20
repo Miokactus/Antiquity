@@ -9,6 +9,9 @@ state={
 		add_core_of = NAB
 
 		add_claim_by = EGI
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower=247797
 	buildings_max_level_factor=1.000

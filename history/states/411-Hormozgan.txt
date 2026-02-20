@@ -17,6 +17,8 @@ state={
 		add_core_of = PTH
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {
 			2026 1 

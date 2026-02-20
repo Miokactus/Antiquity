@@ -27,5 +27,44 @@ ideas = {
 			}
 		}
 
+
+		NOM_centralisation = {
+			name = "Government's Centralisation"
+			allowed_civil_war = { always = yes }
+			picture = PER_unification_initiative_idea
+			modifier = {
+				army_org_factor = 0.2
+				training_time_factor = 0.25
+				stability_factor = -0.05
+				production_speed_infrastructure_factor = 0.2
+				communism_drift = 0.02
+			}
+		}
+
+		NOM_semicentralised_state = {
+			name = "Semi-centralised State"
+			allowed_civil_war = { always = yes }
+			picture = PER_unification_initiative_idea
+			modifier = {
+				army_org_factor = 0.2
+				training_time_factor = 0.3
+				stability_factor = 0.1
+				communism_drift = 0.01
+			}
+		}
+
+		NOM_safekeeping_decentralisation = {
+			name = "Safekeeping our Governmental Traditions"
+			allowed_civil_war = { always = yes }
+			picture = FRA_matignon_agreements
+			modifier = {
+				army_org_factor = -0.2
+				training_time_factor = -0.25
+				stability_factor = 0.1
+				production_speed_infrastructure_factor = -0.2
+				neutrality_drift = -0.02
+			}
+		}
+
 	}
 }

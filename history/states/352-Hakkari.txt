@@ -4,22 +4,24 @@ state={
 	name="STATE_352" # Van
 	manpower = 262095
 
-	state_category = rural
+	state_category = city
 
 	history={
 		owner = ARR
 		add_core_of = ARR
 		victory_points = {
-			12476 1 
+			12476 2
 		}
 		victory_points = {
-			7530 1 
+			7530 20
 		}
 		victory_points = {
-			10497 1 
+			10497 5
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		if = {
 			limit = {

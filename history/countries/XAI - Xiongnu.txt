@@ -4,16 +4,14 @@ oob = "XAI_14"
 
 set_research_slots = 1
 
-create_country_leader = {
-	name = "Wulei, chanyu of the Empire"
-	desc = "WULEI_DESC"
-	picture = GFX_leader_nomadic_leader_xai
-	expire = "18.5.4"
-	ideology = nomadism
-	traits = {
-		XAI_nomadic_leader
-	}
-}
+recruit_character = wulei_chanyu
+recruit_character = huduershidaogao_chanyu
+recruit_character = hulanzhi_han
+recruit_character = yituzhiyashi_chinese
+recruit_character = xai_peasant_councils
+recruit_character = xai_tribal_institutions
+
+recruit_character = jiao
 
 set_war_support = 0.3
 

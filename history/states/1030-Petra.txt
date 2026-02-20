@@ -9,11 +9,15 @@ state={
 		add_core_of = NAB
 		
 		add_claim_by = EGI
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+		}
 		victory_points = {
 			4017 15
 		}
 	}
-	state_category = rural
+	state_category = town
 	manpower= 15
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

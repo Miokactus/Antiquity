@@ -2,7 +2,7 @@ bookmarks = {
 	bookmark = {
 		name = "AUGUSTUSDEATH_NAME"
 		desc = "AUGUSTUSDEATH_DESC"
-		date = 14.1.1.1
+		date = 14.06.1.1
 		picture = "GFX_select_date_1939"
 	
 		ROE = {
@@ -10,7 +10,7 @@ bookmarks = {
 			ideology = communism
 			ideas={
 				pax_romana
-				ROE_restricted_citizenship
+				one_party_monopoly
 				an_empire_of_peoples
 			}
 			focuses = {
@@ -20,19 +20,25 @@ bookmarks = {
 			}
 		}
 
-		MAU = {
-			history = MAU_AUGUSTUSDEATH_DESC
-			ideology = communism
+		CRS = {
+			history = CRS_AUGUSTUSDEATH_DESC
+			ideology = neutrality
 			ideas={
+				CRS_teutoburg_victory
+				CRS_interal_infighting
 			}
 			focuses = {
+				CRS_purge_the_pro_romans
+				CRS_king_of_the_germans
+				CRS_a_new_way_of_fighting
 			}
 		}
 
-		LYC = {
-			history = LYC_AUGUSTUSDEATH_DESC
+		PTH = {
+			history = PTH_AUGUSTUSDEATH_DESC
 			ideology = communism
 			ideas={
+				PTH_decentralised_structure
 			}
 			focuses = {
 			}
@@ -47,16 +53,6 @@ bookmarks = {
 			}
 		}
 
-		PTH = {
-			history = PTH_AUGUSTUSDEATH_DESC
-			ideology = communism
-			ideas={
-				PTH_decentralised_structure
-			}
-			focuses = {
-			}
-		}
-
 		XIN = {
 			history = XIN_AUGUSTUSDEATH_DESC
 			ideology = communism
@@ -66,6 +62,9 @@ bookmarks = {
 				XIN_peasant_support_fading
 			}
 			focuses = {
+				XIN_mass_nationalisation
+				XIN_the_unholy_alliance
+				XIN_the_eternal_xin_dynasty
 			}
 		}
 
@@ -86,135 +85,7 @@ bookmarks = {
 
 		# minors from DLC ####
 
-		BOP = {
-			history = BOP_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
 
-		CAP = {
-			history = CAP_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		JUD = {
-			history = JUD_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		NAB = {
-			history = NAB_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		PON = {
-			history = PON_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		WPC = {
-			history = WPC_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		THR = {
-			history = THR_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		ARR = {
-			history = ARR_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		IBR = {
-			history = IBR_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		CLC = {
-			history = CLC_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		CCA = {
-			history = CCA_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		MMD = {
-			history = MMD_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
-
-		YAU = {
-			history = YAU_AUGUSTUSDEATH_DESC
-			minor = yes
-			ideology = neutrality
-			ideas={
-			}
-			focuses = {
-			}
-		}
 
 
 		effect = {

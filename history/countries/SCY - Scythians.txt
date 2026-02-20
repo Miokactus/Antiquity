@@ -1,6 +1,6 @@
 capital = 330
 
-oob = "TRI_14"
+oob = "SCY_14"
 
 set_research_slots = 1
 

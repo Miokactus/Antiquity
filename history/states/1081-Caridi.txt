@@ -11,6 +11,12 @@ state={
 			infrastructure = 1
 			industrial_complex = 1
 		}
+		victory_points = {
+			3522 1
+		}
+		victory_points = {
+			11359 1
+		}
 	}
 	resources = {
 		wood = 6

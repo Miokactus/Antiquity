@@ -1,0 +1,25 @@
+state={
+	id=1187
+	name="STATE_1187"
+	provinces={
+		9537 6573 3565 
+	}
+	resources={
+		gold_ingot= 5
+		grain = 3
+	}
+	history = {
+		owner = VBI
+		add_core_of = VBI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			6573 2 # Kosice
+		}
+	}
+	state_category = rural
+	manpower=198050
+	buildings_max_level_factor=1
+	local_supplies=0
+}

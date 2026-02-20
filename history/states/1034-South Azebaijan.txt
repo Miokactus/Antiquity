@@ -7,6 +7,9 @@ state={
 	history = {
 		owner = ARR
 		add_core_of = ARR
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	manpower=1500
 	state_category= rural

@@ -1,0 +1,40 @@
+﻿capital = 71
+
+oob = "VBI_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Tribal Government"
+	desc = "GOV_DESC"
+	picture = GFX_leader_german_generic1
+	expire = "120.5.4"
+	ideology = tribalism
+	traits = {
+	}
+}
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	fascism = 10
+	communism = 25
+	neutrality = 60
+}
+ 
+add_ideas = {
+	civilian_economy 
+	limited_conscription
+	export_focus
+}

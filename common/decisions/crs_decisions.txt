@@ -1,0 +1,127 @@
+alliance_germans = {
+
+	invite_tribes = {
+		icon = generic_civil_support
+		cost = 75
+
+		allowed = {
+			tag = CRS
+    	}
+		available = {
+		}
+		visible = {
+			has_completed_focus = CRS_the_fight_of_all_germans
+		}
+		target_root_trigger = { TAG = ROOT }
+		target_array = neighbors
+		target_trigger = { 
+			FROM = {
+    			every_country = {
+        			is_neighbor_of = {
+						OR = {
+							tag = ROOT
+							any_country = {
+								is_ally_with = ROOT
+							}
+						}
+					}
+    			}
+				NOT = {
+					tag = PTH
+					tag = XIN
+					tag = AAN
+					tag = SAR
+					tag = DAC
+					tag = GET
+					tag = MRA
+					tag = QUA
+					tag = VBI
+					is_subject_of = PTH
+					is_subject_of = ROOT
+					is_ally_with = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = crs_event.5
+					days = 5
+				}
+			}
+		}
+		timeout_effect = {
+		}
+	}
+
+
+}
+
+alliance_puppet = {
+
+	puppet_tribes = {
+		icon = generic_civil_support
+		cost = 80
+		days_re_enable = 120
+		allowed = {
+			tag = CRS
+    	}
+		available = {
+		}
+		visible = {
+			has_completed_focus = CRS_guardian_of_the_germans
+		}
+		target_root_trigger = { TAG = ROOT }
+		target_trigger = { 
+			FROM = {
+				AND = {
+					is_ally_with = ROOT
+					is_on_same_continent_as = ROOT
+				}
+				NOT = {
+					tag = PTH
+					tag = XIN
+					tag = AAN
+					tag = SAR
+					tag = DAC
+					tag = GET
+					tag = MRA
+					tag = QUA
+					tag = VBI
+					is_subject_of = PTH
+					is_subject_of = ROOT
+				}
+			}
+		}
+		target_array = allies
+		complete_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+
+	integrate_tribes = {
+		icon = generic_civil_support
+		cost = 120
+		fire_only_once = yes
+		allowed = {
+			tag = CRS
+    	}
+		available = {
+		}
+		visible = {
+			has_completed_focus = CRS_guardian_of_the_germans
+		}
+		target_root_trigger = { TAG = ROOT }
+		target_trigger = { 
+			FROM = {
+				is_subject_of = ROOT
+			}
+		}
+		target_array = allies
+		complete_effect = {
+		}
+		timeout_effect = {
+		}
+	}
+}

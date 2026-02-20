@@ -1,0 +1,38 @@
+﻿capital = 1032
+
+oob = "LLE_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Lelang's Government"
+	desc = "WANGMANG_DESC"
+	picture = GFX_leader_PON_pythodoris
+	expire = "80.5.4"
+	ideology = oligarchism_comm
+	traits = {
+	}
+}
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+set_politics = {
+	ruling_party = communism
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 10
+	communism = 70
+	neutrality = 0
+}
+ 
+add_ideas = limited_exports
+add_ideas = limited_conscription
+add_ideas = civilian_economy

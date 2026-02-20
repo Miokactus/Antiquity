@@ -1,0 +1,18 @@
+opinion_modifiers = {
+	
+	allies_of_china = {
+		value = -30
+	}
+
+	stood_with_us = {
+		value = 30
+	}
+
+	allowed_raids_in_our_territory = {
+		value = -30
+	}
+
+	forbid_raids_in_our_territory = {
+		value = 30
+	}
+}

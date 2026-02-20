@@ -7,6 +7,14 @@ state={
 	history = {
 		owner = CSU
 		add_core_of = CSU
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			247 1
+		}
 	}
 	manpower=15000
 	state_category = rural

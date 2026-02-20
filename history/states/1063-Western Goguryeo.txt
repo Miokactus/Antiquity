@@ -11,6 +11,9 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 		}
+		victory_points = {
+			11828 5
+		}
 	}
 	manpower=270500
 	state_category = large_town

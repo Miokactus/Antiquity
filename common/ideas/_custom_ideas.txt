@@ -24,7 +24,7 @@ ideas = {
 
 
 		democratic_tradition = {
-			name = "Democratic Tradition"
+			name = "Democrat in the Blood"
 			allowed_civil_war = { always = yes }
 			picture = generic_democratic_drift_bonus
 			modifier = {
@@ -35,7 +35,7 @@ ideas = {
 		}
 		
 		communard_past = {
-			name = "Reformism Spirit"
+			name = "Oligarchism, baby!"
 			allowed_civil_war = { always = yes }
 			picture = generic_communism_drift_bonus
 			modifier = {
@@ -46,7 +46,7 @@ ideas = {
 		}
 		
 		nationalist_urge = {
-			name = "The Rise of a Nation"
+			name = "Law and Order"
 			allowed_civil_war = { always = yes }
 			picture = generic_fascism_drift_2
 			modifier = {
@@ -57,7 +57,7 @@ ideas = {
 		}
 		
 		unaligned_government = {
-			name = "Authoritarianism"
+			name = "Tribal Ways"
 			allowed_civil_war = { always = yes }
 			picture = generic_constitutional_guarantees
 			modifier = {
@@ -136,7 +136,7 @@ ideas = {
 			picture = FRA_scw_intervention_republicans_focus
 			modifier = {
 				political_power_cost = -0.2
-				stability_factor = 0.11
+				stability_factor = 0.1
 			}
 		}
 
@@ -256,7 +256,7 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = CHL_liberal_party_in_power
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.05
 				political_power_factor = -0.2
 				army_core_defence_factor = -0.1
 			}

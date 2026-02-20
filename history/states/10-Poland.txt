@@ -4,7 +4,9 @@ state={
 	manpower = 308900
 
 	state_category = large_city
-
+	resources = {
+		wood = 6
+	}
 	history={
 		owner = LUG
 		add_core_of = LUG

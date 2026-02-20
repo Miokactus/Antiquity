@@ -16,6 +16,9 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 		}
+		victory_points = {
+			586 1
+		}
 	}
 	manpower=250815
 	buildings_max_level_factor=1.000

@@ -12,8 +12,8 @@ state={
 	}
 
 	history={
-		owner = SAR
-		add_core_of = SAR
+		owner = EAR
+		add_core_of = EAR
 		victory_points = {
 			9355 10
 		}

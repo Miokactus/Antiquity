@@ -1,8 +1,28 @@
 ﻿l_english:
- augustus_emperor_desc: ""
+ ## LEADERS
+ augustus_emperor_desc: "Hawk tuah!"
  augustus_emperor: "Imperator Caesar Augustus"
 
+ ## TOOLTIPS
+ ROE_cities_fight_germans: "We need to either: control the main city of the §RCherusci§!, control the main cities of the §GBructeri§! and the §CCatti§! and an additional city, either from the §HSigambri§! or the §OCauci§!."
 
+ ## TRAITS
+ ROE_roman_emperor: "Emperor of the Romans"
+ ### EVENTS
+
+ rome_event.100.t: "War Drums on the Horizon"
+ rome_event.100.d: "Our armies are marching towards our enemies, with dignity and grace. However, we are forced to abide by our religious beliefs and must ask the Gods if it is a good time to wage war or not.\n\nThe oracles are gonna take the auspices, and go back to us once they have done that. We should abide by their message, if we want to not go against the Gods."
+ rome_event.100.a: "Very well. May the Gods be with us."
+
+ rome_event.101.t: "War Drums on the Horizon"
+ rome_event.101.d: "The oracles are back, with the answer to the question of war."
+ rome_event.101.a: "This is no matter of the Gods, onwards!"
+ rome_event.101.b: "The Gods are with us, we'll win!"
+ rome_event.101.c: "We shall wait, then."
+
+
+
+ ## FOCUS TREE
  ROE_augustus_death: "The Death of Augustus"
  ROE_augustus_death_desc: "Our Emperor is dead. The hopes and dreams of the roman peoples are shattered, but we are not defeated. A new emperor will rise and continue the legacy of Augustus!"
  ROE_the_new_emperor: "A New Emperor?"
@@ -58,6 +78,9 @@
  ROE_look_north: "Look North"
  ROE_negociate_for_armenia: "Negociate for Armenia"
  ROE_democracy_in_the_arsacid: "Bring Democracy in the Arsacid"
+ ROE_land_on_the_shores: "Land on the Shores"
+ ROE_the_dacian_question: "The Dacian Question"
+
 
  ROE_industrial_development: "Industrial Development"
  ROE_woodworks_development: "Woodworks Building"
@@ -87,6 +110,52 @@
  ROE_appease_the_populations: "Appease the Populations"
  ROE_encourage_fishing: "Encourage Fishing"
 
+ ROE_the_senate_confirmation: "The Senate's Confirmation"
+ ROE_purge_opposants: "Purge Opposants"
+ ROE_hail_the_new_emperor: "Hail the New Emperor!"
+ ROE_refuse_too_many_honors: "Refuse Too Many Honours"
+ ROE_delegate_to_the_senate: "Delegate to the Senate"
+ ROE_embrace_the_princeps_title: "Embrace the Princeps' Title"
+ ROE_the_first_senator: "The First Senator"
+ ROE_senatorial_relations: "Senatorial Relations"
+ ROE_deal_with_the_mutinies: "Deal with the Mutinies"
+ ROE_grant_gifts_to_the_armies: "Grant Gifts to the Armies"
+ ROE_germanicus_campaigns: "Germanicus' Campaigns"
+
  ROE_a_jewish_emperor: "A Jewish Emperor"
  ROE_a_gallo_emperor: "A Gallo-Roman Emperor"
  ROE_search_east: "Seek to the East!"
+
+
+
+
+ ### MILITARY TREE ###
+ ROE_reform_the_imperial_army: "Reform the Imperial Army"
+ ROE_integrate_cavalry: "Integrate Cavalry Regiments"
+ ROE_form_new_legions: "Form New Legions"
+ ROE_return_to_conscription: "Return to Conscription"
+ ROE_towards_a_volunteer_army: "Towards a Volunteer Army"
+
+
+
+ ROE_hail_augustus: "All Hail Augustus!"
+ ROE_all_hail_in_germania: "Victory in Germania"
+ ROE_the_burden_of_war: "The Burden of War"
+ ROE_show_of_force: "Show of Force"
+ ROE_develop_farming: "Develop the Farms"
+ ROE_legitimise_the_reign: "Legimitise the Reign"
+ ROE_sejanus_in_rome: "Appoint Sejanus in Rome"
+ ROE_an_era_of_peace: "An Era of Peace.."
+ ROE_but_an_era_of_power: "..But an Era of Power"
+ ROE_retire_germanicus: "Retire Germanicus"
+ ROE_allow_freedom_of_religion_for_jews: "Freedom for Roman Jews"
+ ROE_forbid_jewish_cults: "Forbid Jewish Cults"
+ ROE_allow_oriental_cults: "Allow Oriental Cults"
+ ROE_restraint_religious_influence: "Restraint Religious Influence"
+ ROE_clamp_down_on_oriental_cults: "Clamp Down on Oriental Cults"
+ ROE_our_mining_problem: "Our Mining Problem"
+ ROE_the_empire_needs_for_money: "The Empire's Need for Money"
+ ROE_pass_the_burden_to_the_gov: "Pass the Burden to the Governors"
+ ROE_woodworks_in_lutecia: "Woodworks in Lutecia"
+ ROE_reinforce_the_lex_julia: "Reinforce the Lex Julia"
+ ROE_proclaim_the_romans_superiority: "The Romans' Superiority"

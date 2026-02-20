@@ -8,8 +8,8 @@ state=
 	
 	history= {
 		
-		owner = DAC
-		add_core_of = DAC
+		owner = GET
+		add_core_of = GET
 		victory_points = {
 			3707 1
 		}

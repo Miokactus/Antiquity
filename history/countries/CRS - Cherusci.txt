@@ -1,0 +1,50 @@
+﻿capital = 1079
+
+oob = "CRS_14"
+
+set_research_slots = 1
+
+set_stability = 0.35
+set_war_support = 0.26
+
+recruit_character = CRS_arminius
+recruit_character = CRS_italicus
+recruit_character = CRS_flavius
+recruit_character = CRS_segestes
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+create_faction = CRS_faction
+add_to_faction = CAU
+add_to_faction = SGI
+add_to_faction = CTT
+add_to_faction = BRU
+diplomatic_relation = {
+    country = ANI
+    relation = military_access
+    active = yes
+}
+
+set_politics = {
+	ruling_party = neutrality
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 20
+	neutrality = 60
+}
+ 
+add_ideas = {
+	low_economic_mobilisation 
+	limited_exports
+	extensive_conscription
+	CRS_teutoburg_victory
+	CRS_interal_infighting
+}

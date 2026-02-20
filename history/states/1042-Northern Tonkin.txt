@@ -10,6 +10,7 @@ state={
 	history = {
 		owner = XIN
 		add_core_of = XIN
+		add_core_of = LUO
 		buildings = {
 			infrastructure = 2
 		}

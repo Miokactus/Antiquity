@@ -1,0 +1,32 @@
+everyone_custom_dontcare_about_anarchy = {
+    allowed = {
+        NOT = {
+            OR = {
+            original_tag = AAN
+            original_tag = FAL
+            original_tag = FAA
+            }
+        }
+    }
+    enable = {
+        always = yes
+    }
+    abort = {
+        always = no
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = AAN
+        value = -500
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = FAL
+        value = -500
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = FAA
+        value = -500
+    }
+}

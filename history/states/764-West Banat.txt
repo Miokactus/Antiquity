@@ -4,7 +4,10 @@ state={
 	name="STATE_764"
 	manpower = 585579
 	state_category = rural
-
+	resources = {
+		wood = 9
+		grain = 2
+	}
 	history={
 		owner = DAC
 		add_core_of = DAC

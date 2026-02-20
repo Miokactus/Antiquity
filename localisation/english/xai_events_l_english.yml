@@ -1,0 +1,40 @@
+﻿l_english:
+ ## EVENTS
+ xai_event.1.t: "Imminent Collapse of China!"
+ xai_event.1.d: "Reports coming from the other side of the border shows that the Chinese Empire is on the way to collapse: this is our occasion to act! Their western protectorates are unguarded, and we could attack them to finally secure the trade route to the West."
+ xai_event.1.a: "Yes! Onwards!"
+ xai_event.1.b: "Isn't it a bit dangerous?"
+
+ xai_event.2.t: ""
+ xai_event.2.d: ""
+ xai_event.2.a: ""
+ xai_event.2.b: ""
+
+ xai_event.3.t: ""
+ xai_event.3.d: ""
+ xai_event.3.a: ""
+ xai_event.3.b: ""
+
+ xai_event.4.t: ""
+ xai_event.4.d: ""
+ xai_event.4.a: ""
+
+
+ ## LINKED EVENTS (XAI - CHINA ) ##
+ ################################## 
+ xai_china_event.1.t: "The Xiongnu Moves into the Western Protectorates!"
+ xai_china_event.1.d: "Spies within the Xiongnu reported that the empire plans to attack our western protectorates. We could intervene but we cannot risk to destabilise our realm even further, especially with the revolts brewing in the east and south. Thus, we should consider this area lost for now."
+ xai_china_event.1.a: "A terrible day for China.."
+
+
+ ## FLAGS
+
+
+ ## TOOLTIPS
+
+ ## DECISIONS
+ 
+
+ ## COUNTRY COSMETIC
+ XAI_chanyu: "Chanyu of the Empire"
+ XAI_chanyu_usurpator: "Claimant to be Chanyu"

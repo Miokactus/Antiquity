@@ -7,9 +7,17 @@ state={
 	history = {
 		owner = BRU
 		add_core_of = BRU
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			495 2
+		}
 	}
 	manpower=135000
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

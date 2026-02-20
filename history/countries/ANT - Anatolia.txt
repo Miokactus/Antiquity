@@ -9,7 +9,7 @@ create_country_leader = {
     desc = "MONARCH_DESC"
     picture = GFX_leader_XIN_peasant_councils
     expire = "88.5.4"
-    ideology = popular_assemblies
+    ideology = peasants_assemblies
     traits = {
     }
 }

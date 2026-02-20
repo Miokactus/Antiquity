@@ -1,0 +1,60 @@
+ROE_hostile_towards_arminius = {
+    allowed = {
+        original_tag = ROE
+    }
+    enable = {
+        CRS = {
+			has_country_leader = {
+				character = CRS_arminius
+				ruling_only = yes
+			}
+		}
+    }
+    abort = {
+		CRS = {
+			NOT = { 
+				has_country_leader = {
+					character = CRS_arminius
+					ruling_only = yes
+				}
+			}
+		}
+    }
+    ai_strategy = {
+        type = conquer
+        id = CRS
+        value = 200
+    }
+	ai_strategy = {
+        type = antagonize
+        id = CRS
+        value = 200
+    }
+}
+
+ROE_hostile_towards_parthia = {
+    allowed = {
+        original_tag = ROE
+    }
+    enable = {
+        country_exists = PTH
+    }
+    abort = {
+		PTH = {
+			OR = {
+				exists = no
+				is_subject_of = ROE
+			}
+		}
+    }
+	ai_strategy = {
+        type = antagonize
+        id = PTH
+        value = 200
+    }
+    ai_strategy = {
+        type = contain
+        id = PTH
+        value = 25
+    }
+}

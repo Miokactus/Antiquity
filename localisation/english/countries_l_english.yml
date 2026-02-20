@@ -116,6 +116,36 @@
 
    ## EASTERN EUROPE NAMES ##
 
+ DAC: "Dacian Kingdom"
+ DAC_DEF: "the Dacian Kingdom"
+ DAC_ADJ: "Dacians"
+
+ GET: "Getian Kingdom"
+ GET_DEF: "the Getian Kingdom"
+ GET_ADJ: "Getians"
+
+ EAR: "Early Slavs"
+ EAR_DEF: "the Early Slavs"
+ EAR_ADJ: "Slavs"
+
+ BST: "Bastarnae"
+ BST_DEF: "the Bastarnae"
+ BST_ADJ: "Bastarnae"
+
+ RHO: "Chiefdom of Rholes"
+ RHO_DEF: "the Chiefdom of Rholes"
+ RHO_ADJ: "Getians"
+
+ VBI: "Visburgi"
+ VBI_DEF: "the Visburgi"
+ VBI_ADJ: "Visburgi"
+
+ QUA: "Quadi Kingdom"
+ QUA_DEF: "the Quadi Kingdom"
+ QUA_ADJ: "Quadi"
+
+ 
+
  SCY: "Scythia"
  SCY_DEF: "the Oriental Scythians"
  SCY_ADJ: "Scythians"
@@ -175,10 +205,6 @@
  SOP_DEF: "the Kingdom of Sophene"
  SOP_ADJ: "Sophene"
 
- DAC: "Administration of Dacia"
- DAC_DEF: "the Administration of Dacia"
- DAC_ADJ: "Dacians"
-
 ## ORIENT NAMES ##
 
  XIN: "Xin Dynasty"
@@ -192,6 +218,43 @@
  ANN: "Han Dynasty"
  ANN_DEF: "the Han Dynasty"
  ANN_ADJ: "Chinese"
+
+    ## CHINESE REVOLT STATES ##
+
+ LLU: "Lulin Rebels"
+ LLU_DEF: "the Lulin Rebels"
+ LLU_ADJ: "Chinese"
+
+ RYY: "Red Eyebrows"
+ RYY_DEF: "the Red Eyebrows"
+ RYY_ADJ: "Chinese"
+
+ HEB: "Zhao Kingdom"
+ HEB_DEF: "the Zhao Kingdom"
+ HEB_ADJ: "Zhao"
+
+ ANH: "Anhui Clique"
+ ANH_DEF: "the Anhui Clique"
+ ANH_ADJ: "Chinese"
+
+ CJG: "Empire of Chengjia"
+ CJG_DEF: "the Empire of Chengjia"
+ CJG_ADJ: "Chengjian"
+
+ NYU: "Province of Nanyue"
+ NYU_DEF: "the Administrative Province of Nanyue"
+ NYU_ADJ: "Chinese"
+
+ LUO: "State of Luoyue"
+ LUO_DEF: "the State of Luoyue"
+ LUO_ADJ: "Luoyue"
+
+ SHY: "Sa Huynh"
+ SHY_DEF: "Sa Huynh"
+ SHY_ADJ: "Sa Huynh"
+
+
+
 
  XAI: "Xiongnu Empire"
  XAI_DEF: "the Xiongnu Empire"
@@ -292,6 +355,8 @@
  EYE: "Dongye"
  EYE_DEF: "Dongye"
  EYE_ADJ: "Dongyan"
+ EYE_XIN_subject: "Dongye Commandery"
+ EYE_XIN_subject_DEF: "the Dongye Commandery"
 
  OKJ: "Okjeo"
  OKJ_DEF: "Okjeo"
@@ -304,6 +369,18 @@
  BAE: "Baekje"
  BAE_DEF: "Baekje"
  BAE_ADJ: "Baekje"
+ BAE_XIN_subject: "Baekje Commandery"
+ BAE_XIN_subject_DEF: "the Baekje Commandery"
+
+ EYA: "Ye"
+ EYA_DEF: "the Kingdom of Ye"
+ EYA_ADJ: "Ye"
+
+ LLE: "Lelang"
+ LLE_DEF: "the Kingdom of Lelang"
+ LLE_ADJ: "Lelang"
+ LLE_XIN_subject: "Lelang Commandery"
+ LLE_XIN_subject_DEF: "the Lelang Commandery"
 
 
  ## GERMANIC NAMES OF TRIBES ##

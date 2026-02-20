@@ -1,0 +1,156 @@
+china_interest_towards_korea = {
+    allowed = {
+        OR = {
+        original_tag = ANN
+        original_tag = XIN
+        }
+    }
+    enable = {
+        BAE = { exists = yes }
+        EYA = { exists = yes }
+        MAH = { exists = yes }
+        JIN = { exists = yes }
+        BYE = { exists = yes }
+    }
+    abort = {
+		BAE = { exists = no }
+        EYA = { exists = no }
+        MAH = { exists = no }
+        JIN = { exists = no }
+        BYE = { exists = no }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = befriend
+        id = BAE
+        value = 50
+    }
+	ai_strategy = {
+        type = befriend
+        id = EYA
+        value = 50
+    }
+    ai_strategy = {
+        type = befriend
+        id = MAH
+        value = 50
+    }
+    ai_strategy = {
+        type = befriend
+        id = JIN
+        value = 50
+    }
+    ai_strategy = {
+        type = befriend
+        id = BYE
+        value = 50
+    }
+    ai_strategy = {
+        type = befriend
+        id = EYE
+        value = 50
+    }
+}
+
+china_contain_goguryeo = {
+    allowed = {
+        OR = {
+        original_tag = ANN
+        original_tag = XIN
+        }
+    }
+    enable = {
+        GOR = { exists = yes }
+    }
+    abort = {
+		OR = { 
+            GOR = { exists = no }
+            GOR = { 
+                OR = {
+                    is_subject_of = XIN
+                    is_subject_of = ANN
+                }
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = antagonize
+        id = GOR
+        value = 100
+    }
+    ai_strategy = {
+        type = contain
+        id = GOR
+        value = 50
+    }
+}
+
+china_contain_xiongnu = {
+    allowed = {
+        OR = {
+            original_tag = ANN
+            original_tag = XIN
+        }
+    }
+    enable = {
+        country_exists = XAI
+    }
+    abort = {
+		OR = { 
+            NOT = { country_exists = XAI }
+            XAI = { 
+                OR = {
+                    is_subject_of = XIN
+                    is_subject_of = ANN
+                }
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = antagonize
+        id = XAI
+        value = 100
+    }
+    ai_strategy = {
+        type = contain
+        id = XAI
+        value = 50
+    }
+}
+
+
+
+
+
+china_revolts = {
+    allowed = {
+        OR = {
+            tag = LLU
+            tag = RYY
+            tag = ANH
+        }
+    }
+    enable = {
+        country_exists = XIN
+    }
+    abort = {
+		744 = {
+            NOT = {
+                is_owned_by = XIN
+            }
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = front_control
+        tag = XIN
+        state = 744
+        ratio = 0.1
+        priority = 1500
+        ordertype = front
+        execution_type = rush
+        manual_attack = no
+    }
+}

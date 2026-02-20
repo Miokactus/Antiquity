@@ -1,0 +1,150 @@
+characters = {
+
+	wulei_chanyu = {
+		name = "Wulei"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_nomadic_leader_xai"
+            }
+        }
+		country_leader = {
+			desc = "WULEI_DESC"
+			expire = "18.5.4"
+			ideology = nomadism
+			traits = {
+				XAI_nomadic_leader
+				XAI_chanyu
+			}
+		}
+	}
+
+	huduershidaogao_chanyu = {
+		name = "Huduershidaogao"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_nomadic_leader_xai"
+            }
+        }
+		country_leader = {
+			desc = "WULEI_DESC"
+			expire = "46.5.4"
+			ideology = nomadism
+			traits = {
+				XAI_nomadic_leader
+				XAI_chanyu
+			}
+		}
+	}
+
+	xubu_chanyu = {
+		name = "Xubu"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_nomadic_leader_xai"
+            }
+        }
+		country_leader = {
+			desc = "WULEI_DESC"
+			expire = "22.5.4"
+			ideology = nomadism
+			traits = {
+				XAI_chanyu_usurpator
+			}
+		}
+	}
+
+	xai_peasant_councils = {
+		name = "Peasant's Councils"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_peasant_councils"
+            }
+        }
+		country_leader = {
+			desc = "PEASANTS_DESC"
+			expire = "250.5.4"
+			ideology = peasants_assemblies
+			traits = {
+			}
+		}
+	}
+
+	xai_tribal_institutions = {
+		name = "Tribal Institutions"
+		portraits = {
+            civilian = {
+                large = "generic_nomadic_tribes2"
+            }
+        }
+		country_leader = {
+			desc = "TRIBAL_DESC"
+			expire = "250.5.4"
+			ideology = tribalism
+			traits = {
+			}
+		}
+	}
+
+	hulanzhi_han = {
+		name = "Hulanzhi"
+		portraits = {
+            civilian = {
+                large = "generic_nomadic_tribes2"
+            }
+        }
+		country_leader = {
+			desc = "HULANZHI_DESC"
+			expire = "28.5.4"
+			ideology = despotism_comm
+			traits = {
+			}
+		}
+	}
+
+	yituzhiyashi_chinese = {
+		name = "Yituzhiyashi"
+		portraits = {
+            civilian = {
+                large = "generic_nomadic_tribes2"
+            }
+        }
+		country_leader = {
+			desc = "TYRANNICAL_XAI_DESC"
+			expire = "23.5.4"
+			ideology = absolutism
+			traits = {
+			}
+		}
+	}
+
+
+
+	## GENERALS
+
+	jiao = {
+        name = "Jiao"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        field_marshal = {
+            traits = { media_personality war_hero }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 3
+        }
+        advisor = {
+            slot = theorist
+            idea_token = jiao
+            ledger = army
+            available = {
+            }
+            traits = { mass_assault_expert }
+        }
+    }
+
+}

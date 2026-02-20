@@ -8,6 +8,11 @@ spriteTypes = {
         texturefile = "gfx/interface/autonomy/autonomy_tributary_puppet.dds" # The folder and filename don't matter, as long as they are correct
     }
 
+    spriteType = {
+        name = "GFX_autonomy_indian_custom_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_tributary_puppet.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
 ## IDEOLOGIES GFX ##
 ####################
 
@@ -62,6 +67,31 @@ spriteTypes = {
     spriteType = {
         name = "GFX_ideology_nomadism"
         texturefile = "gfx/interface/ideologies/nomadism.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_roman_paternalism"
+        texturefile = "gfx/interface/ideologies/roman_paternalism.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_city_state"
+        texturefile = "gfx/interface/ideologies/city_state.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_parthian_nobility"
+        texturefile = "gfx/interface/ideologies/parthian_nobility.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_peasants_assemblies"
+        texturefile = "gfx/interface/ideologies/peasants_assemblies.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_ideology_popular_assemblies"
+        texturefile = "gfx/interface/ideologies/popular_assemblies.dds" # The folder and filename don't matter, as long as they are correct
     }
 
 ### OTHERS ###
@@ -288,11 +318,24 @@ spriteTypes = {
         texturefile = "gfx/characters/XIN_peasant_councils.dds"
     }
 
+
+    spriteType = {
+        name = "GFX_modifiers_china_imperial_capital"
+        texturefile = "gfx/interface/modifiers/modifiers_china_imperial_capital.dds"
+    }
+
 ## PARTHIA GFX ##
 
     spriteType = {
         name = "GFX_leader_PTH_artabanus_ii"
         texturefile = "gfx/characters/PTH_artabanus_ii.dds"
+    }
+
+## GERMANIA GFX ##
+
+    spriteType = {
+        name = "GFX_leader_Arminius_portrait"
+        texturefile = "gfx/characters/Arminius_portrait.dds"
     }
 
 }

@@ -4,7 +4,11 @@ state = {
 	manpower = 580000
 
 	state_category = large_town
-
+	resources = {
+		gold_ingot = 2 
+		grain = 2
+		wood = 3
+	}
 	history = {
 
 		owner = DAC

@@ -7,6 +7,11 @@ state={
 	history={
 		owner = YAU
 		add_core_of = YAU
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+		}
 	}
 	manpower=15000
 	state_category = rural

@@ -1,6 +1,6 @@
 capital = 832
 
-oob = "ARA_14"
+oob = "EGI_14"
 
 set_research_slots = 1
 

@@ -12,6 +12,7 @@ characters = {
 			expire = "50.5.4"
 			ideology = chinese_reformism
 			traits = {
+				XIN_children_of_heaven
 			}
 		}
 	}
@@ -28,6 +29,7 @@ characters = {
 			expire = "50.5.4"
 			ideology = absolutism
 			traits = {
+				XIN_children_of_heaven
 			}
 		}
 	}
@@ -42,7 +44,7 @@ characters = {
 		country_leader = {
 			desc = "PEASANTS_DESC"
 			expire = "250.5.4"
-			ideology = popular_assemblies
+			ideology = peasants_assemblies
 			traits = {
 			}
 		}
@@ -63,5 +65,408 @@ characters = {
 			}
 		}
 	}
+
+
+
+	ANN_liu_xiu_oligarch = {
+		name = "Liu Xiu"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_liu_xiu"
+            }
+        }
+		country_leader = {
+			desc = "LIU_XIU_DESC"
+			expire = "50.5.4"
+			ideology = despotism_comm
+			traits = {
+				XIN_children_of_heaven
+			}
+		}
+	}
+
+	ANN_liu_xiu = {
+		name = "Liu Xiu"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_liu_xiu"
+            }
+        }
+		country_leader = {
+			desc = "LIU_XIU_DESC"
+			expire = "50.5.4"
+			ideology = absolutism
+			traits = {
+				XIN_children_of_heaven
+			}
+		}
+	}
+
+	ANN_peasant_councils = {
+		name = "Peasant's Councils"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_peasant_councils"
+            }
+        }
+		country_leader = {
+			desc = "PEASANTS_DESC"
+			expire = "250.5.4"
+			ideology = peasants_assemblies
+			traits = {
+			}
+		}
+	}
+
+	ANN_tribal_institutions = {
+		name = "Tribal Institutions"
+		portraits = {
+            civilian = {
+                large = "generic_nomadic_tribes2"
+            }
+        }
+		country_leader = {
+			desc = "TRIBAL_DESC"
+			expire = "250.5.4"
+			ideology = tribalism
+			traits = {
+			}
+		}
+	}
+
+
+
+
+
+
+	## XIN Generals
+
+	lian_dan = {
+        name = "Lian Dan"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        field_marshal = {
+            traits = { media_personality war_hero }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 3
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = lian_dan
+            ledger = army
+            available = {
+            }
+            traits = { mass_assault_expert }
+        }
+    }
+
+	shi_xiong = {
+        name = "Shi Xiong"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { media_personality }
+            skill = 2
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 3
+            logistics_skill = 3
+        }
+        advisor = {
+            slot = theorist
+            idea_token = shi_xiong
+            ledger = army
+            available = {
+            }
+            traits = { military_theorist }
+        }
+    }
+
+	yan_you = {
+        name = "Yan You"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 3
+            logistics_skill = 1
+        }
+        advisor = {
+            slot = theorist
+            idea_token = yan_you
+            ledger = army
+            available = {
+            }
+            traits = { mass_assault_expert }
+        }
+    }
+
+	dan_qin = {
+        name = "Dan Qin"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { }
+            skill = 2
+            attack_skill = 1
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 2
+        }
+    }
+
+	wang_she = {
+        name = "Wang She"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 3
+        }
+    }
+
+	## HAN Generals
+
+	feng_yi = {
+        name = "Feng Yi"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        field_marshal = {
+            traits = { media_personality war_hero }
+            skill = 4
+            attack_skill = 3
+            defense_skill = 4
+            planning_skill = 2
+            logistics_skill = 3
+        }
+        advisor = {
+            slot = theorist
+            idea_token = feng_yi
+            ledger = army
+            available = {
+            }
+            traits = { mass_assault_expert }
+        }
+    }
+
+	deng_yu = {
+        name = "Deng Yu"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 4
+            attack_skill = 5
+            defense_skill = 4
+            planning_skill = 3
+            logistics_skill = 2
+        }
+        advisor = {
+            slot = theorist
+            idea_token = deng_yu
+            ledger = army
+            available = {
+            }
+            traits = { military_theorist }
+        }
+    }
+
+	geng_chun = {
+        name = "Geng Shun"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 3
+            attack_skill = 2
+            defense_skill = 4
+            planning_skill = 1
+            logistics_skill = 2
+        }
+        advisor = {
+            slot = army_chief
+            idea_token = geng_chun
+            ledger = army
+            available = {
+            }
+            traits = { mass_assault_expert }
+        }
+    }
+
+	geng_yan = {
+        name = "Geng Yan"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 3
+        }
+    }
+
+	## Red Eyebrows revolt generals
+
+	fan_chong = {
+        name = "Fan Chong"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        field_marshal = {
+            traits = { war_hero }
+            skill = 2
+            attack_skill = 2
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 2
+        }
+		advisor = {
+            slot = theorist
+            idea_token = fan_chong
+            ledger = army
+            available = {
+            }
+            traits = { mass_assault_expert }
+        }
+    }
+
+	pang_an = {
+        name = "Pang An"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 2
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 3
+        }
+		advisor = {
+            slot = theorist
+            idea_token = pang_an
+            ledger = army
+            available = {
+            }
+            traits = { military_theorist }
+        }
+    }
+
+	xu_xuan = {
+        name = "Xu Xuan"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 3
+        }
+		advisor = {
+            slot = army_chief
+            idea_token = xu_xuan
+            ledger = army
+            available = {
+            }
+            traits = { mass_assault_expert }
+        }
+    }
+
+	xie_lu = {
+        name = "Xie Lu"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 2
+            attack_skill = 3
+            defense_skill = 3
+            planning_skill = 1
+            logistics_skill = 3
+        }
+    }
+
+	yang_yin = {
+        name = "Yang Yin"
+        portraits = {
+            army = {
+                small = "GFX_idea_empty_generic"
+                large = "GFX_leader_ROE_generic_statue"
+            }
+        }
+        corps_commander = {
+            traits = { war_hero }
+            skill = 3
+            attack_skill = 4
+            defense_skill = 2
+            planning_skill = 2
+            logistics_skill = 1
+        }
+    }
 
 }
