@@ -36,8 +36,10 @@ alliance_germans = {
 					tag = MRA
 					tag = QUA
 					tag = VBI
+					tag = ROE
 					is_subject_of = PTH
 					is_subject_of = ROOT
+					is_subject_of = ROE
 					is_ally_with = ROOT
 				}
 			}
@@ -88,13 +90,21 @@ alliance_puppet = {
 					tag = MRA
 					tag = QUA
 					tag = VBI
+					tag = ROE
 					is_subject_of = PTH
+					is_subject_of = ROE
 					is_subject_of = ROOT
 				}
 			}
 		}
 		target_array = allies
 		complete_effect = {
+			FROM = {
+				country_event = {
+					id = crs_event.8
+					days = 5
+				}
+			}
 		}
 		timeout_effect = {
 		}
@@ -120,6 +130,12 @@ alliance_puppet = {
 		}
 		target_array = allies
 		complete_effect = {
+			FROM = {
+				country_event = {
+					id = crs_event.11
+					days = 5
+				}
+			}
 		}
 		timeout_effect = {
 		}

@@ -295,6 +295,7 @@ country_event = {
 				1047 = {
 					add_core_of = JIN
 				}
+				set_cosmetic_tag = silla
 			}
 		}
 	}

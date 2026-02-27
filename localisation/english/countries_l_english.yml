@@ -113,6 +113,8 @@
  JUDkingdomofgod: "Kingdom of God"
  JUDkingdomofgod_DEF: "the Holy Kingdom of God, of which the Populations are Elected by Him"
  JUD_ADJ: "Judean"
+ JUD_ROE_communism_subject: "Judea"
+ JUD_ROE_communism_subject_DEF: "the Province of Judea"
 
    ## EASTERN EUROPE NAMES ##
 
@@ -223,11 +225,11 @@
 
  LLU: "Lulin Rebels"
  LLU_DEF: "the Lulin Rebels"
- LLU_ADJ: "Chinese"
+ LLU_ADJ: "Lulin"
 
  RYY: "Red Eyebrows"
  RYY_DEF: "the Red Eyebrows"
- RYY_ADJ: "Chinese"
+ RYY_ADJ: "Chiméi"
 
  HEB: "Zhao Kingdom"
  HEB_DEF: "the Zhao Kingdom"
@@ -235,7 +237,7 @@
 
  ANH: "Anhui Clique"
  ANH_DEF: "the Anhui Clique"
- ANH_ADJ: "Chinese"
+ ANH_ADJ: "Anhui"
 
  CJG: "Empire of Chengjia"
  CJG_DEF: "the Empire of Chengjia"
@@ -272,9 +274,9 @@
  KKC_DEF: "the City of Kucha"
  KKC_ADJ: "Kuchan"
 
- LOL: "City of Loulan"
- LOL_DEF: "the City of Loulan"
- LOL_ADJ: "Loulan"
+ LOL: "Shanshan Kingdom"
+ LOL_DEF: "the Shanshan Kingdom"
+ LOL_ADJ: "Shanshan"
 
  NYA: "Niya"
  NYA_DEF: "the City of Niya"
@@ -496,6 +498,8 @@
  EGI: "Ptolemaic Kingdom of Egypt"
  EGI_DEF: "the Ptolemaic Kingdom of Egypt"
  EGI_ADJ: "Egyptian"
+ EGI_ROE_communism_subject: "Egypt"
+ EGI_ROE_communism_subject_DEF: "the Province of Egypt"
 
  KUS: "Kingdom of Kush"
  KUS_DEF: "the Kingdom of Kush"
@@ -842,3 +846,219 @@
  SCC: "Swift Creek"
  SCC_DEF: "Swift Creek Culture"
  SCC_ADJ: "Swift Creekian" 
+
+
+
+
+
+
+
+
+
+
+
+ ## ROMAN PROVINCES NAMES ##
+ RR1: "Belgica"
+ RR2: "Lugdunensis"
+ RR3: "Aquitania"
+ RR4: "Narbonensis"
+ RR5: "Germania Inferior"
+ RR6: "Germania Superior"
+ RR7: "Raetia et Vindelicia"
+ RR8: "Cilicia"
+ RR9: "Alpes Maritimae"
+ R10: "Galatia"
+ R11: "Tarraconensis"
+ R12: "Lusitania"
+ R13: "Baetica"
+ R14: "Africa Proconsularis"
+ R15: "Sardinia et Corsica"
+ R16: "Sicilia"
+ R17: "Italia"
+ R18: "Pannonia"
+ R19: "Dalmatia"
+ R20: "Noricum"
+ R21: "Moesia"
+ R22: "Macedonia"
+ R23: "Archaea"
+ R24: "Creta et Cyrenae"
+ R25: "Asia"
+ R26: "Bythinia et Pontus"
+ R27: "Cyprus"
+ R28: "Syria"
+
+ RRR: "Rome"
+ RRR_DEF: "the City of Rome"
+ RRR_ADJ: "Roman"
+
+ VVI: "Vienna"
+ VVI_DEF: "Colonia Julia Vienna Allobrogum"
+ VVI_ADJ: "Viennese"
+
+RR1_DEF: "the Province of Belgica"
+RR2_DEF: "the Province of Lugdunensis"
+RR3_DEF: "the Province of Aquitania"
+RR4_DEF: "the Province of Narbonensis"
+RR5_DEF: "the Province of Germania Inferior"
+RR6_DEF: "the Province of Germania Superior"
+RR7_DEF: "the Province of Raetia et Vindelicia"
+RR8_DEF: "the Province of Cilicia"
+RR9_DEF: "the Province of Alpes Maritimae"
+R10_DEF: "the Province of Galatia"
+R11_DEF: "the Province of Tarraconensis"
+R12_DEF: "the Province of Lusitania"
+R13_DEF: "the Province of Baetica"
+R14_DEF: "the Province of Africa Proconsularis"
+R15_DEF: "the Province of Sardinia et Corsica"
+R16_DEF: "the Province of Sicilia"
+R17_DEF: "the Province of Italia"
+R18_DEF: "the Province of Pannonia"
+R19_DEF: "the Province of Dalmatia"
+R20_DEF: "the Province of Noricum"
+R21_DEF: "the Province of Moesia"
+R22_DEF: "the Province of Macedonia"
+R23_DEF: "the Province of Archaea"
+R24_DEF: "the Province of Creta et Cyrenae"
+R25_DEF: "the Province of Asia"
+R26_DEF: "the Province of Bythinia et Pontus"
+R27_DEF: "the Province of Cyprus"
+R28_DEF: "the Province of Syria"
+
+RR1_ADJ: "Belgic"
+RR2_ADJ: "Lugdunensian"
+RR3_ADJ: "Aquitanean"
+RR4_ADJ: "Narbonensian"
+RR5_ADJ: "Germanic Inferior"
+RR6_ADJ: "Germanic Superior"
+RR7_ADJ: "Raetian et Vindelic"
+RR8_ADJ: "Cilician"
+RR9_ADJ: "Alpine Maritimae"
+R10_ADJ: "Galatian"
+R11_ADJ: "Tarraconensian"
+R12_ADJ: "Lusitanian"
+R13_ADJ: "Baetic"
+R14_ADJ: "African Proconsular"
+R15_ADJ: "Sardinian et Corsican"
+R16_ADJ: "Sicilian"
+R17_ADJ: "Italian"
+R18_ADJ: "Pannonian"
+R19_ADJ: "Dalmatian"
+R20_ADJ: "Noricum"
+R21_ADJ: "Moesian"
+R22_ADJ: "Macedonian"
+R23_ADJ: "Archaean"
+R24_ADJ: "Cretan et Cyrenaean"
+R25_ADJ: "Asian"
+R26_ADJ: "Bythinian et Pontic"
+R27_ADJ: "Cyprian"
+R28_ADJ: "Syrian"
+
+## ASIAN COUNTRIES
+
+QQA: "Qiang"
+QQA_DEF: "the Qiang Nation"
+QQA_ADJ: "Qiang"
+
+ZZH: "Kingdom of Zhangzhung"
+ZZH_DEF: "the Kingdom of Zhangzhung"
+ZZH_ADJ: "Zhangzhung"
+
+CCL: "Chin Lin"
+CCL_DEF: "the Policy of Chin Lin"
+CCL_ADJ: "Chin Lin"
+
+TTT: "City of Theton"
+TTT_DEF: "the City of Theton"
+TTT_ADJ: "Thetonian"
+
+KMH: "Khmers"
+KMH_DEF: "the Khmers"
+KMH_ADJ: "Khmers"
+
+YAO: "Yaos"
+YAO_DEF: "the Yaos Peoples"
+YAO_ADJ: "Yaos"
+
+THA: "Thais"
+THA_DEF: "the Thais"
+THA_ADJ: "Thais"
+
+SHN: "Shans"
+SHN_DEF: "the Shans"
+SHN_ADJ: "Shans"
+
+BUR: "Burmans"
+BUR_DEF: "the Burmans"
+BUR_ADJ: "Burmans"
+
+LIA: "Liao"
+LIA_DEF: "the Liao"
+LIA_ADJ: "Liao"
+
+TGU: "Tanguts"
+TGU_DEF: "the Tanguts"
+TGU_ADJ: "Tangut"
+
+TBS: "Tibetan Tribes"
+TBS_DEF: "the Tibetan Tribes"
+TBS_ADJ: "Tibetan"
+
+MAI: "Malays"
+MAI_DEF: "the Malays Peoples"
+MAI_ADJ: "Malays"
+
+VJI: "Vijayapura"
+VJI_DEF: "the Vijayapura"
+VJI_ADJ: "Vijayapurans"
+
+KTL: "Kantoli"
+KTL_DEF: "the Kantoli"
+KTL_ADJ: "Kantoli"
+
+SKN: "Salakanagara"
+SKN_DEF: "the Salakanagara"
+SKN_ADJ: "Salakanagaran"
+
+TWA: "Taiwan"
+TWA_DEF: "the Taiwanese Peoples"
+TWA_ADJ: "Taiwanese"
+
+RYO: "Ryukuans"
+RYO_DEF: "the Ryukuans"
+RYO_ADJ: "Ryukuans"
+
+KYU: "Kyushu"
+KYU_DEF: "the Chiefdom of Kyushu"
+KYU_ADJ: "Kyushu"
+
+SAI: "Saitobaru"
+SAI_DEF: "the Chiefdom of Saitobaru"
+SAI_ADJ: "Saitobaru"
+
+KBI: "Kibi"
+KBI_DEF: "the Chiefdom of Kibi"
+KBI_ADJ: "Kibi"
+
+IZM: "Izumo"
+IZM_DEF: "the Chiefdom of Izumo"
+IZM_ADJ: "Izumo"
+
+BYO: "Kingdom of Buyeo"
+BYO_DEF: "the Kingdom of Buyeo"
+BYO_ADJ: "Buyean"
+
+WHU: "Wuhuan"
+WHU_DEF: "the Chiefdom of the Wuhuan"
+WHU_ADJ: "Wuhuan"
+
+XIA: "Xianbei"
+XIA_DEF: "the Xianbei"
+XIA_ADJ: "Xianbei"
+
+YLI: "Yilou"
+YLI_DEF: "the Chiefdom of Yilou"
+YLI_ADJ: "Yilou"
+
+DGB: "Gonbuyeo"
+DGB_DEF: "the Kingdom of Gonbuyeo"
+DGB_ADJ: "Gonbuyean"

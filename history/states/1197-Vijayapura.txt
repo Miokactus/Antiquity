@@ -1,0 +1,19 @@
+state={
+	id=1197
+	name="STATE_1197"
+	provinces={
+		1230 1304 1316 4279 4335 4409 7227 10282 12129 12955 
+	}
+	history = {
+		owner = VJI
+		add_core_of = VJI
+		victory_points = { 1230 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=66000
+	state_category = town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

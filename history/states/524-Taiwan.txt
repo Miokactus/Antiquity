@@ -2,12 +2,13 @@ state=
 {
 	id=524
 	name="STATE_524"
-	manpower = 4592537
+	manpower = 259253
 	
 	state_category = large_town
 	history=
 	{
-		owner = AAN
+		owner = TWA
+		add_core_of = TWA
 		
 		
 		buildings = {

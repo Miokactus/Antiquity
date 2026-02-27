@@ -3,10 +3,11 @@ state = {
 	name = "STATE_998"
 	
 	state_category = rural
-	manpower = 966906
+	manpower = 96690
 	
 	history = {
-		owner = AAN
+		owner = BUR
+		add_core_of = BUR
 		
 
 		buildings = {

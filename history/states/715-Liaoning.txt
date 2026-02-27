@@ -1,13 +1,13 @@
 state={
 	id=715
 	name="STATE_715"
-	manpower = 364337
+	manpower = 36433
 	
 	state_category = town
 
 	history={
-		owner = XAI
-		add_core_of = XAI
+		owner = WHU
+		add_core_of = WHU
 		
 		
 		

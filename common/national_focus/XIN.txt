@@ -22,12 +22,24 @@ focus_tree = {
 		y = 2
 		cost = 6
 		available = { 
+			NOT = {
+				has_country_flag = XIN_revolt_started
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		mutually_exclusive = { focus = XIN_our_dynasty }
 		completion_reward = {
+			RYY = {
+				add_political_power = 50
+			}
+			LLU = {
+				add_political_power = 50
+			}
+			ANH = {
+				add_political_power = 50
+			}
 		}
 	}
 
@@ -94,6 +106,9 @@ focus_tree = {
 		prerequisite = { focus = XIN_gather_support_from_the_populace }
 		mutually_exclusive = { }
 		completion_reward = {
+			RYY = {
+
+			}
 		}
 	}
 
@@ -194,6 +209,12 @@ focus_tree = {
 		prerequisite = { focus = XIN_contacts_with_the_rebels }
 		mutually_exclusive = { }
 		completion_reward = {
+			RYY = {
+				add_command_power = 50
+			}
+			LLU = {
+				add_command_power = 50
+			}
 		}
 	}
 
@@ -248,6 +269,12 @@ focus_tree = {
 		prerequisite = { focus = XIN_contacts_with_the_rebels }
 		mutually_exclusive = { }
 		completion_reward = {
+			RYY = {
+				add_ideas = RYY_revolutionary_army
+			}
+			LLU = {
+				add_ideas = RYY_revolutionary_army
+			}
 		}
 	}
 
@@ -308,6 +335,18 @@ focus_tree = {
 		prerequisite = { focus = XIN_create_peasants_militias }
 		mutually_exclusive = { }
 		completion_reward = {
+			RYY = {
+				add_ideas = CHI_army_of_bandits
+			}
+			LLU = {
+				add_ideas = CHI_army_of_bandits
+			}
+			ANH = {
+				add_ideas = CHI_army_of_bandits
+			}
+			HEB = {
+				add_ideas = CHI_army_of_bandits
+			}
 		}
 	}
 
@@ -1420,6 +1459,13 @@ focus_tree = {
 			add_power_balance_value = {
     			id = XIN_heaven_mandate
     			value = -0.05
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				add = 250
+				has_war = yes
 			}
 		}
 	}

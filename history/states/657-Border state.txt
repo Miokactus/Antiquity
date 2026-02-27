@@ -2,7 +2,7 @@
 state={
 	id = 657
 	name = "STATE_657" # Birobidzhan
-	manpower = 308380
+	manpower = 105630
 	resources = {
 		steel = 8 # was: 24
 	}
@@ -11,10 +11,11 @@ state={
 	state_category = pastoral
 
 	history = {
-		owner = AAN
+		owner = XIA
+		add_core_of = XIA
 		buildings = {
 			infrastructure = 2
-			#
+			industrial_complex = 1
 		}
 		
 		

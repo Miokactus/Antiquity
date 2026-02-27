@@ -5,8 +5,8 @@ state={
 		8042 
 	}
 	history = {
-		owner = NYA
-		add_core_of = NYA
+		owner = AAN
+		add_core_of = AAN
 		victory_points = { 8042 5 }
 		buildings = {
 			infrastructure = 1

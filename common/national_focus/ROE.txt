@@ -102,7 +102,7 @@ focus_tree = {
 			add_trait = {
      			character = tiberius_emperor
      			ideology = roman_paternalism
-     			trait = roman_emperor
+     			trait = ROE_roman_emperor
 			}
 		}
 	}
@@ -123,6 +123,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_senate_confirmation }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_ideas = ROE_divinised_augustus
 		}
 	}
 
@@ -148,7 +149,7 @@ focus_tree = {
 	#Germanicus' Campaigns
 	focus = {
 		id = ROE_germanicus_campaigns
-		icon = GFX
+		icon = GFX_goal_german_crushing
 		relative_position_id = ROE_follow_augustus_will
 		x = 4
 		y = 4
@@ -161,19 +162,24 @@ focus_tree = {
 		prerequisite = { focus = ROE_deal_with_the_mutinies }
 		mutually_exclusive = { }
 		completion_reward = {
+			custom_effect_tooltip = ROE_german_campaign_tooltip
+			add_ideas = ROE_germanicus_campaign
 		}
 	}
 
 	#The Burden of War
 	focus = {
 		id = ROE_the_burden_of_war
-		icon = GFX
+		icon = GFX_focus_CZE_german_puppet
 		relative_position_id = ROE_follow_augustus_will
 		x = 5
 		y = 5
 		cost = 8
 		available = {
-			has_country_flag = ROE_lost_to_germans
+			OR = {
+				has_country_flag = ROE_lost_to_germans
+				has_country_flag = ROE_stopped_the_campaigns
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -210,7 +216,7 @@ focus_tree = {
 	#All Hail in Germania!
 	focus = {
 		id = ROE_all_hail_in_germania
-		icon = GFX
+		icon = GFX_focus_BEL_v_for_victory
 		relative_position_id = ROE_follow_augustus_will
 		x = 3
 		y = 5
@@ -247,6 +253,11 @@ focus_tree = {
 		prerequisite = { focus = ROE_deal_with_the_mutinies }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_political_power = -50
+			add_timed_idea = {
+				idea = ROE_army_morale_boost
+				days = 180
+			}
 		}
 	}
 
@@ -266,6 +277,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_hail_augustus }
 		mutually_exclusive = { focus = ROE_embrace_the_princeps_title }
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 
@@ -285,6 +297,11 @@ focus_tree = {
 		prerequisite = { focus = ROE_refuse_too_many_honors }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_trait = {
+     			character = tiberius_emperor
+     			ideology = roman_paternalism
+     			trait = ROE_discreet_emperor
+			}
 		}
 	}
 
@@ -304,6 +321,11 @@ focus_tree = {
 		prerequisite = { focus = ROE_hail_augustus }
 		mutually_exclusive = { focus = ROE_refuse_too_many_honors }
 		completion_reward = {
+			add_trait = {
+     			character = tiberius_emperor
+     			ideology = roman_paternalism
+     			trait = ROE_princeps
+			}
 		}
 	}
 
@@ -323,6 +345,11 @@ focus_tree = {
 		prerequisite = { focus = ROE_embrace_the_princeps_title }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_trait = {
+     			character = tiberius_emperor
+     			ideology = roman_paternalism
+     			trait = ROE_visible_emperor
+			}
 		}
 	}
 
@@ -333,7 +360,7 @@ focus_tree = {
 		relative_position_id = ROE_follow_augustus_will
 		x = -1
 		y = 5
-		cost = 10
+		cost = 2
 		available = { 
 		}
 		search_filters = {
@@ -342,6 +369,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_first_senator focus = ROE_delegate_to_the_senate }
 		mutually_exclusive = { }
 		completion_reward = {
+			custom_effect_tooltip = TOBEADDED
 		}
 	}
 
@@ -370,7 +398,7 @@ focus_tree = {
 	#Develop Farming
 	focus = {
 		id = ROE_develop_farming
-		icon = GFX
+		icon = GFX_focus_generic_farmland
 		relative_position_id = ROE_follow_augustus_will
 		x = -3
 		y = 6
@@ -383,6 +411,30 @@ focus_tree = {
 		prerequisite = { focus = ROE_senatorial_relations }
 		mutually_exclusive = { }
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
@@ -402,6 +454,8 @@ focus_tree = {
 		prerequisite = { focus = ROE_senatorial_relations }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 
@@ -421,13 +475,14 @@ focus_tree = {
 		prerequisite = { focus = ROE_senatorial_relations }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_ideas = ROE_praetorian_empowering
 		}
 	}
 
 	#An Era of Peace
 	focus = {
 		id = ROE_but_an_era_of_power
-		icon = GFX
+		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
 		relative_position_id = ROE_follow_augustus_will
 		x = 0
 		y = 7
@@ -446,7 +501,7 @@ focus_tree = {
 	#But an Era of Power
 	focus = {
 		id = ROE_an_era_of_peace
-		icon = GFX
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
 		relative_position_id = ROE_follow_augustus_will
 		x = -2
 		y = 7
@@ -471,6 +526,11 @@ focus_tree = {
 		y = 8
 		cost = 10
 		available = { 
+			OR = {
+				has_country_flag = ROE_stopped_the_campaigns
+				has_country_flag = ROE_lost_to_germans
+				has_country_flag = ROE_defeated_arminius
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -480,15 +540,13 @@ focus_tree = {
 		mutually_exclusive = { }
 		completion_reward = {
 			retire_character = ROE_germanicus_general
+			custom_effect_tooltip = ROE_retire_germanicus_tooltip
 		}
 		ai_will_do = {
 			base = 5
 			modifier = {
 				add = 500
 				is_historical_focus_on = yes
-			}
-			modifier = {
-				add = 500
 				date > 17.2.1
 			}
 		}
@@ -497,7 +555,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_our_mining_problem
-		icon = GFX
+		icon = GFX_focus_generic_mining_industry
 		relative_position_id = ROE_follow_augustus_will
 		x = 0
 		y = 9
@@ -510,13 +568,37 @@ focus_tree = {
 		prerequisite = { focus = ROE_retire_germanicus }
 		mutually_exclusive = { }
 		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = mine
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = mine
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = mine
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
 	#
 	focus = {
 		id = ROE_the_empire_needs_for_money
-		icon = GFX
+		icon = GFX_focus_generic_monetary_union
 		relative_position_id = ROE_follow_augustus_will
 		x = 0
 		y = 10
@@ -567,6 +649,30 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_empire_needs_for_money }
 		mutually_exclusive = { }
 		completion_reward = {
+			16 = {
+				add_building_construction = {
+ 					type = woodwork
+    				level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			24 = {
+				add_building_construction = {
+ 					type = woodwork
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			37 = {
+				add_building_construction = {
+ 					type = woodwork
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
@@ -624,6 +730,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_retire_germanicus }
 		mutually_exclusive = { focus = ROE_allow_freedom_of_religion_for_jews }
 		completion_reward = {
+			add_ideas = ROE_jewish_cult_banned
 		}
 	}
 
@@ -643,6 +750,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_retire_germanicus }
 		mutually_exclusive = { focus = ROE_forbid_jewish_cults }
 		completion_reward = {
+			add_ideas = ROE_jewish_cult_tolerance
 		}
 	}
 
@@ -668,7 +776,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_restraint_religious_influence
-		icon = GFX
+		icon = GFX_focus_ARG_state_atheism
 		relative_position_id = ROE_follow_augustus_will
 		x = -4
 		y = 10
@@ -1627,6 +1735,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		completion_reward = {
 			custom_effect_tooltip = ROE_german_campaign_tooltip
+			add_ideas = ROE_germanicus_campaign
 		}
 	}
 
@@ -1981,6 +2090,12 @@ focus_tree = {
 		prerequisite = { focus = ROE_recall_marcus }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_political_power = 50
+			add_trait = {
+     			character = marcus_agrippa_emperor
+     			ideology = roman_paternalism
+     			trait = ROE_triomphant_son
+			}
 		}
 	}
 
@@ -2001,6 +2116,11 @@ focus_tree = {
 		prerequisite = { focus = ROE_recall_marcus }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -2042,6 +2162,10 @@ focus_tree = {
 		prerequisite = { focus = ROE_avenge_the_exile }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_timed_idea = {
+				idea = ROE_a_new_era_of_games
+				days = 365
+			}
 		}
 	}
 
@@ -2073,6 +2197,14 @@ focus_tree = {
 			random_owned_controlled_state = {
 				add_building_construction = {
  					type = industrial_complex
+    				level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
     				level = 1
 					instant_build = yes
 				}
@@ -2098,6 +2230,22 @@ focus_tree = {
 		prerequisite = { focus = ROE_industrial_development }
 		mutually_exclusive = { }
 		completion_reward = {
+			21 = {
+				add_building_construction = {
+ 					type = naval_base
+    				level = 1
+					instant_build = yes
+					province = 11834
+				}
+			}
+			31 = {
+				add_building_construction = {
+ 					type = naval_base
+    				level = 2
+					instant_build = yes
+					province = 3946
+				}
+			}
 		}
 	}
 
@@ -2280,7 +2428,7 @@ focus_tree = {
 	#Appease the Farmers
 	focus = {
 		id = ROE_appease_the_farmers
-		icon = GFX
+		icon = GFX_focus_generic_farmland
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 8
@@ -2316,7 +2464,7 @@ focus_tree = {
 	#Open New Mines
 	focus = {
 		id = ROE_open_new_mines
-		icon = GFX
+		icon = GFX_focus_generic_mining_industry
 		relative_position_id = ROE_a_new_dynasty
 		x = -1
 		y = 8
@@ -2504,7 +2652,7 @@ focus_tree = {
 	#Demand Local Tribes Submission
 	focus = {
 		id = ROE_demand_local_tribes_submission
-		icon = GFX
+		icon = GFX_goal_german_crushing
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 10
@@ -2518,7 +2666,8 @@ focus_tree = {
 		prerequisite = { focus = ROE_war_war }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			custom_effect_tooltip = ROE_german_campaign_tooltip
+			add_ideas = ROE_germanicus_campaign
 		}
 	}
 

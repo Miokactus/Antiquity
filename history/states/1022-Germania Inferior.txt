@@ -7,9 +7,15 @@ state={
 	history = {
 		owner = ROE
 		add_core_of = ROE
+		victory_points = { 587 3 }
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=105000
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

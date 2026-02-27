@@ -249,6 +249,7 @@ mandate_of_heaven = {
 			has_power_balance = {
     			id = XIN_heaven_mandate
 			}
+			is_debug = yes
 		}
 		complete_effect = {
             add_power_balance_value = {
@@ -278,6 +279,7 @@ mandate_of_heaven = {
 			has_power_balance = {
     			id = XIN_heaven_mandate
 			}
+			is_debug = yes
 		}
 		complete_effect = {
             add_power_balance_value = {
@@ -306,6 +308,7 @@ mandate_of_heaven = {
 			has_power_balance = {
     			id = XIN_heaven_mandate
 			}
+			is_debug = yes
 		}
 		complete_effect = {
             remove_power_balance = {
@@ -334,6 +337,7 @@ mandate_of_heaven = {
 			has_power_balance = {
     			id = XIN_heaven_mandate
 			}
+			is_debug = yes
 		}
 		complete_effect = {
 			
@@ -491,6 +495,7 @@ mandate_of_heaven_claim = {
 			has_power_balance = {
     			id = XIN_heaven_mandate_claimant
 			}
+			is_debug = yes
 		}
 		complete_effect = {
             add_power_balance_value = {
@@ -517,6 +522,7 @@ mandate_of_heaven_claim = {
 			has_power_balance = {
     			id = XIN_heaven_mandate_claimant
 			}
+			is_debug = yes
 		}
 		complete_effect = {
             add_power_balance_value = {
@@ -546,6 +552,7 @@ mandate_of_heaven_claim = {
 			has_power_balance = {
     			id = XIN_heaven_mandate_claimant
 			}
+			is_debug = yes
 		}
 		complete_effect = {
             add_power_balance_value = {
@@ -572,6 +579,7 @@ mandate_of_heaven_claim = {
 			has_power_balance = {
     			id = XIN_heaven_mandate_claimant
 			}
+			is_debug = yes
 		}
 		complete_effect = {
             add_power_balance_value = {
@@ -591,6 +599,19 @@ political_actions = {
 		icon = generic_civil_support
 		days_re_enable = 100
 		cost = 50
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = RYY
+				is_historical_focus_on = yes
+				factor = 15
+			}
+			modifier = {
+				tag = LLU
+				is_historical_focus_on = yes
+				factor = 15
+			}
+		}
 		allowed = {
 			any_country = {
 				exists = yes
@@ -607,6 +628,9 @@ political_actions = {
 			}
 			744 = {
 				is_owned_by = ROOT
+			}
+			ROOT = {
+				is_subject = no
 			}
 		}
 		visible = {
@@ -691,7 +715,7 @@ crisis = {
 			}
 			XIN = { exists = yes }
 		}
-		days_mission_timeout = 60
+		days_mission_timeout = 5
 		activation = {
 			has_global_flag = XIN_dynasty_collapse
 		}
@@ -706,17 +730,22 @@ crisis = {
 		}
 		timeout_effect = {
 			XIN = {
-				declare_war_on = {
-    				target = RYY
-    				type = annex_everything
-				}
-				declare_war_on = {
-    				target = LLU
-    				type = annex_everything
-				}
-				declare_war_on = {
-    				target = ANH
-    				type = annex_everything
+				hidden_effect = {
+					declare_war_on = {
+    					target = RYY
+    					type = civil_war
+					}
+					declare_war_on = {
+    					target = LLU
+    					type = civil_war
+					}
+					declare_war_on = {
+    					target = ANH
+    					type = civil_war
+					}
+					add_civil_war_target = RYY
+					add_civil_war_target = LLU
+					add_civil_war_target = ANH
 				}
 			}
 			clr_global_flag = XIN_dynasty_collapse
@@ -727,7 +756,10 @@ crisis = {
 		icon = generic_civil_support
 		allowed = {
 			OR = {
-				tag = ANN
+				AND = {
+					tag = ANN
+					is_subject = no
+				}
 				tag = RYY
 				tag = LLU
 			}
@@ -737,27 +769,46 @@ crisis = {
 				AND = {
 					RYY = { exists = no }
 					LLU = { exists = no }
-					ANN = { exists = yes }
+					AND = {
+						tag = ANN
+						is_subject = no
+						exists = yes
+					}
 				}
 				AND = {
 					RYY = { exists = no }
 					LLU = { exists = yes }
-					ANN = { exists = no }
+					AND = {
+						tag = ANN
+						is_subject = no
+						exists = no
+					}
 				}
 				AND = {
 					RYY = { exists = yes }
 					LLU = { exists = no }
-					ANN = { exists = no }
+					AND = {
+						tag = ANN
+						is_subject = no
+						exists = no
+					}
 				}
 			}
 		}
-		days_mission_timeout = 160
+		days_mission_timeout = 120
 		activation = {
 			has_global_flag = XIN_dynasty_collapse2
+			ANN = {
+				exists = yes
+				is_subject = no
+			}
 		}
 		visible = {
 			OR = {
-				tag = ANN
+				AND = {
+					tag = ANN
+					is_subject = no
+				}
 				tag = RYY
 				tag = LLU
 			}
@@ -766,17 +817,64 @@ crisis = {
 		}
 		timeout_effect = {
 			ANN = {
-				declare_war_on = {
-    				target = RYY
-    				type = annex_everything
+				if = {
+					limit = {
+						RYY = {
+							NOT = {
+								OR = {
+									has_non_aggression_pact_with = ANN
+									has_military_access_to = ANN
+								}
+							}
+						}
+					}
+					declare_war_on = {
+    					target = RYY
+    					type = civil_war
+					}
+					hidden_effect = {
+						add_civil_war_target = RYY
+					}
 				}
-				declare_war_on = {
-    				target = LLU
-    				type = annex_everything
+
+				if = {
+					limit = {
+						LLU = {
+							NOT = {
+								OR = {
+									has_non_aggression_pact_with = ANN
+									has_military_access_to = ANN
+								}
+							}
+						}
+					}
+					declare_war_on = {
+    					target = LLU
+    					type = civil_war
+					}
+					hidden_effect = {
+						add_civil_war_target = LLU
+					}
 				}
-				declare_war_on = {
-    				target = ANH
-    				type = annex_everything
+
+				if = {
+					limit = {
+						ANH = {
+							NOT = {
+								OR = {
+									has_non_aggression_pact_with = ANN
+									has_military_access_to = ANN
+								}
+							}
+						}
+					}
+					declare_war_on = {
+    					target = ANH
+    					type = civil_war
+					}
+					hidden_effect = {
+						add_civil_war_target = ANH
+					}
 				}
 				if = {
 					limit = {
@@ -784,11 +882,200 @@ crisis = {
 					}
 					declare_war_on = {
     					target = XIN
-    					type = annex_everything
+    					type = civil_war
 					}
+					add_civil_war_target = XIN
 				}
 			}
 			clr_global_flag = XIN_dynasty_collapse2
+		}
+	}
+
+
+
+
+
+
+
+	han_revolt = {
+		icon = generic_civil_support
+		allowed = {
+			OR = {
+				AND = {
+					tag = ANN
+					is_subject = yes
+				}
+				tag = RYY
+				tag = LLU
+			}
+    	}
+		available = {
+			OR = {
+				AND = {
+					744 = {
+						owner = {
+							OR = {
+								is_subject_of = RYY
+								tag = RYY
+							}
+						}
+					}
+					RYY = {
+						has_completed_focus = CHA_claim_the_mandate
+					}
+				}
+				AND = {
+					744 = {
+						owner = {
+							OR = {
+								is_subject_of = LLU
+								tag = LLU
+							}
+						}
+					}
+					LLU = {
+						has_completed_focus = CHA_claim_the_mandate
+					}
+				}
+			}
+		}
+		days_mission_timeout = 80
+		activation = {
+			744 = {
+				OR = {
+					is_owned_by = LLU
+					is_owned_by = RYY
+					owner = {
+						OR = {
+							is_subject_of = LLU
+							is_subject_of = RYY
+						}
+					}
+				}
+			}
+			NOT = {
+				ROOT = {
+					has_country_flag = stabilised_the_empire
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					tag = ANN
+					is_subject = yes
+				}
+				tag = RYY
+				tag = LLU
+			}
+		}
+		complete_effect = {
+			744 = {
+				owner = {
+					if = {
+						limit = {
+							OR = {
+								tag = RYY
+								tag = LLU
+							}
+						}
+						set_country_flag = stabilised_the_empire
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			744 = {
+				owner = {
+					if = {
+						limit = {
+							OR = {
+								tag = RYY
+								tag = LLU
+							}
+						}
+						set_country_flag = failed_stabilised_the_empire
+					}
+				}
+			}
+			custom_effect_tooltip = CHA_revolt_han
+		}
+	}
+
+
+
+
+	fall_of_chang_an = {
+		icon = generic_civil_support
+		allowed = {
+			OR = {
+				tag = XIN
+				tag = RYY
+				tag = LLU
+				tag = ANH
+			}
+    	}
+		available = {
+			NOT = {
+				744 = {
+					is_controlled_by = XIN
+				}
+			}
+			744 = {
+				OR = {
+					is_controlled_by = RYY
+					is_controlled_by = LLU
+					is_controlled_by = ANH
+				}
+			}
+		}
+		cancel_trigger = {
+			AND = {
+				tag = RYY
+				tag = LLU
+				tag = ANH
+			}
+			NOT = {
+				has_war_with = XIN
+			}
+		}
+		days_mission_timeout = 365
+		activation = {
+			XIN = {
+				OR = {
+					has_war_with = RYY
+					has_war_with = LLU
+					has_war_with = ANH
+				}
+			}
+		}
+		visible = {
+			OR = {
+				tag = XIN
+				tag = RYY
+				tag = LLU
+				tag = ANH
+			}
+		}
+		complete_effect = {
+			XIN = {
+				add_ideas = {
+					id = XIN_lost_chang_an
+				}
+			}
+			clr_global_flag = XIN_dynasty_collapse
+		}
+		timeout_effect = {
+			RYY = {
+				add_ideas = CHI_failed_revolt
+			}
+			LLU = {
+				dismantle_faction = yes
+				add_ideas = CHI_failed_revolt
+			}
+			ANH = {
+				add_ideas = CHI_failed_revolt
+			}
 		}
 	}
 }

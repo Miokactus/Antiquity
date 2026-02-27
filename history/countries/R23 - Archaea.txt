@@ -1,0 +1,43 @@
+capital = 186
+
+oob = "R23_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+    name = "Administration of Archaea"
+    desc = "MONARCH_DESC"
+    picture = GFX_leader_ROE_senate_rome
+    expire = "120.5.4"
+    ideology = oligarchism_comm
+    traits = {
+    }
+}
+
+set_technology = {
+    infantry_weapons = 1
+	support_weapons = 1
+	basic_train = 1
+	early_destroyer = 1
+	transport = 1
+}
+
+set_politics = {
+    ruling_party = communism
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 20
+    fascism = 10
+    communism = 60
+    neutrality = 10
+}
+
+add_ideas = {
+    export_focus
+    limited_conscription
+    civilian_economy
+	one_party_monopoly
+}

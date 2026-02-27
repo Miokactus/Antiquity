@@ -228,36 +228,135 @@ unification_decisions = {
 	}
 
 
-    korea_unification = {
+    
+
+    northern_unification = {
         fire_only_once = yes
 		icon = generic_civil_support
 		highlight_states = {
     		highlight_state_targets = {
-        		state = 1066
-                state = 36
-                state = 1067
-                
+        		state = 1063
+                state = 1064
+                state = 1065
+                state = 527
+                state = 1044
+                state = 1048
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 150
+		allowed = {
+            OR = {
+                tag = GOR
+                tag = OKJ
+                tag = EYE
+                tag = BAE
+            }
+    	}
+		available = {
+			1063 = { is_owned_by = ROOT }
+    		1064 = { is_owned_by = ROOT }
+            1065 = { is_owned_by = ROOT }
+            527 = { is_owned_by = ROOT }
+            1044 = { is_owned_by = ROOT }
+            1048 = { is_owned_by = ROOT }
+		}
+		visible = {
+            OR = {
+                tag = GOR
+                tag = OKJ
+                tag = EYE
+                tag = BAE
+            }
+		}
+		complete_effect = {
+        hidden_effect = {
+            1063 = { add_core_of = ROOT }
+    		1064 = { add_core_of = ROOT }
+            1065 = { add_core_of = ROOT }
+            527 = { add_core_of = ROOT }
+            1044 = { add_core_of = ROOT }
+            1048 = { add_core_of = ROOT }
+        }
+            set_cosmetic_tag = korea_north
+		}
+		timeout_effect = {
+		}
+        ai_will_do = {
+    		base = 500
+		}
+
+    }
+
+        korea_unification = {
+        fire_only_once = yes
+		icon = generic_civil_support
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 1063
+                state = 1064
+                state = 1065
+                state = 527
+                state = 1044
+                state = 1048
+                state = 1045
+                state = 525
+                state = 1046
+                state = 1047
     		}
     		highlight_color_while_active = 3
     		highlight_color_before_active = 2
 		}
 		cost = 250
 		allowed = {
-            always = no
+            OR = {
+                tag = GOR
+                tag = OKJ
+                tag = EYE
+                tag = BAE
+                tag = EYA
+                tag = MAH
+                tag = JIN
+                tag = BYE
+            }
     	}
 		available = {
-			1066 = { is_owned_by = ROOT }
-    		36 = { is_owned_by = ROOT }
-            
+			1063 = { is_owned_by = ROOT }
+    		1064 = { is_owned_by = ROOT }
+            1065 = { is_owned_by = ROOT }
+            527 = { is_owned_by = ROOT }
+            1044 = { is_owned_by = ROOT }
+            1048 = { is_owned_by = ROOT }
+            1045 = { is_owned_by = ROOT }
+            525 = { is_owned_by = ROOT }
+            1046 = { is_owned_by = ROOT }
+            1047 = { is_owned_by = ROOT }
 		}
 		visible = {
+            OR = {
+                tag = GOR
+                tag = OKJ
+                tag = EYE
+                tag = BAE
+                tag = EYA
+                tag = MAH
+                tag = JIN
+                tag = BYE
+            }
 		}
 		complete_effect = {
         hidden_effect = {
-            1066 = { add_core_of = ROOT }
-    		36 = { add_core_of = ROOT }
-            1067 = { add_core_of = ROOT }
-            
+            1063 = { add_core_of = ROOT }
+    		1064 = { add_core_of = ROOT }
+            1065 = { add_core_of = ROOT }
+            527 = { add_core_of = ROOT }
+            1044 = { add_core_of = ROOT }
+            1048 = { add_core_of = ROOT }
+            1045 = { add_core_of = ROOT }
+            525 = { add_core_of = ROOT }
+            1046 = { add_core_of = ROOT }
+            1047 = { add_core_of = ROOT }
         }
             set_cosmetic_tag = korean_empire
 		}
@@ -266,6 +365,5 @@ unification_decisions = {
         ai_will_do = {
     		base = 500
 		}
-    
     }
 }

@@ -1,7 +1,7 @@
 state={
 	id=673
 	name="STATE_673"
-	manpower = 4232000
+	manpower = 92326
 	resources={
 		wood=30 # was: 52
 	}
@@ -10,7 +10,8 @@ state={
 
 
 	history= {
-		owner = AAN
+		owner = MAI
+		add_core_of = MAI
 		
 		victory_points = {
 			10263 3 

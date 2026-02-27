@@ -1,0 +1,19 @@
+state={
+	id=1190
+	name="STATE_1190"
+	provinces={
+		1970 
+	}
+	history = {
+		owner = KHT
+		add_core_of = KHT
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=20800
+	state_category = rural
+	buildings_max_level_factor=1
+	local_supplies=0
+}

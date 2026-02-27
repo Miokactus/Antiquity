@@ -13,6 +13,8 @@
  restore_the_kushite_empire: "Restore the Kushite Empire"
  unify_the_lands_of_the_germans: "Unify the Lands of the Germans"
  crisis_of_faith: "Crisis of Faith"
+ korea_unification: "Unification of Korea"
+ northern_unification: "Proclamation of Goryeo"
  end_of_war: "End of the War"
 
  ## COSMETIC TAGS
@@ -28,6 +30,18 @@
  germanic_empire_fascism: "Magnificent Holy Romanised Empire of the Germanic Peoples"
  germanic_empire_fascism_DEF: "the Magnificent Holy Romanised Empire of the Germanic Peoples"
  germanic_empire_fascism_ADJ: "Germaroman"
+
+ korean_empire: "Korean Empire"
+ korean_empire_DEF: "the Great Unified Korean Empire"
+ korean_empire_ADJ: "Korean"
+
+ korea_north: "Kingdom of Goryeo"
+ korea_north_DEF: "the Kingdom of Goryeo"
+ korea_north_ADJ: "Yemaek"
+
+ silla: "Kingdom of Silla"
+ silla_DEF: "the Kingdom of Silla"
+ silla_ADJ: "Silla"
 
  ## TOOLTIPS
  germanic_empire_tooltip_owns: "§GWe need to control every germanic states in Europe!§!"

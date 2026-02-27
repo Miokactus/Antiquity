@@ -44,6 +44,40 @@ CRT = "countries/Carthage.txt"
 RRO = "countries/Rome.txt"
 AAS = "countries/Austrian_State.txt"
 
+
+## ROMAN PROVINCES [FLAGS NEEDED]
+RR1 = "countries/Roman_Provinces.txt"
+RR2 = "countries/Roman_Provinces.txt"
+RR3 = "countries/Roman_Provinces.txt"
+RR4 = "countries/Roman_Provinces.txt"
+RR5 = "countries/Roman_Provinces.txt"
+RR6 = "countries/Roman_Provinces.txt"
+RR7 = "countries/Roman_Provinces.txt"
+RR8 = "countries/Roman_Provinces.txt"
+RR9 = "countries/Roman_Provinces.txt"
+R10 = "countries/Roman_Provinces.txt"
+R11 = "countries/Roman_Provinces.txt"
+R12 = "countries/Roman_Provinces.txt"
+R13 = "countries/Roman_Provinces.txt"
+R14 = "countries/Roman_Provinces.txt"
+R15 = "countries/Roman_Provinces.txt"
+R16 = "countries/Roman_Provinces.txt"
+R17 = "countries/Roman_Provinces.txt"
+R18 = "countries/Roman_Provinces.txt"
+R19 = "countries/Roman_Provinces.txt"
+R20 = "countries/Roman_Provinces.txt"
+R21 = "countries/Roman_Provinces.txt"
+R22 = "countries/Roman_Provinces.txt"
+R23 = "countries/Roman_Provinces.txt"
+R24 = "countries/Roman_Provinces.txt"
+R25 = "countries/Roman_Provinces.txt"
+R26 = "countries/Roman_Provinces.txt"
+R27 = "countries/Roman_Provinces.txt"
+R28 = "countries/Roman_Provinces.txt"
+
+VVI = "countries/Roman_Provinces.txt" #Vienna
+RRR = "countries/Roman_Provinces.txt" #Rome
+
 ## CHINESE WARLORDS
 LLU = "countries/Lulin.txt"
 RYY = "countries/Red_Eyebrows.txt"
@@ -53,6 +87,34 @@ CJG = "countries/Chengjia.txt"
 NYU = "countries/Nanyue.txt"
 LUO = "countries/Luoyue.txt"
 SHY = "countries/Sa_Huynh.txt"
+
+## SOUTH-ASIAN STATES [FLAGS NEEDED]
+QQA = "countries/Asian.txt" #Qiang people
+ZZH = "countries/Asian.txt" #Zhangzhung
+CCL = "countries/Asian.txt" #Chin Lin
+TTT = "countries/Asian.txt" #Thaton Kingdom
+
+
+KMH = "countries/Asian.txt" #Khmers
+YAO = "countries/Asian.txt" #Yaos
+THA = "countries/Asian.txt" #Thais
+SHN = "countries/Asian.txt" #Shans
+BUR = "countries/Asian.txt" #Burmans
+LIA = "countries/Asian.txt" #Liao
+MAI = "countries/Asian.txt" #Malays (culture)
+VJI = "countries/Asian.txt" #Vijayapura (culture/state?)
+KTL = "countries/Asian.txt" #Kantoli (culture?)
+SKN = "countries/Asian.txt" #Salakanagara (culture/state?)
+TWA = "countries/Asian.txt" #Taiwanese peoples (culture)
+RYO = "countries/Asian.txt" #Ryukuans (culture)
+KYU = "countries/Asian.txt" #Kyushu
+SAI = "countries/Asian.txt" #Saitobaru
+KBI = "countries/Asian.txt" #Kibi
+IZM = "countries/Asian.txt" #Izumo
+
+TBS = "countries/Asian.txt" #Tibetan Tribes
+TGU = "countries/Asian.txt" #Tanguts
+
 
 
 ## KOREA
@@ -65,6 +127,12 @@ GOR = "countries/Goguryeo.txt"
 BAE = "countries/Baekje.txt"
 EYA = "countries/Ye.txt"
 LLE = "countries/Lelang.txt"
+    ##new korea [NO FLAGS]
+BYO = "countries/Asian.txt" #Buyeo
+WHU = "countries/Asian.txt" #Wuhuan
+XIA = "countries/Asian.txt" #Xianbei
+YLI = "countries/Asian.txt" #Yilou
+DGB = "countries/Asian.txt" #Dongbuyeo
 
 ## GERMANIA
 FRI = "countries/Frisia.txt"

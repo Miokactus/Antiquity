@@ -148,3 +148,154 @@ country_event = {
 		}
 	}
 }
+
+
+
+
+#Puppeting of Allies
+country_event = {
+	id = crs_event.8
+	title = crs_event.8.t
+	desc = crs_event.8.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Yes
+		name = crs_event.8.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = crs_event.9
+				days = 5
+			}
+		}
+	}
+	option = { # Nope
+		name = crs_event.8.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = crs_event.10
+				days = 5
+			}
+		}
+	}
+}
+
+
+#Puppeting of Allies [YES]
+country_event = {
+	id = crs_event.9
+	title = crs_event.9.t
+	desc = crs_event.9.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Great!
+		name = crs_event.9.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			set_temp_variable = { oldgov = var:THIS.current_party_ideology_group }
+			set_temp_variable = { demoldgov = var:THIS.party_popularity_100@democratic }
+			set_temp_variable = { olioldgov = var:THIS.party_popularity_100@communism }
+			set_temp_variable = { tyraoldgov = var:THIS.party_popularity_100@fascism }
+			set_temp_variable = { triboldgov = var:THIS.party_popularity_100@neutrality }
+        }
+        ROOT = {
+            set_autonomy = {
+                target = FROM
+                autonomous_state = autonomy_puppet
+                end_wars = no
+                end_civil_wars = no
+            }
+			FROM = {
+				set_politics = {
+    				ruling_party = var:oldgov
+    				elections_allowed = no
+    				election_frequency = 48
+				}
+				set_popularities = {
+					democratic = var:demoldgov
+					communism = var:olioldgov
+					fascism = var:tyraoldgov
+					neutrality = var:triboldgov
+				}
+			}
+        }
+	}
+}
+
+#Puppeting of Allies [NO]
+country_event = {
+	id = crs_event.10
+	title = crs_event.10.t
+	desc = crs_event.10.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Fucker!
+		name = crs_event.10.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		
+	}
+}
+
+
+
+
+
+#Integration
+country_event = {
+	id = crs_event.11
+	title = crs_event.11.t
+	desc = crs_event.11.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Yes
+		name = crs_event.11.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = crs_event.12
+				days = 5
+			}
+		}
+	}
+}
+
+
+#Integration [YES]
+country_event = {
+	id = crs_event.12
+	title = crs_event.12.t
+	desc = crs_event.12.d
+	trigger = {
+    }
+	picture = GFX_report_event_SOV_national_academy_of_sciences
+	is_triggered_only = yes
+	option = { # Great!
+		name = crs_event.12.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		annex_country = {
+    		target = FROM
+    		transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = FROM
+			}
+			add_core_of = ROOT
+		}
+	}
+}

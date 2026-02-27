@@ -1,58 +1,22 @@
-state = {
-	id = 528
-	name = "STATE_528" # Kyushu
-	manpower = 9069000
-
-	state_category = large_city
-
-	resources = {
-		chromium = 52 # was: 88
+state={
+	id=528
+	name="STATE_528"
+	resources={
+		chromium=13
 	}
-
+	provinces={
+		1025 1158 1183 4027 4164 7110 9950 10011 10020 11925 12006 
+	}
 	history = {
-
-		owner = AAN
-		
-
+		owner = KYU
+		add_core_of = KYU
+		victory_points = { 1025 1 }
 		buildings = {
-			#
-			dockyard = 4
-			arms_factory = 1
-			industrial_complex = 1
-
-			9950 = {
-				naval_base = 6
-			}
-
+			infrastructure = 1
 		}
-
-		victory_points = {
-			1025 10 # Kokura
-		}
-
-		victory_points = {
-			4102 15 # Kagoshima
-		}
-
-		victory_points = {
-			9950 20 # Nagasaki
-		}
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				#
-				7110 = {
-					# 1 # Sasebo Naval Arsenal
-				}
-			}
-		}
-
 	}
-
-	provinces = {
-		1020 1025 1158 1183 4027 4102 4164 4198 7110 7178 9950 10011 10020 10092 11925 11949 12006 12032 
-	}
-
-	local_supplies = 10.0 
+	manpower=32500
+	state_category = rural
+	buildings_max_level_factor=1
+	local_supplies=10
 }

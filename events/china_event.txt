@@ -254,7 +254,6 @@ country_event = {
 		OR = {
 			AND = {
 				has_completed_focus = XIN_links_with_the_red_eyebrows
-				has_completed_focus = XIN_create_peasants_militias
 			}
 			AND = {
 				date > 16.05.01
@@ -282,6 +281,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 54
+			set_compliance = 40
 		}
 		620 = {
 			add_core_of = LLU
@@ -292,6 +292,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 50
+			set_compliance = 40
 		}
 		602 = {
 			add_core_of = LLU
@@ -302,6 +303,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 46
+			set_compliance = 40
 		}
 
 		606 = {
@@ -313,6 +315,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 55
+			set_compliance = 40
 		}
 		598 = {
 			add_core_of = ANH
@@ -323,6 +326,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 52
+			set_compliance = 40
 		}
 		613 = {
 			add_core_of = ANH
@@ -333,6 +337,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 48
+			set_compliance = 40
 		}
 		749 = {
 			add_core_of = ANH
@@ -343,6 +348,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 41
+			set_compliance = 40
 		}
 		596 = {
 			add_core_of = ANH
@@ -353,6 +359,7 @@ country_event = {
 			}
 			start_resistance = yes
 			set_resistance = 38
+			set_compliance = 40
 		}
 	}
 }
@@ -380,16 +387,18 @@ country_event = {
 		}
 		}
     }
-	picture = GFX_report_event_XIN_peasants_revolt
-	option = { ## Red Eyebrows Rebellion Independent!
-		name = china_event.6.a
-		ai_chance = { factor = 1 }
-		trigger = { NOT = { has_completed_focus = XIN_the_fifth_column } }
+	immediate = {
 		RYY = {
 			transfer_state = 597
 			transfer_state = 743
 			load_oob = "RYY_14"
 		}
+	}
+	picture = GFX_report_event_XIN_peasants_revolt
+	option = { ## Red Eyebrows Rebellion Independent!
+		name = china_event.6.a
+		ai_chance = { factor = 1 }
+		trigger = { NOT = { has_completed_focus = XIN_the_fifth_column } }
 		XAI = { 
 			country_event = {
 				id = xai_event.1
@@ -428,12 +437,7 @@ country_event = {
 		ai_chance = { factor = 1 }
 		trigger = { has_completed_focus = XIN_the_fifth_column }
 		RYY = {
-			transfer_state = 597
-			transfer_state = 743
-		}
-		RYY = {
 			change_tag_from = ROOT
-			load_oob = "RYY_14"
 		}
 		XAI = { 
 			country_event = {
@@ -809,6 +813,10 @@ country_event = {
 				is_owned_by = RYY
 			}
 		}
+		AND = {
+			tag = ANN
+			is_subject = no
+		}
     }
 	picture = GFX_report_event_XIN_peasants_revolt
 	option = { ## Arg
@@ -971,6 +979,13 @@ country_event = {
 				}
 			}
 		}
+		AND = {
+			tag = ANN
+			OR = {
+				exists = no
+				is_subject = no
+			}
+		}
     }
 	picture = GFX_report_event_XIN_generic_battle
 	major = yes
@@ -993,22 +1008,213 @@ country_event = {
 				remember_old_capital = yes
 			}
 		}
-		XIN = {
-			remove_power_balance = {
-				id = XIN_heaven_mandate
-			}
-		}
+		every_country = {
+            limit = {
+				has_power_balance = {
+                    id = XIN_heaven_mandate_claimant
+                }
+            }
+            remove_power_balance = {
+                id = XIN_heaven_mandate_claimant
+            }
+			drop_cosmetic_tag = yes
+            every_other_country = {
+                limit = {
+                    has_power_balance = {
+                    	id = XIN_heaven_mandate
+            		}
+                }
+                set_power_balance = {
+                	id = XIN_heaven_mandate_claimant
+                	set_value = -0.05
+                }
+            }
+        }
 		ANN = {
 			set_power_balance = {
-    			id = XIN_heaven_mandate
-				set_value = 0.35
-			}
+        		id = XIN_heaven_mandate
+        	    set_value = 0.05
+        	}
 		}
 	}
 }
 
 
-
+#Revolt of the Hans
+country_event = {
+	id = china_event.16
+	title = china_event.16.t
+	desc = china_event.16.d
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = XIN
+			tag = RYY
+		}
+		OR = {
+			LLU = {
+				has_country_flag = failed_stabilised_the_empire
+			}
+			RYY = {
+				has_country_flag = failed_stabilised_the_empire
+			}
+		}
+		744 = {
+			OR = {
+				is_owned_by = LLU
+				is_owned_by = RYY
+				is_owned_by = {
+					any_country = {
+						OR = {
+							is_subject_of = LLU
+							is_subject_of = RYY
+							is_subject_of = ANH
+						}
+					}
+				}
+			}
+		}
+		AND = {
+			tag = ANN
+			OR = {
+				exists = no
+				is_subject = no
+			}
+		}
+    }
+	picture = GFX_report_event_XIN_peasants_revolt
+	option = { ## Arg
+		name = china_event.16.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = XIN }
+		ANN = {
+			transfer_state = 600
+			transfer_state = 595
+			transfer_state = 593
+			if = {
+				limit = {
+					AND = {
+						1041 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						1042 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+					}
+				}
+				transfer_state = 1041
+				transfer_state = 1042
+			}
+			if = {
+				limit = {
+					AND = {
+						605 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						750 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						748 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						603 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						325 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+						599 = {
+							OR = {
+								is_owned_by = XIN
+								is_owned_by = LLU
+								is_owned_by = RYY
+								is_owned_by = ANH
+							}
+						}
+					}
+				}
+				transfer_state = 605
+				transfer_state = 750
+				transfer_state = 748
+				transfer_state = 603
+				transfer_state = 325
+				transfer_state = 599
+				load_oob = "ANN_full"
+				else = {
+					load_oob = "ANN_partial"
+					set_capital = {
+						state = 595
+						remember_old_capital = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NYU = {
+						is_subject = no
+						has_war = no
+					}
+				}
+				set_autonomy = {
+    				target = NYU
+    				autonomous_state = autonomy_puppet
+				}
+				NYU = {
+					set_cosmetic_tag = nyu_puppet_han
+				}
+			}
+		}
+		set_global_flag = XIN_dynasty_collapse2
+	}
+	option = { ## Change from Red Eyebrows
+		name = china_event.16.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = RYY }
+		ANN = {
+			change_tag_from = ROOT
+		}
+	}
+	option = { ## Do Nothing
+		name = china_event.16.c
+		ai_chance = { factor = 1 }
+		trigger = { tag = RYY }
+	}
+}
 
 
 

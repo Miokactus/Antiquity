@@ -149,8 +149,8 @@ default_unit_production_super_heavies = {
 		is_major = yes
 		num_of_military_factories > 150 # nly if we have loads of factories
 		date > 1943.6.1 # Lets wait until late war
-		NOT = { has_tech = main_battle_tank_chassis } # Abandon Super heavy projects if we start doing modern tanks instead
 		NOT = { has_government = democratic } # Let the authoritarian regimes spend money on this 
+		always = no
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -590,7 +590,7 @@ default_paratroopers_production = {
 default_major_SF_para = {
 	enable = {
 		is_major = yes
-		has_tech = special_forces_paratroopers
+		always = no #special_forces_paratroopers
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -603,7 +603,7 @@ default_major_SF_para = {
 default_major_SF_marines = {
 	enable = {
 		is_major = yes
-		has_tech = special_forces_marines
+		always = no #special_forces_marines
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -1449,8 +1449,8 @@ put_garrisons_on_high_prio = {
 default_spyplanes_production = {
 	enable = {
 		OR = {
-			has_tech = scout_plane1
-			has_tech = photo_reconnaisance
+			always = no #scout_plane1
+			always = no #photo_reconnaisance
 		}
 		is_major = yes
 		#OR = {
@@ -1488,8 +1488,8 @@ default_spyplanes_production = {
 minors_dont_spy = {
 	enable = {
 		OR = {
-			has_tech = scout_plane1
-			has_tech = photo_reconnaisance
+			always = no #scout_plane1
+			always = no #photo_reconnaisance
 		}
 		is_major = no
 	}
@@ -1506,7 +1506,7 @@ minors_dont_spy = {
 ### SPECIAL PROJECT STRATEGIES
 default_build_a_nl_facility = {
 	enable = {
-		has_tech = atomic_research
+		always = no #atomic_research
 		num_of_civilian_factories > 25
 		num_of_military_factories > 25 # Even if we have the base tech, let's wait until we have some kind of capacity
 		nuclear_facility < 1  # one is enough
@@ -1551,9 +1551,9 @@ default_build_a_lw_facility = {
 		num_of_civilian_factories > 40
 		num_of_military_factories > 40
 		OR = { # Don't start until we can build decent tanks of some kind
-			has_tech = improved_light_tank_chassis
-			has_tech = basic_medium_tank_chassis
-			has_tech = improved_heavy_tank_chassis
+			always = no #improved_light_tank_chassis
+			always = no #basic_medium_tank_chassis
+			always = no #improved_heavy_tank_chassis
 		}
 		land_facility < 1 # one is enough
 	}
@@ -1575,9 +1575,9 @@ default_build_an_air_facility = {
 		num_of_military_factories > 40 # We should first build up our military industry
 
 		OR = { # Don't start until we can build decent aircraft
-			has_tech = basic_small_airframe
-			has_tech = basic_medium_airframe
-			has_tech = basic_large_airframe
+			always = no #basic_small_airframe
+			always = no #basic_medium_airframe
+			always = no #basic_large_airframe
 		}
 		air_facility < 1 # one is enough
 	}

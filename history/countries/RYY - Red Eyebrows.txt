@@ -14,6 +14,26 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Military Council"
+	desc = "GOV_DESC"
+	picture = GFX_leader_ROE_military_council
+	expire = "120.5.4"
+	ideology = military_junta
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Governor of the East"
+	desc = "GOV_DESC"
+	picture = GFX_leader_ROE_military_council
+	expire = "120.5.4"
+	ideology = oligarchism_comm
+	traits = {
+	}
+}
+
 recruit_character = xie_lu
 recruit_character = yang_yin
 

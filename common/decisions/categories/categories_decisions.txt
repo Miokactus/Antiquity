@@ -6,7 +6,7 @@ unification_decisions = {
     visible = {
         always = yes
     }
-    priority = 0
+    priority = 50
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = no
@@ -88,6 +88,7 @@ germania_campaign = {
 		    	    has_completed_focus = ROE_retire_germanicus
                     has_country_flag = ROE_defeated_arminius
                     has_country_flag = ROE_lost_to_germans
+                    has_country_flag = ROE_stopped_the_campaigns
                 }
 		    }
         }
@@ -103,6 +104,7 @@ germania_campaign = {
 		        	    has_completed_focus = ROE_retire_germanicus
                         has_country_flag = ROE_defeated_arminius
                         has_country_flag = ROE_lost_to_germans
+                        has_country_flag = ROE_stopped_the_campaigns
                     }
 		        }
             }
@@ -198,6 +200,7 @@ korean_situation_xin = {
         XIN = {
             has_completed_focus = XIN_the_korean_problem
         }
+        always = no
     }
     priority = 10
     picture = GFX_decision_category_picture
@@ -213,6 +216,7 @@ sino_xiongnu_relations = {
         XIN = {
             has_completed_focus = XIN_sino_xiongnu_relations
         }
+        always = no
     }
     priority = 10
     picture = GFX_decision_category_picture

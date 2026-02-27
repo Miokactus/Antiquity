@@ -28,6 +28,40 @@ on_actions = {
         }
     }
 
+    on_startup = {
+        effect = {
+            if = {
+                limit = {
+                    has_game_rule = { 
+                        rule = roman_empire_fragmentation 
+                        option = ROMAN_FRAGMENTED
+                    }
+                }
+                RR1 = {
+                    transfer_state = 7
+                    transfer_state = 35
+                    transfer_state = 977
+                    transfer_state = 34
+                    transfer_state = 980
+                    transfer_state = 6
+                    transfer_state = 29
+                    transfer_state = 785
+                    transfer_state = 18
+
+                    add_state_core = 7
+                    add_state_core = 35
+                    add_state_core = 977
+                    add_state_core = 34
+                    add_state_core = 980
+                    add_state_core = 6
+                    add_state_core = 29
+                    add_state_core = 785
+                    add_state_core = 18
+                }
+            }
+        }
+    }
+
     on_weekly = {
         effect = {
             if = { 

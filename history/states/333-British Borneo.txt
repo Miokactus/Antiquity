@@ -2,7 +2,7 @@ state=
 {
 	id=333
 	name="STATE_333"
-	manpower = 889800
+	manpower = 88980
 	resources={
 		wood=40 # was: 72
 		gold_ingot=12 # was: 18
@@ -10,9 +10,9 @@ state=
 	
 	state_category = rural
 
-	history=
-	{
-		owner = AAN
+	history={
+		owner = MAI
+		add_core_of = MAI
 		victory_points = {
 			7371 1
 		}

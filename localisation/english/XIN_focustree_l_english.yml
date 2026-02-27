@@ -28,14 +28,31 @@
  CHI_legitimate_dynasty_side_high_control_range: "And In the End, We are Ready to..."
  CHI_legitimate_dynasty_side_total_control_range: "Forge Our Future!"
  
+ the_chinese_army: "The Chinese Army"
+ disband: "Disband Unit"
+ disband_in_batch: "Disband Units in Batch"
+
+ claim_the_mandate: "Claim the Mandate of Heaven!"
+
+
  ## FACTIONS?
  XIN_XAI_faction_name: "Sino-Steppic Coalition"
- peasants_rebellion_china: "Han's Restoration Rebellion"
+ peasants_rebellion_china: "Peasants' Union"
 
  ## FLAGS
  #chinese_empire: "[ROOT@GetOldAdjectiveCap] Dynasty"
  chinese_empire: "Chinese Empire"
+ chinese_empire_DEF: "the Chinese Empire"
  chinese_empire_subject: "$OVERLORDADJ$ Administration of China"
+ han_empire: "Great Han Empire"
+ han_empire_DEF: "the Great Han Empire"
+ han_empire_ADJ: "Chinese"
+ chinese_republic: "Chinese Republic"
+ chinese_republic_DEF: "the First Chinese Republic"
+ chinese_republic_ADJ: "Chinese"
+ chinese_kingdom: "New Chinese Kingdom"
+ chinese_kingdom_DEF: "the New Chinese Kingdom"
+ chinese_kingdom_ADJ: "Chinese"
 
  ## DECISIONS TOOLTIP
  peasants_support: "[?xin_peasant_support]"
@@ -44,11 +61,13 @@
  peasants_support_loc_1: "The Flames Flicker"
  peasants_support_loc_2: "The Ashes Fall"
 
+ CHA_revolt_han: "§RThe Han supporters will revolt and try to overthrow us!§!"
+
  CHI_mandate_of_heaven: "§GWe will solidify our claim on the Mandate and bring the dictature to an end!§!"
  CHI_mandate_of_heaven_claimlost: "§RWe will lose our claim on the Mandate!§!"
 
  internal_affairs_xin: "The Mandate of Heaven"
- internal_affairs_xin_desc: " To deal with the Peasants' humors, we need to grant them gifts, relief programs or simply help them survive for another day.\n\ \n\ The situation is dire in the country, and that is why we must not lose the support of the lower classes of our population, if we don't want to be overthrown."
+ internal_affairs_xin_desc: "To deal with the Peasants' humors, we need to grant them gifts, relief programs or simply help them survive for another day.\n\ \n\ The situation is dire in the country, and that is why we must not lose the support of the lower classes of our population, if we don't want to be overthrown."
 
  imperial_capital_of_china: "The Imperial Capital"
  ## FOCUS TREE ##

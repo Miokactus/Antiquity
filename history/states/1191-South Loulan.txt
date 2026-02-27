@@ -1,0 +1,19 @@
+state={
+	id=1191
+	name="STATE_1191"
+	provinces={
+		1943 2074 
+	}
+	history = {
+		owner = LOL
+		add_core_of = LOL
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=20800
+	state_category = rural
+	buildings_max_level_factor=1
+	local_supplies=0
+}

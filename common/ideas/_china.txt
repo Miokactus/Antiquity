@@ -1,4 +1,18 @@
 ideas = {
+	hidden_ideas = {
+		XIN_lost_chang_an = {
+			name = "Lost Chang'An"
+			picture = jap_intervene_in_china
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				forced_surrender_limit = -0.99
+			}
+		}
+	}
+
 	country = {
 		
 	## XIN CHINA ##
@@ -240,11 +254,109 @@ ideas = {
 				consumer_goods_factor = -0.2
 				political_power_cost = -0.5
 				stability_factor = 0.1
-				army_attack_factor = 0.2
-				army_attack_speed_factor = 0.2
-				training_time = -0.5
+				army_attack_factor = 0.1
+				army_attack_speed_factor = 0.1
+				training_time = -0.3
+			}
+		}
+
+		RYY_revolutionary_army = {
+			name = "Revolutionary Army"
+			allowed_civil_war = { always = yes }
+			picture = MEX_politicised_army
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+				army_attack_speed_factor = -0.05
+			}
+		}
+
+		CHI_army_of_bandits = {
+			name = "Army of Bandits"
+			allowed_civil_war = { always = yes }
+			picture = SPR_disbanded_army
+			modifier = {
+				modifier_army_sub_unit_irregular_infantry_attack_factor = 0.05
+				modifier_army_sub_unit_irregular_infantry_speed_factor = 0.05
+			}
+		}
+
+		CHA_elected_officers_idea = {
+			name = "Elected Officers"
+			allowed_civil_war = { always = yes }
+			picture = office_of_strategic_services
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = -0.25
+				democratic_drift = 0.001
+			}
+		}
+
+		CHA_promoted_new_generals = {
+			name = "Promotion of New Generals"
+			allowed_civil_war = { always = yes }
+			picture = chi_incompetent_officers
+			modifier = {
+				political_power_cost = -0.25
+				army_morale_factor = 0.15
+				army_org_factor = 0.1
+			}
+		}
+
+		CHA_dismiss_disloyal_officers = {
+			name = "Dismissing Disloyal Officers"
+			allowed_civil_war = { always = yes }
+			picture = officers_purged
+			modifier = {
+				political_power_cost = 0.3
+				army_morale_factor = -0.1
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+			}
+		}
+
+		CHA_first_democracy = {
+			name = "First Democracy"
+			allowed_civil_war = { has_government = democratic }
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = 0.05
+				party_popularity_stability_factor = 0.2
+				weekly_casualties_war_support = 0.005
+				neutrality_acceptance = 30
+				fascism_acceptance = -50
+			}
+		}
+
+		CHA_new_china = {
+			name = "A New China"
+			allowed_civil_war = { 
+				OR = {
+					has_government = fascism
+					has_government = communism
+				}
+			}
+			picture = EST_democratic_opposition
+			modifier = {
+				war_support_factor = 0.05
+				party_popularity_stability_factor = -0.2
+				neutrality_acceptance = -50
+				democratic_acceptance = -50
+				communism_acceptance = 60
+			}
+		}
+
+		CHI_failed_revolt = {
+			name = "Failed Revolt"
+			allowed_civil_war = { always = yes }
+			picture = NOR_sivog
+			modifier = {
+				war_support_factor = -0.25
+				stability_factor = -0.25
+				army_morale_factor = -0.5
 			}
 		}
 		
 	}
+
 }

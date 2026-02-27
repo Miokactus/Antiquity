@@ -5,10 +5,14 @@ state={
 		4529 10075 12075 12319 
 	}
 	history = {
-		owner = AAN
-		
+		owner = THA
+		add_core_of = THA
+		victory_points = { 4529 1 }
+		buildings = {
+			infrastructure = 1
+		}
 	}
-	manpower=250000
+	manpower=95000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

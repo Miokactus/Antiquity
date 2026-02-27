@@ -1,0 +1,18 @@
+state={
+	id=1188
+	name="STATE_1188"
+	provinces={
+		4828 7949 
+	}
+	history = {
+		owner = SUL
+		add_core_of = SUL
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=20800
+	state_category = rural
+	buildings_max_level_factor=1
+	local_supplies=0
+}

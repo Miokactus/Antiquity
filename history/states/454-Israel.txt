@@ -5,7 +5,7 @@ state={
 		1 1065 1086 1201 4088 4206 7107 7176 11970 7151 7170 1074
 	}
 	history = {
-		owner = JUD
+		owner = ROE
 		add_core_of = JUD
 		
 		add_claim_by = EGI

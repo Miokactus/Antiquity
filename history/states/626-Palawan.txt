@@ -8,7 +8,8 @@ state=
 	
 	history=
 	{
-		owner = AAN
+		owner = MAI
+		add_core_of = MAI
 		buildings = {
 			infrastructure = 2
 			4429 = {

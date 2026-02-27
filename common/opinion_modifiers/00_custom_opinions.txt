@@ -15,4 +15,13 @@ opinion_modifiers = {
 	forbid_raids_in_our_territory = {
 		value = 30
 	}
+
+
+	breaking_from_the_empire = {
+		value = -30
+	}
+
+	loyalty_to_the_empire = {
+		value = 30
+	}
 }

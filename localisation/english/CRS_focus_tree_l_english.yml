@@ -9,6 +9,13 @@ CRS_warning_death_arminius: "In case of a §Groyal proclamation§! by Arminius, 
 CRS_royal_arminius: "We will enact §Lpurges inside of the nobility§! to ensure that no one will stand in the way of our anti-roman §Ycrusade§!!"
 CRS_invite_germans: "We will be able to invite §Gother germanic tribes§! into our §Yalliance§! to fight the §RRomans!§!"
 
+## DECISIONS
+alliance_germans: "Our German Allies"
+alliance_puppet: "Our German Friends"
+
+puppet_tribes: "Ask §G[FROM.GetNameDef]§! to submit"
+invite_tribes: "Invite §Y[FROM.GetNameDef]§! to our league"
+integrate_tribes: "Integrate §R[FROM.GetNameDef]§! into our tribe"
 
 ## EVENTS
 
@@ -20,6 +27,46 @@ CRS_invite_germans: "We will be able to invite §Gother germanic tribes§! into 
  crs_event.2.t: "Arminius Killed!"
  crs_event.2.d: "This morning, reports that Arminius was killed began to flood in. Perpetrated by a part of the pro-romans nobility, they accused Arminius of wanting to become king and create a monarchic institution in our nation."
  crs_event.2.a: "A new page for our tribe."
+
+ crs_event.3.t: "Arminius Crowned King of the Germans"
+ crs_event.3.d: "\"Today marks a great day in the history of our people. United against one threat, you people have chosen me to be your king, to be the one who will bring peace to our nation.\"\n\nSuch were the words of Arminius, now crowned King of the Germans, in the capital city of his tribe. With delegations from allies and tributaries, he pledged to unite all the germans under one banner, and to defeat the Roman threat."
+ crs_event.3.a: "Glory to Arminius!"
+ crs_event.3.b: "What?"
+
+ crs_event.5.t: "§G[FROM.GetNameDef]§! is asking us to join their league."
+ crs_event.5.d: "An envoy from our neighbour has asked our government to join their league, with the intent of allying with them against a common foe."
+ crs_event.5.a: "Brothers in arms!"
+ crs_event.5.b: "Sorry but no."
+
+ crs_event.6.t: "§G[FROM.GetNameDef]§! accepted to join!"
+ crs_event.6.d: "The envoy has come back. The tribe accepted to join us in our fight."
+ crs_event.6.a: "Great!"
+
+ crs_event.7.t: "§G[FROM.GetNameDef]§! refused to join!"
+ crs_event.7.d: "The envoy has come back. The tribe refused to join us in our fight."
+ crs_event.7.a: "Suckers!"
+
+ crs_event.8.t: "§Y[FROM.GetNameDef]§! is asking us to submit to their government!"
+ crs_event.8.d: "They asked us to submit and to become a puppet of theirs."
+ crs_event.8.a: "Stronger together!"
+ crs_event.8.b: "Never!"
+
+ crs_event.9.t: "§Y[FROM.GetNameDef]§! accepted to submit!"
+ crs_event.9.d: "They accepted to become a puppet of us!"
+ crs_event.9.a: "Great!"
+
+ crs_event.10.t: "§Y[FROM.GetNameDef]§! refused to submit!"
+ crs_event.10.d: "They refused to become a puppet of us!"
+ crs_event.10.a: "Another time..."
+
+ crs_event.11.t: "§R[FROM.GetNameDef]§! is integrating our tribe!"
+ crs_event.11.d: "An envoy has informed our government that our overlord will now begin the process of assimilation of our territories within theirs."
+ crs_event.11.a: "Alas, we cannot do anything.."
+
+ crs_event.12.t: "§R[FROM.GetNameDef]§! is being integrated."
+ crs_event.12.d: "We have succesfully integrated our puppet into our territories."
+ crs_event.12.a: "Another day another banger"
+
 
 
 
@@ -33,3 +80,28 @@ CRS_invite_germans: "We will be able to invite §Gother germanic tribes§! into 
  CRS_production_effort: "Production Effort"
  CRS_production_effort_2: "Production Effort 2"
  CRS_production_effort_3: "Production Effort 3"
+ CRS_open_new_mines: "Open New Mines"
+ CRS_develop_farming: "Develop Farming"
+ CRS_arminius_lead: "Arminius Lead"
+ CRS_reform_our_armed_forces: "Reform our Armed Forces"
+ CRS_learn_from_teutoburg: "Learn from Teutoburg"
+ CRS_towards_guerilla_warfare: "Towards Guerilla Warfare"
+ CRS_a_new_way_of_fighting: "A New Way of Fighting"
+ CRS_internal_affairs: "Internal Affairs"
+ CRS_reinforce_our_holdings: "Reinforce our Holdings"
+ CRS_purge_the_pro_romans: "Purge the Pro-Romans"
+ CRS_appease_the_pro_romans: "Appease the Pro-Romans"
+ CRS_defend_the_cities: "Defend the Cities"
+ CRS_more_trade_between_germans: "More Trade Between Germans"
+ CRS_make_peace_with_rome: "Make Peace with Rome"
+ CRS_seek_a_germania_province: "Propose the Germania Province"
+ CRS_federated_german_tribes: "Federated German Tribes"
+ CRS_the_fight_of_all_germans: "The Fight of All Germans"
+ CRS_germanic_ambition: "Germanic Ambitions"
+ CRS_an_alliance_of_equals: "An Alliance of Equals"
+ CRS_united_against_the_romans: "United Against Rome"
+ CRS_strike_at_the_romans: "Strike at the Enemy!"
+ CRS_centralisation_of_power: "Centralisation of Power"
+ CRS_grounds_for_royalty: "Grounds for Royalty"
+ CRS_guardian_of_the_germans: "Guardian of the Germans"
+ CRS_king_of_the_germans: "King of the Germans"

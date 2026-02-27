@@ -1,0 +1,43 @@
+capital = 2
+
+oob = "ROE_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+    name = "Senate of Rome"
+    desc = "MONARCH_DESC"
+    picture = GFX_leader_ROE_senate_rome
+    expire = "120.5.4"
+    ideology = decentralised_democracy
+    traits = {
+    }
+}
+
+set_technology = {
+    infantry_weapons = 1
+	support_weapons = 1
+	basic_train = 1
+	early_destroyer = 1
+	transport = 1
+}
+
+set_politics = {
+    ruling_party = democratic
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 60
+    fascism = 10
+    communism = 20
+    neutrality = 10
+}
+
+add_ideas = {
+    export_focus
+    limited_conscription
+    civilian_economy
+	one_party_monopoly
+}

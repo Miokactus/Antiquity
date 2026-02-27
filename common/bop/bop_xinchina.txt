@@ -154,6 +154,20 @@ XIN_heaven_mandate = {
                     remove_idea = XIN_illegitimate_regime
                     add_idea = XIN_legitimate_dynasty
                 }
+                if = {
+                    limit = {
+                        744 = {
+                            NOT = {
+                                is_core_of = ROOT
+                            }
+                        }
+                    }
+                    ANN = {
+                        every_core_state = {
+                            add_core_of = ROOT
+                        }
+                    }
+                }
 	        }
 	        on_deactivate = {
 	        }
@@ -341,17 +355,18 @@ XIN_heaven_mandate_claimant = {
                             }
                         }
                     }
-                    set_temp_variable = { temp = ROOT.stability }
+                }
+                set_temp_variable = { temp = ROOT.stability }
                     ANN = {
                         every_core_state = {
                             add_claim_by = ROOT
                         }
                     }
+                    add_ideas = XIN_illegitimate_regime
                     set_power_balance = {
                         id = XIN_heaven_mandate
                         set_value = temp
                     }
-                }
 	        }
 	        on_deactivate = {
 	        }

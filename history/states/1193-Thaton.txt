@@ -1,0 +1,19 @@
+state={
+	id=1193
+	name="STATE_1193"
+	provinces={
+		1403 4293 4336 4408 12238 
+	}
+	history = {
+		owner = TTT
+		add_core_of = TTT
+		victory_points = { 1403 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=36000
+	state_category = town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

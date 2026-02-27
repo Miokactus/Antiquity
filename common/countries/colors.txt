@@ -1114,3 +1114,251 @@ KUR = {
 
 
 
+
+
+
+
+
+
+
+RR1 = {
+	color = rgb { 115 115 115 }
+	color_ui = rgb { 122 145 93 }
+}
+RR2 = {
+	color = rgb { 255 170 0 }
+	color_ui = rgb { 179 119 0 }
+}
+RR3 = {
+	color = rgb { 102 102 153 }
+	color_ui = rgb { 61 61 92 }
+}
+RR4 = {
+	color = rgb { 125 41 49 }
+	color_ui = rgb { 125 41 49 }
+}
+RR5 = {
+	color = rgb { 31 138 31 }
+	color_ui = rgb { 31 138 31 }
+}
+RR6 = {
+	color = rgb { 0 171 0 }
+	color_ui = rgb { 0 171 0 }	
+}
+RR7 = {
+	color = rgb { 128 0 96 }
+	color_ui = rgb { 77 0 57 }	
+}
+RR8 = {
+	color = rgb { 230 0 0 }
+	color_ui = rgb { 128 0 0 }	
+}
+RR9 = {
+	color = rgb { 0 179 60 }
+	color_ui = rgb { 0 102 34 }	
+}
+R10 = {
+	color = rgb { 242 242 242 }
+	color_ui = rgb { 166 166 166 }	
+}
+R11 = {
+	color = rgb { 77 153 0 }
+	color_ui = rgb { 38 77 0 }	
+}
+R12 = {
+	color = rgb { 234 179 30 }
+	color_ui = rgb { 255 153 0 }	
+}
+R13 = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 128 102 0 }
+}
+R14 = {
+	color = rgb { 255 51 0 }
+	color_ui = rgb { 153 31 0 }
+}
+R15 = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 153 0 0 }
+}
+R16 = {
+	color = rgb { 51 204 204 }
+	color_ui = rgb { 15 61 61 }
+}
+R17 = {
+	color = rgb { 204 122 0 }
+	color_ui = rgb { 77 46 0 }
+}
+R18 = {
+	color = rgb { 204 204 0 }
+	color_ui = rgb { 102 102 0 }
+}
+R19 = {
+	color = rgb { 51 153 102 }
+	color_ui = rgb { 13 38 26 }
+}
+R20 = {
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 51 17 }
+}
+R21 = {
+	color = rgb { 255 26 26 }
+	color_ui = rgb { 102 0 0 }
+}
+R22 = {
+	color = rgb { 0 0 128 }
+	color_ui = rgb { 0 0 51 }
+}
+R23 = {
+	color = rgb { 0 102 255 }
+	color_ui = rgb { 0 31 77 }
+}
+R24 = {
+	color = rgb { 204 41 0 }
+	color_ui = rgb { 128 26 0 }
+}
+R25 = {
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 77 26 }
+}
+R26 = {
+	color = rgb { 0 102 204 }
+	color_ui = rgb { 00 51 102 }
+}
+R27 = {
+	color = rgb { 255 77 77 }
+	color_ui = rgb { 204 0 0 }
+}
+R28 = {
+	color = rgb { 135 153 255 }
+	color_ui = rgb { 135 0 200 }
+}
+
+
+## ASIAN STATES
+
+QQA = {
+	color = rgb { 135 153 255 }
+	color_ui = rgb { 135 0 200 }
+}
+ZZH =  {
+	color = rgb { 255 77 77 }
+	color_ui = rgb { 204 0 0 }
+}
+CCL = {
+	color = rgb { 204 41 0 }
+	color_ui = rgb { 128 26 0 }
+}
+TTT = {
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 77 26 }
+}
+
+
+KMH = {
+	color = rgb { 0 103 51 }
+	color_ui = rgb { 0 57 36 }
+}
+YAO = {
+	color = rgb { 51 102 153 }
+	color_ui = rgb { 51 102 153 }
+}
+THA = {
+	color = rgb { 51 204 51 }
+	color_ui = rgb { 25 102 25 }
+}
+SHN = {
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 77 26 }
+}
+BUR = {
+	color = rgb { 179 11 0 }
+	color_ui = rgb { 102 0 0 }
+}
+LIA = {
+	color = rgb { 105 200 4 }
+	color_ui = rgb { 25 12 26 }
+}
+MAI = {
+	color = rgb { 255 255 204 }
+	color_ui = rgb { 255 255 26 }
+}
+VJI = {
+	color = rgb { 255 128 128 }
+	color_ui = rgb { 204 0 0 }
+}
+KTL = {
+	color = rgb { 15 105 125 }
+	color_ui = rgb { 0 179 179 }
+}
+SKN = {
+	color = rgb { 230 230 0 }
+	color_ui = rgb { 179 179 0 }
+}
+TWA = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 179 0 0 }
+}
+RYO = {
+	color = rgb { 204 0 0 }
+	color_ui = rgb { 102 0 0 }
+}
+KYU = {
+	color = rgb { 128 128 255 }
+	color_ui = rgb { 0 0 128 }
+}
+SAI = {
+	color = rgb { 255 204 0 }
+	color_ui = rgb { 128 102 0 }
+}
+KBI = {
+	color = rgb { 255 51 0 }
+	color_ui = rgb { 153 31 0 }
+}
+IZM = {
+	color = rgb { 255 80 80 }
+	color_ui = rgb { 153 0 0 }
+}
+
+
+
+BYO = {
+	color = rgb { 171 190 152 }
+	color_ui = rgb { 222 247 198 }
+}
+WHU = {
+	color = rgb { 110 130 192 }
+	color_ui = rgb { 202 147 198 }
+}
+XIA = {
+	color = rgb { 114 148 80 }
+	color_ui = rgb { 222 247 198 }
+}
+YLI = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
+DGB = {
+	#color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 108 140 42 }
+	color_ui = rgb { 209 247 133 }
+}
+
+TGU = {
+	color = rgb { 155 101 107 }
+	color_ui = rgb { 202 131 139 }
+}
+TBS = {
+	color = rgb { 158  161  188 }
+	color_ui = rgb { 255 255 255 }
+}
+
+RRR = {
+	#color = HSV { 0.1 0.15 0.4 }
+	color = rgb { 108 140 42 }
+	color_ui = rgb { 209 247 133 }
+}
+VVI = {
+	color = rgb { 185  255  152 }
+	color_ui = rgb { 165  230  132 }
+}

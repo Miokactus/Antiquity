@@ -13,13 +13,16 @@ state = {
 	history = {
 		owner = ROE
 		victory_points = { #Bologna
-			6606 5
+			6606 3
 		}
 		victory_points = { #Ferrara
 			6793 3
 		}
 		victory_points = { #Parma
 			9752 1
+		}
+		victory_points = { #Parma
+			782 6
 		}
 		buildings = {
 			industrial_complex = 1

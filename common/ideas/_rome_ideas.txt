@@ -51,6 +51,101 @@ ideas = {
 			}
 		}
 
+		ROE_a_new_era_of_games = {
+			name = "A New Era of Games"
+			allowed_civil_war = { always = yes }
+			picture = SWE_wargames
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = 0.3
+				conscription_factor = 0.05
+			}
+		}
+
+		ROE_germanicus_campaign = {
+			name = "Germanicus' Campaigns"
+			allowed_civil_war = { always = yes }
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			on_remove = {
+			}
+			cancel = {
+				ROE = {
+            		OR = {
+		    		    has_completed_focus = ROE_retire_germanicus
+            		    has_country_flag = ROE_defeated_arminius
+            		    has_country_flag = ROE_lost_to_germans
+						has_country_flag = ROE_stopped_the_campaigns
+             		}
+        		}
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.5
+				conscription_factor = 0.2
+			}
+		}
+
+		ROE_army_morale_boost = {
+			name = "Army Morale Boost"
+			allowed_civil_war = { always = yes }
+			picture = SOV_rehabilitated_military_ns_nsb_ccp_sov_compatibility
+			on_remove = {
+			}
+			modifier = {
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+
+		ROE_divinised_augustus = {
+			name = "Divinised Augustus"
+			allowed_civil_war = { OR = { has_government = communism has_government = fascism }}
+			picture = air_support_focus
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.03
+				political_power_cost = -0.1
+			}
+		}
+
+		ROE_praetorian_empowering = {
+			name = "Sejanus' Little State"
+			allowed_civil_war = { OR = { has_government = communism has_government = fascism }}
+			picture = generic_constitutional_guarantees
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = -0.03
+				political_power_cost = -0.2
+			}
+		}
+
+		ROE_jewish_cult_tolerance = {
+			name = "Jewish Cult Tolerance"
+			allowed_civil_war = { always = yes }
+			picture = ITA_papal_state_ns
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = -0.05
+				conscription_factor = 0.05
+			}
+		}
+
+		ROE_jewish_cult_banned = {
+			name = "Jewish Cult Banned"
+			allowed_civil_war = { always = yes }
+			picture = ITA_papal_state_ns
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
 
 		ROE_womens_rights = {
 			name = "Women's Rights"

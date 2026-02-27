@@ -1,0 +1,22 @@
+state={
+	id=1199
+	name="STATE_1199"
+	provinces={
+		783 957 3944 3977 6806 6838 6961 6989 9895 9926 11879 
+	}
+	history = {
+		owner = DGB
+		add_core_of = DGB
+		victory_points = {
+			957 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	manpower=82241
+	state_category=town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

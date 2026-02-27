@@ -1,0 +1,20 @@
+state={
+	id=1192
+	name="STATE_1192"
+	provinces={
+		1961 8029 10802 
+	}
+	history = {
+		owner = ZZH
+		add_core_of = ZZH
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+	}
+	manpower = 23000
+	state_category = large_town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

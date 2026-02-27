@@ -18,6 +18,26 @@ leader_traits = {
 		stability_factor = 0.05
 	}
 
+	ROE_triomphant_son = {
+		random = no
+		political_power_gain = 0.2
+		war_support_factor = 0.05
+	}
+
+	ROE_princeps = {
+		random = no
+		stability_factor = 0.03
+	}
+
+	ROE_discreet_emperor = {
+		random = no
+	}
+
+	ROE_visible_emperor = {
+		random = no
+		political_power_gain = 0.1
+	}
+
 	## China
 	XIN_children_of_heaven = {
 		random = no

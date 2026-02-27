@@ -1550,7 +1550,7 @@ technologies = {
 
 		categories = {
 			carriage_equipment
-			mio_cat_tech_all__mechanized
+			
 			infantry_tech
 		}
 		special_project_specialization = { specialization_land }

@@ -1,0 +1,19 @@
+state={
+	id=1195
+	name="STATE_1195"
+	provinces={
+		4392 12122 12220 
+	}
+	history = {
+		owner = CCL
+		add_core_of = CCL
+		victory_points = { 4392 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	manpower=36000
+	state_category = town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

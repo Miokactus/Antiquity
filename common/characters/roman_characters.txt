@@ -29,7 +29,7 @@ characters = {
 			expire = "37.3.16"
 			ideology = roman_paternalism
 			traits = {
-				ROE_roman_emperor
+				## TO BE ADDED INGAME
 			}
 		}
 	}

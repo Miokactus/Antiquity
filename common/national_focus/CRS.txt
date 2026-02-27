@@ -895,7 +895,7 @@ focus_tree = {
 	#Reform the Armed Forces
 	focus = {
 		id = CRS_reform_our_armed_forces
-		icon = GFX
+		icon = GFX_SOV_military_engineering_university_ccp_2d_sov_compatibility
 		x = 6
 		y = 1
 		cost = 8
@@ -946,7 +946,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_towards_guerilla_warfare
-		icon = GFX
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
 		x = 7
 		y = 2
 		cost = 8
@@ -968,7 +968,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_a_new_way_of_fighting
-		icon = GFX
+		icon = GFX_goal_generic_military_deal
 		x = 6
 		y = 3
 		cost = 8
@@ -991,7 +991,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_the_fight_of_all_germans
-		icon = GFX
+		icon = GFX_SOV_claims_on_poland_ccp_2d_sov_compatibility
 		x = 8
 		y = 5
 		cost = 8
@@ -1014,7 +1014,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_an_alliance_of_equals
-		icon = GFX
+		icon = GFX_goal_generic_major_alliance
 		x = 7
 		y = 6
 		cost = 8
@@ -1026,13 +1026,20 @@ focus_tree = {
 		prerequisite = { focus = CRS_the_fight_of_all_germans }
 		mutually_exclusive = { focus = CRS_germanic_ambition }
 		completion_reward = {
+			every_country = {
+				limit = {
+					is_ally_with = ROOT
+				}
+				add_political_power = 50
+				add_war_support = 0.05
+			}
 		}
 	}
 
 	#
 	focus = {
 		id = CRS_united_against_the_romans
-		icon = GFX
+		icon = GFX_focus_hol_united_netherlands
 		x = 7
 		y = 7
 		cost = 8
@@ -1044,17 +1051,24 @@ focus_tree = {
 		prerequisite = { focus = CRS_an_alliance_of_equals }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_timed_idea = {
+				idea = CRS_united_against_rome
+				days = 120
+			}
 		}
 	}
 
 	#
 	focus = {
 		id = CRS_strike_at_the_romans
-		icon = GFX
+		icon = GFX_focus_generic_strike_at_democracy1
 		x = 8
 		y = 8
 		cost = 8
 		available = { 
+			NOT = {
+				has_war_with = ROE
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1062,14 +1076,18 @@ focus_tree = {
 		prerequisite = { focus = CRS_united_against_the_romans focus = CRS_germanic_ambition }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			create_wargoal = {
+    			type = take_state_focus
+    			target = ROE
+    			generator = { 42 1022 35 7 977 34 980 8 28 6 29 785 18 17 }
+			}
 		}
 	}
 
 	#
 	focus = {
 		id = CRS_germanic_ambition
-		icon = GFX
+		icon = GFX_focus_GER_remilitarize_the_rhineland
 		x = 9
 		y = 6
 		cost = 8
@@ -1110,7 +1128,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_king_of_the_germans
-		icon = GFX
+		icon = GFX_focus_POL_cossack_king
 		x = 10
 		y = 8
 		cost = 8
@@ -1174,7 +1192,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_reinforce_our_holdings
-		icon = GFX
+		icon = GFX_focus_CHL_silverworking
 		x = 10
 		y = 2
 		cost = 8
@@ -1188,13 +1206,14 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			add_political_power = 50
+			add_manpower = 15000
 		}
 	}
 
 	#
 	focus = {
 		id = CRS_purge_the_pro_romans
-		icon = GFX
+		icon = GFX_focus_SOV_military_purge
 		x = 12
 		y = 2
 		cost = 8
@@ -1217,7 +1236,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_appease_the_pro_romans
-		icon = GFX
+		icon = GFX_SOV_reformalize_the_role_of_the_patriarchate_ccp_2d_sov_compatibility
 		x = 14
 		y = 2
 		cost = 8
@@ -1259,7 +1278,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_seek_a_germania_province
-		icon = GFX
+		icon = GFX_focus_CZE_german_puppet
 		x = 14
 		y = 4
 		cost = 8
@@ -1295,7 +1314,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_defend_the_cities
-		icon = GFX
+		icon = GFX_SOV_infrastructure_effort_nsb_ccp_2d_sov_compatibility
 		x = 11
 		y = 3
 		cost = 8
@@ -1328,7 +1347,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_more_trade_between_germans
-		icon = GFX
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = 11
 		y = 4
 		cost = 8
@@ -1340,13 +1359,18 @@ focus_tree = {
 		prerequisite = { focus = CRS_defend_the_cities }
 		mutually_exclusive = {}
 		completion_reward = {
+			add_timed_idea = {
+				idea = CRS_more_trade_with_germans
+				days = 635
+			}
+			add_manpower = 26500
 		}
 	}
 
 	#
 	focus = {
 		id = CRS_centralisation_of_power
-		icon = GFX
+		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
 		x = 11
 		y = 5
 		cost = 8
@@ -1358,13 +1382,17 @@ focus_tree = {
 		prerequisite = { focus = CRS_more_trade_between_germans }
 		mutually_exclusive = {}
 		completion_reward = {
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.1
+			}
 		}
 	}
 
 	#
 	focus = {
 		id = CRS_grounds_for_royalty
-		icon = GFX
+		icon = GFX_focus_RAJ_kingmaker
 		x = 11
 		y = 6
 		cost = 8
@@ -1376,6 +1404,7 @@ focus_tree = {
 		prerequisite = { focus = CRS_centralisation_of_power }
 		mutually_exclusive = {}
 		completion_reward = {
+			
 		}
 	}
 }

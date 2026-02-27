@@ -4,12 +4,13 @@ state={
 	provinces={
 		1999 2067 7294 10726 10841 12141 12819 
 	}
-	manpower=300000
+	manpower=40000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	history={
-		owner = AAN
-		
+		owner = QQA
+		add_core_of = QQA
+		## Core of the Qiang people (https://en.wikipedia.org/wiki/Qiang_people)
 		
 		buildings = {
 			infrastructure = 1

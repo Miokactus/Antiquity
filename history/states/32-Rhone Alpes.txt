@@ -2,7 +2,7 @@
 state={
 	id=32
 	name="STATE_32" 
-	manpower = 58750
+	manpower = 38750
 	
 	state_category = town
 	
@@ -20,15 +20,12 @@ state={
 		victory_points = {
 			3768 1 
 		}
-		victory_points = {
-			3589 10
-		}
 		
 		
 	}
 
 	provinces={
-		762 780 3589 3768 6784 11713 
+		762 3768 11713 
 	}
 
 	local_supplies=9.0 

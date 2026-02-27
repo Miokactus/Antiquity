@@ -52,43 +52,7 @@ focus_tree = {
 		}
 
 		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 6
-				original_tag = SIA
-			}
-			modifier = {
-				factor = 6
-				is_in_array = {
-					array = RAJ.raj_releasables
-					value = THIS
-				}
-				is_subject_of = RAJ
-			}
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}	
-				NOT = {
-					is_in_array = {
-						array = RAJ.raj_releasables
-						value = THIS
-					}
-				}			
-			}
+			factor = 2
 		}
 	}
 
@@ -340,6 +304,81 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = CHA_open_new_mines
+		icon = GFX_focus_generic_mining_industry
+		prerequisite = { focus = CHA_construction_effort }
+		x = -2
+		y = 1
+		relative_position_id = CHA_construction_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = mine
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = mine
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = CHA_develop_farming
+		icon = GFX_focus_generic_farmland
+		prerequisite = { focus = CHA_open_new_mines }
+		x = -2
+		y = 2
+		relative_position_id = CHA_construction_effort
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_INDUSTRY  }
+		
+		available_if_capitulated = yes
+
+
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = farm
 					level = 1
 					instant_build = yes
 				}
@@ -807,6 +846,962 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_peasants_uprising
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = 10
+		y = 0
+		cost = 8
+
+		search_filters = { }
+		available_if_capitulated = yes
+		prerequisite = {}
+		mutually_exclusive = {}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_loyalty_to_the_empire
+		icon = GFX_SOV_the_rightful_heir_to_the_empire_ccp_2d_sov_compatibility
+		x = 7
+		y = 1
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_peasants_uprising }
+		mutually_exclusive = { focus = CHA_forge_our_destiny }
+		completion_reward = {
+			744 = {
+				owner = {
+					add_opinion_modifier = {
+    					target = ROOT
+    					modifier = breaking_from_the_empire
+					}
+				}
+			}
+			ANN = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = loyalty_to_the_empire
+				}
+			}
+			add_timed_idea = {
+				idea = communard_past
+				days = 60
+			}
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				OR = {
+					tag = LLU
+					tag = RYY
+				}
+				is_historical_focus_on = yes
+				factor = -150
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_leader_for_the_hans
+		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+		x = 7
+		y = 2
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_loyalty_to_the_empire }
+		mutually_exclusive = {}
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_ensure_local_officers_loyalty
+		icon = GFX
+		x = 6
+		y = 3
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_leader_for_the_hans }
+		mutually_exclusive = {}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_propaganda_across_the_peasants
+		icon = GFX
+		x = 8
+		y = 3
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_leader_for_the_hans }
+		mutually_exclusive = {}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_grant_amnesties_to_bandits
+		icon = GFX
+		x = 6
+		y = 4
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_ensure_local_officers_loyalty focus = CHA_propaganda_across_the_peasants }
+		mutually_exclusive = {}
+		completion_reward = {
+			add_stability = 0.02
+			add_manpower = 17030
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_reorganise_the_governmental_structure
+		icon = GFX
+		x = 8
+		y = 4
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_ensure_local_officers_loyalty focus = CHA_propaganda_across_the_peasants }
+		mutually_exclusive = {}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_contacts_with_the_emperor
+		icon = GFX_SOV_autonomous_soviet_republics_ccp_2d_sov_compatibility
+		x = 7
+		y = 5
+		cost = 8
+		available = {
+			ANN = {
+				is_subject = no
+			}
+		}
+		search_filters = { }
+		prerequisite = { focus = CHA_grant_amnesties_to_bandits }
+		prerequisite = { focus = CHA_reorganise_the_governmental_structure }
+		mutually_exclusive = {}
+		completion_reward = {
+			if = {
+				limit = {
+					ANN = {
+						has_war_with = ROOT
+					}
+				}
+				set_truce = {
+    				target = ANN
+    				days = 120
+				}
+				white_peace = ANN
+				diplomatic_relation = {
+    				country = AAN
+    				relation = military_access
+    				active = yes
+				}
+				diplomatic_relation = {
+    				country = AAN
+    				relation = non_aggression_pact
+    				active = yes
+				}
+			}
+			else = {
+				diplomatic_relation = {
+    				country = ANN
+    				relation = military_access
+    				active = yes
+				}
+				diplomatic_relation = {
+    				country = ANN
+    				relation = non_aggression_pact
+    				active = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_peaceful_cooperation
+		icon = GFX
+		x = 6
+		y = 6
+		cost = 8
+		available = {
+			ANN = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		search_filters = { }
+		prerequisite = { focus = CHA_contacts_with_the_emperor }
+		mutually_exclusive = { focus = CHA_usurp_the_throne }
+		completion_reward = {
+			annex_country = {
+    			target = ANN
+    			transfer_troops = yes
+			}
+			every_country = {
+            	limit = {
+					is_subject_of = ANN
+            	}
+				annex_country = {
+    				target = PREV
+    				transfer_troops = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_usurp_the_throne
+		icon = GFX
+		x = 8
+		y = 6
+		cost = 8
+		available = {
+			ANN = {
+				exists = yes
+				is_subject = no
+			}
+		}
+		search_filters = { }
+		prerequisite = { focus = CHA_contacts_with_the_emperor }
+		mutually_exclusive = { focus = CHA_peaceful_cooperation }
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = ANN
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_restored_han_empire
+		icon = GFX
+		x = 7
+		y = 7
+		cost = 8
+		available = {
+			ANN = {
+				exists = no
+				OR = {
+					is_subject_of = ROOT
+				}
+			}
+			XIN = {
+				exists = no
+			}
+			744 = {
+				is_owned_by = ROOT
+			}
+		}
+		search_filters = { }
+		prerequisite = { focus = CHA_peaceful_cooperation focus = CHA_usurp_the_throne }
+		mutually_exclusive = {}
+		completion_reward = {
+			every_country = {
+                limit = {
+					has_power_balance = {
+                    	id = XIN_heaven_mandate_claimant
+                    }
+                }
+                remove_power_balance = {
+                    id = XIN_heaven_mandate_claimant
+                }
+				drop_cosmetic_tag = yes
+                every_other_country = {
+                    limit = {
+                        tag = ROOT
+                    }
+                    set_power_balance = {
+                		id = XIN_heaven_mandate_claimant
+                		set_value = 0
+                	}
+                }
+            }
+			set_cosmetic_tag = han_empire
+			XIN = {
+				every_core_state = {
+					add_core_of = ROOT
+				}
+			}
+			remove_ideas = {
+				CHI_popular_uprising
+				RYY_revolutionary_army
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+
+	#
+	focus = {
+		id = CHA_forge_our_destiny
+		icon = GFX
+		x = 14
+		y = 1
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_peasants_uprising }
+		mutually_exclusive = { focus = CHA_loyalty_to_the_empire }
+		completion_reward = {
+			744 = {
+				owner = {
+					add_opinion_modifier = {
+    					target = ROOT
+    					modifier = breaking_from_the_empire
+					}
+				}
+			}
+			ANN = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = breaking_from_the_empire
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_democracy_in_the_revolt
+		icon = GFX_goal_support_democracy
+		x = 11
+		y = 2
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_forge_our_destiny }
+		mutually_exclusive = { focus = CHA_tyranny_for_the_greater_good }
+		completion_reward = {
+			add_timed_idea = {
+				idea = democratic_tradition
+				days = 60
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_elected_officers
+		icon = GFX
+		x = 10
+		y = 3
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_democracy_in_the_revolt }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_ideas = CHA_elected_officers_idea
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_strenghten_meritocracy
+		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
+		x = 12
+		y = 3
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_democracy_in_the_revolt }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_manpower = 19602
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_establish_local_councils
+		icon = GFX
+		x = 12
+		y = 4
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_strenghten_meritocracy }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_ties_with_dissident_democrats
+		icon = GFX
+		x = 10
+		y = 4
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_elected_officers }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_manpower = 20602
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_citizens_assemblies
+		icon = GFX
+		x = 11
+		y = 5
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_ties_with_dissident_democrats }
+		prerequisite = { focus = CHA_establish_local_councils }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_ideas = CHA_first_democracy
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+	#
+	focus = {
+		id = CHA_a_state_for_our_revolt
+		icon = GFX
+		x = 10
+		y = 6
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_citizens_assemblies }
+		mutually_exclusive = { focus = CHA_our_own_empire }
+		completion_reward = {
+			remove_ideas = {
+				CHI_popular_uprising
+				RYY_revolutionary_army
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = HEB
+				is_historical_focus_on = yes
+				factor = 150
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_establish_coherent_institutions
+		icon = GFX
+		x = 9
+		y = 7
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_a_state_for_our_revolt }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_proclaim_a_kingdom
+		icon = GFX
+		x = 10
+		y = 8
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_a_state_for_our_revolt }
+		mutually_exclusive = { focus = CHA_ideas_from_afar }
+		completion_reward = {
+			set_cosmetic_tag = chinese_kingdom
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = HEB
+				is_historical_focus_on = yes
+				factor = 150
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_ideas_from_afar
+		icon = GFX
+		x = 12
+		y = 8
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_a_state_for_our_revolt }
+		mutually_exclusive = { focus = CHA_proclaim_a_kingdom }
+		completion_reward = {
+			set_cosmetic_tag = chinese_republic
+			XIN = {
+				every_core_state = {
+					add_claim_by = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_our_own_empire
+		icon = GFX
+		x = 14
+		y = 6
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_citizens_assemblies focus = CHA_a_new_china }
+		mutually_exclusive = { focus = CHA_a_state_for_our_revolt }
+		completion_reward = {
+			remove_ideas = {
+				CHI_popular_uprising
+				RYY_revolutionary_army
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = LLU
+					tag = RYY
+				}
+				is_historical_focus_on = yes
+				factor = 150
+			}
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_towards_the_old_imperial_capital
+		icon = GFX
+		x = 15
+		y = 7
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_our_own_empire }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_bring_down_the_revolts
+		icon = GFX
+		x = 13
+		y = 7
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_our_own_empire }
+		mutually_exclusive = { }
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_claim_the_mandate
+		icon = GFX
+		x = 14
+		y = 8
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_bring_down_the_revolts }
+		prerequisite = { focus = CHA_towards_the_old_imperial_capital }
+		mutually_exclusive = { }
+		completion_reward = {
+			every_country = {
+                    limit = {
+						has_power_balance = {
+                            id = XIN_heaven_mandate_claimant
+                        }
+                    }
+                    remove_power_balance = {
+                        id = XIN_heaven_mandate_claimant
+                    }
+					drop_cosmetic_tag = yes
+                    every_other_country = {
+                        limit = {
+							tag = ROOT
+                        }
+                        set_power_balance = {
+        					id = XIN_heaven_mandate_claimant
+            				set_value = 0
+    					}
+                    }
+                }
+				set_power_balance = {
+        			id = XIN_heaven_mandate_claimant
+            		set_value = 0
+    			}
+				set_cosmetic_tag = chinese_empire
+				XIN = {
+					every_core_state = {
+						add_claim_by = ROOT
+					}
+				}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+
+
+	#
+	focus = {
+		id = CHA_tyranny_for_the_greater_good
+		icon = GFX_SOV_the_last_break_southward_ccp_2d_sov_compatibility
+		x = 17
+		y = 2
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_forge_our_destiny }
+		mutually_exclusive = { focus = CHA_democracy_in_the_revolt }
+		completion_reward = {
+			add_timed_idea = {
+				idea = nationalist_urge
+				days = 60
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_dismiss_unloyal_officers
+		icon = GFX_focus_AUS_disregard_the_treaties
+		x = 15
+		y = 3
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_tyranny_for_the_greater_good }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHA_dismiss_disloyal_officers
+				days = 80
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_take_the_lead_of_the_revolt
+		icon = GFX_SOV_the_triple_entente_ccp_2d_sov_compatibility
+		x = 18
+		y = 3
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_tyranny_for_the_greater_good }
+		mutually_exclusive = { }
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_promote_new_generals
+		icon = GFX
+		x = 14
+		y = 4
+		cost = 8
+		available = {
+			NOT = {
+				has_idea = CHA_dismiss_disloyal_officers
+			}
+		}
+		search_filters = { }
+		prerequisite = { focus = CHA_dismiss_unloyal_officers }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_command_power = 25
+			add_timed_idea = {
+				idea = CHA_promoted_new_generals
+				days = 240
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_requisition_of_manufactures
+		icon = GFX
+		x = 16
+		y = 4
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_dismiss_unloyal_officers }
+		mutually_exclusive = { }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_a_new_china
+		icon = GFX
+		x = 15
+		y = 5
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_promote_new_generals }
+		prerequisite = { focus = CHA_requisition_of_manufactures }
+		mutually_exclusive = { }
+		completion_reward = {
+			add_ideas = CHA_new_china
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+
+
+
+
+	#
+	focus = {
+		id = CHA_peoples_army
+		icon = GFX
+		x = 2
+		y = 5
+		cost = 8
+
+		search_filters = { }
+		prerequisite = {}
+		mutually_exclusive = {}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_establish_a_general_command
+		icon = GFX
+		x = 0
+		y = 6
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_peoples_army }
+		mutually_exclusive = {}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#
+	focus = {
+		id = CHA_militarisation_of_society
+		icon = GFX
+		x = 3
+		y = 6
+		cost = 8
+
+		search_filters = { }
+		prerequisite = { focus = CHA_peoples_army }
+		mutually_exclusive = {}
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }
