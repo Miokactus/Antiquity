@@ -959,7 +959,11 @@ focus_tree = {
 		prerequisite = { focus = ROE_convene_the_senate }
 		mutually_exclusive = { focus = ROE_the_senate_is_dissolved }
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			add_political_power = 50
 		}
 	}
 
@@ -979,7 +983,10 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_senate_takes_control }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ROE_purging_democrats
+				days = 250
+			}
 		}
 	}
 
@@ -999,7 +1006,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_senate_takes_control }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			add_ideas = ROE_concessions_to_generals
 		}
 	}
 
@@ -1019,7 +1026,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_senate_takes_control }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			add_ideas = ROE_aristocratic_gifts
 		}
 	}
 
@@ -1845,6 +1852,10 @@ focus_tree = {
 		prerequisite = { focus = ROE_crush_the_tribes focus = ROE_integrate_german_tribes }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_timed_idea = {
+				idea = ROE_look_east_idea
+				days = 360
+			}
 		}
 	}
 
@@ -1934,6 +1945,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_crush_the_tribes focus = ROE_integrate_german_tribes }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_ideas = ROE_look_north_idea
 		}
 	}
 
@@ -1953,6 +1965,12 @@ focus_tree = {
 		prerequisite = { focus = ROE_look_north }
 		mutually_exclusive = { }
 		completion_reward = {
+			CTC = {
+				country_event = { 
+					id = rome_event.102
+					days = 8
+				}
+			}
 		}
 	}
 
@@ -2688,7 +2706,10 @@ focus_tree = {
 		prerequisite = { focus = ROE_war_war }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = ROE_the_eastern_menace
+				days = 416
+			}
 		}
 	}
 

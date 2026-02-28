@@ -54,12 +54,17 @@
  chinese_kingdom_DEF: "the New Chinese Kingdom"
  chinese_kingdom_ADJ: "Chinese"
 
+ XIN_eternal_dynasty: "Great Xin"
+ XIN_eternal_dynasty_DEF: "the Great Xin, Eternal Dynasty reigning over China"
+ XIN_eternal_dynasty_ADJ: "Chinese"
+
  ## DECISIONS TOOLTIP
  peasants_support: "[?xin_peasant_support]"
  xin_int_affairs_ps: "[peasants_support]"
  peasants_support_loc_0: "The Fire Rises"
  peasants_support_loc_1: "The Flames Flicker"
  peasants_support_loc_2: "The Ashes Fall"
+ XIN_inflation: "§YInflation§! will begin to slow down, eventually leading down to a §Gstable inflation§!!"
 
  CHA_revolt_han: "§RThe Han supporters will revolt and try to overthrow us!§!"
 

@@ -485,6 +485,30 @@ focus_tree = {
     			id = XIN_heaven_mandate
     			value = 0.1
 			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -585,6 +609,12 @@ focus_tree = {
 		prerequisite = { focus = XIN_reform_the_income_tax }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_manpower = 68000
+			add_stability = 0.05
+			add_power_balance_value = {
+				id = XIN_heaven_mandate
+				value = 0.05
+			}
 		}
 	}
 
@@ -681,6 +711,11 @@ focus_tree = {
 		prerequisite = { focus = XIN_establish_new_farmlands }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_timed_idea = {
+				idea = XIN_weakening_the_nobles
+				days = 360
+			}
+			add_political_power = 50
 		}
 	}
 
@@ -700,6 +735,15 @@ focus_tree = {
 		prerequisite = { focus = XIN_further_weaken_the_nobles }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_power_balance_value = {
+				id = XIN_heaven_mandate
+				value = 0.05
+			}
+			add_stability = 0.05
+			add_timed_idea = {
+				idea = XIN_crushing_the_imperial_clan
+				days = 360
+			}
 		}
 	}
 
@@ -772,6 +816,7 @@ focus_tree = {
 		prerequisite = { focus = XIN_cement_the_reforms }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_ideas = XIN_bronze_coins
 		}
 	}
 
@@ -795,6 +840,7 @@ focus_tree = {
     			id = XIN_heaven_mandate
     			value = 0.1
 			}
+			add_political_power = 50
 		}
 	}
 
@@ -814,6 +860,12 @@ focus_tree = {
 		prerequisite = { focus = XIN_push_bronze_coins }
 		mutually_exclusive = { }
 		completion_reward = {
+			remove_ideas = XIN_deal_with_inflation
+			add_timed_idea = {
+				idea = XIN_deal_with_inflation2
+				days = 300
+			}
+			custom_effect_tooltip = XIN_inflation
 		}
 	}
 
@@ -880,6 +932,7 @@ focus_tree = {
     			id = XIN_heaven_mandate
     			value = 0.05
 			}
+			add_political_power = 50
 		}
 	}
 
@@ -929,6 +982,7 @@ focus_tree = {
 		prerequisite = { focus = XIN_stop_the_reforms }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_ideas = XIN_gold_coins
 		}
 	}
 
@@ -948,6 +1002,13 @@ focus_tree = {
 		prerequisite = { focus = XIN_reestablish_the_old_gold_standard }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_political_power = 50
+			remove_ideas = XIN_deal_with_inflation
+			add_timed_idea = {
+				idea = XIN_deal_with_inflation3
+				days = 400
+			}
+			custom_effect_tooltip = XIN_inflation
 		}
 	}
 
@@ -971,6 +1032,7 @@ focus_tree = {
     			id = XIN_heaven_mandate
     			value = -0.15
 			}
+			add_political_power = 25
 		}
 	}
 
@@ -1036,6 +1098,22 @@ focus_tree = {
 		prerequisite = { focus = XIN_the_question_of_iron }
 		mutually_exclusive = { }
 		completion_reward = {
+			606 = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			749 = {
+				add_building_construction = {
+    				type = farm
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
@@ -1057,6 +1135,8 @@ focus_tree = {
 		prerequisite = { focus = XIN_mass_nationalisation }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 70
 		}
 	}
 
@@ -1076,6 +1156,10 @@ focus_tree = {
 		prerequisite = { focus = XIN_imperial_gov_influence }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_timed_idea = {
+				idea = XIN_purge_of_bureaucrats
+				days = 360
+			}
 		}
 	}
 
@@ -1115,6 +1199,12 @@ focus_tree = {
 		prerequisite = { focus = XIN_a_social_empire_for_the_peasants }
 		mutually_exclusive = { }
 		completion_reward = {
+			set_cosmetic_tag = XIN_eternal_dynasty
+			add_power_balance_value = {
+				id = XIN_heaven_mandate
+				value = 0.05
+			}
+			add_stability = 0.05
 		}
 	}
 
@@ -1163,6 +1253,7 @@ focus_tree = {
 		prerequisite = { focus = XIN_towards_the_world }
 		mutually_exclusive = { }
 		completion_reward = {
+			custom_effect_tooltip = TOBEADDED
 		}
 		ai_will_do = {
 			base = 5

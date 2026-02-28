@@ -98,6 +98,15 @@
  rome_event.18.d: ""
  rome_event.18.a: "Arg! We'll need to.. do some shady things then."
 
+ rome_event.102.t: "Strange Fellows from Far Away"
+ rome_event.102.d: "Some people calling themselves \"Romans\" arrived today on our coasts. They said they wanted to meet our leader, and asked that we give tribute to them and pay respects. Obviously, we would have refused if it was only for that, but soon enough, armies arrived at our doors. What should we do?"
+ rome_event.102.a: "We're basically forced to accept..."
+
+ rome_event.103.t: "Letters from the North"
+ rome_event.103.d: "The tribe we contacted answered our request: they paid tribute to our generals and are on their way to our capital, Rome. From now on, they will be our tributary and allies for our great conquest."
+ rome_event.103.a: "Great! Send the armies!"
+
+
 
  ## ROMAN EMPIRE NEWS EVENTS ##
 

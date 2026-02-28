@@ -31,6 +31,110 @@ ideas = {
 			}
 		}
 
+		XIN_crushing_the_imperial_clan = {
+			name = "Crushing the Imperial Clan"
+			allowed_civil_war = { always = yes }
+			picture = SPR_crush_the_revolution
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.1
+				power_balance_weekly = 0.001
+			}
+		}
+
+		XIN_weakening_the_nobles = {
+			name = "Weakening the Nobility"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_kingmaker
+			modifier = {
+				communism_drift = 0.01
+				power_balance_weekly = 0.002
+			}
+		}
+
+		XIN_bronze_coins = {
+			name = "Bronze Coins"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_boycott_british_made_goods
+			modifier = {
+				consumer_goods_factor = -0.2
+				political_power_cost = 0.2
+				stability_factor = -0.05
+			}
+		}
+
+		XIN_gold_coins = {
+			name = "Gold Coins"
+			allowed_civil_war = { always = yes }
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+
+		XIN_deal_with_inflation = {
+			name = "Overwhealming Inflation"
+			allowed_civil_war = { always = yes }
+			picture = chi_hyper_inflation4
+			modifier = {
+				consumer_goods_factor = 0.2
+				stability_factor = -0.1
+			}
+			on_remove = {
+			}
+		}
+
+		XIN_deal_with_inflation2 = {
+			name = "High Inflation"
+			allowed_civil_war = { always = yes }
+			picture = chi_hyper_inflation3
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+			on_remove = {
+				add_timed_idea = {
+					idea = XIN_deal_with_inflation3
+					days = 260
+				}
+			}
+		}
+
+		XIN_deal_with_inflation3 = {
+			name = "Medium Inflation"
+			allowed_civil_war = { always = yes }
+			picture = chi_hyper_inflation2
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0
+			}
+			on_remove = {
+				add_ideas = XIN_deal_with_inflation4
+			}
+		}
+
+		XIN_deal_with_inflation4 = {
+			name = "Stable Inflation"
+			allowed_civil_war = { always = yes }
+			picture = chi_hyper_inflation1
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+
+		XIN_purge_of_bureaucrats = {
+			name = "Purge of Bureaucrats"
+			allowed_civil_war = { always = yes }
+			picture = generic_purge
+			modifier = {
+				stability_factor = -0.1
+				power_balance_weekly = 0.0001
+				political_power_factor = 0.1
+			}
+		}
+
 		XIN_legitimate_dynasty = {
 			name = "Legitimate Dynasty"
 			allowed_civil_war = { always = yes }

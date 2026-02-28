@@ -135,6 +135,87 @@ ideas = {
 			}
 		}
 
+		ROE_purging_democrats = {
+			name = "Purging Democrats"
+			allowed_civil_war = { always = yes }
+			picture = generic_democracy_banned
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = 0.2
+				democratic_drift = -0.02
+			}
+		}
+
+		ROE_aristocratic_gifts = {
+			name = "Aristocratic Gifts"
+			allowed_civil_war = { always = yes }
+			picture = SPR_relocate_the_gold_reserves
+			on_remove = {
+			}
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.1
+				political_power_cost = -0.5
+			}
+		}
+
+		ROE_concessions_to_generals = {
+			name = "Concessions to Generals"
+			allowed_civil_war = { always = yes }
+			picture = MEX_politicised_army
+			on_remove = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				supply_consumption_factor = -0.05
+				army_morale_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+
+		ROE_the_eastern_menace = {
+			name = "The Eastern Menace"
+			allowed_civil_war = { always = yes }
+			picture = FRA_army_of_aggression_focus
+			on_remove = {
+			}
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.2
+				conscription_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+
+		ROE_look_east_idea = {
+			name = "Look East"
+			allowed_civil_war = { always = yes }
+			picture = FRA_army_of_aggression_focus
+			on_remove = {
+			}
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.15
+				conscription_factor = 0.15
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		ROE_look_north_idea = {
+			name = "Look North"
+			allowed_civil_war = { always = yes }
+			picture = SWI_spirit_of_helvetia_defensive_war
+			on_remove = {
+			}
+			modifier = {
+				conscription_factor = 0.1
+				stability_factor = -0.1
+				war_support_factor = 0.05
+				justify_war_goal_time = -0.7
+			}
+		}
+
 		ROE_jewish_cult_banned = {
 			name = "Jewish Cult Banned"
 			allowed_civil_war = { always = yes }

@@ -1849,6 +1849,77 @@ country_event = {
 	}
 }
 
+#Sending to Cantiaci
+country_event = {
+	id = rome_event.102
+	title = rome_event.102.t
+	desc = rome_event.102.d
+	trigger = {}
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Yes!
+		name = rome_event.102.a
+		ai_chance = { factor = 10 }
+		trigger = { }
+		ROE = {
+			country_event = {
+				id = rome_event.103
+				days = 8
+			}
+		}
+	}
+}
+
+#Sending to Rome
+country_event = {
+	id = rome_event.103
+	title = rome_event.103.t
+	desc = rome_event.103.d
+	trigger = {}
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { ## Yay!
+		name = rome_event.103.a
+		ai_chance = { factor = 10 }
+		trigger = { }
+		PREV = {
+			set_temp_variable = { oldgov = var:THIS.current_party_ideology_group }
+			set_temp_variable = { demoldgov = var:THIS.party_popularity_100@democratic }
+			set_temp_variable = { olioldgov = var:THIS.party_popularity_100@communism }
+			set_temp_variable = { tyraoldgov = var:THIS.party_popularity_100@fascism }
+			set_temp_variable = { triboldgov = var:THIS.party_popularity_100@neutrality }
+            add_political_power = -50
+            set_country_flag = is_tributary
+        }
+        ROOT = {
+            add_political_power = 50
+            set_autonomy = {
+                target = PREV
+                autonomous_state = autonomy_tributary
+                end_wars = no
+                end_civil_wars = no
+            }
+			PREV = {
+				set_politics = {
+    				ruling_party = var:oldgov
+    				elections_allowed = no
+    				election_frequency = 48
+				}
+				set_popularities = {
+					democratic = var:demoldgov
+					communism = var:olioldgov
+					fascism = var:tyraoldgov
+					neutrality = var:triboldgov
+				}
+			}
+        }
+	}
+}
+
 
 
 
