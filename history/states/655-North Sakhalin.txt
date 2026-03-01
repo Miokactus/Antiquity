@@ -9,7 +9,6 @@ state = {
 		owner = AAN
 		
 		
-		add_claim_by = JAP
 		buildings = {
 			infrastructure = 2
 			#

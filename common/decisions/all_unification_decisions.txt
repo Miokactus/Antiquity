@@ -252,6 +252,8 @@ unification_decisions = {
                 tag = OKJ
                 tag = EYE
                 tag = BAE
+                tag = DGB
+                tag = BYO
             }
     	}
 		available = {
@@ -268,6 +270,8 @@ unification_decisions = {
                 tag = OKJ
                 tag = EYE
                 tag = BAE
+                tag = DGB
+                tag = BYO
             }
 		}
 		complete_effect = {
@@ -289,7 +293,7 @@ unification_decisions = {
 
     }
 
-        korea_unification = {
+    korea_unification = {
         fire_only_once = yes
 		icon = generic_civil_support
 		highlight_states = {

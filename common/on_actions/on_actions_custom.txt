@@ -12,6 +12,19 @@ on_actions = {
 
     on_startup = {
         effect = {
+            set_division_template_cap = { 
+	            division_template = "Chinese Levy" 
+	            division_cap = limit_levies_china
+            }
+            set_division_template_cap = { 
+	            division_template = "Chinese Infantry" 
+	            division_cap = limit_infantry_china
+            }
+        }
+    }
+
+    on_startup = {
+        effect = {
             set_variable = { 
 				subjects_amount_tribute = 0
 			}

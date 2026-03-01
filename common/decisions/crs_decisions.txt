@@ -54,6 +54,9 @@ alliance_germans = {
 		}
 		timeout_effect = {
 		}
+		ai_will_do = {
+			factor = 15
+		}
 	}
 
 
@@ -108,6 +111,9 @@ alliance_puppet = {
 		}
 		timeout_effect = {
 		}
+		ai_will_do = {
+			factor = 8
+		}
 	}
 
 	integrate_tribes = {
@@ -138,6 +144,9 @@ alliance_puppet = {
 			}
 		}
 		timeout_effect = {
+		}
+		ai_will_do = {
+			factor = 10
 		}
 	}
 }

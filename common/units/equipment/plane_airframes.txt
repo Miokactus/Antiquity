@@ -2,7 +2,7 @@ equipments = {
 
 	#to make sure that an airframe appears in the air designer make sure to add it in interface/equipmentdesigner/planes/plane_blueprints_generic.gui, otherwise it will not show up
 	small_plane_airframe = {
-		year = 1933
+		year = 12
 
 		can_be_produced = {
 			if = {
@@ -212,7 +212,7 @@ equipments = {
 	small_plane_airframe_0 = { #Inter-War
 		abbreviation = "afs0"
 		derived_variant_name = fighter_equipment_0
-		year = 1933
+		year = 12
 
 		archetype = small_plane_airframe
 		module_slots = inherit
@@ -230,7 +230,7 @@ equipments = {
 	small_plane_airframe_1 = { #Basic
 		abbreviation = "afs1"
 		derived_variant_name = fighter_equipment_1
-		year = 1936
+		year = 15
 
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_0
@@ -307,7 +307,7 @@ equipments = {
 	small_plane_airframe_2 = { #Improved
 		abbreviation = "afs2"
 		derived_variant_name = fighter_equipment_2
-		year = 1939
+		year = 18
 
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_1
@@ -411,7 +411,7 @@ equipments = {
 	small_plane_airframe_3 = { #Advanced
 		abbreviation = "afs3"
 		derived_variant_name = fighter_equipment_3
-		year = 1942
+		year = 22
 
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_2
@@ -534,7 +534,7 @@ equipments = {
 	small_plane_airframe_4 = { #modern
 		abbreviation = "afs4"
 		derived_variant_name = jet_fighter_equipment_1 # We should use "jet" for this or any of the ones below, but this is good enough for now.
-		year = 1945
+		year = 27
 
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_3
@@ -660,7 +660,7 @@ equipments = {
 	small_plane_airframe_5 = { #supersonic
 		abbreviation = "afs5"
 		derived_variant_name = jet_fighter_equipment_1 # We should use "jet" for this or any of the ones below, but this is good enough for now.
-		year = 1950
+		year = 35
 		sprite = supersonic_jet_plane
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_4
@@ -802,7 +802,7 @@ equipments = {
 	}
 
 	cv_small_plane_airframe = {
-		year = 1933
+		year = 12
 
 		can_be_produced = {
 			if = {
@@ -1013,7 +1013,7 @@ equipments = {
 	cv_small_plane_airframe_0 = { #Inter-War
 		abbreviation = "afc0"
 		derived_variant_name = cv_fighter_equipment_0
-		year = 1933
+		year = 12
 
 		archetype = cv_small_plane_airframe
 		module_slots = inherit
@@ -1033,7 +1033,7 @@ equipments = {
 	cv_small_plane_airframe_1 = { #Basic
 		abbreviation = "afc1"
 		derived_variant_name = cv_fighter_equipment_1
-		year = 1936
+		year = 15
 
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_0
@@ -1109,7 +1109,7 @@ equipments = {
 	cv_small_plane_airframe_2 = { #Improved
 		abbreviation = "afc2"
 		derived_variant_name = cv_fighter_equipment_2
-		year = 1939
+		year = 18
 
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_1
@@ -1212,7 +1212,7 @@ equipments = {
 	cv_small_plane_airframe_3 = { #Advanced
 		abbreviation = "afc3"
 		derived_variant_name = cv_fighter_equipment_3
-		year = 1942
+		year = 22
 
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_2
@@ -1321,7 +1321,7 @@ equipments = {
 
 	cv_small_plane_airframe_4 = { #modern
 		abbreviation = "afc4"
-		year = 1945
+		year = 27
 
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_3
@@ -1432,7 +1432,7 @@ equipments = {
 	}
 
 	medium_plane_airframe = {
-		year = 1933
+		year = 12
 
 		can_be_produced = {
 			if = {
@@ -1688,7 +1688,7 @@ equipments = {
 	medium_plane_airframe_0 = { #Inter-War
 		abbreviation = "afm0"
 		derived_variant_name = tac_bomber_equipment_0
-		year = 1933
+		year = 12
 
 		archetype = medium_plane_airframe
 		module_slots = inherit
@@ -1708,7 +1708,7 @@ equipments = {
 	medium_plane_airframe_1 = { #Basic
 		abbreviation = "afm1"
 		derived_variant_name = tac_bomber_equipment_1
-		year = 1936
+		year = 15
 
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_0
@@ -1839,7 +1839,7 @@ equipments = {
 	medium_plane_airframe_2 = { #Improved
 		abbreviation = "afm2"
 		derived_variant_name = tac_bomber_equipment_2
-		year = 1939
+		year = 18
 
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_1
@@ -1987,7 +1987,7 @@ equipments = {
 	medium_plane_airframe_3 = { #Advanced
 		abbreviation = "afm3"
 		derived_variant_name = tac_bomber_equipment_3
-		year = 1942
+		year = 22
 
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_2
@@ -2147,7 +2147,7 @@ equipments = {
 	medium_plane_airframe_4 = { #Modern
 		abbreviation = "afm4"
 		derived_variant_name = jet_tac_bomber_equipment_1
-		year = 1945
+		year = 27
 
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_3
@@ -2305,7 +2305,7 @@ equipments = {
 	}
 
 	large_plane_airframe = {
-		year = 1933
+		year = 12
 
 		can_be_produced = {
 			if = {
@@ -2558,7 +2558,7 @@ equipments = {
 
 	large_plane_airframe_0 = { #Inter-War
 		abbreviation = "afl0"
-		year = 1933
+		year = 12
 
 		archetype = large_plane_airframe
 		module_slots = inherit
@@ -2576,7 +2576,7 @@ equipments = {
 	large_plane_airframe_1 = { #Basic
 		abbreviation = "afl1"
 		derived_variant_name = strat_bomber_equipment_1
-		year = 1936
+		year = 15
 
 		archetype = large_plane_airframe
 		parent = large_plane_airframe_0
@@ -2716,7 +2716,7 @@ equipments = {
 	large_plane_airframe_2 = { #Improved
 		abbreviation = "afl2"
 		derived_variant_name = strat_bomber_equipment_2
-		year = 1939
+		year = 18
 
 		archetype = large_plane_airframe
 		parent = large_plane_airframe_1
@@ -2882,7 +2882,7 @@ equipments = {
 	large_plane_airframe_3 = { #Advanced
 		abbreviation = "afl3"
 		derived_variant_name = strat_bomber_equipment_3
-		year = 1942
+		year = 22
 
 		archetype = large_plane_airframe
 		parent = large_plane_airframe_2
@@ -3048,7 +3048,7 @@ equipments = {
 	large_plane_airframe_4 = { #Modern
 		abbreviation = "afl4"
 		derived_variant_name = jet_strat_bomber_equipment_1
-		year = 1945
+		year = 27
 
 		archetype = large_plane_airframe
 		parent = large_plane_airframe_3

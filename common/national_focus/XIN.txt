@@ -1179,6 +1179,7 @@ focus_tree = {
 		prerequisite = { focus = XIN_imperial_gov_influence }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_research_slot = 1
 		}
 	}
 

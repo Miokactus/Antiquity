@@ -975,74 +975,7 @@ technologies = {
 	
 	###Paratroopers
 	
-	special_forces_paratroopers = {
-		doctrine_name = "PARATROOPERS_DOCTRINE"
-
-		xp_research_type = air
-		xp_unlock_cost = 60
-		
-		force_use_small_tech_layout = yes
-		
-		#xor = { special_forces_mountaineers special_forces_marines } 
 	
-		paratroopers_special_forces_contribution_factor = -0.10
-		transport_plane = {
-			air_defence = 0.20
-		}
-		category_special_forces = {
-			max_organisation = 5
-			soft_attack = 0.05
-		}
-		
-		allow = { 
-			AND = {
-				has_tech = paratroopers 
-				can_unlock_new_special_forces_tree = yes
-			}
-		}
-		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}
-		
-		path = {
-			leads_to_tech = paras_dispersed_drop
-			research_cost_coeff = 1
-		}
-		
-		path = {
-			leads_to_tech = paras_combat_drop
-			research_cost_coeff = 1
-		}
-
-		doctrine = yes	
-		research_cost = 2.25
-		
-		categories = {
-			special_forces_doctrine
-			#para_tech
-			cat_paratroopers_doctrine
-		}
-
-		
-		folder = {
-			name = special_forces_doctrine_folder
-			position = { x = 0 y = 0 }
-		}
-		
-		ai_will_do = {
-			factor = 20
-			modifier = {
-				factor = 0
-				NOT = { ai_has_completed_air_doctrine = yes }
-			}
-		}
-		
-		ai_research_weights = {
-			#infantry_weapons = 1.5
-			#carriage_equipment = 1.0
-		}
-	}
 	
 	paras_dispersed_drop = {
 

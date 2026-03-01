@@ -1,10 +1,27 @@
+clear_variable = limit_levies_china
+clear_variable = limit_infantry_china
+
+set_variable = {
+    var = limit_levies_china
+    value = XIN@max_manpower_k
+}
+divide_variable = {
+    var = limit_levies_china
+    value = XIN@num_of_owned_factories
+}
+
+set_variable = {
+    var = limit_infantry_china
+    value = XIN@num_of_owned_factories
+}
+
 division_template = {
     name = "Chinese Levy"
     is_locked = yes
     division_names_group = LEVY_INF_01
     template_counter = 3
     force_allow_recruiting = yes
-    division_cap = 35
+    division_cap = 42
     regiments = {
         irregular_infantry = { x = 0 y = 0 }
         irregular_infantry = { x = 0 y = 1 }
@@ -18,7 +35,7 @@ division_template = {
 	is_locked = yes
 	force_allow_recruiting = yes
     division_names_group = XIN_INF_01
-    division_cap = 26
+    division_cap = 36
     regiments = {
         infantry = { x = 0 y = 0 }
         infantry = { x = 0 y = 1 }

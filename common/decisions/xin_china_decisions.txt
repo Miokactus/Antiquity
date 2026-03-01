@@ -172,14 +172,6 @@ mandate_of_heaven = {
 			random_owned_controlled_state = {
 				add_building_construction = {
     				type = farm
-    				level = 2
-    				instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-    				type = farm
     				level = 1
     				instant_build = yes
 				}
@@ -414,14 +406,6 @@ mandate_of_heaven_claim = {
     			id = XIN_heaven_mandate_claimant
     			value = 0.08
     			tooltip_side = CHI_legitimate_dynasty_side
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-    				type = farm
-    				level = 2
-    				instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
 			}
 			random_owned_controlled_state = {
 				add_building_construction = {
@@ -684,7 +668,7 @@ political_actions = {
 				set_cosmetic_tag = chinese_empire
 				set_power_balance = {
                     id = XIN_heaven_mandate_claimant
-                    set_value = 0
+                    set_value = 0.02
                 }
 		}
 		timeout_effect = {
@@ -715,7 +699,8 @@ crisis = {
 			}
 			XIN = { exists = yes }
 		}
-		days_mission_timeout = 5
+		days_mission_timeout = 80
+		fire_only_once = yes
 		activation = {
 			has_global_flag = XIN_dynasty_collapse
 		}
@@ -796,6 +781,7 @@ crisis = {
 			}
 		}
 		days_mission_timeout = 120
+		fire_only_once = yes
 		activation = {
 			has_global_flag = XIN_dynasty_collapse2
 			ANN = {
@@ -899,6 +885,7 @@ crisis = {
 
 	han_revolt = {
 		icon = generic_civil_support
+		fire_only_once = yes
 		allowed = {
 			OR = {
 				AND = {
@@ -921,7 +908,12 @@ crisis = {
 						}
 					}
 					RYY = {
-						has_completed_focus = CHA_claim_the_mandate
+						OR = {
+							has_completed_focus = CHA_claim_the_mandate
+							has_completed_focus = CHA_ideas_from_afar
+							has_completed_focus = CHA_proclaim_a_kingdom
+							has_completed_focus = CHA_restored_han_empire
+						}
 					}
 				}
 				AND = {
@@ -934,7 +926,12 @@ crisis = {
 						}
 					}
 					LLU = {
-						has_completed_focus = CHA_claim_the_mandate
+						OR = {
+							has_completed_focus = CHA_claim_the_mandate
+							has_completed_focus = CHA_ideas_from_afar
+							has_completed_focus = CHA_proclaim_a_kingdom
+							has_completed_focus = CHA_restored_han_empire
+						}
 					}
 				}
 			}

@@ -14,7 +14,6 @@ state = {
 		owner = ROE
 		add_core_of = ROE
 		
-		add_claim_by = CAT
 
 		buildings = {
 			infrastructure = 2 #was: 6

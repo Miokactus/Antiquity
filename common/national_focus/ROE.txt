@@ -3022,6 +3022,10 @@ focus_tree = {
 		prerequisite = { focus = ROE_reform_the_imperial_army }
 		mutually_exclusive = { focus = ROE_integrate_cavalry }
 		completion_reward = {
+			custom_effect_tooltip = historical_units
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -3041,6 +3045,18 @@ focus_tree = {
 		prerequisite = { focus = ROE_reform_the_imperial_army }
 		mutually_exclusive = { focus = ROE_stay_with_infantry }
 		completion_reward = {
+			custom_effect_tooltip = ahistorical_units	
+			set_division_template_lock = {
+    			division_template = "Legio"
+    			is_locked = no
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1
+				is_historical_focus_on = no
+			}
 		}
 	}
 

@@ -1,6 +1,332 @@
+war_actions = {
+	total_victory = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		target_array = enemies
+		cost = 60
+		target_trigger = { 
+			FROM = {
+				NOT = {
+					is_subject = yes
+				}
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_war_with = FROM
+			OR = {
+				NOT = {
+					is_in_faction = yes
+				}
+				is_faction_leader = yes
+			}
+			FROM = {
+				surrender_progress > 0.3
+			}
+			ROOT = {
+				surrender_progress < 0.05
+				FROM = {
+					any_owned_state = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+			NOT = {
+				has_civil_war = yes
+			}
+		}
+		visible = {
+			has_war = yes
+		}
+		complete_effect = {
+			every_controlled_state = {
+				limit = {
+					owner = {
+						has_war_with = ROOT
+					}
+				}
+				transfer_state_to = ROOT
+			}
+			white_peace = FROM
+			add_timed_idea = {
+				idea = war_reparations
+				days = 120
+			}
+			ROOT = {
+				every_allied_country = {
+					limit = {
+						has_war = yes
+					}
+					add_timed_idea = {
+						idea = war_reparations
+						days = 120
+					}
+				}
+			}
+			FROM = {
+				add_timed_idea = {
+					idea = war_reparations_lost
+					days = 120
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 300
+				FROM = {
+					surrender_progress > 0.5
+				}
+			}
+		}
+	}
+
+
+	stalemate = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		target_array = enemies
+		cost = 40
+		target_trigger = { 
+			FROM = {
+				NOT = {
+					is_subject = yes
+				}
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_war_with = FROM
+			OR = {
+				NOT = {
+					is_in_faction = yes
+				}
+				is_faction_leader = yes
+			}
+			war_length_with = {
+    			tag = FROM
+    			months > 2
+			}
+			FROM = {
+				surrender_progress < 0.05
+			}
+			ROOT = {
+				surrender_progress < 0.05
+			}
+			NOT = {
+				has_civil_war = yes
+			}
+		}
+		visible = {
+			has_war = yes
+		}
+		complete_effect = {
+			white_peace = FROM
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 400
+				war_length_with = {
+    				tag = FROM
+    				months > 4
+				}
+				FROM = {
+					surrender_progress < 0.05
+				}
+				ROOT = {
+					surrender_progress < 0.05
+				}
+			}
+		}
+	}
+
+	surrender = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		target_array = enemies
+		cost = 5
+		target_trigger = { 
+			FROM = {
+				NOT = {
+					is_subject = yes
+				}
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_war_with = FROM
+			OR = {
+				NOT = {
+					is_in_faction = yes
+				}
+				is_faction_leader = yes
+			}
+			FROM = {
+				surrender_progress < 0.05
+				ROOT = {
+					any_owned_state = {
+						is_controlled_by = FROM
+					}
+				}
+			}
+			ROOT = {
+				surrender_progress > 0.3
+			}
+		}
+		visible = {
+			has_war = yes
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = FROM
+				}
+				transfer_state_to = FROM
+			}
+			white_peace = FROM
+			FROM = {
+				add_timed_idea = {
+					idea = war_reparations
+					days = 120
+				}
+			}
+			add_timed_idea = {
+				idea = war_reparations_lost
+				days = 120
+			}
+			ROOT = {
+				every_allied_country = {
+					limit = {
+						has_war = yes
+					}
+					add_timed_idea = {
+						idea = war_reparations_lost
+						days = 120
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 300
+				surrender_progress > 0.9
+			}
+		}
+	}
+
+
+
+	integration_of_lands = {
+		icon = generic_civil_support
+		target_root_trigger = { TAG = ROOT }
+		target_array = ROOT.owned_controlled_states
+		target_trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+		cost = 75
+		days_remove = 60
+		state_target = yes
+		highlight_states = {
+			highlight_states_trigger = {
+				
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+		}
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 150
+				has_manpower < 3500
+			}
+			modifier = {
+				factor = 300
+				num_occupied_states > 2
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 political_actions = {
 
-	
+
 	targeted_race_for_the_bomb = {
 
 		icon = generic_research

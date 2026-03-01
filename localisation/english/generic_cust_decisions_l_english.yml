@@ -1,6 +1,8 @@
 ﻿l_english:
  ## CATEGORIES
  unification_decisions: "Unification of Lands"
+ war_actions: "War Actions"
+ tribal_actions: "Tribal Actions"
 
  ## OPINION MODIFIERS
 
@@ -16,6 +18,15 @@
  korea_unification: "Unification of Korea"
  northern_unification: "Proclamation of Goryeo"
  end_of_war: "End of the War"
+
+ han_revolt: "Revolt of the Hans!"
+
+ total_victory: "Total victory over §G[FROM.GetNameDef]§!"
+ stalemate: "Stalemate with §Y[FROM.GetNameDef]§!"
+ surrender: "Surrender to §R[FROM.GetNameDef]§!"
+
+ integration_of_lands: "Integrate §Y[FROM.GetName]§!"
+ lay_claims: "Lay claims on §O[FROM.GetName]§!"
 
  ## COSMETIC TAGS
  KUS_kushite_empire: "Kushite Empire"
@@ -45,6 +56,9 @@
 
  ## TOOLTIPS
  germanic_empire_tooltip_owns: "§GWe need to control every germanic states in Europe!§!"
+ ahistorical_units: "§YThis will allow you to produce ahistorical units, removing divisions cap.§!"
+ historical_units: "§GThis will keep you on track with historical units, and the divisions cap.§!"
+
 
  ## TRAITS
  arminius_trait: "Arminius, Defender of All Germans"

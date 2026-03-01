@@ -57,7 +57,7 @@ equipments = {
 
 
 
-	# Regular infantry  1936
+	# Regular infantry  15
 	infantry_equipment_1 = {
 		year = 18
 	
@@ -81,7 +81,7 @@ equipments = {
 		build_cost_ic = 0.6
 	}
 
-	# Improved weapons  ~1939
+	# Improved weapons  ~18
 	infantry_equipment_2 = {
 		year = 22
 		fuel_consumption = 0.1
@@ -110,7 +110,7 @@ equipments = {
 		
 	}
 	
-	# Advanced weapons  ~1942
+	# Advanced weapons  ~22
 	infantry_equipment_3 = {
 		year = 28
 		fuel_consumption = 0.1

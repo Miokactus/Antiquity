@@ -1,4 +1,11 @@
 ﻿l_english:
+ ## TRIBAL EVENTS
+
+ tribal.1.t: "News from Beyond"
+ tribal.1.d: "We have received inside news from civilians in our neighbouring countries: it is said that they are fabricating a claim on one of our states, eventually leading to war! We must get ready!"
+ tribal.1.a: "Bastards!"
+
+
  ## ROMAN EMPIRE EVENTS ##
 
  generic_custom.10.t: "[FROM.GetNameDef] Asks for a Tribute!"

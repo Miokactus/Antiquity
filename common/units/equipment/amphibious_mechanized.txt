@@ -1,7 +1,7 @@
 equipments = {
 
 	amphibious_mechanized_equipment = {
-		year = 1936
+		year = 15
 
 		is_archetype = yes
 		picture = archetype_carriage_equipment		
@@ -40,18 +40,18 @@ equipments = {
 		fuel_consumption = 4.0
 	}
 
-	# ~1941
+	# ~20
 	amphibious_mechanized_equipment_1 = {
-		year = 1940
+		year = 19
 
 		archetype = amphibious_mechanized_equipment
 		priority = 40
 		visual_level = 0
 	}
 
-	# ~1943
+	# ~24
 	amphibious_mechanized_equipment_2 = {
-		year = 1942
+		year = 22
 
 		archetype = amphibious_mechanized_equipment
 		parent = amphibious_mechanized_equipment_1

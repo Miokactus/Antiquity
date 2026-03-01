@@ -1006,7 +1006,7 @@ focus_tree = {
 		prerequisite = { focus = CHA_ensure_local_officers_loyalty focus = CHA_propaganda_across_the_peasants }
 		mutually_exclusive = {}
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 		ai_will_do = {
 			factor = 1
@@ -1030,6 +1030,11 @@ focus_tree = {
 		prerequisite = { focus = CHA_reorganise_the_governmental_structure }
 		mutually_exclusive = {}
 		completion_reward = {
+			set_division_template_lock = {
+    			division_template = "Chinese Infantry"
+    			is_locked = no
+			}
+			custom_effect_tooltip = ahistorical_units
 			if = {
 				limit = {
 					ANN = {
@@ -1360,6 +1365,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		completion_reward = {
 			add_ideas = CHA_first_democracy
+			add_research_slot = 1
 		}
 		ai_will_do = {
 			factor = 1
@@ -1384,6 +1390,11 @@ focus_tree = {
 				CHI_popular_uprising
 				RYY_revolutionary_army
 			}
+			custom_effect_tooltip = ahistorical_units
+			set_division_template_lock = {
+    			division_template = "Chinese Infantry"
+    			is_locked = no
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -1407,7 +1418,7 @@ focus_tree = {
 		prerequisite = { focus = CHA_a_state_for_our_revolt }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			add_research_slot = 1
 		}
 		ai_will_do = {
 			factor = 1
@@ -1477,6 +1488,11 @@ focus_tree = {
 			remove_ideas = {
 				CHI_popular_uprising
 				RYY_revolutionary_army
+			}
+			custom_effect_tooltip = ahistorical_units
+			set_division_template_lock = {
+    			division_template = "Chinese Infantry"
+    			is_locked = no
 			}
 		}
 		ai_will_do = {
@@ -1668,6 +1684,7 @@ focus_tree = {
 		mutually_exclusive = { }
 		completion_reward = {
 			add_command_power = 25
+			add_research_slot = 1
 			add_timed_idea = {
 				idea = CHA_promoted_new_generals
 				days = 240
@@ -1779,7 +1796,6 @@ focus_tree = {
 		prerequisite = { focus = CHA_peoples_army }
 		mutually_exclusive = {}
 		completion_reward = {
-			
 		}
 		ai_will_do = {
 			factor = 1

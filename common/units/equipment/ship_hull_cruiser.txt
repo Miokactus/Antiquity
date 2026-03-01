@@ -160,7 +160,7 @@ equipments = {
 
 	ship_hull_cruiser_2 = {
 		abbreviation = "hbb"
-		year = 1936
+		year = 15
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -233,7 +233,7 @@ equipments = {
 
 	ship_hull_cruiser_3 = {
 		abbreviation = "hbc"
-		year = 1940
+		year = 19
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -319,7 +319,7 @@ equipments = {
 
 	ship_hull_cruiser_4 = {
 		abbreviation = "hbd"
-		year = 1944
+		year = 26
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -441,7 +441,7 @@ equipments = {
 	}
 
 	light_cruiser_2 = {
-		year = 1936
+		year = 15
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -490,7 +490,7 @@ equipments = {
 		manpower = 800
 	}
 	light_cruiser_3 = {
-		year = 1940
+		year = 19
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -542,7 +542,7 @@ equipments = {
 	}
 	
 	light_cruiser_4 = {
-		year = 1944
+		year = 26
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900
@@ -712,7 +712,7 @@ equipments = {
 	}
 	
 	heavy_cruiser_2 = {
-		year = 1936
+		year = 15
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1800
@@ -761,7 +761,7 @@ equipments = {
 	}
 	
 	heavy_cruiser_3 = {
-		year = 1940
+		year = 19
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1800
@@ -811,7 +811,7 @@ equipments = {
 	}
 	
 	heavy_cruiser_4 = {
-		year = 1944
+		year = 26
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1800
@@ -866,7 +866,7 @@ equipments = {
 
 	torpedo_cruiser = {
 		abbreviation = "hbh"
-		year = 1940
+		year = 19
 
 		archetype = ship_hull_cruiser
 		priority = 1850
@@ -985,7 +985,7 @@ equipments = {
 	###special snowflake hulls
 	ship_hull_torpedo_cruiser = {
 		abbreviation = "hbe"
-		year = 1940
+		year = 19
 		visual_level = 0
 		archetype = ship_hull_cruiser
 		priority = 1850
@@ -1203,7 +1203,7 @@ equipments = {
 
 	ship_hull_cruiser_modern_aa = {
 		abbreviation = "hbdaa"
-		year = 1954
+		year = 50
 		visual_level = 1
 		archetype = ship_hull_cruiser
 		priority = 1900

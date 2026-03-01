@@ -22,7 +22,6 @@ state={
 
 		}
 		
-		add_claim_by = BUL
 	}
 
 	provinces={

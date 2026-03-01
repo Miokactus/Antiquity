@@ -45,7 +45,7 @@ equipments = {
 		supply_truck = no
 	}
 
-	# ~1941
+	# ~20
 	heavy_carriage_equipment_1 = {
 		year = 28
 
@@ -54,7 +54,7 @@ equipments = {
 		visual_level = 0
 	}
 
-	# ~1943
+	# ~24
 	heavy_carriage_equipment_2 = {
 		year = 35
 
@@ -82,7 +82,7 @@ equipments = {
 		}
 	}
 
-	# ~1945
+	# ~27
 	heavy_carriage_equipment_3 = {
 		year = 42
 

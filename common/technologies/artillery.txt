@@ -9,7 +9,7 @@ technologies = {
 			artillery_equipment_1
 		}
 
-		armored_car = {
+		infantry = {
 			soft_attack = 0.1
 		}
 
@@ -20,11 +20,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = interwar_antitank
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = interwar_antiair
 			research_cost_coeff = 1
 		}
 
@@ -241,10 +236,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = rocket_artillery
-			research_cost_coeff = 1
-		}
+		
 
 		research_cost = 1
 

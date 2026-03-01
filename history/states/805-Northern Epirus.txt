@@ -23,7 +23,6 @@ state={
 		}
 		
 		add_claim_by = GRE
-		add_claim_by = ROE
 
 		1939.4.12 = {
 			owner = AAN

@@ -16,34 +16,87 @@ tribal_actions = {
 		target_root_trigger = { TAG = ROOT }
 		target_array = neighbors
 		complete_effect = {
-			if = {
-				limit = {
-					FROM = {
-						has_equipment = {
-    						infantry_equipment_1 > 150
-						}
+		}
+		timeout_effect = {
+		}
+	}
+
+	lay_claims = {
+		icon = generic_civil_support
+		days_re_enable = 250
+		cost = 50
+		target_root_trigger = { TAG = ROOT }
+		target_trigger = {
+			FROM = {
+				NOT = { owner = { has_war_with = ROOT } }
+				NOT = { is_owned_by = ROOT }
+				NOT = { is_owned_by = AAN }
+				NOT = { is_owned_by = FAL }
+				NOT = { is_owned_by = FAA }
+				NOT = {
+					owner = {
+						is_ally_with = ROOT
 					}
 				}
-				ROOT = { 
-					add_war_support = 0.05
-					add_political_power = 70
-					FROM = {
-						add_manpower = -500
-						add_political_power = -70
-						add_war_support = -0.05
-					}
-				}
-				else = {
-					add_war_support = -0.05
-					add_manpower = -500
-					FROM = {
-						add_war_support = 0.05
-						add_political_power = 50
+		        any_neighbor_state = { 
+		        	is_controlled_by_ROOT_or_subject = yes
+		        }
+	        }
+		}
+		on_map_mode = map_only
+		cost = 70
+		days_remove = 30
+		state_target = yes
+		highlight_states = {
+			highlight_states_trigger = {
+			}
+		}
+		allowed = {
+			OR = {
+				has_government = neutrality
+				has_government = communism
+			}
+    	}
+		available = {
+			OR = {
+				has_government = neutrality
+				tag = JIN
+				tag = MAH
+				tag = EYE
+				tag = BAE
+				tag = GOR
+				tag = MMD
+				tag = SAV
+				tag = CTU
+				tag = CLO
+				tag = CER
+				tag = MTI
+			}
+		}
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			FROM = {
+				add_claim_by = ROOT
+				owner = {
+					country_event = {
+						id = tribal.1
+						hours = 12
 					}
 				}
 			}
 		}
-		timeout_effect = {
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 100
+				date > 15.5.11
+			}
 		}
 	}
 }

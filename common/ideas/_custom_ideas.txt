@@ -21,6 +21,30 @@ ideas = {
 			}
 		}
 
+		war_reparations = {
+			name = "War Reparations"
+			allowed_civil_war = { always = yes }
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				political_power_cost = -0.5
+				consumer_goods_factor = -0.15
+				war_support_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+
+		war_reparations_lost = {
+			name = "Paying War Reparations"
+			allowed_civil_war = { always = yes }
+			picture = chi_hyper_inflation3
+			modifier = {
+				political_power_cost = 0.3
+				consumer_goods_factor = 0.1
+				war_support_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+
 
 
 		democratic_tradition = {
@@ -295,6 +319,8 @@ ideas = {
 				conscription_factor = -0.2
 			}
 		}
+
+		
 
 	## ANARCHY ##
 

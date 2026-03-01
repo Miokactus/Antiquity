@@ -141,7 +141,7 @@ equipments = {
 
 	ship_hull_light_2 = {
 		abbreviation = "hdc"
-		year = 1936
+		year = 15
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -191,7 +191,7 @@ equipments = {
 
 	ship_hull_light_3 = {
 		abbreviation = "hdd"
-		year = 1940
+		year = 19
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -263,7 +263,7 @@ equipments = {
 
 	ship_hull_light_4 = {
 		abbreviation = "hde"
-		year = 1944
+		year = 26
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -374,7 +374,7 @@ equipments = {
 		manpower = 250
 	}
 	destroyer_2 = {
-		year = 1936
+		year = 15
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -426,7 +426,7 @@ equipments = {
 	}
 	
 	destroyer_3 = {
-		year = 1940
+		year = 19
 
 		archetype = ship_hull_light
 		priority = 2000
@@ -477,7 +477,7 @@ equipments = {
 	}
 	
 	destroyer_4 = {
-		year = 1944
+		year = 26
 
 		archetype = ship_hull_light
 		priority = 2000

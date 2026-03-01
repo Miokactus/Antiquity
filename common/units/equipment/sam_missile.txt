@@ -1,7 +1,7 @@
 equipments = {
 	
 	sam_missile_equipment = {
-		year = 1936
+		year = 15
 
 		can_be_produced = {
 			if = {
@@ -52,7 +52,7 @@ equipments = {
 	}
 	
 	sam_missile_equipment_1 = {
-		year = 1944
+		year = 26
 
 		archetype = sam_missile_equipment
 		is_buildable = yes
