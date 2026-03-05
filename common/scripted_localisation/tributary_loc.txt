@@ -26,3 +26,198 @@ defined_text = {
         localization_key = "peasants_support_loc_[?xin_peasant_support]"
     }
 }
+
+defined_text = {
+    name = BabyloniaRevoltPercentage
+    text = {
+        localization_key = "[?babylonia_revolt]%"
+    }
+}
+defined_text = {
+    name = PersisRevoltPercentage
+    text = {
+        localization_key = "[?persis_revolt]%"
+    }
+}
+defined_text = {
+    name = AdiabeneRevoltPercentage
+    text = {
+        localization_key = "[?adiabene_revolt]%"
+    }
+}
+defined_text = {
+    name = CharaceneRevoltPercentage
+    text = {
+        localization_key = "[?characene_revolt]%"
+    }
+}
+
+defined_text = {
+    name = arsacid_gui_flags_title
+    text = {
+        localization_key = "arsacid_gui_title"
+    }
+}
+defined_text = {
+    name = arsacid_gui_babylonia
+    text = {
+        localization_key = "babylonia_loc"
+    }
+}
+defined_text = {
+    name = arsacid_gui_persis
+    text = {
+        localization_key = "persis_loc"
+    }
+}
+
+defined_text = {
+    name = GetSatrapsAllegianceBabylonia
+    text = {
+        trigger = {
+            1011 = {
+                owner = {
+                    is_subject_of = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_is_puppet"
+    }
+    text = {
+        trigger = {
+            1011 = {
+                owner = {
+                    has_war_with = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_owned_by_enemy"
+    }
+    text = {
+        trigger = {
+            1011 = {
+                NOT = {
+                    is_owned_by = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_not_owned_by_parthia"
+    }
+    text = {
+        localization_key = "arsacid_owned_by_parthia"
+    }
+}
+
+defined_text = {
+    name = GetSatrapsAllegiancePersis
+    text = {
+        trigger = {
+            412 = {
+                owner = {
+                    is_subject_of = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_is_puppet"
+    }
+    text = {
+        trigger = {
+            412 = {
+                owner = {
+                    has_war_with = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_owned_by_enemy"
+    }
+    text = {
+        trigger = {
+            412 = {
+                NOT = {
+                    is_owned_by = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_not_owned_by_parthia"
+    }
+    text = {
+        localization_key = "arsacid_owned_by_parthia"
+    }
+}
+
+
+defined_text = {
+    name = GetSatrapsAllegianceAdiabene
+    text = {
+        trigger = {
+            676 = {
+                owner = {
+                    is_subject_of = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_is_puppet"
+    }
+    text = {
+        trigger = {
+            676 = {
+                owner = {
+                    has_war_with = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_owned_by_enemy"
+    }
+    text = {
+        trigger = {
+            676 = {
+                NOT = {
+                    is_owned_by = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_not_owned_by_parthia"
+    }
+    text = {
+        localization_key = "arsacid_owned_by_parthia"
+    }
+}
+
+
+defined_text = {
+    name = GetSatrapsAllegianceCharacene
+    text = {
+        trigger = {
+            413 = {
+                owner = {
+                    is_subject_of = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_is_puppet"
+    }
+    text = {
+        trigger = {
+            413 = {
+                owner = {
+                    has_war_with = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_owned_by_enemy"
+    }
+    text = {
+        trigger = {
+            413 = {
+                NOT = {
+                    is_owned_by = PTH
+                }
+            }
+        }
+        localization_key = "arsacid_not_owned_by_parthia"
+    }
+    text = {
+        localization_key = "arsacid_owned_by_parthia"
+    }
+}
+

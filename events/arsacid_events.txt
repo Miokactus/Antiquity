@@ -1,0 +1,576 @@
+################
+#Generic EVENTS#
+################
+
+add_namespace = arsacid_event
+
+# Call to War!
+country_event = {
+	id = arsacid_event.1
+	title = arsacid_event.1.t
+	desc = arsacid_event.1.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # We shall defend our brothers!
+		name = arsacid_event.1.a
+		ai_chance = { factor = 1 }
+		FROM = {
+			country_event = {
+				id = arsacid_event.2
+				days = 2
+			}
+		}
+	}
+	option = { # Nope!
+		name = arsacid_event.1.b
+		ai_chance = { factor = 0.2 }
+		FROM = {
+			country_event = {
+				id = arsacid_event.3
+				days = 2
+			}
+		}
+	}
+}
+
+# Call to War [Yes]
+country_event = {
+	id = arsacid_event.2
+	title = arsacid_event.2.t
+	desc = arsacid_event.2.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Yeah!!
+		name = arsacid_event.2.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+# Call to War [No]
+country_event = {
+	id = arsacid_event.3
+	title = arsacid_event.3.t
+	desc = arsacid_event.3.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Okay
+		name = arsacid_event.3.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+	}
+	option = { # Ahahah! What a joke.
+		name = arsacid_event.3.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+	}
+}
+
+# Request Manpower!
+country_event = {
+	id = arsacid_event.4
+	title = arsacid_event.4.t
+	desc = arsacid_event.4.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Okay
+		name = arsacid_event.4.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+	}
+	option = { # Nope
+		name = arsacid_event.4.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+	}
+}
+
+
+
+# Rebellion!
+country_event = {
+	id = arsacid_event.5
+	title = arsacid_event.5.t
+	desc = arsacid_event.5.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Send the armies!
+		name = arsacid_event.5.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			declare_war_on = {
+    			target = FROM
+				type = independence_wargoal
+			}
+			clr_country_flag = rebellion
+		}
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				set_variable = {
+					babylonia_revolt = 0
+				}
+				set_autonomy = {
+    				target = BBA
+    				autonomous_state = autonomy_free
+    				end_wars = yes
+    				end_civil_wars = no
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				set_variable = {
+					characene_revolt = 0
+				}
+				set_autonomy = {
+    				target = CHA
+    				autonomous_state = autonomy_free
+    				end_wars = yes
+    				end_civil_wars = no
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				set_variable = {
+					adiabene_revolt = 0
+				}
+				set_autonomy = {
+    				target = ADI
+    				autonomous_state = autonomy_free
+    				end_wars = yes
+    				end_civil_wars = no
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				set_variable = {
+					persis_revolt = 0
+				}
+				set_autonomy = {
+    				target = PPI
+    				autonomous_state = autonomy_free
+    				end_wars = yes
+    				end_civil_wars = no
+				}
+		}
+	}
+	option = { # Use diplomacy
+		name = arsacid_event.5.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = arsacid_event.6
+				days = 2
+			}
+		}
+	}
+}
+
+# Rebellion! [Diplomacy]
+country_event = {
+	id = arsacid_event.6
+	title = arsacid_event.6.t
+	desc = arsacid_event.6.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Ask for more freedom
+		name = arsacid_event.6.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+            country_event = {
+                id = arsacid_event.7
+				days = 2
+            }
+			set_country_flag = asked_for_more_freedom
+        }
+	}
+	option = { # Ask for gifts and guarantees
+		name = arsacid_event.6.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+            country_event = {
+                id = arsacid_event.7
+				days = 2
+            }
+			set_country_flag = asked_for_gifts
+        }
+	}
+	option = { # Ask for both
+		name = arsacid_event.6.c
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+            country_event = {
+                id = arsacid_event.7
+				days = 2
+            }
+			set_country_flag = asked_for_all
+        }
+	}
+}
+
+# Rebellion! [Diplomacy]
+country_event = {
+	id = arsacid_event.7
+	title = arsacid_event.7.t
+	desc = arsacid_event.7.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Grant more freedom but nothing more
+		name = arsacid_event.7.a
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = asked_for_more_freedom }
+		FROM = {
+			clr_country_flag = rebellion
+		}
+		clr_country_flag = asked_for_more_freedom
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = -60
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = -60
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = -60
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = -60
+				}
+			}
+		}
+	}
+	option = { # Grant gifts and guarantees but no exceptional regime
+		name = arsacid_event.7.b
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = asked_for_gifts }
+		FROM = {
+			clr_country_flag = rebellion
+		}
+		clr_country_flag = asked_for_gifts
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = -70
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = -70
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = -70
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = -70
+				}
+			}
+		}
+	}
+	option = { # Concede everything
+		name = arsacid_event.7.c
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = asked_for_all }
+		FROM = {
+			clr_country_flag = rebellion
+		}
+		clr_country_flag = asked_for_all
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = -120
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = -120
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = -120
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = -120
+				}
+			}
+		}
+	}
+	option = { # Refuse
+		name = arsacid_event.7.d
+		ai_chance = { factor = 1 }
+		trigger = {}
+		end_puppet = FROM
+		FROM = {
+			declare_war_on = {
+    			target = ROOT
+				type = independence_wargoal
+			}
+		}
+		clr_country_flag = asked_for_all
+		clr_country_flag = asked_for_gifts
+		clr_country_flag = asked_for_more_freedom
+	}
+}
+
+# Ultimatum!
+country_event = {
+	id = arsacid_event.8
+	title = arsacid_event.8.t
+	desc = arsacid_event.8.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Send the ultimatum!
+		name = arsacid_event.8.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+            country_event = {
+            	id = arsacid_event.5
+				days = 6
+        	}
+    	}
+	}
+}
+
+# Integration
+country_event = {
+	id = arsacid_event.9
+	title = arsacid_event.9.t
+	desc = arsacid_event.9.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Send the ultimatum!
+		name = arsacid_event.9.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+			if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { babylonia_revolt < -100 }
+                        check_variable = { babylonia_revolt = -100 }
+                    }
+                    BBA = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					babylonia_revolt = 0
+				}
+                annex_country = {
+                    target = BBA
+                    transfer_troops = yes
+                }
+                every_owned_state = {
+                    limit = {
+                        is_core_of = BBA
+                    }
+                    add_core_of = PTH
+                }
+            }
+            if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { characene_revolt < -100 }
+                        check_variable = { characene_revolt = -100 }
+                    }
+                    CHA = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					characene_revolt = 0
+				}
+                annex_country = {
+                    target = CHA
+                    transfer_troops = yes
+                }
+                every_owned_state = {
+                    limit = {
+                        is_core_of = CHA
+                    }
+                    add_core_of = PTH
+                }
+            }
+            if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { adiabene_revolt < -100 }
+                        check_variable = { adiabene_revolt = -100 }
+                    }
+                    ADI = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					adiabene_revolt = 0
+				}
+                annex_country = {
+                    target = ADI
+                    transfer_troops = yes
+                }
+                every_owned_state = {
+                    limit = {
+                        is_core_of = ADI
+                    }
+                    add_core_of = PTH
+                }
+            }
+            if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { persis_revolt = -100 }
+                        check_variable = { persis_revolt < -100 }
+                    }
+                    PPI = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					persis_revolt = 0
+				}
+                annex_country = {
+                    target = PPI
+                    transfer_troops = yes
+                }
+                every_owned_state = {
+                    limit = {
+                        is_core_of = PPI
+                    }
+                    add_core_of = PTH
+                }
+            }
+		clr_country_flag = infrastructure_project_ingoing
+	}
+} 

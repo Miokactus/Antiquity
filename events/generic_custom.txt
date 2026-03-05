@@ -15,7 +15,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
@@ -36,7 +36,7 @@ country_event = {
 		NOT = { has_global_flag = AMERICAS_HIDDEN }
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	fire_only_once = yes
 	major = yes
@@ -58,7 +58,7 @@ country_event = {
 		always = no
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = no
 	mean_time_to_happen = { days = 1 }
 	major = no
@@ -83,7 +83,7 @@ country_event = {
 		always = no
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = no
 	mean_time_to_happen = { days = 1 }
 	major = no
@@ -111,7 +111,7 @@ country_event = {
 		always = no
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = no
 	mean_time_to_happen = { days = 1 }
 	major = no
@@ -160,7 +160,7 @@ country_event = {
 	trigger = {
     }
 	is_triggered_only = yes
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	major = no
 	option = { ## YES -> becomes tributary
@@ -210,7 +210,7 @@ country_event = {
 	trigger = {
     }
 	is_triggered_only = yes
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	major = no
 	option = { ## YES -> becomes tributary
@@ -259,7 +259,7 @@ country_event = {
 	trigger = {
     }
 	is_triggered_only = yes
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	major = no
 	option = { ## NO -> arg!
@@ -279,7 +279,7 @@ country_event = {
 	trigger = {
 		date > 15.03.16
     }
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	fire_only_once = yes
 	major = yes

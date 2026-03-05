@@ -1,0 +1,16 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_border_unified_arsacid"
+		texturefile = "gfx/interface/arsacid/border_unified_arsacid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_arsacid_gui_ctesiphon"
+		texturefile = "gfx/interface/arsacid/ctesiphon.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+
+}

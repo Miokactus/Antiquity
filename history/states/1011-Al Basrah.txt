@@ -12,7 +12,8 @@ state = {
 
 	history = {
 
-		owner = PTH
+		owner = BBA
+		add_core_of = BBA
 		add_core_of = PTH
 		
 

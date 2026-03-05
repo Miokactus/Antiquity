@@ -13,7 +13,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = { ## Fuckers!
@@ -34,7 +34,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -57,7 +57,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -76,7 +76,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	is_triggered_only = yes
 	fire_only_once = yes

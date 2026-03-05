@@ -1,0 +1,282 @@
+guiTypes = {
+	containerWindowType = {
+		name = "arsacid_gui"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 500 }
+
+
+		iconType = {
+			name ="arsacid_gui_border_unified_arsacid"
+			spriteType = "GFX_border_unified_arsacid"
+			position = { x = 0 y = 0 }
+		}
+
+		
+		buttonType = {
+			name = "arsacid_gui_ctesiphon"
+			spriteType = "GFX_arsacid_gui_ctesiphon"
+			position = { x = 57.8 y = 80.5 }
+			pdx_tooltip = "arsacid_gui_ctesiphon_tooltip"
+		}
+
+
+
+		instantTextBoxType = {
+			name = "arsacid_gui_kingdom_title"
+			position = { x = 125 y = 415 }
+			text = arsacid_gui_kingdom_name
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+
+		instantTextBoxType = {
+			name = "arsacid_gui_kingdom_allegiance_title"
+			position = { x = 125 y = 450 }
+			text = arsacid_gui_kingdom_allegiance
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+		iconType = {
+			name ="arsacid_gui_frame"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 20 y = 420 }
+		}
+		iconType = {
+			name = "arsacid_gui_flag"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 25 y = 422 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+##########################
+	containerWindowType = {
+		name = "arsacid_gui_flags"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 500 }
+
+		instantTextBoxType = {
+			name = "arsacid_gui_flags_title"
+			position = { x = 35 y = 20 }
+			text = "arsacid_gui_flags_title"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = yes
+		}
+		
+		iconType = {
+			name = "arsacid_gui_flag_babylonia"
+			spriteType = "GFX_shield_medium"
+			position = { x = 25 y = 80 }
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "arsacid_gui_babylonia_flag"
+			quadTextureSprite ="GFX_large_flag_frame"
+			position = { x = 20 y = 80 }
+			pdx_tooltip = "arsacid_gui_babylonia_tooltip"
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_babylonia_title"
+			position = { x = 125 y = 80 }
+			text = "arsacid_gui_babylonia"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_babylonia_allegiance_title"
+			position = { x = 125 y = 110 }
+			text = "arsacid_gui_allegiance_babylonia_title"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "babylonia_revolt_title"
+			position = { x = 400 y = 95 }
+			text = "babylonia_revolt_percentage"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+
+
+		iconType = {
+			name = "arsacid_gui_flag_persis"
+			spriteType = "GFX_shield_medium"
+			position = { x = 25 y = 160 }
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "arsacid_gui_persis_flag"
+			quadTextureSprite ="GFX_large_flag_frame"
+			position = { x = 20 y = 160 }
+			pdx_tooltip = "arsacid_gui_persis_tooltip"
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_persis_title"
+			position = { x = 125 y = 160 }
+			text = "arsacid_gui_persis"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_persis_allegiance_title"
+			position = { x = 125 y = 190 }
+			text = "arsacid_gui_allegiance_persis_title"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "persis_revolt_title"
+			position = { x = 400 y = 175 }
+			text = "persis_revolt_percentage"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+
+		iconType = {
+			name = "arsacid_gui_flag_adiabene"
+			spriteType = "GFX_shield_medium"
+			position = { x = 25 y = 240 }
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "arsacid_gui_adiabene_flag"
+			quadTextureSprite ="GFX_large_flag_frame"
+			position = { x = 20 y = 240 }
+			pdx_tooltip = "arsacid_gui_adiabene_tooltip"
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_adiabene_title"
+			position = { x = 125 y = 240 }
+			text = "arsacid_gui_adiabene"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_adiabene_allegiance_title"
+			position = { x = 125 y = 270 }
+			text = "arsacid_gui_allegiance_adiabene_title"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "adiabene_revolt_title"
+			position = { x = 400 y = 255 }
+			text = "adiabene_revolt_percentage"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+
+
+
+		iconType = {
+			name = "arsacid_gui_flag_characene"
+			spriteType = "GFX_shield_medium"
+			position = { x = 25 y = 320 }
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "arsacid_gui_characene_flag"
+			quadTextureSprite ="GFX_large_flag_frame"
+			position = { x = 20 y = 320 }
+			pdx_tooltip = "arsacid_gui_characene_tooltip"
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_characene_title"
+			position = { x = 125 y = 320 }
+			text = "arsacid_gui_characene"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_characene_allegiance_title"
+			position = { x = 125 y = 350 }
+			text = "arsacid_gui_allegiance_characene_title"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "characene_revolt_title"
+			position = { x = 400 y = 330 }
+			text = "characene_revolt_percentage"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+
+
+		instantTextBoxType = {
+			name = "arsacid_gui_explain"
+			position = { x = 10 y = 400 }
+			text = "arsacid_gui_explain"
+			format = left
+			font = "hoi_20header"
+			maxWidth = 490
+			fixedsize = yes
+		}
+
+
+	}
+}

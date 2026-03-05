@@ -11,8 +11,9 @@ state = {
 
 	history = {
 
-		owner = PTH
-		add_core_of = PTH
+		owner = PPI
+		add_core_of = PPI
+		add_claim_by = PTH
 		
 
 		victory_points = {

@@ -8,12 +8,19 @@ state={
 	provinces={
 		1600 1938 3916 6826 8123 10106 10793 10804 12372 
 	}
-	manpower=1182741
+	manpower=88274
 	history = {
-		owner = PTH
-		add_core_of = PTH
+		owner = ADI
+		add_core_of = ADI
+		add_claim_by = PTH
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		victory_points = { 10106 4 }
 	}
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=large_town
 	local_supplies=0.000
 }

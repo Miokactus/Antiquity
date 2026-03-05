@@ -7,8 +7,9 @@ state = {
 	
 	history = {
 		
-		owner = PTH
-		add_core_of = PTH
+		owner = CHA
+		add_core_of = CHA
+		add_claim_by = PTH
 		
 		victory_points = {
 			8085 1 # Kuwait City

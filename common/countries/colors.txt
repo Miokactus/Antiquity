@@ -1349,7 +1349,7 @@ TGU = {
 	color_ui = rgb { 202 131 139 }
 }
 TBS = {
-	color = rgb { 158  161  188 }
+	color = rgb { 158 161 188 }
 	color_ui = rgb { 255 255 255 }
 }
 
@@ -1359,6 +1359,26 @@ RRR = {
 	color_ui = rgb { 209 247 133 }
 }
 VVI = {
-	color = rgb { 185  255  152 }
-	color_ui = rgb { 165  230  132 }
+	color = rgb { 185 255 152 }
+	color_ui = rgb { 165 230 132 }
+}
+
+
+
+
+BBA = {
+	color = rgb { 160 158 102 }
+	color_ui = rgb { 165 230 132 }
+}
+PPI = {
+	color = rgb { 160 84 78 }
+	color_ui = rgb { 165 230 132 }
+}
+ADI = {
+	color = rgb { 54 160 65 }
+	color_ui = rgb { 165 230 132 }
+}
+CHA = {
+	color = rgb { 59 93 160 }
+	color_ui = rgb { 165 230 132 }
 }

@@ -1,0 +1,46 @@
+capital = 412
+
+oob = "PPI_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+    name = "Pakor"
+    desc = "MONARCH_DESC"
+    picture = GFX_leader_monarchy_generic3
+    expire = "250.5.4"
+    ideology = monarchism
+    traits = {
+    }
+}
+
+PTH = { 
+	set_autonomy = {
+    	target = PPI
+    	autonomous_state = autonomy_satrap
+	}
+}
+
+set_technology = {
+	infantry_weapons = 1
+    basic_train = 1
+}
+
+set_politics = {
+    ruling_party = communism
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 0
+    fascism = 10
+    communism = 80
+    neutrality = 10
+}
+
+add_ideas = {
+    limited_exports
+    limited_conscription
+    civilian_economy
+}

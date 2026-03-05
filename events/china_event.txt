@@ -1050,6 +1050,7 @@ country_event = {
 		OR = {
 			tag = XIN
 			tag = RYY
+			tag = LLU
 		}
 		OR = {
 			LLU = {

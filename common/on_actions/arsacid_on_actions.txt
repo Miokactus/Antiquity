@@ -1,0 +1,192 @@
+on_actions = {
+    on_daily = {
+        effect = {
+            if = { 
+                limit = { 
+                    OR = {
+					    check_variable = { babylonia_revolt = 100 }
+                        check_variable = { babylonia_revolt > 100 }
+                    }
+                    BBA = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                BBA = {
+                    country_event = {
+                        id = arsacid_event.8
+                    }
+                    set_country_flag = rebellion
+                }
+            }
+            if = { 
+                limit = { 
+					OR = {
+					    check_variable = { characene_revolt = 100 }
+                        check_variable = { characene_revolt > 100 }
+                    }
+                    CHA = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                CHA = {
+                    country_event = {
+                        id = arsacid_event.8
+                    }
+                    set_country_flag = rebellion
+                }
+            }
+            if = { 
+                limit = { 
+					OR = {
+					    check_variable = { adiabene_revolt = 100 }
+                        check_variable = { adiabene_revolt > 100 }
+                    }
+                    ADI = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                ADI = {
+                    country_event = {
+                        id = arsacid_event.8
+                    }
+                    set_country_flag = rebellion
+                }
+            }
+            if = { 
+                limit = { 
+					OR = {
+					    check_variable = { persis_revolt = 100 }
+                        check_variable = { persis_revolt > 100 }
+                    }
+                    PPI = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                PPI = {
+                    country_event = {
+                        id = arsacid_event.8
+                    }
+                    set_country_flag = rebellion
+                }
+            }
+        }
+    }
+
+
+    on_weekly = {
+        effect = {
+            if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { babylonia_revolt < -100 }
+                        check_variable = { babylonia_revolt = -100 }
+                    }
+                    BBA = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					babylonia_revolt = -100
+				}
+                BBA = {
+                    PTH = {
+                        country_event = {
+                            id = arsacid_event.9
+                            days = 2
+                        }
+                    }
+                }
+            }
+            if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { characene_revolt < -100 }
+                        check_variable = { characene_revolt = -100 }
+                    }
+                    CHA = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					characene_revolt = -100
+				}
+                CHA = {
+                    PTH = {
+                        country_event = {
+                            id = arsacid_event.9
+                            days = 2
+                        }
+                    }
+                }
+            }
+            if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { adiabene_revolt < -100 }
+                        check_variable = { adiabene_revolt = -100 }
+                    }
+                    ADI = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					adiabene_revolt = -100
+				}
+                ADI = {
+                    PTH = {
+                        country_event = {
+                            id = arsacid_event.9
+                            days = 2
+                        }
+                    }
+                }
+            }
+            if = { 
+                limit = { 
+                    OR = {
+                        check_variable = { persis_revolt = -100 }
+                        check_variable = { persis_revolt < -100 }
+                    }
+                    PPI = {
+                        is_subject_of = PTH
+                        NOT = {
+                            has_country_flag = rebellion
+                        }
+                    }
+                }
+                set_variable = {
+					persis_revolt = -100
+				}
+                PPI = {
+                    PTH = {
+                        country_event = {
+                            id = arsacid_event.9
+                            days = 2
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

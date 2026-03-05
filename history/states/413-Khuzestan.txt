@@ -11,8 +11,9 @@ state={
 	
 
 	history={
-		owner = PTH
-		add_core_of = PTH
+		owner = CHA
+		add_core_of = CHA
+		add_claim_by = PTH
 		buildings = {
 			infrastructure = 2 #was: 5
 			industrial_complex = 1

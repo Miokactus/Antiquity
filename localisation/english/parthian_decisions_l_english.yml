@@ -1,0 +1,105 @@
+﻿l_english:
+ ## CATEGORIES
+ parthian_administration: "Parthian Administration"
+ parthian_administration_desc: ""
+
+ ## OPINION MODIFIERS
+
+ ## DECISIONS
+ integration_of_lands: "Integrate §Y[FROM.GetName]§!"
+ lay_claims: "Lay claims on §O[FROM.GetName]§!"
+
+ enact_infrastructure_project: "Enact new Infrastructure Project in §9the [FROM.GetName]§!"
+ help_locality: "Help §Gthe [FROM.GetName]§!'s Government"
+ ask_for_manpower: "Ask for Manpower from §tthe [FROM.GetName]§!"
+ call_to_war: "Call §Ythe [FROM.GetName]§! to War"
+ requisition_industry: "Requisition Industry from §Cthe [FROM.GetName]§!"
+
+ ## COSMETIC TAGS
+
+
+ ## TOOLTIPS
+ revolt_rising_neg20: "The §Yrisk of revolt§! will be lowered by §G20%§!!"
+ revolt_rising_neg10: "The §Yrisk of revolt§! will be lowered by §G10%§!!"
+ revolt_rising_neg5: "The §Yrisk of revolt§! will be lowered by §G5%§!!"
+ revolt_rising_5: "The §Yrisk of revolt§! will rise by §R5%§!!"
+ revolt_rising_10: "The §Yrisk of revolt§! will rise by §R10%§!!"
+ revolt_rising_20: "The §Yrisk of revolt§! will rise by §R20%§!!"
+ revolt_rising_30: "The §Yrisk of revolt§! will rise by §R30%§!!"
+
+ infrastructure_project_ingoing: "We have an §Yinfrastructure project ongoing§! already in one of our §CSatraps§!!"
+ rebellion: "This province is §Rrebelling against our authority.§!"
+ 
+
+ ## PARTHIAN SATRAPS GUI
+ parthian_administration_flags: "Managing the Satraps of the Empire"
+
+ arsacid_gui_flags_title: "§O[ROOT.GetName]§!'s Satraps Status"
+ arsacid_gui_allegiance_babylonia_title: "[GetSatrapsAllegianceBabylonia]"
+ arsacid_gui_allegiance_persis_title: "[GetSatrapsAllegiancePersis]"
+ arsacid_gui_allegiance_adiabene_title: "[GetSatrapsAllegianceAdiabene]"
+ arsacid_gui_allegiance_characene_title: "[GetSatrapsAllegianceCharacene]"
+ 
+ babylonia_revolt_percentage: "[BabyloniaRevoltPercentage]"
+ persis_revolt_percentage: "[PersisRevoltPercentage]"
+ adiabene_revolt_percentage: "[AdiabeneRevoltPercentage]"
+ characene_revolt_percentage: "[CharaceneRevoltPercentage]"
+
+ arsacid_neutral: "Neutral to us."
+ arsacid_owned_by_parthia: "§YOwned§! by §Gus!§!"
+ arsacid_owned_by_enemy: "§YOwned§! by §Ran enemy!§!"
+ arsacid_is_puppet: "§YOwned§! by §Lour vassal§!"
+ arsacid_not_owned_by_parthia: "§RNot owned§! by §Gus!§!"
+
+ arsacid_gui_babylonia: "§3Babylonia§!"
+ arsacid_gui_persis: "§3Persis§!"
+ arsacid_gui_adiabene: "§3Adiabene§!"
+ arsacid_gui_characene: "§3Characene-Elymais§!"
+
+ arsacid_gui_explain: "Our satraps are mostly independent, but they still can ask us for things and so can we. If we refuse them too many of these or ask for too much, they might revolt!"
+
+ ## TRAITS
+
+
+ ## FACTIONS
+
+
+
+ ## EVENTS
+ arsacid_event.1.t: "Call to War!"
+ arsacid_event.1.a: "We shall defend our brothers!"
+ arsacid_event.1.b: "Nope!"
+
+ arsacid_event.2.t: "Call to War!"
+ arsacid_event.2.a: "A good ally!"
+
+ arsacid_event.3.t: "Call to War!"
+ arsacid_event.3.a: "Okay."
+ arsacid_event.3.b: "Ahaha.. I've only asked out of politeness."
+
+ arsacid_event.4.t: "Request for Manpower"
+ arsacid_event.4.a: "We can spare some."
+ arsacid_event.4.b: "No, sorry."
+
+ arsacid_event.5.t: "Rebellion!"
+ arsacid_event.5.a: "Mobilise the armies!"
+ arsacid_event.5.b: "Let's go for a.. diplomatic approach."
+
+ arsacid_event.6.t: "Rebellion! (Diplomatic Way)"
+ arsacid_event.6.a: "Ask for more freedom!"
+ arsacid_event.6.b: "Ask for gifts and guarantees!"
+ arsacid_event.6.c: "All for one!"
+
+ arsacid_event.7.t: "Rebellion (Diplomatic Way)"
+ arsacid_event.7.a: "Grant them more freedom but nothing more."
+ arsacid_event.7.b: "Grant them gifts and guarantees but nothing more."
+ arsacid_event.7.c: "Concede everything!"
+ arsacid_event.7.d: "You're not the King of Kings here!"
+
+ arsacid_event.8.t: "Start of the Rebellion!"
+ arsacid_event.8.a: "Onwards!"
+
+ arsacid_event.9.t: "Integration of §Y[FROM.GetName]§!"
+ arsacid_event.9.d: "After an incredible amount of time, we have finally pacified the region and we'll be able to integrate it as soon as possible! The local populace are more than happy to join us. In addition, our authority will be reinforced in the region and nation-wide, so that maybe we'll be able to integrate more and more satraps and put an end to this era of separation!"
+ arsacid_event.9.a: "Welcome!"
+

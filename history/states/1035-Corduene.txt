@@ -5,11 +5,17 @@ state={
 		5014 10811 
 	}
 	history = {
-		owner = ARR
-		add_core_of = ARR
+		owner = ADI
+		add_core_of = ADI
+		add_claim_by = PTH
+		add_claim_by = ARR
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
 	}
-	manpower=1500
-	state_category=rural
+	manpower=35000
+	state_category=town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

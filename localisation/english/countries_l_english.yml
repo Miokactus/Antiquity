@@ -11,6 +11,24 @@
  FAA_DEF: "Unorganised Cultures"
  FAA_ADJ: "Natives"
  
+## ARSACID NAMES
+
+ CHA: "Kingdom of Characene-Elymais"
+ CHA_DEF: "the Kingdom of Characene-Elymais"
+ CHA_ADJ: "Characenian"
+
+ BBA: "Province of Babylonia"
+ BBA_DEF: "the Province of Babylonia"
+ BBA_ADJ: "Babylonian"
+ 
+ PPI: "Kingdom of Persis"
+ PPI_DEF: "the Kingdom of Persis"
+ PPI_ADJ: "Persian"
+ 
+ ADI: "Kingdom of Adiabene"
+ ADI_DEF: "the Kingdom of Adiabene"
+ ADI_ADJ: "Adiabene"
+
 
 ## ROMAN EMPIRE NAMES ##
 

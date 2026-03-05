@@ -44,6 +44,12 @@ CRT = "countries/Carthage.txt"
 RRO = "countries/Rome.txt"
 AAS = "countries/Austrian_State.txt"
 
+## ARSACID STATES
+BBA = "countries/Middle_Eastern.txt" #Babylonia
+PPI = "countries/Middle_Eastern.txt" #Persis
+ADI = "countries/Middle_Eastern.txt" #Adiabene
+CHA = "countries/Middle_Eastern.txt" #Characene
+
 
 ## ROMAN PROVINCES [FLAGS NEEDED]
 RR1 = "countries/Roman_Provinces.txt"

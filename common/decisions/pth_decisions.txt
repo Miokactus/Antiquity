@@ -1,0 +1,513 @@
+parthian_administration_flags = {
+    enact_infrastructure_project = {
+        icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 210
+		cost = 50
+		days_remove = 35
+        target_array = ROOT.subjects
+		target_trigger = { 
+			FROM = {
+				is_subject_of = ROOT
+			}
+            FROM = {
+				OR = {
+					tag = BBA
+					tag = CHA
+					tag = PPI
+					tag = ADI
+					has_country_flag = arsacid_satrap
+				}
+            }
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_war = no
+			NOT = {
+				has_country_flag = infrastructure_project_ingoing
+			}
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+				}
+			}
+		}
+		visible = {
+			original_tag = PTH
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+					has_war_with = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = infrastructure_project_ingoing
+		}
+		remove_effect = {
+			FROM = {
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+			}
+			clr_country_flag = infrastructure_project_ingoing
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = -10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = -10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = -10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = -10
+				}
+			}
+			custom_effect_tooltip = revolt_rising_neg10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    help_locality = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 200
+		cost = 100
+        target_array = ROOT.subjects
+		target_trigger = { 
+			FROM = {
+				is_subject_of = ROOT
+			}
+            FROM = {
+				OR = {
+					tag = BBA
+					tag = CHA
+					tag = PPI
+					tag = ADI
+					has_country_flag = arsacid_satrap
+				}
+            }
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+				}
+			}
+		}
+		visible = {
+			original_tag = PTH
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+					has_war_with = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				add_political_power = 100
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = -5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = -5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = -5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = -5
+				}
+			}
+			custom_effect_tooltip = revolt_rising_neg5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+
+    ask_for_manpower = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 150
+		cost = 100
+        target_array = ROOT.subjects
+		target_trigger = { 
+			FROM = {
+				is_subject_of = ROOT
+			}
+            FROM = {
+				OR = {
+					tag = BBA
+					tag = CHA
+					tag = PPI
+					tag = ADI
+					has_country_flag = arsacid_satrap
+				}
+            }
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			OR = {
+				has_war = yes
+				has_manpower < 20000
+			}
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+				}
+			}
+		}
+		visible = {
+			original_tag = PTH
+			OR = {
+				has_war = yes
+				has_manpower < 20000
+			}
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+					has_war_with = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = arsacid_event.4
+					days = 2
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = 5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = 5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = 5
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = 5
+				}
+			}
+			custom_effect_tooltip = revolt_rising_5
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+    call_to_war = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 150
+		cost = 100
+        target_array = ROOT.subjects
+		target_trigger = { 
+			FROM = {
+				is_subject_of = ROOT
+			}
+            FROM = {
+				OR = {
+					tag = BBA
+					tag = CHA
+					tag = PPI
+					tag = ADI
+					has_country_flag = arsacid_satrap
+				}
+            }
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			has_war = yes
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+				}
+			}
+		}
+		visible = {
+			original_tag = PTH
+			has_war = yes
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+					has_war_with = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = arsacid_event.1
+					days = 2
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = 10
+				}
+			}
+			custom_effect_tooltip = revolt_rising_10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    requisition_industry = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 110
+		cost = 100
+        target_array = ROOT.subjects
+		target_trigger = { 
+			FROM = {
+				is_subject_of = ROOT
+			}
+            FROM = {
+				OR = {
+					tag = BBA
+					tag = CHA
+					tag = PPI
+					tag = ADI
+					has_country_flag = arsacid_satrap
+				}
+            }
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			FROM = {
+				if = {
+					limit = {
+						capital_scope = {
+							building_count_trigger = {
+								industrial_complex < 1
+							}
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			original_tag = PTH
+			FROM = {
+				NOT = {
+					has_country_flag = rebellion
+					has_war_with = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				if = {
+					limit = {
+						capital_scope = {
+							building_count_trigger = {
+								industrial_complex < 1
+							}
+						}
+					}
+					capital_scope = {
+						remove_building = {
+    						type = industrial_complex
+    						level = 1
+						}
+					}
+				}
+			}
+			add_offsite_building = { 
+				type = industrial_complex 
+				level = 1
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = 10
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = 10
+				}
+			}
+			custom_effect_tooltip = revolt_rising_10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+}

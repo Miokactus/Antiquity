@@ -789,6 +789,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_allow_freedom_of_religion_for_jews focus = ROE_forbid_jewish_cults }
 		mutually_exclusive = { }
 		completion_reward = {
+			custom_effect_tooltip = ROE_religious_influence_low
 		}
 	}
 
@@ -2785,7 +2786,12 @@ focus_tree = {
 		prerequisite = { focus = ROE_demand_local_tribes_submission }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			CTC = {
+				country_event = { 
+					id = rome_event.102
+					days = 8
+				}
+			}
 		}
 	}
 

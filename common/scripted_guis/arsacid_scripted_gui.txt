@@ -1,0 +1,77 @@
+scripted_gui = {
+	arsacid_scripted_gui = {
+		context_type = decision_category
+		window_name = "arsacid_gui"
+
+		visible = {
+			original_tag = PTH
+		}
+
+		properties = {
+			arsacid_gui_flag = {
+				image = "[?chi_selected_warlord.GetFlag]"
+			}
+			arsacid_gui_ctesiphon = {
+				frame = 291.chi_controller
+			}
+
+		}
+
+		triggers = {
+
+		}
+
+		effects = {
+			
+			arsacid_gui_ctesiphon_click = {
+				set_variable = { chi_selected_warlord = 291.controller }
+			}
+			
+			
+		}
+	}
+
+
+
+	arsacid_scripted_gui_flags = {
+		context_type = decision_category
+		window_name = "arsacid_gui_flags"
+
+		visible = {
+			original_tag = PTH
+		}
+
+		properties = {
+			arsacid_gui_flag_babylonia = {
+				image = "[1011.Owner.GetFlag]"
+			}
+			arsacid_gui_flag_persis = {
+				image = "[412.Owner.GetFlag]"
+			}
+			arsacid_gui_flag_adiabene = {
+				image = "[676.Owner.GetFlag]"
+			}
+			arsacid_gui_flag_characene = {
+				image = "[413.Owner.GetFlag]"
+			}
+		}
+
+		triggers = {
+		}
+
+		effects = {
+			arsacid_gui_babylonia_flag_click = {
+				goto_state = 1011
+			}
+			arsacid_gui_persis_flag_click = {
+				goto_state = 412
+			}
+			arsacid_gui_adiabene_flag_click = {
+				goto_state = 676
+			}
+			arsacid_gui_characene_flag_click = {
+				goto_state = 413
+			}
+		}
+	}
+}

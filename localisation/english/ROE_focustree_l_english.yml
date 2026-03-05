@@ -7,6 +7,7 @@
  ROE_cities_fight_germans: "We need to either: control the main city of the §RCherusci§!, control the main cities of the §GBructeri§! and the §CCatti§! and an additional city, either from the §HSigambri§! or the §OCauci§!."
  TOBEADDED: "§RNOT YET ADDED! W.I.P.§!"
  ROE_retire_germanicus_tooltip: "§YGermanicus§! shall be rewarded with a §Gtriumph in the streets of Rome§! for his services. After that, he will be sent to §CAsia§!."
+ ROE_religious_influence_low: "§YWe will be able to ignore the signs when declaring war!§!"
 
  ## TRAITS
  ROE_roman_emperor: "Emperor of the Romans"

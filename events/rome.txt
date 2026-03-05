@@ -15,7 +15,7 @@ country_event = {
 		date > 14.8.19
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
 	major = yes
@@ -81,7 +81,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -105,7 +105,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_SOV_national_academy_of_sciences
+	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
