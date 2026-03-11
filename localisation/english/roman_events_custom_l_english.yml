@@ -106,6 +106,32 @@
  rome_event.103.d: "The tribe we contacted answered our request: they paid tribute to our generals and are on their way to our capital, Rome. From now on, they will be our tributary and allies for our great conquest."
  rome_event.103.a: "Great! Send the armies!"
 
+ rome_event.20.t: "The Jewish Issue"
+ rome_event.20.d: "Reports from the region of Palestine are talking about a faith spreading across the eastern part of our territories. It is said that they are venerating only one God, creator of all, and that they do not venerate the Gods of Rome.\n\nWe always welcome new cultures and religion, which judaism is, but we should be careful at the spreading of this new faith, that does not integrate anything from ours."
+ rome_event.20.a: "Tolerate the cult."
+ rome_event.20.b: "Ban this cult!"
+
+ rome_event.21.t: "Influx of Jews!"
+ rome_event.21.d: "After the outlawing of jewish cults in the neighbouring Roman state, many so-called 'jews' or 'christians' began arriving at our border. Amongst them, many talked about a certain Christ, while other preached towards the Temple of Jerusalem.\n\nSome of these religious zelots even requested an audience with the King of Kings to ask for a possible future intervention against Rome in Palestine, with the goal of retaking the Temple and reforming a new kingdom of Judea, under the suzerainety of our country."
+ rome_event.21.a: "Welcome them, for we are better than the romans."
+ rome_event.21.b: "Let them at the doors; we can't take them."
+
+ rome_event.22.t: "A Strange Fellow in Rome"
+ rome_event.22.d: "After our measures taken against the cults of the east, many followers of judaism fled our country. In the wake of this exodus, a preacher arrived to the doors of Rome, asking to speak to a Senator.\n\nHe, who named himself 'Jesus, coming from Nazareth', asked for the help of Senators to protect his people, hoping that he would be heard. However, he did not find the audience he wanted, now wandering within Rome until he could depart."
+ rome_event.22.a: "A strange fellow indeed."
+
+ rome_event.23.t: "A Strange Fellow in Rome"
+ rome_event.23.d: "This afternoon, a corpse was found around a little place in Rome. It seemed that it was the corpse of some sort of beggar, who seemed very thin and dehydrated. After investigation, some people heard that he was the aforementionned 'Jesus'.\n\nHe tried taking shelter from the night countless time without success, resorting to sleep outside and eating little to nothing for the past few days. He died in the cold."
+ rome_event.23.a: "Who was he again?"
+
+ rome_event.24.t: "News from Rome!"
+ rome_event.24.d: "News from the roman capital are worrying: it seems like they found a corpse in the streets, and that, after investigations, it was a man known as Jesus.\n\nThe same man that many talked about when arriving in our country, seemed to now be dead."
+ rome_event.24.a: "In honour of Jesus, we shall convert!"
+ rome_event.24.b: "A sad day."
+ rome_event.24.c: "Who?"
+
+
+
 
 
  ## ROMAN EMPIRE NEWS EVENTS ##

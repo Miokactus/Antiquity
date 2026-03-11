@@ -385,7 +385,7 @@ germania_campaign = {
 
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = ROE_cities_fight_germans
+			tooltip = ROE_cities_fight_germans
 				OR = {
 					ROE = {
 						OR = {
@@ -430,8 +430,11 @@ germania_campaign = {
 		}
 		complete_effect = {
 			ROE = {
-				white_peace = {
-    				tag = FROM
+				FROM = {
+					country_event = {
+						id = generic_custom.20
+						days = 5
+					}
 				}
 				add_war_support = 0.05
 				add_stability = 0.1
@@ -459,8 +462,11 @@ germania_campaign = {
 		}
 		timeout_effect = {
 			ROE = {
-				white_peace = {
-    				tag = FROM
+				FROM = {
+					country_event = {
+						id = generic_custom.23
+						days = 5
+					}
 				}
 				add_war_support = -0.1
 				add_stability = -0.1

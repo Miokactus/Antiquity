@@ -46,7 +46,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_connect_with_han_officials
-		icon = GFX
+		icon = GFX_SOV_offer_autonomy_to_former_soviet_republics_ccp_2d_sov_compatibility
 		x = 8
 		y = 3
 		cost = 6
@@ -93,7 +93,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_contacts_with_the_rebels
-		icon = GFX
+		icon = GFX_SOV_intensify_pilot_training_program_ccp_2d_sov_compatibility
 		x = 10
 		y = 4
 		cost = 6
@@ -107,7 +107,13 @@ focus_tree = {
 		mutually_exclusive = { }
 		completion_reward = {
 			RYY = {
-
+				add_ideas = XIN_coordinated_rebels
+			}
+			LLU = {
+				add_ideas = XIN_coordinated_rebels
+			}
+			ANH = {
+				add_ideas = XIN_coordinated_rebels
 			}
 		}
 	}
@@ -179,7 +185,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_raid_officials_houses
-		icon = GFX
+		icon = GFX_SOV_protect_the_white_sea_baltic_canal_ccp_2d_sov_compatibility
 		x = 7
 		y = 6
 		cost = 6
@@ -197,7 +203,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_seek_liu_xuan_favours
-		icon = GFX
+		icon = GFX_SOV_romanov_reconstruction_ccp_2d_sov_compatibility
 		x = 12
 		y = 5
 		cost = 6
@@ -251,6 +257,12 @@ focus_tree = {
 		prerequisite = { focus = XIN_seek_liu_xuan_favours }
 		mutually_exclusive = { }
 		completion_reward = {
+			RYY = {
+				add_stability = 0.05
+			}
+			LLU = {
+				add_stability = 0.05
+			}
 		}
 	}
 
@@ -281,7 +293,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_recruit_han_generals
-		icon = GFX
+		icon = GFX_SOV_keep_commissars_organization_ccp_2d_sov_compatibility
 		x = 8
 		y = 8
 		cost = 6
@@ -304,7 +316,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_create_peasants_militias
-		icon = GFX
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
 		x = 12
 		y = 8
 		cost = 6
@@ -322,7 +334,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_an_army_of_bandits
-		icon = GFX
+		icon = GFX_SOV_an_adaptable_army_ccp_2d_sov_compatibility
 		x = 10
 		y = 9
 		cost = 6
@@ -353,7 +365,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_proclaim_liu_xuan_emperor
-		icon = GFX
+		icon = GFX_SOV_policy_of_collective_security_ccp_2d_sov_compatibility
 		x = 10
 		y = 10
 		cost = 6
@@ -1268,7 +1280,7 @@ focus_tree = {
 	#Increase Influence in the Leelang
 	focus = {
 		id = XIN_increase_influence_in_leelang
-		icon = GFX
+		icon = GFX_SOV_committee_in_exile_ccp_2d_sov_compatibility
 		x = 0
 		y = 2
 		relative_position_id = XIN_towards_the_world

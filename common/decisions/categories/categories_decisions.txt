@@ -19,7 +19,7 @@ war_actions = {
     visible = {
         always = yes
     }
-    priority = 50
+    priority = 80
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = no
@@ -47,11 +47,54 @@ parthian_administration_flags = {
     visible = {
         original_tag = PTH
     }
-    priority = 50
+    priority = 30
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = yes
     scripted_gui = arsacid_scripted_gui_flags
+}
+parthian_council = {
+    allowed = {
+        original_tag = PTH
+    }
+    visible = {
+        original_tag = PTH
+        NOT = {
+            has_completed_focus = PTH_purge_the_council
+        }
+    }
+    priority = 30
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+    scripted_gui = arsacid_scripted_gui_council
+}
+parthia_rome_war = {
+    allowed = {
+        original_tag = PTH
+    }
+    visible = {
+        original_tag = PTH
+        has_country_flag = no_peace_in_middle_east
+    }
+    priority = 10
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
+parthia_in_india = {
+    allowed = {
+        original_tag = PTH
+    }
+    visible = {
+        original_tag = PTH
+        has_completed_focus = PTH_intervention_in_india
+    }
+    priority = 60
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
 }
 
 
@@ -93,7 +136,7 @@ alliance_germans = {
     visible = {
         has_completed_focus = CRS_the_fight_of_all_germans
     }
-    priority = 10
+    priority = 30
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = no
@@ -105,7 +148,7 @@ alliance_puppet = {
     visible = {
         has_completed_focus = CRS_guardian_of_the_germans
     }
-    priority = 10
+    priority = 29
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = no
@@ -120,7 +163,7 @@ roman_citizenship = {
     visible = {
         has_completed_focus = ROE_extend_the_citizenship
     }
-    priority = 10
+    priority = 20
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = yes
@@ -167,7 +210,7 @@ germania_campaign = {
             }
         }
     }
-    priority = 10
+    priority = 20
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = yes

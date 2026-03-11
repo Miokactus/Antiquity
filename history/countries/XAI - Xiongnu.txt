@@ -3,6 +3,8 @@
 oob = "XAI_14"
 
 set_research_slots = 1
+set_stability = 0.42
+set_war_support = 0.49
 
 recruit_character = wulei_chanyu
 recruit_character = huduershidaogao_chanyu

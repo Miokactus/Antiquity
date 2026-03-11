@@ -1,9 +1,8 @@
 focus_tree = {
-	id = AAB_focus
-	
+	id = PTH_focus_tree
+
 	country = {
 		factor = 0
-		
 		modifier = {
 			add = 10
 			tag = PTH
@@ -11,7 +10,1811 @@ focus_tree = {
 	}
 
 	default = no
-
+	reset_on_civilwar = no
 	continuous_focus_position = { x = 50 y = 1500 }
-	
+
+	focus = {
+		id = PTH_keep_the_nobility_around
+		icon = GFX_SOV_capital_of_the_tsars_ccp_2d_sov_compatibility
+		x = 3
+		y = 0
+		cost = 10
+
+		mutually_exclusive = { focus = PTH_impose_the_king_of_kings_will }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_keep_the_nobility_around completed"
+		}
+	}
+
+	focus = {
+		id = PTH_impose_the_king_of_kings_will
+		icon = GFX_focus_generic_monarchist_sentiment
+		x = 13
+		y = 0
+		cost = 10
+
+		mutually_exclusive = { focus = PTH_keep_the_nobility_around }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_timed_idea = {
+				idea = nationalist_urge
+				days = 120
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_the_parthian_army
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 22
+		y = 0
+		cost = 10
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_the_parthian_army completed"
+		}
+	}
+
+	focus = {
+		id = PTH_a_decentralised_government
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = PTH_keep_the_nobility_around }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_a_decentralised_government completed"
+			swap_ideas = {
+				remove_idea = PTH_decentralised_structure
+				add_idea = PTH_decentralised_structure2
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_external_relations
+		icon = GFX_focus_RAJ_to_shake_the_world
+		x = 8
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = PTH_keep_the_nobility_around focus = PTH_impose_the_king_of_kings_will }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_external_relations completed"
+		}
+	}
+
+	focus = {
+		id = PTH_purge_the_council
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 13
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = PTH_impose_the_king_of_kings_will }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = PTH_purge_council
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PTH_an_army_of_vassals
+		icon = GFX_focus_generic_subjugation
+		x = 21
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = PTH_the_parthian_army }
+		mutually_exclusive = { focus = PTH_modernise_the_land_forces }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_an_army_of_vassals completed"
+		}
+	}
+
+	focus = {
+		id = PTH_modernise_the_land_forces
+		icon = GFX_focus_generic_military_dictatorship
+		x = 23
+		y = 1
+		cost = 10
+
+		prerequisite = { focus = PTH_the_parthian_army }
+		mutually_exclusive = { focus = PTH_an_army_of_vassals }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_modernise_the_land_forces completed"
+		}
+	}
+
+	focus = {
+		id = PTH_integrate_the_grand_families_around_the_king
+		icon = GFX_goal_unknown
+		x = 2
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_a_decentralised_government }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_integrate_the_grand_families_around_the_king completed"
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = PTH_administration_of_the_satraps
+		icon = GFX_focus_generic_court
+		x = 4
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_a_decentralised_government }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_administration_of_the_satraps completed"
+			custom_effect_tooltip = PTH_admin_satraps
+		}
+	}
+
+	focus = {
+		id = PTH_appeasement_with_rome
+		icon = GFX_focus_generic_support_the_left_right
+		x = 7
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_external_relations }
+		mutually_exclusive = { focus = PTH_escalate_the_conflict }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 250
+				date > 18.2.5
+			}
+			modifier = {
+				factor = 20
+				is_historical_focus_on = yes
+			}
+		}
+
+		completion_reward = {
+			ROE = {
+				country_event = {
+					id = arsacid_event.11
+					days = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_escalate_the_conflict
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = 9
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_external_relations }
+		mutually_exclusive = { focus = PTH_appeasement_with_rome }
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 20
+				is_historical_focus_on = no
+			}
+		}
+
+		completion_reward = {
+			ROE = {
+				country_event = {
+					id = arsacid_event.12
+					days = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_assume_the_council_s_powers
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_purge_the_council }
+
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_assume_the_council_s_powers completed"
+			add_ideas = PTH_king_of_kings
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_notice_to_the_satraps
+		icon = GFX_goal_unknown
+		x = 14
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_purge_the_council }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_autonomy_state = autonomy_satrap
+				}
+				country_event = {
+					id = arsacid_event.13
+					days = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_keep_the_status_quo
+		icon = GFX_focus_generic_conspiracy
+		x = 19
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_an_army_of_vassals }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_keep_the_status_quo completed"
+		}
+	}
+
+	focus = {
+		id = PTH_citizen_s_militias
+		icon = GFX_focus_generic_spur_communist_revolutions
+		x = 21
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_an_army_of_vassals }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_citizen_s_militias completed"
+		}
+	}
+
+	focus = {
+		id = PTH_establish_new_infantry_units
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 23
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_modernise_the_land_forces }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_new_infantry_units completed"
+		}
+	}
+
+	focus = {
+		id = PTH_incorporate_vassal_calvaries
+		icon = GFX_goal_generic_cavalry
+		x = 25
+		y = 2
+		cost = 10
+
+		prerequisite = { focus = PTH_modernise_the_land_forces }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_incorporate_vassal_calvaries completed"
+		}
+	}
+
+	focus = {
+		id = PTH_negociate_with_the_council
+		icon = GFX_focus_generic_monetary_union
+		x = 0
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_integrate_the_grand_families_around_the_king }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_negociate_with_the_council completed"
+			add_to_variable = {
+				house_karen = 4
+			}
+			add_to_variable = {
+				house_zik = 2
+			}
+			custom_effect_tooltip = house_lobbying_tooltip_big
+		}
+	}
+
+	focus = {
+		id = PTH_good_ties_with_the_house_of_suren
+		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
+		x = 2
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_integrate_the_grand_families_around_the_king }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_good_ties_with_the_house_of_suren completed"
+			add_to_variable = {
+				house_suren = 4
+			}
+			custom_effect_tooltip = house_lobbying_tooltip_suren
+		}
+	}
+
+	focus = {
+		id = PTH_deal_with_the_low_prestige_of_the_administration
+		icon = GFX_goal_unknown
+		x = 4
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_administration_of_the_satraps }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_deal_with_the_low_prestige_of_the_administration completed"
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				if = {
+					limit = {
+						tag = BBA
+					}
+					add_to_variable = {
+						babylonia_revolt = -10
+					}
+				}
+				if = {
+					limit = {
+						tag = CHA
+					}
+					add_to_variable = {
+						characene_revolt = -10
+					}
+					
+				}
+				if = {
+					limit = {
+						tag = ADI
+					}
+					add_to_variable = {
+						adiabene_revolt = -10
+					}
+					
+				}
+				if = {
+					limit = {
+						tag = PPI
+					}
+					add_to_variable = {
+						persis_revolt = -10
+					}
+					
+				}
+				custom_effect_tooltip = revolt_rising_neg10
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_negociations_over_armenia
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_administration_of_the_satraps }
+		prerequisite = { focus = PTH_appeasement_with_rome }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			ROE = {
+				country_event = {
+					id = arsacid_event.14
+					days = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_establish_contact_with_the_nomads
+		icon = GFX_focus_generic_horse_studs
+		x = 8
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_appeasement_with_rome focus = PTH_escalate_the_conflict }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_contact_with_the_nomads completed"
+		}
+	}
+
+	focus = {
+		id = PTH_intervention_in_armenia
+		icon = GFX_goal_generic_attack_allies
+		x = 10
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_escalate_the_conflict }
+		prerequisite = { focus = PTH_assume_the_council_s_powers }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			ARR = {
+				country_event = {
+					id = arsacid_event.15
+					days = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_parthian_cultural_revolution
+		icon = GFX_goal_unknown
+		x = 12
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_assume_the_council_s_powers }
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = PTH_welcomed_christians
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_parthian_cultural_revolution completed"
+			add_ideas = PTH_iranian_cultural_revolution
+		}
+	}
+
+	focus = {
+		id = PTH_reform_the_administrations
+		icon = GFX_SOV_reformalize_the_role_of_the_patriarchate_ccp_2d_sov_compatibility
+		x = 15
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_notice_to_the_satraps }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_reform_the_administrations completed"
+			add_timed_idea = {
+				idea = PTH_reforming_the_administration
+				days = 160
+			}
+			custom_effect_tooltip = PTH_reforming_admin
+		}
+	}
+
+	focus = {
+		id = PTH_an_army_of_levies
+		icon = GFX_goal_unknown
+		x = 20
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_citizen_s_militias }
+		prerequisite = { focus = PTH_keep_the_status_quo }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_an_army_of_levies completed"
+		}
+	}
+
+	focus = {
+		id = PTH_the_support_of_every_horsemen
+		icon = GFX_goal_unknown
+		x = 23
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_establish_new_infantry_units }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_the_support_of_every_horsemen completed"
+		}
+	}
+
+	focus = {
+		id = PTH_preeminent_use_of_cataphracts
+		icon = GFX_goal_unknown
+		x = 25
+		y = 3
+		cost = 10
+
+		prerequisite = { focus = PTH_incorporate_vassal_calvaries }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_preeminent_use_of_cataphracts completed"
+		}
+	}
+
+	focus = {
+		id = PTH_reorganise_the_ministries
+		icon = GFX_goal_unknown
+		x = 0
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_negociate_with_the_council }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_reorganise_the_ministries completed"
+			add_political_power = 50
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				add_political_power = 50
+				add_stability = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_interference_within_local_affairs
+		icon = GFX_SOV_the_faithful_servant_of_lenin_ccp_2d_sov_compatibility
+		x = 3
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_good_ties_with_the_house_of_suren }
+		prerequisite = { focus = PTH_deal_with_the_low_prestige_of_the_administration }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_interference_within_local_affairs completed"
+		}
+	}
+
+	focus = {
+		id = PTH_negociate_for_the_end_of_the_raids
+		icon = GFX_goal_generic_major_alliance
+		x = 7
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_establish_contact_with_the_nomads }
+		mutually_exclusive = { focus = PTH_protect_the_eastern_trade_routes }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_negociate_for_the_end_of_the_raids completed"
+		}
+	}
+
+	focus = {
+		id = PTH_protect_the_eastern_trade_routes
+		icon = GFX_focus_AFG_develop_tajikistan
+		x = 9
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_establish_contact_with_the_nomads }
+		mutually_exclusive = { focus = PTH_negociate_for_the_end_of_the_raids }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			742 = {
+				add_claim_by = PTH
+			}
+			405 = {
+				add_claim_by = PTH
+			}
+			732 = {
+				add_claim_by = PTH
+			}
+			830 = {
+				add_claim_by = PTH
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_finance_arts_and_literature
+		icon = GFX_focus_generic_welfare
+		x = 12
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_parthian_cultural_revolution }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_finance_arts_and_literature completed"
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = PTH_promote_zoroastrianism
+		icon = GFX_goal_unknown
+		x = 14
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_parthian_cultural_revolution }
+		prerequisite = { focus = PTH_reform_the_administrations }
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = PTH_welcomed_christians
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_promote_zoroastrianism completed"
+			add_ideas = PTH_zoroastrianism
+		}
+	}
+
+	focus = {
+		id = PTH_establish_quotas
+		icon = GFX_focus_generic_annex_country_2
+		x = 19
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_an_army_of_levies }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_quotas completed"
+		}
+	}
+
+	focus = {
+		id = PTH_stimulate_military_production
+		icon = GFX_goal_generic_army_artillery
+		x = 21
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_an_army_of_levies }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_stimulate_military_production completed"
+		}
+	}
+
+	focus = {
+		id = PTH_every_man_a_soldier
+		icon = GFX_goal_unknown
+		x = 24
+		y = 4
+		cost = 10
+
+		prerequisite = { focus = PTH_the_support_of_every_horsemen }
+		prerequisite = { focus = PTH_preeminent_use_of_cataphracts }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_every_man_a_soldier completed"
+		}
+	}
+
+	focus = {
+		id = PTH_ministry_of_finances
+		icon = GFX_focus_generic_improve_the_administration
+		x = 2
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = PTH_reorganise_the_ministries }
+		prerequisite = { focus = PTH_interference_within_local_affairs }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_ministry_of_finances completed"
+			add_ideas = PTH_ministry_of_finances
+		}
+	}
+
+	focus = {
+		id = PTH_divide_to_better_conquer
+		icon = GFX_goal_generic_major_war
+		x = 5
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = PTH_interference_within_local_affairs }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_divide_to_better_conquer completed"
+		}
+	}
+
+	focus = {
+		id = PTH_intervention_in_india
+		icon = GFX_focus_RAJ_all_india_forward_bloc
+		x = 8
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = PTH_negociate_for_the_end_of_the_raids focus = PTH_protect_the_eastern_trade_routes }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_intervention_in_india completed"
+		}
+	}
+
+	focus = {
+		id = PTH_promote_the_parthian_language
+		icon = GFX_goal_generic_propaganda
+		x = 12
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = PTH_finance_arts_and_literature }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_promote_the_parthian_language completed"
+		}
+	}
+
+	focus = {
+		id = PTH_undermine_greek
+		icon = GFX_focus_generic_aegean_sea_focus
+		x = 14
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = PTH_promote_zoroastrianism }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_undermine_greek completed"
+			add_ideas = PTH_letting_go_of_greek
+		}
+	}
+
+	focus = {
+		id = PTH_a_people_s_army
+		icon = GFX_goal_unknown
+		x = 21
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = PTH_stimulate_military_production }
+		prerequisite = { focus = PTH_establish_quotas }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_a_people_s_army completed"
+		}
+	}
+
+	focus = {
+		id = PTH_a_new_central_command
+		icon = GFX_goal_unknown
+		x = 23
+		y = 5
+		cost = 10
+
+		prerequisite = { focus = PTH_every_man_a_soldier }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_a_new_central_command completed"
+		}
+	}
+
+	focus = {
+		id = PTH_levy_more_taxes
+		icon = GFX_focus_generic_currency_reforms
+		x = 0
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = PTH_ministry_of_finances }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_levy_more_taxes completed"
+			add_timed_idea = {
+				idea = PTH_exceptional_taxes
+				days = 210
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_encourage_agriculture
+		icon = GFX_focus_generic_farmland
+		x = 3
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = PTH_ministry_of_finances }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_decentralisation_in_conquest
+		icon = GFX_SOV_eastern_expansion_ccp_2d_sov_compatibility
+		x = 6
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = PTH_intervention_in_india }
+		prerequisite = { focus = PTH_divide_to_better_conquer }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_decentralisation_in_conquest completed"
+		}
+	}
+
+	focus = {
+		id = PTH_challenge_roman_hegemony
+		icon = GFX_focus_generic_balkans_focus
+		x = 10
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = PTH_intervention_in_india }
+		prerequisite = { focus = PTH_promote_the_parthian_language }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_challenge_roman_hegemony completed"
+		}
+	}
+
+	#focus = {
+	#	id = PTH_open_borders_for_christians
+	#	icon = GFX_focus_generic_balkans_focus
+	#	x = 11
+	#	y = 8
+	#	cost = 10
+
+	#	prerequisite = { focus = PTH_challenge_roman_hegemony }
+	#	prerequisite = { focus = PTH_pacification_projects_across_the_lands }
+
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+
+	#	completion_reward = {
+	#		set_country_flag = PTH_open_borders_for_christians
+	#	}
+	#}
+
+	focus = {
+		id = PTH_reforming_the_economy
+		icon = GFX_focus_generic_price_controls
+		x = 13
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = PTH_promote_the_parthian_language }
+		prerequisite = { focus = PTH_undermine_greek }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_reforming_the_economy completed"
+			add_timed_idea = {
+				idea = PTH_reforming_the_economy_idea
+				days = 360
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_the_romans_of_the_east
+		icon = GFX_goal_unknown
+		x = 22
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = PTH_a_people_s_army }
+		prerequisite = { focus = PTH_a_new_central_command }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_the_romans_of_the_east completed"
+			add_ideas = PTH_romans_of_the_east
+		}
+	}
+
+	focus = {
+		id = PTH_roll_out_new_coins
+		icon = GFX_focus_ETH_adopt_the_lira
+		x = 2
+		y = 7
+		cost = 10
+
+		prerequisite = { focus = PTH_levy_more_taxes }
+		prerequisite = { focus = PTH_encourage_agriculture }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_roll_out_new_coins completed"
+			add_ideas = PTH_new_coins
+		}
+	}
+
+	focus = {
+		id = PTH_establish_new_satraps
+		icon = GFX_focus_AFG_savior_of_the_holy_lands
+		x = 5
+		y = 7
+		cost = 10
+
+		prerequisite = { focus = PTH_decentralisation_in_conquest }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_new_satraps completed"
+		}
+	}
+
+	focus = {
+		id = PTH_foment_revolts
+		icon = GFX_focus_generic_workers_and_farmers_rise
+		x = 7
+		y = 7
+		cost = 10
+
+		prerequisite = { focus = PTH_decentralisation_in_conquest }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_foment_revolts completed"
+		}
+	}
+
+	focus = {
+		id = PTH_memories_of_the_achaemenid
+		icon = GFX_goal_unknown
+		x = 9
+		y = 7
+		cost = 10
+
+		prerequisite = { focus = PTH_challenge_roman_hegemony }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_memories_of_the_achaemenid completed"
+			add_ideas = PTH_memories_of_the_achaemenid_idea
+		}
+	}
+
+	focus = {
+		id = PTH_pacification_projects_across_the_lands
+		icon = GFX_focus_generic_land_reclamation
+		x = 12
+		y = 7
+		cost = 10
+
+		prerequisite = { focus = PTH_reforming_the_economy }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_pacification_projects_across_the_lands completed"
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 1
+					instant_build = yes
+				}
+			}
+			capital_scope = {
+				add_building_construction = {
+ 					type = infrastructure
+    				level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_model_manufacturing
+		icon = GFX_goal_unknown
+		x = 14
+		y = 7
+		cost = 10
+
+		prerequisite = { focus = PTH_reforming_the_economy }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_model_manufacturing completed"
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = industrial_complex
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_jobless_towards_the_farms
+		icon = GFX_focus_generic_agricultural_subsidies
+		x = 13
+		y = 8
+		cost = 10
+
+		prerequisite = { focus = PTH_model_manufacturing }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus PTH_jobless_towards_the_farms completed"
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+ 					type = farm
+    				level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_reclaim_the_east
+		icon = GFX_focus_generic_annex_country_2
+		x = 8
+		y = 6
+		cost = 10
+
+		prerequisite = { focus = PTH_intervention_in_india }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			443 = {
+				add_claim_by = PTH
+			}
+			440 = {
+				add_claim_by = PTH
+			}
+			442 = {
+				add_claim_by = PTH
+			}
+			1005 = {
+				add_claim_by = PTH
+			}
+			428 = {
+				add_claim_by = PTH
+			}
+			433 = {
+				add_claim_by = PTH
+			}
+			1056 = {
+				add_claim_by = PTH
+			}
+			989 = {
+				add_claim_by = PTH
+			}
+			986 = {
+				add_claim_by = PTH
+			}
+			787 = {
+				add_claim_by = PTH
+			}
+			441 = {
+				add_claim_by = PTH
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_the_northern_expedition
+		icon = GFX_focus_AFG_develop_turkmenistan
+		x = 8
+		y = 8
+		cost = 10
+
+		prerequisite = { focus = PTH_reclaim_the_east }
+		prerequisite = { focus = PTH_memories_of_the_achaemenid focus = PTH_foment_revolts }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			584 = {
+				add_claim_by = PTH
+			}
+			832 = {
+				add_claim_by = PTH
+			}
+		}
+	}
+
+
+
+
+
+
+	focus = {
+		id = PTH_strange_faith_from_the_west
+		icon = GFX_unknown
+		x = 13
+		y = 11
+		cost = 8
+
+		prerequisite = { }
+		allow_branch = {
+			has_country_flag = PTH_welcomed_christians
+		}
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 30
+			add_timed_idea = {
+				idea = PTH_strange_faith_from_the_west_idea
+				days = 230
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_promote_christianity
+		icon = GFX_unknown
+		x = 12
+		y = 12
+		cost = 8
+
+		prerequisite = { focus = PTH_strange_faith_from_the_west }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_stab = 0.03 }
+			add_to_variable = { judaism_integration_ws = 0.02 }
+			add_to_variable = { judaism_integration_mob = 0.05 }
+			custom_effect_tooltip = PTH_promote_christianity
+		}
+	}
+
+	focus = {
+		id = PTH_appease_the_elites
+		icon = GFX_unknown
+		x = 14
+		y = 12
+		cost = 8
+
+		prerequisite = { focus = PTH_strange_faith_from_the_west }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_stab = 0.03 }
+			add_stability = 0.05
+			custom_effect_tooltip = PTH_stability_up
+		}
+	}
+
+	focus = {
+		id = PTH_translate_the_torrah
+		icon = GFX_unknown
+		x = 13
+		y = 13
+		cost = 7
+
+		prerequisite = { focus = PTH_strange_faith_from_the_west }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_stab = 0.02 }
+		}
+	}
+
+	focus = {
+		id = PTH_integrate_religion_within_society
+		icon = GFX_SOV_autonomous_soviet_republics_ccp_2d_sov_compatibility
+		x = 11
+		y = 14
+		cost = 8
+
+		prerequisite = { focus = PTH_translate_the_torrah }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_mob = 0.05 }
+			custom_effect_tooltip = PTH_stability_up
+		}
+	}
+
+	focus = {
+		id = PTH_copies_of_the_sacred_texts
+		icon = GFX_unknown
+		x = 13
+		y = 14
+		cost = 8
+
+		prerequisite = { focus = PTH_translate_the_torrah }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_stab = 0.03 }
+		}
+	}
+
+	focus = {
+		id = PTH_radicalise_army_leaders
+		icon = GFX_unknown
+		x = 15
+		y = 14
+		cost = 8
+
+		prerequisite = { focus = PTH_translate_the_torrah }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_ws = 0.04 }
+			add_to_variable = { judaism_integration_mob = 0.04 }
+			add_command_power = 20
+			army_experience = 30
+		}
+	}
+
+	focus = {
+		id = PTH_convert_the_elites
+		icon = GFX_unknown
+		x = 12
+		y = 15
+		cost = 10
+
+		prerequisite = { focus = PTH_integrate_religion_within_society}
+		prerequisite = { focus = PTH_copies_of_the_sacred_texts }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_stab = -0.02 }
+			add_to_variable = { judaism_integration_mob = 0.05 }
+			add_trait = {
+     			character = artabanus_ii
+     			ideology = parthian_nobility
+     			trait = PTH_follower_of_jesus
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_enact_non_christian_purges
+		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+		x = 14
+		y = 15
+		cost = 8
+
+		prerequisite = { focus = PTH_radicalise_army_leaders }
+		prerequisite = { focus = PTH_copies_of_the_sacred_texts }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_stab = -0.02 }
+			add_manpower = -69820
+			custom_effect_tooltip = PTH_manpower_loss
+		}
+	}
+
+	focus = {
+		id = PTH_the_first_jewish_empire
+		icon = GFX_unknown
+		x = 13
+		y = 16
+		cost = 10
+
+		prerequisite = { focus = PTH_convert_the_elites }
+		prerequisite = { focus = PTH_enact_non_christian_purges }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_to_variable = { judaism_integration_mob = 0.05 }
+			add_to_variable = { judaism_integration_stab = 0.05 }
+			set_cosmetic_tag = PTH_christian_empire
+			upgrade_economy_law = yes
+		}
+	}
+
+	focus = {
+		id = PTH_the_lands_of_the_romans
+		icon = GFX_focus_usa_focus_on_europe
+		x = 10
+		y = 17
+		cost = 10
+
+		prerequisite = { focus = PTH_the_first_jewish_empire }
+		mutually_exclusive = { focus = PTH_the_chinese_lands }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PTH_the_chinese_lands
+		icon = GFX_SOV_intervention_in_china_ccp_2d_sov_compatibility
+		x = 16
+		y = 17
+		cost = 10
+
+		prerequisite = { focus = PTH_the_first_jewish_empire }
+		mutually_exclusive = { focus = PTH_the_lands_of_the_romans }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = PTH_expeditions_into_central_india
+		icon = GFX_unknown
+		x = 14
+		y = 18
+		cost = 10
+
+		prerequisite = { focus = PTH_the_chinese_lands }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			YAU = {
+				country_event = {
+					id = arsacid_event.19
+					days = 5
+				}
+			}
+			SAV = {
+				country_event = {
+					id = arsacid_event.19
+					days = 5
+				}
+			}
+			MTH = {
+				country_event = {
+					id = arsacid_event.19
+					days = 5
+				}
+			}
+			MTI = {
+				country_event = {
+					id = arsacid_event.19
+					days = 5
+				}
+			}
+			if = {
+				limit = {
+					IDS = {
+						NOT = {
+							is_subject_of = PTH
+						}
+					}
+				}
+				IDS = {
+					country_event = {
+						id = arsacid_event.19
+						days = 5
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_the_faraway_kingdom_of_samatata
+		icon = GFX_unknown
+		x = 16
+		y = 18
+		cost = 10
+
+		prerequisite = { focus = PTH_the_chinese_lands }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			SAT = {
+				country_event = {
+					id = arsacid_event.20
+					days = 5
+				}
+			}
+			MMD = {
+				country_event = {
+					id = arsacid_event.20
+					days = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_the_city_states_of_the_east
+		icon = GFX_unknown
+		x = 18
+		y = 18
+		cost = 10
+
+		prerequisite = { focus = PTH_the_chinese_lands }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			SUL = {
+				country_event = {
+					id = arsacid_event.21
+					days = 5
+				}
+			}
+			KHT = {
+				country_event = {
+					id = arsacid_event.21
+					days = 5
+				}
+			}
+			NYA = {
+				country_event = {
+					id = arsacid_event.21
+					days = 5
+				}
+			}
+			LOL = {
+				country_event = {
+					id = arsacid_event.21
+					days = 5
+				}
+			}
+			KKC = {
+				country_event = {
+					id = arsacid_event.21
+					days = 5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_all_in_china
+		icon = GFX_unknown
+		x = 16
+		y = 19
+		cost = 10
+
+		prerequisite = { focus = PTH_expeditions_into_central_india }
+		prerequisite = { focus = PTH_the_faraway_kingdom_of_samatata }
+		prerequisite = { focus = PTH_the_city_states_of_the_east }
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
 }
+
+# Localization file auto-generated: localisation/english/pth_PTH_focus_tree_l_english.yml

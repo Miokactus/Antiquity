@@ -3,6 +3,7 @@
 ################
 
 add_namespace = arsacid_event
+add_namespace = arsacid_border_conflict
 
 # Call to War!
 country_event = {
@@ -574,3 +575,710 @@ country_event = {
 		clr_country_flag = infrastructure_project_ingoing
 	}
 } 
+
+
+
+# Indo-Parthians independent!
+country_event = {
+	id = arsacid_event.10
+	title = arsacid_event.10.t
+	desc = arsacid_event.10.d
+	trigger = {
+		date > 19.8.10
+		tag = PTH
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	immediate = {
+		set_autonomy = {
+    		target = IDS
+    		autonomous_state = autonomy_free
+    		end_wars = yes
+    		end_civil_wars = yes
+		}
+	}
+	option = { # There's nothing we can do...
+		name = arsacid_event.10.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+	}
+	option = { # Declare war!
+		name = arsacid_event.10.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		IDS = {
+			declare_war_on = {
+				target = PTH
+				type = independence_wargoal
+			}
+		}
+	}
+}
+
+# Appeasement with Rome
+country_event = {
+	id = arsacid_event.11
+	title = arsacid_event.11.t
+	desc = arsacid_event.11.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Yes
+		name = arsacid_event.11.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		diplomatic_relation = {
+    		country = ROE
+    		relation = non_aggression_pact
+    		active = yes
+		}
+		give_market_access = ROE
+		ROE = {
+			diplomatic_relation = {
+    			country = PTH
+    			relation = non_aggression_pact
+    			active = yes
+			}
+			give_market_access = PTH
+		}
+	}
+	option = { # Nope
+		name = arsacid_event.11.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_opinion_modifier = {
+    		target = ROE
+    		modifier = refused_appeasement
+		}
+		ROE = {
+			country_event = {
+				id = arsacid_event.12
+				days = 30
+			}
+		}
+	}
+}
+
+# Skirmishes at the border!
+country_event = {
+	id = arsacid_event.12
+	title = arsacid_event.12.t
+	desc = arsacid_event.12.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # 
+		name = arsacid_event.12.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		start_border_war = {
+    		change_state_after_war = yes
+    		attacker = {
+    		    state = 680
+   		    	num_provinces = 3
+    		    on_win = arsacid_border_conflict.1
+        		on_lose = arsacid_border_conflict.2
+        		on_cancel = arsacid_border_conflict.3
+        		modifier = 0.1
+        		dig_in_factor = 0
+        		terrain_factor = 0
+    		}	
+    		defender = {
+        		state = 1036
+        		num_provinces = 2
+        		on_win = arsacid_border_conflict.2
+        		on_lose = arsacid_border_conflict.1
+        		on_cancel = arsacid_border_conflict.3
+    		}
+		}
+	}
+}
+
+# Notice to the Satraps
+country_event = {
+	id = arsacid_event.13
+	title = arsacid_event.13.t
+	desc = arsacid_event.13.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # New administration but same guys
+		name = arsacid_event.13.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			add_stability = 0.02
+			add_war_support = 0.02
+		}
+	}
+	option = { # What? No!
+		name = arsacid_event.13.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			add_stability = -0.02
+			add_war_support = -0.02
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					FROM = {
+						tag = BBA
+					}
+				}
+				add_to_variable = {
+					babylonia_revolt = 20
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = CHA
+					}
+				}
+				add_to_variable = {
+					characene_revolt = 20
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = ADI
+					}
+				}
+				add_to_variable = {
+					adiabene_revolt = 20
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						tag = PPI
+					}
+				}
+				add_to_variable = {
+					persis_revolt = 20
+				}
+			}
+		}
+	}
+}
+
+# Client King in Armenia? [DIPLO] - Rome
+country_event = {
+	id = arsacid_event.14
+	title = arsacid_event.14.t
+	desc = arsacid_event.14.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # You can.
+		name = arsacid_event.14.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		ARR = {
+			country_event = {
+				id = arsacid_event.15
+				days = 2
+			}
+			set_country_flag = pression_from_rome
+		}
+	}
+	option = { # Never!
+		name = arsacid_event.14.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			country_event = {
+				id = arsacid_event.17
+				days = 2
+			}
+		}
+		ARR = {
+			set_country_flag = support_from_rome
+		}
+	}
+}
+
+# Client King in Armenia! [INVASION] - Armenia
+country_event = {
+	id = arsacid_event.15
+	title = arsacid_event.15.t
+	desc = arsacid_event.15.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Glory to Artaxas III
+		name = arsacid_event.15.a
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 5
+				has_country_flag = pression_from_rome
+			}
+		}
+		trigger = { }
+		ROE = {
+			country_event = {
+				id = arsacid_event.18
+				days = 2
+			}
+		}
+		promote_character = {
+			character = ARR_artaxas_iii
+    		ideology = oligarchism_comm
+		}
+	}
+	option = { # We will fight!
+		name = arsacid_event.15.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			country_event = {
+				id = arsacid_event.16
+				days = 2
+			}
+		}
+	}
+}
+
+# Client King in Armenia! [ANSWER INVASION] - Parthia
+country_event = {
+	id = arsacid_event.16
+	title = arsacid_event.16.t
+	desc = arsacid_event.16.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # To war!
+		name = arsacid_event.16.a
+		ai_chance = { factor = 3 }
+		trigger = { }
+		create_wargoal = {
+    		type = puppet_wargoal_focus
+    		target = ARR
+		}
+	}
+	option = { # Back down
+		name = arsacid_event.16.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_stability = -0.05
+		add_war_support = -0.02
+		1034 = {
+			add_claim_by = PTH
+		}
+		1000 = {
+			add_claim_by = PTH
+		}
+		419 = {
+			add_claim_by = PTH
+		}
+	}
+}
+
+# Client King in Armenia? [ANSWER NO DIPLO] - Parthia
+country_event = {
+	id = arsacid_event.17
+	title = arsacid_event.17.t
+	desc = arsacid_event.17.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # To war!
+		name = arsacid_event.17.a
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = -2
+				ARR = {
+					has_country_flag = support_from_rome
+				}
+			}
+		}
+		trigger = { }
+		add_stability = -0.02
+		add_war_support = 0.05
+		create_wargoal = {
+    		type = puppet_wargoal_focus
+    		target = ARR
+		}
+		ARR = {
+			diplomatic_relation = {
+    			country = ROE
+    			relation = non_aggression_pact
+    			active = yes
+			}
+			diplomatic_relation = {
+    			country = ROE
+    			relation = military_access
+    			active = yes
+			}
+		}
+		ROE = {
+			diplomatic_relation = {
+    			country = ARR
+    			relation = non_aggression_pact
+    			active = yes
+			}
+			diplomatic_relation = {
+    			country = ARR
+    			relation = military_access
+    			active = yes
+			}
+		}
+	}
+	option = { # Back down
+		name = arsacid_event.17.b
+		ai_chance = { factor = 2 }
+		trigger = { }
+		add_stability = -0.1
+		add_war_support = -0.05
+		1034 = {
+			add_claim_by = PTH
+		}
+		1000 = {
+			add_claim_by = PTH
+		}
+		419 = {
+			add_claim_by = PTH
+		}
+	}
+}
+
+# Client King in Armenia! [INVASION ACCEPTED] - Rome
+country_event = {
+	id = arsacid_event.18
+	title = arsacid_event.18.t
+	desc = arsacid_event.18.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Alright.
+		name = arsacid_event.18.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+	}
+	option = { # Issue a diplomatic protest
+		name = arsacid_event.18.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_opinion_modifier = {
+    		target = PTH
+    		modifier = regime_change
+		}
+	}
+}
+
+# Submit to the Arsacid in Central India
+country_event = {
+	id = arsacid_event.19
+	title = arsacid_event.19.t
+	desc = arsacid_event.19.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Alright.
+		name = arsacid_event.19.a
+		ai_chance = { 
+			factor = 0.8
+		}
+		trigger = { }
+		PTH = {
+			set_autonomy = {
+    			target = ROOT
+    			autonomous_state = autonomy_satrap
+    			end_wars = yes
+    			end_civil_wars = yes
+			}
+		}
+	}
+	option = { # No?
+		name = arsacid_event.19.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = PREV.PREV
+			}
+		}
+	}
+}
+
+# Satellite the Kingdom of Samatata
+country_event = {
+	id = arsacid_event.20
+	title = arsacid_event.20.t
+	desc = arsacid_event.20.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Alright.
+		name = arsacid_event.20.a
+		ai_chance = { 
+			factor = 0.8
+		}
+		trigger = { }
+		PTH = {
+			set_autonomy = {
+    			target = ROOT
+    			autonomous_state = autonomy_colony
+    			end_wars = yes
+    			end_civil_wars = yes
+			}
+		}
+	}
+	option = { # No?
+		name = arsacid_event.20.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = ROOT
+			}
+		}
+	}
+}
+
+# Vassalize the city states of the East
+country_event = {
+	id = arsacid_event.21
+	title = arsacid_event.21.t
+	desc = arsacid_event.21.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Alright.
+		name = arsacid_event.21.a
+		ai_chance = { 
+			factor = 0.8
+		}
+		trigger = { }
+		PTH = {
+			set_autonomy = {
+    			target = ROOT
+    			autonomous_state = autonomy_satrap
+    			end_wars = yes
+    			end_civil_wars = yes
+			}
+		}
+	}
+	option = { # No?
+		name = arsacid_event.21.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = ROOT
+			}
+		}
+	}
+}
+
+# Ultimatum to China!
+country_event = {
+	id = arsacid_event.22
+	title = arsacid_event.22.t
+	desc = arsacid_event.22.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Alright.
+		name = arsacid_event.22.a
+		ai_chance = { 
+			factor = 0.1
+		}
+		trigger = { }
+		PTH = {
+			set_autonomy = {
+    			target = ROOT
+    			autonomous_state = autonomy_satrap
+    			end_wars = yes
+    			end_civil_wars = yes
+			}
+		}
+	}
+	option = { # No?
+		name = arsacid_event.22.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		
+	}
+}
+
+# Buying a treaty port
+country_event = {
+	id = arsacid_event.23
+	title = arsacid_event.23.t
+	desc = arsacid_event.23.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Alright.
+		name = arsacid_event.23.a
+		ai_chance = { 
+			factor = 0.5
+		}
+		trigger = { }
+		every_state = {
+			limit = {
+				is_owned_by = ROOT
+				has_state_flag = buying_arsacid
+			}
+			transfer_state_to = PTH
+			clr_state_flag = buying_arsacid
+		}
+		add_offsite_building = { type = industrial_complex level = 2 }
+		PTH = {
+			random_owned_controlled_state = {
+				limit = {
+					industrial_complex > 1
+				}
+				remove_building = {
+    				type = industrial_complex
+    				level = 2
+				}
+			}
+			clr_country_flag = already_buying
+		}
+	}
+	option = { # No?
+		name = arsacid_event.23.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		PTH = {
+			add_stability = -0.05
+			add_war_support = -0.02
+			clr_country_flag = already_buying
+		}
+		every_state = {
+			limit = {
+				is_owned_by = ROOT
+				has_state_flag = buying_arsacid
+			}
+			clr_state_flag = buying_arsacid
+		}
+	}
+}
+
+
+
+
+# Skirmishes at the border!
+country_event = {
+	id = arsacid_border_conflict.1
+	title = arsacid_border_conflict.1.t
+	desc = arsacid_border_conflict.1.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	immediate = {
+		PTH = {
+			set_country_flag = no_peace_in_middle_east
+		}
+	}
+	option = { # 
+		name = arsacid_border_conflict.1.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = PTH }
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	option = { #
+		name = arsacid_border_conflict.1.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+		add_stability = -0.1
+		add_war_support = -0.05
+	}
+}
+
+# Skirmishes at the border!
+country_event = {
+	id = arsacid_border_conflict.2
+	title = arsacid_border_conflict.2.t
+	desc = arsacid_border_conflict.2.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	immediate = {
+		PTH = {
+			set_country_flag = no_peace_in_middle_east
+		}
+	}
+	option = { # 
+		name = arsacid_border_conflict.2.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = PTH }
+		add_stability = -0.05
+		add_war_support = -0.05
+	}
+	option = { #
+		name = arsacid_border_conflict.2.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+		add_stability = 0.1
+		add_war_support = 0.05
+	}
+}
+
+# Skirmishes at the border!
+country_event = {
+	id = arsacid_border_conflict.3
+	title = arsacid_border_conflict.3.t
+	desc = arsacid_border_conflict.3.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	immediate = {
+		PTH = {
+			set_country_flag = no_peace_in_middle_east
+		}
+	}
+	option = { # 
+		name = arsacid_border_conflict.3.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = PTH }
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	option = { #
+		name = arsacid_border_conflict.3.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}

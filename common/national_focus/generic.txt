@@ -50,6 +50,16 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 250
+				has_army_size = {
+    				size < 5
+    				type = infantry
+				}
+			}
+		}
 	}
 
 	focus = {
@@ -67,19 +77,15 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.1
+			add_equipment_to_stockpile = {
+    			type = infantry_equipment
+   				amount = 1500
+    			producer = ROOT
 			}
 
-			add_tech_bonus = {
-				name = infantry_artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-
+		}
+		ai_will_do = {
+			factor = 20
 		}
 	}
 
@@ -103,6 +109,20 @@ focus_tree = {
 				bonus = 1.0
 				technology = carriage_infantry
 			}
+			division_template = {
+				name = "Levies"
+				regiments = { # 28
+					irregular_infantry = {  x = 0 y = 0 }
+					irregular_infantry = {  x = 0 y = 1 }
+					irregular_infantry = {  x = 1 y = 0 }
+					irregular_infantry = {  x = 1 y = 1 }
+				}
+				support = {
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
 		}
 	}
 
@@ -127,6 +147,9 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+		}
+		ai_will_do = {
+			factor = 0.2
 		}
 	}
 
@@ -1023,40 +1046,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				factor = 6
-				original_tag = SIA
-			}
-			modifier = {
-				factor = 6
-				is_in_array = {
-					array = RAJ.raj_releasables
-					value = THIS
+				factor = 30
+				has_army_size = {
+					size < 5
+					type = infantry
 				}
-				is_subject_of = RAJ
-			}
-			modifier = {
-				factor = 0
-				date < 1939.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}	
-				NOT = {
-					is_in_array = {
-						array = RAJ.raj_releasables
-						value = THIS
-					}
-				}			
+				has_completed_focus = army_effort
 			}
 		}
 	}
@@ -1159,19 +1154,15 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
-				modifier = {
-				factor = 6
-				original_tag = SIA
-			}
+			factor = 5
 			modifier = {
-				factor = 5
-				is_in_array = {
-					array = RAJ.raj_releasables
-					value = THIS
+				factor = 250
+				has_army_size = {
+					size < 5
+					type = infantry
 				}
-				is_subject_of = RAJ
-			}	
+				has_completed_focus = army_effort
+			}
 		}
 
 		bypass = {
@@ -1331,18 +1322,14 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 			modifier = {
-				factor = 6
-				original_tag = SIA
-			}
-			modifier = {
-				factor = 5
-				is_in_array = {
-					array = RAJ.raj_releasables
-					value = THIS
+				factor = 30
+				has_army_size = {
+					size < 5
+					type = infantry
 				}
-				is_subject_of = RAJ
+				has_completed_focus = army_effort
 			}
 		}
 
@@ -1521,18 +1508,14 @@ focus_tree = {
 
 
 		ai_will_do = {
-			factor = 2
+			factor = 3
 			modifier = {
-				factor = 6
-				original_tag = SIA
-			}
-			modifier = {
-				factor = 5
-				is_in_array = {
-					array = RAJ.raj_releasables
-					value = THIS
+				factor = 30
+				has_army_size = {
+					size < 5
+					type = infantry
 				}
-				is_subject_of = RAJ
+				has_completed_focus = army_effort
 			}
 		}
 
@@ -1919,6 +1902,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 120
+			add_manpower = 25000
 		}
 	}
 

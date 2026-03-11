@@ -17,5 +17,90 @@ characters = {
 		}
 	}
 
+	artabanus_ii_fascist = {
+		name = "Artabanus II"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_PTH_artabanus_ii"
+            }
+        }
+		country_leader = {
+			desc = "ARTABANUS_DESC"
+			expire = "80.5.4"
+			ideology = absolutism
+			traits = {
+				
+			}
+		}
+	}
+
+	parthian_nobility = {
+		name = "Parthian Nobility"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_ROE_military_council"
+            	}
+        	}
+		country_leader = {
+			desc = "parthian_nobility"
+			expire = "150.8.19"
+			ideology = military_junta
+			traits = {
+			}
+		}
+	}
+
+	PTH_tribal_administration = {
+		name = "Tribal Administration"
+		portraits = {
+            	civilian = {
+                	large = "generic_nomadic_tribes2"
+            	}
+        	}
+		country_leader = {
+			desc = "PTH_tribal_administration"
+			expire = "150.8.19"
+			ideology = nomadism
+			traits = {
+			}
+		}
+	}
+
+	PTH_peasant_councils = {
+		name = "Peasant's Councils"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_XIN_peasant_councils"
+            }
+        }
+		country_leader = {
+			desc = "PEASANTS_DESC"
+			expire = "250.5.4"
+			ideology = peasants_assemblies
+			traits = {
+			}
+		}
+	}
+
+	
+
+	## ARMENIA
+
+	ARR_artaxas_iii = {
+		name = "Artaxas III"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_military_council"
+            }
+        }
+		country_leader = {
+			desc = "ARTAXAS_DESC"
+			expire = "80.5.4"
+			ideology = oligarchism_comm
+			traits = {
+				
+			}
+		}
+	}
 
 }

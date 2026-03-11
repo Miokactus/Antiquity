@@ -189,4 +189,68 @@ on_actions = {
             }
         }
     }
+
+    on_weekly = {
+        effect = {
+            set_variable = { babylonia_revolt = babylonia_revolt }
+            set_variable = { characene_revolt = characene_revolt }
+            set_variable = { adiabene_revolt = adiabene_revolt }
+            set_variable = { persis_revolt = persis_revolt }
+        }
+    }
+
+    on_daily = {
+        effect = {
+            set_variable = { council_allegiance_arsacid = var:house_suren }
+            add_to_variable = { council_allegiance_arsacid = var:house_karen }
+            add_to_variable = { council_allegiance_arsacid = var:house_zik }
+        }
+    }
+    on_daily = {
+        effect = {
+            set_variable = { council_allegiance_arsacid_ws = council_allegiance_arsacid }
+            divide_variable = { council_allegiance_arsacid_ws = 2500 }
+            set_variable = { council_allegiance_arsacid_pp = council_allegiance_arsacid }
+            divide_variable = { council_allegiance_arsacid_pp = 300 }
+            set_variable = { council_allegiance_arsacid_stab = council_allegiance_arsacid }
+            divide_variable = { council_allegiance_arsacid_stab = 1000 }
+        }
+    }
+
+    on_startup = {
+        effect = {
+            every_country = {
+                limit = {
+                    is_subject_of = PTH
+                }
+                set_country_flag = arsacid_satrap
+            }
+        }
+    }
+    on_weekly = {
+        effect = {
+            every_country = {
+                limit = {
+                    is_subject_of = PTH
+                    NOT = {
+                        has_idea = PTH_subject_of_arsacid
+                    }
+                }
+                add_ideas = PTH_subject_of_arsacid
+                set_country_flag = arsacid_satrap
+            }
+            every_country = {
+                limit = {
+                    has_idea = PTH_subject_of_arsacid
+                    NOT = {
+                        is_subject_of = PTH
+                    }
+                }
+                clr_country_flag = arsacid_satrap
+            }
+        }
+    }
+
+    
+    
 }

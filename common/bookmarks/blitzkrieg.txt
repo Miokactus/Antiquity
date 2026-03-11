@@ -39,8 +39,13 @@ bookmarks = {
 			ideology = communism
 			ideas={
 				PTH_decentralised_structure
+				PTH_parthian_army
+				PTH_multicultural_nation
 			}
 			focuses = {
+				PTH_reorganise_the_ministries
+				PTH_memories_of_the_achaemenid
+				PTH_parthian_cultural_revolution
 			}
 		}
 

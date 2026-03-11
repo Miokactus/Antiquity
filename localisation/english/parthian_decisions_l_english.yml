@@ -29,7 +29,8 @@
 
  infrastructure_project_ingoing: "We have an §Yinfrastructure project ongoing§! already in one of our §CSatraps§!!"
  rebellion: "This province is §Rrebelling against our authority.§!"
- 
+ PTH_purge_council: "We will §Ypurge the council§! and §Gestablish dominance§! over Parthian politics!"
+ PTH_reforming_admin: "After §8reforming our administration§!, we will introduce a §Gmore centralised§! system of governance!"
 
  ## PARTHIAN SATRAPS GUI
  parthian_administration_flags: "Managing the Satraps of the Empire"
@@ -58,6 +59,90 @@
 
  arsacid_gui_explain: "Our satraps are mostly independent, but they still can ask us for things and so can we. If we refuse them too many of these or ask for too much, they might revolt!"
 
+ ## PARTHIAN NOBILITY GUI
+ parthian_council: "The Arsacid Royal Council"
+ arsacid_gui_council_title: "§O[ROOT.GetName]§!'s Nobility Loyalties"
+
+ arsacid_gui_house_suren: "§7House of Suren§!"
+ arsacid_gui_house_karen: "§7House of Karen§!"
+ arsacid_gui_house_zik: "§7House of Zik§!"
+ arsacid_gui_council_support: "§8Council's General Support§!"
+
+ arsacid_gui_house_suren_allegiance: "[GetCouncilAllegianceSuren]"
+ arsacid_gui_house_karen_allegiance: "[GetCouncilAllegianceKaren]"
+ arsacid_gui_house_zik_allegiance: "[GetCouncilAllegianceZik]"
+
+ arsacid_gui_council_support_allegiance: "[GetCouncilAllegianceSupport]"
+ council_allegiance_support_0: "The Council is §LDisbanded§!"
+ council_allegiance_support_2: "The Council is §Rrebellious§!!"
+ council_allegiance_support_4: "The Council is §Rrebellious§!!"
+ council_allegiance_support_rebellious: "The Council is §Rrebellious§!!"
+ council_allegiance_support_8: "The Council is §Rrebellious§!!"
+ council_allegiance_support_10: "The Council is §Rrebellious§!!"
+ council_allegiance_support_12: "The Council is §Ragainst us§!!"
+ council_allegiance_support_14: "The Council is §Ragainst us§!!"
+ council_allegiance_support_16: "The Council is §Ragainst us§!!"
+ council_allegiance_support_18: "The Council is §Ragainst us§!!"
+ council_allegiance_support_against_us: "The Council is §Ragainst us§!!"
+ council_allegiance_support_22: "The Council is §Runsupportive§!."
+ council_allegiance_support_24: "The Council is §Runsupportive§!."
+ council_allegiance_support_28: "The Council is §Runsupportive§!."
+ council_allegiance_support_unsupportive: "The Council is §Runsupportive§!."
+ council_allegiance_support_32: "The Council is §Yunsure§!."
+ council_allegiance_support_34: "The Council is §Yunsure§!."
+ council_allegiance_support_36: "The Council is §Yunsure§!."
+ council_allegiance_support_38: "The Council is §Yunsure§!."
+ council_allegiance_support_40: "The Council is §Yunsure§!."
+ council_allegiance_support_42: "The Council is §Yneutral§!."
+ council_allegiance_support_44: "The Council is §Yneutral§!."
+ council_allegiance_support_neutral: "The Council is §Yneutral§!."
+ council_allegiance_support_48: "The Council is §Yneutral§!."
+ council_allegiance_support_50: "The Council is §Yneutral§!."
+ council_allegiance_support_52: "The Council is §Ychanging minds§!."
+ council_allegiance_support_54: "The Council is §Ychanging minds§!."
+ council_allegiance_support_56: "The Council is §Ychanging minds§!."
+ council_allegiance_support_58: "The Council is §Ychanging minds§!."
+ council_allegiance_support_60: "The Council is §Ychanging minds§!."
+ council_allegiance_support_62: "The Council is §Gsupportive§!!"
+ council_allegiance_support_64: "The Council is §Gsupportive§!!"
+ council_allegiance_support_66: "The Council is §Gsupportive§!!"
+ council_allegiance_support_68: "The Council is §Gsupportive§!!"
+ council_allegiance_support_supportive: "The Council is §Gsupportive§!!"
+ council_allegiance_support_72: "The Council is §Gfavourable to us§!!"
+ council_allegiance_support_74: "The Council is §Gfavourable to us§!!"
+ council_allegiance_support_76: "The Council is §Gfavourable to us§!!"
+ council_allegiance_support_78: "The Council is §Gfavourable to us§!!"
+ council_allegiance_support_favourable: "The Council is §Gfavourable to us§!!"
+ council_allegiance_support_82: "The Council is §Gloyal to us§!!"
+ council_allegiance_support_84: "The Council is §Gloyal to us§!!"
+ council_allegiance_support_86: "The Council is §Gloyal to us§!!"
+ council_allegiance_support_loyal: "The Council is §Gloyal to us§!!"
+ council_allegiance_support_90: "The Council is §Gloyal to us§!!"
+
+ house_neutral: "§YNeutral§!"
+ house_disfavour: "§RDisfavour§!"
+ house_favour: "§GFavour§!"
+
+ parthia_rome_war: "Roman-Parthian Wars"
+ regime_change: "Regime Change"
+
+ lobby_suren: "Lobby the §6House of Suren§!"
+ lobby_karen: "Lobby the §6House of Karen§!"
+ lobby_zik: "Lobby the §6House of Zik§!"
+
+ house_lobbying_tooltip: "The §YHouse support§! will go up by §G2%§!!"
+ house_lobbying_tooltip_big: "The §YHouses support§! will increase!"
+ house_lobbying_tooltip_suren: "The §YHouse of Suren's support§! will go up by §G4%§!!"
+ 
+ PTH_admin_satraps: "We will §3have access to more decisions§! to administer our §Gsatraps!§!"
+ 
+ use_houses_influence_suren: "Use the §9House of Suren§!'s influence"
+ use_houses_influence_karen: "Use the §9House of Karen§!'s influence"
+ use_houses_influence_zik: "Use the §9House of Zik§!'s influence"
+ 
+ ask_for_treaty_ports: "Negociate §L[FROM.GetName]§!"
+
+ already_buying: "§RWe are already buying a state!§!"
  ## TRAITS
 
 
@@ -102,4 +187,90 @@
  arsacid_event.9.t: "Integration of §Y[FROM.GetName]§!"
  arsacid_event.9.d: "After an incredible amount of time, we have finally pacified the region and we'll be able to integrate it as soon as possible! The local populace are more than happy to join us. In addition, our authority will be reinforced in the region and nation-wide, so that maybe we'll be able to integrate more and more satraps and put an end to this era of separation!"
  arsacid_event.9.a: "Welcome!"
+
+ arsacid_event.10.t: "Independence of the Eastern Satrapy!"
+ arsacid_event.10.d: "The eastern satrapy has declared its independence from our rule!"
+ arsacid_event.10.a: "There's nothing we can do about it."
+ arsacid_event.10.b: "This means war!"
+
+ arsacid_event.11.t: "Appeasement with Rome"
+ arsacid_event.11.d: "An envoy from the Arsacid 'Empire' has arrived in Rome. They are asking for a treaty of friendship between our two countries, hoping that it could end the everlasting wars between us."
+ arsacid_event.11.a: "Alright, for now."
+ arsacid_event.11.b: "No."
+
+ arsacid_event.12.t: "Skirmishes at the Border!"
+ arsacid_event.12.d: "Reports coming from the east are bringing bad news: the Arsacid armies have begun attacking our positions in Syria, especially around Comagene! We need to defend this or we could very well lose!"
+ arsacid_event.12.a: "Onwards!"
+
+ arsacid_event.13.t: "Notice to the Satraps"
+ arsacid_event.13.d: "The central government announced that it will tighten its grip on our territories."
+ arsacid_event.13.a: "Alright."
+ arsacid_event.13.b: "What? No!"
+
+ arsacid_event.14.t: "Client King in Armenia?"
+ arsacid_event.14.d: "Envoy from the Asracid:\n\"We humbly ask the Princeps of the Romans to recognise our claim on the Armenian throne, and with this the sovereignty of Artabanus II on the throne of the Arsacid Empire.\n\n- xoxo\""
+ arsacid_event.14.a: "We'll recognise it."
+ arsacid_event.14.b: "Who do you think we are?"
+
+ arsacid_event.15.t: "Establish a Client King in Armenia!"
+ arsacid_event.15.d: "Message from the Arsacid:\n\"Hallo! We will annex you and make of your country nothing but a little puppet. Thank you.\n\n- xoxo\""
+ arsacid_event.15.a: "Glory to Artaxas III!"
+ arsacid_event.15.b: "We will fight!"
+
+ arsacid_event.16.t: "Establish a Client King in Armenia!"
+ arsacid_event.16.d: "Message from Armenia:\n\"Hallo. No.\n\n- xoxo\""
+ arsacid_event.16.a: "War it is!"
+ arsacid_event.16.b: "We'll wait."
+
+ arsacid_event.17.t: "Client King in Armenia?"
+ arsacid_event.17.d: "Message from the Romans:\n\"Good day, sir.\nWe won't assist you. Actually, we support the current regime. Let's try another time shall we?\n\n- xoxo\""
+ arsacid_event.17.a: "War!"
+ arsacid_event.17.b: "Back down."
+
+ arsacid_event.18.t: "Establish a Client King in Armenia!"
+ arsacid_event.18.d: "Message from Armenia:\n\"We love our new king, please let us live! We aren't forced to write this under any menace.\n\nWith love,\""
+ arsacid_event.18.a: "There's nothing we can do."
+ arsacid_event.18.b: "Issue a diplomatic protest!"
+
+ arsacid_event.19.t: "Submit to the Arsacid!"
+ arsacid_event.19.d: "An envoy from the newly proclaimed 'Godly Empire' of the Arsacid dynasty has arrived to our capital: they are asking us to submit and convert to their new religion or they will crush us!"
+ arsacid_event.19.a: "There's nothing we can do!"
+ arsacid_event.19.b: "No?"
+
+ arsacid_event.20.t: "Submit to the Arsacid!"
+ arsacid_event.20.d: "An envoy from the newly proclaimed 'Godly Empire' of the Arsacid dynasty has arrived to our capital: they are asking us to submit and convert to their new religion or they will crush us!"
+ arsacid_event.20.a: "There's nothing we can do!"
+ arsacid_event.20.b: "No?"
+
+ arsacid_event.21.t: "Submit to the Arsacid!"
+ arsacid_event.21.d: "An envoy from the newly proclaimed 'Godly Empire' of the Arsacid dynasty has arrived to our capital: they are asking us to submit and convert to their new religion or they will crush us!"
+ arsacid_event.21.a: "There's nothing we can do!"
+ arsacid_event.21.b: "No?"
+
+ arsacid_event.22.t: "Submit to the Arsacid!"
+ arsacid_event.22.d: "An envoy from the newly proclaimed 'Godly Empire' of the Arsacid dynasty has arrived to our capital: they are asking us to submit and convert to their new religion or they will crush us!"
+ arsacid_event.22.a: "There's nothing we can do!"
+ arsacid_event.22.b: "No?"
+
+ arsacid_event.23.t: "Treaty Port Purchase"
+ arsacid_event.23.d: "An envoy from the Arsacid asked us if we would be willing to sell one of our port to them, as a lease. It could be beneficial in the short-term, but might become a problem later."
+ arsacid_event.23.a: "Why not!"
+ arsacid_event.23.b: "No thanks."
+
+
+
+ arsacid_border_conflict.1.t: "Skirmishes in Syria!"
+ arsacid_border_conflict.1.d: "The Arsacid won."
+ arsacid_border_conflict.1.a: "We won!"
+ arsacid_border_conflict.1.b: "A blow for our reputation."
+
+ arsacid_border_conflict.2.t: "Skirmishes in Syria!"
+ arsacid_border_conflict.2.d: "The Roman won!"
+ arsacid_border_conflict.2.a: "We lost!"
+ arsacid_border_conflict.2.b: "Rome wins again!"
+
+ arsacid_border_conflict.3.t: "Skirmishes in Syria!"
+ arsacid_border_conflict.3.d: "Nobody won."
+ arsacid_border_conflict.3.a: "Middle ground."
+ arsacid_border_conflict.3.b: "Middle ground."
 

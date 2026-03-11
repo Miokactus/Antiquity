@@ -1,0 +1,127 @@
+guiTypes = {
+##########################
+	containerWindowType = {
+		name = "arsacid_gui_council"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 500 }
+
+		instantTextBoxType = {
+			name = "arsacid_gui_council_title"
+			position = { x = 10 y = 20 }
+			text = "arsacid_gui_council_title"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = yes
+		}
+		
+
+
+
+
+		instantTextBoxType = {
+			name = "arsacid_gui_house_suren_title"
+			position = { x = 20 y = 80 }
+			text = "arsacid_gui_house_suren"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_house_suren_allegiance_title"
+			position = { x = 20 y = 110 }
+			text = "arsacid_gui_house_suren_allegiance"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+
+		instantTextBoxType = {
+			name = "arsacid_gui_house_karen_title"
+			position = { x = 20 y = 160 }
+			text = "arsacid_gui_house_karen"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_house_karen_allegiance_title"
+			position = { x = 20 y = 190 }
+			text = "arsacid_gui_house_karen_allegiance"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+		instantTextBoxType = {
+			name = "arsacid_gui_house_zik_title"
+			position = { x = 20 y = 240 }
+			text = "arsacid_gui_house_zik"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_house_zik_allegiance_title"
+			position = { x = 20 y = 270 }
+			text = "arsacid_gui_house_zik_allegiance"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+		instantTextBoxType = {
+			name = "arsacid_gui_council_support_title"
+			position = { x = 20 y = 320 }
+			text = "arsacid_gui_council_support"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 375
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "arsacid_gui_council_support_allegiance_title"
+			position = { x = 20 y = 350 }
+			text = "arsacid_gui_council_support_allegiance"
+			format = left
+			font = "hoi_24header"
+			maxWidth = 375
+			fixedsize = yes
+		}
+
+
+
+
+		instantTextBoxType = {
+			name = "arsacid_gui_explain_council"
+			position = { x = 10 y = 400 }
+			text = "arsacid_gui_explain_council"
+			format = left
+			font = "hoi_20header"
+			maxWidth = 490
+			fixedsize = yes
+		}
+
+
+	}
+}

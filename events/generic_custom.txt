@@ -301,8 +301,193 @@ country_event = {
 	}
 }
 
+## Cappadocia is annexed
+country_event = {
+	id = generic_custom.14
+	title = generic_custom.14.t
+	desc = generic_custom.14.d
+	
+	trigger = {
+		date > 17.02.10
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	major = yes
+	option = {
+		name = generic_custom.14.a
+		ai_chance = { factor = 20 }
+		hidden_effect = {
+			ROE = {
+				annex_country = {
+    				target = CAP
+    				transfer_troops = yes
+				}
+			}
+		}
+	}
+}
 
 
+
+
+
+## Total Victory
+country_event = {
+	id = generic_custom.20
+	title = generic_custom.20.t
+	desc = generic_custom.20.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = { # Yes
+		name = generic_custom.20.a
+		ai_chance = { factor = 1 }
+		every_owned_state = {
+			limit = {
+				is_controlled_by = FROM
+			}
+			transfer_state_to = FROM
+		}
+		white_peace = FROM
+		FROM = {
+			add_timed_idea = {
+				idea = war_reparations
+				days = 120
+			}
+			every_allied_country = {
+				limit = {
+					has_war = yes
+				}
+				add_timed_idea = {
+					idea = war_reparations
+					days = 120
+				}
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = war_reparations_lost
+				days = 120
+			}
+		}
+	}
+	option = { # No
+		name = generic_custom.20.b
+		ai_chance = { factor = 0.5 }
+		FROM = {
+			country_event = {
+				id = generic_custom.22
+				days = 2
+			}
+		}
+	}
+}
+
+## White Peace
+country_event = {
+	id = generic_custom.21
+	title = generic_custom.21.t
+	desc = generic_custom.21.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = { # Yes
+		name = generic_custom.21.a
+		ai_chance = { factor = 1 }
+		white_peace = FROM
+	}
+	option = { # No
+		name = generic_custom.21.b
+		ai_chance = { factor = 1 }
+		FROM = {
+			country_event = {
+				id = generic_custom.22
+				days = 2
+			}
+		}
+	}
+}
+
+## Refused.
+country_event = {
+	id = generic_custom.22
+	title = generic_custom.22.t
+	desc = generic_custom.22.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = { # Refused
+		name = generic_custom.22.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+## Surrender
+country_event = {
+	id = generic_custom.23
+	title = generic_custom.23.t
+	desc = generic_custom.23.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = { # Yes
+		name = generic_custom.23.a
+		ai_chance = { factor = 1 }
+		FROM = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				transfer_state_to = ROOT
+			}
+		}
+		white_peace = FROM
+		FROM = {
+			add_timed_idea = {
+				idea = war_reparations_lost
+				days = 120
+			}
+		}
+		add_timed_idea = {
+			idea = war_reparations
+			days = 120
+		}
+		FROM = {
+			every_allied_country = {
+				limit = {
+					has_war = yes
+					}
+				add_timed_idea = {
+					idea = war_reparations_lost
+					days = 120
+				}
+			}
+		}
+	}
+	option = { # No
+		name = generic_custom.23.b
+		ai_chance = { factor = 0.8 }
+		FROM = {
+			country_event = {
+				id = generic_custom.22
+				days = 2
+			}
+		}
+	}
+}
 
 
 

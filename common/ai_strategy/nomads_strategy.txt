@@ -18,22 +18,22 @@ nomads_dont_like_romans_and_parthians = {
     ai_strategy = {
         type = antagonize
         id = ROE
-        value = 10000
+        value = 100
     }
     ai_strategy = {
         type = ignore
         id = ROE
-        value = -10000
+        value = -1000
     }
 	ai_strategy = {
         type = antagonize
         id = PTH
-        value = 10000
+        value = 100
     }
     ai_strategy = {
         type = ignore
         id = PTH
-        value = -10000
+        value = -1000
     }
 }
 

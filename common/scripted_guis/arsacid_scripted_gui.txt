@@ -74,4 +74,26 @@ scripted_gui = {
 			}
 		}
 	}
+
+
+
+
+	arsacid_scripted_gui_council = {
+		context_type = decision_category
+		window_name = "arsacid_gui_council"
+
+		visible = {
+			original_tag = PTH
+		}
+
+		properties = {
+		}
+
+		triggers = {
+		}
+
+		effects = {
+			
+		}
+	}
 }

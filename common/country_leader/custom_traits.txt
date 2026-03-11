@@ -5,6 +5,18 @@ leader_traits = {
 		political_power_gain = 0.1
 	}
 
+	## Parthia
+	PTH_follower_of_jesus = {
+		random = no
+		political_power_gain = 0.2
+		stability_factor = -0.05
+		war_support_factor = 0.05
+	}
+
+	PTH_first_christian_king = {
+		random = no
+	}
+
 	## Rome
 	ROE_first_roman_emperor = {
 		random = no
@@ -36,6 +48,12 @@ leader_traits = {
 	ROE_visible_emperor = {
 		random = no
 		political_power_gain = 0.1
+	}
+
+	god_emperor = {
+		random = no
+		political_power_gain = 0.5
+		stability_factor = 0.1
 	}
 
 	## China

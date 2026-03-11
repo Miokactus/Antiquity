@@ -2,20 +2,28 @@
  ## LEADERS
  augustus_emperor_desc: "Hawk tuah!"
  augustus_emperor: "Imperator Caesar Augustus"
+ god_emperor: "God Emperor Jesus Christ, Saviour of the Masses, King of Kings"
 
  ## TOOLTIPS
- ROE_cities_fight_germans: "We need to either: control the main city of the §RCherusci§!, control the main cities of the §GBructeri§! and the §CCatti§! and an additional city, either from the §HSigambri§! or the §OCauci§!."
+ ROE_cities_fight_germans: "We need to either: control the main city of the §RCherusci§!, control the main cities of the §GBructeri§! and the §CCatti§! and an additional city, either from the §HSigambri§! or the §OCauci§!. §RIf we go beyond 15% capitulation, we will surrender!§!"
  TOBEADDED: "§RNOT YET ADDED! W.I.P.§!"
  ROE_retire_germanicus_tooltip: "§YGermanicus§! shall be rewarded with a §Gtriumph in the streets of Rome§! for his services. After that, he will be sent to §CAsia§!."
  ROE_religious_influence_low: "§YWe will be able to ignore the signs when declaring war!§!"
+ ROE_long_jesus_party: "Ichthusism"
+ ROE_jesus_party: "Ichthus"
+
 
  ## TRAITS
- ROE_roman_emperor: "Emperor of the Romans"
+ ROE_roman_emperor: "Princeps of the Romans"
  ROE_triomphant_son: "The Triomphant Son"
- ROE_princeps: "Princeps"
+ ROE_princeps: "First Citizen Amongst the Citizens"
  ROE_discreet_emperor: "Discreet Emperor"
  ROE_visible_emperor: "Visible Emperor"
  ### EVENTS
+ rome_event.19.t: "Jesus of Nazareth becomes Princeps!"
+ rome_event.19.d: "In search of a new princeps, the authorities of Rome came to Palestine and across every provinces of the country. In their search, they found a man, who was said to always be kind.\n\nAs it should be the main quality of an emperor, along with piety, this man was spared, even if voices started rising asking for his condemnation. \n\nHe then arrived to Rome, was acclaimed Princeps and some even began calling him \"God Emperor\""
+ rome_event.19.a: "Gloria! Gloria!"
+
 
  rome_event.100.t: "War Drums on the Horizon"
  rome_event.100.d: "Our armies are marching towards our enemies, with dignity and grace. However, we are forced to abide by our religious beliefs and must ask the Gods if it is a good time to wage war or not.\n\nThe oracles are gonna take the auspices, and go back to us once they have done that. We should abide by their message, if we want to not go against the Gods."
@@ -31,24 +39,24 @@
 
  ## FOCUS TREE
  ROE_augustus_death: "The Death of Augustus"
- ROE_augustus_death_desc: "Our Emperor is dead. The hopes and dreams of the roman peoples are shattered, but we are not defeated. A new emperor will rise and continue the legacy of Augustus!"
- ROE_the_new_emperor: "A New Emperor?"
- ROE_the_new_emperor_desc: "We need to chose a new Emperor for our great country! Tiberius is the most legitimate one, and will lead us to victory over our enemies!"
+ ROE_augustus_death_desc: "Our Princeps is dead. The hopes and dreams of the roman peoples are shattered, but we are not defeated. A new emperor will rise and continue the legacy of Augustus!"
+ ROE_the_new_emperor: "A New Princeps?"
+ ROE_the_new_emperor_desc: "We need to chose a new Princeps for our great country! Tiberius is the most legitimate one, and will lead us to victory over our enemies!"
 
  ROE_follow_augustus_will: "Follow Augustus' Will"
- ROE_follow_augustus_will_desc: "We will continue on the old Emperor's road. We will continue the Principate and preserve the Republic, in accordance with Augustus' will."
+ ROE_follow_augustus_will_desc: "We will continue on the old Princeps's road. We will continue the Principate and preserve the Republic, in accordance with Augustus' will."
 
  ROE_reject_the_will: "No New Augustus!"
  ROE_reject_the_will_desc: "The People had enough: they want their powers back! The Senate has taken control of the state's affairs and deposed the Princeps; the Republic is back, and no one shall destroy it again!"
  ROE_a_new_dynasty: "A New Dynasty"
  ROE_prevent_a_coup: "Prevent a Coup"
- ROE_put_an_end_to_the_emperors: "Put an End to the Emperors"
+ ROE_put_an_end_to_the_emperors: "Put an End to the Princeps"
  ROE_convene_the_senate: "Convene the Senate"
  ROE_the_senate_takes_control: "The Senate takes Control"
  ROE_proclaim_the_republic: "Proclaim the Republic!"
  ROE_the_senate_is_dissolved: "The Senate is Dissolved"
- ROE_the_rise_of_a_roman_emperor: "The Rise of a Roman Emperor"
- ROE_the_rise_of_a_foreign_emperor: "The Rise of a Foreign Emperor"
+ ROE_the_rise_of_a_roman_emperor: "The Rise of a Roman Princeps"
+ ROE_the_rise_of_a_foreign_emperor: "The Rise of a Foreign Princeps"
  ROE_the_choice: "The Choice"
 
  ROE_appeal_to_the_people: "Appeal to the People"
@@ -119,7 +127,7 @@
 
  ROE_the_senate_confirmation: "The Senate's Confirmation"
  ROE_purge_opposants: "Purge Opposants"
- ROE_hail_the_new_emperor: "Hail the New Emperor!"
+ ROE_hail_the_new_emperor: "Hail the New Princeps!"
  ROE_refuse_too_many_honors: "Refuse Too Many Honours"
  ROE_delegate_to_the_senate: "Delegate to the Senate"
  ROE_embrace_the_princeps_title: "Embrace the Princeps' Title"
@@ -129,8 +137,8 @@
  ROE_grant_gifts_to_the_armies: "Grant Gifts to the Armies"
  ROE_germanicus_campaigns: "Germanicus' Campaigns"
 
- ROE_a_jewish_emperor: "A Jewish Emperor"
- ROE_a_gallo_emperor: "A Gallo-Roman Emperor"
+ ROE_a_jewish_emperor: "A Jewish Princeps"
+ ROE_a_gallo_emperor: "A Gallo-Roman Princeps"
  ROE_search_east: "Seek to the East!"
 
 
@@ -166,3 +174,6 @@
  ROE_woodworks_in_lutecia: "Woodworks in Lutecia"
  ROE_reinforce_the_lex_julia: "Reinforce the Lex Julia"
  ROE_proclaim_the_romans_superiority: "The Romans' Superiority"
+
+ ROE_jewish_problem: "The Jewish Problem"
+ ROE_question_about_the_jews: "Question about the Jews"

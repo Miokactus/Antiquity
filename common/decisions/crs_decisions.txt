@@ -3,7 +3,7 @@ alliance_germans = {
 	invite_tribes = {
 		icon = generic_civil_support
 		cost = 75
-
+		days_re_enable = 30
 		allowed = {
 			tag = CRS
     	}
@@ -17,11 +17,13 @@ alliance_germans = {
 		target_trigger = { 
 			FROM = {
     			every_country = {
-        			is_neighbor_of = {
-						OR = {
-							tag = ROOT
-							any_country = {
-								is_ally_with = ROOT
+					limit = {
+        				is_neighbor_of = {
+							OR = {
+								tag = ROOT
+								any_other_country = {
+									is_ally_with = ROOT
+								}
 							}
 						}
 					}
@@ -37,6 +39,12 @@ alliance_germans = {
 					tag = QUA
 					tag = VBI
 					tag = ROE
+					tag = LUG
+					tag = VDN
+					tag = AES
+					tag = TSA
+					tag = SNI
+					tag = FNI
 					is_subject_of = PTH
 					is_subject_of = ROOT
 					is_subject_of = ROE
@@ -67,7 +75,7 @@ alliance_puppet = {
 	puppet_tribes = {
 		icon = generic_civil_support
 		cost = 80
-		days_re_enable = 120
+		days_re_enable = 100
 		allowed = {
 			tag = CRS
     	}

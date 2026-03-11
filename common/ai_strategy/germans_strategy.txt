@@ -91,6 +91,6 @@ germans_likes_amirinius = {
     ai_strategy = {
         type = befriend
         id = CRS
-        value = 10000
+        value = 1000
     }
 }

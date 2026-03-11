@@ -3,6 +3,8 @@ capital = 413
 oob = "CHA_14"
 
 set_research_slots = 1
+set_stability = 0.6
+set_war_support = 0.22
 
 create_country_leader = {
     name = "Abinergaos I"
@@ -43,4 +45,5 @@ add_ideas = {
     limited_exports
     limited_conscription
     civilian_economy
+    PTH_subject_of_arsacid
 }

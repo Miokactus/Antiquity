@@ -30,3 +30,18 @@ everyone_custom_dontcare_about_anarchy = {
         value = -500
     }
 }
+
+tribal_wants_claims = {
+    allowed = {
+        has_government = neutrality
+    }
+    enable = {
+        always = yes
+    }
+    abort = {
+    }
+    ai_strategy = {
+        type = force_build_armies
+        value = 4
+    }
+}

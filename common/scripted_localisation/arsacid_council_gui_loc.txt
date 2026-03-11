@@ -1,0 +1,184 @@
+#defined_text = { # state
+#	name = ask_tributary_loc
+#
+#	text = {
+#		trigger = {
+#			pd_is_marked = yes
+#		}
+#		localization_key = "pd_offer_peace_deal_marked_entry"
+#	}
+#	
+#	text = {
+#		trigger = {
+#			pd_is_invisible = yes
+#		}
+#		localization_key = ""
+#	}
+#	
+#	text = {
+#		localization_key = "pd_offer_peace_deal_entry"
+#	}
+#}
+
+defined_text = {
+    name = GetCouncilAllegianceSuren
+    text = {
+        trigger = {
+            check_variable = { house_suren < 10 }
+        }
+        localization_key = "house_disfavour"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { house_suren = 10 }
+                check_variable = { house_suren < 20 }
+            }
+        }
+        localization_key = "house_neutral"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { house_suren = 20 }
+                check_variable = { house_suren > 20 }
+            }
+        }
+        localization_key = "house_favour"
+    }
+    text = {
+        localization_key = "house_disfavour"
+    }
+}
+
+defined_text = {
+    name = GetCouncilAllegianceKaren
+    text = {
+        trigger = {
+            check_variable = { house_karen < 10 }
+        }
+        localization_key = "house_disfavour"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { house_karen = 10 }
+                check_variable = { house_karen < 20 }
+            }
+        }
+        localization_key = "house_neutral"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { house_karen = 20 }
+                check_variable = { house_karen > 20 }
+            }
+        }
+        localization_key = "house_favour"
+    }
+    text = {
+        localization_key = "house_disfavour"
+    }
+}
+
+
+defined_text = {
+    name = GetCouncilAllegianceZik
+    text = {
+        trigger = {
+            check_variable = { house_zik < 10 }
+        }
+        localization_key = "house_disfavour"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { house_zik = 10 }
+                check_variable = { house_zik < 20 }
+            }
+        }
+        localization_key = "house_neutral"
+    }
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { house_zik = 20 }
+                check_variable = { house_zik > 20 }
+            }
+        }
+        localization_key = "house_favour"
+    }
+    text = {
+        localization_key = "house_disfavour"
+    }
+}
+
+
+defined_text = {
+    name = GetCouncilAllegianceSupport
+    text = {
+        trigger = {
+            OR = {
+                check_variable = { council_allegiance_arsacid = 0 }
+                check_variable = { council_allegiance_arsacid < 10 }
+            }
+        }
+        localization_key = "council_allegiance_support_rebellious"
+    }
+    text = {
+        trigger = {
+            AND = {
+                check_variable = { council_allegiance_arsacid > 10 }
+                check_variable = { council_allegiance_arsacid < 20 }
+            }
+        }
+        localization_key = "council_allegiance_support_against_us"
+    }
+    text = {
+        trigger = {
+            AND = {
+                check_variable = { council_allegiance_arsacid > 20 }
+                check_variable = { council_allegiance_arsacid < 30 }
+            }
+        }
+        localization_key = "council_allegiance_support_unsupportive"
+    }
+    text = {
+        trigger = {
+            AND = {
+                check_variable = { council_allegiance_arsacid > 30 }
+                check_variable = { council_allegiance_arsacid < 60 }
+            }
+        }
+        localization_key = "council_allegiance_support_neutral"
+    }
+    text = {
+        trigger = {
+            AND = {
+                check_variable = { council_allegiance_arsacid > 60 }
+                check_variable = { council_allegiance_arsacid < 70 }
+            }
+        }
+        localization_key = "council_allegiance_support_favourable"
+    }
+    text = {
+        trigger = {
+            AND = {
+                check_variable = { council_allegiance_arsacid > 70 }
+                check_variable = { council_allegiance_arsacid < 80 }
+            }
+        }
+        localization_key = "council_allegiance_support_supportive"
+    }
+    text = {
+        trigger = {
+            AND = {
+                check_variable = { council_allegiance_arsacid > 80 }
+                check_variable = { council_allegiance_arsacid < 91 }
+            }
+        }
+        localization_key = "council_allegiance_support_loyal"
+    }
+}
+

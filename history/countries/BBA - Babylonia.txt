@@ -3,6 +3,8 @@ capital = 1011
 oob = "BBA_14"
 
 set_research_slots = 1
+set_stability = 0.31
+set_war_support = 0.12
 
 create_country_leader = {
     name = "Administration of Babylonia"
@@ -53,4 +55,5 @@ add_ideas = {
     limited_exports
     limited_conscription
     civilian_economy
+    PTH_subject_of_arsacid
 }

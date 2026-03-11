@@ -4,11 +4,19 @@ war_actions = {
 		target_root_trigger = { TAG = ROOT }
 		target_array = enemies
 		cost = 60
+		days_re_enable = 30
 		target_trigger = { 
 			FROM = {
 				NOT = {
 					is_subject = yes
 				}
+				OR = {
+					NOT = {
+						is_in_faction = yes
+					}
+					is_faction_leader = yes
+				}
+				has_war_with = ROOT
 			}
 		}
 		allowed = {
@@ -23,13 +31,18 @@ war_actions = {
 				is_faction_leader = yes
 			}
 			FROM = {
-				surrender_progress > 0.3
+				surrender_progress > 0.15
 			}
 			ROOT = {
 				surrender_progress < 0.05
 				FROM = {
 					any_owned_state = {
-						is_controlled_by = ROOT
+						controller = {
+							OR = {
+								tag = FROM
+								is_ally_with = FROM
+							}
+						}
 					}
 				}
 			}
@@ -39,36 +52,15 @@ war_actions = {
 		}
 		visible = {
 			has_war = yes
+			NOT = {
+				is_subject = yes
+			}
 		}
 		complete_effect = {
-			every_controlled_state = {
-				limit = {
-					owner = {
-						has_war_with = ROOT
-					}
-				}
-				transfer_state_to = ROOT
-			}
-			white_peace = FROM
-			add_timed_idea = {
-				idea = war_reparations
-				days = 120
-			}
-			ROOT = {
-				every_allied_country = {
-					limit = {
-						has_war = yes
-					}
-					add_timed_idea = {
-						idea = war_reparations
-						days = 120
-					}
-				}
-			}
 			FROM = {
-				add_timed_idea = {
-					idea = war_reparations_lost
-					days = 120
+				country_event = {
+					id = generic_custom.20
+					days = 5
 				}
 			}
 		}
@@ -89,11 +81,19 @@ war_actions = {
 		target_root_trigger = { TAG = ROOT }
 		target_array = enemies
 		cost = 40
+		days_re_enable = 30
 		target_trigger = { 
 			FROM = {
 				NOT = {
 					is_subject = yes
 				}
+				OR = {
+					NOT = {
+						is_in_faction = yes
+					}
+					is_faction_leader = yes
+				}
+				has_war_with = ROOT
 			}
 		}
 		allowed = {
@@ -109,13 +109,7 @@ war_actions = {
 			}
 			war_length_with = {
     			tag = FROM
-    			months > 2
-			}
-			FROM = {
-				surrender_progress < 0.05
-			}
-			ROOT = {
-				surrender_progress < 0.05
+    			months > 4
 			}
 			NOT = {
 				has_civil_war = yes
@@ -123,9 +117,17 @@ war_actions = {
 		}
 		visible = {
 			has_war = yes
+			NOT = {
+				is_subject = yes
+			}
 		}
 		complete_effect = {
-			white_peace = FROM
+			FROM = {
+				country_event = {
+					id = generic_custom.21
+					days = 5
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -133,7 +135,7 @@ war_actions = {
 				factor = 400
 				war_length_with = {
     				tag = FROM
-    				months > 4
+    				months > 9
 				}
 				FROM = {
 					surrender_progress < 0.05
@@ -148,13 +150,20 @@ war_actions = {
 	surrender = {
 		icon = generic_prepare_civil_war
 		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 30
 		target_array = enemies
-		cost = 5
 		target_trigger = { 
 			FROM = {
 				NOT = {
 					is_subject = yes
 				}
+				OR = {
+					NOT = {
+						is_in_faction = yes
+					}
+					is_faction_leader = yes
+				}
+				has_war_with = ROOT
 			}
 		}
 		allowed = {
@@ -172,44 +181,36 @@ war_actions = {
 				surrender_progress < 0.05
 				ROOT = {
 					any_owned_state = {
-						is_controlled_by = FROM
+						controller = {
+							OR = {
+								tag = FROM
+								is_ally_with = FROM
+							}
+						}
 					}
 				}
 			}
 			ROOT = {
-				surrender_progress > 0.3
+				OR = {
+					surrender_progress > 0.2
+					AND = {
+						tag = ROE
+						surrender_progress > 0.15
+					}
+				}
 			}
 		}
 		visible = {
 			has_war = yes
+			NOT = {
+				is_subject = yes
+			}
 		}
 		complete_effect = {
-			every_owned_state = {
-				limit = {
-					is_controlled_by = FROM
-				}
-				transfer_state_to = FROM
-			}
-			white_peace = FROM
 			FROM = {
-				add_timed_idea = {
-					idea = war_reparations
-					days = 120
-				}
-			}
-			add_timed_idea = {
-				idea = war_reparations_lost
-				days = 120
-			}
-			ROOT = {
-				every_allied_country = {
-					limit = {
-						has_war = yes
-					}
-					add_timed_idea = {
-						idea = war_reparations_lost
-						days = 120
-					}
+				country_event = {
+					id = generic_custom.23
+					days = 5
 				}
 			}
 		}
@@ -251,6 +252,11 @@ war_actions = {
 		visible = {
 			NOT = {
 				has_war = yes
+			}
+			NOT = {
+				tag = AAN
+				tag = FAL
+				tag = FAA
 			}
 		}
 		complete_effect = {

@@ -191,6 +191,17 @@ ideas = {
 			}
 		}
 
+		XIN_coordinated_rebels = {
+			name = "Coordinated Rebels"
+			allowed_civil_war = { always = yes }
+			picture = generic_disjointed_gov
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = 0.05
+				surrender_limit = 0.6
+			}
+		}
+
 		XIN_peasant_support_rising = {
 			name = "Peasant's Support Rising"
 			allowed_civil_war = { always = yes }

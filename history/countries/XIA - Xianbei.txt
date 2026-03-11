@@ -3,6 +3,8 @@ capital = 714
 oob = "XIA_14" 
 
 set_research_slots = 1
+set_stability = 0.65
+set_war_support = 0.29
 
 create_country_leader = {
     name = "Chiefdoms"

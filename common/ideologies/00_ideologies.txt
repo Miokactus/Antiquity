@@ -325,7 +325,7 @@ ideologies = {
 		faction_modifiers = {
 		}
 
-		ai_neutral = yes #
+		ai_fascist = yes #
 		ai_ideology_wanted_units_factor = 1.15
 		
 		ai_give_core_state_control_threshold = 10000

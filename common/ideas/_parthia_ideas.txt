@@ -1,16 +1,249 @@
 ideas = {
 	country = {
 		
+		PTH_subject_of_arsacid = {
+			name = "Satrap of the Arsacid"
+			allowed_civil_war = { always = yes }
+			picture = COG_the_invisible_roof
+			cancel = {
+				ROOT = {
+					NOT = {
+						is_subject_of = PTH
+					}
+				}
+			}
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = 0.2
+			}
+		}
+
 	## PARTHIAN EMPIRE ##
+
+		PTH_strange_faith_from_the_west_idea = {
+			name = "Strange Faith from the West"
+			allowed_civil_war = { always = yes }
+			picture = POL_ideology_drift_defence
+			modifier = {
+				monthly_population = 0.3
+				political_power_cost = 0.2
+			}
+		}
+
+		PTH_reforming_the_economy_idea = {
+			name = "Reforming the Economy"
+			allowed_civil_war = { always = yes }
+			picture = generic_economic_increase
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+
+		PTH_new_coins = {
+			name = "New Coins"
+			allowed_civil_war = { always = yes }
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		PTH_exceptional_taxes = {
+			name = "Exceptional Taxes"
+			allowed_civil_war = { always = yes }
+			picture = ETH_taxed_nobility
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.08
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
 		
 		PTH_decentralised_structure = {
 			name = "Decentralised Government Structure"
 			allowed_civil_war = { always = yes }
 			picture = AFG_economic_regionalism
 			modifier = {
-				stability_factor = 0.15
+				stability_factor = 0.08
 				political_power_cost = 0.5
-				army_org_factor = -0.12
+				army_org_factor = -0.1
+			}
+		}
+
+		PTH_decentralised_structure2 = {
+			name = "Decentralised Government Structure"
+			allowed_civil_war = { always = yes }
+			picture = AFG_economic_regionalism
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = 0.1
+				army_org_factor = -0.1
+			}
+		}
+
+		PTH_parthian_army = {
+			name = "The Arsacid Army"
+			allowed_civil_war = { always = yes }
+			picture = ICE_thungur_hnifur
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.1
+				army_advisor_cost_factor = 0.5
+				navy_advisor_cost_factor = 0.5
+			}
+		}
+
+		PTH_multicultural_nation = {
+			name = "Multicultural Nation"
+			allowed_civil_war = { always = yes }
+			picture = PER_unification_initiative_idea
+			modifier = {
+				stability_factor = -0.05
+				political_power_cost = 0.2
+				conscription_factor = 0.05
+			}
+		}
+
+
+
+		PTH_memories_of_the_achaemenid_idea = {
+			name = "Memories of the Achaemenid Empire"
+			allowed_civil_war = { always = yes }
+			picture = FRA_scw_intervention_nationalists_focus
+			modifier = {
+				war_support_factor = 0.1
+				consumer_goods_factor = -0.05
+				supply_consumption_factor = -0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+				surrender_limit = 0.8
+			}
+		}
+
+		PTH_ministry_of_finances = {
+			name = "Ministry of Finances"
+			allowed_civil_war = { always = yes }
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		PTH_zoroastrianism = {
+			name = "Promote Zoroastrianism"
+			allowed_civil_war = { always = yes }
+			picture = PER_old_ways_idea
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = -0.05
+				
+			}
+		}
+
+		PTH_king_of_kings = {
+			name = "King of Kings"
+			allowed_civil_war = { always = yes }
+			picture = AUS_habsburg_monarchy_restored
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = 0.05
+			}
+		}
+
+		PTH_reforming_the_administration = {
+			name = "Reforming the Administration"
+			allowed_civil_war = { always = yes }
+			picture = generic_constitutional_guarantees
+			modifier = {
+				political_power_gain = -0.5
+				stability_weekly_factor = -0.02
+				war_support_factor = -0.05
+				army_org_factor = -0.2
+			}
+			on_remove = {
+				swap_ideas = {
+					remove_idea = PTH_decentralised_structure
+					add_idea = PTH_centralisation_of_affairs
+				}
+			}
+		}
+
+		PTH_centralisation_of_affairs = {
+			name = "Centralisation of Affairs"
+			allowed_civil_war = { always = yes }
+			picture = generic_intel_bonus
+			modifier = {
+				stability_factor = 0.1
+				drift_defence_factor = 0.3
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				war_stability_factor = -0.4
+			}
+		}
+
+		PTH_romans_of_the_east = {
+			name = "Romans of the East"
+			allowed_civil_war = { always = yes }
+			picture = ITA_new_roman_empire_ns
+			modifier = {
+				justify_war_goal_time = -0.5
+				compliance_growth_on_our_occupied_states = -0.2
+				resistance_growth_on_our_occupied_states = 0.1
+			}
+		}
+
+		PTH_iranian_cultural_revolution = {
+			name = "Iranian Cultural Revolution"
+			allowed_civil_war = { always = yes }
+			picture = PER_iranian_oil_company
+			modifier = {
+				drift_defence_factor = -0.3
+				political_power_gain = 0.5
+			}
+		}
+
+		PTH_letting_go_of_greek = {
+			name = "Letting Go of Greek Influence"
+			allowed_civil_war = { always = yes }
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.2
+			}
+		}
+
+		PTH_influx_of_christians = {
+			name = "Influx of Christians"
+			allowed_civil_war = { always = yes }
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_factor = -0.05
+				weekly_manpower = 1500
+				war_support_factor = 0.06
+			}
+			on_remove = {
+				add_dynamic_modifier = {
+					modifier = PTH_judaism_integration
+				}
+			}
+		}
+
+		PTH_conflictual_society = {
+			name = "Conflictual Religious Beliefs"
+			allowed_civil_war = { always = yes }
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.5
+				war_support_factor = 0.14
+			}
+			on_remove = {
 			}
 		}
 

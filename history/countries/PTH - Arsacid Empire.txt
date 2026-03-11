@@ -3,8 +3,14 @@
 oob = "PTH_14"
 
 set_research_slots = 2
+set_stability = 0.42
+set_war_support = 0.26
 
 recruit_character = artabanus_ii
+recruit_character = artabanus_ii_fascist
+recruit_character = parthian_nobility
+recruit_character = PTH_tribal_administration
+recruit_character = PTH_peasant_councils
 
 # Starting tech
 set_technology = {
@@ -29,10 +35,22 @@ set_popularities = {
 	communism = 70
 	neutrality = 0
 }
- 
+
+set_variable = { judaism_integration_ws = 0.02 }
+set_variable = { judaism_integration_stab = -0.2 }
+set_variable = { judaism_integration_mob = -0.2 }
+
+set_variable = { house_suren = 6 }
+set_variable = { house_karen = 8 }
+set_variable = { house_zik = 4 }
+
+add_dynamic_modifier = { modifier = PTH_council_loyalty }
+
 add_ideas = {
 	export_focus
 	limited_conscription
 	civilian_economy
 	PTH_decentralised_structure
+	PTH_parthian_army
+	PTH_multicultural_nation
 }

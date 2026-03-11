@@ -36,14 +36,14 @@ default_unit_production = {
 
 	ai_strategy = {
 		type = role_ratio
-		id = armor
-		value = 2
+		id = cavalry
+		value = 60
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 80
+		value = 260
 	}
 
 	# Air unit factors
@@ -1107,7 +1107,7 @@ DEFAULT_early_template_design = {
 	ai_strategy = {
 		type = template_prio
 		id = cavalry
-		value = -100
+		value = 100
 	}
 
 	ai_strategy = {
@@ -1131,7 +1131,7 @@ DEFAULT_early_template_design = {
 	ai_strategy = {
 		type = template_prio
 		id = infantry
-		value = 60
+		value = 130
 	}
 }
 

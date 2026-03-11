@@ -14,25 +14,20 @@ XAI_wants_the_protectorates = {
 			is_subject_of = XAI
 		}
     }
-    ai_strategy = {
-        type = conquer
-        id = WPC
-        value = 20000
-    }
 	ai_strategy = {
         type = antagonize
         id = WPC
-        value = 20000
+        value = 200
     }
     ai_strategy = {
         type = consider_weak
         id = WPC
-        value = 20000
+        value = 200
     }
     ai_strategy = {
         type = ignore
         id = WPC
-        value = -20000
+        value = -200
     }
 }
 

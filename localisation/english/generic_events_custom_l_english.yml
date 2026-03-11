@@ -27,6 +27,30 @@
  generic_custom.13.d: "Some random korean state unifying with its puppet."
  generic_custom.13.a: "Who?"
 
+ generic_custom.14.t: "Integration of Cappadocia!"
+ generic_custom.14.d: "The Kingdom of Cappadocia will now be integrated within the Roman Empire!"
+ generic_custom.14.a: "Roman hegemony grows bigger."
+
+
+
+ generic_custom.20.t: "§Y[FROM.GetName]§! asks for our surrender!"
+ generic_custom.20.d: "§Y[FROM.GetName]§! has asked for us to surrender to them, which would mean that they would annex every territories they occupy."
+ generic_custom.20.a: "There's nothing we can do.."
+ generic_custom.20.b: "We'll fight until the end!"
+
+ generic_custom.21.t: "§Y[FROM.GetName]§! is asking for a white peace!"
+ generic_custom.21.d: "§Y[FROM.GetName]§! is asking for a white peace. We should answer yes, knowing that we can't really push."
+ generic_custom.21.a: "Alright."
+ generic_custom.21.b: "Nope."
+
+ generic_custom.22.t: "Offer of Peace - Refused"
+ generic_custom.22.d: "They refused our offer of peace! We must continue to fight and try again later."
+ generic_custom.22.a: "I'll kill them!"
+
+ generic_custom.23.t: "§Y[FROM.GetName]§! is offering to surrender!"
+ generic_custom.23.d: "§Y[FROM.GetName]§! is offering to surrender to us, therefore letting us annex everything we currently control. We should accept if we have difficulties with manpower and equipment."
+ generic_custom.23.a: "We accept."
+ generic_custom.23.b: "We shall conquer everything they own!"
 
 
 

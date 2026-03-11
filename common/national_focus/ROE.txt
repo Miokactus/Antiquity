@@ -43,7 +43,7 @@ focus_tree = {
 		relative_position_id = ROE_augustus_death
 		x = 0		
 		y = 1
-		cost = 4
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -64,7 +64,7 @@ focus_tree = {
 		relative_position_id = ROE_augustus_death
 		x = 7
 		y = 2
-		cost = 4
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -134,7 +134,7 @@ focus_tree = {
 		relative_position_id = ROE_follow_augustus_will
 		x = 2
 		y = 3
-		cost = 7
+		cost = 9
 		available = { 
 		}
 		search_filters = {
@@ -244,7 +244,7 @@ focus_tree = {
 		relative_position_id = ROE_follow_augustus_will
 		x = 2
 		y = 4
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -360,7 +360,7 @@ focus_tree = {
 		relative_position_id = ROE_follow_augustus_will
 		x = -1
 		y = 5
-		cost = 2
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -380,7 +380,7 @@ focus_tree = {
 		relative_position_id = ROE_follow_augustus_will
 		x = -2
 		y = 2
-		cost = 7
+		cost = 9
 		available = { 
 		}
 		search_filters = {
@@ -824,7 +824,7 @@ focus_tree = {
 		relative_position_id = ROE_augustus_death
 		x = -7
 		y = 2
-		cost = 4
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -851,7 +851,7 @@ focus_tree = {
 		relative_position_id = ROE_reject_the_will
 		x = 4
 		y = 1
-		cost = 4
+		cost = 8
 		available = { 
 			has_completed_focus = ROE_prevent_a_coup
 		}
@@ -903,7 +903,7 @@ focus_tree = {
 		relative_position_id = ROE_reject_the_will
 		x = -4
 		y = 1
-		cost = 4
+		cost = 8
 		available = { 
 			has_completed_focus = ROE_prevent_a_coup
 		}
@@ -951,7 +951,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 2
 		y = 2
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -975,7 +975,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 2
 		y = 3
-		cost = 4
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -998,7 +998,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 3
 		y = 4
-		cost = 7
+		cost = 9
 		available = { 
 		}
 		search_filters = {
@@ -1018,7 +1018,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 1
 		y = 4
-		cost = 7
+		cost = 9
 		available = { 
 		}
 		search_filters = {
@@ -1060,7 +1060,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 3
 		y = 6
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1081,7 +1081,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 4
 		y = 7
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1102,7 +1102,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 2
 		y = 7
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1126,7 +1126,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 3
 		y = 8
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1159,7 +1159,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -2
 		y = 2
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1270,7 +1270,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -2
 		y = 4.5
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1291,9 +1291,9 @@ focus_tree = {
 		id = ROE_develop_democratic_sentiment
 		icon = GFX_SOV_return_democracy_to_the_party_ccp_2d_sov_compatibility
 		relative_position_id = ROE_put_an_end_to_the_emperors
-		x = -3
+		x = -4
 		y = 6
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1310,20 +1310,43 @@ focus_tree = {
 		}
 	}
 
-	#Develop the Farms
+	#Jewish Issue
 	focus = {
-		id = ROE_develop_the_farms
-		icon = GFX_focus_generic_farmland
+		id = ROE_jewish_problem
+		icon = GFX_focus_IRQ_demand_palestine
 		relative_position_id = ROE_put_an_end_to_the_emperors
-		x = 0
+		x = 1
 		y = 6
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ROE_power_to_the_comitia focus = ROE_proclaim_the_republic}
+		prerequisite = { focus = ROE_power_to_the_comitia focus = ROE_proclaim_the_republic }
+		mutually_exclusive = { }
+		completion_reward = {
+			country_event = {
+				id = rome_event.20
+				days = 1
+			}
+		}
+	}
+
+	#Develop the Farms
+	focus = {
+		id = ROE_develop_the_farms
+		icon = GFX_focus_generic_farmland
+		relative_position_id = ROE_put_an_end_to_the_emperors
+		x = -1
+		y = 6
+		cost = 8
+		available = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_power_to_the_comitia }
 		mutually_exclusive = { }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1360,13 +1383,13 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 0
 		y = 7
-		cost = 70
+		cost = 8
 		available = { 
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ROE_develop_democratic_sentiment focus = ROE_develop_the_farms }
+		prerequisite = { focus = ROE_develop_democratic_sentiment focus = ROE_develop_the_farms focus = ROE_jewish_problem }
 		mutually_exclusive = { }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1470,7 +1493,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -2
 		y = 9
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1493,7 +1516,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -6
 		y = 9
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1549,7 +1572,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -2
 		y = 10
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1754,7 +1777,7 @@ focus_tree = {
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -1
 		y = 11
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -1969,7 +1992,7 @@ focus_tree = {
 			CTC = {
 				country_event = { 
 					id = rome_event.102
-					days = 8
+					days = 5
 				}
 			}
 		}
@@ -1983,7 +2006,7 @@ focus_tree = {
 		x = -10
 		y = 13
 		cost = 16
-		visible = {
+		allow_branch = {
 			has_country_flag = enough_tech_to_discover
 		}
 		available = { 
@@ -2010,7 +2033,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 2
-		cost = 4
+		cost = 8
 		available = { 
 			
 		}
@@ -2033,7 +2056,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 4
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2053,7 +2076,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 5
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2099,7 +2122,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 3
 		y = 4
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2125,7 +2148,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 4
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2150,7 +2173,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 4
 		y = 5
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2171,7 +2194,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 3
 		y = 6
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2195,7 +2218,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 6
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2239,7 +2262,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 7
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2301,7 +2324,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = -3
 		y = 4
-		cost = 7
+		cost = 9
 		available = { 
 			
 		}
@@ -2330,7 +2353,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = -1
 		y = 4
-		cost = 7
+		cost = 9
 		available = { 
 			has_completed_focus = ROE_towards_militarisation
 		}
@@ -2407,7 +2430,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 7
-		cost = 6
+		cost = 8
 		available = { 
 			
 		}
@@ -2451,7 +2474,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 8
-		cost = 6
+		cost = 8
 		available = { 
 			
 		}
@@ -2518,8 +2541,8 @@ focus_tree = {
 
 	#Reinforce the Local Governments
 	focus = {
-		id = ROE_reinforce_the_local_governments
-		icon = GFX
+		id = ROE_question_about_the_jews
+		icon = GFX_focus_IRQ_demand_palestine
 		relative_position_id = ROE_a_new_dynasty
 		x = 3
 		y = 8
@@ -2533,33 +2556,9 @@ focus_tree = {
 		prerequisite = { focus = ROE_woodworks_development }
 		mutually_exclusive = { }
 		completion_reward = {
-			random_owned_controlled_state = {
-				add_building_construction = {
- 					type = infrastructure
-    				level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
- 					type = infrastructure
-    				level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
- 					type = infrastructure
-    				level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
- 					type = infrastructure
-    				level = 1
-					instant_build = yes
-				}
+			country_event = {
+				id = rome_event.20
+				days = 1
 			}
 		}
 	}
@@ -2580,7 +2579,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROE_open_new_mines }
 		prerequisite = { focus = ROE_appease_the_farmers }
-		prerequisite = { focus = ROE_reinforce_the_local_governments }
+		prerequisite = { focus = ROE_question_about_the_jews }
 		mutually_exclusive = { }
 		completion_reward = {
 			upgrade_economy_law = yes
@@ -2595,7 +2594,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = -1
 		y = 10
-		cost = 6
+		cost = 8
 		available = { 
 			
 		}
@@ -2675,7 +2674,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 10
-		cost = 6
+		cost = 8
 		available = { 
 			
 		}
@@ -2721,7 +2720,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 11
-		cost = 6
+		cost = 8
 		available = { 
 			
 		}
@@ -2804,7 +2803,7 @@ focus_tree = {
 		relative_position_id = ROE_a_new_dynasty
 		x = -1
 		y = 2
-		cost = 4
+		cost = 8
 		available = { 
 			is_ai = no
 		}
@@ -2825,7 +2824,7 @@ focus_tree = {
 		relative_position_id = ROE_augustus_death
 		x = 8
 		y = 23
-		cost = 4
+		cost = 8
 		available = { 
 			has_completed_focus = ROE_the_rise_of_a_foreign_emperor
 		}
@@ -2867,8 +2866,15 @@ focus_tree = {
 		relative_position_id = ROE_the_choice
 		x = 3
 		y = 1
-		cost = 4
+		cost = 8
 		available = { 
+			NOT = {
+				PTH = {
+					has_country_flag = PTH_christian_empire
+				}
+			}
+		}
+		allow_branch = {
 			
 		}
 		search_filters = {
@@ -2877,7 +2883,10 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_choice }
 		mutually_exclusive = { focus = ROE_search_east focus = ROE_a_gallo_emperor }
 		completion_reward = {
-			
+			country_event = {
+				id = rome_event.19
+				days = 2
+			}
 		}
 	}
 
@@ -2888,7 +2897,7 @@ focus_tree = {
 		relative_position_id = ROE_the_choice
 		x = -3
 		y = 1
-		cost = 4
+		cost = 8
 		available = { 
 			
 		}
@@ -2909,7 +2918,7 @@ focus_tree = {
 		relative_position_id = ROE_the_choice
 		x = 0
 		y = 1
-		cost = 4
+		cost = 8
 		available = { 
 			has_opinion = {
     			target = XIN
@@ -3019,7 +3028,7 @@ focus_tree = {
 		relative_position_id = ROE_reform_the_imperial_army
 		x = 1
 		y = 1
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {
@@ -3042,7 +3051,7 @@ focus_tree = {
 		relative_position_id = ROE_reform_the_imperial_army
 		x = -1
 		y = 1
-		cost = 6
+		cost = 8
 		available = { 
 		}
 		search_filters = {

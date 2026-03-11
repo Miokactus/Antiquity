@@ -5,6 +5,7 @@ parthian_administration_flags = {
 		days_re_enable = 210
 		cost = 50
 		days_remove = 35
+		priority = 10
         target_array = ROOT.subjects
 		target_trigger = { 
 			FROM = {
@@ -116,6 +117,7 @@ parthian_administration_flags = {
 		target_root_trigger = { TAG = ROOT }
 		days_re_enable = 200
 		cost = 100
+		priority = 9
         target_array = ROOT.subjects
 		target_trigger = { 
 			FROM = {
@@ -207,6 +209,7 @@ parthian_administration_flags = {
 		target_root_trigger = { TAG = ROOT }
 		days_re_enable = 150
 		cost = 100
+		priority = 7
         target_array = ROOT.subjects
 		target_trigger = { 
 			FROM = {
@@ -228,7 +231,7 @@ parthian_administration_flags = {
 		available = {
 			OR = {
 				has_war = yes
-				has_manpower < 20000
+				has_manpower < 200000
 			}
 			FROM = {
 				NOT = {
@@ -237,10 +240,11 @@ parthian_administration_flags = {
 			}
 		}
 		visible = {
+			always = no
 			original_tag = PTH
 			OR = {
 				has_war = yes
-				has_manpower < 20000
+				has_manpower < 200000
 			}
 			FROM = {
 				NOT = {
@@ -308,6 +312,7 @@ parthian_administration_flags = {
 		target_root_trigger = { TAG = ROOT }
 		days_re_enable = 150
 		cost = 100
+		priority = 6
         target_array = ROOT.subjects
 		target_trigger = { 
 			FROM = {
@@ -402,6 +407,7 @@ parthian_administration_flags = {
 		target_root_trigger = { TAG = ROOT }
 		days_re_enable = 110
 		cost = 100
+		priority = 5
         target_array = ROOT.subjects
 		target_trigger = { 
 			FROM = {
@@ -510,4 +516,250 @@ parthian_administration_flags = {
 			factor = 1
 		}
     }
+}
+
+
+parthian_council = {
+	lobby_suren = {
+		icon = generic_prepare_civil_war
+		days_re_enable = 10
+		cost = 30
+		priority = 10
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { house_suren < 30 }
+		}
+		visible = {
+			original_tag = PTH
+			
+		}
+		complete_effect = {
+			add_to_variable = {
+				house_suren = 2
+			}
+			custom_effect_tooltip = house_lobbying_tooltip
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+	lobby_karen = {
+		icon = generic_prepare_civil_war
+		days_re_enable = 10
+		cost = 30
+		priority = 10
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { house_karen < 30 }
+		}
+		visible = {
+			original_tag = PTH
+			
+		}
+		complete_effect = {
+			add_to_variable = {
+				house_karen = 2
+			}
+			custom_effect_tooltip = house_lobbying_tooltip
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+	lobby_zik = {
+		icon = generic_prepare_civil_war
+		days_re_enable = 10
+		cost = 30
+		priority = 10
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { house_zik < 30 }
+		}
+		visible = {
+			original_tag = PTH
+			
+		}
+		complete_effect = {
+			add_to_variable = {
+				house_zik = 2
+			}
+			custom_effect_tooltip = house_lobbying_tooltip
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+
+	use_houses_influence_suren = {
+		icon = generic_civil_support
+		days_re_enable = 10
+		cost = 20
+		priority = 8
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { house_suren > 4 }
+		}
+		visible = {
+			original_tag = PTH
+		}
+		complete_effect = {
+			add_to_variable = {
+				house_suren = -4
+			}
+			add_political_power = 50
+			add_stability = 0.03
+			add_war_support = 0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+	use_houses_influence_karen = {
+		icon = generic_civil_support
+		days_re_enable = 10
+		cost = 20
+		priority = 8
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { house_karen > 4 }
+		}
+		visible = {
+			original_tag = PTH
+		}
+		complete_effect = {
+			add_to_variable = {
+				house_karen = -4
+			}
+			add_political_power = 30
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+	use_houses_influence_zik = {
+		icon = generic_civil_support
+		days_re_enable = 10
+		cost = 20
+		priority = 8
+		allowed = {
+			always = yes
+		}
+		available = {
+			check_variable = { house_zik > 4 }
+		}
+		visible = {
+			original_tag = PTH
+		}
+		complete_effect = {
+			add_to_variable = {
+				house_zik = -4
+			}
+			add_political_power = 80
+			add_stability = 0.05
+			add_war_support = -0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    }
+}
+
+
+
+parthia_rome_war = {
+	
+}
+
+parthia_in_india = {
+	ask_for_treaty_ports = {
+		icon = generic_civil_support
+		cost = 70
+		days_re_enable = 160
+		on_map_mode = map_only
+		days_re_enable = 1
+		allowed = {
+			tag = PTH
+    	}
+		available = {
+			any_owned_state = {
+				industrial_complex > 1
+			}
+			NOT = {
+				has_country_flag = already_buying
+			}
+		}
+		visible = {
+		}
+		target_root_trigger = { TAG = ROOT }
+		state_target = yes
+		target_trigger = { 
+			FROM = {
+				NOT = {
+					owner = {
+						is_subject_of = ROOT
+						is_ally_with = ROOT
+					}
+				}
+				owner = {
+					is_major = no
+					NOT = {
+						tag = AAN
+						tag = FAA
+						tag = FAL
+						tag = CLC
+						tag = PON
+						tag = IBR
+						tag = ARR
+						tag = CCA
+					}
+				}
+				OR = {
+					is_on_continent = africa
+					is_on_continent = middle_east
+					owner = {
+						OR = {
+							tag = SAV
+							tag = PDA
+							tag = MMD
+							tag = SAT
+						}
+					}
+				}
+				is_coastal = yes
+				NOT = {
+					is_capital = yes
+					is_owned_by = ROOT
+				}
+			}
+		}
+		complete_effect = {
+			FROM = {
+				owner = {
+					country_event = {
+						id = arsacid_event.23
+						days = 5
+					}
+				}
+				set_state_flag = buying_arsacid
+			}
+			set_country_flag = already_buying
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+			factor = 15
+		}
+	}
 }

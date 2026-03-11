@@ -43,10 +43,10 @@ technologies = {
 
 		research_cost = 1.5
 
-		folder = {
-			name = artillery_folder
-			position = { x = 0 y = 0 }
-		}
+		#folder = {
+		#	name = artillery_folder
+		#	position = { x = 0 y = 0 }
+		#}
 
 		categories = {
 			artillery

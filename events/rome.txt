@@ -14,7 +14,6 @@ country_event = {
 	trigger = {
 		date > 14.8.19
     }
-
 	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	mean_time_to_happen = { days = 1 }
@@ -22,7 +21,7 @@ country_event = {
 	option = {
 		name = rome_event.1.a
 		ai_chance = { factor = 20 }
-		original_recipient_only = yes
+		trigger = { tag = ROE }
 		ROE = { 
 			complete_national_focus = ROE_augustus_death 
 		}
@@ -34,6 +33,7 @@ country_event = {
 	option = {
 		name = rome_event.1.b
 		ai_chance = { factor = 1 }
+		trigger = { NOT = { tag = ROE }}
 		set_global_flag = AUG_DEATH
 	}
 }
@@ -1772,7 +1772,236 @@ country_event = {
 	}
 }
 
+# Jesus becomes God Emperor
+country_event = {
+	id = rome_event.19
+	title = rome_event.19.t
+	desc = rome_event.19.d
+	
+	trigger = {
+    }
 
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { #
+		name = rome_event.19.a
+		ai_chance = { factor = 10 }
+		trigger = {
+		}
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = yes
+			last_elections = "15.1.1"
+			election_frequency = 24
+			long_name = ROE_long_jesus_party
+			name = ROE_jesus_party
+		}
+		promote_character = {
+    		character = ROE_jesus_christ
+    		ideology = jesus_monarchism
+		}
+		add_trait = {
+     		character = ROE_jesus_christ
+     		ideology = jesus_monarchism
+     		trait = god_emperor
+		}
+	}
+}
+
+
+
+
+# The Jewish Issue
+country_event = {
+	id = rome_event.20
+	title = rome_event.20.t
+	desc = rome_event.20.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { # Tolerate this cult.
+		name = rome_event.20.a
+		ai_chance = { factor = 1 }
+		trigger = {
+		}
+		add_ideas = ROE_jewish_cult_tolerance
+	}
+	option = { # Ban this cult!
+		name = rome_event.20.b
+		ai_chance = { factor = 10 }
+		trigger = {
+		}
+		add_ideas = ROE_jewish_cult_banned
+		country_event = {
+			id = rome_event.22
+			days = 180
+		}
+		PTH = {
+			country_event = {
+				id = rome_event.21
+				days = 2
+			}
+		}
+	}
+}
+
+# Influx of Christians! - Arsacid
+country_event = {
+	id = rome_event.21
+	title = rome_event.21.t
+	desc = rome_event.21.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { # Welcome them!
+		name = rome_event.21.a
+		ai_chance = { factor = 1 }
+		trigger = {
+		}
+		set_country_flag = PTH_welcomed_christians
+		add_timed_idea = {
+			idea = PTH_influx_of_christians
+			days = 160
+		}
+	}
+	option = { # Nope.
+		name = rome_event.21.b
+		ai_chance = { factor = 1 }
+		trigger = {
+		}
+		add_stability = 0.05
+		add_war_support = 0.03
+	}
+}
+
+# Strange Fellow in Rome! - Rome
+country_event = {
+	id = rome_event.22
+	title = rome_event.22.t
+	desc = rome_event.22.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { # A strange fellow indeed. Is he even a citizen?
+		name = rome_event.22.a
+		ai_chance = { factor = 1 }
+		trigger = {
+		}
+		country_event = {
+			id = rome_event.23
+			days = 15
+		}
+	}
+}
+
+# Strange Fellow in Rome! - Jesus' Dead! (Rome)
+country_event = {
+	id = rome_event.23
+	title = rome_event.23.t
+	desc = rome_event.23.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { # Who was he again?
+		name = rome_event.23.a
+		ai_chance = { factor = 1 }
+		trigger = {
+		}
+		PTH = {
+			country_event = {
+				id = rome_event.24
+				days = 70
+			}
+		}
+		retire_character = ROE_jesus_christ
+	}
+}
+
+# News from Rome - Arsacid
+country_event = {
+	id = rome_event.24
+	title = rome_event.24.t
+	desc = rome_event.24.d
+	
+	trigger = {
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { # In honor of Jesus Christ, we shall convert!
+		name = rome_event.24.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = PTH_welcomed_christians
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			add_trait = {
+     			character = artabanus_ii
+     			ideology = parthian_nobility
+     			trait = PTH_first_christian_king
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			add_trait = {
+     			character = artabanus_ii_fascist
+     			ideology = absolutism
+     			trait = PTH_first_christian_king
+			}
+		}
+	}
+	option = { # A sad day.
+		name = rome_event.24.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = PTH_welcomed_christians
+		}
+		
+	}
+	option = { # Who cares?
+		name = rome_event.24.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { has_country_flag = PTH_welcomed_christians }
+		}
+		
+	}
+}
 
 
 

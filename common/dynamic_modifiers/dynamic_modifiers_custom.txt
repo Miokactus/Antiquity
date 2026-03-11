@@ -45,9 +45,31 @@ receiving_tribute = {
 ROE_citizenship = {
     icon = GFX_idea_roman_restricted_citizenship
     enable = { always = yes }
+	remove_trigger = {
+		has_completed_focus = PTH_purge_the_council
+	}
 	conscription_factor = var:roman_citizenship_mob
     stability_factor = var:roman_citizenship_stab
 	political_power_cost = var:roman_citizenship_pol
+}
+
+PTH_council_loyalty = {
+    icon = GFX_idea_generic_political_support
+    enable = { always = yes }
+	remove_trigger = {
+		has_completed_focus = PTH_purge_the_council
+	}
+	war_support_factor = var:council_allegiance_arsacid_ws
+	political_power_gain = var:council_allegiance_arsacid_pp
+	party_popularity_stability_factor = var:council_allegiance_arsacid_stab
+}
+
+PTH_judaism_integration = {
+    icon = GFX_idea_generic_volunteer_expedition_bonus
+    enable = { always = yes }
+	war_support_factor = var:judaism_integration_ws
+	stability_factor = var:judaism_integration_stab
+	conscription_factor = var:judaism_integration_mob
 }
 
 imperial_capital_of_china = {

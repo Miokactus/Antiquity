@@ -94,8 +94,8 @@ tribal_actions = {
 		ai_will_do = {
 			factor = 2
 			modifier = {
-				factor = 100
-				date > 15.5.11
+				factor = 4
+				has_political_power > 100
 			}
 		}
 	}

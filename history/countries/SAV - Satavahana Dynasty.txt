@@ -14,14 +14,6 @@ create_country_leader = {
 	}
 }
 
-IDS = { 
-	set_autonomy = {
-    	target = SAV
-    	autonomous_state = autonomy_indian_custom
-		freedom_level = 0.8
-	}
-}
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

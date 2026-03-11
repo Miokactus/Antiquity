@@ -24,4 +24,12 @@ opinion_modifiers = {
 	loyalty_to_the_empire = {
 		value = 30
 	}
+
+	refused_appeasement = {
+		value = -30
+	}
+
+	regime_change = {
+		value = -30
+	}
 }
