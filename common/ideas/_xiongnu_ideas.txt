@@ -34,5 +34,95 @@ ideas = {
 			}
 		}
 
+
+		XAI_unite_the_west = {
+			name = "Unite the Western Tribes!"
+			allowed_civil_war = { always = yes }
+			picture = generic_intel_bonus
+			targeted_modifier = {
+    			tag = SCY    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				justify_war_goal_time = -0.8
+			}
+			targeted_modifier = {
+    			tag = SAR    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+				justify_war_goal_time = -0.8
+			}
+			modifier = {
+				war_support_weekly = 0.01
+				consumer_goods_factor = -0.15
+				offensive_war_stability_factor = -0.3
+				compliance_growth = 0.3
+			}
+		}
+
+		XAI_revenge_against_the_yuezhi = {
+			name = "Revenge against the Yuezhi!"
+			allowed_civil_war = { always = yes }
+			picture = generic_volunteer_expedition_bonus
+			targeted_modifier = {
+    			tag = YUZ    # this can also take a variable that stores a scope
+				attack_bonus_against = 0.1
+			}
+			modifier = {
+				consumer_goods_factor = -0.1
+				offensive_war_stability_factor = -0.2
+			}
+		}
+
+		XAI_empire_of_nations = {
+			name = "An Empire of Nations"
+			allowed_civil_war = { always = yes }
+			picture = generic_victors_of_ww1
+			targeted_modifier = {
+    			tag = YUZ    # this can also take a variable that stores a scope
+			}
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.5
+				compliance_growth = 0.05
+			}
+		}
+
+		XAI_centralisation_of_confederation = {
+			name = "Centralisation of the Confederation"
+			allowed_civil_war = { always = yes }
+			picture = generic_central_management
+			modifier = {
+				communism_drift = 0.05
+				stability_weekly = -0.01
+				political_power_gain = -0.2
+			}
+			on_remove = {
+				add_ideas = XAI_semi_centralised_society
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+			}
+		}
+
+		XAI_semi_centralised_society = {
+			name = "Semi-Centralised Society"
+			allowed_civil_war = { always = yes }
+			picture = generic_constitutional_guarantees
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.25
+			}
+		}
+
+		XAI_strenghtened_local_leaders = {
+			name = "Strenghtened Local Leaders"
+			allowed_civil_war = { always = yes }
+			picture = generic_local_self_management
+			modifier = {
+				stability_factor = 0.05
+				party_popularity_stability_factor = -0.2
+				political_advisor_cost_factor = 0.4
+			}
+		}
+
 	}
 }

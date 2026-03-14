@@ -18,6 +18,23 @@ characters = {
 		}
 	}
 
+	wulei_chanyu_communism = {
+		name = "Grand Chanyu Wulei"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_nomadic_leader_xai"
+            }
+        }
+		country_leader = {
+			desc = "WULEI_DESC"
+			expire = "18.5.4"
+			ideology = monarchism
+			traits = {
+				XAI_chanyu
+			}
+		}
+	}
+
 	huduershidaogao_chanyu = {
 		name = "Huduershidaogao"
 		portraits = {

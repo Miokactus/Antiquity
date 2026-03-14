@@ -1,4 +1,15 @@
 ﻿l_english:
+ ## OTHER
+ xiongnu_unrest_in_china: "We will §5finance rebels§! in China!"
+ XAI_claims_on_china: "We will claim back our lost territories in northern China."
+ XAI_centralisation_tooltip: "After our efforts of centralisation, the Chanyu shall become Grand Chanyu!"
+ XAI_eurasian_cores: "§YWe'll gain cores on every western eurasian states!§!"
+
+ eurasian_empire: "Grand Eurasian Empire"
+ eurasian_empire_DEF: "the Grand Eurasian Empire"
+ eurasian_empire_ADJ: "Eurasian"
+
+ ## FOCUS
  XAI_industrial_effort: "Industrial Effort"
  XAI_construction_effort: "Construction Effort"
  XAI_construction_effort_2: "Construction Effort 2"
