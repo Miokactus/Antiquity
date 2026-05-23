@@ -40,6 +40,21 @@ parthian_administration = {
     scripted_gui = arsacid_scripted_gui
 }
 
+parthian_crisis = {
+    allowed = {
+        always = yes
+        tag = PTH
+    }
+    visible = {
+        always = yes
+        tag = PTH
+    }
+    priority = 80
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
 parthian_administration_flags = {
     allowed = {
         original_tag = PTH
@@ -97,6 +112,25 @@ parthia_in_india = {
     visible_when_empty = no
 }
 
+
+
+
+tuqi_kings_council = {
+    allowed = {
+        original_tag = XAI
+    }
+    visible = {
+        original_tag = XAI
+        NOT = {
+            has_completed_focus = XAI_towards_integrating_tributaries
+        }
+    }
+    priority = 60
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = yes
+    scripted_gui = xiongnu_scripted_gui_tuqi_kings
+}
 
 ## TRIBAL
 tribal_actions = {

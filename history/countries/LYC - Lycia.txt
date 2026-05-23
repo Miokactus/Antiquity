@@ -21,6 +21,8 @@ ROE = {
 	}
 }
 
+set_country_flag = influenced_by_ROE
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

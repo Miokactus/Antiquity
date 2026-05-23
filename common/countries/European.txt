@@ -1,0 +1,2 @@
+graphical_culture = western_europe_gfx
+graphical_culture_2d = western_europe_2d

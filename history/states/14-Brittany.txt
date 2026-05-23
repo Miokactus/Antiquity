@@ -9,6 +9,11 @@ state={
 	history={
 		owner = ROE
 		add_core_of = ROE
+
+		1000.1.1 = {
+			owner = WSG
+			add_core_of = WSG
+		}
 		
 		victory_points = {
 			6536 5
@@ -30,13 +35,6 @@ state={
 			}
 			9510 = {
 				naval_base = 1
-			}
-		}
-		
-		
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
 			}
 		}
 	}

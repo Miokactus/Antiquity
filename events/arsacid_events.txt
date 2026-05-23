@@ -1141,7 +1141,6 @@ country_event = {
 	trigger = {
     }
 	picture = GFX_report_event_XIN_generic_letter
-	fire_only_once = yes
 	is_triggered_only = yes
 	option = { # Alright.
 		name = arsacid_event.23.a
@@ -1191,6 +1190,267 @@ country_event = {
 }
 
 
+
+# End of the Raids?
+country_event = {
+	id = arsacid_event.24
+	title = arsacid_event.24.t
+	desc = arsacid_event.24.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Yes
+		name = arsacid_event.24.a
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0.5
+				has_country_flag = normalised_relations_nomads
+			}
+		}
+		trigger = { }
+		add_stability = -0.05
+		add_war_support = -0.05
+		PTH = {
+			country_event = {
+				id = arsacid_event.25
+				days = 2
+			}
+		}
+	}
+	option = { # No
+		name = arsacid_event.24.b
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0.5
+				has_country_flag = bad_relations_nomads
+			}
+		}
+		trigger = { }
+		add_political_power = 50
+		add_war_support = 0.05
+		add_stability = 0.05
+		PTH = {
+			country_event = {
+				id = arsacid_event.26
+				days = 2
+			}
+		}
+	}
+}
+
+# End of the Raids - Yes
+country_event = {
+	id = arsacid_event.25
+	title = arsacid_event.25.t
+	desc = arsacid_event.25.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # 
+		name = arsacid_event.25.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_political_power = 50
+		diplomatic_relation = {
+    		country = FROM
+   			relation = non_aggression_pact
+    		active = yes
+		}
+	}
+}
+
+# End of the Raids - No
+country_event = {
+	id = arsacid_event.26
+	title = arsacid_event.26.t
+	desc = arsacid_event.26.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # 
+		name = arsacid_event.26.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -25
+	}
+}
+
+# Give up the roads
+country_event = {
+	id = arsacid_event.27
+	title = arsacid_event.27.t
+	desc = arsacid_event.27.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { # Alright
+		name = arsacid_event.27.a
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0.5
+				has_country_flag = normalised_relations_nomads
+			}
+		}
+		trigger = { }
+			742 = {
+				transfer_state_to = PTH
+			}
+			405 = {
+				transfer_state_to = PTH
+			}
+			732 = {
+				transfer_state_to = PTH
+			}
+			830 = {
+				transfer_state_to = PTH
+			}
+			add_political_power = -50
+			add_war_support = -0.05
+	}
+	option = { # Nah
+		name = arsacid_event.27.b
+		ai_chance = { 
+			factor = 1
+			modifier = {
+				factor = 0.5
+				has_country_flag = bad_relations_nomads
+			}
+		}
+		trigger = { }
+			742 = {
+				add_core_of = PTH
+			}
+			405 = {
+				add_core_of = PTH
+			}
+			732 = {
+				add_core_of = PTH
+			}
+			830 = {
+				add_core_of = PTH
+			}
+			add_political_power = 50
+			add_war_support = 0.1
+	}
+}
+
+# Relations with the Nomads
+country_event = {
+	id = arsacid_event.28
+	title = arsacid_event.28.t
+	desc = arsacid_event.28.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Normalise Relations
+		name = arsacid_event.28.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		add_ideas = arsacid_normalised_relations_nomads
+		set_country_flag = normalised_relations_nomads
+		add_war_support = -0.05
+		PTH = {
+			country_event = {
+				id = arsacid_event.29
+				days = 2
+			}
+		}
+	}
+	option = { # Keep out!
+		name = arsacid_event.28.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = 20
+		add_ideas = arsacid_bad_relations_nomads
+		set_country_flag = bad_relations_nomads
+		add_war_support = 0.05
+		PTH = {
+			country_event = {
+				id = arsacid_event.30
+				days = 2
+			}
+		}
+	}
+}
+
+# Normalise Relations
+country_event = {
+	id = arsacid_event.29
+	title = arsacid_event.29.t
+	desc = arsacid_event.29.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # 
+		name = arsacid_event.29.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		add_stability = 0.02
+		add_war_support = -0.02
+	}
+}
+
+# Keep out!
+country_event = {
+	id = arsacid_event.30
+	title = arsacid_event.30.t
+	desc = arsacid_event.30.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # 
+		name = arsacid_event.30.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		add_stability = -0.02
+		add_war_support = 0.02
+	}
+}
+
+# Arsacid power is growing!
+country_event = {
+	id = arsacid_event.31
+	title = arsacid_event.31.t
+	desc = arsacid_event.31.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # 
+		name = arsacid_event.31.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		add_political_power = 50
+		add_war_support = 0.05
+	}
+}
 
 
 # Skirmishes at the border!

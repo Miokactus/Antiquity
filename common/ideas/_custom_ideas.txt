@@ -333,8 +333,167 @@ ideas = {
 				stability_factor = 1
 				political_power_factor = -10
 				consumer_goods_factor = 1
-				enemy_justify_war_goal_time = 3
+				enemy_justify_war_goal_time = 5
 				enemy_declare_war_tension = 1
+				training_time_factor = 4
+				training_time_army_factor = 4
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		is_in_sphere_of_ROE = {
+			name = "Influenced by Rome"
+			allowed_civil_war = { always = yes }
+			picture = GER_recovering_economy
+			cancel = {
+				NOT = {
+					has_country_flag = influenced_by_ROE
+				}
+			}
+			targeted_modifier = {
+				tag = ROE
+				extra_trade_to_target_factor = 0.2
+				cic_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.1
+				political_power_cost = -0.3
+			}
+		}
+
+		is_in_sphere_of_XIN = {
+			name = "Influenced by China"
+			allowed_civil_war = { always = yes }
+			picture = GER_recovering_economy
+			cancel = {
+				NOT = {
+					has_country_flag = influenced_by_XIN
+				}
+			}
+			targeted_modifier = {
+				tag = XIN
+				extra_trade_to_target_factor = 0.2
+				cic_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.1
+				political_power_cost = -0.3
+			}
+		}
+
+		is_in_sphere_of_PTH = {
+			name = "Influenced by Parthia"
+			allowed_civil_war = { always = yes }
+			picture = GER_recovering_economy
+			cancel = {
+				NOT = {
+					has_country_flag = influenced_by_PTH
+				}
+			}
+			targeted_modifier = {
+				tag = PTH
+				extra_trade_to_target_factor = 0.2
+				cic_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.1
+				political_power_cost = -0.3
+			}
+		}
+
+		is_in_sphere_of_CRS = {
+			name = "Influenced by the Cherusci"
+			allowed_civil_war = { always = yes }
+			picture = GER_recovering_economy
+			cancel = {
+				NOT = {
+					has_country_flag = influenced_by_CRS
+				}
+			}
+			targeted_modifier = {
+				tag = CRS
+				extra_trade_to_target_factor = 0.2
+				cic_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.1
+				political_power_cost = -0.3
+			}
+		}
+
+		is_in_sphere_of_XAI = {
+			name = "Influenced by the Xiongnu"
+			allowed_civil_war = { always = yes }
+			picture = GER_recovering_economy
+			cancel = {
+				NOT = {
+					has_country_flag = influenced_by_XAI
+				}
+			}
+			targeted_modifier = {
+				tag = XAI
+				extra_trade_to_target_factor = 0.2
+				cic_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.1
+				political_power_cost = -0.3
+			}
+		}
+
+		is_in_sphere_of_TTH = {
+			name = "Influenced by Teotihuacan"
+			allowed_civil_war = { always = yes }
+			picture = GER_recovering_economy
+			cancel = {
+				NOT = {
+					has_country_flag = influenced_by_TTH
+				}
+			}
+			targeted_modifier = {
+				tag = TTH
+				extra_trade_to_target_factor = 0.2
+				cic_to_target_factor = 0.1
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = -0.1
+				political_power_cost = -0.3
 			}
 		}
 

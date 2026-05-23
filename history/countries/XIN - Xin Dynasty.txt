@@ -19,6 +19,8 @@ recruit_character = wang_she
 	add_dynamic_modifier = { modifier = imperial_capital_of_china }
 }
 
+set_country_flag = is_sphere_leader
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

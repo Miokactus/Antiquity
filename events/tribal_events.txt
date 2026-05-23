@@ -37,18 +37,36 @@ country_event = {
 	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
+	option = { ## Pay them
 		name = tribal.2.a
+		trigger = {}
 		ai_chance = { factor = 1 }
-		if = {
-			has_manpower > 1000
+		FROM = {
+			country_event = {
+				id = tribal.3
+				days = 3
+			}
+		}
+		add_political_power = -50
+		add_timed_idea = {
+			idea = paid_nomads
+			days = 60
+		}
+	}
+	option = { ## Fight them!
+		name = tribal.2.b
+		ai_chance = { factor = 1 }
+		FROM = {
+			country_event = {
+				id = tribal.4
+				days = 3
+			}
 		}
 	}
 }
 
 
-##TRIBAL GO FOR RAID [SENDER VICTORY]
+##TRIBAL GO FOR RAID [i'm paying you!]
 country_event = {
 	id = tribal.3
 	title = tribal.3.t
@@ -60,14 +78,19 @@ country_event = {
 	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
+	option = { ## Oki
 		name = tribal.3.a
 		ai_chance = { factor = 1 }
+		add_political_power = 50
+		add_stability = 0.05
+		add_timed_idea = {
+			idea = got_paid_nomad
+			days = 60
+		}
 	}
 }
 
-##TRIBAL GO FOR RAID [RECEIVER VICTORY]
+##TRIBAL GO FOR RAID [i'm fighting you!]
 country_event = {
 	id = tribal.4
 	title = tribal.4.t
@@ -79,9 +102,20 @@ country_event = {
 	picture = GFX_report_event_XIN_generic_letter
 	mean_time_to_happen = { days = 1 }
 	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
+	option = { ## War it is!
 		name = tribal.4.a
 		ai_chance = { factor = 1 }
+		create_wargoal = {
+    		type = puppet_wargoal_focus
+    		target = FROM
+			expire = 20
+		}
+	}
+	option = { ## Back down
+		name = tribal.4.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -75
 	}
 }

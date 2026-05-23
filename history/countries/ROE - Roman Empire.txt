@@ -59,6 +59,8 @@ set_variable = {
 	roman_citizenship_pol = 0.5
 }
 
+set_country_flag = is_sphere_leader
+
 add_dynamic_modifier = { modifier = ROE_citizenship }
 
 add_ideas = {

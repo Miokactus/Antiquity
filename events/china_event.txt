@@ -1854,3 +1854,31 @@ country_event = {
 		add_political_power = 150
 	}
 }
+
+#Relations with the Indies
+country_event = {
+	id = china_event.57
+	title = china_event.57.t
+	desc = china_event.57.d
+	trigger = {
+    }
+	is_triggered_only = yes
+	picture = GFX_report_event_XIN_generic_emperor_talks
+	major = no
+	option = { ## Nah
+		name = china_event.57.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = 80
+		add_war_support = 0.05
+	}
+	option = { ## Yes
+		name = china_event.57.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = -20
+		add_war_support = -0.05
+		add_stability = 0.05
+		add_ideas = XIN_protected_indian_trade
+	}
+}

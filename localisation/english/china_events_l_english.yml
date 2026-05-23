@@ -158,7 +158,10 @@
  china_hidden_event.3.d: "Emperor, we have lost the Mandate.\n\nUsurpators have successfully convinced enough of our peasants that they were the rightful heir to the Empire. Under the overwhealming forces, we were forced to flee and hide in the depths of the Empire.\n\nBut not everything is lost: our claim to the Empire is still strong, and we must not be weakened! Glory to the Empire of China!"
  china_hidden_event.3.a: "We'll claim it back!"
 
-
+ china_event.57.t: "China requests guarantees over trade!"
+ china_event.57.d: "A delegation has arrived today from China in our capital, asking that we give guarantees to the chinese government over the trade routes passing through our territories. Giving them our word could ease our relations with them, but it would in return make us look weak in the eyes of our enemies."
+ china_event.57.a: "What? Who do they think they are?"
+ china_event.57.b: "Give guarantees to the Chinese."
 
  ## FLAGS
  yellow_river_prevention: "We have taken Measures to Prevent the Flooding of the Yellow River"
@@ -179,3 +182,6 @@
 
  ## TRAITS
  XIN_children_of_heaven: "Child of Heaven"
+
+ path_to_the_west: "Important Trading Centre"
+ sent_diplomats: "Diplomats in the Country"

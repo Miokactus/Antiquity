@@ -65,7 +65,7 @@ the_chinese_army = {
 	disband_in_batch = {
 		icon = generic_civil_support
 		days_re_enable = 1
-		cost = 80
+		cost = 60
 		allowed = {
 			original_tag = XIN
     	}
@@ -628,8 +628,8 @@ political_actions = {
 					tag = NYU
 					tag = LUO
 					tag = XIN
-					tag = XAI
 					tag = ANN
+					has_country_flag = xiongnu_reform_the_empire
 				}
 				NOT = {
 					OR = {

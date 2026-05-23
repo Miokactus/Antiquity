@@ -112,6 +112,25 @@ focus_tree = {
 		y = 2
 		cost = 8
 		available = { 
+			OR = {
+				is_neighbor_of = ROE
+				any_neighbor_country = {
+					is_subject_of = ROE
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = {
+					OR = {
+						is_neighbor_of = ROE
+						any_neighbor_country = {
+							is_subject_of = ROE
+						}
+					}			
+				}
+				date > 16.5.1
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -130,6 +149,20 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available = { 
+			OR = {
+				is_neighbor_of = ROE
+				any_neighbor_country = {
+					is_subject_of = ROE
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = {
+					is_neighbor_of = ROE			
+				}
+				date > 16.5.1
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -153,6 +186,20 @@ focus_tree = {
 		y = 2
 		cost = 8
 		available = { 
+			OR = {
+				is_neighbor_of = PTH
+				any_neighbor_country = {
+					is_subject_of = PTH
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = {
+					is_neighbor_of = PTH			
+				}
+				date > 16.5.1
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -171,6 +218,25 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available = { 
+			OR = {
+				is_neighbor_of = PTH
+				any_neighbor_country = {
+					is_subject_of = PTH
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = {
+					OR = {
+						is_neighbor_of = PTH
+						any_neighbor_country = {
+							is_subject_of = PTH
+						}
+					}			
+				}
+				date > 16.5.1
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -194,6 +260,23 @@ focus_tree = {
 		y = 2
 		cost = 8
 		available = { 
+			OR = {
+				OR = {
+					is_neighbor_of = XIN
+					any_neighbor_country = {
+						is_subject_of = XIN
+					}
+				}
+				is_neighbor_of = XAI
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = {
+					is_neighbor_of = XIN			
+				}
+				date > 16.5.1
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -212,6 +295,25 @@ focus_tree = {
 		y = 3
 		cost = 8
 		available = { 
+			OR = {
+				is_neighbor_of = XIN
+				any_neighbor_country = {
+					is_subject_of = XIN
+				}
+			}
+		}
+		bypass = {
+			AND = {
+				NOT = {
+					OR = {
+						is_neighbor_of = XIN
+						any_neighbor_country = {
+							is_subject_of = XIN
+						}
+					}			
+				}
+				date > 16.5.1
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -242,6 +344,15 @@ focus_tree = {
 		y = 3
 		cost = 8
 		available = {
+			OR = {
+				OR = {
+					is_neighbor_of = XIN
+					any_neighbor_country = {
+						is_subject_of = XIN
+					}
+				}
+				is_neighbor_of = XAI
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL

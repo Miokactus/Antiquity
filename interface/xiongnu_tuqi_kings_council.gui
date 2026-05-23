@@ -1,0 +1,71 @@
+guiTypes = {
+	containerWindowType = {
+		name = "xiongnu_tuqi_kings"
+		position = { x = 0 y = 0 }
+		size = { width = 500 height= 500 }
+
+		instantTextBoxType = {
+			name = "xiongnu_tuqi_kings_title"
+			position = { x = 0 y = 20 }
+			text = "xiongnu_tuqi_kings_title"
+			format = center
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = yes
+		}
+		
+
+
+
+
+		instantTextBoxType = {
+			name = "tuqi_king_left_title"
+			position = { x = 0 y = 80 }
+			text = "tuqi_king_left"
+			format = right
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "tuqi_king_left_wing_title"
+			position = { x = 0 y = 110 }
+			text = "tuqi_king_left_wing"
+			format = right
+			#text_color_code = M
+			font = "hoi_24header"
+			maxWidth = 500
+			maxHeight = 40
+			fixedsize = yes
+		}
+
+
+
+		instantTextBoxType = {
+			name = "tuqi_king_right_title"
+			position = { x = 0 y = 80 }
+			text = "tuqi_king_right"
+			format = left
+			#text_color_code = M
+			font = "hoi_30header"
+			maxWidth = 500
+			fixedsize = yes
+		}
+		instantTextBoxType = {
+			name = "tuqi_king_right_wing_title"
+			position = { x = 0 y = 110 }
+			text = "tuqi_king_right_wing"
+			format = left
+			#text_color_code = M
+			font = "hoi_24header"
+			maxWidth = 500
+			fixedsize = yes
+		}
+
+
+	}
+}

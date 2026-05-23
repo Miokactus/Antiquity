@@ -91,7 +91,7 @@ ideas = {
 			picture = generic_central_management
 			modifier = {
 				communism_drift = 0.05
-				stability_weekly = -0.01
+				stability_weekly = -0.001
 				political_power_gain = -0.2
 			}
 			on_remove = {
@@ -121,6 +121,72 @@ ideas = {
 				stability_factor = 0.05
 				party_popularity_stability_factor = -0.2
 				political_advisor_cost_factor = 0.4
+			}
+		}
+
+		XAI_keep_the_old = {
+			name = "Keep the Old Ways"
+			allowed_civil_war = { has_government = neutrality }
+			picture = COG_the_invisible_roof
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.2
+			}
+		}
+
+		XAI_political_reforms = {
+			name = "Political Reforms"
+			allowed_civil_war = { has_government = neutrality }
+			picture = ARG_roca_runciman_new_partner
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.5
+			}
+		}
+
+		XAI_cavalry_onwards  = {
+			name = "Reformed Army"
+			allowed_civil_war = { always = yes }
+			picture = generic_army_war_college
+			modifier = {
+				cavalry_attack_factor = 0.15
+				army_speed_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+
+		XAI_burden_on_the_tributaries = {
+			name = "Burden on the Tributaries"
+			allowed_civil_war = { always = yes }
+			picture = closed_economy
+			modifier = {
+				stability_factor = -0.1
+				cic_to_overlord_factor = 0.75
+				mic_to_overlord_factor = 0.75
+				extra_trade_to_overlord_factor = 0.5
+			}
+		}
+
+		XAI_exploiting_the_tributaries = {
+			name = "Exploiting the Tributaries"
+			allowed_civil_war = { always = yes }
+			picture = EST_exploit_the_banks
+			modifier = {
+				industrial_factory_donations = 2
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		XAI_prepare_for_war = {
+			name = "Preparing for War"
+			allowed_civil_war = { always = yes }
+			picture = CHI_protracted_warfare
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = -0.05
+				experience_gain_army = 0.1
+				max_command_power_mult = 0.2
+				production_speed_arms_factory_factor = 0.2
 			}
 		}
 

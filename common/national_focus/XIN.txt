@@ -62,6 +62,9 @@ focus_tree = {
 				add_war_support = 0.05
 			}
 		}
+		ai_will_do = {
+			factor = 5
+		}
 	}
 
 	#
@@ -87,6 +90,9 @@ focus_tree = {
 				add_stability = 0.05
 				add_manpower = 18000
 			}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 
@@ -115,6 +121,9 @@ focus_tree = {
 			ANH = {
 				add_ideas = XIN_coordinated_rebels
 			}
+		}
+		ai_will_do = {
+			factor = 5
 		}
 	}
 
@@ -240,6 +249,9 @@ focus_tree = {
 		mutually_exclusive = { }
 		completion_reward = {
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 	#
@@ -288,6 +300,9 @@ focus_tree = {
 				add_ideas = RYY_revolutionary_army
 			}
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 	#
@@ -328,6 +343,15 @@ focus_tree = {
 		prerequisite = { focus = XIN_establish_a_revolutionary_army }
 		mutually_exclusive = { }
 		completion_reward = {
+			RYY = {
+				add_ideas = XIN_peasant_militia
+			}
+			LLU = {
+				add_ideas = XIN_peasant_militia
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
@@ -407,6 +431,8 @@ focus_tree = {
 		}
 		mutually_exclusive = { focus = XIN_the_fifth_column }
 		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 
@@ -429,6 +455,8 @@ focus_tree = {
 		prerequisite = { focus = XIN_our_dynasty }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
 		}
 		ai_will_do = {
 			base = 5
@@ -455,6 +483,9 @@ focus_tree = {
 		prerequisite = { focus = XIN_internal_affairs }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			
 		}
 	}
 
@@ -1247,6 +1278,10 @@ focus_tree = {
 				add = 500
 				is_historical_focus_on = yes
 			}
+			modifier = {
+				factor = -50
+				has_completed_focus = XIN_the_fifth_column
+			}
 		}
 	}
 
@@ -1374,7 +1409,7 @@ focus_tree = {
 		ai_will_do = {
 			base = 5
 			modifier = {
-				add = 500
+				add = 50
 				is_historical_focus_on = yes
 			}
 		}
@@ -1512,6 +1547,7 @@ focus_tree = {
 		prerequisite = { focus = XIN_offer_vassalization focus = XIN_appeal_to_unhappy_generals }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_ideas = XIN_fight_against_tribalism
 		}
 	}
 
@@ -1534,7 +1570,7 @@ focus_tree = {
 		completion_reward = {
 			add_power_balance_value = {
     			id = XIN_heaven_mandate
-    			value = -0.15
+    			value = -0.1
 			}
 			create_wargoal = {
     			type = puppet_wargoal_focus
@@ -1702,6 +1738,43 @@ focus_tree = {
 		prerequisite = { focus = XIN_towards_the_world }
 		mutually_exclusive = { }
 		completion_reward = {
+			if = {
+				limit = {
+					WPC = { is_subject_of = XIN }
+				}
+				WPC = {
+					add_political_power = 50
+					add_stability = 0.05
+					division_template = {
+    					name = "Western Defence Force"
+    					is_locked = yes
+    					division_cap = 3
+    					priority = 0
+    					template_counter = 0
+    					regiments = {
+        					infantry = { x = 0 y = 0 }
+        					infantry = { x = 0 y = 1 }
+        					infantry = { x = 0 y = 2 }
+        					infantry = { x = 0 y = 3 }
+    					}
+    					support = {
+    					}					
+					}
+				}
+			}
+			if = {
+				limit = {
+					WPC = { 
+						NOT = { is_subject_of = XIN	}
+						exists = yes
+					}
+				}
+				create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = WPC
+					expire = 365
+				}
+			}
 		}
 	}
 
@@ -1721,6 +1794,39 @@ focus_tree = {
 		prerequisite = { focus = XIN_western_protectorates }
 		mutually_exclusive = { }
 		completion_reward = {
+			1178 = {
+				owner = {
+					add_opinion_modifier = {
+    					target = ROOT
+    					modifier = path_to_the_west
+					}
+				}
+			}
+			1005 = {
+				owner = {
+					add_opinion_modifier = {
+    					target = ROOT
+    					modifier = path_to_the_west
+					}
+				}
+			}
+			742 = {
+				owner = {
+					add_opinion_modifier = {
+    					target = ROOT
+    					modifier = path_to_the_west
+					}
+				}
+			}
+			1190 = {
+				owner = {
+					add_opinion_modifier = {
+    					target = ROOT
+    					modifier = path_to_the_west
+					}
+				}
+			}
+			add_political_power = 50
 		}
 	}
 
@@ -1740,6 +1846,22 @@ focus_tree = {
 		prerequisite = { focus = XIN_gateway_to_the_west }
 		mutually_exclusive = { }
 		completion_reward = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = SAT
+						tag = MTH
+						tag = YAU
+						tag = MTI
+						tag = SAV
+						tag = MMD
+					}
+				}
+				country_event = {
+					id = china_event.57
+					days = 5
+				}
+			}
 		}
 	}
 
@@ -1759,6 +1881,12 @@ focus_tree = {
 		prerequisite = { focus = XIN_gateway_to_the_west }
 		mutually_exclusive = { }
 		completion_reward = {
+			PTH = {
+				add_opinion_modifier = {
+    				target = ROOT
+    				modifier = sent_diplomats
+				}
+			}
 		}
 	}
 

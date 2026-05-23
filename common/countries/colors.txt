@@ -1382,3 +1382,13 @@ CHA = {
 	color = rgb { 59 93 160 }
 	color_ui = rgb { 145 200 632 }
 }
+
+
+
+
+
+
+WSG = {
+	color = rgb { 59 93 160 }
+	color_ui = rgb { 145 200 632 }
+}

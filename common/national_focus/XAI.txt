@@ -14,7 +14,486 @@ focus_tree = {
 
 	continuous_focus_position = { x = 50 y = 1500 }
 	
+	focus = {
+		id = XAI_the_system_of_old
+		icon = GFX_focus_generic_horse_studs
+		x = 16
+		y = 0
+		cost = 10
 
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		mutually_exclusive = { focus = PTH_enact_political_reforms }
+		completion_reward = {
+			add_ideas = XAI_keep_the_old
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_reinforce_the_council
+		icon = GFX_unknown
+		x = 14
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_the_system_of_old }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_stabilise_the_balance_of_power
+		icon = GFX_unknown
+		x = 13
+		y = 2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_reinforce_the_council }
+		mutually_exclusive = { focus = XAI_empower_the_right_wing }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_empower_the_right_wing
+		icon = GFX_unknown
+		x = 15
+		y = 2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_reinforce_the_council }
+		mutually_exclusive = { focus = XAI_stabilise_the_balance_of_power }
+		completion_reward = {
+			add_stability = -0.08
+			add_war_support = -0.05
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_find_the_right_equilibrium
+		icon = GFX_unknown
+		x = 14
+		y = 3
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_stabilise_the_balance_of_power focus = XAI_empower_the_right_wing }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_the_role_of_the_chanyu
+		icon = GFX_unknown
+		x = 14
+		y = 4
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_find_the_right_equilibrium }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_strenghten_local_leaders
+		icon = GFX_unknown
+		x = 18
+		y = 1
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_the_system_of_old }
+		completion_reward = {
+			add_ideas = XAI_strenghtened_local_leaders
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_reduce_the_amount_of_cavalry
+		icon = GFX_unknown
+		x = 17
+		y = 2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_strenghten_local_leaders }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_ask_for_more_tributes
+		icon = GFX_unknown
+		x = 19
+		y = 2
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_strenghten_local_leaders }
+		completion_reward = {
+			every_country = {
+				limit = {
+					is_subject_of = XAI
+					has_autonomy_state = autonomy_tributary
+				}
+				add_ideas = XAI_burden_on_the_tributaries
+			}
+			add_ideas = XAI_exploiting_the_tributaries
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_prepare_for_the_worst
+		icon = GFX_goal_generic_attack_allies
+		x = 18
+		y = 3
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_reduce_the_amount_of_cavalry }
+		prerequisite = { focus = XAI_ask_for_more_tributes }
+		completion_reward = {
+			add_timed_idea = {
+				idea = XAI_prepare_for_war
+				days = 365
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_the_chinese_attacks
+		icon = GFX_SOV_intervention_in_china_ccp_2d_sov_compatibility
+		x = 16
+		y = 4
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_prepare_for_the_worst }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_negociations_with_the_chinese
+		icon = GFX_unknown
+		x = 15
+		y = 5
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_the_role_of_the_chanyu }
+		prerequisite = { focus = XAI_the_chinese_attacks }
+		mutually_exclusive = { focus = XAI_strike_while_theyre_weak }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_strike_while_theyre_weak
+		icon = GFX_focus_generic_annex_country_2
+		x = 17
+		y = 5
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_the_chinese_attacks }
+		mutually_exclusive = { focus = XAI_negociations_with_the_chinese }
+		completion_reward = {
+			if = {
+				limit = {
+					XIN = { exists = yes }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = XIN
+				}
+			}
+			if = {
+				limit = {
+					XIN = { exists = no }
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = XIN
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_reintegrate_the_southern_territories
+		icon = GFX_unknown
+		x = 18
+		y = 6
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_strike_while_theyre_weak }
+		mutually_exclusive = { focus = XAI_further_than_before }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_further_than_before
+		icon = GFX_unknown
+		x = 16
+		y = 6
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_strike_while_theyre_weak }
+		mutually_exclusive = { focus = XAI_reintegrate_the_southern_territories }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_good_neighbour_policy
+		icon = GFX_unknown
+		x = 14
+		y = 6
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_negociations_with_the_chinese }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_the_korean_threat
+		icon = GFX_goal_generic_major_war
+		x = 20
+		y = 4
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_prepare_for_the_worst }
+		completion_reward = {
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = { ## Buyeo
+		id = XAI_neutralise_buyeo
+		icon = GFX_unknown
+		x = 19
+		y = 5
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_the_korean_threat }
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = BYO
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = { ## Yilou
+		id = XAI_attack_yilou
+		icon = GFX_unknown
+		x = 21
+		y = 5
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_the_korean_threat }
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = YLI
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
+
+	focus = {
+		id = XAI_unite_the_korean_kingdoms
+		icon = GFX_unknown
+		x = 20
+		y = 6
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = XAI_neutralise_buyeo }
+		prerequisite = { focus = XAI_attack_yilou }
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = GOR
+			}
+			if = {
+				limit = {
+					1063 = {
+						is_controlled_by = XAI
+					}
+				}
+				create_dynamic_country = {
+    				original_tag = GOR
+    				add_political_power = 100
+    				transfer_state = 1063
+					set_capital = {
+						state = 1063
+						remember_old_capital = yes	
+					}
+					XAI = {
+						puppet = PREV
+					}
+					hidden_effect = {
+						set_politics = {
+							ruling_party = neutrality
+    						elections_allowed = no
+						}
+						set_popularities = {
+							democratic = 3
+							neutrality = 60
+							fascism = 5
+							communism = 32
+						}
+						1063 = {
+							add_core_of = PREV
+							create_unit = {
+    							division = "name = \"Xiongnu Defense Force\" division_template = \"Chinese Levy\" start_experience_factor = 0.3 start_manpower_factor = 0.7"
+    							owner = PREV
+								count = 2
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							is_controlled_by = XAI
+							OR = {
+								is_core_of = BYO
+								is_core_of = YLI
+								is_core_of = DGB
+								is_core_of = GOR
+								is_core_of = OKJ
+								is_core_of = EYE
+								is_core_of = EYA
+								is_core_of = BAE
+							}
+						}
+						transfer_state_to = PREV
+						add_core_of = PREV
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 3
+		}
+	}
 
 	focus = {
 		id = XAI_industrial_effort
@@ -810,7 +1289,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		mutually_exclusive = { focus = XAI_the_system_of_old }
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = XAI_political_reforms
+				days = 120
+			}
 		}
 
 		ai_will_do = {
@@ -922,9 +1404,11 @@ focus_tree = {
 					is_subject_of = XAI
 					has_autonomy_state = autonomy_tributary
 				}
-				annex_country = {
-    				target = PREV
-    				transfer_troops = yes
+				XAI = {
+					annex_country = {
+    					target = PREV
+    					transfer_troops = yes
+					}
 				}
 				every_owned_state = {
 					add_core_of = XAI
@@ -1051,7 +1535,7 @@ focus_tree = {
 		prerequisite = { focus = XAI_appeasement_at_the_border focus = XAI_continue_the_raids }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = XAI_cavalry_onwards
 		}
 
 		ai_will_do = {
@@ -1232,7 +1716,16 @@ focus_tree = {
 			add_political_power = 50
 			custom_effect_tooltip = xiongnu_unrest_in_china
 		}
-
+		bypass = {
+			NOT = {
+				XIN = {
+					exists = yes
+				}
+				ANN = {
+					exists = yes
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 3
 		}
@@ -1246,7 +1739,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = { focus = XAI_unite_the_western_tribes }
 		prerequisite = { focus = XAI_foment_unrest_in_china }
-		mutually_exclusive = { focus = XAI_strike_on_china }
+		mutually_exclusive = { focus = XAI_war_on_china }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_timed_idea = {
@@ -1351,32 +1844,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			custom_effect_tooltip = XAI_claims_on_china
-			create_wargoal = {
-    			type = take_state_focus
-    			target = {
-					every_country = {
-						limit = {
-							OR = {
-								controls_state = 760 
-								controls_state = 756 
-								controls_state = 616 
-								controls_state = 746 
-								controls_state = 421 
-								controls_state = 611 
-								controls_state = 610 
-								controls_state = 609 
-								controls_state = 608 
-								controls_state = 622 
-								controls_state = 615 
-								controls_state = 644
-							}
-						}
-					}
-				}
-    			generator = { 760 756 616 746 421 611 610 609 608 622 615 644 }
-    			expire = 210
-			}
-			hidden_effect = {
 				760 = {
 					add_claim_by = XAI
 				}
@@ -1413,7 +1880,6 @@ focus_tree = {
 				644 = {
 					add_claim_by = XAI
 				}
-			}
 		}
 
 		ai_will_do = {
@@ -1430,7 +1896,7 @@ focus_tree = {
 		prerequisite = { focus = XAI_war_on_china }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			set_country_flag = xiongnu_reform_the_empire
 		}
 
 		ai_will_do = {
@@ -1438,392 +1904,4 @@ focus_tree = {
 		}
 	}
 
-	
-
-	focus = {
-		id = XAI_the_system_of_old
-		icon = GFX_focus_generic_horse_studs
-		x = 16
-		y = 0
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		mutually_exclusive = { focus = PTH_enact_political_reforms }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_reinforce_the_council
-		icon = GFX_unknown
-		x = 14
-		y = 1
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_the_system_of_old }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_stabilise_the_balance_of_power
-		icon = GFX_unknown
-		x = 13
-		y = 2
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_reinforce_the_council }
-		mutually_exclusive = { focus = XAI_empower_the_right_wing }
-		completion_reward = {
-			add_stability = 0.05
-			add_political_power = 50
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_empower_the_right_wing
-		icon = GFX_unknown
-		x = 15
-		y = 2
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_reinforce_the_council }
-		mutually_exclusive = { focus = XAI_stabilise_the_balance_of_power }
-		completion_reward = {
-			add_stability = -0.08
-			add_war_support = -0.05
-			random_owned_controlled_state = {
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 1
-    				instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-    				type = industrial_complex
-    				level = 2
-    				instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 2
-			}
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_find_the_right_equilibrium
-		icon = GFX_unknown
-		x = 14
-		y = 3
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_stabilise_the_balance_of_power focus = XAI_empower_the_right_wing }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_the_role_of_the_chanyu
-		icon = GFX_unknown
-		x = 14
-		y = 4
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_find_the_right_equilibrium }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_strenghten_local_leaders
-		icon = GFX_unknown
-		x = 18
-		y = 1
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_the_system_of_old }
-		completion_reward = {
-			add_ideas = XAI_strenghtened_local_leaders
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_reduce_the_amount_of_cavalry
-		icon = GFX_unknown
-		x = 17
-		y = 2
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_strenghten_local_leaders }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_ask_for_more_tributes
-		icon = GFX_unknown
-		x = 19
-		y = 2
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_strenghten_local_leaders }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_prepare_for_the_worst
-		icon = GFX_goal_generic_attack_allies
-		x = 18
-		y = 3
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_reduce_the_amount_of_cavalry }
-		prerequisite = { focus = XAI_ask_for_more_tributes }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_the_chinese_attacks
-		icon = GFX_SOV_intervention_in_china_ccp_2d_sov_compatibility
-		x = 16
-		y = 4
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_prepare_for_the_worst }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_negociations_with_the_chinese
-		icon = GFX_unknown
-		x = 15
-		y = 5
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_the_role_of_the_chanyu }
-		prerequisite = { focus = XAI_the_chinese_attacks }
-		mutually_exclusive = { focus = XAI_strike_while_theyre_weak }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_strike_while_theyre_weak
-		icon = GFX_focus_generic_annex_country_2
-		x = 17
-		y = 5
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_the_chinese_attacks }
-		mutually_exclusive = { focus = XAI_negociations_with_the_chinese }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_reintegrate_the_southern_territories
-		icon = GFX_unknown
-		x = 18
-		y = 6
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_strike_while_theyre_weak }
-		mutually_exclusive = { focus = XAI_further_than_before }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_further_than_before
-		icon = GFX_unknown
-		x = 16
-		y = 6
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_strike_while_theyre_weak }
-		mutually_exclusive = { focus = XAI_reintegrate_the_southern_territories }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_good_neighbour_policy
-		icon = GFX_unknown
-		x = 14
-		y = 6
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_negociations_with_the_chinese }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_the_korean_threat
-		icon = GFX_goal_generic_major_war
-		x = 20
-		y = 4
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_prepare_for_the_worst }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = { ## Buyeo
-		id = XAI_neutralise_buyeo
-		icon = GFX_unknown
-		x = 19
-		y = 5
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_the_korean_threat }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = { ## Yilou
-		id = XAI_attack_yilou
-		icon = GFX_unknown
-		x = 21
-		y = 5
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_the_korean_threat }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = XAI_unite_the_korean_kingdoms
-		icon = GFX_unknown
-		x = 20
-		y = 6
-		cost = 10
-
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		prerequisite = { focus = XAI_neutralise_buyeo }
-		prerequisite = { focus = XAI_attack_yilou }
-		completion_reward = {
-			
-		}
-
-		ai_will_do = {
-			factor = 3
-		}
-	}
 }

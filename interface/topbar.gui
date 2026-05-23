@@ -808,12 +808,38 @@ guiTypes = {
 				buttonType = {
 					name = "intel_agency_button"
 					quadTextureSprite ="GFX_topbar_intelligence" 
+					position = { x= -5000 y = 0 }
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					oversound = ui_menu_over
+					shortcut = ""
+				}
+
+
+
+
+
+
+
+				buttonType = {
+					name = "influence_button"
+					quadTextureSprite ="GFX_topbar_decisionview_button" 
 					position = { x= -49 y = 0 }
 					Orientation = "UPPER_LEFT"
 					clicksound = click_close
 					oversound = ui_menu_over
 					shortcut = "shift+w"
 				}
+
+
+
+
+
+
+
+
+
+
 
 				iconType = {
 					name = "intelview_ops_prepared_or_completed_bg"

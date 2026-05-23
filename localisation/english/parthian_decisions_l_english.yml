@@ -142,6 +142,8 @@
  
  ask_for_treaty_ports: "Negociate §L[FROM.GetName]§!"
 
+ arsacid_gui_explain_council: ""
+
  already_buying: "§RWe are already buying a state!§!"
  ## TRAITS
 
@@ -257,7 +259,40 @@
  arsacid_event.23.a: "Why not!"
  arsacid_event.23.b: "No thanks."
 
+ arsacid_event.24.t: "The Arsacid asks for us to Stop the Raids!"
+ arsacid_event.24.d: "The Arsacid are asking us to stop raiding their territories."
+ arsacid_event.24.a: "We'll stop. For now."
+ arsacid_event.24.b: "We'll do as we please!"
 
+ arsacid_event.25.t: "Answer from [FROM.GetName]"
+ arsacid_event.25.d: "They accepted!"
+ arsacid_event.25.a: "Finally!"
+
+ arsacid_event.26.t: "Answer from [FROM.GetName]"
+ arsacid_event.26.d: "They refused!"
+ arsacid_event.26.a: "These idiots!"
+
+ arsacid_event.27.t: "The Arsacid Demands parts of our Territories!"
+ arsacid_event.27.d: "The Arsacid are asking for a good part of our eastern territories, arguing that they were once under their control and that we can't protect the trade routes with China."
+ arsacid_event.27.a: "There's nothing we can do.."
+ arsacid_event.27.b: "Why would we do that?"
+
+ arsacid_event.28.t: "The Arsacid Empire seeks to normalise relations with us!"
+ arsacid_event.28.d: "An envoy from the Arsacid Empire has arrived in our capital, asking to normalise relations between our two countries. This could be a good opportunity to finally end the everlasting wars between us and pave the way towards an alliance against our enemies."
+ arsacid_event.28.a: "We can't continue waging war!"
+ arsacid_event.28.b: "On my dead body!"
+
+ arsacid_event.29.t: "[FROM.GetName] has normalised relations with us!"
+ arsacid_event.29.d: "The [FROM.GetAdjective] government has agreed to normalise relations with us. This may be the start of a new alliance!"
+ arsacid_event.29.a: "Great!"
+
+ arsacid_event.30.t: "[FROM.GetName] has refused to normalise relations with us!"
+ arsacid_event.30.d: "The [FROM.GetAdjective] government has refused to normalise relations with us, therefore declaring its true intentions in the face of our envoys: we must get ready for war, if that's what they want!"
+ arsacid_event.30.a: "These nomadic bastards!"
+
+ arsacid_event.31.t: "Arsacid power is growing!"
+ arsacid_event.31.d: "The new Arsacid government has decided to overturn the Council and reinforce its power. We must not let it happen!"
+ arsacid_event.31.a: "We must act!"
 
  arsacid_border_conflict.1.t: "Skirmishes in Syria!"
  arsacid_border_conflict.1.d: "The Arsacid won."
@@ -274,3 +309,8 @@
  arsacid_border_conflict.3.a: "Middle ground."
  arsacid_border_conflict.3.b: "Middle ground."
 
+
+satraps_breaking_off_decision: "§Y[FROM.GetName]§! is slipping off from our grip!"
+
+PTH_normalised_relations_raid: "If we §Gnormalised relations§! with the nomads, we will have §Ymore chance at succeeding in our negociations!§!"
+PTH_satraps_going_out: "If we §Rassume the council's powers§! without enough support, the satraps of the realm might revolt against our rule!"

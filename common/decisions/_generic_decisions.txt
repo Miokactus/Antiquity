@@ -218,7 +218,11 @@ war_actions = {
 			factor = 1
 			modifier = {
 				factor = 300
-				surrender_progress > 0.9
+				war_length_with = {
+    				tag = FROM
+    				months > 12
+				}
+				surrender_progress > 0.8
 			}
 		}
 	}

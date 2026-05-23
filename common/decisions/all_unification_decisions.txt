@@ -247,14 +247,7 @@ unification_decisions = {
 		}
 		cost = 150
 		allowed = {
-            OR = {
-                tag = GOR
-                tag = OKJ
-                tag = EYE
-                tag = BAE
-                tag = DGB
-                tag = BYO
-            }
+            always = yes
     	}
 		available = {
 			1063 = { is_owned_by = ROOT }
@@ -282,6 +275,11 @@ unification_decisions = {
             527 = { add_core_of = ROOT }
             1044 = { add_core_of = ROOT }
             1048 = { add_core_of = ROOT }
+            328 = { add_core_of = ROOT }
+            717 = { add_core_of = ROOT }
+            409 = { add_core_of = ROOT }
+            408 = { add_core_of = ROOT }
+            1199 = { add_core_of = ROOT }
         }
             set_cosmetic_tag = korea_north
 		}
@@ -361,6 +359,11 @@ unification_decisions = {
             525 = { add_core_of = ROOT }
             1046 = { add_core_of = ROOT }
             1047 = { add_core_of = ROOT }
+            328 = { add_core_of = ROOT }
+            717 = { add_core_of = ROOT }
+            409 = { add_core_of = ROOT }
+            408 = { add_core_of = ROOT }
+            1199 = { add_core_of = ROOT }
         }
             set_cosmetic_tag = korean_empire
 		}

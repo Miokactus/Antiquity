@@ -2,6 +2,28 @@ ideas = {
 	country = {
 		
 	## GENERIC ##
+
+		paid_nomads = {
+			name = "Paid Nomads"
+			allowed_civil_war = { always = yes }
+			picture = can_wartime_prices_and_trade_board
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.05
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		got_paid_nomad = {
+			name = "Got Tribute"
+			allowed_civil_war = { always = yes }
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				political_power_cost = -0.5
+				stability_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
 		
 		nomadic_society = {
 			name = "Nomadic Society"

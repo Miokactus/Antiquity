@@ -4,6 +4,57 @@
  war_actions: "War Actions"
  tribal_actions: "Tribal Actions"
 
+ MAPMODE_INFLUENCE_MAP_MODE_NAME: "Influence"
+ MAPMODE_INFLUENCE_MAP_MODE: "§YInfluence§! map mode"
+ MAPMODE_INFLUENCE_MAP_MODE_DESCRIPTION: "Shows the current influences spheres in the world. Each colour is based on the main country, while different shades can mean that an influenced country is either a puppet or independent."
+ influence_map_mode_tooltip: "[From.GetInfluenceMapModeTooltip]"
+ influence_map_mode_tooltip_delayed: "[From.GetInfluenceMapModeTooltipDelayed]"
+
+ sphere_base_reluctance: "Base Reluctance"
+ sphere_strength_ratio: "§Y[Root.GetName]§!'s forces strength ratio to §Y[From.GetName]§!"
+ sphere_opinion: "§Y[From.GetName]§! opinion of §Y[Root.GetName]§!"
+ sphere_war_support: "§Y[From.GetName]§! War Support Factor"
+ sphere_stability: "§Y[From.GetName]§! Stability Factor"
+ tribute_opinion: "§Y[From.GetName]§! opinion of §Y[Root.GetName]§!"
+ ideology_ratio: "Ideological Difference"
+
+ is_sphere_leader: "Is leader of a §Ysphere of influence§!"
+
+ # Scripted Localisation:
+ influence_map_mode_tt_influenced: "§Y[From.Owner.GetName]§! is influenced by a foreign power."
+ influence_map_mode_tt_not_influenced: "§Y[From.Owner.GetName]§! is not influenced by any foreign power."
+
+ influence_map_mode_tt_rome_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §R[ROE.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_rome_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §R[ROE.GetNameWithFlag]§!."
+ influence_map_mode_tt_parthia_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §G[PTH.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_parthia_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §G[PTH.GetNameWithFlag]§!."
+ influence_map_mode_tt_china_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §L[XIN.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_china_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §L[XIN.GetNameWithFlag]§!."
+ influence_map_mode_tt_cherusci_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §5[CRS.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_cherusci_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §5[CRS.GetNameWithFlag]§!."
+ influence_map_mode_tt_xiongnu_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §7[XAI.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_xiongnu_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §7[XAI.GetNameWithFlag]§!."
+ influence_map_mode_tt_teotihuacan_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §9[TTH.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_teotihuacan_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §9[TTH.GetNameWithFlag]§!."
+
+ influence_map_mode_tt_influenced_undefined: "§Y[From.Owner.GetName]§! is influenced by an §6Unidentified foreign power§!."
+
+ CREATE_SPHERE: "[InfluenceSphereName]"
+ CREATE_SPHERE_ACTION_DESC: "We will expand our influence towards this country."
+ CREATE_SPHERE_TITLE: "Expand our Influence"
+ expand_influence_sphere_tt: "Expand our Influence"
+ create_influence_sphere_tt: "the Roman Sphere"
+ LEAVE_SPHERE: "Break off from [InfluenceSphereName]"
+ LEAVE_SPHERE_TITLE: "Leave their sphere of influence"
+ LEAVE_SPHERE_ACTION_DESC: "We will break off from our §Yoppresors§!'s influence!"
+
+
+ do_a_raid: "Start a raid on §6the [From.GetName]§!"
+
+
+
+
+
  ## OPINION MODIFIERS
 
  allies_of_china: "Allies of China"

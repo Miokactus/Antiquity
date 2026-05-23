@@ -15,6 +15,71 @@ ideas = {
 
 	country = {
 		
+		XIN_peasant_militia = {
+			name = "Peasant Militia"
+			allowed_civil_war = { always = yes }
+			picture = POL_the_peasants_strike
+			modifier = {
+				training_time = -0.2
+				consumer_goods_factor = -0.05
+				conscription_factor = 0.1
+			}
+		}
+
+		XIN_protected_indian_trade = {
+			name = "Protected Sino-Indian Trade"
+			allowed_civil_war = { always = yes }
+			picture = can_wartime_prices_and_trade_board
+			targeted_modifier = {
+    			tag = XIN    # this can also take a variable that stores a scope
+				extra_trade_to_target_factor = 0.2
+				trade_cost_for_target_factor = -0.2
+				trade_opinion_factor = 0.2
+				cic_to_target_factor = 0.1
+			}
+			modifier = {
+				political_power_cost = -0.2
+				stability_factor = -0.05		
+			}
+			cancel = {
+				ROOT = {
+					OR = {
+						has_war_with = XIN
+						XIN = {
+							exists = no
+						}
+					}
+				}
+			}
+			on_remove = {
+				add_political_power = 25
+				add_war_support = 0.05
+			}
+		}
+
+		XIN_fight_against_tribalism = {
+			name = "Fight against Tribalism"
+			allowed_civil_war = { always = yes }
+			picture = CHI_cradle_of_civilization
+			targeted_modifier = {
+    			tag = XAI   # this can also take a variable that stores a scope
+				defense_bonus_against = 0.2
+				generate_wargoal_tension_against = 0.05
+			}
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = 0.1	
+			}
+			cancel = {
+				XAI = {
+					OR = {
+						is_subject_of = XIN
+						exists = no
+					}
+				}
+			}
+		}
+
 	## XIN CHINA ##
 		
 		XIN_illegitimate_regime = {

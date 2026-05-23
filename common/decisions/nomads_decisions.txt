@@ -1,0 +1,90 @@
+tribal_actions = {
+	do_a_raid = {
+		icon = generic_civil_support
+		days_re_enable = 20
+		cost = 70
+		allowed = {
+			has_government = neutrality
+
+    	}
+		available = {
+			has_manpower > 500
+			OR = {
+				has_equipment = {
+    				infantry_equipment_1 > 100
+				}
+				has_equipment = {
+    				infantry_equipment > 100
+				}
+			}
+			FROM = {
+				NOT = {
+					has_idea = paid_nomads
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		target_root_trigger = { TAG = ROOT }
+		target_trigger = {
+        	FROM = {
+           		AND = {
+					is_neighbor_of = ROOT
+				}
+				NOT = {
+					tag = AAN
+					is_subject_of = ROOT
+					has_war_with = ROOT
+					AND = {
+						has_government = neutrality
+						is_ally_with = ROOT
+					}
+					AND = {
+						has_government = neutrality
+						has_opinion = {
+							target = ROOT
+							value > 25
+						}
+					}
+					has_military_access_to = ROOT
+				}
+        	}
+    	}
+		target_array = neighbors
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = tribal.2
+					days = 2
+				}
+			}
+			if = {
+				limit = {
+					has_equipment = {
+						infantry_equipment_1 > 100
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = -100
+					producer = ROOT
+				}
+			}
+			if = {
+				limit = {
+					has_equipment = {
+						infantry_equipment > 100
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -100
+					producer = ROOT
+				}
+			}
+		}
+		timeout_effect = {
+		}
+	}
+}

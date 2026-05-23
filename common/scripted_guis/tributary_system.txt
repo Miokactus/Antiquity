@@ -30,6 +30,44 @@ scripted_gui = {
 }
 
 
+scripted_gui = {
+	influence_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "influenceview"
+
+		visible = {
+			has_country_flag = opened_influence
+		}
+		dynamic_lists = {
+		}
+		effects = {
+			influence_button_button_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = opened_influence
+						}
+					}
+					set_country_flag = opened_influence
+				}
+				else_if = {
+					limit = {
+						has_country_flag = opened_influence
+					}
+					clr_country_flag = opened_influence
+				}
+			}
+		}
+		triggers = {
+		
+		}
+		ai_enabled = {
+			always = no # Handled in a different way
+        }
+	}
+}
+
 
 
 scripted_gui = {

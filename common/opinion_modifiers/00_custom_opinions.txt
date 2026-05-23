@@ -32,4 +32,12 @@ opinion_modifiers = {
 	regime_change = {
 		value = -30
 	}
+
+	path_to_the_west = {
+		value = 40
+	}
+
+	sent_diplomats = {
+		value = 20
+	}
 }

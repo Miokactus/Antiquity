@@ -79,7 +79,7 @@ focus_tree = {
 		prerequisite = { focus = PTH_keep_the_nobility_around }
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		completion_reward = {
@@ -101,7 +101,11 @@ focus_tree = {
 		prerequisite = { focus = PTH_keep_the_nobility_around focus = PTH_impose_the_king_of_kings_will }
 
 		ai_will_do = {
-			factor = 1
+			factor = 0.5
+			modifier = {
+				factor = 1
+				date > 15.2.5
+			}
 		}
 
 		completion_reward = {
@@ -119,12 +123,13 @@ focus_tree = {
 		prerequisite = { focus = PTH_impose_the_king_of_kings_will }
 
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 
 		completion_reward = {
 			custom_effect_tooltip = PTH_purge_council
 			add_political_power = 50
+			add_stability = 0.05
 		}
 	}
 
@@ -221,7 +226,7 @@ focus_tree = {
 				date > 18.2.5
 			}
 			modifier = {
-				factor = 20
+				factor = 5
 				is_historical_focus_on = yes
 			}
 		}
@@ -249,7 +254,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 20
+				factor = 5
 				is_historical_focus_on = no
 			}
 		}
@@ -272,16 +277,35 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = PTH_purge_the_council }
-
+		available = {
+			fascism > 0.35
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_assume_the_council_s_powers completed"
+			custom_effect_tooltip = PTH_satraps_going_out
 			add_ideas = PTH_king_of_kings
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
+			}
+			hidden_effect = {
+				if = {
+					fascism < 0.5
+				}
+				every_country = {
+					limit = {
+						is_subject_of = PTH
+						has_country_flag = arsacid_satrap
+					}
+					country_event = {
+						id = arsacid_event.31
+						days = 2
+					}
+				}
+				set_country_flag = PTH_satraps_breaking_off
 			}
 		}
 	}
@@ -488,7 +512,9 @@ focus_tree = {
 					
 				}
 				custom_effect_tooltip = revolt_rising_neg10
+				add_ideas = PTH_prestige_of_the_satraps
 			}
+			add_ideas = PTH_prestige_of_the_satraps_main
 		}
 	}
 
@@ -530,6 +556,25 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_contact_with_the_nomads completed"
+			every_country = {
+				limit = {
+					NOT = {
+						tag = AAN
+					}
+					AND = {
+						has_government = neutrality
+						OR = {
+							tag = YUZ
+							tag = SCY
+							tag = SAR
+							is_neighbor_of = PTH
+						}
+					}
+				}
+				country_event = {
+					id = arsacid_event.28
+				}
+			}
 		}
 	}
 
@@ -676,6 +721,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_reorganise_the_ministries completed"
 			add_political_power = 50
+			add_ideas = PTH_reorganised_ministries
 			every_country = {
 				limit = {
 					is_subject_of = PTH
@@ -722,6 +768,26 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_negociate_for_the_end_of_the_raids completed"
+			custom_effect_tooltip = PTH_normalised_relations_raid
+			every_country = {
+				limit = {
+					NOT = {
+						tag = AAN
+					}
+					AND = {
+						has_government = neutrality
+						OR = {
+							tag = YUZ
+							tag = SCY
+							tag = SAR
+							is_neighbor_of = PTH
+						}
+					}
+				}
+				country_event = {
+					id = arsacid_event.24
+				}
+			}
 		}
 	}
 
@@ -740,6 +806,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = PTH_normalised_relations_raid
 			742 = {
 				add_claim_by = PTH
 			}
@@ -751,6 +818,11 @@ focus_tree = {
 			}
 			830 = {
 				add_claim_by = PTH
+			}
+			YUZ = {
+				country_event = {
+					id = arsacid_event.27
+				}
 			}
 		}
 	}
@@ -901,13 +973,22 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = PTH_negociate_for_the_end_of_the_raids focus = PTH_protect_the_eastern_trade_routes }
-
+		available = {
+			IDS = {
+				NOT = {
+					is_subject_of = PTH
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus PTH_intervention_in_india completed"
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = IDS
+			}
 		}
 	}
 
@@ -1360,7 +1441,13 @@ focus_tree = {
 		cost = 10
 
 		prerequisite = { focus = PTH_intervention_in_india }
-
+		available = {
+			IDS = {
+				NOT = {
+					is_subject_of = PTH
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1811,7 +1898,12 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			
+			XIN = {
+				country_event = {
+					id = arsacid_event.22
+					days = 5
+				}
+			}
 		}
 	}
 

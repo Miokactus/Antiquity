@@ -1,3 +1,103 @@
+parthian_crisis = {
+	satraps_breaking_off_decision = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		days_mission_timeout = 50
+		priority = 10
+        target_array = subjects
+		target_trigger = { 
+            FROM = {
+				every_country = {
+					limit = {
+						has_country_flag = arsacid_satrap
+					}
+				}
+            }
+			PTH = {
+				has_country_flag = PTH_satraps_breaking_off
+			}
+		}
+		fire_only_once = yes
+		selectable_mission = yes
+		is_good = no
+		days_remove = 15
+		activation = {
+			PTH = {
+				has_country_flag = PTH_satraps_breaking_off
+			}
+		}
+		allowed = {
+			original_tag = PTH
+			PTH = {
+				has_country_flag = PTH_satraps_breaking_off
+			}
+		}
+		available = {
+			FROM = {
+				capital_scope = {
+					PTH = {
+						divisions_in_state = {
+							size > 4
+							state = PREV
+						}
+					}
+				}
+			}
+			PTH = {
+				has_political_power > 50
+			}
+		}
+		complete_effect = {
+			FROM = {
+				set_country_flag = loyal_satrap
+				add_stability = -0.05
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+			}
+			add_political_power = -50
+			add_stability = -0.05
+		}
+		timeout_effect = {
+			FROM = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+					has_country_flag = loyal_satrap
+				}
+				clr_country_flag = loyal_satrap
+			}
+			FROM = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+					NOT = {
+						has_country_flag = loyal_satrap
+					}
+				}
+				add_stability = 0.05
+				add_ideas = SA_revolted_against_parthia
+				set_country_flag = revolted_against_parthia
+				PTH = {
+					set_autonomy = {
+    					target = FROM
+    					autonomous_state = autonomy_free
+    					end_wars = yes
+    					end_civil_wars = yes
+    				}
+					add_political_power = -50
+    			}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+}
+
+
+
 parthian_administration_flags = {
     enact_infrastructure_project = {
         icon = generic_prepare_civil_war
@@ -109,7 +209,7 @@ parthian_administration_flags = {
 			custom_effect_tooltip = revolt_rising_neg10
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
     }
     help_locality = {
@@ -200,6 +300,10 @@ parthian_administration_flags = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				has_political_power > 150
+				factor = 5
+			}
 		}
     }
 
@@ -513,7 +617,7 @@ parthian_administration_flags = {
 			custom_effect_tooltip = revolt_rising_10
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 4
 		}
     }
 }
@@ -523,7 +627,7 @@ parthian_council = {
 	lobby_suren = {
 		icon = generic_prepare_civil_war
 		days_re_enable = 10
-		cost = 30
+		cost = 50
 		priority = 10
 		allowed = {
 			always = yes
@@ -542,13 +646,13 @@ parthian_council = {
 			custom_effect_tooltip = house_lobbying_tooltip
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
     }
 	lobby_karen = {
 		icon = generic_prepare_civil_war
 		days_re_enable = 10
-		cost = 30
+		cost = 50
 		priority = 10
 		allowed = {
 			always = yes
@@ -567,13 +671,13 @@ parthian_council = {
 			custom_effect_tooltip = house_lobbying_tooltip
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
     }
 	lobby_zik = {
 		icon = generic_prepare_civil_war
 		days_re_enable = 10
-		cost = 30
+		cost = 50
 		priority = 10
 		allowed = {
 			always = yes
@@ -592,7 +696,7 @@ parthian_council = {
 			custom_effect_tooltip = house_lobbying_tooltip
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 5
 		}
     }
 
@@ -619,7 +723,7 @@ parthian_council = {
 			add_war_support = 0.02
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
     }
 	use_houses_influence_karen = {
@@ -645,7 +749,7 @@ parthian_council = {
 			add_war_support = 0.05
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
     }
 	use_houses_influence_zik = {
@@ -671,7 +775,7 @@ parthian_council = {
 			add_war_support = -0.02
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 3
 		}
     }
 }

@@ -1,0 +1,33 @@
+scripted_gui = {
+	xiongnu_scripted_gui_tuqi_kings = {
+		context_type = decision_category
+		window_name = "xiongnu_tuqi_kings"
+
+		visible = {
+			original_tag = XAI
+		}
+
+		properties = {
+			xiongnu_gui_flag = {
+				image = "[?chi_selected_warlord.GetFlag]"
+			}
+			xiongnu_gui_ctesiphon = {
+				frame = 291.chi_controller
+			}
+
+		}
+
+		triggers = {
+
+		}
+
+		effects = {
+			
+			arsacid_gui_ctesiphon_click = {
+				set_variable = { chi_selected_warlord = 291.controller }
+			}
+			
+			
+		}
+	}
+}

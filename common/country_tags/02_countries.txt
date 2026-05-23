@@ -302,3 +302,21 @@ KKC = "countries/Kucha.txt"
 LOL = "countries/Loulan.txt"
 NYA = "countries/Niya.txt"
 KHT = "countries/Khotan.txt"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#########################
+#### START DATE 1000 ####
+
+WSG = "countries/European.txt"

@@ -1,0 +1,249 @@
+scripted_map_modes = {
+	influence_map_mode = {
+		top = {
+			type = country
+
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 1 }
+					if = {
+						limit = {
+							OR = {
+								has_country_flag = influenced_by_XIN
+								tag = XIN
+							}
+						}
+						if = { #If influenced and and puppet
+							limit = {
+							    is_subject_of = XIN
+						    }
+							set_temp_variable = { red = 0.9 }
+							set_temp_variable = { green = 0.9 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else = { #If leader
+							limit = {
+								tag = XIN
+							}
+							set_temp_variable = { red = 0.8 }
+                            set_temp_variable = { green = 0.8 }
+                            set_temp_variable = { blue = 0.0 }
+						}
+						else_if = { #If influenced by Rome but not puppet
+                            set_temp_variable = { red = 0.5 }
+                            set_temp_variable = { green = 0.5 }
+                            set_temp_variable = { blue = 0.0 }				
+                        }
+                    }
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = influenced_by_ROE
+								tag = ROE
+							}
+						}
+						if = { #If influenced by Rome and puppet
+							limit = {
+							    is_subject_of = ROE
+						    }
+							set_temp_variable = { red = 0.8 }
+							set_temp_variable = { green = 0.0 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else = { #If leader
+							limit = {
+								tag = ROE
+							}
+							set_temp_variable = { red = 0.6 }
+                            set_temp_variable = { green = 0.0 }
+                            set_temp_variable = { blue = 0.0 }
+						}
+						else_if = { #If influenced by Rome but not puppet
+                            set_temp_variable = { red = 0.5 }
+                            set_temp_variable = { green = 0.0 }
+                            set_temp_variable = { blue = 0.0 }				
+                        }
+                    }
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = influenced_by_PTH
+								tag = PTH
+							}
+						}
+						if = { #If influenced by Parthia and puppet
+							limit = {
+								is_subject_of = PTH
+							}
+							set_temp_variable = { red = 0.0 }
+							set_temp_variable = { green = 1.0 }
+							set_temp_variable = { blue = 0.0 }
+						}
+						else = { #If leader
+							limit = {
+								tag = PTH
+							}
+							set_temp_variable = { red = 0.0 }
+                            set_temp_variable = { green = 0.8 }
+                            set_temp_variable = { blue = 0.0 }
+						}
+						else_if = { #If influenced by Rome but not puppet
+                            set_temp_variable = { red = 0.0 }
+                            set_temp_variable = { green = 0.5 }
+                            set_temp_variable = { blue = 0.2 }				
+                        }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = influenced_by_CRS
+								tag = CRS
+							}
+						}
+						if = { #If influenced by Parthia and puppet
+							limit = {
+								is_subject_of = CRS
+							}
+							set_temp_variable = { red = 0.0 }
+							set_temp_variable = { green = 0.0 }
+							set_temp_variable = { blue = 0.8 }
+						}
+						else = { #If leader
+							limit = {
+								tag = CRS
+							}
+							set_temp_variable = { red = 0.0 }
+                            set_temp_variable = { green = 0.0 }
+                            set_temp_variable = { blue = 0.7 }
+						}
+						else_if = { #If influenced by Rome but not puppet
+                            set_temp_variable = { red = 0.0 }
+                            set_temp_variable = { green = 0.0 }
+                            set_temp_variable = { blue = 0.5 }				
+                        }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = influenced_by_XAI
+								tag = XAI
+							}
+						}
+						if = { #If influenced by Parthia and puppet
+							limit = {
+								is_subject_of = XAI
+							}
+							set_temp_variable = { red = 0.2 }
+							set_temp_variable = { green = 0.2 }
+							set_temp_variable = { blue = 0.4 }
+						}
+						else = { #If leader
+							limit = {
+								tag = XAI
+							}
+							set_temp_variable = { red = 0.2 }
+                            set_temp_variable = { green = 0.2 }
+                            set_temp_variable = { blue = 0.2 }
+						}
+						else_if = { #If influenced by Rome but not puppet
+                            set_temp_variable = { red = 0.1 }
+                            set_temp_variable = { green = 0.1 }
+                            set_temp_variable = { blue = 0.1 }				
+                        }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_country_flag = influenced_by_TTH
+								tag = TTH
+							}
+						}
+						if = { #If influenced by Parthia and puppet
+							limit = {
+								is_subject_of = TTH
+							}
+							set_temp_variable = { red = 0.0 }
+							set_temp_variable = { green = 0.0 }
+							set_temp_variable = { blue = 0.6 }
+						}
+						else = { #If leader
+							limit = {
+								tag = TTH
+							}
+							set_temp_variable = { red = 0.0 }
+                            set_temp_variable = { green = 0.0 }
+                            set_temp_variable = { blue = 0.5 }
+						}
+						else_if = { #If influenced by Rome but not puppet
+                            set_temp_variable = { red = 0.0 }
+                            set_temp_variable = { green = 0.0 }
+                            set_temp_variable = { blue = 0.2 }				
+                        }
+					}
+					else = { #If not influenced by any country
+						set_temp_variable = { red = 0.1 }
+						set_temp_variable = { green = 0.1 }
+						set_temp_variable = { blue = 0.1 }
+					}
+				}
+			}
+
+			thickness = no
+
+			targets = {
+			#	target_array = core_states
+			#	target_array = owned_states
+			#	target_array = controlled_states
+				target_array = global.countries
+				target_trigger = {
+					FROM = {
+						OR = {
+							has_country_flag = influenced_by_ROE
+							has_country_flag = influenced_by_PTH
+							has_country_flag = influenced_by_XIN
+							has_country_flag = influenced_by_XAI
+							has_country_flag = influenced_by_TTH
+							has_country_flag = influenced_by_CRS
+							tag = ROE
+							tag = PTH
+							tag = XIN
+							tag = XAI
+							tag = CRS
+							tag = TTH
+							is_major = yes
+							any_country = {
+								limit = {
+									exists = yes
+								}
+							}
+						}
+						
+					}
+				}
+			}
+		}
+
+		bottom = {
+			type = state
+
+			color = {
+				set_temp_variable = { alpha = 1 }
+			#	set_temp_variable = { thickness = 10.0 }
+				set_temp_variable = { red = 0.0 }
+				set_temp_variable = { green = 0.0 }
+				set_temp_variable = { blue = 0.0 }
+			}
+
+			thickness = no
+
+			targets = {
+				targets = { ROOT }
+			}
+		}
+
+		far_text = country
+		near_text = state
+
+		update_daily = yes
+	}
+}

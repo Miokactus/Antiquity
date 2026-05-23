@@ -1,6 +1,118 @@
 ideas = {
 	country = {
 		
+		arsacid_normalised_relations_nomads = {
+			name = "Normalised Relations with the Arsacid"
+			allowed_civil_war = { always = yes }
+			picture = generic_deal_with_the_devil2
+			cancel = {
+				ROOT = {
+					has_war_with = PTH
+				}
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+			}
+			on_remove = {
+				clr_country_flag = normalised_relations_nomads
+			}
+		}
+
+		SA_revolted_against_parthia = {
+			name = "Revolted Against Parthia"
+			allowed_civil_war = { always = yes }
+			picture = POL_the_peasants_strike
+			cancel = {
+				ROOT = {
+					is_subject_of = PTH
+				}
+				NOT = {
+					has_country_flag = revolted_against_parthia
+				}
+			}
+			targeted_modifier = {
+				tag = PTH    # this can also take a variable that stores a scope
+				defense_bonus_against = 0.15
+				extra_trade_to_target_factor = -0.15
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.1
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_reorganised_ministries = {
+			name = "Reorganised Ministries"
+			allowed_civil_war = { always = yes }
+			picture = generic_volunteer_expedition_bonus
+			cancel = {
+			}
+			modifier = {
+				stability_factor = 0.05
+				factory_energy_consumption = -0.2
+				party_popularity_stability_factor = 0.2
+				political_power_factor = 0.1
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_prestige_of_the_satraps = {
+			name = "Prestige of the Satraps"
+			allowed_civil_war = { always = yes }
+			picture = ITA_devaluated_lira
+			targeted_modifier = {
+				tag = PTH
+				cic_to_target_factor = 0.1
+				mic_to_target_factor = 0.1
+			}
+			cancel = {
+			}
+			modifier = {
+				stability_factor = 0.1
+				autonomy_gain = -0.1
+				consumer_goods_factor = -0.1
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_prestige_of_the_satraps_main = {
+			name = "Prestige of the Satraps"
+			allowed_civil_war = { always = yes }
+			picture = ROM_king_carol_ii_hedonist
+			cancel = {
+			}
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.3
+				conscription_factor = 0.05
+			}
+			on_remove = {
+			}
+		}
+
+		arsacid_bad_relations_nomads = {
+			name = "Bad Relations with the Arsacid"
+			allowed_civil_war = { always = yes }
+			picture = eng_imperial_conscription
+			cancel = {
+				ROOT = {
+					is_ally_with = PTH
+				}
+			}
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+			}
+			on_remove = {
+				clr_country_flag = bad_relations_nomads
+			}
+		}
+
 		PTH_subject_of_arsacid = {
 			name = "Satrap of the Arsacid"
 			allowed_civil_war = { always = yes }
@@ -15,6 +127,9 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				political_power_cost = 0.2
+			}
+			on_remove = {
+				clr_country_flag = arsacid_satrap
 			}
 		}
 

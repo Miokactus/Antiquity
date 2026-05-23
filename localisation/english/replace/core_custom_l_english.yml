@@ -2083,13 +2083,12 @@
  EJECT_TRIBUTARY: "Eject tributary"
  EJECT_TRIBUTARY_TITLE: "Put an end to the tribute"
  EJECT_TRIBUTARY_ACTION_DESC: "We no longer have any interests in this country."
- tribute_base_reluctance: "Base reluctance"
+ tribute_base_reluctance: "Base Reluctance"
  tribute_geopolitics: "State of the world"
  tribute_proposal_cost: "Proposal cost"
- tribute_stability: "Stability factor"
- tribute_strength_ratio: "Strength ratio"
- tribute_war_support: "War support"
-
+ tribute_war_support: "§Y[From.GetName]§! War Support Factor"
+ tribute_stability: "§Y[From.GetName]§! Stability Factor"
+ tribute_strength_ratio: "§Y[Root.GetName]§!'s forces strength ratio to §Y[From.GetName]§!"
 
 
 

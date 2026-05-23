@@ -346,9 +346,6 @@ germania_campaign = {
 		activation = {
 			
 		}
-		visible = {
-			original_tag = ROE
-		}
 		complete_effect = {
 		}
 		timeout_effect = {

@@ -18,10 +18,14 @@ set_technology = {
 }
 
 create_faction = CRS_faction
+
 add_to_faction = CAU
 add_to_faction = SGI
 add_to_faction = CTT
 add_to_faction = BRU
+
+set_country_flag = is_sphere_leader
+
 diplomatic_relation = {
     country = ANI
     relation = military_access

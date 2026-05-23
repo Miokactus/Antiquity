@@ -221,3 +221,145 @@ defined_text = {
     }
 }
 
+
+
+
+
+
+
+
+
+defined_text = {
+	name = InfluenceSphereName
+
+	text = {
+		trigger = {
+            ROOT = {
+                has_country_flag = is_sphere_leader
+            }
+		}
+		localization_key = expand_influence_sphere_tt
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = create_influence_sphere_tt
+	}
+}
+
+
+# Influence Map Mode
+defined_text = {
+	name = GetInfluenceMapModeTooltip
+
+	text = {
+		trigger = {
+            FROM = {
+                owner = {
+			        OR = {
+                        has_country_flag = influenced_by_ROE
+                        has_country_flag = influenced_by_PTH
+                        has_country_flag = influenced_by_XIN
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_influenced
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = influence_map_mode_tt_not_influenced
+	}
+}
+
+defined_text = {
+	name = GetInfluenceMapModeTooltipDelayed
+
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_ROE
+                        is_subject_of = ROE
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_rome_puppet
+	}
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_ROE
+                        NOT = { is_subject_of = ROE }
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_rome_not_puppet
+	}
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_PTH
+                        is_subject_of = PTH
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_parthia_puppet
+	}
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_PTH
+                        NOT = { is_subject_of = PTH }
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_parthia_not_puppet
+	}
+    text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_XIN
+                        is_subject_of = XIN
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_china_puppet
+	}
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_XIN
+                        NOT = { is_subject_of = XIN }
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_china_not_puppet
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = ""
+	}
+}

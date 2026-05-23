@@ -11,6 +11,216 @@ on_actions = {
     }
 
     on_startup = {
+        effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+            if = {
+                limit = {
+                    ROE = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                every_country = {
+                    limit = {
+                        OR = {
+                            is_ally_with = ROE
+                            is_subject_of = ROE
+                            has_country_flag = influenced_by_ROE
+                        }
+                        is_major = no
+                    }
+                    set_country_flag = influenced_by_ROE
+                    add_ideas = is_in_sphere_of_ROE
+                }
+            }
+            else_if = {
+                limit = {
+                    PTH = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                every_country = {
+                    limit = {
+                        OR = {
+                            is_ally_with = PTH
+                            is_subject_of = PTH
+                            has_country_flag = influenced_by_PTH
+                        }
+                        is_major = no
+                    }
+                    set_country_flag = influenced_by_PTH
+                    add_ideas = is_in_sphere_of_PTH
+                }
+            }
+            else_if = {
+                limit = {
+                    XIN = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                every_country = {
+                    limit = {
+                        OR = {
+                            is_ally_with = XIN
+                            is_subject_of = XIN
+                            has_country_flag = influenced_by_XIN
+                        }
+                        is_major = no
+                    }
+                    set_country_flag = influenced_by_XIN
+                    add_ideas = is_in_sphere_of_XIN
+                }
+            }
+            else_if = {
+                limit = {
+                    CRS = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                every_country = {
+                    limit = {
+                        OR = {
+                            is_ally_with = CRS
+                            is_subject_of = CRS
+                            has_country_flag = influenced_by_CRS
+                        }
+                        is_major = no
+                    }
+                    set_country_flag = influenced_by_CRS
+                    add_ideas = is_in_sphere_of_CRS
+                }
+            }
+            else_if = {
+                limit = {
+                    XAI = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                every_country = {
+                    limit = {
+                        OR = {
+                            is_ally_with = XAI
+                            is_subject_of = XAI
+                            has_country_flag = influenced_by_XAI
+                        }
+                        is_major = no
+                    }
+                    set_country_flag = influenced_by_XAI
+                    add_ideas = is_in_sphere_of_XAI
+                }
+            }
+            else_if = {
+                limit = {
+                    TTH = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                every_country = {
+                    limit = {
+                        OR = {
+                            is_ally_with = TTH
+                            is_subject_of = TTH
+                            has_country_flag = influenced_by_TTH
+                        }
+                        is_major = no
+                    }
+                    set_country_flag = influenced_by_TTH
+                    add_ideas = is_in_sphere_of_TTH
+                }
+            }
+        }
+    }
+
+    on_subject_free = {
+        effect = {
+            if = {
+                limit = { 
+                    ROOT = { 
+                        has_country_flag = influenced_by_ROE 
+                    }
+                }
+                ROOT = {
+                    clr_country_flag = influenced_by_ROE
+                }
+            }
+            if = {
+                limit = { 
+                    ROOT = { 
+                        has_country_flag = influenced_by_PTH
+                    }
+                }
+                ROOT = {
+                    clr_country_flag = influenced_by_PTH
+                }
+            }
+            if = {
+                limit = { 
+                    ROOT = { 
+                        has_country_flag = influenced_by_XIN
+                    }
+                }
+                ROOT = {
+                    clr_country_flag = influenced_by_XIN
+                }
+            }
+            if = {
+                limit = { 
+                    ROOT = { 
+                        has_country_flag = influenced_by_XAI
+                    }
+                }
+                ROOT = {
+                    clr_country_flag = influenced_by_XAI
+                }
+            }
+            if = {
+                limit = { 
+                    ROOT = { 
+                        has_country_flag = influenced_by_CRS
+                    }
+                }
+                ROOT = {
+                    clr_country_flag = influenced_by_CRS
+                }
+            }
+            if = {
+                limit = { 
+                    ROOT = { 
+                        has_country_flag = influenced_by_TTH
+                    }
+                }
+                ROOT = {
+                    clr_country_flag = influenced_by_TTH
+                }
+            }
+        }
+    }
+
+    on_weekly = {
+        effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+            every_country = {
+                limit = {
+                    is_subject_of = ROE
+                    NOT = { has_country_flag = influenced_by_ROE }
+                }
+                set_country_flag = influenced_by_ROE
+            }
+            every_country = {
+                limit = {
+                    is_subject_of = PTH
+                    NOT = { has_country_flag = influenced_by_PTH }
+                }
+                set_country_flag = influenced_by_PTH
+            }
+            every_country = {
+                limit = {
+                    is_subject_of = XIN
+                    NOT = { has_country_flag = influenced_by_XIN }
+                }
+                set_country_flag = influenced_by_XIN
+            }
+        }
+    }
+
+    on_startup = {
         effect = {
             set_division_template_cap = { 
 	            division_template = "Chinese Levy" 

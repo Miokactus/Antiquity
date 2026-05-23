@@ -86,3 +86,23 @@
  city_fall_event.6.d: "[744.GetCapitalVictoryPointName] is back, millions must larp."
  city_fall_event.6.a: "Yes!"
  city_fall_event.6.b: "Oh?"
+
+
+
+
+
+
+
+ tribal.2.t: "Tribal Armies at our Border!"
+ tribal.2.d: "The §Y[From.GetAdjective]§! armies have arrived at our borders: they are asking for a tribute, or they will attack! We could fight them, but wouldn't it be safer to give them what they want?"
+ tribal.2.a: "We'll pay them!"
+ tribal.2.b: "Never!"
+
+ tribal.3.t: "Payment from §Gthe [From.GetName]§!"
+ tribal.3.d: "We have received a payment from the cowardly §Y[From.GetAdjective]§! authorities. We therefore will enter a truce with them, until we decide that it is no longer enough."
+ tribal.3.a: "Glory!"
+
+ tribal.4.t: "War Drums on the Horizon!"
+ tribal.4.d: "The cowardly §Y[From.GetAdjective]§! authorities have decided to refuse our ultimatum and have called for open war between our two nations! We should ready our troops, or we could back down and try at another time. We won't have much time to act, however."
+ tribal.4.a: "Onwards!"
+ tribal.4.b: "We can't risk a war.."
