@@ -1,0 +1,15 @@
+guiTypes = {
+	## SPHERE LEADERS ##
+	containerwindowtype = {
+		name = "influence_map_mode_mapicons"
+		position = { x = -30 y = 0 }
+		size = { width = 52 height = 52 }
+
+		iconType = {
+			name = "soi_leader_icon"
+			position = { x = 0 y = 0 }
+			quadtexturesprite = "GFX_SOI_France_icon"
+			pdx_tooltip = leader_icon_tooltip
+		}
+	}
+}

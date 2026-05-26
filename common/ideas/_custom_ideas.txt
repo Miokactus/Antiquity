@@ -364,8 +364,11 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = GER_recovering_economy
 			cancel = {
-				NOT = {
-					has_country_flag = influenced_by_ROE
+				OR = {
+					NOT = {
+						has_country_flag = influenced_by_ROE
+					}
+					has_country_flag = is_sphere_leader
 				}
 			}
 			targeted_modifier = {
@@ -380,6 +383,9 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_cost = -0.3
 			}
+			on_remove = {
+				clr_country_flag = influenced_by_ROE
+			}
 		}
 
 		is_in_sphere_of_XIN = {
@@ -387,8 +393,11 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = GER_recovering_economy
 			cancel = {
-				NOT = {
-					has_country_flag = influenced_by_XIN
+				OR = {
+					NOT = {
+						has_country_flag = influenced_by_XIN
+					}
+					has_country_flag = is_sphere_leader
 				}
 			}
 			targeted_modifier = {
@@ -403,6 +412,9 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_cost = -0.3
 			}
+			on_remove = {
+				clr_country_flag = influenced_by_XIN
+			}
 		}
 
 		is_in_sphere_of_PTH = {
@@ -410,8 +422,11 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = GER_recovering_economy
 			cancel = {
-				NOT = {
-					has_country_flag = influenced_by_PTH
+				OR = {
+					NOT = {
+						has_country_flag = influenced_by_PTH
+					}
+					has_country_flag = is_sphere_leader
 				}
 			}
 			targeted_modifier = {
@@ -426,6 +441,9 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_cost = -0.3
 			}
+			on_remove = {
+				clr_country_flag = influenced_by_PTH
+			}
 		}
 
 		is_in_sphere_of_CRS = {
@@ -433,8 +451,11 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = GER_recovering_economy
 			cancel = {
-				NOT = {
-					has_country_flag = influenced_by_CRS
+				OR = {
+					NOT = {
+						has_country_flag = influenced_by_CRS
+					}
+					has_country_flag = is_sphere_leader
 				}
 			}
 			targeted_modifier = {
@@ -449,6 +470,9 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_cost = -0.3
 			}
+			on_remove = {
+				clr_country_flag = influenced_by_CRS
+			}
 		}
 
 		is_in_sphere_of_XAI = {
@@ -456,8 +480,11 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = GER_recovering_economy
 			cancel = {
-				NOT = {
-					has_country_flag = influenced_by_XAI
+				OR = {
+					NOT = {
+						has_country_flag = influenced_by_XAI
+					}
+					has_country_flag = is_sphere_leader
 				}
 			}
 			targeted_modifier = {
@@ -472,6 +499,9 @@ ideas = {
 				consumer_goods_factor = -0.1
 				political_power_cost = -0.3
 			}
+			on_remove = {
+				clr_country_flag = influenced_by_XAI
+			}
 		}
 
 		is_in_sphere_of_TTH = {
@@ -479,8 +509,11 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = GER_recovering_economy
 			cancel = {
-				NOT = {
-					has_country_flag = influenced_by_TTH
+				OR = {
+					NOT = {
+						has_country_flag = influenced_by_TTH
+					}
+					has_country_flag = is_sphere_leader
 				}
 			}
 			targeted_modifier = {
@@ -494,6 +527,9 @@ ideas = {
 				war_support_factor = -0.05
 				consumer_goods_factor = -0.1
 				political_power_cost = -0.3
+			}
+			on_remove = {
+				clr_country_flag = influenced_by_TTH
 			}
 		}
 

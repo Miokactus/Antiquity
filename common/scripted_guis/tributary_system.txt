@@ -31,7 +31,38 @@ scripted_gui = {
 
 
 scripted_gui = {
-	influence_gui = {
+	influence_scripted_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "influence_window"
+
+		visible = {
+			
+		}
+		dynamic_lists = {
+		}
+		effects = {
+			influenceview_button_click = {
+				if = {
+					limit = {
+						has_country_flag = opened_influence
+					}
+					clr_country_flag = opened_influence
+				}
+				else = {
+					set_country_flag = opened_influence
+				}
+			}
+		}
+		triggers = {
+			
+		}
+		ai_enabled = {
+			always = no # Handled in a different way
+        }
+	}
+
+	influenceview_scripted_gui = {
 		context_type = player_context
 		parent_window_token = top_bar
 		window_name = "influenceview"
@@ -41,17 +72,32 @@ scripted_gui = {
 		}
 		dynamic_lists = {
 		}
+		properties = {
+			influence_gui_flag1 = {
+				image = "[SphereFlagLeader]"
+			}
+			influence_gui_flag2 = {
+				image = "[SphereFlags1]"
+			}
+			influence_gui_flag3 = {
+				image = "[SphereFlags2]"
+			}
+			influence_gui_flag4 = {
+				image = "[SphereFlags3]"
+			}
+			influence_gui_flag5 = {
+				image = "[SphereFlags4]"
+			}
+			influence_gui_flag6 = {
+				image = "[SphereFlags5]"
+			}
+			influence_gui_flag7 = {
+				image = "[SphereFlags6]"
+			}
+		}
 		effects = {
-			influence_button_button_click = {
+			close_button_click = {
 				if = {
-					limit = {
-						NOT = {
-							has_country_flag = opened_influence
-						}
-					}
-					set_country_flag = opened_influence
-				}
-				else_if = {
 					limit = {
 						has_country_flag = opened_influence
 					}
@@ -60,7 +106,7 @@ scripted_gui = {
 			}
 		}
 		triggers = {
-		
+			
 		}
 		ai_enabled = {
 			always = no # Handled in a different way

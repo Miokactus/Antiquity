@@ -703,7 +703,6 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 		}
 		
-		
 		containerWindowType = {
 			name = "country_menu_window"
 			position = { x=217 y=36 }
@@ -744,6 +743,9 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 			}
+
+
+
 
 			containerWindowType = {
 					name = "after_faction_button"
@@ -815,32 +817,6 @@ guiTypes = {
 					shortcut = ""
 				}
 
-
-
-
-
-
-
-				buttonType = {
-					name = "influence_button"
-					quadTextureSprite ="GFX_topbar_decisionview_button" 
-					position = { x= -49 y = 0 }
-					Orientation = "UPPER_LEFT"
-					clicksound = click_close
-					oversound = ui_menu_over
-					shortcut = "shift+w"
-				}
-
-
-
-
-
-
-
-
-
-
-
 				iconType = {
 					name = "intelview_ops_prepared_or_completed_bg"
 					spriteType = "GFX_topbar_alert_bg"
@@ -878,6 +854,7 @@ guiTypes = {
 					maxHeight = 24
 					fixedsize = yes
 				}
+			
 
 				# Here, several buttons are put in the container "after_intel_agency_button", to be easily moved if the player don't have the DLC required by "intel_agency_button".
 				containerWindowType = {
