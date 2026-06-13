@@ -207,7 +207,13 @@ scripted_diplomatic_actions = {
 		}
 		
 		reject_effect = {
-			
+			ROOT = {
+				create_wargoal = {
+					type = tribute_war_goal
+					target = PREV
+					expire = 30
+				}
+			}
 		}
 		
 		send_scripted_gui = pd_offer_peace_deal

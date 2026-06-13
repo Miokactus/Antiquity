@@ -101,7 +101,7 @@ spriteTypes = {
 	SpriteType = {
 	name = "GFX_focus_XIN_contain_goguryeo2"
 	texturefile = "gfx/interface/goals/XIN_contain_goguryeo2.dds"
-}
+	}
 
 SpriteType = {
 	name = "GFX_focus_XIN_encourage_grain_production"
@@ -138,6 +138,51 @@ SpriteType = {
 	texturefile = "gfx/interface/goals/XIN_redistribute_lands_from_the_nobility.dds"
 }
 
+
+
+
+	SpriteType = {
+		name = "GFX_focus_PTH_an_army_of_levies"
+		texturefile = "gfx/interface/goals/PTH_an_army_of_levies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PTH_preeminent_use_of_cavalry"
+		texturefile = "gfx/interface/goals/PTH_preeminent_use_of_cavalry.dds"
+	}
+
+
+
+
+	SpriteType = {
+		name = "GFX_focus_PTH_the_first_jewish_empire"
+		texturefile = "gfx/interface/goals/PTH_the_first_jewish_empire.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PTH_appease_the_elites"
+		texturefile = "gfx/interface/goals/PTH_appease_the_elites.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PTH_strange_faith_from_the_west"
+		texturefile = "gfx/interface/goals/PTH_strange_faith_from_the_west.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PTH_radicalise_army_leaders"
+		texturefile = "gfx/interface/goals/PTH_radicalise_army_leaders.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PTH_promote_christianity"
+		texturefile = "gfx/interface/goals/PTH_promote_christianity.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_PTH_convert_the_elites"
+		texturefile = "gfx/interface/goals/PTH_convert_the_elites.dds"
+	}
 
 	################
 	##PLACEHOLDER###

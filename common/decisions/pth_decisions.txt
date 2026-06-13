@@ -783,7 +783,54 @@ parthian_council = {
 
 
 parthia_rome_war = {
-	
+	peace_with_rome = {
+		icon = generic_civil_support
+		cost = 70
+		allowed = {
+			tag = PTH
+    	}
+		available = {
+			334 = {
+				owner = {
+					tag = ROOT
+				}
+			}
+			454 = {
+				owner = {
+					tag = ROOT
+				}
+			}
+			447 = {
+				owner = {
+					tag = ROOT
+				}
+			}
+			339 = {
+				owner = {
+					tag = ROOT
+				}
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = PTH_christianise_the_eastern_roman_lands
+			has_war_with = ROE
+		}
+		targets = { ROE }
+		target_trigger = {
+			
+		}
+		complete_effect = {
+			ROE = {
+				country_event = arsacid_event.32
+				days = 3
+			}
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+			factor = 15
+		}
+	}
 }
 
 parthia_in_india = {
@@ -792,7 +839,6 @@ parthia_in_india = {
 		cost = 70
 		days_re_enable = 160
 		on_map_mode = map_only
-		days_re_enable = 1
 		allowed = {
 			tag = PTH
     	}
@@ -866,4 +912,149 @@ parthia_in_india = {
 			factor = 15
 		}
 	}
+}
+
+
+
+
+
+
+
+
+parthia_instigate_revolts = {
+	fund_revolt = {
+		icon = generic_prepare_civil_war
+		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 110
+		cost = 100
+		priority = 5
+		on_map_mode = map_only
+		state_target = yes
+		target_trigger = { 
+			FROM = {
+				owner = {
+					NOT = {
+						OR = {
+							is_subject_of = ROOT
+							is_ally_with = ROOT
+							tag = AAN
+							tag = FAA
+							tag = FAL
+						}
+					}
+					is_neighbor_of = ROOT
+				}
+				owner = {
+					num_of_controlled_states > 1
+				}
+				NOT = {
+					OR = {
+						has_state_flag = funded_revolt_in_@FROM
+						is_capital = yes
+					}
+				}
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			#OR = {
+			#	has_equipment = {
+    		#		infantry_equipment_1 > 200
+			#	}
+			#	has_equipment = {
+    		#		infantry_equipment > 200
+			#	}
+			#}
+		}
+		visible = {
+			original_tag = PTH
+			has_completed_focus = PTH_foment_revolts
+		}
+		complete_effect = {
+			FROM = {
+				set_state_flag = funded_revolt_in_@FROM
+			}
+		}
+		ai_will_do = {
+			factor = 4
+		}
+    }
+
+
+
+	spark_the_revolution = {
+		icon = generic_civil_support
+		target_root_trigger = { TAG = ROOT }
+		days_re_enable = 110
+		cost = 100
+		priority = 5
+		on_map_mode = map_only
+		state_target = yes
+		target_trigger = { 
+			FROM = {
+				owner = {
+					NOT = {
+						OR = {
+							is_subject_of = ROOT
+							is_ally_with = ROOT
+							tag = AAN
+							tag = FAA
+							tag = FAL
+						}
+					}
+					is_neighbor_of = ROOT
+				}
+				owner = {
+					num_of_controlled_states > 1
+				}
+				has_state_flag = funded_revolt_in_@FROM
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			#OR = {
+			#	has_equipment = {
+    		#		infantry_equipment_1 > 200
+			#	}
+			#	has_equipment = {
+    		#		infantry_equipment > 200
+			#	}
+			#}
+		}
+		visible = {
+			original_tag = PTH
+			has_completed_focus = PTH_foment_revolts
+		}
+		complete_effect = {
+			create_dynamic_country = {
+    			original_tag = FROM.owner
+    			add_political_power = 100
+    			every_state = {
+					limit = {
+						has_state_flag = funded_revolt_in_@FROM
+					}
+					transfer_state_to = THIS
+				}
+			}
+			hidden_effect = {
+				FROM = {
+					owner = {
+						every_state = {
+							limit = {
+								has_state_flag = funded_revolt_in_@FROM
+							}
+							clr_state_flag = funded_revolt_in_@FROM
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 4
+		}
+    }
 }

@@ -40,4 +40,9 @@ opinion_modifiers = {
 	sent_diplomats = {
 		value = 20
 	}
+
+
+	challenging_our_hegemony = {
+		value = -40
+	}
 }
