@@ -1,0 +1,31 @@
+state={
+	id=1208
+	name="STATE_1208"
+	provinces={
+		7150 11952 
+	}
+	manpower = 95880
+	state_category = town 
+	resources={
+		#6
+	}
+
+	history={
+		owner = SAV
+		add_core_of = SAV
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			#
+			7150 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			7150 8
+		}
+	}
+	buildings_max_level_factor=1
+	local_supplies=1
+}

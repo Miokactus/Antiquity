@@ -7,7 +7,7 @@ guiTypes = {
 		buttonType = {
 			name = "influenceview_button"
 			quadTextureSprite ="GFX_topbar_decisionview_button" 
-			position = { x= 167 y = 36 }
+			position = { x= 10 y = 1150 }
 			Orientation = "UPPER_LEFT"
 			clicksound = click_close
 			oversound = ui_menu_over

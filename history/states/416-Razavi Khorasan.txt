@@ -4,7 +4,10 @@ state={
 	name="STATE_416"
 	manpower = 706493
 	state_category = rural
-
+	resources = {
+		grain = 1
+		steel = 3
+	}
 	history={
 		owner = PTH
 		add_core_of = PTH

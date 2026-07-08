@@ -1,0 +1,25 @@
+state={
+	id=1206
+	name="STATE_1206"
+	provinces={
+		2029 
+	}
+	history = {
+		owner = HDT
+		add_core_of = HDT
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			2029 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			2029 5 # Asich
+		}
+	}
+	manpower=41202
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=1
+}

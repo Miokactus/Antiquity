@@ -1,6 +1,6 @@
 ﻿capital = 1048
 
-oob = "NAB_14"
+oob = "SSS_14"
 
 set_research_slots = 1
 

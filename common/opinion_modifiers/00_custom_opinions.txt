@@ -45,4 +45,8 @@ opinion_modifiers = {
 	challenging_our_hegemony = {
 		value = -40
 	}
+
+	show_of_force = {
+		value = -15
+	}
 }

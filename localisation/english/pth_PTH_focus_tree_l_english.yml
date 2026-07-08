@@ -5,8 +5,36 @@
  PTH_first_christian_king: "First Christian King"
  PTH_follower_of_jesus: "Follower of Jesus"
 
+ achaemenid_empire: "Achaemenid Empire"
+ achaemenid_empire_DEF: "the Restored Achaemenid Empire"
+ achaemenid_empire_ADJ: "Achaemenid"
+
+ greater_arsacid_empire: "Supreme Arsacid Empire"
+ greater_arsacid_empire_DEF: "the Supreme Arsacid Empire"
+ greater_arsacid_empire_ADJ: "Arsacid"
+
+ syrian_satrapy: "Kingdom of Syria"
+ syrian_satrapy_DEF: "the Syrian Kingdom"
+ syrian_satrapy_ADJ: "Syrian"
+
+ parthia_new_satraps: "Satrapy Administration"
+ form_the_armenian_satrapy: "Usurp the §YKingdom of Armenia§!"
+ integrate_sophene: "Integrate the §9Kingdom of Sophene§! into the §YKingdom of Armenia§!"
+ integrate_the_caucasus_kingdoms: "Unite the §6Kingdoms of the Caucasus§! into the §YKingdom of Armenia§!"
+ form_the_syrian_satrapy: "Establish the §GKingdom of Syria§!"
+ form_the_egyptian_satrapy: "Reorganise the §1Kingdom of Egypt§! with a new §GArsacid dynasty§!"
+ form_the_anatolian_satrapy: "Create the §7Kingdom of the Eastern Greeks§!"
+ form_the_eastern_satrapy: "Reorganise the Eastern Territories into the §OKingdom of the Amyrgians§!"
+
+ parthia_instigate_revolts: "Instigating revolts in Neighbours"
+ fund_revolt: "Fund revolt in §R[FROM.GetName]§!"
+ spark_the_revolution: "Start the revolution in §4[FROM.GetName]§!"
+
+
  PTH_council_loyalty: "Council Loyalty"
  PTH_judaism_integration: "Judaism Integration"
+
+ PTH_establish_new_satraps_tooltip: "We will move to §3create new Satraps§! across newly conquered lands!"
 
  PTH_christian_empire: "Grand Empire of the Arsacid"
  PTH_christian_empire_DEF: "the Grand Judeo-Christian Empire of the Arsacid"
@@ -151,3 +179,5 @@
  PTH_conquer_armenia: "Conquer Armenia"
  PTH_christianise_the_coast: "Christianise the Coast"
  PTH_christianise_the_eastern_roman_lands: "Christianise the Eastern Roman Lands"
+ PTH_reform_the_achaemenid_empire: "Proclaim the Achaemenid Empire"
+ PTH_our_place_in_history: "Forge our Own History"

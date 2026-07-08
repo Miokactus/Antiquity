@@ -188,7 +188,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_integrate_the_grand_families_around_the_king
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_subjugation
 		x = 2
 		y = 2
 		cost = 10
@@ -579,7 +579,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_negociations_over_armenia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_negociations_armenia
 		x = 6
 		y = 3
 		cost = 10
@@ -639,7 +639,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_intervention_in_armenia
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_attacking_armenia
 		x = 10
 		y = 3
 		cost = 10
@@ -663,7 +663,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_parthian_cultural_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PER_pan_iranianism
 		x = 12
 		y = 3
 		cost = 10
@@ -785,7 +785,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_reorganise_the_ministries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FIN_strengthen_military_administration
 		x = 0
 		y = 4
 		cost = 10
@@ -827,6 +827,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_interference_within_local_affairs completed"
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				add_stability = -0.05
+				add_political_power = -50
+			}
+			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 
@@ -1068,6 +1078,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_divide_to_better_conquer completed"
+			add_ideas = PTH_divide_to_better_conquer_idea
 		}
 	}
 
@@ -1080,10 +1091,14 @@ focus_tree = {
 
 		prerequisite = { focus = PTH_negociate_for_the_end_of_the_raids focus = PTH_protect_the_eastern_trade_routes }
 		available = {
-			IDS = {
-				NOT = {
-					is_subject_of = PTH
+			OR = {
+				IDS = {
+					NOT = {
+						is_subject_of = PTH
+					}
 				}
+				has_completed_focus = PTH_divide_to_better_conquer
+				has_completed_focus = PTH_promote_the_parthian_language
 			}
 		}
 		ai_will_do = {
@@ -1091,10 +1106,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-    			type = puppet_wargoal_focus
-    			target = IDS
+			if = {
+				limit = {
+					IDS = {
+						NOT = {
+							is_subject_of = PTH
+						}
+					}
+				}
+				create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = IDS
+				}
 			}
+			
 		}
 	}
 
@@ -1259,6 +1284,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_decentralisation_in_conquest completed"
+			add_ideas = PTH_decentralisation_in_conquest_idea
 		}
 	}
 
@@ -1338,8 +1364,7 @@ focus_tree = {
 		y = 6
 		cost = 10
 
-		prerequisite = { focus = PTH_a_people_s_army }
-		prerequisite = { focus = PTH_a_new_central_command }
+		prerequisite = { focus = PTH_a_people_s_army focus = PTH_a_new_central_command }
 
 		ai_will_do = {
 			factor = 1
@@ -1386,7 +1411,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_new_satraps completed"
-
+			custom_effect_tooltip = PTH_establish_new_satraps_tooltip
 		}
 	}
 
@@ -1411,7 +1436,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_memories_of_the_achaemenid
-		icon = GFX_goal_unknown
+		icon = GFX_focus_achaemid
 		x = 9
 		y = 7
 		cost = 10
@@ -1567,10 +1592,14 @@ focus_tree = {
 
 		prerequisite = { focus = PTH_intervention_in_india }
 		available = {
-			IDS = {
-				NOT = {
-					is_subject_of = PTH
+			OR = {
+				IDS = {
+					NOT = {
+						is_subject_of = PTH
+					}
 				}
+				has_completed_focus = PTH_divide_to_better_conquer
+				has_completed_focus = PTH_promote_the_parthian_language
 			}
 		}
 		ai_will_do = {
@@ -1630,13 +1659,161 @@ focus_tree = {
 
 		completion_reward = {
 			584 = {
-				add_claim_by = PTH
+				add_core_of = PTH
 			}
 			832 = {
+				add_core_of = PTH
+			}
+			585 = {
 				add_claim_by = PTH
+			}
+			if = {
+				limit = {
+					SSP = {
+						exists = yes
+					}
+				}
+				585 = {
+					add_core_of = SSP
+				}
 			}
 		}
 	}
+
+
+	focus = {
+		id = PTH_reform_the_achaemenid_empire
+		icon = GFX_focus_CZE_bohemia_crown
+		x = 10
+		y = 9
+		cost = 10
+
+		prerequisite = { focus = PTH_memories_of_the_achaemenid }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = achaemenid_empire
+			custom_effect_tooltip = PTH_achaemenid_empire_first_batch
+			hidden_effect = {
+			446 = { add_claim_by = PTH }
+			447 = { add_claim_by = PTH }
+			907 = { add_claim_by = PTH }
+			457 = { add_claim_by = PTH }
+			456 = { add_claim_by = PTH }
+			452 = { add_claim_by = PTH }
+			663 = { add_claim_by = PTH }
+			450 = { add_claim_by = PTH }
+			451 = { add_claim_by = PTH }
+			
+			354 = { add_claim_by = PTH }
+			355 = { add_claim_by = PTH }
+			349 = { add_claim_by = PTH }
+			348 = { add_claim_by = PTH }
+			798 = { add_claim_by = PTH }
+			345 = { add_claim_by = PTH }
+			346 = { add_claim_by = PTH }
+			49 = { add_claim_by = PTH }
+			356 = { add_claim_by = PTH }
+			183 = { add_claim_by = PTH }
+			342 = { add_claim_by = PTH }
+			164 = { add_claim_by = PTH }
+			343 = { add_claim_by = PTH }
+			339 = { add_claim_by = PTH }
+			340 = { add_claim_by = PTH }
+			347 = { add_claim_by = PTH }
+			1023 = { add_claim_by = PTH }
+			187 = { add_claim_by = PTH }
+			797 = { add_claim_by = PTH }
+			341 = { add_claim_by = PTH }
+			184 = { add_claim_by = PTH }
+			731 = { add_claim_by = PTH }
+			211 = { add_claim_by = PTH }
+
+			765 = { add_core_of = PTH }
+			1014 = { add_core_of = PTH }
+			584 = { add_core_of = PTH }
+			832 = { add_core_of = PTH }
+			830 = { add_core_of = PTH }
+			742 = { add_core_of = PTH }
+			732 = { add_core_of = PTH }
+			405 = { add_core_of = PTH }
+			585 = { add_core_of = PTH }
+			1185 = { add_core_of = PTH }
+			554 = { add_core_of = PTH }
+			1029 = { add_core_of = PTH }
+			455 = { add_core_of = PTH }
+			1030 = { add_core_of = PTH }
+			1183 = { add_core_of = PTH }
+			453 = { add_core_of = PTH }
+			454 = { add_core_of = PTH }
+			553 = { add_core_of = PTH }
+			677 = { add_core_of = PTH }
+			350 = { add_core_of = PTH }
+			1036 = { add_core_of = PTH }
+			344 = { add_core_of = PTH }
+			799 = { add_core_of = PTH }
+			1034 = { add_core_of = PTH }
+			1000 = { add_core_of = PTH }
+			419 = { add_core_of = PTH }
+			352 = { add_core_of = PTH }
+			1204 = { add_core_of = PTH }
+			1203 = { add_core_of = PTH }
+			230 = { add_core_of = PTH }
+			800 = { add_core_of = PTH }
+			353 = { add_core_of = PTH }
+			1025 = { add_core_of = PTH }
+			1033 = { add_core_of = PTH }
+			229 = { add_core_of = PTH }
+			1026 = { add_core_of = PTH }
+			1027 = { add_core_of = PTH }
+			1024 = { add_core_of = PTH }
+			231 = { add_core_of = PTH }
+			826 = { add_core_of = PTH }
+			294 = { add_core_of = PTH }
+			1013 = { add_core_of = PTH }
+			658 = { add_core_of = PTH }
+			859 = { add_core_of = PTH }
+			1184 = { add_core_of = PTH }
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_our_place_in_history
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		x = 6
+		y = 9
+		cost = 10
+
+		prerequisite = { focus = PTH_foment_revolts }
+		prerequisite = { focus = PTH_establish_new_satraps }
+
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+			set_cosmetic_tag = greater_arsacid_empire
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

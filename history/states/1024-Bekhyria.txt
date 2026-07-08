@@ -8,6 +8,7 @@ state={
 	history = {
 		owner = CLC
 		add_core_of = CLC
+		add_core_of = PON
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

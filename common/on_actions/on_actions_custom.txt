@@ -388,9 +388,32 @@ on_actions = {
         }
     }
 
-    on_weekly = {
+    on_daily = {
         effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
-            
+            if = {
+                limit = {
+                    AND = {
+                    ARR = {
+                        has_country_flag = support_from_rome
+                    }
+                    PTH = {
+                        419 = { is_controlled_by_ROOT_or_ally = yes }
+                        1000 = { is_controlled_by_ROOT_or_ally = yes }
+                        1034 = { is_controlled_by_ROOT_or_ally = yes }
+                        1204 = { is_controlled_by_ROOT_or_ally = yes }
+                        1203 = { is_controlled_by_ROOT_or_ally = yes }
+                    }
+                    }
+                }
+                ROE = {
+                    PTH = {
+                        country_event = {
+                            id = arsacid_event.35
+				            days = 2
+                        }
+                    }
+                }
+            }
         }
     }
 }

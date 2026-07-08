@@ -64,6 +64,41 @@ ideas = {
 			}
 		}
 
+		ROE_countrywide_mutinies = {
+			name = "Countrywide Mutinies"
+			allowed_civil_war = { always = yes }
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			on_remove = {
+			}
+			cancel = {
+				ROE = {
+            		has_civil_war = no
+					has_completed_focus = ROE_deal_with_the_mutinies
+        		}
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_cost = 0.5
+				conscription_factor = -0.1
+				war_support_factor = 0.15
+			}
+		}
+
+		ROE_legitimacy_per_the_sword = {
+			name = "Legitimacy Through the Sword"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_kingmaker
+			on_remove = {
+			}
+			cancel = {
+			}
+			modifier = {
+				stability_factor = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+
 		ROE_germanicus_campaign = {
 			name = "Germanicus' Campaigns"
 			allowed_civil_war = { always = yes }
@@ -88,7 +123,7 @@ ideas = {
 		}
 
 		ROE_army_morale_boost = {
-			name = "Army Morale Boost"
+			name = "Bribing the Army"
 			allowed_civil_war = { always = yes }
 			picture = SOV_rehabilitated_military_ns_nsb_ccp_sov_compatibility
 			on_remove = {
@@ -96,6 +131,7 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.1
 				army_org_factor = 0.1
+				consumer_goods_factor = 0.05
 			}
 		}
 
@@ -389,6 +425,48 @@ ideas = {
 			targeted_modifier = {
 				tag = JUD
 				autonomy_gain = -0.4
+			}
+		}
+
+		ROE_empire_need_money = {
+			name = "The Empire Needs Money"
+			allowed_civil_war = { always = yes }
+			picture = SPR_relocate_the_gold_reserves
+			on_remove = {
+				add_stability = -0.05
+				add_political_power = -50
+			}
+			modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.15
+				stability_factor = -0.05
+				political_power_cost = 0.25
+			}
+		}
+
+		ROE_roman_benefits = {
+			name = "Benefits from our Puppets"
+			allowed_civil_war = { always = yes }
+			picture = man_five_year_plan_industry
+			on_remove = {
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		ROE_roman_burden = {
+			name = "The Romans' Burden"
+			allowed_civil_war = { always = yes }
+			picture = DEN_occupation_laws
+			on_remove = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				stability_factor = -0.05
+				political_power_cost = 0.2
 			}
 		}
 

@@ -1392,3 +1392,25 @@ WSG = {
 	color = rgb { 59 93 160 }
 	color_ui = rgb { 145 200 632 }
 }
+
+
+SSE = {
+	color = rgb { 0 102 255 }
+	color_ui = rgb { 0 31 77 }
+}
+SSA = {
+	color = rgb { 204 41 0 }
+	color_ui = rgb { 128 26 0 }
+}
+SSY = {
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 77 26 }
+}
+SSP = {
+	color = rgb { 64 64 64 }
+	color_ui = rgb { 13 13 13 }
+}
+SSN = {
+	color = rgb { 0 179 60 }
+	color_ui = rgb { 0 102 34 }	
+}

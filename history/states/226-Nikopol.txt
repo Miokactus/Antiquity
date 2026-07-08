@@ -8,6 +8,7 @@ state={
 	
 	resources={
 		gold_ingot=4 # was: 6
+		wood = 12
 	}
 
 	history={

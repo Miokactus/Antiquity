@@ -184,6 +184,21 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/PTH_convert_the_elites.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_focus_achaemid"
+		texturefile = "gfx/interface/goals/achaemid.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_negociations_armenia"
+		texturefile = "gfx/interface/goals/negociations_armenia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focus_attacking_armenia"
+		texturefile = "gfx/interface/goals/attacking_armenia.dds"
+	}
+
 	################
 	##PLACEHOLDER###
 	################

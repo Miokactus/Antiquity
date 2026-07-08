@@ -50,7 +50,11 @@ country_event = {
 	option = { # Yeah!!
 		name = arsacid_event.2.a
 		ai_chance = { factor = 1 }
-		
+		add_to_war = {
+    		targeted_alliance = FROM
+    		enemy = PTH.enemies
+    		hostility_reason = asked_to_join
+		}
 	}
 }
 
@@ -73,6 +77,15 @@ country_event = {
 		name = arsacid_event.3.b
 		ai_chance = { factor = 1 }
 		trigger = { }
+		add_to_war = {
+    		targeted_alliance = FROM
+    		enemy = PTH.enemies
+    		hostility_reason = asked_to_join
+		}
+		FROM = {
+			add_war_support = -0.05
+			add_command_power = -15
+		}
 	}
 }
 
@@ -1673,6 +1686,97 @@ country_event = {
 		}
 		trigger = { }
 		set_country_flag = push_towards_rome
+	}
+}
+
+
+
+
+
+
+
+
+# Rome asks for a peace between Armenia and the Arsacid
+country_event = {
+	id = arsacid_event.35
+	title = arsacid_event.35.t
+	desc = arsacid_event.35.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Alright
+		name = arsacid_event.35.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		ARR = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = FROM
+				}
+				transfer_state_to = FROM
+			}
+			white_peace = FROM
+			FROM = {
+				add_timed_idea = {
+					idea = war_reparations
+					days = 120
+				}
+				every_allied_country = {
+					limit = {
+						has_war = yes
+					}
+					add_timed_idea = {
+						idea = war_reparations
+						days = 120
+					}
+				}
+			}
+			ROE = {
+				set_autonomy = {
+					target = ARR
+					autonomous_state = autonomy_tributary
+					end_wars = no
+					end_civil_wars = no
+				}
+				ARR = {
+					set_country_flag = is_tributary
+				}
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = war_reparations_lost
+				days = 120
+			}
+		}
+	}
+	option = { # Never!
+		name = arsacid_event.35.b
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		ROE = {
+			add_to_war = {
+    			targeted_alliance = ARR
+    			enemy = PTH
+    			hostility_reason = asked_to_join
+			}
+			add_war_support = 0.15
+			add_stability = -0.1
+		}
+		ARR = {
+			add_war_support = 0.15
+			army_experience = 50
+		}
+		PTH = {
+			add_war_support = 0.15
+			add_stability = -0.1
+		}
 	}
 }
 

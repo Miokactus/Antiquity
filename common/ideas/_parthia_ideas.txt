@@ -159,9 +159,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 			cancel = {
-				NOT = {
-					num_subjects < 1
-				}
+				num_subjects < 1
 			}
 		}
 
@@ -566,6 +564,37 @@ ideas = {
 				trade_cost_for_target_factor = 0.8
 				attack_bonus_against = 0.15
 				defense_bonus_against = -0.1
+			}
+			modifier = {
+				war_support_factor = 0.05
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_decentralisation_in_conquest_idea = {
+			name = "Decentralisation in Conquest"
+			allowed_civil_war = { always = yes }
+			picture = air_war_plans_division_focus
+			modifier = {
+				puppet_cost_factor = -0.5
+				annex_cost_factor = 0.5
+				compliance_growth_on_our_occupied_states = -0.08
+				compliance_growth = 0.08
+				war_support_factor = 0.08
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_divide_to_better_conquer_idea = {
+			name = "Divide to Better Conquer"
+			allowed_civil_war = { always = yes }
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				breakthrough_bonus_against = 0.1
+				defense_bonus_against = -0.1
+				generate_wargoal_tension_against = -0.5
 			}
 			modifier = {
 				war_support_factor = 0.05

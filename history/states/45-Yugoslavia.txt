@@ -7,7 +7,7 @@ state={
 	history = {
 		owner = DAC
 		add_core_of = DAC
-		
+		add_core_of = GET
 	}
 	manpower=238621
 	buildings_max_level_factor=1.000

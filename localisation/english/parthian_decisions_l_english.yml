@@ -14,6 +14,7 @@
  ask_for_manpower: "Ask for Manpower from §tthe [FROM.GetName]§!"
  call_to_war: "Call §Ythe [FROM.GetName]§! to War"
  requisition_industry: "Requisition Industry from §Cthe [FROM.GetName]§!"
+ PTH_achaemenid_empire_first_batch: "We will gain §5cores§! on every §Gpersian§!, §tsyrian§! and §3arabian§! states of §Ythe Achaemenid Empire§!!"
 
  ## COSMETIC TAGS
 
@@ -296,6 +297,25 @@
  arsacid_event.31.t: "Arsacid power is growing!"
  arsacid_event.31.d: "The new Arsacid government has decided to overturn the Council and reinforce its power. We must not let it happen!"
  arsacid_event.31.a: "We must act!"
+
+ arsacid_event.32.t: "Ultimatum from the Arsacid Empire"
+ arsacid_event.32.d: "The Arsacid authorities are asking us to hand over various states in the East, threatening total war if we do not concede."
+ arsacid_event.32.a: "We can't do much now, can we?"
+ arsacid_event.32.b: "What a joke!"
+
+ arsacid_event.33.t: "Ultimatum from the Arsacid - Accepted"
+ arsacid_event.33.d: ""
+ arsacid_event.33.a: "Glory to us, the Masters of the East!"
+ arsacid_event.33.b: "Actually.. I have other plans."
+
+ arsacid_event.34.t: "Ultimatum from the Arsacid - To Rome!"
+ arsacid_event.34.d: ""
+ arsacid_event.34.a: "We'll see you in Rome!"
+
+ arsacid_event.35.t: "Rome asks for Peace!"
+ arsacid_event.35.d: "Roman envoys arrived in Ctesiphon today. They are officially asking us to stop our war against Armenia, threatening to intervene on the side of the Armenians to contain our attacks. The Romans states that they will not hesitate to declare war if we do not accept the proposed peace treaty."
+ arsacid_event.35.a: "Let's agree to a deal."
+ arsacid_event.35.b: "We shall conquer Armenia for us!"
 
  arsacid_border_conflict.1.t: "Skirmishes in Syria!"
  arsacid_border_conflict.1.d: "The Arsacid won."

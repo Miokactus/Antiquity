@@ -13,7 +13,7 @@ state = {
 
 		owner = DAC
 		add_core_of = DAC
-		
+		add_core_of = GET
 
 		buildings = {
 			infrastructure = 2

@@ -227,9 +227,8 @@ scripted_diplomatic_actions = {
 		receive_scripted_gui = pd_offer_peace_deal_receive
 
 		ai_desire = {
-			base = -100
+			base = -20
 			modifier = {
-				
 			}
 		}
 		

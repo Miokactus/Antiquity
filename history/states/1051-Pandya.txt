@@ -2,7 +2,7 @@ state={
 	id=1051
 	name="STATE_1051"
 	provinces={
-		4327 4416 7265 
+		4416 7265 
 	}
 	history={
 		owner = PDA
@@ -13,7 +13,7 @@ state={
 			arms_factory = 1
 		}
 	}
-	manpower = 152000
+	manpower = 52000
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
