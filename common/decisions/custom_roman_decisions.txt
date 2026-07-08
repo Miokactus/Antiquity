@@ -54,7 +54,7 @@ crisis = {
 			has_completed_focus = ROE_grant_gifts_to_the_armies
 		}
 
-		days_mission_timeout = 160
+		days_mission_timeout = 240
 
 		activation = {
 			ROE = {

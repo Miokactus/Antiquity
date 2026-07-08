@@ -14,6 +14,7 @@
  
  show_of_force: "Show of Force"
  ROE_we_will_deal_with_mutinies: "We will deal with the mutinies, restoring order in our armies!"
+ mutinies: "Army Mutinies"
 
  ## TRAITS
  ROE_roman_emperor: "Princeps of the Romans"

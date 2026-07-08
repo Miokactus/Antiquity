@@ -65,3 +65,32 @@ nomads_build_cavalry = {
         value = 300
     }
 }
+
+nomads_wont_join_factions_historical = {
+    allowed = {
+        OR = {
+            tag = SAR
+            tag = SCY
+            tag = YUZ
+            tag = EAR
+            tag = TSA
+            tag = FNI
+        }
+    }
+    enable = {
+        is_historical_focus_on = yes
+    }
+    abort = {
+        is_historical_focus_on = no
+    }
+    ai_strategy = {
+        type = alliance
+        id = CRS
+        value = -250
+    }
+    ai_strategy = {
+        type = ignore
+        id = CRS
+        value = 100
+    }
+}
