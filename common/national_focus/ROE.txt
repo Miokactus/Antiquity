@@ -176,7 +176,7 @@ focus_tree = {
 	#Deal with the Mutinies
 	focus = {
 		id = ROE_deal_with_the_mutinies
-		icon = GFX
+		icon = GFX_focus_generic_currency_reforms
 		relative_position_id = ROE_follow_augustus_will
 		x = 2
 		y = 3
@@ -319,7 +319,7 @@ focus_tree = {
 	#Grand Gifts to the Armies
 	focus = {
 		id = ROE_grant_gifts_to_the_armies
-		icon = GFX
+		icon = GFX_focus_generic_agricultural_subsidies
 		relative_position_id = ROE_follow_augustus_will
 		x = 2
 		y = 4
@@ -451,7 +451,7 @@ focus_tree = {
 	#Senatorial Relations
 	focus = {
 		id = ROE_senatorial_relations
-		icon = GFX
+		icon = GFX_focus_SWI_dissolve_the_federal_council
 		relative_position_id = ROE_follow_augustus_will
 		x = -1
 		y = 5
@@ -536,7 +536,7 @@ focus_tree = {
 	#Legitimise the Reign
 	focus = {
 		id = ROE_legitimise_the_reign
-		icon = GFX
+		icon = GFX_focus_generic_improve_the_administration
 		relative_position_id = ROE_follow_augustus_will
 		x = -1
 		y = 6
@@ -557,7 +557,7 @@ focus_tree = {
 	#Sejanus in Rome
 	focus = {
 		id = ROE_sejanus_in_rome
-		icon = GFX
+		icon = GFX_focus_AFG_promote_the_counter_elite
 		relative_position_id = ROE_follow_augustus_will
 		x = 1
 		y = 6
@@ -717,7 +717,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_pass_the_burden_to_the_gov
-		icon = GFX
+		icon = GFX_focus_generic_commission
 		relative_position_id = ROE_follow_augustus_will
 		x = -1
 		y = 11
@@ -793,7 +793,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_reinforce_the_lex_julia
-		icon = GFX
+		icon = GFX_focus_generic_annex_country
 		relative_position_id = ROE_follow_augustus_will
 		x = 3
 		y = 9
@@ -871,7 +871,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_allow_oriental_cults
-		icon = GFX
+		icon = GFX_focus_generic_court
 		relative_position_id = ROE_follow_augustus_will
 		x = -6
 		y = 10
@@ -2042,7 +2042,7 @@ focus_tree = {
 	#Democracy in the Arsacid Empire
 	focus = {
 		id = ROE_democracy_in_the_arsacid
-		icon = GFX
+		icon = GFX_SOV_the_southern_thrust_ccp_2d_sov_compatibility
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -1
 		y = 14
@@ -2251,7 +2251,7 @@ focus_tree = {
 	#The Triomphant Son
 	focus = {
 		id = ROE_the_triomphant_son
-		icon = GFX
+		icon = GFX_focus_generic_monarchy_1
 		relative_position_id = ROE_a_new_dynasty
 		x = 3
 		y = 4
@@ -2347,7 +2347,7 @@ focus_tree = {
 	#Industrial Development
 	focus = {
 		id = ROE_industrial_development
-		icon = GFX
+		icon = GFX_focus_generic_industral_devlopment_bucket
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 6
@@ -2391,7 +2391,7 @@ focus_tree = {
 	#Encourage Fishing
 	focus = {
 		id = ROE_encourage_fishing
-		icon = GFX
+		icon = GFX_focus_PHI_rally_the_fisherfolk
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 7
@@ -2453,7 +2453,7 @@ focus_tree = {
 	#Towards militarisation
 	focus = {
 		id = ROE_towards_militarisation
-		icon = GFX
+		icon = GFX_focus_generic_military_industry
 		relative_position_id = ROE_a_new_dynasty
 		x = -3
 		y = 4
@@ -2518,7 +2518,7 @@ focus_tree = {
 	#Create new Manufactures
 	focus = {
 		id = ROE_create_new_manufactures
-		icon = GFX
+		icon = GFX_focus_generic_industry_2
 		relative_position_id = ROE_a_new_dynasty
 		x = -2
 		y = 5
@@ -2825,7 +2825,7 @@ focus_tree = {
 	#Look to the Eastern Menaces
 	focus = {
 		id = ROE_look_to_the_eastern_menace
-		icon = GFX
+		icon = GFX_focus_generic_balkans_focus
 		relative_position_id = ROE_a_new_dynasty
 		x = 3
 		y = 10
@@ -2863,7 +2863,12 @@ focus_tree = {
 		prerequisite = { focus = ROE_look_to_the_eastern_menace }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			DAC = {
+				country_event = {
+					id = rome_event.25
+					days = 4
+				}
+			}
 		}
 	}
 
@@ -2947,6 +2952,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ROE_the_rise_of_a_roman_emperor }
 		completion_reward = {
 			complete_national_focus = ROE_the_choice
+			set_country_flag = rome_rise_foreign
 		}
 	}
 
@@ -2961,7 +2967,9 @@ focus_tree = {
 		available = { 
 			has_completed_focus = ROE_the_rise_of_a_foreign_emperor
 		}
-		allow_branch = { }
+		allow_branch = {
+			has_country_flag = rome_rise_foreign
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -3094,7 +3102,9 @@ focus_tree = {
 		available = { 
 			has_country_flag = roman_military_coupdetat
 		}
-		allow_branch = { }
+		allow_branch = {
+			has_country_flag = roman_military_coupdetat
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -3115,136 +3125,6 @@ focus_tree = {
 
 
 
-
-
-
-
-	## MILITARY TREE ##
-	###################
-
-
-	#Reform the Imperial Army
-	focus = {
-		id = ROE_reform_the_imperial_army
-		icon = GFX
-		relative_position_id = ROE_augustus_death
-		x = 18
-		y = 0
-		cost = 8
-		ai_will_do = {
-        	base = 0
-        	modifier = {
-            	factor = 15
-            	OR = { 
-					has_completed_focus = ROE_the_senate_is_dissolved
-					has_completed_focus = ROE_the_senate_takes_control
-					has_completed_focus = ROE_chose_germanicus
-					has_completed_focus = ROE_recall_marcus
-				}
-        	}
-    	}
-		available = { 
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { }
-		mutually_exclusive = { }
-		completion_reward = {
-		}
-	}
-
-	#Stay with Infantry
-	focus = {
-		id = ROE_stay_with_infantry
-		icon = GFX
-		relative_position_id = ROE_reform_the_imperial_army
-		x = 1
-		y = 1
-		cost = 8
-		available = { 
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = ROE_reform_the_imperial_army }
-		mutually_exclusive = { focus = ROE_integrate_cavalry }
-		completion_reward = {
-			custom_effect_tooltip = historical_units
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Integrate Calvary
-	focus = {
-		id = ROE_integrate_cavalry
-		icon = GFX
-		relative_position_id = ROE_reform_the_imperial_army
-		x = -1
-		y = 1
-		cost = 8
-		available = { 
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = ROE_reform_the_imperial_army }
-		mutually_exclusive = { focus = ROE_stay_with_infantry }
-		completion_reward = {
-			custom_effect_tooltip = ahistorical_units	
-			set_division_template_lock = {
-    			division_template = "Legio"
-    			is_locked = no
-			}
-		}
-		ai_will_do = {
-			factor = 0
-			modifier = {
-				add = 1
-				is_historical_focus_on = no
-			}
-		}
-	}
-
-	#Towards a Volunteer Army
-	focus = {
-		id = ROE_towards_a_volunteer_army
-		icon = GFX
-		relative_position_id = ROE_reform_the_imperial_army
-		x = 3
-		y = 2
-		cost = 6
-		available = { 
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = ROE_reform_the_imperial_army }
-		mutually_exclusive = { focus = ROE_return_to_conscription }
-		completion_reward = {
-		}
-	}
-
-	#Return to Conscription
-	focus = {
-		id = ROE_return_to_conscription
-		icon = GFX
-		relative_position_id = ROE_reform_the_imperial_army
-		x = -3
-		y = 2
-		cost = 6
-		available = { 
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = ROE_reform_the_imperial_army }
-		mutually_exclusive = { focus = ROE_towards_a_volunteer_army }
-		completion_reward = {
-		}
-	}
 
 
 

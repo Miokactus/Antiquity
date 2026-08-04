@@ -6,6 +6,10 @@ characters = {
             civilian = {
                 large = "GFX_leader_PTH_artabanus_ii"
             }
+			army = {
+				large = "GFX_leader_PTH_artabanus_ii"
+				small = "GFX_idea_empty_generic"
+			}
         }
 		country_leader = {
 			desc = "ARTABANUS_DESC"
@@ -14,6 +18,14 @@ characters = {
 			traits = {
 				
 			}
+		}
+		corps_commander = {
+			traits = { infantry_leader }
+    		skill = 2
+    		attack_skill = 4
+    		defense_skill = 2
+    		planning_skill = 4
+    		logistics_skill = 3
 		}
 	}
 
@@ -103,4 +115,58 @@ characters = {
 		}
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	## generals
+
+	barzapharnes_the_ii = {
+		name = "Barzapharnes II"
+		portraits = {
+            	army = {
+					large = "GFX_leader_ROE_generic_statue"
+					small = "GFX_idea_empty_generic"
+            	}
+        	}
+		corps_commander = {
+			traits = { infantry_leader }
+    		skill = 3
+    		attack_skill = 3
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 3
+		}
+	}
+
+	arzaphel_general = {
+		name = "Azraphel"
+		portraits = {
+            	army = {
+					large = "GFX_leader_ROE_generic_statue"
+					small = "GFX_idea_empty_generic"
+            	}
+        	}
+		corps_commander = {
+			traits = { }
+    		skill = 1
+    		attack_skill = 3
+    		defense_skill = 2
+    		planning_skill = 2
+    		logistics_skill = 3
+		}
+	}
 }

@@ -8,7 +8,7 @@ state={
 		4199 7215 12087 12100 
 	}
 	history = {
-		owner = ROE
+		owner = MAU
 		add_core_of = MAU
 		add_core_of = CRT
 		buildings = {

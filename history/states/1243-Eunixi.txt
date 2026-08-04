@@ -1,0 +1,16 @@
+state = {
+	id = 1243
+	name = "STATE_1243"
+	manpower = 0
+	state_category = town
+	provinces = { 65 122 6145 9170 11198 }
+	history = {
+		owner = ENI
+		add_core_of = ENI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 122 5 }
+	}
+}

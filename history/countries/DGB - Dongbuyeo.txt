@@ -32,7 +32,8 @@ set_popularities = {
 }
 
 add_ideas = {
-    limited_exports 
-    limited_conscription
-    civilian_economy 
+	limited_exports
+	limited_conscription
+	civilian_economy
+	KOR_disunited_korea
 }

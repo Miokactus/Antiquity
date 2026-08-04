@@ -1,7 +1,7 @@
 
 state={
 	id=1000
-	name="STATE_1000"
+	name = "STATE_1000"
 	manpower = 715857
 	resources = {
 		steel = 6
@@ -11,21 +11,18 @@ state={
 	history={
 		owner = ARR
 		add_core_of = ARR
+		victory_points = { 1896 5 }
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		victory_points = {
-			1896 5 
-		}
+
 		
 		
 		
 	}
 
-	provinces={
-		1896 2071 4755 4825 12793
-	}
+	provinces = { 1896 4755 4825 }
 
 	local_supplies=4.0 
 }

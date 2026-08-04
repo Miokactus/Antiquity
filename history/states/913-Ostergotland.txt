@@ -8,14 +8,13 @@ state = {
 	}
 
 	history={
-		owner = AAN
+		owner = GAU
+		add_core_of = GAU
+		victory_points = { 9393 2 }
+		victory_points = { 11380 1 }
 		
-		victory_points = {
-			11380 1 
-		}
-		victory_points = {
-			9393 2 
-		}
+
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -26,9 +25,7 @@ state = {
 		}
 	}
 
-	provinces = {
-		6311 6397 9308 9393 11289 11311 11380 11390 13095 13264 13265
-	}
+	provinces = { 6311 9308 9393 11380 }
 	
 	local_supplies = 11
 }

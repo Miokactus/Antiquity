@@ -1,0 +1,15 @@
+state = {
+	id = 1237
+	name = "STATE_1237"
+	manpower = 66000
+	state_category = rural
+	provinces = { 242 363 6148 11280 }
+	history = {
+		owner = FVA
+		add_core_of = FVA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

@@ -1,0 +1,14 @@
+﻿l_english:
+ XAI_right_king_side: "Worthy Prince of the Right" ## Prime Minister, civilian matters
+ XAI_left_king_side: "Worthy Prince of the Left" ## Heir, commander in chief
+ XAI_balanced_neutral_range: "Status Quo"
+
+ XAI_right_king_side_low_control_range: "Favoured Right Wing"
+ XAI_right_king_side_medium_control_range: "Diplomatic Court"
+ XAI_right_king_side_high_control_range: "Overwhealming Civilian Influence"
+ XAI_right_king_side_total_control_range: "Supreme Prince of the Right"
+
+ XAI_left_king_side_low_control_range: "Favoured Left Wing"
+ XAI_left_king_side_medium_control_range: "Militarised Court"
+ XAI_left_king_side_high_control_range: "Assured Succession"
+ XAI_left_king_side_total_control_range: "Total Centralisation"

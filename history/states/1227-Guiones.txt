@@ -1,0 +1,13 @@
+state = {
+	id = 1227
+	name = "STATE_1227"
+	manpower = 66000
+	state_category = rural
+	provinces = { 399 3206 3341 13262 }
+	history = {
+		owner = GNI
+		add_core_of = GNI
+		victory_points = { 399 2 }
+		victory_points = { 3206 1 }
+	}
+}

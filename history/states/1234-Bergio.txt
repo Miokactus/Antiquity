@@ -1,0 +1,12 @@
+state = {
+	id = 1234
+	name = "STATE_1234"
+	manpower = 66000
+	state_category = city
+	provinces = { 6345 9362 }
+	history = {
+		owner = BRG
+		add_core_of = BRG
+		victory_points = { 6345 1 }
+	}
+}

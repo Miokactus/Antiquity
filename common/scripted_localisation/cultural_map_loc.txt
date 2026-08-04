@@ -1,0 +1,115 @@
+defined_text = {
+	name = GetCultureMapModeTooltip
+
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = roman_culture_var
+            }
+		}
+		localization_key = culture_map_roman_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_variable = parthian_culture_var
+            }
+		}
+		localization_key = culture_map_parthian_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_variable = chinese_culture_var
+            }
+		}
+		localization_key = culture_map_chinese_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_variable = xiongnu_culture_var
+            }
+		}
+		localization_key = culture_map_xiongnu_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_variable = scythian_culture_var
+            }
+		}
+		localization_key = culture_map_scythian_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_variable = germanic_culture_var
+            }
+		}
+		localization_key = culture_map_germanic_tt
+	}
+
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = armenian_culture_var
+            }
+		}
+		localization_key = culture_map_armenian_tt
+	}
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = mauretanian_culture_var
+            }
+		}
+		localization_key = culture_map_mauretanian_tt
+	}
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = britannic_culture_var
+            }
+		}
+		localization_key = culture_map_britannic_tt
+	}
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = celtic_culture_var
+            }
+		}
+		localization_key = culture_map_celtic_tt
+	}
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = south_arabian_culture_var
+            }
+		}
+		localization_key = culture_map_south_arabian_tt
+	}
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = indian_culture_var
+            }
+		}
+		localization_key = culture_map_indian_tt
+	}
+	text = {
+		trigger = {
+            FROM = {
+                has_variable = korean_culture_var
+            }
+		}
+		localization_key = culture_map_korean_tt
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = culture_map_unidentified
+	}
+}

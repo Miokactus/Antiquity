@@ -100,6 +100,47 @@ NYU = "countries/Nanyue.txt"
 LUO = "countries/Luoyue.txt"
 SHY = "countries/Sa_Huynh.txt"
 
+## NORWAY AND SWEDEN
+TTO = "countries/European.txt" # Teutons
+GNI = "countries/European.txt" # Guiones
+EDS = "countries/European.txt" # Eudoses
+DNT = "countries/European.txt" # Danes
+BRG = "countries/European.txt" # Bergio
+THT = "countries/European.txt" # Theustes
+HVI = "countries/European.txt" # Hilleviones
+AVV = "countries/European.txt" # Aviones
+OSG = "countries/European.txt" # Ostrogoths
+LTH = "countries/European.txt" # Liothida
+FIR = "countries/European.txt" # Firaesi
+NJR = "countries/European.txt" # Njars
+GVG = "countries/European.txt" # Gevlegs
+GGG = "countries/European.txt" # Gauthigoths
+FVA = "countries/European.txt" # Favonae
+RMI = "countries/European.txt" # Raumarici
+GNN = "countries/European.txt" # Granni
+RGR = "countries/European.txt" # Ragnaricii
+
+BBG = "countries/European.txt" # Brondings
+GAU = "countries/European.txt" # Gauti (unnamed)
+STO = "countries/European.txt" # Sitones (sweden)
+EVG = "countries/European.txt" # Evagreotingis
+VNL = "countries/European.txt" # Vinoviloth
+VAG = "countries/European.txt" # Vagoths
+FRV = "countries/European.txt" # Fervir
+FTH = "countries/European.txt" # Finnaithae
+
+TAE = "countries/European.txt" # Taetel
+ENI = "countries/European.txt" # Eunixi
+AGX = "countries/European.txt" # Augandzi
+ART = "countries/European.txt" # Arothi
+RRN = "countries/European.txt" # Ranii
+ADG = "countries/European.txt" # Adogit
+HAE = "countries/European.txt" # Haelsingar
+
+
+
+
+
 ## SOUTH-ASIAN STATES [FLAGS NEEDED]
 QQA = "countries/Asian.txt" #Qiang people
 ZZH = "countries/Asian.txt" #Zhangzhung

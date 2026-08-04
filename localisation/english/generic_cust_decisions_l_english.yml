@@ -20,6 +20,27 @@
 
  is_sphere_leader: "Is leader of a §Ysphere of influence§!"
 
+
+
+
+
+ cultural_map_mode_tooltip: "[From.GetCultureMapModeTooltip]"
+ culture_map_unidentified: "§Y[From.GetName]§! is of an unidentified culture."
+
+ culture_map_roman_tt: "§Y[From.GetName]§! is of the §RRoman culture§!."
+ culture_map_parthian_tt: "§Y[From.GetName]§! is of the §GParthian culture§!."
+ culture_map_chinese_tt: "§Y[From.GetName]§! is of the §8Chinese culture§!."
+ culture_map_xiongnu_tt: "§Y[From.GetName]§! is of the §4Xiongnu culture§!."
+ culture_map_scythian_tt: "§Y[From.GetName]§! is of the §9Scythian culture§!."
+ culture_map_germanic_tt: "§Y[From.GetName]§! is of the §7Germanic culture§!."
+ culture_map_armenian_tt: "§Y[From.GetName]§! is of the §5Armenian culture§!."
+ culture_map_mauretanian_tt: "§Y[From.GetName]§! is of the §6Mauretanian culture§!."
+ culture_map_celtic_tt: "§Y[From.GetName]§! is of the §2Celtic culture§!."
+ culture_map_britannic_tt: "§Y[From.GetName]§! is of the §3Britannic culture§!."
+ culture_map_south_arabian_tt: "§Y[From.GetName]§! is of the §1South Arabian culture§!."
+ culture_map_indian_tt: "§Y[From.GetName]§! is of the §OIndian culture§!."
+ culture_map_korean_tt: "§Y[From.GetName]§! is of the §LKorean culture§!."
+
  # Scripted Localisation:
  influence_map_mode_tt_influenced: "§Y[From.Owner.GetName]§! is influenced by a foreign power."
  influence_map_mode_tt_not_influenced: "§Y[From.Owner.GetName]§! is not influenced by any foreign power."

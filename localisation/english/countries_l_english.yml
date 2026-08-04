@@ -1100,3 +1100,137 @@ YLI_ADJ: "Yilou"
 DGB: "Gonbuyeo"
 DGB_DEF: "the Kingdom of Gonbuyeo"
 DGB_ADJ: "Gonbuyean"
+
+# Sweden & Norway
+
+TTO: "Teutons"
+TTO_DEF: "the Teutons"
+TTO_ADJ: "Teutonic"
+
+GNI: "Guiones"
+GNI_DEF: "the Guiones"
+GNI_ADJ: "Guiones"
+
+EDS: "Eudoses"
+EDS_DEF: "the Eudoses"
+EDS_ADJ: "Eudoses"
+
+DNT: "Danes"
+DNT_DEF: "the Danes"
+DNT_ADJ: "Danish"
+
+BRG: "Bergio"
+BRG_DEF: "the Bergio"
+BRG_ADJ: "Bergio"
+
+THT: "Theustes"
+THT_DEF: "the Theustes"
+THT_ADJ: "Theustes"
+
+HVI: "Hilleviones"
+HVI_DEF: "the Hilleviones"
+HVI_ADJ: "Hilleviones"
+
+AVV: "Aviones"
+AVV_DEF: "the Aviones"
+AVV_ADJ: "Aviones"
+
+OSG: "Ostrogoths"
+OSG_DEF: "the Ostrogoths"
+OSG_ADJ: "Ostrogothic"
+
+LTH: "Liothida"
+LTH_DEF: "the Liothida"
+LTH_ADJ: "Liothida"
+
+FIR: "Firaesi"
+FIR_DEF: "the Firaesi"
+FIR_ADJ: "Firaesi"
+
+NJR: "Njars"
+NJR_DEF: "the Njars"
+NJR_ADJ: "Njars"
+
+GVG: "Gevlegs"
+GVG_DEF: "the Gevlegs"
+GVG_ADJ: "Gevlegs"
+
+GGG: "Gauthigoths"
+GGG_DEF: "the Gauthigoths"
+GGG_ADJ: "Gauthigothic"
+
+FVA: "Favonae"
+FVA_DEF: "the Favonae"
+FVA_ADJ: "Favonae"
+
+RMI: "Raumarici"
+RMI_DEF: "the Raumarici"
+RMI_ADJ: "Raumarici"
+
+GNN: "Granni"
+GNN_DEF: "the Granni"
+GNN_ADJ: "Granni"
+
+RGR: "Ragnaricii"
+RGR_DEF: "the Ragnaricii"
+RGR_ADJ: "Ragnaricii"
+
+BBG: "Brondings"
+BBG_DEF: "the Brondings"
+BBG_ADJ: "Brondinic"
+
+GAU: "Gauti"
+GAU_DEF: "the Gauti"
+GAU_ADJ: "Gauthic"
+
+STO: "Sitones"
+STO_DEF: "the Sitones"
+STO_ADJ: "Sitones"
+
+EVG: "Evagreotingis"
+EVG_DEF: "the Evagreotingis"
+EVG_ADJ: "Evagreotingis"
+
+VNL: "Vinoviloth"
+VNL_DEF: "the Vinoviloth"
+VNL_ADJ: "Vinoviloth"
+
+VAG: "Vagoths"
+VAG_DEF: "the Vagoths"
+VAG_ADJ: "Vagothic"
+
+FRV: "Fervir"
+FRV_DEF: "the Fervir"
+FRV_ADJ: "Fervir"
+
+FTH: "Finnaithae"
+FTH_DEF: "the Finnaithae"
+FTH_ADJ: "Finnaithae"
+
+TAE: "Taetel"
+TAE_DEF: "the Taetel"
+TAE_ADJ: "Taetel"
+
+ENI: "Eunixi"
+ENI_DEF: "the Eunixi"
+ENI_ADJ: "Eunixi"
+
+AGX: "Augandzi"
+AGX_DEF: "the Augandzi"
+AGX_ADJ: "Augandzi"
+
+ART: "Arothi"
+ART_DEF: "the Arothi"
+ART_ADJ: "Arothi"
+
+RRN: "Ranii"
+RRN_DEF: "the Ranii"
+RRN_ADJ: "Ranii"
+
+ADG: "Adogit"
+ADG_DEF: "the Adogit"
+ADG_ADJ: "Adogit"
+
+HAE: "Haelsingar"
+HAE_DEF: "the Haelsingar"
+HAE_ADJ: "Haelsingar"

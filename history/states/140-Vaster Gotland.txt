@@ -9,30 +9,20 @@ state = {
 	}
 
 	history = {
-		owner = AAN
-		victory_points = {
-			383 10 
-		}
+		owner = FRV
+		add_core_of = FRV
+		victory_points = { 383 10 }
+
+
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 1
-			dockyard = 1
-			#
-			383 = {
-				naval_base = 5
-				coastal_bunker = 5
-
-			}
-
 		}
 		
 
 	}
 
-	provinces = {
-		295 383 3063 3286 3375 3386 6331 6406 11070 13096 
-	}
+	provinces = { 383 3386 6331 6406 }
 
 	
 	local_supplies = 0.000

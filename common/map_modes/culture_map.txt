@@ -1,0 +1,168 @@
+scripted_map_modes = {
+	cultural_map_mode = {
+		top = {
+			type = state
+
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 0.5 }
+					if = {
+						limit = {
+							has_variable = roman_culture_var
+						}
+						set_temp_variable = { red = 0.9 }
+						set_temp_variable = { green = 0.2 }
+						set_temp_variable = { blue = 0.2 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = parthian_culture_var
+						}
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.9 }
+						set_temp_variable = { blue = 0.2 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = chinese_culture_var
+						}
+						set_temp_variable = { red = 0.9 }
+						set_temp_variable = { green = 0.9 }
+						set_temp_variable = { blue = 0.0 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = xiongnu_culture_var
+						}
+						set_temp_variable = { red = 0.5 }
+						set_temp_variable = { green = 0.5 }
+						set_temp_variable = { blue = 0.5 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = scythian_culture_var
+						}
+						set_temp_variable = { red = 0.3 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.0 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = germanic_culture_var
+						}
+						set_temp_variable = { red = 0.1 }
+						set_temp_variable = { green = 0.3 }
+						set_temp_variable = { blue = 0.3 }
+						set_temp_variable = { alpha = 1 }
+                    }
+
+					else_if = {
+						limit = {
+							has_variable = armenian_culture_var
+						}
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.05 }
+						set_temp_variable = { blue = 0.2 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = mauretanian_culture_var
+						}
+						set_temp_variable = { red = 0.02 }
+						set_temp_variable = { green = 0.5 }
+						set_temp_variable = { blue = 0.05 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = britannic_culture_var
+						}
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.2 }
+						set_temp_variable = { blue = 0.8 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = celtic_culture_var
+						}
+						set_temp_variable = { red = 0.2 }
+						set_temp_variable = { green = 0.8 }
+						set_temp_variable = { blue = 0.2 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = south_arabian_culture_var
+						}
+						set_temp_variable = { red = 0.4 }
+						set_temp_variable = { green = 0.5 }
+						set_temp_variable = { blue = 0.4 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = indian_culture_var
+						}
+						set_temp_variable = { red = 0.6 }
+						set_temp_variable = { green = 0.2 }
+						set_temp_variable = { blue = 0.8 }
+						set_temp_variable = { alpha = 1 }
+                    }
+					else_if = {
+						limit = {
+							has_variable = korean_culture_var
+						}
+						set_temp_variable = { red = 0.4 }
+						set_temp_variable = { green = 0.6 }
+						set_temp_variable = { blue = 0.4 }
+						set_temp_variable = { alpha = 1 }
+                    }
+				}
+			}
+
+			thickness = no
+
+			targets = {
+			#	target_array = core_states
+			#	target_array = owned_states
+			#	target_array = controlled_states
+				target_array = global.states
+				target_trigger = {
+					FROM = {
+						
+					}
+				}
+			}
+		}
+
+		bottom = {
+			type = country
+
+			color = {
+				set_temp_variable = { alpha = 1 }
+			#	set_temp_variable = { thickness = 10.0 }
+				set_temp_variable = { red = 0.0 }
+				set_temp_variable = { green = 0.0 }
+				set_temp_variable = { blue = 0.0 }
+			}
+
+			thickness = no
+
+			targets = {
+				targets = { ROOT }
+			}
+		}
+
+		far_text = state
+		near_text = country
+
+		update_daily = yes
+	}
+}

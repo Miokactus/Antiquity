@@ -1,0 +1,16 @@
+state = {
+	id = 1223
+	name = "STATE_1223"
+	manpower = 66000
+	state_category = large_town
+	provinces = { 641 3650 6639 6668 9590 11794 }
+	history = {
+		owner = ROE
+		add_core_of = ROE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			farm = 1
+		}
+	}
+}

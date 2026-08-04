@@ -1,0 +1,16 @@
+state = {
+	id = 1240
+	name = "STATE_1240"
+	manpower = 66000
+	state_category = large_town
+	provinces = { 14 6151 9174 11029 }
+	history = {
+		owner = GNN
+		add_core_of = GNN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 6151 1 }
+	}
+}

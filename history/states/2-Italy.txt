@@ -10,8 +10,11 @@ state = {
 
 	history = {
 		owner = ROE
-		victory_points = { 9904 40 } #Rome
-		victory_points = { 11846 1 } #Anzio (was 5)
+		add_core_of = ROE
+		victory_points = { 9904 40 }
+		victory_points = { 11846 1 }
+ #Rome
+ #Anzio (was 5)
 		buildings = {
 			#
 			arms_factory = 1
@@ -31,7 +34,6 @@ state = {
                 }
             }
 		}
-		add_core_of = ROE
 		
 		1939.1.1 = {
 			buildings = {
@@ -41,9 +43,7 @@ state = {
 		}
 	}
 
-	provinces = {
-		923 6862 9794 9904 11751 11846 11882
- 	}
+	provinces = { 923 6862 9794 9904 11751 11846 11882 13393 }
 
 	local_supplies = 0.0 
 }

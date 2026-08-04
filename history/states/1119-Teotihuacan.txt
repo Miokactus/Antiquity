@@ -1,10 +1,8 @@
 state={
 	id=1119
-	name="STATE_1119"
-	provinces={
-		2008 2011 
-	}
-	resources={
+	name = "STATE_1119"
+	provinces = { 2008 2011 13399 13400 }
+	resources = {
 		gold_ingot = 3
 		grain = 2
 	}
@@ -12,6 +10,11 @@ state={
 		owner = TTH
 		add_core_of = TTH
 		victory_points = { 2008 12 }
+
+
+
+
+
 	}
 	manpower = 250000
 	state_category = large_town

@@ -1,0 +1,15 @@
+state = {
+	id = 1236
+	name = "STATE_1236"
+	manpower = 66000
+	state_category = city
+	provinces = { 3307 6412 }
+	history = {
+		owner = HVI
+		add_core_of = HVI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+}

@@ -1,0 +1,176 @@
+XAI_tuqi_kings = {
+    initial_value = 0
+    left_side = XAI_right_king_side
+    right_side = XAI_left_king_side
+    decision_category = tuqi_kings_council
+
+    ### Neutral Range
+    range = {
+        id = XAI_balanced_neutral_range
+        icon = generic_constitutional_guarantees
+
+        min = -0.1
+        max = 0.1
+        modifier = {
+        }
+	    on_activate = {}
+	    on_deactivate = {}
+    }
+
+    ### Right King (Civilian matters, daily life, Prime Minister)
+    side = {
+        id = XAI_right_king_side
+        icon = GFX_focus_CHL_union_of_hispanic_republics
+
+        range = {
+            id = XAI_right_king_side_low_control_range
+            min = -0.3
+            max = -0.1
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_rising
+                    add_idea = XIN_peasant_support_fading
+                }
+		    }
+	        on_deactivate = {
+            }
+        }
+
+        range = {
+            id = XAI_right_king_side_medium_control_range
+            min = -0.6
+            max = -0.3
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_no_support
+                    add_idea = XIN_peasant_support_fading
+                }
+            }
+            on_deactivate = {
+	        }
+        }
+
+        range = {
+            id = XAI_right_king_side_high_control_range
+            min = -0.9
+            max = -0.6
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_fading
+                    add_idea = XIN_peasant_no_support
+                }
+	        }
+	        on_deactivate = {
+	        }
+        }
+
+        range = {
+            id = XAI_right_king_side_total_control_range
+            min = -1
+            max = -0.9
+            modifier = {
+            }
+	        on_activate = {
+                add_ideas = XIN_open_revolt
+	        }
+	        on_deactivate = {
+                remove_ideas = XIN_open_revolt
+	        }
+        }
+    }
+
+
+    ### Left King (Heir, military leader, commander-in-chief..)
+    side = {
+        id = XAI_left_king_side
+        icon = GFX_focus_generic_monarchist_sentiment
+
+        range = {
+            id = XAI_left_king_side_low_control_range
+            min = 0.1
+            max = 0.3
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_fading
+                    add_idea = XIN_peasant_support_rising
+                }
+	        }
+	        on_deactivate = {	
+	        }
+        }
+
+        range = {
+            id = XAI_left_king_side_medium_control_range
+            min = 0.3
+            max = 0.6
+            modifier = {
+            }
+	        on_activate = {
+	        }
+	        on_deactivate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support
+                    add_idea = XIN_peasant_support_rising
+                }
+	        }
+        }
+
+        range = {
+            id = XAI_left_king_side_high_control_range
+            min = 0.6
+            max = 0.9
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_peasant_support_rising
+                    add_idea = XIN_peasant_support
+                }
+	        }
+	        on_deactivate = {
+			    swap_ideas = {
+                    remove_idea = XIN_legitimate_dynasty
+                    add_idea = XIN_illegitimate_regime
+                }
+	        }
+        }
+
+        range = {
+            id = XAI_left_king_side_total_control_range
+            min = 0.9
+            max = 1
+            modifier = {
+            }
+	        on_activate = {
+                swap_ideas = {
+                    remove_idea = XIN_illegitimate_regime
+                    add_idea = XIN_legitimate_dynasty
+                }
+                if = {
+                    limit = {
+                        744 = {
+                            NOT = {
+                                is_core_of = ROOT
+                            }
+                        }
+                    }
+                    ANN = {
+                        every_core_state = {
+                            add_core_of = ROOT
+                        }
+                    }
+                }
+	        }
+	        on_deactivate = {
+	        }
+        }
+    }
+}

@@ -2,7 +2,39 @@ ideas = {
 	country = {
 		
 	## GENERIC ##
-		
+		KOR_chinese_threat = {
+			name = "The Chinese Threat"
+			allowed_civil_war = { always = yes }
+			picture = chi_forced_conscription
+			targeted_modifier = {
+				tag = XIN
+				trade_cost_for_target_factor = 0.5
+				defense_bonus_against = 0.1
+			}
+			modifier = {
+				war_support_factor = 0.1
+				conscription_factor = 0.15
+				army_attack_factor = 0.1
+			}
+		}
+
+		KOR_disunited_korea = {
+			name = "A Disunited Korea"
+			allowed_civil_war = { always = yes }
+			picture = tur_disorganised_armed_forces
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+				political_power_factor = -0.1
+			}
+			cancel = {
+				any_country = {
+					limit = {
+						has_country_flag = united_korea
+					}
+				}
+			}
+		}
 		
 
 	}

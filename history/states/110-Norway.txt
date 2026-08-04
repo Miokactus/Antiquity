@@ -6,19 +6,16 @@ state = {
 	
 	state_category = large_town
 	
-	resources = {
-
-	}
+	
 
 	history = {
-		victory_points = {
-			6115 13 
-		}
-		victory_points = {
-			11151 2
-		}
+		owner = VNL
+		add_core_of = VNL
+
+
+
+
 		
-		owner = AAN
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -33,9 +30,7 @@ state = {
 		
 	}
 
-	provinces={
-		14 3007 3171 6115 9103 11078 11151 11184  
-	}
+	provinces = { 3007 11184 }
 
 	local_supplies=0.0 
 }

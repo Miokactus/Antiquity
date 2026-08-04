@@ -1,15 +1,14 @@
 state={
 	id=1184
-	name="STATE_1184"
-	provinces={
-		2027 2095 8092 
-	}
+	name = "STATE_1184"
+	provinces = { 2027 2095 8092 13398 }
 	history = {
 		owner = MAA
 		add_core_of = MAA
 		victory_points = { 2027 2 }
+
 	}
-	manpower=24000
+	manpower = 24000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

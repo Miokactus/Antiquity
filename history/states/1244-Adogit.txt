@@ -1,0 +1,16 @@
+state = {
+	id = 1244
+	name = "STATE_1244"
+	manpower = 0
+	state_category = rural
+	provinces = { 21 3018 3022 6038 6116 6118 9132 9139 }
+	history = {
+		owner = ADG
+		add_core_of = ADG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 3022 5 }
+	}
+}

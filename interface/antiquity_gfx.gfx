@@ -343,4 +343,14 @@ spriteTypes = {
         texturefile = "gfx/characters/Arminius_portrait.dds"
     }
 
+    spriteType = {
+        name = "GFX_leader_Maroboduus_portrait"
+        texturefile = "gfx/characters/Maroboduus_portrait.dds"
+    }
+
+    spriteType = {
+        name = "GFX_leader_Comosicus_portrait"
+        texturefile = "gfx/characters/Comosicus_portrait.dds"
+    }
+
 }

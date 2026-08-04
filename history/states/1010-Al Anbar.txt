@@ -8,8 +8,8 @@ state={
 		1631 4440 
 	}
 	history = {
-		owner = AAN
-		add_core_of = AAN
+		owner = PTH
+		add_core_of = PTH
 		buildings = {
 			infrastructure = 1
 		}

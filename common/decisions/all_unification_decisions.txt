@@ -366,6 +366,7 @@ unification_decisions = {
             1199 = { add_core_of = ROOT }
         }
             set_cosmetic_tag = korean_empire
+            set_country_flag = united_korea
 		}
 		timeout_effect = {
 		}

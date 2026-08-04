@@ -1,0 +1,15 @@
+state = {
+	id = 1229
+	name = "STATE_1229"
+	manpower = 66000
+	state_category = town
+	provinces = { 6397 11289 11311 11390 13095 13264 13265 }
+	history = {
+		owner = OSG
+		add_core_of = OSG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

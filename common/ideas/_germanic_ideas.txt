@@ -1,0 +1,153 @@
+ideas = {
+	country = {
+		DAC_civil_war_appeased = {
+			name = "Dacio-Getian Appeasement"
+			allowed_civil_war = { always = yes }
+			picture = chi_war_of_resistance1
+			targeted_modifier = {
+				tag = GET
+				trade_cost_for_target_factor = 0.2
+				generate_wargoal_tension_against = 0.5
+			}
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		DAC_civil_war_rising = {
+			name = "Dacio-Getian Tensions Rising"
+			allowed_civil_war = { always = yes }
+			picture = chi_war_of_resistance2
+			targeted_modifier = {
+				tag = GET
+				trade_cost_for_target_factor = 0.5
+				generate_wargoal_tension_against = 0.2
+			}
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = -0.1
+				minimum_training_level = -0.25
+			}
+		}
+
+		DAC_full_civil_war = {
+			name = "Dacio-Getian Civil War!"
+			allowed_civil_war = { always = yes }
+			picture = chi_war_of_resistance3
+			targeted_modifier = {
+				tag = GET
+				trade_cost_for_target_factor = 0.8
+				generate_wargoal_tension_against = -0.25
+			}
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = -0.1
+				minimum_training_level = -0.4
+				conscription_factor = 0.25
+			}
+		}
+
+
+
+
+		GET_civil_war_appeased = {
+			name = "Dacio-Getian Civil War"
+			allowed_civil_war = { always = yes }
+			picture = chi_war_of_resistance1
+			targeted_modifier = {
+				tag = DAC
+				trade_cost_for_target_factor = 0.2
+				generate_wargoal_tension_against = 0.5
+			}
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		GET_civil_war_rising = {
+			name = "Dacio-Getian Tensions Rising"
+			allowed_civil_war = { always = yes }
+			picture = chi_war_of_resistance2
+			targeted_modifier = {
+				tag = DAC
+				trade_cost_for_target_factor = 0.5
+				generate_wargoal_tension_against = 0.2
+			}
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = -0.1
+				minimum_training_level = -0.25
+			}
+		}
+
+		GET_full_civil_war = {
+			name = "Dacio-Getian Civil War!"
+			allowed_civil_war = { always = yes }
+			picture = chi_war_of_resistance3
+			targeted_modifier = {
+				tag = DAC
+				trade_cost_for_target_factor = 0.8
+				generate_wargoal_tension_against = -0.25
+			}
+			modifier = {
+				war_support_factor = 0.15
+				stability_factor = -0.1
+				minimum_training_level = -0.4
+				conscription_factor = 0.25
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+		MRA_unpopular_king = {
+			name = "Unpopular King"
+			allowed_civil_war = { always = yes }
+			picture = generic_king_handled
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.15
+			}
+		}
+
+		MRA_romans_puppet = {
+			name = "Puppet of the Romans"
+			allowed_civil_war = { always = yes }
+			picture = SWE_wargames
+			targeted_modifier = {
+				tag = ROE
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.25
+			}
+			modifier = {
+				party_popularity_stability_factor = -0.25
+				political_power_cost = 0.25
+			}
+		}
+
+		MRA_brothers_war = {
+			name = "Brothers' War"
+			allowed_civil_war = { always = yes }
+			picture = BEL_legacy_of_the_great_war
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.15
+				political_power_factor = -0.5
+			}
+			cancel = {
+				NOT = {
+					has_war_with = CRS
+				}
+			}
+		}
+
+	}
+}

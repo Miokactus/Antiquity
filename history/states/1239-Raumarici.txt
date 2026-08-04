@@ -1,0 +1,16 @@
+state = {
+	id = 1239
+	name = "STATE_1239"
+	manpower = 66000
+	state_category = large_town
+	provinces = { 6115 9103 11078 }
+	history = {
+		owner = RMI
+		add_core_of = RMI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 6115 13 }
+	}
+}

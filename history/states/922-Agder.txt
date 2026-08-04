@@ -13,17 +13,12 @@ state = {
 			9296 3 
 		}
 		
-		owner = AAN
+		owner = AGX
+		add_core_of = AGX
 		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			arms_factory = 1
-			dockyard = 1
-			9296 = {
-				naval_base = 3
-				coastal_bunker = 1
-			}
 		}
 	}
 

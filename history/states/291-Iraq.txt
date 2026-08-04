@@ -6,23 +6,33 @@ state = {
 	state_category = city
 	
 	resources = {
-		gold_ingot = 8 # was: 22
+		gold_ingot = 8
 	}
 
 	history = {
-
 		owner = PTH
 		add_core_of = PTH
+		victory_points = { 2097 30 }
+		victory_points = { 3795 2 }
+		victory_points = { 7994 8 }
 
-		victory_points = {
-			2097 30 # Ctesiphon
-		}
-		victory_points = {
-			7994 8 # Babylon 
-		}
-		victory_points = {
-			3795 2 # Tikrit 
-		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		buildings = {
 			infrastructure = 2 #was: 5
@@ -33,9 +43,7 @@ state = {
 		
 	}
 
-	provinces = {
-		2097 3795 7994 10876 12046 12839 12855 
-	}
+	provinces = { 2097 3795 7994 10876 12046 12839 12855 13386 }
 
 	local_supplies = 6.0 
 }

@@ -227,6 +227,10 @@ mandate_of_heaven = {
 		}
 	}
 
+
+
+
+
 	epic_decision = {
 		icon = generic_civil_support
 		cost = 1

@@ -1,0 +1,15 @@
+state = {
+	id = 1235
+	name = "STATE_1235"
+	manpower = 66000
+	state_category = town
+	provinces = { 295 3063 3286 3375 13096 }
+	history = {
+		owner = GGG
+		add_core_of = GGG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

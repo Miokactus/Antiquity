@@ -12,6 +12,10 @@ recruit_character = parthian_nobility
 recruit_character = PTH_tribal_administration
 recruit_character = PTH_peasant_councils
 
+
+recruit_character = barzapharnes_the_ii
+recruit_character = arzaphel_general
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

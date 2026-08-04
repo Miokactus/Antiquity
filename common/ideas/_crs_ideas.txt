@@ -132,5 +132,25 @@ ideas = {
 			}
 		}
 
+
+		CRS_war_of_revenge = {
+			name = "War of Revenge"
+			allowed_civil_war = { always = yes }
+			picture = SWI_spirit_of_helvetia_aggressive_war
+			targeted_modifier = {
+				tag = MRA
+				attack_bonus_against = 0.1
+			}
+			modifier = {
+				war_support_factor = 0.1
+				stability_factor = 0.05
+			}
+			cancel = {
+				NOT = {
+					has_war_with = MRA
+				}
+			}
+		}
+
 	}
 }

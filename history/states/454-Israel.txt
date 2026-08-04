@@ -1,24 +1,21 @@
 state={
 	id=454
-	name="STATE_454"
-	provinces={
-		1 1065 1086 1201 4088 4206 7107 7176 11970 7151 7170 1074
-	}
+	name = "STATE_454"
+	provinces = { 1 1065 1074 1086 1201 7107 7151 7170 7176 11970 }
 	history = {
 		owner = ROE
 		add_core_of = JUD
+		victory_points = { 1086 15 }
 		
 		add_claim_by = EGI
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
-		victory_points = {
-			1086 15
-		}
+
 	}
-	manpower=163314
+	manpower = 163314
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category = town
 	local_supplies=0.000
 }

@@ -7,17 +7,16 @@ state = {
 	state_category = city
 
 	history = {
-		owner = AAN
+		owner = DNT
+		add_core_of = DNT
+		victory_points = { 9279 5 }
+		victory_points = { 11215 1 }
 
-		victory_points = {
-			9279 5 # Malmö
-		}
-		victory_points = {
-			11215 1 # Karlskrona
-		}
-		victory_points = {
-			6345 1 # Helsingborg
-		}
+
+
+
+
+
 
 		buildings = {
 			infrastructure = 2 #was: 5
@@ -36,9 +35,7 @@ state = {
 		
 	}
 
-	provinces = {
-		3307 6120 6345 6412 9279 9300 9362 11160 11215 11327 11376 
-	}
+	provinces = { 6120 9279 9300 11160 11215 11327 11376 }
 
 	local_supplies = 0.0 
 }

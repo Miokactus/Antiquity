@@ -5,7 +5,7 @@ oob = "GET_14"
 set_research_slots = 1
 
 create_country_leader = {
-	name = "King Dicomes of the Gatians"
+	name = "King Dicomes of the Getians"
 	desc = "DICOMES_DESC"
 	picture = GFX_leader_monarchy_generic2
 	expire = "120.5.4"
@@ -37,4 +37,5 @@ add_ideas = {
 	civilian_economy 
 	limited_conscription
 	limited_exports
+	GET_civil_war_appeased
 }

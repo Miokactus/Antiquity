@@ -1,0 +1,26 @@
+state={
+	id=1215
+	name="STATE_1215"
+	provinces={
+		693 3665 3694 9619 11622 
+	}
+	history={
+		owner = DAC
+		add_core_of = DAC
+		add_core_of = GET
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			693 1 
+		}
+		
+		
+	}
+	manpower=85000
+	state_category = large_town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

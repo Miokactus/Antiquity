@@ -1,0 +1,40 @@
+# All global modifiers are here. They are applied from certain game-features.
+# Effects are fully scriptable here.
+# These names can NOT be removed or changes, as the code uses them....
+
+#
+roman_culture = {
+    category = state
+
+    local_factories = 0.65
+}
+
+parthian_culture = {
+}
+
+chinese_culture = {
+}
+
+xiongnu_culture = {
+}
+
+celtic_culture = {
+}
+
+continental_germanic_culture = {
+}
+
+britanic_culture = {
+}
+
+irish_culture = {
+}
+
+nomads_culture = {
+}
+
+indian_culture = {
+}
+
+greek_culture = {
+}

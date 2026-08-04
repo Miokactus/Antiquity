@@ -6,22 +6,24 @@ state = {
 	state_category = city
 	
 	resources = {
-		steel = 24 # was: 40
-		aluminium = 2 # was: 4
+		aluminium = 2
+		steel = 24
 	}
 
 	history = {
-		owner = AAN
+		owner = STO
+		add_core_of = STO
+		victory_points = { 9149 3 }
 
-		victory_points = {
-			6050 20 # Stockholm
-		}
 
-		victory_points = {
-			9149 3 # Uppsala
-		}
+
+
+
+
+
 
 		buildings = {
+			infrastructure = 2
 			industrial_complex = 1
 			#
 			dockyard = 1
@@ -36,9 +38,7 @@ state = {
 
 	}
 
-	provinces = {
-		35 161 3106 3182 6050 6084 6127 6164 6188 6209 9109 9149 9185 9209 11044 11082 11163 11188 11278 13097 13098 
-	}
+	provinces = { 3182 6127 6209 9149 11278 }
 
 	local_supplies = 0.0 
 }

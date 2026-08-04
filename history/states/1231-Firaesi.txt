@@ -1,0 +1,16 @@
+state = {
+	id = 1231
+	name = "STATE_1231"
+	manpower = 66000
+	state_category = city
+	provinces = { 161 6050 11163 11188 13098 }
+	history = {
+		owner = FIR
+		add_core_of = FIR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 6050 20 }
+	}
+}

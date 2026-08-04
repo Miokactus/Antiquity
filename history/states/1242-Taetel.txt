@@ -1,0 +1,16 @@
+state = {
+	id = 1242
+	name = "STATE_1242"
+	manpower = 0
+	state_category = town
+	provinces = { 53 137 3192 6176 }
+	history = {
+		owner = TAE
+		add_core_of = TAE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 53 3 }
+	}
+}

@@ -1,0 +1,16 @@
+state = {
+	id = 1225
+	name = "STATE_1225"
+	manpower = 66000
+	state_category = rural
+	provinces = { 2071 4609 4901 12793 12861 }
+	history = {
+		owner = PTH
+		add_core_of = PTH
+		add_core_of = ARR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

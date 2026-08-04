@@ -1,0 +1,16 @@
+state = {
+	id = 1222
+	name = "STATE_1222"
+	manpower = 95000
+	state_category = large_town
+	provinces = { 568 767 6771 9712 11700 }
+	history = {
+		owner = BOP
+		add_core_of = BOP
+		add_core_of = SAR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+}

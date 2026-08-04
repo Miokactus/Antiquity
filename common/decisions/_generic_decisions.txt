@@ -294,7 +294,93 @@ war_actions = {
 
 
 
-
+cultural_integration = {
+	erase_culture = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		target_root_trigger = { TAG = ROOT }
+		target_array = ROOT.owned_controlled_states
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						owner = {
+							capital_scope = { has_variable = roman_culture_var }
+						}
+						NOT = { has_variable = roman_culture_var }
+					}
+					AND = {
+						owner = {
+							capital_scope = { has_variable = parthian_culture_var }
+						}
+						NOT = { has_variable = parthian_culture_var }
+					}
+					AND = {
+						owner = {
+							capital_scope = { has_variable = chinese_culture_var }
+						}
+						NOT = { has_variable = chinese_culture_var }
+					}
+				}
+			}
+		}
+		cost = 75
+		days_remove = 2
+		state_target = yes
+		highlight_states = {
+			highlight_states_trigger = {
+				
+			}
+		}
+		allowed = {
+			always = yes
+		}
+		available = {
+			any_owned_state = {
+				NOT = {
+					is_core_of = ROOT
+				}
+				compliance > 50
+			}
+		}
+		visible = {
+			NOT = {
+				has_war = yes
+			}
+			NOT = {
+				tag = AAN
+				tag = FAL
+				tag = FAA
+			}
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { has_variable = roman_culture_var }
+						}
+						NOT = { has_variable = roman_culture_var }
+						FROM = {
+							has_variable = mauretanian_culture_var
+						}
+					}
+				}
+				clear_variable = mauretanian_culture_var
+				set_variable = { roman_culture_var = 1 }
+				custom_effect_tooltip = ROE_convert
+			}
+		}
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				factor = 300
+				num_occupied_states > 2
+			}
+		}
+	}
+}
 
 
 

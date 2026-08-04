@@ -1,1 +1,31 @@
-tuqi_kings_council = {}
+tuqi_kings_council = {
+    swing_the_scale_left = {
+		icon = generic_civil_support
+		days_re_enable = 50
+		cost = 20
+		allowed = {
+			has_power_balance = {
+    		    id = XAI_tuqi_kings
+			}
+    	}
+		available = {
+		}
+		visible = {
+            has_power_balance = {
+    		    id = XAI_tuqi_kings
+			}
+		}
+		complete_effect = {
+            add_power_balance_value = {
+    			id = XAI_tuqi_kings
+    			value = -0.05
+    			tooltip_side = XAI_right_king_side
+			}
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+    		base = 1
+		}
+	}
+}

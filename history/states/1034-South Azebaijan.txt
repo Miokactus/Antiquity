@@ -1,9 +1,7 @@
 state={
 	id=1034
-	name="STATE_1034"
-	provinces={
-		4609 4901 10454 
-	}
+	name = "STATE_1034"
+	provinces = { 10454 }
 	history = {
 		owner = ARR
 		add_core_of = ARR
@@ -11,8 +9,8 @@ state={
 			infrastructure = 1
 		}
 	}
-	manpower=1500
-	state_category= rural
+	manpower = 1500
+	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

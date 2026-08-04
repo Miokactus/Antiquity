@@ -6,17 +6,16 @@ state = {
 	state_category = rural
 	
 	resources = {
-		chromium = 15 # was: 22
+		chromium = 15
 	}
 
 	history = {
-
 		owner = SAR
 		add_core_of = SAR
+		victory_points = { 721 1 }
 
-		victory_points = {
-			721 1 # Kherson
-		}
+
+
 		
 		buildings = {
 			infrastructure = 2 #was: 5
@@ -29,9 +28,7 @@ state = {
 		
 	}
 
-	provinces = {
-		568 721 737 767 3573 6771 9712 11715 
-	}
+	provinces = { 721 737 3573 11715 }
 
 	local_supplies = 0.0 
 }

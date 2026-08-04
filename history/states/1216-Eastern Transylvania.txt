@@ -1,0 +1,28 @@
+state={
+	id=1216
+	name="STATE_1216"
+	provinces={
+		711 3689 9668 9670 9685 
+	}
+	history = {
+
+		owner = GET
+		add_core_of = DAC
+		add_core_of = GET
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			3689 2
+		}
+		victory_points = {
+			9670 1 
+		}
+
+	}
+	manpower=59000
+	state_category = town
+	buildings_max_level_factor=1
+	local_supplies=0
+}

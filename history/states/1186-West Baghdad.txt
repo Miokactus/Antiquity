@@ -1,11 +1,9 @@
 state={
 	id=1186
-	name="STATE_1186"
-	provinces={
-		4951 12413 
-	}
-	resources={
-		gold_ingot= 12
+	name = "STATE_1186"
+	provinces = { 4951 12413 }
+	resources = {
+		gold_ingot = 12
 		grain = 5
 	}
 	history = {
@@ -16,7 +14,7 @@ state={
 		}
 	}
 	state_category = rural
-	manpower=198050
+	manpower = 198050
 	buildings_max_level_factor=1
 	local_supplies=0
 }

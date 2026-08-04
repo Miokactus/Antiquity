@@ -1,0 +1,11 @@
+state = {
+	id = 1217
+	name = "STATE_1217"
+	manpower = 15000
+	state_category = large_town
+	provinces = { 1079 4084 4139 7069 7100 10023 10070 11943 12042 }
+	history = {
+		owner = AAN
+		add_core_of = AAN
+	}
+}

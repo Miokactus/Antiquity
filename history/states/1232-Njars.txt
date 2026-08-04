@@ -1,0 +1,15 @@
+state = {
+	id = 1232
+	name = "STATE_1232"
+	manpower = 66000
+	state_category = city
+	provinces = { 35 3106 6084 6164 6188 9185 9209 11044 13097 }
+	history = {
+		owner = NJR
+		add_core_of = NJR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

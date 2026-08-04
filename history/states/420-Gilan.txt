@@ -1,9 +1,7 @@
 state={
 	id=420
-	name="STATE_420"
-	provinces={
-		4553 4637 7969 10523 
-	}
+	name = "STATE_420"
+	provinces = { 4553 4637 7969 10523 }
 	history = {
 		owner = PTH
 		add_core_of = PTH
@@ -13,8 +11,8 @@ state={
 			arms_factory = 1
 		}
 	}
-	manpower=1314948
+	manpower = 1314948
 	buildings_max_level_factor=1.000
-	state_category=large_town
+	state_category = large_town
 	local_supplies=3.000
 }

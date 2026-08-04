@@ -1,9 +1,7 @@
 state={
 	id=659
-	name="STATE_659"
-	provinces={
-		12894 13079 
-	}
+	name = "STATE_659"
+	provinces = { 12894 13079 13390 }
 	history = {
 		owner = HDT
 		add_core_of = HDT
@@ -12,8 +10,8 @@ state={
 			industrial_complex = 1
 		}
 	}
-	manpower=41202
+	manpower = 41202
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category = pastoral
 	local_supplies=0.000
 }

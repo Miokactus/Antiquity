@@ -1,11 +1,11 @@
 
 state={
 	id=20
-	name="STATE_20" # Rhone
+	name = "STATE_20" # Rhone
 	manpower = 49732
-	resources={
-		steel = 12 # was 60 was: 128
-		aluminium=15 # was: 72
+	resources = {
+		aluminium = 15
+		steel = 12
 	}
 
 	state_category = city
@@ -13,9 +13,8 @@ state={
 	history={
 		owner = ROE
 		add_core_of = ROE
-		victory_points = {
-			6613 8
-		}
+		victory_points = { 6613 8 }
+
 		buildings = {
 			arms_factory = 1
 			industrial_complex = 1
@@ -31,9 +30,7 @@ state={
 		}
 	}
 
-	provinces={
-		641 3650 3770 6613 6639 6668 6786 9590 9728 9732 11593 11716 11794 
-	}
+	provinces = { 3770 6613 6786 9728 9732 11593 11716 }
 
 	local_supplies=7.0 
 }

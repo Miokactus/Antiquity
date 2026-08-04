@@ -1,0 +1,16 @@
+state = {
+	id = 1233
+	name = "STATE_1233"
+	manpower = 66000
+	state_category = town
+	provinces = { 49 3045 3148 9117 9193 11091 }
+	history = {
+		owner = GVG
+		add_core_of = GVG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 11091 2 }
+	}
+}

@@ -1414,3 +1414,143 @@ SSN = {
 	color = rgb { 0 179 60 }
 	color_ui = rgb { 0 102 34 }	
 }
+
+
+
+
+
+
+TTO = {
+	color = rgb { 177 90 175 }
+	color_ui = rgb { 0 102 34 }	
+}
+GNI = {
+	color = rgb { 55 108 86 }
+	color_ui = rgb { 0 102 34 }	
+}
+EDS = {
+	color = rgb { 52 49 109 }
+	color_ui = rgb { 0 102 34 }	
+}
+DNT = {
+	color = rgb { 176 95 189 }
+	color_ui = rgb { 0 102 34 }	
+}
+BRG = {
+	color = rgb { 225 146 111 }
+	color_ui = rgb { 0 102 34 }	
+}
+THT = {
+	color = rgb { 210 120 138 }
+	color_ui = rgb { 0 102 34 }	
+}
+HVI = {
+	color = rgb { 183 231 152 }
+	color_ui = rgb { 0 102 34 }	
+}
+AVV = {
+	color = rgb { 112 215 207 }
+	color_ui = rgb { 0 102 34 }	
+}
+OSG = {
+	color = rgb { 214 223 95 }
+	color_ui = rgb { 0 102 34 }	
+}
+LTH = {
+	color = rgb { 225 226 181 }
+	color_ui = rgb { 0 102 34 }	
+}
+FIR = {
+	color = rgb { 188 151 124 }
+	color_ui = rgb { 0 102 34 }	
+}
+NJR = {
+	color = rgb { 209 123 169 }
+	color_ui = rgb { 0 102 34 }	
+}
+GVG = {
+	color = rgb { 164 204 214 }
+	color_ui = rgb { 0 102 34 }	
+}
+GGG = {
+	color = rgb { 142 148 101 }
+	color_ui = rgb { 0 102 34 }	
+}
+FVA = {
+	color = rgb { 146 156 101 }
+	color_ui = rgb { 0 102 34 }	
+}
+RMI = {
+	color = rgb { 99 99 99 }
+	color_ui = rgb { 0 102 34 }	
+}
+GNN = {
+	color = rgb { 86 122 99 }
+	color_ui = rgb { 0 102 34 }	
+}
+RGR = {
+	color = rgb { 190 63 105 }
+	color_ui = rgb { 0 102 34 }	
+}
+
+BBG = {
+	color = rgb { 77 119 183 }
+	color_ui = rgb { 0 102 34 }	
+}
+GAU = {
+	color = rgb { 80 111 53 }
+	color_ui = rgb { 0 102 34 }	
+}
+STO = {
+	color = rgb { 148 120 33 }
+	color_ui = rgb { 0 102 34 }	
+}
+EVG = {
+	color = rgb { 78 138 158 }
+	color_ui = rgb { 0 102 34 }	
+}
+VNL = {
+	color = rgb { 161 78 61 }
+	color_ui = rgb { 0 102 34 }	
+}
+VAG = {
+	color = rgb { 73 49 110 }
+	color_ui = rgb { 0 102 34 }	
+}
+FRV = {
+	color = rgb { 197 92 106  }
+	color_ui = rgb { 0 102 34 }	
+}
+FTH = {
+	color = rgb { 187 79 86  }
+	color_ui = rgb { 0 102 34 }	
+}
+
+TAE = {
+	color = rgb { 99 129 211 }
+	color_ui = rgb { 0 102 34 }	
+}
+ENI = {
+	color = rgb { 173 212 208 }
+	color_ui = rgb { 0 102 34 }	
+}
+AGX = {
+	color = rgb { 50 116 106 }
+	color_ui = rgb { 0 102 34 }	
+}
+ART = {
+	color = rgb { 200 125 83 }
+	color_ui = rgb { 0 102 34 }	
+}
+RRN = {
+	color = rgb { 85 133 39 }
+	color_ui = rgb { 0 102 34 }	
+}
+ADG = {
+	color = rgb { 211 91 90 }
+	color_ui = rgb { 0 102 34 }	
+}
+HAE = {
+	color = rgb { 200 21 80 }
+	color_ui = rgb { 0 102 34 }	
+}
