@@ -39,7 +39,7 @@ focus_tree = {
 	#The New Emperor
 	focus = {
 		id = ROE_the_new_emperor
-		icon = GFX_focus_AFG_retire_the_uncles
+		icon = GFX_find_new_leader
 		relative_position_id = ROE_augustus_death
 		x = 0		
 		y = 1

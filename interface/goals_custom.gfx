@@ -1,5 +1,8 @@
 spriteTypes = {	
-
+    spriteType = {
+        name = "GFX_find_new_leader"
+        texturefile = "gfx/interface/goals/find_new_leader.dds" 
+    }
 	SpriteType = {
 	name = "GFX_goal_roman_augustus_death"
 	texturefile = "gfx/interface/goals/roman_augustus_death.dds"	
