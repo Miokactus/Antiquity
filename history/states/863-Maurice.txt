@@ -6,7 +6,7 @@ state = {
 	
 	history = {
 	
-		owner = PPC
+		owner = AAN
 		add_core_of = PPC
 		
 

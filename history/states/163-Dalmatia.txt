@@ -20,13 +20,6 @@ state = {
 		
 		
 		
-		start_resistance = CRO #Yugoslavia shouldn't resist occupation
-		set_compliance = 70
-
-		### CHANGED TO A MROE ROBUST SYSTEM
-		##CONTROLLED BY ROELY AT GAME START -> ROELIAN NAMES
-		#set_state_name = STATE_163_ROE
-		#set_province_name = { id = 3943 name = VICTORY_POINTS_3943_ROE }
 	}
 	provinces = {	
 		3943 

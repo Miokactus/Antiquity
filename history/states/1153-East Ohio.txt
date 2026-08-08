@@ -5,10 +5,10 @@ state={
 		880 6705 11800 
 	}
 	history = {
-		owner = OHC
+		owner = AAN
 		add_core_of = OHC
 	}
-	manpower = 25000
+	manpower = 96000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -876,7 +876,7 @@ focus_tree = {
 	#Arminius Lead the Way
 	focus = {
 		id = CRS_arminius_lead
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 8
 		y = 0
 		cost = 8
@@ -915,7 +915,7 @@ focus_tree = {
 	#Learn from Teutoburg
 	focus = {
 		id = CRS_learn_from_teutoburg
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 5
 		y = 2
 		cost = 8
@@ -1109,7 +1109,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_guardian_of_the_germans
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 10
 		y = 7
 		cost = 8
@@ -1171,7 +1171,7 @@ focus_tree = {
 	#Internal Affairs
 	focus = {
 		id = CRS_internal_affairs
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 10
 		y = 1
 		cost = 8
@@ -1260,7 +1260,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_make_peace_with_rome
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 15
 		y = 3
 		cost = 8
@@ -1297,7 +1297,7 @@ focus_tree = {
 	#
 	focus = {
 		id = CRS_federated_german_tribes
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 16
 		y = 4
 		cost = 8

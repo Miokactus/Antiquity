@@ -5,7 +5,7 @@ state={
 		801 3941 3975 4627 6850 6971 7466 7588 7646 10441 
 	}
 	history = {
-		owner = OHC
+		owner = AAN
 		add_core_of = OHC
 	}
 	manpower=90197

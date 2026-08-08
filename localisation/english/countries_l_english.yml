@@ -595,7 +595,7 @@
  BGA_ADJ: "Belgae"
 
  ATB: "Atrebates"
- ATB_DEF: "the Tribe of the Atrebates"
+ ATB_DEF: "the Kingdom of the Atrebates"
  ATB_ADJ: "Atrebates"
 
  RGN: "Regni"
@@ -603,7 +603,7 @@
  RGN_ADJ: "Regni"
 
  CTC: "Cantiaci"
- CTC_DEF: "the Tribe of the Cantiaci"
+ CTC_DEF: "the Kingdom of the Cantiaci"
  CTC_ADJ: "Cantiaci"
 
  DMA: "Demetae"
@@ -619,15 +619,15 @@
  DBN_ADJ: "Dobunni"
 
  CVL: "Catuvellauni"
- CVL_DEF: "the Tribe of the Catuvellauni"
+ CVL_DEF: "the Kingdom of the Catuvellauni"
  CVL_ADJ: "Catuvellauni"
 
  TVE: "Trino-Vantes"
- TVE_DEF: "the Tribe of the Trino-Vantes"
+ TVE_DEF: "the Kingdom of the Trino-Vantes"
  TVE_ADJ: "Trino-Vantes"
 
  ICC: "Iceni"
- ICC_DEF: "the Tribe of the Iceni"
+ ICC_DEF: "the Kingdom of the Iceni"
  ICC_ADJ: "Iceni"
 
  ORE: "Ordovices"
@@ -647,7 +647,7 @@
  CRL_ADJ: "Corieltauvi"
 
  BGE: "Brigantes"
- BGE_DEF: "the Tribe of the Brigantes"
+ BGE_DEF: "the Kingdom of the Brigantes"
  BGE_ADJ: "Brigantes"
 
  NOV: "Novantae"
@@ -667,7 +667,7 @@
  NDM_ADJ: "Damnonii"
 
  VIE: "Venicones"
- VIE_DEF: "the Tribe of the Venicones"
+ VIE_DEF: "the Kingdom of the Venicones"
  VIE_ADJ: "Venicones"
 
  EPD: "Epidii"
@@ -1234,3 +1234,73 @@ ADG_ADJ: "Adogit"
 HAE: "Haelsingar"
 HAE_DEF: "the Haelsingar"
 HAE_ADJ: "Haelsingar"
+
+## Eastern Europe rework
+
+CCH: "Chali"
+CCH_DEF: "the Chali"
+CCH_ADJ: "Chali"
+
+SDD: "Suardoni"
+SDD_DEF: "the Suardoni"
+SDD_ADJ: "Suardoni"
+
+NTN: "Nuithones"
+NTN_DEF: "the Nuithones"
+NTN_ADJ: "Nuithones"
+
+WRG: "West-Rugii"
+WRG_DEF: "the West-Rugii"
+WRG_ADJ: "West-Rugii"
+
+LMM: "Lemovii"
+LMM_DEF: "the Lemovii"
+LMM_ADJ: "Lemovii"
+
+AVP: "Avarpi"
+AVP_DEF: "the Avarpi"
+AVP_ADJ: "Avarpi"
+
+ERG: "East-Rugii"
+ERG_DEF: "the East-Rugii"
+ERG_ADJ: "East-Rugii"
+
+VDV: "Vidivarii"
+VDV_DEF: "the Vidivarii"
+VDV_ADJ: "Vidivarii"
+
+GGP: "Gepidi"
+GGP_DEF: "the Gepidi"
+GGP_ADJ: "Gepidi"
+
+GTO: "Goths"
+GTO_DEF: "the Goths"
+GTO_ADJ: "Gothic"
+
+VRN: "Varni"
+VRN_DEF: "the Varni"
+VRN_ADJ: "Varni"
+
+NSV: "North-Suavi"
+NSV_DEF: "the North-Suavi"
+NSV_ADJ: "North-Suavi"
+
+FRD: "Farodini"
+FRD_DEF: "the Farodini"
+FRD_ADJ: "Farodini"
+
+BRD: "Burgundians"
+BRD_DEF: "the Burgundian Kingdom"
+BRD_ADJ: "Burgundians"
+
+MSG: "Marsingni"
+MSG_DEF: "the Marsingni"
+MSG_ADJ: "Marsingni"
+
+SLO: "Sulones"
+SLO_DEF: "the Sulones"
+SLO_ADJ: "Sulones"
+
+SIG: "Silingi"
+SIG_DEF: "the Silingi"
+SIG_ADJ: "Silingi"

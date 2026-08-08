@@ -1,0 +1,15 @@
+state = {
+	id = 1250
+	name = "STATE_1250"
+	manpower = 86000
+	state_category = town
+	provinces = { 6309 6334 9334 }
+	history = {
+		owner = AVP
+		add_core_of = AVP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+}

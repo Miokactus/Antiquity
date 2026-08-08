@@ -6,22 +6,21 @@ state = {
 	state_category = city
 
 	history = {
+		owner = GTO
+		add_core_of = GTO
+		victory_points = { 279 1 }
+		victory_points = { 9263 5 }
 
-		owner = VDN
-		add_core_of = VDN
 
 
-		victory_points = {
-			9263 5 # Gdynia
-		}
 
-		victory_points = {
-			3295 5 # Torun
-		}
 
-		victory_points = {
-			279 1 # Bydgoszcz
-		}
+
+
+
+
+
+
 
 		buildings = {
 			infrastructure = 2 #was: 6
@@ -36,9 +35,7 @@ state = {
 		
 	}
 
-	provinces = {
-		243 279 334 389 3295 3324 6347 9263
-	}
+	provinces = { 243 279 334 3324 9263 }
 
 	local_supplies = 0.0 
 }

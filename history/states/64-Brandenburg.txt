@@ -1,16 +1,18 @@
 state={
 	id=64
-	name="STATE_64"
-	provinces={
-		478 3367 6521 9428 9496 11415 11444 11505 
-	}
+	name = "STATE_64"
+	provinces = { 478 9428 9496 11415 }
 	history = {
-		owner = LUG
-		add_core_of = LUG
+		owner = NSV
+		add_core_of = NSV
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
 		
 	}
-	manpower=226502
+	manpower = 226502
 	buildings_max_level_factor=1.000
-	state_category=megalopolis
+	state_category = megalopolis
 	local_supplies=0.000
 }

@@ -5,10 +5,10 @@ state={
 		7464 7797 10615 10753 11717 
 	}
 	history = {
-		owner = MIE
+		owner = AAN
 		add_core_of = MIE
 	}
-	manpower = 25000
+	manpower = 96000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

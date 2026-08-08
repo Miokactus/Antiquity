@@ -1,17 +1,34 @@
-capital = 832
+capital = 1090
 
 oob = "ENG_14" 
 
 set_research_slots = 1
 
 create_country_leader = {
-    name = "Tribal Council"
-    desc = "TRIBAL_COUNCIL_DESC" 
-    picture = GFX_leader_german_generic1
-    expire = "88.5.4"
-    ideology = tribalism
+    name = "Vodenos"
+    desc = "VODENOS_DESC" 
+    picture = GFX_leader_monarchy_generic1
+    expire = "15.1.4"
+    ideology = chieftain
     traits = {
     }
+}
+
+create_country_leader = {
+    name = "Eppillus"
+    desc = "EPPILLUS_DESC" 
+    picture = GFX_leader_monarchy_generic3
+    expire = "15.2.1"
+    ideology = chieftain
+    traits = {
+    }
+}
+
+ROE = { 
+	set_autonomy = {
+    	target = CTC
+    	autonomous_state = autonomy_puppet
+	}
 }
 
 set_technology = {

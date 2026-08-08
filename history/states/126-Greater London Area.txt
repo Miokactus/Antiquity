@@ -5,7 +5,7 @@ state={
 		221 11374 
 	}
 	history={
-		owner = TVE
+		owner = CVL
 		add_core_of = TVE
 	}
 	manpower=65429

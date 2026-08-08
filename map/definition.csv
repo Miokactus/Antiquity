@@ -13401,3 +13401,12 @@
 13399;255;252;15;land;false;mountain;2
 13400;255;252;16;land;false;mountain;2
 13401;255;252;17;land;false;desert;6
+13402;255;252;18;land;false;mountain;5
+13403;255;252;19;land;false;hills;5
+13404;255;252;20;land;false;mountain;5
+13405;255;252;21;land;true;plains;6
+13406;255;252;22;land;true;plains;6
+13407;255;252;23;land;true;plains;6
+13408;255;252;24;land;true;plains;6
+13409;255;252;25;land;false;desert;7
+13410;255;252;26;land;true;desert;7

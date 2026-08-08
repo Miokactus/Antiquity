@@ -5,7 +5,7 @@ state={
 		870 1595 4531 7551 9810 11791 12437 
 	}
 	history = {
-		owner = FAA
+		owner = AAN
 		
 	}
 	manpower=32385

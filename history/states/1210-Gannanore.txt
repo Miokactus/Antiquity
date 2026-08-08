@@ -1,12 +1,12 @@
 state={
 	id=1210
-	name="STATE_1210"
-	provinces={
-		1238 
-	}
+	name = "STATE_1210"
+	provinces = { 1238 }
 	history={
 		owner = CER
 		add_core_of = CER
+		victory_points = { 1238 5 }
+
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -14,9 +14,7 @@ state={
 				naval_base = 3
 			}
 		}
-		victory_points = {
-			1238 5
-		}
+
 	}
 	manpower = 10000
 	state_category = town

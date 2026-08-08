@@ -1,17 +1,16 @@
 
 state={
 	id=429
-	name="STATE_429" #Bombay
+	name = "STATE_429" #Bombay
 	manpower = 1892800
 	state_category = town 
 
-	resources={
-		#6
-	}
+	
 
 	history={
 		owner = SAV
 		add_core_of = SAV
+		victory_points = { 1349 25 }
 		
 		buildings = {
 			infrastructure = 2
@@ -21,14 +20,10 @@ state={
 				naval_base = 6
 			}
 		}
-		victory_points = {
-			1349 25
-		}
+
 	}
 
-	provinces={
-		1349 4072 4187 4353 7013 7119 7177 7232 10019 10210 10270 12142 12182 
-	}
+	provinces = { 1349 4072 4187 4353 7013 7119 7177 7232 10019 10210 10270 12142 12182 12269 }
 
 	local_supplies=0.0 
 }

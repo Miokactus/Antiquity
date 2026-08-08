@@ -5,20 +5,23 @@ state = {
 	manpower = 1000000
 
 	resources = {
-		steel = 9 # was: 60
-		aluminium = 7 # was: 20
+		aluminium = 7
+		steel = 9
 	}
 
 	state_category = city
 
 	history = {
-		
-		owner = LUG
-		add_core_of = LUG
+		owner = SIG
+		add_core_of = SIG
+		victory_points = { 6464 5 }
+		victory_points = { 9511 3 }
+		victory_points = { 11467 5 }
+		victory_points = { 9427 20 }
 
-		victory_points = {
-			6464 5 # Katovice
-		}
+		
+
+
 
 		buildings = {
 			infrastructure = 2 #was: 6
@@ -27,9 +30,7 @@ state = {
 		
 	}
 
-	provinces = {
-		506 6464
-	}
+	provinces = { 479 506 6464 9412 9427 9457 9511 11467 13205 }
 
 	local_supplies = 0.0 
 }

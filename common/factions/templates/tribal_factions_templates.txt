@@ -1,0 +1,83 @@
+# Danes & Teutons
+faction_template_danish_alliance = {
+	name = danish_tribal_alliance
+	manifest = faction_manifest_danish_tribal_alliance
+	icon = GFX_faction_logo_generic_10
+
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_industrial_expansion
+		
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		change_leader_rule_manpower
+		joining_rule_has_no_war
+		joining_rule_has_no_offensive_war
+		joining_rule_neighbors_only
+		joining_rule_same_ideology
+		faction_peace_take_claimed_focus
+		dismissal_rule_offensive_war
+	}
+}
+
+# Sweden Goths
+faction_template_gothic_alliance = {
+	name = gothic_alliance
+	manifest = faction_manifest_gothic_alliance
+	icon = GFX_faction_logo_generic_2
+
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_industrial_expansion
+		
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		change_leader_rule_manpower
+		joining_rule_has_no_war
+		joining_rule_has_no_offensive_war
+		joining_rule_neighbors_only
+		joining_rule_same_ideology
+		faction_peace_take_claimed_focus
+		dismissal_rule_offensive_war
+	}
+}
+
+# Sweden Svear
+faction_template_svear_alliance = {
+	name = svear_alliance
+	manifest = faction_manifest_svear_alliance
+	icon = GFX_faction_logo_generic_4
+
+	goals = {
+		# Short term
+		# faction_goal_growing_the_faction
+
+		# Medium term
+		faction_goal_industrial_expansion
+		
+		# Long term
+		faction_goal_defeating_our_enemies
+	}
+
+	default_rules = {
+		change_leader_rule_manpower
+		joining_rule_has_no_war
+		joining_rule_has_no_offensive_war
+		joining_rule_neighbors_only
+		joining_rule_same_ideology
+		faction_peace_take_claimed_focus
+		dismissal_rule_offensive_war
+	}
+}

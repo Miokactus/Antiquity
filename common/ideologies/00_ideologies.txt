@@ -288,6 +288,9 @@ ideologies = {
 			chieftain = {
 			}
 
+			monarchism_neutral = {
+			}
+
 		}
 
 		dynamic_faction_names = {

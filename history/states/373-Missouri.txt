@@ -8,7 +8,7 @@ state={
 		1441 1621 12346 12463 
 	}
 	history = {
-		owner = FAL
+		owner = AAN
 	}
 	manpower=3629365
 	buildings_max_level_factor=1.000

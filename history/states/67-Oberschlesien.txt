@@ -3,36 +3,23 @@ state = {
 	name = "STATE_67"
 	manpower = 140259
 	resources = {
-		steel = 8 #was 11 #was: 11 was 19 # was: 60
-		aluminium = 6 # was: 20
+		aluminium = 6
+		steel = 8
 	}
 	
 	state_category = city
 
 	history = {
-
-		owner = LUG
-		add_core_of = LUG
-		
-		
-		
-
-		victory_points = {
-			11467 5 # Gleiwitz
-		}
-		victory_points = {
-			9511 3 # Oppeln
-		}
-		
+		owner = MSG
+		add_core_of = MSG
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
 		}
 		
 	}
 
-	provinces = {
-		479 6512 9457 9511 11467 
-	}
+	provinces = { 3283 3485 3545 6462 6512 9570 }
 
 	local_supplies = 4.0 
 }

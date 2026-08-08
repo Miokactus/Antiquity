@@ -5,15 +5,15 @@ state = {
 	state_category = town
 
 	history = {
+		owner = GTO
+		add_core_of = GTO
+		victory_points = { 6375 3 }
 
-		owner = VDN
-		add_core_of = VDN
+
 		
 		
 
-		victory_points = {
-			6375 3 # Allenstein
-		}
+
 
 		#victory_points = {
 		#	11386 1 # Lyck
@@ -25,9 +25,7 @@ state = {
 		
 	}
 
-	provinces={
-		266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386 
-	}
+	provinces = { 266 6375 6402 9327 9372 9398 11245 11386 }
 
 	local_supplies=12.0 
 }

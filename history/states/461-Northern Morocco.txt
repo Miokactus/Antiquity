@@ -4,7 +4,7 @@ state={
 	resources = {
 		chromium = 12
 	}
-	provinces = { 989 1111 4097 7116 7173 10013 11987 }
+	provinces = { 989 1111 4097 7116 7173 10013 11987 13402 13403 13404 }
 	manpower = 131977
 	history = {
 		owner = MAU

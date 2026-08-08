@@ -5,7 +5,7 @@ state={
 		638 1433 1480 7583 7612 9996 10394 10437 10492 11975 12325 12384 12470 12498 
 	}
 	history = {
-		owner = SCC
+		owner = AAN
 		add_core_of = SCC
 	}
 	manpower=29085

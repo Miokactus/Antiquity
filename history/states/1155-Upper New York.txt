@@ -8,10 +8,10 @@ state={
 		grain = 3
 	}
 	history = {
-		owner = NYH
+		owner = AAN
 		add_core_of = NYH
 	}
-	manpower = 25000
+	manpower = 96000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

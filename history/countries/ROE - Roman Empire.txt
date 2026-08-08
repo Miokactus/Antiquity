@@ -20,6 +20,19 @@ recruit_character = ROE_aulus_caecina
 recruit_character = ROE_generalem_fortuitum
 recruit_character = ROE_dux_amissus
 
+set_autonomy = {
+	target = DRG
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
+	target = DMN
+	autonomous_state = autonomy_colony
+}
+set_autonomy = {
+	target = BGA
+	autonomous_state = autonomy_colony
+}
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

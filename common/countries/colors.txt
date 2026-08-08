@@ -1554,3 +1554,76 @@ HAE = {
 	color = rgb { 200 21 80 }
 	color_ui = rgb { 0 102 34 }	
 }
+
+
+CCH = {
+	color = rgb { 180 223 1 }
+	color_ui = rgb { 0 102 34 }	
+}
+SDD = {
+	color = rgb { 20 144 190 }
+	color_ui = rgb { 0 102 34 }	
+}
+NTN = {
+	color = rgb { 13 212 192 }
+	color_ui = rgb { 0 102 34 }	
+}
+WRG = {
+	color = rgb { 248 57 23 }
+	color_ui = rgb { 0 102 34 }	
+}
+LMM = {
+	color = rgb { 114 22 138 }
+	color_ui = rgb { 0 102 34 }	
+}
+AVP = {
+	color = rgb { 51 166 244 }
+	color_ui = rgb { 0 102 34 }	
+}
+ERG = {
+	color = rgb { 103 24 197 }
+	color_ui = rgb { 0 102 34 }	
+}
+VDV = {
+	color = rgb { 140 144 23 }
+	color_ui = rgb { 0 102 34 }	
+}
+GGP = {
+	color = rgb { 139 94 18 }
+	color_ui = rgb { 0 102 34 }	
+}
+GTO = {
+	color = rgb { 88 118 81 }
+	color_ui = rgb { 0 102 34 }	
+}
+
+
+
+VRN = {
+	color = rgb { 140 118 81 }
+	color_ui = rgb { 0 102 34 }	
+}
+NSV = {
+	color = rgb { 88 52 81 }
+	color_ui = rgb { 0 102 34 }	
+}
+FRD = {
+	color = rgb { 88 36 20 }
+	color_ui = rgb { 0 102 34 }	
+}
+BRD = {
+	color = rgb { 25 180 95 }
+	color_ui = rgb { 0 102 34 }	
+}
+MSG = {
+	color = rgb { 65 20 81 }
+	color_ui = rgb { 0 102 34 }	
+}
+SLO = {
+	color = rgb { 55 140 81 }
+	color_ui = rgb { 0 102 34 }	
+}
+SIG = {
+	color = rgb { 88 118 56 }
+	color_ui = rgb { 0 102 34 }	
+}

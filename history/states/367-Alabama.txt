@@ -5,7 +5,7 @@ state={
 		860 4594 11509 
 	}
 	history = {
-		owner = SCC
+		owner = AAN
 		add_core_of = SCC
 	}
 	manpower=26462

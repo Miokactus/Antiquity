@@ -1,0 +1,16 @@
+state = {
+	id = 1251
+	name = "STATE_1251"
+	manpower = 86000
+	state_category = city
+	provinces = { 3295 3351 6321 6347 9346 }
+	history = {
+		owner = GGP
+		add_core_of = GGP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 3295 5 }
+	}
+}

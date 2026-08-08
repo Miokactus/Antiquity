@@ -1,0 +1,164 @@
+﻿l_english:
+ ## CATEGORIES
+ unification_decisions: "Unification Territoriale"
+ war_actions: "Mesures de Guerre"
+ tribal_actions: "Actions Tribales"
+
+ MAPMODE_INFLUENCE_MAP_MODE_NAME: "Influence"
+ MAPMODE_INFLUENCE_MAP_MODE: "§YInfluence§! map mode"
+ MAPMODE_INFLUENCE_MAP_MODE_DESCRIPTION: "Shows the current influences spheres in the world. Each colour is based on the main country, while different shades can mean that an influenced country is either a puppet or independent."
+ influence_map_mode_tooltip: "[From.GetInfluenceMapModeTooltip]"
+ influence_map_mode_tooltip_delayed: "[From.GetInfluenceMapModeTooltipDelayed]"
+
+ sphere_base_reluctance: "Base Reluctance"
+ sphere_strength_ratio: "§Y[Root.GetName]§!'s forces strength ratio to §Y[From.GetName]§!"
+ sphere_opinion: "§Y[From.GetName]§! opinion of §Y[Root.GetName]§!"
+ sphere_war_support: "§Y[From.GetName]§! War Support Factor"
+ sphere_stability: "§Y[From.GetName]§! Stability Factor"
+ tribute_opinion: "§Y[From.GetName]§! opinion of §Y[Root.GetName]§!"
+ ideology_ratio: "Ideological Difference"
+
+ is_sphere_leader: "Is leader of a §Ysphere of influence§!"
+
+
+
+ danish_tribal_alliance: "Danic Tribes"
+ faction_manifest_danish_tribal_alliance: ""
+ gothic_alliance: "Gothic Tribes"
+ faction_manifest_gothic_alliance: ""
+ svear_alliance: "Svear Tribes"
+ faction_manifest_svear_alliance: ""
+ 
+
+
+
+
+
+ cultural_map_mode_tooltip: "[From.GetCultureMapModeTooltip]"
+ culture_map_unidentified: "§Y[From.GetName]§! is of an unidentified culture."
+
+ culture_map_roman_tt: "§Y[From.GetName]§! is of the §RRoman culture§!."
+ culture_map_parthian_tt: "§Y[From.GetName]§! is of the §GParthian culture§!."
+ culture_map_chinese_tt: "§Y[From.GetName]§! is of the §8Chinese culture§!."
+ culture_map_xiongnu_tt: "§Y[From.GetName]§! is of the §4Xiongnu culture§!."
+ culture_map_scythian_tt: "§Y[From.GetName]§! is of the §9Scythian culture§!."
+ culture_map_germanic_tt: "§Y[From.GetName]§! is of the §7Germanic culture§!."
+ culture_map_armenian_tt: "§Y[From.GetName]§! is of the §5Armenian culture§!."
+ culture_map_mauretanian_tt: "§Y[From.GetName]§! is of the §6Mauretanian culture§!."
+ culture_map_celtic_tt: "§Y[From.GetName]§! is of the §2Celtic culture§!."
+ culture_map_britannic_tt: "§Y[From.GetName]§! is of the §3Britannic culture§!."
+ culture_map_south_arabian_tt: "§Y[From.GetName]§! is of the §1South Arabian culture§!."
+ culture_map_indian_tt: "§Y[From.GetName]§! is of the §OIndian culture§!."
+ culture_map_korean_tt: "§Y[From.GetName]§! is of the §LKorean culture§!."
+
+ # Scripted Localisation:
+ influence_map_mode_tt_influenced: "§Y[From.Owner.GetName]§! is influenced by a foreign power."
+ influence_map_mode_tt_not_influenced: "§Y[From.Owner.GetName]§! is not influenced by any foreign power."
+
+ influence_map_mode_tt_rome_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §R[ROE.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_rome_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §R[ROE.GetNameWithFlag]§!."
+ influence_map_mode_tt_parthia_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §G[PTH.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_parthia_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §G[PTH.GetNameWithFlag]§!."
+ influence_map_mode_tt_china_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §L[XIN.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_china_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §L[XIN.GetNameWithFlag]§!."
+ influence_map_mode_tt_cherusci_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §5[CRS.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_cherusci_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §5[CRS.GetNameWithFlag]§!."
+ influence_map_mode_tt_xiongnu_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §7[XAI.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_xiongnu_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §7[XAI.GetNameWithFlag]§!."
+ influence_map_mode_tt_teotihuacan_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §9[TTH.GetNameWithFlag]§! and is a puppet of this country."
+ influence_map_mode_tt_teotihuacan_not_puppet: "§Y[From.Owner.GetName]§! is currently influenced by §9[TTH.GetNameWithFlag]§!."
+
+ influence_map_mode_tt_influenced_undefined: "§Y[From.Owner.GetName]§! is influenced by an §6Unidentified foreign power§!."
+
+ CREATE_SPHERE: "[InfluenceSphereName]"
+ CREATE_SPHERE_ACTION_DESC: "We will expand our influence towards this country."
+ CREATE_SPHERE_TITLE: "Expand our Influence"
+ expand_influence_sphere_tt: "Expand our Influence"
+ create_influence_sphere_tt: "the Roman Sphere"
+ LEAVE_SPHERE: "Break off from [InfluenceSphereName]"
+ LEAVE_SPHERE_TITLE: "Leave their sphere of influence"
+ LEAVE_SPHERE_ACTION_DESC: "We will break off from our §Yoppresors§!'s influence!"
+
+ influence_map_mode_tt_sphere_leader: "§Y[From.Owner.GetName]§! is the head of the §O[InfluenceGetSphereName]§!."
+ influenceview_tt_sphere_leader: "§YWe§! are the head of the §G[InfluenceGetSphereName]§!."
+ sphere_name_influence_sphere_tt: "[From.Owner.GetAdjective] Sphere"
+
+ do_a_raid: "Start a raid on §6the [From.GetName]§!"
+ influence_flag_leader: "§7[From.GetName]§! is the leader"
+ roman_people_tt: "The §R[ROE.GetAdjective] Sphere§! has §Y[?global.rome_sphere_people]§! nations in it."
+ parthian_people_tt: "The §G[PTH.GetAdjective] Sphere§! has §Y[?global.parthia_sphere_people]§! nations in it."
+ xin_people_tt: "The §L[XIN.GetAdjective] Sphere§! has §Y[?global.xin_sphere_people]§! nations in it."
+ xai_people_tt: "The §7[XAI.GetAdjective] Sphere§! has §Y[?global.xai_sphere_people]§! nations in it."
+ crs_people_tt: "The §5[CRS.GetAdjective] Sphere§! has §Y[?global.crs_sphere_people]§! nations in it."
+ tth_people_tt: "The §9[TTH.GetAdjective] Sphere§! has §Y[?global.tth_sphere_people]§! nations in it."
+
+ influence_title: "Sphere of Influence"
+
+
+
+
+
+ ## OPINION MODIFIERS
+
+ allies_of_china: "Alliés de la Chine"
+ stood_with_us: "Nous a Supporté"
+ allowed_raids_in_our_territory: "A Autorisé des Raids dans notre Territoire"
+ forbid_raids_in_our_territory: "A Interdit des Raids dans notre Territoire"
+
+ ## DECISIONS
+ restore_the_kushite_empire: "Restore the Kushite Empire"
+ unify_the_lands_of_the_germans: "Unify the Lands of the Germans"
+ crisis_of_faith: "Crisis of Faith"
+ korea_unification: "Unification of Korea"
+ northern_unification: "Proclamation of Goryeo"
+ end_of_war: "End of the War"
+
+ han_revolt: "Revolt of the Hans!"
+
+ total_victory: "Victoire totale sur §G[FROM.GetNameDef]§!"
+ stalemate: "Paix blanche avec §Y[FROM.GetNameDef]§!"
+ surrender: "Se render à §R[FROM.GetNameDef]§!"
+
+ integration_of_lands: "Intégration de §Y[FROM.GetName]§!"
+ lay_claims: "Lay claims on §O[FROM.GetName]§!"
+
+ ## COSMETIC TAGS
+ KUS_kushite_empire: "Empire de Kush"
+ KUS_kushite_empire_DEF: "l'Empire Restauré de Kush"
+ KUS_kushite_empire_ADJ: "Kushite"
+
+ germanic_empire: "Empire Germanique"
+ germanic_empire_DEF: "l'Empire Germanique"
+ germanic_empire_ADJ: "Germanique"
+ germanic_empire_communism: "Saint Empire Germanique"
+ germanic_empire_communism_DEF: "le Saint Empire Germanique"
+ germanic_empire_fascism: "Magnifique Empire Romanisé des Peuples Germaniques"
+ germanic_empire_fascism_DEF: "le Magnifique Saint Empire Romanisé des Peuples Germaniques"
+ germanic_empire_fascism_ADJ: "Germainroman"
+
+ korean_empire: "Empire de Corée"
+ korean_empire_DEF: "le Grand Empire de Corée Unifié"
+ korean_empire_ADJ: "Coréen"
+
+ korea_north: "Royaume de Goryeo"
+ korea_north_DEF: "le Royaume de Goryeo"
+ korea_north_ADJ: "Yemaek"
+
+ silla: "Royaume de Silla"
+ silla_DEF: "le Royaume de Silla"
+ silla_ADJ: "Silla"
+
+ ## TOOLTIPS
+ germanic_empire_tooltip_owns: "§GNous devons controler tous les territoires germaniques d'Europe !§!"
+ ahistorical_units: "§YThis will allow you to produce ahistorical units, removing divisions cap.§!"
+ historical_units: "§GThis will keep you on track with historical units, and the divisions cap.§!"
+
+
+ ## TRAITS
+ arminius_trait: "Arminius, Defenseur de tous les Germains"
+
+ ## FACTIONS
+ CRS_faction: "Anti-Römische Liga"
+
+ ## TOOLTIPS
+ 

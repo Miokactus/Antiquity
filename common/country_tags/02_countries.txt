@@ -232,6 +232,27 @@ FNI = "countries/Fenni.txt"
 AES = "countries/Aesti.txt"
 STI = "countries/Sitonnes.txt"
 
+
+CCH = "countries/European.txt" # Chali
+SDD = "countries/European.txt" # Suardoni
+NTN = "countries/European.txt" # Nuithones
+WRG = "countries/European.txt" # West-Rugii
+LMM = "countries/European.txt" # Lemovii
+AVP = "countries/European.txt" # Avarpi
+ERG = "countries/European.txt" # East-Rugii
+VDV = "countries/European.txt" # Vidivarii
+GGP = "countries/European.txt" # Gepidi
+GTO = "countries/European.txt" # Continental Goths
+
+VRN = "countries/European.txt" # Varni
+NSV = "countries/European.txt" # North-Suavi
+FRD = "countries/European.txt" # Farodini
+BRD = "countries/European.txt" # Burgundians
+MSG = "countries/European.txt" # Marsingni
+SLO = "countries/European.txt" # Sulones
+SIG = "countries/European.txt" # Silingi
+
+
 ## BRITANNIA [FLAGS NEEDED]
 DMN = "countries/Damnonii.txt"
 DRG = "countries/Durotriges.txt"

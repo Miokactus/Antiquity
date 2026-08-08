@@ -22,6 +22,16 @@
 
 
 
+ danish_tribal_alliance: "Danic Tribes"
+ faction_manifest_danish_tribal_alliance: ""
+ gothic_alliance: "Gothic Tribes"
+ faction_manifest_gothic_alliance: ""
+ svear_alliance: "Svear Tribes"
+ faction_manifest_svear_alliance: ""
+ 
+
+
+
 
 
  cultural_map_mode_tooltip: "[From.GetCultureMapModeTooltip]"

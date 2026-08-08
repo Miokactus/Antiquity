@@ -6,8 +6,8 @@ state = {
 
 	history = {
 
-		owner = VDN
-		add_core_of = VDN
+		owner = GTO
+		add_core_of = GTO
 		
 		
 		

@@ -8,7 +8,7 @@ scripted_map_modes = {
 					set_temp_variable = { alpha = 0.5 }
 					if = {
 						limit = {
-							has_variable = roman_culture_var
+							check_variable = { culture_var = 1 }
 						}
 						set_temp_variable = { red = 0.9 }
 						set_temp_variable = { green = 0.2 }
@@ -17,7 +17,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = parthian_culture_var
+							check_variable = { culture_var = 2 }
 						}
 						set_temp_variable = { red = 0.2 }
 						set_temp_variable = { green = 0.9 }
@@ -26,7 +26,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = chinese_culture_var
+							check_variable = { culture_var = 3 }
 						}
 						set_temp_variable = { red = 0.9 }
 						set_temp_variable = { green = 0.9 }
@@ -35,7 +35,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = xiongnu_culture_var
+							check_variable = { culture_var = 4 }
 						}
 						set_temp_variable = { red = 0.5 }
 						set_temp_variable = { green = 0.5 }
@@ -44,7 +44,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = scythian_culture_var
+							check_variable = { culture_var = 5 }
 						}
 						set_temp_variable = { red = 0.3 }
 						set_temp_variable = { green = 0.3 }
@@ -53,7 +53,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = germanic_culture_var
+							check_variable = { culture_var = 6 }
 						}
 						set_temp_variable = { red = 0.1 }
 						set_temp_variable = { green = 0.3 }
@@ -63,7 +63,7 @@ scripted_map_modes = {
 
 					else_if = {
 						limit = {
-							has_variable = armenian_culture_var
+							check_variable = { culture_var = 7 }
 						}
 						set_temp_variable = { red = 0.2 }
 						set_temp_variable = { green = 0.05 }
@@ -72,7 +72,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = mauretanian_culture_var
+							check_variable = { culture_var = 8 }
 						}
 						set_temp_variable = { red = 0.02 }
 						set_temp_variable = { green = 0.5 }
@@ -81,7 +81,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = britannic_culture_var
+							check_variable = { culture_var = 9 }
 						}
 						set_temp_variable = { red = 0.2 }
 						set_temp_variable = { green = 0.2 }
@@ -90,7 +90,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = celtic_culture_var
+							check_variable = { culture_var = 10 }
 						}
 						set_temp_variable = { red = 0.2 }
 						set_temp_variable = { green = 0.8 }
@@ -99,7 +99,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = south_arabian_culture_var
+							check_variable = { culture_var = 11 }
 						}
 						set_temp_variable = { red = 0.4 }
 						set_temp_variable = { green = 0.5 }
@@ -108,7 +108,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = indian_culture_var
+							check_variable = { culture_var = 12 }
 						}
 						set_temp_variable = { red = 0.6 }
 						set_temp_variable = { green = 0.2 }
@@ -117,7 +117,7 @@ scripted_map_modes = {
                     }
 					else_if = {
 						limit = {
-							has_variable = korean_culture_var
+							check_variable = { culture_var = 13 }
 						}
 						set_temp_variable = { red = 0.4 }
 						set_temp_variable = { green = 0.6 }

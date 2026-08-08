@@ -1,9 +1,7 @@
 state={
 	id=1056
-	name="STATE_1056"
-	provinces={
-		1199 4971 12743 12829 
-	}
+	name = "STATE_1056"
+	provinces = { 1199 4971 12743 12829 }
 	history={
 		owner = IDS
 		add_core_of = IDS

@@ -3,28 +3,26 @@ state = {
 	name = "STATE_63"
 	manpower = 212441
 	resources = {
-		steel = 7 #was 8  #was 16 was: 23 # was: 36
-		aluminium = 6 # was: 8 was: 12
+		aluminium = 6
+		steel = 7
 		wood = 15
 	}
 	
 	state_category = town
 
 	history = {
+		owner = ERG
+		add_core_of = ERG
+		victory_points = { 11372 3 }
 
-		owner = VDN
-		add_core_of = VDN
+
 		
 		
 		
 
-		victory_points = {
-			6282 5 # Stettin
-		}
 
-		victory_points = {
-			11372 3 # Köslin
-		}
+
+
 
 		buildings = {
 			infrastructure = 2
@@ -41,9 +39,7 @@ state = {
 		
 	}
 
-	provinces = {
-		6282 6309 6334 6390 9252 9277 9306 9334 9361 11260 11288 11316 11343 11372 
-	}
+	provinces = { 9252 9277 9306 9361 11260 11288 11316 11343 11372 }
 
 	local_supplies = 7.0 
 }

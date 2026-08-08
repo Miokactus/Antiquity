@@ -304,43 +304,204 @@ cultural_integration = {
 				OR = {
 					AND = {
 						owner = {
-							capital_scope = { has_variable = roman_culture_var }
+							capital_scope = { check_variable = { culture_var = 1 } }
 						}
-						NOT = { has_variable = roman_culture_var }
+						NOT = { check_variable = { culture_var = 1 } }
 					}
 					AND = {
 						owner = {
-							capital_scope = { has_variable = parthian_culture_var }
+							capital_scope = { check_variable = { culture_var = 2 } }
 						}
-						NOT = { has_variable = parthian_culture_var }
+						NOT = { check_variable = { culture_var = 2 } }
 					}
 					AND = {
 						owner = {
-							capital_scope = { has_variable = chinese_culture_var }
+							capital_scope = { check_variable = { culture_var = 3 } }
 						}
-						NOT = { has_variable = chinese_culture_var }
+						NOT = { check_variable = { culture_var = 3 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 4 } }
+						}
+						NOT = { check_variable = { culture_var = 4 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 5 } }
+						}
+						NOT = { check_variable = { culture_var = 5 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 6 } }
+						}
+						NOT = { check_variable = { culture_var = 6 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 7 } }
+						}
+						NOT = { check_variable = { culture_var = 7 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 8 } }
+						}
+						NOT = { check_variable = { culture_var = 8 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 9 } }
+						}
+						NOT = { check_variable = { culture_var = 9 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 10 } }
+						}
+						NOT = { check_variable = { culture_var = 10 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 11 } }
+						}
+						NOT = { check_variable = { culture_var = 11 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 12 } }
+						}
+						NOT = { check_variable = { culture_var = 12 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 13 } }
+						}
+						NOT = { check_variable = { culture_var = 13 } }
 					}
 				}
 			}
 		}
 		cost = 75
-		days_remove = 2
+		days_remove = 100
 		state_target = yes
 		highlight_states = {
 			highlight_states_trigger = {
 				
 			}
 		}
+		modifier = {
+			stability_factor = -0.05
+			political_power_gain = -0.15
+		}
 		allowed = {
 			always = yes
 		}
 		available = {
-			any_owned_state = {
-				NOT = {
-					is_core_of = ROOT
+			tooltip = {
+				any_owned_state = {
+					NOT = {
+						is_core_of = ROOT
+					}
+					compliance > 50
 				}
-				compliance > 50
 			}
+			hidden_trigger = {
+			any_owned_state = {
+				OR = {
+					AND = {
+						NOT = {
+							is_core_of = ROOT
+						}
+						compliance > 50
+					}
+					AND = {
+						is_core_of = ROOT
+						OR = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 1 } }
+						}
+						NOT = { check_variable = { culture_var = 1 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 2 } }
+						}
+						NOT = { check_variable = { culture_var = 2 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 3 } }
+						}
+						NOT = { check_variable = { culture_var = 3 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 4 } }
+						}
+						NOT = { check_variable = { culture_var = 4 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 5 } }
+						}
+						NOT = { check_variable = { culture_var = 5 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 6 } }
+						}
+						NOT = { check_variable = { culture_var = 6 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 7 } }
+						}
+						NOT = { check_variable = { culture_var = 7 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 8 } }
+						}
+						NOT = { check_variable = { culture_var = 8 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 9 } }
+						}
+						NOT = { check_variable = { culture_var = 9 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 10 } }
+						}
+						NOT = { check_variable = { culture_var = 10 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 11 } }
+						}
+						NOT = { check_variable = { culture_var = 11 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 12 } }
+						}
+						NOT = { check_variable = { culture_var = 12 } }
+					}
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 13 } }
+						}
+						NOT = { check_variable = { culture_var = 13 } }
+					}
+				}
+					}
+				}
+			}
+		}
 		}
 		visible = {
 			NOT = {
@@ -355,21 +516,190 @@ cultural_integration = {
 		complete_effect = {
 		}
 		remove_effect = {
+			add_stability = 0.05
+			add_manpower = 15000
 			if = {
 				limit = {
 					AND = {
 						owner = {
-							capital_scope = { has_variable = roman_culture_var }
+							capital_scope = { check_variable = { culture_var = 1 } }
 						}
-						NOT = { has_variable = roman_culture_var }
-						FROM = {
-							has_variable = mauretanian_culture_var
-						}
+						NOT = { check_variable = { culture_var = 1 } }
 					}
 				}
-				clear_variable = mauretanian_culture_var
-				set_variable = { roman_culture_var = 1 }
-				custom_effect_tooltip = ROE_convert
+				FROM.FROM = {
+					set_variable = { culture_var = 1 }
+				}
+				custom_effect_tooltip = roman_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 2 } }
+						}
+						NOT = { check_variable = { culture_var = 2 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 2 }
+				}
+				custom_effect_tooltip = parthian_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 3 } }
+						}
+						NOT = { check_variable = { culture_var = 3 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 3 }
+				}
+				custom_effect_tooltip = chinese_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 4 } }
+						}
+						NOT = { check_variable = { culture_var = 4 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 4 }
+				}
+				custom_effect_tooltip = scythian_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 5 } }
+						}
+						NOT = { check_variable = { culture_var = 5 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 5 }
+				}
+				custom_effect_tooltip = germanic_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 6 } }
+						}
+						NOT = { check_variable = { culture_var = 6 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 6 }
+				}
+				custom_effect_tooltip = xiongnu_culture_convert
+			}
+
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 7 } }
+						}
+						NOT = { check_variable = { culture_var = 7 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 7 }
+				}
+				custom_effect_tooltip = armenian_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 8 } }
+						}
+						NOT = { check_variable = { culture_var = 8 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 8 }
+				}
+				custom_effect_tooltip = mauretanian_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 9 } }
+						}
+						NOT = { check_variable = { culture_var = 9 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 9 }
+				}
+				custom_effect_tooltip = britannic_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 10 } }
+						}
+						NOT = { check_variable = { culture_var = 10 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 10 }
+				}
+				custom_effect_tooltip = celtic_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 11 } }
+						}
+						NOT = { check_variable = { culture_var = 11 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 11 }
+				}
+				custom_effect_tooltip = south_arabian_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 12 } }
+						}
+						NOT = { check_variable = { culture_var = 12 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 12 }
+				}
+				custom_effect_tooltip = indian_culture_convert
+			}
+			else_if = {
+				limit = {
+					AND = {
+						owner = {
+							capital_scope = { check_variable = { culture_var = 13 } }
+						}
+						NOT = { check_variable = { culture_var = 13 } }
+					}
+				}
+				FROM.FROM = {
+					set_variable = { culture_var = 13 }
+				}
+				custom_effect_tooltip = korean_culture_convert
 			}
 		}
 		ai_will_do = {

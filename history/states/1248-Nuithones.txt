@@ -1,0 +1,16 @@
+state = {
+	id = 1248
+	name = "STATE_1248"
+	manpower = 86000
+	state_category = town
+	provinces = { 3340 9388 13257 }
+	history = {
+		owner = NTN
+		add_core_of = NTN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = { 9388 1 }
+	}
+}

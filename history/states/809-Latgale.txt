@@ -6,12 +6,6 @@ state={
 	history={
 		owner = AES
 		add_core_of = AES
-		victory_points = {
-			310 3 #Daugavpils
-		}
-		victory_points = {
-			222 1 #Rezekne
-		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

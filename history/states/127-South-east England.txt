@@ -5,8 +5,12 @@ state={
 		507 11446 13070 
 	}
 	history={
-		owner = RGN
+		owner = ATB
 		add_core_of = RGN
+		buildings={
+			infrastructure = 2
+			industrial_complex = 1
+		}
 	}
 	manpower=41933
 	buildings_max_level_factor=1.000

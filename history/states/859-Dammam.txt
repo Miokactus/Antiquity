@@ -4,18 +4,20 @@ state = {
 	manpower = 440000
 
 	resources = {
-		gold_ingot = 3.000
+		gold_ingot = 3
 	}
 
 	history = {
-
 		owner = GRH
 		add_core_of = GRH
+		victory_points = { 12702 1 }
+
+
+
+
 		
 
-		victory_points = {
-			12702 1 
-		}
+
 
 		buildings = {
 			infrastructure = 1
@@ -25,9 +27,7 @@ state = {
 		}
 	}
 	
-	provinces = {
-		1955 10791 10850 12702 
-	}
+	provinces = { 1955 10791 10850 12702 }
 	state_category = rural
 	buildings_max_level_factor = 1.000
 	local_supplies = 0.000

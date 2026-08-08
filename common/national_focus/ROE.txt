@@ -156,7 +156,7 @@ focus_tree = {
 	#Hail Augustus, the God!
 	focus = {
 		id = ROE_hail_augustus
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = 1
 		y = 2
@@ -261,7 +261,7 @@ focus_tree = {
 	#Show of Force
 	focus = {
 		id = ROE_show_of_force
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = 4
 		y = 6
@@ -359,7 +359,7 @@ focus_tree = {
 	#Refuse Too Many Honors
 	focus = {
 		id = ROE_refuse_too_many_honors
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = -2
 		y = 3
@@ -379,7 +379,7 @@ focus_tree = {
 	#Delegate to the Senate
 	focus = {
 		id = ROE_delegate_to_the_senate
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = -2
 		y = 4
@@ -403,7 +403,7 @@ focus_tree = {
 	#Embrace the Princeps' Title ## AHISTORICAL SUBBRANCH
 	focus = {
 		id = ROE_embrace_the_princeps_title
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = 0
 		y = 3
@@ -427,7 +427,7 @@ focus_tree = {
 	#The First Senator
 	focus = {
 		id = ROE_the_first_senator
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = 0
 		y = 4
@@ -616,7 +616,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_retire_germanicus
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = -1
 		y = 8
@@ -750,7 +750,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_woodworks_in_lutecia
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = 1
 		y = 11
@@ -812,7 +812,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_proclaim_the_romans_superiority
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = 3
 		y = 10
@@ -831,7 +831,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_forbid_jewish_cults
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = -3
 		y = 9
@@ -851,7 +851,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_allow_freedom_of_religion_for_jews
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = -5
 		y = 9
@@ -910,7 +910,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_clamp_down_on_oriental_cults
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_follow_augustus_will
 		x = -2
 		y = 10
@@ -1189,7 +1189,7 @@ focus_tree = {
 	#Renovate the Senate
 	focus = {
 		id = ROE_renovate_the_senate
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 3
 		y = 6
@@ -1231,7 +1231,7 @@ focus_tree = {
 	#More Rights for the Oligarchs!
 	focus = {
 		id = ROE_more_rights_for_the_oligarchs
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = 2
 		y = 7
@@ -2069,7 +2069,7 @@ focus_tree = {
 	#The Dacian Question
 	focus = {
 		id = ROE_the_dacian_question
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -5
 		y = 14
@@ -2089,7 +2089,7 @@ focus_tree = {
 	#Look North
 	focus = {
 		id = ROE_look_north
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -7
 		y = 13
@@ -2134,7 +2134,7 @@ focus_tree = {
 	#The Unthinkable
 	focus = {
 		id = ROE_the_unthinkable
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -10
 		y = 13
@@ -2205,7 +2205,7 @@ focus_tree = {
 	#Emprison Generals
 	focus = {
 		id = ROE_emprison_generals
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 5
@@ -2277,7 +2277,7 @@ focus_tree = {
 	#Hold Games
 	focus = {
 		id = ROE_hold_games
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 4
@@ -2302,7 +2302,7 @@ focus_tree = {
 	#Avenge the Exile
 	focus = {
 		id = ROE_avenge_the_exile
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = 4
 		y = 5
@@ -2323,7 +2323,7 @@ focus_tree = {
 	#A New Era of Games
 	focus = {
 		id = ROE_a_new_era_of_games
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = 3
 		y = 6
@@ -2482,7 +2482,7 @@ focus_tree = {
 	#Prepare for the Germans
 	focus = {
 		id = ROE_prepare_for_the_germans
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = -1
 		y = 4
@@ -2559,7 +2559,7 @@ focus_tree = {
 	#Woodwork Development
 	focus = {
 		id = ROE_woodworks_development
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 7
@@ -2849,7 +2849,7 @@ focus_tree = {
 	#Dacian Expeditions
 	focus = {
 		id = ROE_dacian_expedition
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = 5
 		y = 11
@@ -2900,7 +2900,7 @@ focus_tree = {
 	#Our Northern Neighbours
 	focus = {
 		id = ROE_our_northern_neighbours
-		icon = GFX
+		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
 		x = 0
 		y = 11

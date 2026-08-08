@@ -491,7 +491,7 @@ ideas = {
 			allowed = {
 				NOR_AAT = yes 
 			}
-			cancel = { NOT = { has_variable = NOR_mobile_government_hq } }
+			cancel = { NOT = { check_variable = NOR_mobile_government_hq } }
 			modifier = {
 				surrender_limit = 0.5
 				resistance_growth_on_our_occupied_states = 0.25

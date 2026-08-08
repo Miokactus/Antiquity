@@ -9,7 +9,7 @@ state={
 		
 		victory_points = { 8089 3 }
 	}
-	manpower = 25000
+	manpower = 96000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -7,19 +7,16 @@ state = {
 	state_category = town
 
 	history = {
+		owner = SDD
+		add_core_of = SDD
+		victory_points = { 321 5 }
 
-		owner = VNI
-		add_core_of = VNI
 		
 		
 
-		victory_points = {
-			321 5 # Rostocj
-		}
 
-		victory_points = {
-			11305 3 # Lübeck
-		}
+
+
 
 		buildings = {
 			infrastructure = 2
@@ -34,9 +31,7 @@ state = {
 		
 	}
 
-	provinces={
-		268 293 321 9294 11276 11305 
-	}
+	provinces = { 268 293 321 11276 }
 
 	local_supplies=3.0 
 }

@@ -257,7 +257,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_legitimise_our_dynasty
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 11
 		y = 6
 		cost = 6
@@ -492,7 +492,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_the_yellow_river_dykes
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 1
 		y = 2
 		relative_position_id = XIN_internal_affairs
@@ -1353,7 +1353,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_create_ties_with_smaller_korean_states
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 1
 		y = 3
 		relative_position_id = XIN_towards_the_world
@@ -1372,7 +1372,7 @@ focus_tree = {
 	#
 	focus = {
 		id = XIN_further_colonisation_of_korea
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 0
 		y = 4
 		relative_position_id = XIN_towards_the_world
@@ -1392,7 +1392,7 @@ focus_tree = {
 	#Sino-Xiongnu Relations
 	focus = {
 		id = XIN_sino_xiongnu_relations
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = -5
 		y = 1
 		relative_position_id = XIN_towards_the_world
@@ -1725,7 +1725,7 @@ focus_tree = {
 	#The Western Protectorates
 	focus = {
 		id = XIN_western_protectorates
-		icon = GFX
+		icon = GFX_goal_unknown
 		x = 4
 		y = 1
 		relative_position_id = XIN_towards_the_world

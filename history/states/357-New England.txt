@@ -9,7 +9,7 @@ state={
 
 
 	history={
-		owner = FAL
+		owner = AAN
 		buildings = {
 			arms_factory = 1
 			#

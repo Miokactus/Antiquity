@@ -1,0 +1,15 @@
+state = {
+	id = 1252
+	name = "STATE_1252"
+	manpower = 86000
+	state_category = megalopolis
+	provinces = { 3367 6521 11444 11505 }
+	history = {
+		owner = VRN
+		add_core_of = VRN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+}

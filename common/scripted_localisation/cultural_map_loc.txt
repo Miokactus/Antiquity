@@ -4,7 +4,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = roman_culture_var
+                check_variable = { culture_var = 1 }
             }
 		}
 		localization_key = culture_map_roman_tt
@@ -12,7 +12,7 @@ defined_text = {
     text = {
 		trigger = {
             FROM = {
-                has_variable = parthian_culture_var
+                check_variable = { culture_var = 2 }
             }
 		}
 		localization_key = culture_map_parthian_tt
@@ -20,7 +20,7 @@ defined_text = {
     text = {
 		trigger = {
             FROM = {
-                has_variable = chinese_culture_var
+                check_variable = { culture_var = 3 }
             }
 		}
 		localization_key = culture_map_chinese_tt
@@ -28,7 +28,7 @@ defined_text = {
     text = {
 		trigger = {
             FROM = {
-                has_variable = xiongnu_culture_var
+                check_variable = { culture_var = 6 }
             }
 		}
 		localization_key = culture_map_xiongnu_tt
@@ -36,7 +36,7 @@ defined_text = {
     text = {
 		trigger = {
             FROM = {
-                has_variable = scythian_culture_var
+                check_variable = { culture_var = 4 }
             }
 		}
 		localization_key = culture_map_scythian_tt
@@ -44,7 +44,7 @@ defined_text = {
     text = {
 		trigger = {
             FROM = {
-                has_variable = germanic_culture_var
+                check_variable = { culture_var = 5 }
             }
 		}
 		localization_key = culture_map_germanic_tt
@@ -53,7 +53,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = armenian_culture_var
+                check_variable = { culture_var = 7 }
             }
 		}
 		localization_key = culture_map_armenian_tt
@@ -61,7 +61,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = mauretanian_culture_var
+                check_variable = { culture_var = 8 }
             }
 		}
 		localization_key = culture_map_mauretanian_tt
@@ -69,7 +69,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = britannic_culture_var
+                check_variable = { culture_var = 9 }
             }
 		}
 		localization_key = culture_map_britannic_tt
@@ -77,7 +77,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = celtic_culture_var
+                check_variable = { culture_var = 10 }
             }
 		}
 		localization_key = culture_map_celtic_tt
@@ -85,7 +85,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = south_arabian_culture_var
+                check_variable = { culture_var = 11 }
             }
 		}
 		localization_key = culture_map_south_arabian_tt
@@ -93,7 +93,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = indian_culture_var
+                check_variable = { culture_var = 12 }
             }
 		}
 		localization_key = culture_map_indian_tt
@@ -101,7 +101,7 @@ defined_text = {
 	text = {
 		trigger = {
             FROM = {
-                has_variable = korean_culture_var
+                check_variable = { culture_var = 13 }
             }
 		}
 		localization_key = culture_map_korean_tt

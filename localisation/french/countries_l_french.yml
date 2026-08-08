@@ -1,0 +1,1306 @@
+﻿l_english:
+ AAN: "Cultures Désorganisées"
+ AAN_DEF: "Cultures Désorganisées"
+ AAN_ADJ: "Anarchists"
+
+ FAL: "Cultures Désorganisées"
+ FAL_DEF: "Cultures Désorganisées"
+ FAL_ADJ: "Natives"
+
+ FAA: "Cultures Désorganisées"
+ FAA_DEF: "Cultures Désorganisées"
+ FAA_ADJ: "Natives"
+ 
+## ARSACID NAMES
+
+ CHA: "Royaume de Characene-Elymais"
+ CHA_DEF: "le Royaume de Characene-Elymais"
+ CHA_ADJ: "Characenien"
+
+ BBA: "Province de Babylone"
+ BBA_DEF: "la Province de Babylone"
+ BBA_ADJ: "Babylonien"
+ 
+ PPI: "Royaume de Perse"
+ PPI_DEF: "le Royaume de Perse"
+ PPI_ADJ: "Perse"
+ 
+ ADI: "Royaume de Adiabene"
+ ADI_DEF: "le Royaume de Adiabene"
+ ADI_ADJ: "Adiabene"
+
+ SSA: "Royaume d'Arménie"
+ SSA_DEF: "le Royaume d'Arménie"
+ SSA_ADJ: "Arménien"
+
+ SSY: "Royaume de Syrie"
+ SSY_DEF: "le Royaume de Syrie"
+ SSY_ADJ: "Syrien"
+
+ SSE: "Royaume Arsacide d'Égypte"
+ SSE_DEF: "le Royaume Arsacide d'Égypte"
+ SSE_ADJ: "Egyptien"
+
+ SSP: "Royaume des Amyrgians"
+ SSP_DEF: "le Royaume des Amyrgians"
+ SSP_ADJ: "Amyrgiens"
+
+ SSN: "Royaume des Grecs de l'Est"
+ SSN_DEF: "le Royaume des Grecs de l'Est"
+ SSN_ADJ: "Grecs"
+
+
+## ROMAN EMPIRE NAMES ##
+
+ ROE: "Empire Romain"
+ ROE_DEF: "le Gouvernement Central de l'Empire Romain"
+ ROE_ADJ: "Romain"
+ ##
+ ROE_fascism: "Magnifique Empire Romain"
+ ROE_fascism_DEF: "le Magnifique Empire Romain"
+ ROE_communism: "Empire Romain"
+ ROE_communism_DEF: "le Gouvernement Central de l'Empire Romain"
+ ROE_neutrality: "Imperium Romanum Barbarum"
+ ROE_neutrality_DEF: "the Imperium Romanum Barbarum"
+ ROE_democratic: "Empire Romain"
+ ROE_democratic_DEF: "l'Empire Romain"
+ ##
+ ROE_democratic_party: "Comitia Localia"
+ ROE_democratic_party_long: "Comitia Localia"
+ ROE_fascism_party: "Senatus Imperialis"
+ ROE_fascism_party_long: "Senatus Imperialis - Authoritarian"
+ ROE_communism_party: "Senatus Imperialis"
+ ROE_communism_party_long: "Senatus Imperialis - Despots"
+ ROE_neutrality_party: "Gentes Barbaricae"
+ ROE_neutrality_party_long: "Gentes Barbaricae"
+ 
+ ## RUMP ROMAN EMPIRE STATES NAMES ##
+ ####################################
+
+ GAL: "Federation of the Gauls"
+ GAL_DEF: "the Federation of the Gauls"
+ GAL_ADJ: "Gallo-roman"
+
+ ISP: "Royaume de Hispania"
+ ISP_DEF: "le Royaume de Hispania"
+ ISP_fascism: "Province of Hispania"
+ ISP_fascism_DEF: "the Province of Hispania"
+ ISP_ADJ: "Hispanian"
+
+ IST: "Royaume de Illyricum"
+ IST_DEF: "le Royaume de Illyria"
+ IST_ADJ: "Illyrian"
+
+ GRS: "Confederation of Greek States"
+ GRS_DEF: "the Confederation of Greek States"
+ GRS_ADJ: "Greek"
+
+ ANT: "Union of Anatolia"
+ ANT_DEF: "the Union of Anatolia"
+ ANT_ADJ: "Anatolian"
+
+ CRT: "Republic of Carthage"
+ CRT_DEF: "the Republic of Carthage"
+ CRT_ADJ: "Carthaginian"
+
+ RRO: "Res publica Romana"
+ RRO_DEF: "the Res publica Romana"
+ RRO_ADJ: "Roman"
+
+ AAS: "Austrian State"
+ AAS_DEF: "the Austrian State"
+ AAS_neutrality: "Austrian Horde"
+ AAS_neutrality_DEF: "the Austrian Horde"
+ AAS_ADJ: "Austrian"
+
+
+
+ ##
+
+ MAU: "Royaume de Mauretanie"
+ MAU_DEF: "le Royaume de Mauretanie"
+ MAU_ADJ: "Mauretanien"
+ MAU_ROE_communism_subject: "Royaume Client de Mauretanie"
+
+ THR: "Royaume Thrace"
+ THR_DEF: "le Royaume Thrace"
+ THR_ADJ: "Thraco-Romain"
+
+ LYC: "Ligue de Lycie"
+ LYC_DEF: "la Ligue de Lycie"
+ LYC_ADJ: "Lycien"
+
+ BOP: "Royaume du Bosphore"
+ BOP_DEF: "le Royaume du Bosphore"
+ BOP_ADJ: "Bosphorien"
+
+ CAP: "Royaume de Cappadoce"
+ CAP_DEF: "le Royaume de Cappadoce"
+ CAP_ADJ: "Cappadocien"
+
+ PON: "Royaume du Pont"
+ PON_DEF: "le Royaume du Pont"
+ PON_ADJ: "Pontien"
+
+ NAB: "Royaume nabatéen"
+ NAB_DEF: "le Royaume nabatéen"
+ NAB_ADJ: "Nabatéen"
+
+ JUD: "Royaume de Judée"
+ JUD_DEF: "le Royaume de Judée"
+ JUDkingdomofgod: "Royaume de Dieu"
+ JUDkingdomofgod_DEF: "le Saint Royaume de Dieu, duquel les Habitants sont Elus par Lui"
+ JUD_ADJ: "Judéen"
+ JUD_ROE_communism_subject: "Judée"
+ JUD_ROE_communism_subject_DEF: "la Province de Judée"
+
+   ## EASTERN EUROPE NAMES ##
+
+ DAC: "Royaume des Daces"
+ DAC_DEF: "le Royaume des Daces"
+ DAC_ADJ: "Daces"
+
+ GET: "Royaume des Gètes"
+ GET_DEF: "le Royaume des Gètes"
+ GET_ADJ: "Gètes"
+
+ EAR: "Proto-Slaves"
+ EAR_DEF: "les Proto-Slaves"
+ EAR_ADJ: "Proto-Slaves"
+
+ BST: "Bastarnes"
+ BST_DEF: "les Bastarnes"
+ BST_ADJ: "Bastarnes"
+
+ RHO: "Chefferie de Rholes"
+ RHO_DEF: "la Chefferie de Rholes"
+ RHO_ADJ: "Gètes"
+
+ VBI: "Visburgi"
+ VBI_DEF: "the Visburgi"
+ VBI_ADJ: "Visburgi"
+
+ QUA: "Quadi Kingdom"
+ QUA_DEF: "the Quadi Kingdom"
+ QUA_ADJ: "Quadi"
+
+ 
+
+ SCY: "Scythia"
+ SCY_DEF: "the Oriental Scythians"
+ SCY_ADJ: "Scythians"
+
+ SAR: "Sarmates"
+ SAR_DEF: "the Occidental Scythians"
+ SAR_ADJ: "Scythians"
+
+ TSA: "Tsaroubintsy"
+ TSA_DEF: "the Culture of Tsaroubintsy"
+ TSA_ADJ: "Tsaroubintsy"
+
+ LUG: "Lugii"
+ LUG_DEF: "the United Tribes of Lugii"
+ LUG_ADJ: "Lugii"
+
+ VDN: "Venedi"
+ VDN_DEF: "the Venedi"
+ VDN_ADJ: "Venedi"
+
+ FNI: "Fenni"
+ FNI_DEF: "the Fenni"
+ FNI_ADJ: "Fenni"
+
+ AES: "Aesti"
+ AES_DEF: "the Aesti"
+ AES_ADJ: "Aesti"
+
+ STI: "Sitonnes"
+ STI_DEF: "the Sitonnes"
+ STI_ADJ: "Sitonnes"
+
+
+   ## CAUCASUS NAMES ##
+
+ CLC: "Egrisi"
+ CLC_DEF: "the Egrisi"
+ CLC_ADJ: "Egrisi"
+
+ IBR: "Royaume de Iveria"
+ IBR_DEF: "le Royaume de Iveria"
+ IBR_ADJ: "Iveria"
+
+ ARR: "Armenia Maior"
+ ARR_DEF: "le Royaume de Greater Armenia"
+ ARR_ADJ: "Armenian"
+
+ CCA: "Aghwank State"
+ CCA_DEF: "the Aghwank State"
+ CCA_ADJ: "Aghwank"
+
+ PTH: "Arsacid Empire"
+ PTH_DEF: "the Arsacid Empire"
+ PTH_ADJ: "Arsacid"
+
+ SOP: "Kindom of Sophene"
+ SOP_DEF: "le Royaume de Sophene"
+ SOP_ADJ: "Sophene"
+
+## ORIENT NAMES ##
+
+ XIN: "Xin Dynasty"
+ XIN_DEF: "the Xin Dynasty"
+ XIN_ADJ: "Chinese"
+
+ WPC: "Western Protectorates of China"
+ WPC_DEF: "the Western Protectorates of China"
+ WPC_ADJ: "Chinese"
+
+ ANN: "Han Dynasty"
+ ANN_DEF: "the Han Dynasty"
+ ANN_ADJ: "Chinese"
+
+    ## CHINESE REVOLT STATES ##
+
+ LLU: "Lulin Rebels"
+ LLU_DEF: "the Lulin Rebels"
+ LLU_ADJ: "Lulin"
+
+ RYY: "Red Eyebrows"
+ RYY_DEF: "the Red Eyebrows"
+ RYY_ADJ: "Chiméi"
+
+ HEB: "Zhao Kingdom"
+ HEB_DEF: "the Zhao Kingdom"
+ HEB_ADJ: "Zhao"
+
+ ANH: "Anhui Clique"
+ ANH_DEF: "the Anhui Clique"
+ ANH_ADJ: "Anhui"
+
+ CJG: "Empire of Chengjia"
+ CJG_DEF: "the Empire of Chengjia"
+ CJG_ADJ: "Chengjian"
+
+ NYU: "Province of Nanyue"
+ NYU_DEF: "the Administrative Province of Nanyue"
+ NYU_ADJ: "Chinese"
+
+ LUO: "State of Luoyue"
+ LUO_DEF: "the State of Luoyue"
+ LUO_ADJ: "Luoyue"
+
+ SHY: "Sa Huynh"
+ SHY_DEF: "Sa Huynh"
+ SHY_ADJ: "Sa Huynh"
+
+
+
+
+ XAI: "Xiongnu Empire"
+ XAI_DEF: "the Xiongnu Empire"
+ XAI_ADJ: "Xiongnu"
+
+ YUZ: "Yuezhi"
+ YUZ_DEF: "the Nomadic Tribes of Yuezhi"
+ YUZ_ADJ: "Yuezhi"
+
+ SUL: "City of Shule"
+ SUL_DEF: "the City of Shule"
+ SUL_ADJ: "Shulan"
+
+ KKC: "Kucha"
+ KKC_DEF: "the City of Kucha"
+ KKC_ADJ: "Kuchan"
+
+ LOL: "Shanshan Kingdom"
+ LOL_DEF: "the Shanshan Kingdom"
+ LOL_ADJ: "Shanshan"
+
+ NYA: "Niya"
+ NYA_DEF: "the City of Niya"
+ NYA_ADJ: "Niya"
+
+ KHT: "Royaume de Khotan"
+ KHT_DEF: "le Royaume de Khotan"
+ KHT_ADJ: "Khotan"
+
+ ## INDIAN NAMES ##
+
+ AYD: "Āy Dynasty"
+ AYD_DEF: "the Āy Dynasty"
+ AYD_ADJ: "Aydan"
+
+ CER: "Chera Dynasty"
+ CER_DEF: "the Chera Dynasty"
+ CER_ADJ: "Cheran"
+
+ SAV: "Satavahana Dynasty"
+ SAV_DEF: "the Satavahana Dynasty"
+ SAV_ADJ: "Satavahanan"
+
+ CLO: "Chola Dynasty"
+ CLO_DEF: "the Chola Dynasty"
+ CLO_ADJ: "Cholan"
+
+ PDA: "Pandyas of Madurai"
+ PDA_DEF: "the Pandyas of Madurai"
+ PDA_ADJ: "Pandyas"
+
+ MTH: "Mahakṣatrapa"
+ MTH_DEF: "the Mahakṣatrapa"
+ MTH_ADJ: "Mahakṣatrapan"
+
+ MMD: "Mahameghavahana Dynasty"
+ MMD_DEF: "the Mahameghavahana Dynasty"
+ MMD_ADJ: "Mahameghavahanan"
+
+ MTI: "Mitra dynasty of Kosambi"
+ MTI_DEF: "the Mitra dynasty of Kosambi"
+ MTI_ADJ: "Mitran"
+
+ IDS: "Indo-Scythians State"
+ IDS_DEF: "the Indo-Scythians State"
+ IDS_ADJ: "Indo-Scythian"
+
+ CTU: "Chutu Dynasty"
+ CTU_DEF: "the Chutu Dynasty"
+ CTU_ADJ: "Chutu"
+
+ YAU: "Yaudheya Republic"
+ YAU_DEF: "the Yaudheya Republic"
+ YAU_ADJ: "Yaudheyan"
+
+ SAT: "Samatata Kingdom"
+ SAT_DEF: "the Samatata Kingdom"
+ SAT_ADJ: "Samatatan"
+
+ ANU: "Anuradhapura Kingdom"
+ ANU_DEF: "the Anuradhapura Kingdom"
+ ANU_ADJ: "Anuradhapuran"
+
+ ## KOREAN NAMES ##
+
+ MAH: "Mahan Confederacy"
+ MAH_DEF: "the Mahan Confederacy"
+ MAH_ADJ: "Mahan"
+
+ BYE: "Byeonhan Confederacy"
+ BYE_DEF: "the Byeonhan Confederacy"
+ BYE_ADJ: "Byeonhan"
+
+ JIN: "Jinhan Confederacy"
+ JIN_DEF: "the Jinhan Confederacy"
+ JIN_ADJ: "Jinhan"
+
+ EYE: "Dongye"
+ EYE_DEF: "Dongye"
+ EYE_ADJ: "Dongyan"
+ EYE_XIN_subject: "Dongye Commandery"
+ EYE_XIN_subject_DEF: "the Dongye Commandery"
+
+ OKJ: "Okjeo"
+ OKJ_DEF: "Okjeo"
+ OKJ_ADJ: "Okjeo"
+
+ GOR: "Royaume de Goguryeo"
+ GOR_DEF: "le Royaume de Goguryeo"
+ GOR_ADJ: "Goguryeo"
+
+ BAE: "Baekje"
+ BAE_DEF: "Baekje"
+ BAE_ADJ: "Baekje"
+ BAE_XIN_subject: "Baekje Commandery"
+ BAE_XIN_subject_DEF: "the Baekje Commandery"
+
+ EYA: "Ye"
+ EYA_DEF: "le Royaume de Ye"
+ EYA_ADJ: "Ye"
+
+ LLE: "Lelang"
+ LLE_DEF: "le Royaume de Lelang"
+ LLE_ADJ: "Lelang"
+ LLE_XIN_subject: "Lelang Commandery"
+ LLE_XIN_subject_DEF: "the Lelang Commandery"
+
+
+ ## GERMANIC NAMES OF TRIBES ##
+
+ FRI: "Frisia"
+ FRI_DEF: "the Tribe of the Frisi"
+ FRI_ADJ: "Frisi"
+
+ CMI: "Camavi"
+ CMI_DEF: "the Tribe of the Camavi"
+ CMI_ADJ: "Camavi"
+
+ AMV: "Amsivari"
+ AMV_DEF: "the Tribe of the Amsivari"
+ AMV_ADJ: "Amsivari"
+
+ CAU: "Cauci"
+ CAU_DEF: "the Tribe of the Cauci"
+ CAU_ADJ: "Cauci"
+
+ CSU: "Chasuari"
+ CSU_DEF: "the Tribe of the Chasuari"
+ CSU_ADJ: "Chasuari"
+
+ BRU: "Bruceti"
+ BRU_DEF: "the Tribe of the Bruceti"
+ BRU_ADJ: "Bruceti"
+
+ USP: "Usipeti"
+ USP_DEF: "the Tribe of the Usipeti"
+ USP_ADJ: "Usipeti"
+
+ TNI: "Tencteri"
+ TNI_DEF: "the Tribe of the Tencteri"
+ TNI_ADJ: "Tencteri"
+
+ SGI: "Sigambri"
+ SGI_DEF: "the Tribe of the Sigambri"
+ SGI_ADJ: "Sigambri"
+
+ ANI: "Angrivari"
+ ANI_DEF: "the Tribe of the Angrivari"
+ ANI_ADJ: "Angrivari"
+
+ VNI: "Viruni"
+ VNI_DEF: "the Tribe of the Viruni"
+ VNI_ADJ: "Viruni"
+
+ SXA: "Saxones"
+ SXA_DEF: "the Tribe of the Saxones"
+ SXA_ADJ: "Saxones"
+
+ AGL: "Angli"
+ AGL_DEF: "the Tribe of the Angli"
+ AGL_ADJ: "Angli"
+
+ CRD: "Caridi"
+ CRD_DEF: "the Tribe of the Caridi"
+ CRD_ADJ: "Caridi"
+
+ LGI: "Longobardi"
+ LGI_DEF: "the Tribe of the Longobardi"
+ LGI_ADJ: "Longobardi"
+
+ CRS: "Cherusci"
+ CRS_DEF: "the Tribe of the Cherusci"
+ CRS_ADJ: "Cherusci"
+
+ CTT: "Catti"
+ CTT_DEF: "the Tribe of the Catti"
+ CTT_ADJ: "Catti"
+
+ AGI: "Angili"
+ AGI_DEF: "the Tribe of the Angili"
+ AGI_ADJ: "Angili"
+
+ VGI: "Vangioni"
+ VGI_DEF: "the Tribe of the Vangioni"
+ VGI_ADJ: "Vangioni"
+
+ ERR: "Ermunduri"
+ ERR_DEF: "the Tribe of the Ermunduri"
+ ERR_ADJ: "Ermunduri"
+
+ NMI: "Nemeti"
+ NMI_DEF: "the Tribe of the Nemeti"
+ NMI_ADJ: "Nemeti"
+
+ TBI: "Triboci"
+ TBI_DEF: "the Tribe of the Triboci"
+ TBI_ADJ: "Triboci"
+
+ NSE: "Naristae"
+ NSE_DEF: "the Tribe of the Naristae"
+ NSE_ADJ: "Naristae"
+
+ MRA: "Marcoma"
+ MRA_DEF: "the Tribe of the Marcoma"
+ MRA_ADJ: "Marcoma"
+
+ SNI: "Senoni"
+ SNI_DEF: "the Tribe of the Senoni"
+ SNI_ADJ: "Senoni"
+
+ ## AFRICA NAMES ##
+
+ GOM: "Royaume des Garamantes"
+ GOM_DEF: "le Royaume des Garamantes"
+ GOM_ADJ: "Garamantes"
+
+ ## ARABIA NAMES ##
+
+ EGI: "Ptolemaic Royaume de Egypt"
+ EGI_DEF: "the Ptolemaic Royaume de Egypt"
+ EGI_ADJ: "Egyptian"
+ EGI_ROE_communism_subject: "Egypt"
+ EGI_ROE_communism_subject_DEF: "the Province of Egypt"
+
+ KUS: "Royaume de Kush"
+ KUS_DEF: "le Royaume de Kush"
+ KUS_ADJ: "Kushi"
+
+ AKM: "Royaume de Aksum"
+ AKM_DEF: "le Royaume de Aksum"
+ AKM_ADJ: "Aksumite"
+
+ HKM: "Himyarite Kingdom"
+ HKM_DEF: "the Himyarite Kingdom"
+ HKM_ADJ: "Himyarite"
+
+ SHA: "Sheba"
+ SHA_DEF: "le Royaume de Sheba"
+ SHA_ADJ: "Sheban"
+
+ QTB: "Qataban"
+ QTB_DEF: "le Royaume de Qataban"
+ QTB_ADJ: "Qatabanian"
+
+ HDT: "Hadramaut"
+ HDT_DEF: "le Royaume de Hadramaut"
+ HDT_ADJ: "Hadramautian"
+
+ MZN: "Mazun"
+ MZN_DEF: "le Royaume de Mazun"
+ MZN_ADJ: "Mazunian"
+
+ GRH: "Gerrha"
+ GRH_DEF: "le Royaume de Gerrha"
+ GRH_ADJ: "Gerrhan"
+
+ MAA: "Royaume de Ma'an"
+ MAA_DEF: "le Royaume de Ma'an"
+ MAA_ADJ: "Ma'an"
+
+ BMY: "Blemmyes"
+ BMY_DEF: "the Blemmyes"
+ BMY_ADJ: "Blemmyes"
+
+
+
+ ## BRITANNIA NAMES ##
+ DMN: "Damnonii"
+ DMN_DEF: "the Tribe of the Damnonii"
+ DMN_ADJ: "Damnonii"
+
+ DRG: "Durotriges"
+ DRG_DEF: "the Tribe of the Durotriges"
+ DRG_ADJ: "Durotriges"
+
+ BGA: "Belgae"
+ BGA_DEF: "the Tribe of the Belgae"
+ BGA_ADJ: "Belgae"
+
+ ATB: "Atrebates"
+ ATB_DEF: "le Royaume des Atrebates"
+ ATB_ADJ: "Atrebates"
+
+ RGN: "Regni"
+ RGN_DEF: "the Tribe of the Regni"
+ RGN_ADJ: "Regni"
+
+ CTC: "Cantiaci"
+ CTC_DEF: "le Royaume des Cantiaci"
+ CTC_ADJ: "Cantiaci"
+
+ DMA: "Demetae"
+ DMA_DEF: "the Tribe of the Demetae"
+ DMA_ADJ: "Demetae"
+
+ SLE: "Silures"
+ SLE_DEF: "the Tribe of the Silures"
+ SLE_ADJ: "Silures"
+
+ DBN: "Dobunni"
+ DBN_DEF: "the Tribe of the Dobunni"
+ DBN_ADJ: "Dobunni"
+
+ CVL: "Catuvellauni"
+ CVL_DEF: "le Royaume des Catuvellauni"
+ CVL_ADJ: "Catuvellauni"
+
+ TVE: "Trino-Vantes"
+ TVE_DEF: "le Royaume des Trino-Vantes"
+ TVE_ADJ: "Trino-Vantes"
+
+ ICC: "Iceni"
+ ICC_DEF: "le Royaume des Iceni"
+ ICC_ADJ: "Iceni"
+
+ ORE: "Ordovices"
+ ORE_DEF: "the Tribe of the Ordovices"
+ ORE_ADJ: "Ordovices"
+
+ CMO: "Cornovii"
+ CMO_DEF: "the Tribe of the Cornovii"
+ CMO_ADJ: "Cornovii"
+
+ PRI: "Parisi"
+ PRI_DEF: "the Tribe of the Parisi"
+ PRI_ADJ: "Parisi"
+
+ CRL: "Corieltauvi"
+ CRL_DEF: "the Tribe of the Corieltauvi"
+ CRL_ADJ: "Corieltauvi"
+
+ BGE: "Brigantes"
+ BGE_DEF: "le Royaume des Brigantes"
+ BGE_ADJ: "Brigantes"
+
+ NOV: "Novantae"
+ NOV_DEF: "the Tribe of the Novantae"
+ NOV_ADJ: "Novantae"
+
+ SGA: "Selgovae"
+ SGA_DEF: "the Tribe of the Selgovae"
+ SGA_ADJ: "Selgovae"
+
+ ODN: "Otadini"
+ ODN_DEF: "the Tribe of the Otadini"
+ ODN_ADJ: "Otadini"
+
+ NDM: "Northern Damnonii"
+ NDM_DEF: "the Tribe of the Northern Damnonii"
+ NDM_ADJ: "Damnonii"
+
+ VIE: "Venicones"
+ VIE_DEF: "le Royaume des Venicones"
+ VIE_ADJ: "Venicones"
+
+ EPD: "Epidii"
+ EPD_DEF: "the Tribe of the Epidii"
+ EPD_ADJ: "Epidii"
+
+ TAX: "Taexali"
+ TAX_DEF: "the Tribe of the Taexali"
+ TAX_ADJ: "Taexali"
+
+ CLI: "Caledonii"
+ CLI_DEF: "the Tribe of the Caledonii"
+ CLI_ADJ: "Caledonii"
+
+ CRE: "Creones"
+ CRE_DEF: "the Tribe of the Creones"
+ CRE_ADJ: "Creones"
+
+ CRG: "Carnonagae"
+ CRG_DEF: "the Tribe of the Carnonagae"
+ CRG_ADJ: "Carnonagae"
+
+ CEI: "Caereni"
+ CEI_DEF: "the Tribe of the Caereni"
+ CEI_ADJ: "Caereni"
+
+ STE: "Smertae"
+ STE_DEF: "the Tribe of the Smertae"
+ STE_ADJ: "Smertae"
+
+ CRV: "Cornavii"
+ CRV_DEF: "the Tribe of the Cornavii"
+ CRV_ADJ: "Cornavii"
+
+ DLG: "Decantae Lugi"
+ DLG_DEF: "the Tribe of the Decantae Lugi"
+ DLG_ADJ: "Decantae Lugi"
+
+ ## IRELAND NAMES ##
+
+ WNO: "Wenniknioi"
+ WNO_DEF: "the Tribe of the Wenniknioi"
+ WNO_ADJ: "Wenniknioi"
+
+ ERD: "Erdinoi"
+ ERD_DEF: "the Tribe of the Erdinoi"
+ ERD_ADJ: "Erdinoi"
+
+ MGT: "Magnatai"
+ MGT_DEF: "the Tribe of the Magnatai"
+ MGT_ADJ: "Magnatai"
+
+ AVE: "Auteinoi"
+ AVE_DEF: "the Tribe of the Auteinoi"
+ AVE_ADJ: "Auteinoi"
+
+ GGA: "Ganganoi"
+ GGA_DEF: "the Tribe of the Ganganoi"
+ GGA_ADJ: "Ganganoi"
+
+ UDA: "Usdiai"
+ UDA_DEF: "the Tribe of the Usdiai"
+ UDA_ADJ: "Usdiai"
+
+ WLI: "Wellaboroi"
+ WLI_DEF: "the Tribe of the Wellaboroi"
+ WLI_ADJ: "Wellaboroi"
+
+ IWR: "Iwernoi"
+ IWR_DEF: "the Tribe of the Iwernoi"
+ IWR_ADJ: "Iwernoi"
+
+ BIG: "Irish_Brigantes"
+ BIG_DEF: "the Tribe of the Irish_Brigantes"
+ BIG_ADJ: "Irish_Brigantes"
+
+ KRD: "Koriondoi"
+ KRD_DEF: "the Tribe of the Koriondoi"
+ KRD_ADJ: "Koriondoi"
+
+ MNP: "Manapioi"
+ MNP_DEF: "the Tribe of the Manapioi"
+ MNP_ADJ: "Manapioi"
+
+ KKO: "Kaukoi"
+ KKO_DEF: "the Tribe of the Kaukoi"
+ KKO_ADJ: "Kaukoi"
+
+ EBN: "Eblanioi"
+ EBN_DEF: "the Tribe of the Eblanioi"
+ EBN_ADJ: "Eblanioi"
+
+ WLT: "Woluntioi"
+ WLT_DEF: "the Tribe of the Woluntioi"
+ WLT_ADJ: "Woluntioi"
+
+ DRI: "Darinoi"
+ DRI_DEF: "the Tribe of the Darinoi"
+ DRI_ADJ: "Darinoi"
+
+ RBG: "Rhobogdioi"
+ RBG_DEF: "the Tribe of the Rhobogdioi"
+ RBG_ADJ: "Rhobogdioi"
+
+
+ ## AMERICAN NAMES ##
+
+ MMY: "Maya"
+ MMY_DEF: "Mayan Confederacy"
+ MMY_ADJ: "Maya"
+
+ CHP: "Capacha"
+ CHP_DEF: "State of Capacha"
+ CHP_ADJ: "Capacha"
+
+ CPA: "Chupicuaro"
+ CPA_DEF: "Culture of Chupicuaro"
+ CPA_ADJ: "Chupicuaro"
+
+ TTH: "Teotihuacan"
+ TTH_DEF: "City of Teotihuacan"
+ TTH_ADJ: "Teotihuacan"
+
+ HAT: "Huastec"
+ HAT_DEF: "Confederation of the Huastec"
+ HAT_ADJ: "Huastec"
+
+ ZPT: "Zapotec"
+ ZPT_DEF: "Zapotec Civilisation"
+ ZPT_ADJ: "Zapotec"
+
+ TTC: "Totonac"
+ TTC_DEF: "Totonac Civilisation"
+ TTC_ADJ: "Totonac"
+
+ ## NORTH AMERICA
+
+ LLC: "Laurel"
+ LLC_DEF: "Laurel Culture"
+ LLC_ADJ: "Laurelian"
+
+ PPC: "Point"
+ PPC_DEF: "Point Culture"
+ PPC_ADJ: "Pointian"
+
+ THC: "Trempeleau"
+ THC_DEF: "Trempeleau Culture"
+ THC_ADJ: "Trempeleauan"
+
+ GDF: "Goodall"
+ GDF_DEF: "Goodall Culture"
+ GDF_ADJ: "Goodallian"
+
+ CCC: "Couture"
+ CCC_DEF: "Couture Culture"
+ CCC_ADJ: "Coutureian"
+
+ SGC: "Saugeen"
+ SGC_DEF: "Saugeen Culture"
+ SGC_ADJ: "Saugeenian"
+
+ NYH: "New York Culture"
+ NYH_DEF: "New York Culture"
+ NYH_ADJ: "New Yorkian"
+
+ HHC: "Havana"
+ HHC_DEF: "Havana Culture"
+ HHC_ADJ: "Havanan"
+
+ OHC: "Ohio Culture"
+ OHC_DEF: "Ohio Culture"
+ OHC_ADJ: "Ohioans"
+
+ KCH: "Kansas City Culture"
+ KCH_DEF: "Kansas City Culture"
+ KCH_ADJ: "Kansas Citian"
+
+ COC: "Crab"
+ COC_DEF: "Crab Culture"
+ COC_ADJ: "Crabian"
+
+ CHC: "Cooper"
+ CHC_DEF: "Cooper Culture"
+ CHC_ADJ: "Cooperian"
+
+ FMC: "Fourche"
+ FMC_DEF: "Fourche Culture"
+ FMC_ADJ: "Fourcheian"
+
+ MIE: "Miller"
+ MIE_DEF: "Miller Culture"
+ MIE_ADJ: "Millerian"
+
+ COA: "Copena"
+ COA_DEF: "Copena Culture"
+ COA_ADJ: "Copenan"
+
+ MCC: "Mill Creek"
+ MCC_DEF: "Mill Creek Culture"
+ MCC_ADJ: "Mill Creekian"
+
+ MCK: "Marksville"
+ MCK_DEF: "Marksville Culture"
+ MCK_ADJ: "Marksvilleian"
+
+ PRT: "Porter"
+ PRT_DEF: "Porter Culture"
+ PRT_ADJ: "Porterian"
+
+ SRS: "Santa Rosa" 
+ SRS_DEF: "Santa Rosa Culture"
+ SRS_ADJ: "Santa Rosan"
+
+ SCC: "Swift Creek"
+ SCC_DEF: "Swift Creek Culture"
+ SCC_ADJ: "Swift Creekian" 
+
+
+
+
+
+
+
+
+
+
+
+ ## ROMAN PROVINCES NAMES ##
+ RR1: "Belgica"
+ RR2: "Lugdunensis"
+ RR3: "Aquitania"
+ RR4: "Narbonensis"
+ RR5: "Germania Inferior"
+ RR6: "Germania Superior"
+ RR7: "Raetia et Vindelicia"
+ RR8: "Cilicia"
+ RR9: "Alpes Maritimae"
+ R10: "Galatia"
+ R11: "Tarraconensis"
+ R12: "Lusitania"
+ R13: "Baetica"
+ R14: "Africa Proconsularis"
+ R15: "Sardinia et Corsica"
+ R16: "Sicilia"
+ R17: "Italia"
+ R18: "Pannonia"
+ R19: "Dalmatia"
+ R20: "Noricum"
+ R21: "Moesia"
+ R22: "Macedonia"
+ R23: "Archaea"
+ R24: "Creta et Cyrenae"
+ R25: "Asia"
+ R26: "Bythinia et Pontus"
+ R27: "Cyprus"
+ R28: "Syria"
+
+ RRR: "Rome"
+ RRR_DEF: "the City of Rome"
+ RRR_ADJ: "Roman"
+
+ VVI: "Vienna"
+ VVI_DEF: "Colonia Julia Vienna Allobrogum"
+ VVI_ADJ: "Viennese"
+
+RR1_DEF: "the Province of Belgica"
+RR2_DEF: "the Province of Lugdunensis"
+RR3_DEF: "the Province of Aquitania"
+RR4_DEF: "the Province of Narbonensis"
+RR5_DEF: "the Province of Germania Inferior"
+RR6_DEF: "the Province of Germania Superior"
+RR7_DEF: "the Province of Raetia et Vindelicia"
+RR8_DEF: "the Province of Cilicia"
+RR9_DEF: "the Province of Alpes Maritimae"
+R10_DEF: "the Province of Galatia"
+R11_DEF: "the Province of Tarraconensis"
+R12_DEF: "the Province of Lusitania"
+R13_DEF: "the Province of Baetica"
+R14_DEF: "the Province of Africa Proconsularis"
+R15_DEF: "the Province of Sardinia et Corsica"
+R16_DEF: "the Province of Sicilia"
+R17_DEF: "the Province of Italia"
+R18_DEF: "the Province of Pannonia"
+R19_DEF: "the Province of Dalmatia"
+R20_DEF: "the Province of Noricum"
+R21_DEF: "the Province of Moesia"
+R22_DEF: "the Province of Macedonia"
+R23_DEF: "the Province of Archaea"
+R24_DEF: "the Province of Creta et Cyrenae"
+R25_DEF: "the Province of Asia"
+R26_DEF: "the Province of Bythinia et Pontus"
+R27_DEF: "the Province of Cyprus"
+R28_DEF: "the Province of Syria"
+
+RR1_ADJ: "Belgic"
+RR2_ADJ: "Lugdunensian"
+RR3_ADJ: "Aquitanean"
+RR4_ADJ: "Narbonensian"
+RR5_ADJ: "Germanic Inferior"
+RR6_ADJ: "Germanic Superior"
+RR7_ADJ: "Raetian et Vindelic"
+RR8_ADJ: "Cilician"
+RR9_ADJ: "Alpine Maritimae"
+R10_ADJ: "Galatian"
+R11_ADJ: "Tarraconensian"
+R12_ADJ: "Lusitanian"
+R13_ADJ: "Baetic"
+R14_ADJ: "African Proconsular"
+R15_ADJ: "Sardinian et Corsican"
+R16_ADJ: "Sicilian"
+R17_ADJ: "Italian"
+R18_ADJ: "Pannonian"
+R19_ADJ: "Dalmatian"
+R20_ADJ: "Noricum"
+R21_ADJ: "Moesian"
+R22_ADJ: "Macedonian"
+R23_ADJ: "Archaean"
+R24_ADJ: "Cretan et Cyrenaean"
+R25_ADJ: "Asian"
+R26_ADJ: "Bythinian et Pontic"
+R27_ADJ: "Cyprian"
+R28_ADJ: "Syrian"
+
+## ASIAN COUNTRIES
+
+QQA: "Qiang"
+QQA_DEF: "the Qiang Nation"
+QQA_ADJ: "Qiang"
+
+ZZH: "Royaume de Zhangzhung"
+ZZH_DEF: "le Royaume de Zhangzhung"
+ZZH_ADJ: "Zhangzhung"
+
+CCL: "Chin Lin"
+CCL_DEF: "the Policy of Chin Lin"
+CCL_ADJ: "Chin Lin"
+
+TTT: "City of Theton"
+TTT_DEF: "the City of Theton"
+TTT_ADJ: "Thetonian"
+
+KMH: "Khmers"
+KMH_DEF: "the Khmers"
+KMH_ADJ: "Khmers"
+
+YAO: "Yaos"
+YAO_DEF: "the Yaos Peoples"
+YAO_ADJ: "Yaos"
+
+THA: "Thais"
+THA_DEF: "the Thais"
+THA_ADJ: "Thais"
+
+SHN: "Shans"
+SHN_DEF: "the Shans"
+SHN_ADJ: "Shans"
+
+BUR: "Burmans"
+BUR_DEF: "the Burmans"
+BUR_ADJ: "Burmans"
+
+LIA: "Liao"
+LIA_DEF: "the Liao"
+LIA_ADJ: "Liao"
+
+TGU: "Tanguts"
+TGU_DEF: "the Tanguts"
+TGU_ADJ: "Tangut"
+
+TBS: "Tibetan Tribes"
+TBS_DEF: "the Tibetan Tribes"
+TBS_ADJ: "Tibetan"
+
+MAI: "Malays"
+MAI_DEF: "the Malays Peoples"
+MAI_ADJ: "Malays"
+
+VJI: "Vijayapura"
+VJI_DEF: "the Vijayapura"
+VJI_ADJ: "Vijayapurans"
+
+KTL: "Kantoli"
+KTL_DEF: "the Kantoli"
+KTL_ADJ: "Kantoli"
+
+SKN: "Salakanagara"
+SKN_DEF: "the Salakanagara"
+SKN_ADJ: "Salakanagaran"
+
+TWA: "Taiwan"
+TWA_DEF: "the Taiwanese Peoples"
+TWA_ADJ: "Taiwanese"
+
+RYO: "Ryukuans"
+RYO_DEF: "the Ryukuans"
+RYO_ADJ: "Ryukuans"
+
+KYU: "Kyushu"
+KYU_DEF: "the Chiefdom of Kyushu"
+KYU_ADJ: "Kyushu"
+
+SAI: "Saitobaru"
+SAI_DEF: "the Chiefdom of Saitobaru"
+SAI_ADJ: "Saitobaru"
+
+KBI: "Kibi"
+KBI_DEF: "the Chiefdom of Kibi"
+KBI_ADJ: "Kibi"
+
+IZM: "Izumo"
+IZM_DEF: "the Chiefdom of Izumo"
+IZM_ADJ: "Izumo"
+
+BYO: "Royaume de Buyeo"
+BYO_DEF: "le Royaume de Buyeo"
+BYO_ADJ: "Buyean"
+
+WHU: "Wuhuan"
+WHU_DEF: "the Chiefdom of the Wuhuan"
+WHU_ADJ: "Wuhuan"
+
+XIA: "Xianbei"
+XIA_DEF: "the Xianbei"
+XIA_ADJ: "Xianbei"
+
+YLI: "Yilou"
+YLI_DEF: "the Chiefdom of Yilou"
+YLI_ADJ: "Yilou"
+
+DGB: "Gonbuyeo"
+DGB_DEF: "le Royaume de Gonbuyeo"
+DGB_ADJ: "Gonbuyean"
+
+# Sweden & Norway
+
+TTO: "Teutons"
+TTO_DEF: "the Teutons"
+TTO_ADJ: "Teutonic"
+
+GNI: "Guiones"
+GNI_DEF: "the Guiones"
+GNI_ADJ: "Guiones"
+
+EDS: "Eudoses"
+EDS_DEF: "the Eudoses"
+EDS_ADJ: "Eudoses"
+
+DNT: "Danes"
+DNT_DEF: "the Danes"
+DNT_ADJ: "Danish"
+
+BRG: "Bergio"
+BRG_DEF: "the Bergio"
+BRG_ADJ: "Bergio"
+
+THT: "Theustes"
+THT_DEF: "the Theustes"
+THT_ADJ: "Theustes"
+
+HVI: "Hilleviones"
+HVI_DEF: "the Hilleviones"
+HVI_ADJ: "Hilleviones"
+
+AVV: "Aviones"
+AVV_DEF: "the Aviones"
+AVV_ADJ: "Aviones"
+
+OSG: "Ostrogoths"
+OSG_DEF: "the Ostrogoths"
+OSG_ADJ: "Ostrogothic"
+
+LTH: "Liothida"
+LTH_DEF: "the Liothida"
+LTH_ADJ: "Liothida"
+
+FIR: "Firaesi"
+FIR_DEF: "the Firaesi"
+FIR_ADJ: "Firaesi"
+
+NJR: "Njars"
+NJR_DEF: "the Njars"
+NJR_ADJ: "Njars"
+
+GVG: "Gevlegs"
+GVG_DEF: "the Gevlegs"
+GVG_ADJ: "Gevlegs"
+
+GGG: "Gauthigoths"
+GGG_DEF: "the Gauthigoths"
+GGG_ADJ: "Gauthigothic"
+
+FVA: "Favonae"
+FVA_DEF: "the Favonae"
+FVA_ADJ: "Favonae"
+
+RMI: "Raumarici"
+RMI_DEF: "the Raumarici"
+RMI_ADJ: "Raumarici"
+
+GNN: "Granni"
+GNN_DEF: "the Granni"
+GNN_ADJ: "Granni"
+
+RGR: "Ragnaricii"
+RGR_DEF: "the Ragnaricii"
+RGR_ADJ: "Ragnaricii"
+
+BBG: "Brondings"
+BBG_DEF: "the Brondings"
+BBG_ADJ: "Brondinic"
+
+GAU: "Gauti"
+GAU_DEF: "the Gauti"
+GAU_ADJ: "Gauthic"
+
+STO: "Sitones"
+STO_DEF: "the Sitones"
+STO_ADJ: "Sitones"
+
+EVG: "Evagreotingis"
+EVG_DEF: "the Evagreotingis"
+EVG_ADJ: "Evagreotingis"
+
+VNL: "Vinoviloth"
+VNL_DEF: "the Vinoviloth"
+VNL_ADJ: "Vinoviloth"
+
+VAG: "Vagoths"
+VAG_DEF: "the Vagoths"
+VAG_ADJ: "Vagothic"
+
+FRV: "Fervir"
+FRV_DEF: "the Fervir"
+FRV_ADJ: "Fervir"
+
+FTH: "Finnaithae"
+FTH_DEF: "the Finnaithae"
+FTH_ADJ: "Finnaithae"
+
+TAE: "Taetel"
+TAE_DEF: "the Taetel"
+TAE_ADJ: "Taetel"
+
+ENI: "Eunixi"
+ENI_DEF: "the Eunixi"
+ENI_ADJ: "Eunixi"
+
+AGX: "Augandzi"
+AGX_DEF: "the Augandzi"
+AGX_ADJ: "Augandzi"
+
+ART: "Arothi"
+ART_DEF: "the Arothi"
+ART_ADJ: "Arothi"
+
+RRN: "Ranii"
+RRN_DEF: "the Ranii"
+RRN_ADJ: "Ranii"
+
+ADG: "Adogit"
+ADG_DEF: "the Adogit"
+ADG_ADJ: "Adogit"
+
+HAE: "Haelsingar"
+HAE_DEF: "the Haelsingar"
+HAE_ADJ: "Haelsingar"
+
+## Eastern Europe rework
+
+CCH: "Chali"
+CCH_DEF: "the Chali"
+CCH_ADJ: "Chali"
+
+SDD: "Suardoni"
+SDD_DEF: "the Suardoni"
+SDD_ADJ: "Suardoni"
+
+NTN: "Nuithones"
+NTN_DEF: "the Nuithones"
+NTN_ADJ: "Nuithones"
+
+WRG: "West-Rugii"
+WRG_DEF: "the West-Rugii"
+WRG_ADJ: "West-Rugii"
+
+LMM: "Lemovii"
+LMM_DEF: "the Lemovii"
+LMM_ADJ: "Lemovii"
+
+AVP: "Avarpi"
+AVP_DEF: "the Avarpi"
+AVP_ADJ: "Avarpi"
+
+ERG: "East-Rugii"
+ERG_DEF: "the East-Rugii"
+ERG_ADJ: "East-Rugii"
+
+VDV: "Vidivarii"
+VDV_DEF: "the Vidivarii"
+VDV_ADJ: "Vidivarii"
+
+GGP: "Gepidi"
+GGP_DEF: "the Gepidi"
+GGP_ADJ: "Gepidi"
+
+GTO: "Goths"
+GTO_DEF: "the Goths"
+GTO_ADJ: "Gothic"
+
+VRN: "Varni"
+VRN_DEF: "the Varni"
+VRN_ADJ: "Varni"
+
+NSV: "North-Suavi"
+NSV_DEF: "the North-Suavi"
+NSV_ADJ: "North-Suavi"
+
+FRD: "Farodini"
+FRD_DEF: "the Farodini"
+FRD_ADJ: "Farodini"
+
+BRD: "Burgundians"
+BRD_DEF: "the Burgundian Kingdom"
+BRD_ADJ: "Burgundians"
+
+MSG: "Marsingni"
+MSG_DEF: "the Marsingni"
+MSG_ADJ: "Marsingni"
+
+SLO: "Sulones"
+SLO_DEF: "the Sulones"
+SLO_ADJ: "Sulones"
+
+SIG: "Silingi"
+SIG_DEF: "the Silingi"
+SIG_ADJ: "Silingi"

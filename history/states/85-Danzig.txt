@@ -6,12 +6,11 @@ state = {
 	state_category = city
 
 	history = {
+		owner = VDV
+		add_core_of = VDV
+		victory_points = { 362 10 }
 
-		owner = VDN
-		add_core_of = VDN
-		victory_points = {
-			362 10 # Danzig
-		}
+
 		
 		 
 		
@@ -28,9 +27,7 @@ state = {
 		
 	}
 
-	provinces = {
-		362
-	}
+	provinces = { 362 389 3380 }
 
 	local_supplies = 0.0 
 }

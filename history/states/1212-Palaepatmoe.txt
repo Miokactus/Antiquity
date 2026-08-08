@@ -1,29 +1,25 @@
 state={
 	id=1212
-	name="STATE_1212"
-	provinces={
-		12269 
-	}
+	name = "STATE_1212"
+	provinces = { 13405 }
 	manpower = 95280
 	state_category = town 
-	resources={
-		#6
-	}
+	
 	history={
 		owner = SAV
 		add_core_of = SAV
+		victory_points = { 13405 8 }
+
 		
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
 			#
-			12269 = {
+			13405 = {
 				naval_base = 3
 			}
 		}
-		victory_points = {
-			12269 8
-		}
+
 	}
 	buildings_max_level_factor=1
 	local_supplies=0

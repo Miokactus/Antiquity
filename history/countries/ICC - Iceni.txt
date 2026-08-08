@@ -1,15 +1,25 @@
-capital = 832
+capital = 1091
 
 oob = "ENG_14" 
 
 set_research_slots = 1
 
 create_country_leader = {
-    name = "Tribal Council"
+    name = "Can"
     desc = "TRIBAL_COUNCIL_DESC" 
-    picture = GFX_leader_german_generic1
-    expire = "88.5.4"
-    ideology = tribalism
+    picture = GFX_leader_monarchy_generic1
+    expire = "25.5.4"
+    ideology = chieftain
+    traits = {
+    }
+}
+
+create_country_leader = {
+    name = "Antedios"
+    desc = "TRIBAL_COUNCIL_DESC" 
+    picture = GFX_leader_monarchy_generic1
+    expire = "46.5.4"
+    ideology = chieftain
     traits = {
     }
 }

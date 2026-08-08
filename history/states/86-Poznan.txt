@@ -11,8 +11,8 @@ state = {
 	state_category = city
 	history = {
 
-		owner = LUG
-		add_core_of = LUG
+		owner = SLO
+		add_core_of = SLO
 
 		victory_points = {
 			6558 10 # Poznan

@@ -1,24 +1,20 @@
 state={
 	id=88
-	name="STATE_88"
-	resources={
-		steel=5.000
-		gold_ingot=3.000
+	name = "STATE_88"
+	resources = {
+		gold_ingot = 3
+		steel = 5
 	}
 
 	history={
 		owner = LUG
 		add_core_of = LUG
+		victory_points = { 442 3 }
+		victory_points = { 9494 1 }
 		
-		victory_points = {
-			9427 20 
-		}
-		victory_points = {
-			442 3 
-		}
-		victory_points = {
-			9494 1
-		}
+
+
+
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -30,12 +26,10 @@ state={
 
 	}
 
-	provinces={
-		417 442 466 3410 3434 6499 6522 9412 9427 9494 11398 11413 11507 13205 
-	}
-	manpower=369280
+	provinces = { 417 442 466 3410 3434 6499 6522 9494 11398 11413 11507 }
+	manpower = 369280
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category = large_city
 
 	local_supplies=12.0 
 }

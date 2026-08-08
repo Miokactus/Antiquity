@@ -490,6 +490,75 @@ country_event = {
 }
 
 
+## Abdication of Eppillus
+country_event = {
+	id = generic_custom.24
+	title = generic_custom.24.t
+	desc = generic_custom.24.d
+	major = yes
+	only_fire_once = yes
+	trigger = {
+		date > 15.02.05
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 2 }
+	option = { # Glory to Verica!
+		name = generic_custom.24.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = ATB }
+		ATB = {
+			retire_country_leader = yes
+		}
+	}
+	option = { # Alright
+		name = generic_custom.24.b
+		ai_chance = { factor = 1 }
+		trigger = { NOT = { tag = ATB} }
+	}
+}
+
+## Eppillus crowned King of the Cantiaci
+country_event = {
+	id = generic_custom.25
+	title = generic_custom.25.t
+	desc = generic_custom.25.d
+	major = yes
+	only_fire_once = yes
+	trigger = {
+		date > 15.03.05
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 2 }
+	option = { # Glory to Eppillus!
+		name = generic_custom.25.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = CTC }
+		CTC = {
+			retire_country_leader = yes
+		}
+	}
+	option = { # Alright
+		name = generic_custom.25.b
+		ai_chance = { factor = 1 }
+		trigger = { 
+			NOT = { 
+				AND = {
+					tag = CTC
+					tag = ATB
+				} 
+			} 
+		}
+	}
+	option = { # These fuckers!
+		name = generic_custom.25.c
+		ai_chance = { factor = 1 }
+		trigger = { tag = ATB }
+		add_political_power = -50
+		add_war_support = 0.05
+	}
+}
+
+
 
 
 

@@ -1,19 +1,16 @@
 state={
 	id=1209
-	name="STATE_1209"
-	provinces={
-		4327 
-	}
+	name = "STATE_1209"
+	provinces = { 4327 13408 }
 	history={
 		owner = PDA
 		add_core_of = PDA
+		victory_points = { 4327 5 }
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		victory_points = {
-			4327 5
-		}
+
 	}
 	manpower = 85200
 	state_category = town

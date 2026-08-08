@@ -3,21 +3,20 @@ state = {
 	name = "STATE_68"
 	manpower = 125084
 	resources = {
-		aluminium = 15 # was: 24
+		aluminium = 15
 	}
 
 	state_category = city
 
 	history = {
+		owner = FRD
+		add_core_of = FRD
+		victory_points = { 3473 1 }
 
-		owner = LUG
-		add_core_of = LUG
 		
 		
 
-		victory_points = {
-			3473 1 # Küstrin
-		}
+
 		
 		buildings = {
 			infrastructure = 2
@@ -26,9 +25,7 @@ state = {
 		
 	}
 
-	provinces = {
-		444 537 3473 3572 6236 9387 11478 
-	}
+	provinces = { 444 3473 3572 6236 9387 11478 }
 
 	local_supplies = 0.0 
 }

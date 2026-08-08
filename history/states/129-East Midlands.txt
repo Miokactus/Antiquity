@@ -10,8 +10,13 @@ state={
 	history={
 		owner = CRL
 		add_core_of = CRL
+		victory_points = { 364 8 }
+		buildings={
+			infrastructure = 2
+			industrial_complex = 2
+		}
 	}
-	manpower=51202
+	manpower=121202
 	buildings_max_level_factor=1.000
 	state_category=city
 	local_supplies=0.000

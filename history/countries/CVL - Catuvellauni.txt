@@ -1,15 +1,15 @@
-capital = 832
+capital = 125
 
 oob = "ENG_14" 
 
 set_research_slots = 1
 
 create_country_leader = {
-    name = "Tribal Council"
-    desc = "TRIBAL_COUNCIL_DESC" 
-    picture = GFX_leader_german_generic1
-    expire = "88.5.4"
-    ideology = tribalism
+    name = "Cunobeline"
+    desc = "CUNOBELINE_DESC" 
+    picture = GFX_leader_Cunobeline_portrait
+    expire = "40.5.4"
+    ideology = chieftain
     traits = {
     }
 }

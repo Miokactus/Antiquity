@@ -6,7 +6,11 @@ state={
 	}
 	history={
 		owner = CVL
-		add_core_of = CLV
+		add_core_of = CVL
+		buildings={
+			infrastructure = 2
+			industrial_complex = 2
+		}
 	}
 	manpower=36317
 	buildings_max_level_factor=1.000

@@ -5,9 +5,9 @@ state={
 		4565 4650 10410 10449 
 	}
 	history = {
-		owner = FAL
+		owner = AAN
 	}
-	manpower = 25000
+	manpower = 96000
 	state_category = rural
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

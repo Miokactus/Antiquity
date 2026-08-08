@@ -353,4 +353,14 @@ spriteTypes = {
         texturefile = "gfx/characters/Comosicus_portrait.dds"
     }
 
+    spriteType = {
+        name = "GFX_leader_Verica_portrait"
+        texturefile = "gfx/characters/Verica.dds"
+    }
+
+    spriteType = {
+        name = "GFX_leader_Cunobeline_portrait"
+        texturefile = "gfx/characters/Cunobeline.dds"
+    }
+
 }

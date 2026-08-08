@@ -9,7 +9,7 @@ state={
 		grain = 5
 	}
 	history = {
-		owner = HHC
+		owner = AAN
 		add_core_of = HHC
 	}
 	manpower=76306
