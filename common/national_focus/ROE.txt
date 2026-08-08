@@ -2198,6 +2198,17 @@ focus_tree = {
 		prerequisite = { focus = ROE_chose_germanicus focus = ROE_recall_marcus }
 		mutually_exclusive = { }
 		completion_reward = {
+			 custom_effect_tooltip = rome_weaken_senate_tt
+			 hidden_effect = {
+				add_popularity = {
+		ideology = oligarchic
+		popularity = -0.05tip
+	}
+	add_popularity = {
+		ideology = tyranny
+		popularity = 0.05
+	}
+  }
 		}
 	}
 

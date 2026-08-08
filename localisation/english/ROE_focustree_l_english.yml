@@ -1,4 +1,5 @@
 ﻿l_english:
+
  ## LEADERS
  augustus_emperor_desc: "Hawk tuah!"
  augustus_emperor: "Imperator Caesar Augustus"
@@ -41,6 +42,56 @@
 
 
  ## FOCUS TREE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ROE_prepare_for_the_germans_desc:0 "The Germanic tribes speak of peace, but their words are hollow. We have long feared their treachery, and now the signs are clear. Rome cannot wait to be struck first - we must mobilize and strike before they do."
+ 
+ ROE_towards_militarisation_desc:0 "Our legions must be made ready. Factories, forges, and shipyards are turned toward the production of arms, even at the cost of comfort at home. Rome's strength must come before Rome's ease."
+ 
+ ROE_create_new_manufactures_desc:0 "New manufactures rise across the provinces, built to arm our soldiers and equip our fleets. Every hammer strike brings us closer to readiness."
+ 
+ ROE_woodworks_development_desc:0 "Timber feeds our shipyards and our sieges alike. New woodworks are raised in the provinces to keep the supply flowing without end."
+ 
+ ROE_open_new_mines_desc:0 "The earth holds what our legions need. New mines are opened to draw out ore and stone for the empire's growing war machine."
+ 
+ ROE_appease_the_farmers_desc:0 "A hungry army cannot fight, and a hungry people cannot be trusted to remain loyal. New farms are established to keep both fed and content."
+ 
+ ROE_question_about_the_jews_desc:0 "Tensions rise in certain corners of the empire. The Senate must decide how the Jewish communities are to be treated as war approaches."
+ 
+ ROE_war_war_desc:0 "The time for words has ended. Rome commits fully to war, turning every resource and every hand toward the coming struggle with the Germans."
+ 
+ ROE_our_duty_to_guard_desc:0 "Our northern borders lie exposed to the tribes beyond. Fortifications are raised to guard our people and hold the line."
+ 
+ ROE_demand_local_tribes_submission_desc:0 "The tribes near our borders must choose - bow to Rome or be crushed beneath her heel. We will accept no middle ground."
+ 
+ ROE_our_northern_neighbours_desc:0 "Beyond the Rhine, strange peoples watch our legions with wary eyes. Rome must decide how to answer their presence."
+ 
+ ROE_look_to_the_eastern_menace_desc:0 "While the Germans threaten from without, we cannot ignore the dangers rising in the East. Rome must prepare on every front."
+ 
+ ROE_strike_a_deal_with_armenia_desc:0 "Armenia sits at a crossroads of power. Rome extends an offer - alliance now, or conquest later."
+ 
+ ROE_dacian_expedition_desc:0 "The Dacian Kingdom grows bold beyond the Danube. An expedition is prepared to remind them of Rome's reach."
+ 
+
+
+ rome_weaken_senate_tt: "Add Popularity: Senatus Imperialis (Oligarchic) §R-5.00%§! Add Popularity: Senatus Imperialis (Tyrannical) §G+5.00%§!""
+
+
+
  ROE_augustus_death: "The Death of Augustus"
  ROE_augustus_death_desc: "Our Princeps is dead. The hopes and dreams of the roman peoples are shattered, but we are not defeated. A new emperor will rise and continue the legacy of Augustus!"
  ROE_the_new_emperor: "A New Princeps?"
