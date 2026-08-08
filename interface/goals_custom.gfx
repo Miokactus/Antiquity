@@ -1,4 +1,90 @@
 spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_focus_northern_smth"
+		texturefile = "gfx/interface/goals/northern_smth.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_jewish_question"
+		texturefile = "gfx/interface/goals/jewish_question.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_attack_dacian"
+		texturefile = "gfx/interface/goals/attack_dacian.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_attack_armenia"
+		texturefile = "gfx/interface/goals/attack_armenia.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_demande_local_tribes_submision"
+		texturefile = "gfx/interface/goals/demande_local_tribes_submision.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_guard"
+		texturefile = "gfx/interface/goals/guard.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	spriteType = {
+		name = "GFX_focus_new_dynastie"
+		texturefile = "gfx/interface/goals/new_dynastie.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_war_war"
+		texturefile = "gfx/interface/goals/war_war.png"
+	}
+
+	spriteType = {
+		name = "GFX_focus_towards_militarisation"
+		texturefile = "gfx/interface/goals/towards_militarisation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_focus_create_new_fact"
+		texturefile = "gfx/interface/goals/create_new_fact.png"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     spriteType = {
         name = "GFX_find_new_leader"
         texturefile = "gfx/interface/goals/find_new_leader.dds" 
