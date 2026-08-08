@@ -55,6 +55,34 @@ parthian_crisis = {
     visible_when_empty = no
 }
 
+parthia_instigate_revolts = {
+    allowed = {
+        always = yes
+        tag = PTH
+    }
+    visible = {
+        has_completed_focus = PTH_foment_revolts
+    }
+    priority = 80
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
+parthia_new_satraps = {
+    allowed = {
+        always = yes
+        tag = PTH
+    }
+    visible = {
+        has_completed_focus = PTH_establish_new_satraps
+    }
+    priority = 80
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
+}
+
 parthian_administration_flags = {
     allowed = {
         original_tag = PTH
@@ -78,7 +106,7 @@ parthian_council = {
             has_completed_focus = PTH_purge_the_council
         }
     }
-    priority = 30
+    priority = 50
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = yes
@@ -90,9 +118,12 @@ parthia_rome_war = {
     }
     visible = {
         original_tag = PTH
-        has_country_flag = no_peace_in_middle_east
+        OR = {
+            has_country_flag = no_peace_in_middle_east
+            has_completed_focus = PTH_christianise_the_eastern_roman_lands
+        }
     }
-    priority = 10
+    priority = 50
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = no
@@ -106,7 +137,7 @@ parthia_in_india = {
         original_tag = PTH
         has_completed_focus = PTH_intervention_in_india
     }
-    priority = 60
+    priority = 30
     picture = GFX_decision_category_picture
     icon = POL_category
     visible_when_empty = no
@@ -130,6 +161,20 @@ tuqi_kings_council = {
     icon = POL_category
     visible_when_empty = yes
     scripted_gui = xiongnu_scripted_gui_tuqi_kings
+}
+
+xiongnu_foment_unrest_in_china = {
+    allowed = {
+        always = yes
+        tag = XAI
+    }
+    visible = {
+        has_completed_focus = XAI_foment_unrest_in_china
+    }
+    priority = 20
+    picture = GFX_decision_category_picture
+    icon = POL_category
+    visible_when_empty = no
 }
 
 ## TRIBAL

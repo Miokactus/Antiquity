@@ -11,6 +11,12 @@ state={
 	history = {
 		add_core_of = BOP
 		owner = BOP
+		add_claim_by = PON
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+		}
 	}
 	manpower=290337
 	buildings_max_level_factor=1.000

@@ -148,6 +148,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				capital_scope = {
+					create_unit = {
+    					division = "name = \"Imperial Levies\" division_template = \"Imperial Levies\" start_experience_factor = 0.5"
+    					owner = PREV
+						count = 1
+					}
+				}
+				add_political_power = 20
+			}
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_an_army_of_vassals completed"
 		}
 	}
@@ -168,12 +182,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_modernise_the_land_forces completed"
+			add_ideas = PTH_modernising_the_land_forces
 		}
 	}
 
 	focus = {
 		id = PTH_integrate_the_grand_families_around_the_king
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_subjugation
 		x = 2
 		y = 2
 		cost = 10
@@ -352,6 +367,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_keep_the_status_quo completed"
+			add_ideas = PTH_keeping_the_status_quo
+			add_political_power = -20
+			add_stability = 0.05
+			add_war_support = -0.03
 		}
 	}
 
@@ -370,6 +389,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_citizen_s_militias completed"
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				add_ideas = PTH_citizens_militias
+			}
+			add_ideas = PTH_citizens_militias_parthia
 		}
 	}
 
@@ -388,6 +415,20 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_new_infantry_units completed"
+			random_owned_controlled_state = {
+				create_unit = {
+    				division = "name = \"Imperial Levies\" division_template = \"Imperial Levies\" start_experience_factor = 0.5"
+    				owner = ROOT
+					count = 2
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+    				division = "name = \"Imperial Levies\" division_template = \"Imperial Levies\" start_experience_factor = 0.5"
+    				owner = ROOT
+					count = 1
+				}
+			}
 		}
 	}
 
@@ -406,6 +447,24 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_incorporate_vassal_calvaries completed"
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				add_timed_idea = {
+					idea = PTH_integrating_subjects_armies_puppet
+					days = 120
+				}
+			}
+			add_timed_idea = {
+				idea = PTH_integrating_subjects_armies
+				days = 120
+			}
+			swap_ideas = {
+				remove_idea = PTH_modernising_the_land_forces
+				add_idea = PTH_modernising_the_land_forces_1
+			}
 		}
 	}
 
@@ -520,7 +579,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_negociations_over_armenia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_negociations_armenia
 		x = 6
 		y = 3
 		cost = 10
@@ -580,7 +639,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_intervention_in_armenia
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_attacking_armenia
 		x = 10
 		y = 3
 		cost = 10
@@ -604,7 +663,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_parthian_cultural_revolution
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PER_pan_iranianism
 		x = 12
 		y = 3
 		cost = 10
@@ -652,7 +711,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_an_army_of_levies
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PTH_an_army_of_levies
 		x = 20
 		y = 3
 		cost = 10
@@ -666,30 +725,48 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_an_army_of_levies completed"
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			add_mastery = {
+   				amount = 20
+    			folder = land
+			}
 		}
 	}
 
 	focus = {
 		id = PTH_the_support_of_every_horsemen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_horse_studs
 		x = 23
 		y = 3
 		cost = 10
 
 		prerequisite = { focus = PTH_establish_new_infantry_units }
-
+		available = {
+			has_completed_focus = PTH_incorporate_vassal_calvaries
+		}
 		ai_will_do = {
 			factor = 1
 		}
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_the_support_of_every_horsemen completed"
+			swap_ideas = {
+				remove_idea = PTH_modernising_the_land_forces_1
+				add_idea = PTH_modernising_the_land_forces_2
+			}
+			add_manpower = 28000
+			add_command_power = 15
 		}
 	}
 
 	focus = {
 		id = PTH_preeminent_use_of_cataphracts
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PTH_preeminent_use_of_cavalry
 		x = 25
 		y = 3
 		cost = 10
@@ -702,12 +779,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_preeminent_use_of_cataphracts completed"
+			add_ideas = PTH_use_of_heavy_cavalry
 		}
 	}
 
 	focus = {
 		id = PTH_reorganise_the_ministries
-		icon = GFX_goal_unknown
+		icon = GFX_focus_FIN_strengthen_military_administration
 		x = 0
 		y = 4
 		cost = 10
@@ -749,6 +827,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_interference_within_local_affairs completed"
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				add_stability = -0.05
+				add_political_power = -50
+			}
+			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 
@@ -887,6 +975,8 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_quotas completed"
+			add_command_power = 20
+			add_war_support = 0.05
 		}
 	}
 
@@ -905,12 +995,34 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_stimulate_military_production completed"
+			every_country = {
+				limit = {
+					is_subject_of = PTH
+					has_country_flag = arsacid_satrap
+				}
+				random_owned_controlled_state = {
+					add_building_construction = {
+    					type = arms_factory
+    					level = 2
+    					instant_build = yes
+					}
+					add_extra_state_shared_building_slots = 2
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+    				type = arms_factory
+    				level = 1
+    				instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
 		}
 	}
 
 	focus = {
 		id = PTH_every_man_a_soldier
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ITA_comandante_diavolo
 		x = 24
 		y = 4
 		cost = 10
@@ -924,6 +1036,10 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_every_man_a_soldier completed"
+			swap_ideas = {
+				remove_idea = PTH_modernising_the_land_forces_2
+				add_idea = PTH_modernising_the_land_forces_3
+			}
 		}
 	}
 
@@ -962,6 +1078,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_divide_to_better_conquer completed"
+			add_ideas = PTH_divide_to_better_conquer_idea
 		}
 	}
 
@@ -974,10 +1091,14 @@ focus_tree = {
 
 		prerequisite = { focus = PTH_negociate_for_the_end_of_the_raids focus = PTH_protect_the_eastern_trade_routes }
 		available = {
-			IDS = {
-				NOT = {
-					is_subject_of = PTH
+			OR = {
+				IDS = {
+					NOT = {
+						is_subject_of = PTH
+					}
 				}
+				has_completed_focus = PTH_divide_to_better_conquer
+				has_completed_focus = PTH_promote_the_parthian_language
 			}
 		}
 		ai_will_do = {
@@ -985,10 +1106,20 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_wargoal = {
-    			type = puppet_wargoal_focus
-    			target = IDS
+			if = {
+				limit = {
+					IDS = {
+						NOT = {
+							is_subject_of = PTH
+						}
+					}
+				}
+				create_wargoal = {
+    				type = puppet_wargoal_focus
+    				target = IDS
+				}
 			}
+			
 		}
 	}
 
@@ -1030,7 +1161,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_a_people_s_army
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ARG_army
 		x = 21
 		y = 5
 		cost = 10
@@ -1044,12 +1175,16 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_a_people_s_army completed"
+			swap_ideas = {
+				remove_idea = PTH_parthian_army
+				add_idea = PTH_a_peoples_army
+			}
 		}
 	}
 
 	focus = {
 		id = PTH_a_new_central_command
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_central_planning
 		x = 23
 		y = 5
 		cost = 10
@@ -1062,6 +1197,11 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_a_new_central_command completed"
+			swap_ideas = {
+				remove_idea = PTH_modernising_the_land_forces_3
+				add_idea = PTH_modernising_the_land_forces_4
+			}
+			remove_ideas = PTH_parthian_army
 		}
 	}
 
@@ -1144,6 +1284,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_decentralisation_in_conquest completed"
+			add_ideas = PTH_decentralisation_in_conquest_idea
 		}
 	}
 
@@ -1163,6 +1304,14 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_challenge_roman_hegemony completed"
+			add_opinion_modifier = {
+    			target = ROE
+    			modifier = challenging_our_hegemony
+			}
+			add_timed_idea = {
+				idea = PTH_challenge_roman_hegemony_idea
+				days = 230
+			}
 		}
 	}
 
@@ -1210,13 +1359,12 @@ focus_tree = {
 
 	focus = {
 		id = PTH_the_romans_of_the_east
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ITA_mare_nostrum
 		x = 22
 		y = 6
 		cost = 10
 
-		prerequisite = { focus = PTH_a_people_s_army }
-		prerequisite = { focus = PTH_a_new_central_command }
+		prerequisite = { focus = PTH_a_people_s_army focus = PTH_a_new_central_command }
 
 		ai_will_do = {
 			factor = 1
@@ -1263,6 +1411,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_establish_new_satraps completed"
+			custom_effect_tooltip = PTH_establish_new_satraps_tooltip
 		}
 	}
 
@@ -1281,12 +1430,13 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus PTH_foment_revolts completed"
+			custom_effect_tooltip = PTH_foment_revolts_tooltip
 		}
 	}
 
 	focus = {
 		id = PTH_memories_of_the_achaemenid
-		icon = GFX_goal_unknown
+		icon = GFX_focus_achaemid
 		x = 9
 		y = 7
 		cost = 10
@@ -1442,10 +1592,14 @@ focus_tree = {
 
 		prerequisite = { focus = PTH_intervention_in_india }
 		available = {
-			IDS = {
-				NOT = {
-					is_subject_of = PTH
+			OR = {
+				IDS = {
+					NOT = {
+						is_subject_of = PTH
+					}
 				}
+				has_completed_focus = PTH_divide_to_better_conquer
+				has_completed_focus = PTH_promote_the_parthian_language
 			}
 		}
 		ai_will_do = {
@@ -1505,11 +1659,144 @@ focus_tree = {
 
 		completion_reward = {
 			584 = {
-				add_claim_by = PTH
+				add_core_of = PTH
 			}
 			832 = {
+				add_core_of = PTH
+			}
+			585 = {
 				add_claim_by = PTH
 			}
+			if = {
+				limit = {
+					SSP = {
+						exists = yes
+					}
+				}
+				585 = {
+					add_core_of = SSP
+				}
+			}
+		}
+	}
+
+
+	focus = {
+		id = PTH_reform_the_achaemenid_empire
+		icon = GFX_focus_CZE_bohemia_crown
+		x = 10
+		y = 9
+		cost = 10
+
+		prerequisite = { focus = PTH_memories_of_the_achaemenid }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			set_cosmetic_tag = achaemenid_empire
+			custom_effect_tooltip = PTH_achaemenid_empire_first_batch
+			hidden_effect = {
+			446 = { add_claim_by = PTH }
+			447 = { add_claim_by = PTH }
+			907 = { add_claim_by = PTH }
+			457 = { add_claim_by = PTH }
+			456 = { add_claim_by = PTH }
+			452 = { add_claim_by = PTH }
+			663 = { add_claim_by = PTH }
+			450 = { add_claim_by = PTH }
+			451 = { add_claim_by = PTH }
+			
+			354 = { add_claim_by = PTH }
+			355 = { add_claim_by = PTH }
+			349 = { add_claim_by = PTH }
+			348 = { add_claim_by = PTH }
+			798 = { add_claim_by = PTH }
+			345 = { add_claim_by = PTH }
+			346 = { add_claim_by = PTH }
+			49 = { add_claim_by = PTH }
+			356 = { add_claim_by = PTH }
+			183 = { add_claim_by = PTH }
+			342 = { add_claim_by = PTH }
+			164 = { add_claim_by = PTH }
+			343 = { add_claim_by = PTH }
+			339 = { add_claim_by = PTH }
+			340 = { add_claim_by = PTH }
+			347 = { add_claim_by = PTH }
+			1023 = { add_claim_by = PTH }
+			187 = { add_claim_by = PTH }
+			797 = { add_claim_by = PTH }
+			341 = { add_claim_by = PTH }
+			184 = { add_claim_by = PTH }
+			731 = { add_claim_by = PTH }
+			211 = { add_claim_by = PTH }
+
+			765 = { add_core_of = PTH }
+			1014 = { add_core_of = PTH }
+			584 = { add_core_of = PTH }
+			832 = { add_core_of = PTH }
+			830 = { add_core_of = PTH }
+			742 = { add_core_of = PTH }
+			732 = { add_core_of = PTH }
+			405 = { add_core_of = PTH }
+			585 = { add_core_of = PTH }
+			1185 = { add_core_of = PTH }
+			554 = { add_core_of = PTH }
+			1029 = { add_core_of = PTH }
+			455 = { add_core_of = PTH }
+			1030 = { add_core_of = PTH }
+			1183 = { add_core_of = PTH }
+			453 = { add_core_of = PTH }
+			454 = { add_core_of = PTH }
+			553 = { add_core_of = PTH }
+			677 = { add_core_of = PTH }
+			350 = { add_core_of = PTH }
+			1036 = { add_core_of = PTH }
+			344 = { add_core_of = PTH }
+			799 = { add_core_of = PTH }
+			1034 = { add_core_of = PTH }
+			1000 = { add_core_of = PTH }
+			419 = { add_core_of = PTH }
+			352 = { add_core_of = PTH }
+			1204 = { add_core_of = PTH }
+			1203 = { add_core_of = PTH }
+			230 = { add_core_of = PTH }
+			800 = { add_core_of = PTH }
+			353 = { add_core_of = PTH }
+			1025 = { add_core_of = PTH }
+			1033 = { add_core_of = PTH }
+			229 = { add_core_of = PTH }
+			1026 = { add_core_of = PTH }
+			1027 = { add_core_of = PTH }
+			1024 = { add_core_of = PTH }
+			231 = { add_core_of = PTH }
+			826 = { add_core_of = PTH }
+			294 = { add_core_of = PTH }
+			1013 = { add_core_of = PTH }
+			658 = { add_core_of = PTH }
+			859 = { add_core_of = PTH }
+			1184 = { add_core_of = PTH }
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_our_place_in_history
+		icon = GFX_focus_ETH_the-italo_ethiopian_empire
+		x = 6
+		y = 9
+		cost = 10
+
+		prerequisite = { focus = PTH_foment_revolts }
+		prerequisite = { focus = PTH_establish_new_satraps }
+
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+			set_cosmetic_tag = greater_arsacid_empire
 		}
 	}
 
@@ -1518,9 +1805,24 @@ focus_tree = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	focus = {
 		id = PTH_strange_faith_from_the_west
-		icon = GFX_unknown
+		icon = GFX_focus_PTH_strange_faith_from_the_west
 		x = 13
 		y = 11
 		cost = 8
@@ -1544,7 +1846,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_promote_christianity
-		icon = GFX_unknown
+		icon = GFX_focus_PTH_promote_christianity
 		x = 12
 		y = 12
 		cost = 8
@@ -1558,13 +1860,13 @@ focus_tree = {
 			add_to_variable = { judaism_integration_stab = 0.03 }
 			add_to_variable = { judaism_integration_ws = 0.02 }
 			add_to_variable = { judaism_integration_mob = 0.05 }
-			custom_effect_tooltip = PTH_promote_christianity
+			custom_effect_tooltip = PTH_promote_christianity_effect
 		}
 	}
 
 	focus = {
 		id = PTH_appease_the_elites
-		icon = GFX_unknown
+		icon = GFX_focus_PTH_appease_the_elites
 		x = 14
 		y = 12
 		cost = 8
@@ -1583,7 +1885,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_translate_the_torrah
-		icon = GFX_unknown
+		icon = GFX_focus_generic_printing_press
 		x = 13
 		y = 13
 		cost = 7
@@ -1595,6 +1897,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { judaism_integration_stab = 0.02 }
+			add_political_power = 40
 		}
 	}
 
@@ -1613,12 +1916,13 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { judaism_integration_mob = 0.05 }
 			custom_effect_tooltip = PTH_stability_up
+			
 		}
 	}
 
 	focus = {
 		id = PTH_copies_of_the_sacred_texts
-		icon = GFX_unknown
+		icon = GFX_SOV_expand_aviation_institutes_ccp_2d_sov_compatibility
 		x = 13
 		y = 14
 		cost = 8
@@ -1630,12 +1934,17 @@ focus_tree = {
 
 		completion_reward = {
 			add_to_variable = { judaism_integration_stab = 0.03 }
+			add_timed_idea = {
+				idea = PTH_copies_of_the_sacred_texts_idea
+				days = 120
+			}
+			custom_effect_tooltip = PTH_copies_tt
 		}
 	}
 
 	focus = {
 		id = PTH_radicalise_army_leaders
-		icon = GFX_unknown
+		icon = GFX_focus_PTH_radicalise_army_leaders
 		x = 15
 		y = 14
 		cost = 8
@@ -1649,13 +1958,22 @@ focus_tree = {
 			add_to_variable = { judaism_integration_ws = 0.04 }
 			add_to_variable = { judaism_integration_mob = 0.04 }
 			add_command_power = 20
-			army_experience = 30
+			army_experience = 40
+			random_unit_leader = {
+				add_unit_leader_trait = PTH_follower_of_jesus
+			}
+			random_unit_leader = {
+				add_unit_leader_trait = PTH_follower_of_jesus
+			}
+			random_unit_leader = {
+				add_unit_leader_trait = PTH_follower_of_jesus
+			}
 		}
 	}
 
 	focus = {
 		id = PTH_convert_the_elites
-		icon = GFX_unknown
+		icon = GFX_focus_PTH_convert_the_elites
 		x = 12
 		y = 15
 		cost = 10
@@ -1699,7 +2017,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_the_first_jewish_empire
-		icon = GFX_unknown
+		icon = GFX_focus_PTH_the_first_jewish_empire
 		x = 13
 		y = 16
 		cost = 10
@@ -1737,6 +2055,215 @@ focus_tree = {
 	}
 
 	focus = {
+		id = PTH_conquer_armenia
+		icon = GFX_unknown
+		x = 11
+		y = 18
+		cost = 10
+
+		prerequisite = { focus = PTH_the_lands_of_the_romans }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			ARR = {
+				is_subject_of = PTH
+				NOT = {
+					exists = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = ARR
+			}
+			every_state = {
+				limit = {
+					is_core_of = ARR
+				}
+				add_claim_by = PTH
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_christianise_the_coast
+		icon = GFX_unknown
+		x = 9
+		y = 18
+		cost = 10
+
+		prerequisite = { focus = PTH_the_lands_of_the_romans }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			
+		}
+
+		completion_reward = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = GRH
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = MZN
+			}
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = HDT
+			}
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = GRH
+						is_core_of =  MZN
+						is_core_of = HDT
+					}
+				}
+				add_claim_by = PTH
+			}
+		}
+	}
+
+	focus = {
+		id = PTH_christianise_the_eastern_roman_lands
+		icon = GFX_unknown
+		x = 10
+		y = 19
+		cost = 10
+
+		prerequisite = { focus = PTH_christianise_the_coast }
+		prerequisite = { focus = PTH_conquer_armenia }
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			
+		}
+
+		completion_reward = {
+		custom_effect_tooltip = PTH_claim_the_east
+		hidden_effect = {
+			1036 = {
+				add_claim_by = PTH
+			}
+			1185 = {
+				add_claim_by = PTH
+			}
+			677 = {
+				add_claim_by = PTH
+			}
+			553 = {
+				add_claim_by = PTH
+			}
+			454 = {
+				add_claim_by = PTH
+			}
+			554 = {
+				add_claim_by = PTH
+			}
+			1029 = {
+				add_claim_by = PTH
+			}
+			1030 = {
+				add_claim_by = PTH
+			}
+			455 = {
+				add_claim_by = PTH
+			}
+			1183 = {
+				add_claim_by = PTH
+			}
+			453 = {
+				add_claim_by = PTH
+			}
+			446 = {
+				add_claim_by = PTH
+			}
+			447 = {
+				add_claim_by = PTH
+			}
+			907 = {
+				add_claim_by = PTH
+			}
+			457 = {
+				add_claim_by = PTH
+			}
+			456 = {
+				add_claim_by = PTH
+			}
+			452 = {
+				add_claim_by = PTH
+			}
+			183 = {
+				add_claim_by = PTH
+			}
+			345 = {
+				add_claim_by = PTH
+			}
+			799 = {
+				add_claim_by = PTH
+			}
+			344 = {
+				add_claim_by = PTH
+			}
+			349 = {
+				add_claim_by = PTH
+			}
+			348 = {
+				add_claim_by = PTH
+			}
+			798 = {
+				add_claim_by = PTH
+			}
+			355 = {
+				add_claim_by = PTH
+			}
+			354 = {
+				add_claim_by = PTH
+			}
+			356 = {
+				add_claim_by = PTH
+			}
+			347 = {
+				add_claim_by = PTH
+			}
+			49 = {
+				add_claim_by = PTH
+			}
+			1023 = {
+				add_claim_by = PTH
+			}
+			340 = {
+				add_claim_by = PTH
+			}
+			339 = {
+				add_claim_by = PTH
+			}
+			343 = {
+				add_claim_by = PTH
+			}
+			346 = {
+				add_claim_by = PTH
+			}
+			342 = {
+				add_claim_by = PTH
+			}
+			164 = {
+				add_claim_by = PTH
+			}
+			187 = {
+				add_claim_by = PTH
+			}
+		}
+		}
+	}
+
+	focus = {
 		id = PTH_the_chinese_lands
 		icon = GFX_SOV_intervention_in_china_ccp_2d_sov_compatibility
 		x = 16
@@ -1756,7 +2283,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_expeditions_into_central_india
-		icon = GFX_unknown
+		icon = GFX_focus_RAJ_all_india_forward_bloc
 		x = 14
 		y = 18
 		cost = 10
@@ -1885,7 +2412,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_all_in_china
-		icon = GFX_unknown
+		icon = GFX_focus_PRC_towards_one_china
 		x = 16
 		y = 19
 		cost = 10
@@ -1898,10 +2425,30 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			XIN = {
-				country_event = {
-					id = arsacid_event.22
-					days = 5
+			if = {
+				limit = {
+					XIN = {
+						exists = yes
+						622 = {
+							is_owned_by = XIN
+						}
+					}
+				}
+				XIN = {
+					country_event = {
+						id = arsacid_event.22
+						days = 5
+					}
+				}
+			}
+			else = {
+				622 = {
+					owner = {
+						country_event = {
+							id = arsacid_event.22
+							days = 5
+						}
+					}
 				}
 			}
 		}

@@ -50,7 +50,11 @@ country_event = {
 	option = { # Yeah!!
 		name = arsacid_event.2.a
 		ai_chance = { factor = 1 }
-		
+		add_to_war = {
+    		targeted_alliance = FROM
+    		enemy = PTH.enemies
+    		hostility_reason = asked_to_join
+		}
 	}
 }
 
@@ -73,6 +77,15 @@ country_event = {
 		name = arsacid_event.3.b
 		ai_chance = { factor = 1 }
 		trigger = { }
+		add_to_war = {
+    		targeted_alliance = FROM
+    		enemy = PTH.enemies
+    		hostility_reason = asked_to_join
+		}
+		FROM = {
+			add_war_support = -0.05
+			add_command_power = -15
+		}
 	}
 }
 
@@ -1060,6 +1073,12 @@ country_event = {
     			target = ROOT
 			}
 		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_claim_by = PTH
+		}
 	}
 }
 
@@ -1097,6 +1116,12 @@ country_event = {
     			target = ROOT
 			}
 		}
+		every_state = {
+			limit = {
+				is_core_of = ROOT
+			}
+			add_claim_by = PTH
+		}
 	}
 }
 
@@ -1129,7 +1154,18 @@ country_event = {
 		name = arsacid_event.22.b
 		ai_chance = { factor = 1 }
 		trigger = { }
-		
+		FROM = {
+			create_wargoal = {
+    			type = puppet_wargoal_focus
+    			target = ROOT
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = XIN
+			}
+			add_claim_by = PTH
+		}
 	}
 }
 
@@ -1449,6 +1485,298 @@ country_event = {
 		trigger = { }
 		add_political_power = 50
 		add_war_support = 0.05
+	}
+}
+
+# Ultimatum from the Arsacid
+country_event = {
+	id = arsacid_event.32
+	title = arsacid_event.32.t
+	desc = arsacid_event.32.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Accept
+		name = arsacid_event.32.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = arsacid_event.33
+				days = 2
+			}
+		}
+	}
+	option = { # Refuse
+		name = arsacid_event.32.b
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		FROM = {
+			country_event = {
+				id = arsacid_event.34
+				days = 2
+			}
+		}
+	}
+}
+
+# Ultimatum from the Arsacid [Yes]
+country_event = {
+	id = arsacid_event.33
+	title = arsacid_event.33.t
+	desc = arsacid_event.33.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # The Romans are no longer the master of the region!
+		name = arsacid_event.33.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		FROM = {
+			white_peace = ROOT
+		}
+		hidden_effect = {
+			1036 = {
+				transfer_state_to = PTH
+			}
+			1185 = {
+				transfer_state_to = PTH
+			}
+			677 = {
+				transfer_state_to = PTH
+			}
+			553 = {
+				transfer_state_to = PTH
+			}
+			454 = {
+				transfer_state_to = PTH
+			}
+			554 = {
+				transfer_state_to = PTH
+			}
+			1029 = {
+				transfer_state_to = PTH
+			}
+			1030 = {
+				transfer_state_to = PTH
+			}
+			455 = {
+				transfer_state_to = PTH
+			}
+			1183 = {
+				transfer_state_to = PTH
+			}
+			453 = {
+				transfer_state_to = PTH
+			}
+			446 = {
+				transfer_state_to = PTH
+			}
+			447 = {
+				transfer_state_to = PTH
+			}
+			907 = {
+				transfer_state_to = PTH
+			}
+			457 = {
+				transfer_state_to = PTH
+			}
+			456 = {
+				transfer_state_to = PTH
+			}
+			452 = {
+				transfer_state_to = PTH
+			}
+			183 = {
+				transfer_state_to = PTH
+			}
+			345 = {
+				transfer_state_to = PTH
+			}
+			799 = {
+				transfer_state_to = PTH
+			}
+			344 = {
+				transfer_state_to = PTH
+			}
+			349 = {
+				transfer_state_to = PTH
+			}
+			348 = {
+				transfer_state_to = PTH
+			}
+			798 = {
+				transfer_state_to = PTH
+			}
+			355 = {
+				transfer_state_to = PTH
+			}
+			354 = {
+				transfer_state_to = PTH
+			}
+			356 = {
+				transfer_state_to = PTH
+			}
+			347 = {
+				transfer_state_to = PTH
+			}
+			49 = {
+				transfer_state_to = PTH
+			}
+			1023 = {
+				transfer_state_to = PTH
+			}
+			340 = {
+				transfer_state_to = PTH
+			}
+			339 = {
+				transfer_state_to = PTH
+			}
+			343 = {
+				transfer_state_to = PTH
+			}
+			346 = {
+				transfer_state_to = PTH
+			}
+			342 = {
+				transfer_state_to = PTH
+			}
+			164 = {
+				transfer_state_to = PTH
+			}
+			187 = {
+				transfer_state_to = PTH
+			}
+		}
+	}
+	option = { # No
+		name = arsacid_event.33.b
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		country_event = {
+			id = arsacid_event.34
+			days = 2
+		}
+	}
+}
+
+# To Rome it is!
+country_event = {
+	id = arsacid_event.34
+	title = arsacid_event.34.t
+	desc = arsacid_event.34.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Onwards!
+		name = arsacid_event.34.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		set_country_flag = push_towards_rome
+	}
+}
+
+
+
+
+
+
+
+
+# Rome asks for a peace between Armenia and the Arsacid
+country_event = {
+	id = arsacid_event.35
+	title = arsacid_event.35.t
+	desc = arsacid_event.35.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Alright
+		name = arsacid_event.35.a
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		ARR = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = FROM
+				}
+				transfer_state_to = FROM
+			}
+			white_peace = FROM
+			FROM = {
+				add_timed_idea = {
+					idea = war_reparations
+					days = 120
+				}
+				every_allied_country = {
+					limit = {
+						has_war = yes
+					}
+					add_timed_idea = {
+						idea = war_reparations
+						days = 120
+					}
+				}
+			}
+			ROE = {
+				set_autonomy = {
+					target = ARR
+					autonomous_state = autonomy_tributary
+					end_wars = no
+					end_civil_wars = no
+				}
+				ARR = {
+					set_country_flag = is_tributary
+				}
+			}
+		}
+		ROOT = {
+			add_timed_idea = {
+				idea = war_reparations_lost
+				days = 120
+			}
+		}
+	}
+	option = { # Never!
+		name = arsacid_event.35.b
+		ai_chance = { 
+			factor = 1
+		}
+		trigger = { }
+		ROE = {
+			add_to_war = {
+    			targeted_alliance = ARR
+    			enemy = PTH
+    			hostility_reason = asked_to_join
+			}
+			add_war_support = 0.15
+			add_stability = -0.1
+		}
+		ARR = {
+			add_war_support = 0.15
+			army_experience = 50
+		}
+		PTH = {
+			add_war_support = 0.15
+			add_stability = -0.1
+		}
 	}
 }
 

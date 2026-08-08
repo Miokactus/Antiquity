@@ -1,0 +1,76 @@
+﻿l_english:
+#Alignment Map Mode
+##GENERAL
+MAPMODE_SPHERE_OF_INFLUENCE_MAP_MODE:0 "§YSpheres of Influences§! Map Mode"
+MAPMODE_SPHERE_OF_INFLUENCE_MAP_MODE_NAME:0 "Spheres of Influence"
+MAPMODE_SPHERE_OF_INFLUENCE_MAP_MODE_DESCRIPTION:0 "Shows alignement of a country toward a Great Power. Being in a sphere doesn't necesarely mean that those countries are gonna ally the Great Power..."
+sphere_of_influence_map_mode_tooltip:0 "[From.Controller.alignment_map_mode_scripted_loc]"
+sphere_of_influence_map_mode_tooltip_delayed:0 "[From.Controller.alignment_map_mode_delayed_scripted_loc]"
+
+##LEADERS
+# Leader General
+SOI_alignment_map_mode_leader_tooltip:0 "[From.Controller.country_alignment_leader_title]"
+SOI_alignment_map_mode_leader_delayed_tooltip:0 "§Y[From.Controller.GetNameWithFlag]§! is the leader of the [From.Controller.country_alignment_leader_sphere]"
+# Leader Title
+FRA_master_of_the_seas_title:0 "§RMaster of the Seas§!"
+#Leader Sphere
+FRA_master_of_the_seas_sphere:0 "§REnglish Sphere§!"
+
+##PUPPETS
+# Puppet General
+SOI_alignment_map_mode_puppet_tooltip:0 "[From.Controller.SOI_country_alignment_puppet_title]"
+SOI_alignment_map_mode_puppet_delayed_tooltip:0 "§Y[From.Controller.GetNameWithFlag]§! is a [From.Controller.SOI_country_alignment_puppet_status] [From.Controller.SOI_country_alignment_puppet_sphere]"
+# Puppet Title and Status
+ENG_protectorate_dominion_title:0 "§RProtectorate/Dominion of the British Empire§!"
+SOI_country_alignment_puppet_status_ENG:0 "Protectorate or Dominion from §Y[ROE.GetNameWithFlag]§!, as such, this country is aligned with the"
+
+# Puppet Sphere
+ENG_protectorate_dominion_sphere:0 "§REnglish Sphere§!"
+
+##FACTIONS
+# Factions General
+SOI_alignment_map_mode_faction_members_tooltip:0 "[From.Controller.SOI_country_alignment_faction_member_title]"
+SOI_alignment_map_mode_faction_delayed_tooltip:0 "§Y[From.Controller.GetNameWithFlag]§! is a member of [From.Controller.SOI_country_alignment_faction_member_status] [From.Controller.SOI_country_alignment_faction_member_sphere]"
+# Factions Member Status
+SOI_country_alignment_faction_member_status_ENG:0 "§RAllies§!, An alliance of states against the countries that threaten the democratic values, as such, they are aligned with the"
+# Factions Member Title
+ENG_faction_member_title:0 "§RMember of the [ROE.GetFactionName]§!"
+# Factions Member Status
+ENG_faction_member_sphere:0 "§REnglish Sphere§!"
+
+##SPECIAL STATUS
+# Special General
+SOI_alignment_map_mode_special_status_tooltip:0 "[From.Controller.SOI_country_alignment_special_status_title]"
+SOI_alignment_map_mode_special_status_delayed_tooltip:0 "§Y[From.Controller.GetNameWithFlag]§! is currently seeking closer ties with the [From.Controller.SOI_country_alignment_special_status_sphere], because of §Y[From.Controller.SOI_country_alignment_special_member_status]§!. Although there isn't an explicit military alliance established, they have built increasingly strong ties through various treaties and implicit agreements."
+# Special Title
+ENG_special_status_title:0 "§RUnder the British Crown§!"
+# Special Sphere
+ENG_special_status_sphere:0 "§REnglish Sphere§!"
+#Special Status related to England
+SOI_country_alignment_special_member_status_ENG_POL:0 "the looming threat of a Russian or German invasion"
+SOI_country_alignment_special_member_status_ENG_FRA:0 "the threat of the German and Italian fascists regime"
+
+##NO SPHERE
+SOI_alignment_map_mode_nosphere_tooltip:0 "§gNo Sphere§!"
+SOI_alignment_map_mode_nosphere_delayed_tooltip:0 "§Y[From.Controller.GetNameWithFlag]§! doesn't belong in any sphere of influence, at least for now..."
+
+#ICONS TOOLTIP
+#Icons Tooltip General
+leader_icon_tooltip:0 "[From.Controller.leader_icon_tooltip_hovering] is a [From.Controller.SOI_leader_icon_major_or_not]\n The [From.Controller.SOI_sphere_name] grants the following bonus: [From.Controller.SOI_list_of_bonus_sphere]\n\n[From.Controller.SOI_leader_trade_bonus]\n§g-----------------------------------§!\n[From.Controller.SOI_leader_proress_next_stage]"
+SOI_leader_icon_yes_major:0 "§OMAJOR POWER§!"
+SOI_leader_icon_no_major:0 "§YREGIONAL POWER§!"
+SOI_leader_icon_superpower:0 "§RSUPERPOWER§!"
+# Icons Tooltip Hovering
+leader_icon_tooltip_hovering_ENG:0 "§Y[ROE.GetNameWithFlag]§!"
+# Icons Tooltip Bonus Granting
+SOI_leader_icon_bonus_gb:0 "\n\n§YLeader:§!\n£civ_factory_output  Factory Output: §G+15%§!\n§YPuppet of [ROE.GetNameWithFlag]:§!\n£civ_factory_output  Factory Output: §G+10%§!\n§YIn faction with [ROE.GetNameWithFlag]:§!\n£civ_factory_output  Factory Output: §G+5%§!\n§YIn close ties with [ENG.GetNameWithFlag]:§!\n£civ_factory_output  Factory Output: §G+5%§!"
+#Sphere Name
+SOI_sphere_name_gb:0 "§RBritish Sphere§!"
+##SPHERE HIDDEN IDEAS
+# Leaders
+GREATBRITAIN_leader:0 "§YLeader of the§! §RBritish Sphere§!"
+
+# Trade Bonus
+SOI_sphere_trade_bonus_gb:0 "Additionally, every country in the sphere gains a §Y10%§! §Gtrade cost reduction§! AND §Gtrade opinion§! with §Y[ROE.GetNameWithFlag]§!"
+# Requirement to go to next stage
+SOI_leader_proress_next_stage_MAJOR_SUPERPOWER:0 "To become a §RSUPERPOWER§!, we need:\n- To be elligible as a Superpower (only §Y[FRA.GetNameWithFlag], [ROE.GetNameWithFlag], [SOV.GetNameWithFlag], [GER.GetNameWithFlag], [ITA.GetNameWithFlag], [JAP.GetNameWithFlag]§!  and §Y[USA.GetNameWithFlag]§! can become one)\n- Is considered a winner of §RWorld War II§!\n- Date is after the §Y1st of January, 1942§!\n- The [From.Controller.SOI_sphere_name] is present at least on §Ythree§! continents"

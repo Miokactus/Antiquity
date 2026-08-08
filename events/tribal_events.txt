@@ -106,9 +106,9 @@ country_event = {
 		name = tribal.4.a
 		ai_chance = { factor = 1 }
 		create_wargoal = {
-    		type = puppet_wargoal_focus
+    		type = tribute_war_goal
     		target = FROM
-			expire = 20
+			expire = 40
 		}
 	}
 	option = { ## Back down

@@ -207,7 +207,13 @@ scripted_diplomatic_actions = {
 		}
 		
 		reject_effect = {
-			
+			ROOT = {
+				create_wargoal = {
+					type = tribute_war_goal
+					target = PREV
+					expire = 30
+				}
+			}
 		}
 		
 		send_scripted_gui = pd_offer_peace_deal
@@ -221,9 +227,8 @@ scripted_diplomatic_actions = {
 		receive_scripted_gui = pd_offer_peace_deal_receive
 
 		ai_desire = {
-			base = -100
+			base = -20
 			modifier = {
-				
 			}
 		}
 		
@@ -726,7 +731,48 @@ scripted_diplomatic_actions = {
     					relation = military_access
     					active = yes
 					}
-					add_ideas = is_in_sphere_of_@ROOT
+					if = {
+						limit = {
+							has_country_flag = influenced_by_ROE
+						}
+						add_ideas = is_in_sphere_of_ROE
+						add_to_variable = { var:global.rome_sphere_people = 1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_XIN
+						}
+						add_ideas = is_in_sphere_of_XIN
+						add_to_variable = { var:global.xin_sphere_people = 1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_PTH
+						}
+						add_ideas = is_in_sphere_of_PTH
+						add_to_variable = { var:global.parthia_sphere_people = 1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_CRS
+						}
+						add_ideas = is_in_sphere_of_CRS
+						add_to_variable = { var:global.crs_sphere_people = 1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_XAI
+						}
+						add_ideas = is_in_sphere_of_XAI
+						add_to_variable = { var:global.xai_sphere_people = 1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_TTH
+						}
+						add_ideas = is_in_sphere_of_TTH
+						add_to_variable = { var:global.tth_sphere_people = 1 }
+					}
             	}
 				ROOT = {
             	    add_political_power = 50
@@ -756,36 +802,42 @@ scripted_diplomatic_actions = {
 							has_country_flag = influenced_by_ROE
 						}
 						add_ideas = is_in_sphere_of_ROE
+						add_to_variable = { var:global.rome_sphere_people = 1 }
 					}
 					else_if = {
 						limit = {
 							has_country_flag = influenced_by_XIN
 						}
 						add_ideas = is_in_sphere_of_XIN
+						add_to_variable = { var:global.xin_sphere_people = 1 }
 					}
 					else_if = {
 						limit = {
 							has_country_flag = influenced_by_PTH
 						}
 						add_ideas = is_in_sphere_of_PTH
+						add_to_variable = { var:global.parthia_sphere_people = 1 }
 					}
 					else_if = {
 						limit = {
 							has_country_flag = influenced_by_CRS
 						}
 						add_ideas = is_in_sphere_of_CRS
+						add_to_variable = { var:global.crs_sphere_people = 1 }
 					}
 					else_if = {
 						limit = {
 							has_country_flag = influenced_by_XAI
 						}
 						add_ideas = is_in_sphere_of_XAI
+						add_to_variable = { var:global.xai_sphere_people = 1 }
 					}
 					else_if = {
 						limit = {
 							has_country_flag = influenced_by_TTH
 						}
 						add_ideas = is_in_sphere_of_TTH
+						add_to_variable = { var:global.tth_sphere_people = 1 }
 					}
             	}
             	ROOT = {
@@ -922,6 +974,9 @@ scripted_diplomatic_actions = {
 					has_country_flag = influenced_by_TTH
 					has_country_flag = influenced_by_PTH
 				}
+				NOT = {
+					has_country_flag = is_sphere_leader
+				}
 			}
 			FROM = {
 				has_country_flag = is_sphere_leader
@@ -940,9 +995,9 @@ scripted_diplomatic_actions = {
 			}
 		}
 
-		requires_acceptance = yes
+		requires_acceptance = no
 		show_acceptance_on_action_button = yes # set to no if acceptance shouldn't be displayed on the action button
-		cost = 50
+		cost = 25
 
 		icon = 1
 
@@ -957,6 +1012,42 @@ scripted_diplomatic_actions = {
     					country = ROOT
     					relation = military_access
     					active = no
+					}
+					if = {
+						limit = {
+							has_country_flag = influenced_by_ROE
+						}
+						add_to_variable = { var:global.rome_sphere_people = -1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_PTH
+						}
+						add_to_variable = { var:global.parthia_sphere_people = -1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_XIN
+						}
+						add_to_variable = { var:global.xin_sphere_people = -1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_XAI
+						}
+						add_to_variable = { var:global.xai_sphere_people = -1 }
+					}
+					else_if = {
+						limit = {
+							has_country_flag = influenced_by_CRS
+						}
+						add_to_variable = { var:global.crs_sphere_people = -1 }
+					}
+					else = {
+						limit = {
+							has_country_flag = influenced_by_TTH
+						}
+						add_to_variable = { var:global.tth_sphere_people = -1 }
 					}
             	}
 				ROOT = {
@@ -985,22 +1076,41 @@ scripted_diplomatic_actions = {
 		receive_scripted_gui = pd_offer_peace_deal_receive
 
 		ai_desire = {
-			base = -500
+			base = 0
 			modifier = {
 				add = 150
-				is_major = yes
+				ROOT = {
+					is_major = yes
+				}
 			}
 			modifier = {
-				add = 50
-				set_temp_variable = { str = THIS.enemies_strength_ratio@ROOT }
-				multiply_temp_variable = { str = 50 }
-				round_temp_variable = str
-				subtract_from_temp_variable = { str = -50 }
-				clamp_temp_variable = {
-					var = str
-					max = 1000
+				add = -500
+				ROOT = {
+					is_subject = yes
 				}
-				add = var:str
+			}
+			modifier = {
+				add = 1500
+				ROOT = {
+				OR = {
+					AND = {
+                    	has_country_flag = influenced_by_ROE
+                    	has_country_flag = influenced_by_PTH
+					}
+					AND = {
+                    	has_country_flag = influenced_by_ROE
+                    	has_country_flag = influenced_by_CRS
+					}
+                    AND = {
+						has_country_flag = influenced_by_XIN
+                    	has_country_flag = influenced_by_XAI
+					}
+					AND = {
+						has_country_flag = influenced_by_PTH
+                    	has_country_flag = influenced_by_XAI
+					}
+                }
+				}
 			}
 
 			

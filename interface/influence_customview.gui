@@ -11,7 +11,7 @@ guiTypes = {
 		clipping = no #TODO SEA remove it. Added for displaying coal
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
-		
+
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window_1b_border"
@@ -25,72 +25,128 @@ guiTypes = {
 		}	
 
 		instantTextboxType = {
-			name = "trade_title"
+			name = "influence_title"
 			position = { x = 45 y = 8 }
 			textureFile = ""
 			font = "hoi_36header"
 			borderSize = {x = 0 y = 0}
-			text = "TRADE_TRADE"
+			text = "Influence"
 			maxWidth = 440
 			maxHeight = 20
 			format = left
-		}				
-
-		containerWindowType = {
-			name = "trade_back"
-			size = { width = 660 height = 400 }
-			position = { x = 8 y = 43 }
-
-			background = {
-				name = "trade_top"
-				quadTextureSprite = "GFX_tiled_bg"
-			}
-
-			background = {
-				name = "Background"
-				quadTextureSprite ="GFX_tiled_generic_overlay_bg1_small"
-			}
 		}
 
-		buttonType = {
-			name = "sort_country"
-			position = {x=17 y=440}
-			size = { x = 170 y = 23 }
-			quadTextureSprite = "GFX_tiling_sort_button"
-			font = "hoi_16mbs"
-			buttontext = "TRADE_SORT_COUNTRY"
-			clicksound = click_default
+		instantTextboxType = {
+			name = "sphere_of_influence"
+			position = { x = 50 y = 50 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "[SphereMembership]"
+			maxWidth = 550
+			maxHeight = 20
+			format = center
 		}
 
-		buttonType = {
-			name = "sort_export"
-			position = {x=187 y=440}
-			size = { x = 170 y = 23 }
-			quadTextureSprite = "GFX_tiling_sort_button"
-			font = "hoi_16mbs"
-			buttontext = "TRADE_SORT_EXPORT"
-			clicksound = click_default
+		instantTextboxType = {
+			name = "influence_number"
+			position = { x = 50 y = 500 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "[AllianceNumber]"
+			maxWidth = 550
+			maxHeight = 20
+			format = center
 		}
 
-		buttonType = {
-			name = "sort_request"
-			position = {x=357 y=440}
-			size = { x = 170 y = 23 }
-			quadTextureSprite = "GFX_tiling_sort_button"
-			font = "hoi_16mbs"
-			buttontext = "TRADE_SORT_REQUEST"
-			clicksound = click_default
+		iconType = {
+			name ="influence_gui_frame1"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 275 y = 150 }
+		}
+		iconType = {
+			name = "influence_gui_flag1"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 280 y = 152 }
+			Orientation = "UPPER_LEFT"
 		}
 
-		buttonType = {
-			name = "sort_convoys"
-			position = {x=527 y=440}
-			size = { x = 138 y = 23 }
-			quadTextureSprite = "GFX_tiling_sort_button"
-			font = "hoi_16mbs"
-			buttontext = "TRADE_SORT_CONVOYS"
-			clicksound = click_default
-		}	
+		iconType = {
+			name ="influence_gui_frame2"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 25 y = 220 }
+		}
+		iconType = {
+			name = "influence_gui_flag2"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 30 y = 222 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="influence_gui_frame3"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 130 y = 220 }
+		}
+		iconType = {
+			name = "influence_gui_flag3"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 135 y = 222 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="influence_gui_frame4"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 235 y = 220 }
+		}
+		iconType = {
+			name = "influence_gui_flag4"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 240 y = 222 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="influence_gui_frame5"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 340 y = 220 }
+		}
+		iconType = {
+			name = "influence_gui_flag5"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 345 y = 222 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="influence_gui_frame6"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 445 y = 220 }
+		}
+		iconType = {
+			name = "influence_gui_flag6"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 450 y = 222 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name ="influence_gui_frame7"
+			spriteType = "GFX_large_flag_frame"
+			position = { x = 550 y = 220 }
+		}
+		iconType = {
+			name = "influence_gui_flag7"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 555 y = 222 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+
+		
 		
 		containerWindowType = {
 			name = "filters"
@@ -125,29 +181,7 @@ guiTypes = {
 			}
 		}
 		
-		containerWindowType = {
-			name = "trade"
-			position = { x = 15 y = 462 }	
-			size = { width = 674 height = 100%% }
-			verticalScrollbar = "right_vertical_slider"
-			scroll_wheel_factor = 45
-			smooth_scrolling = yes
-			margin = {top = 1 bottom = 13 }			
-				
-			background = {
-				name = "Background"		
-				quadTextureSprite ="GFX_tiled_window_transparent"
-			}
-			
-			gridBoxType = {
-				name = "trade_grid"
-				position = { x = 0 y = 0 }
-				size = { width = 100%% height = 100%% }
-				slotsize = { width = 511 height = 45 }
-				max_slots_horizontal = 1
-				format = "UPPER_LEFT"
-			}
-		}
+		
 		
 		buttonType = {
 			name = "close_button"

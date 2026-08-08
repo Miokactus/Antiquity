@@ -248,11 +248,310 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = InfluenceGetSphereName
+
+	text = {
+		trigger = {
+            FROM = {
+                any_country = {
+                    has_country_flag = is_sphere_leader
+                }
+            }
+		}
+		localization_key = sphere_name_influence_sphere_tt
+	}
+}
+
+defined_text = {
+	name = SphereMembership
+
+	text = {
+		trigger = {
+            FROM = {
+                has_country_flag = is_sphere_leader
+            }
+		}
+		localization_key = influenceview_tt_sphere_leader
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_ROE
+            }
+		}
+		localization_key = influence_map_mode_tt_rome_not_puppet
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_PTH
+            }
+		}
+		localization_key = influence_map_mode_tt_parthia_not_puppet
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_XIN
+            }
+		}
+		localization_key = influence_map_mode_tt_china_not_puppet
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_XAI
+            }
+		}
+		localization_key = influence_map_mode_tt_xiongnu_not_puppet
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_CRS
+            }
+		}
+		localization_key = influence_map_mode_tt_cherusci_not_puppet
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_TTH
+            }
+		}
+		localization_key = influence_map_mode_tt_teotihuacan_not_puppet
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = influence_map_mode_tt_not_influenced
+	}
+}
+
+
+defined_text = {
+	name = SphereFlagLeader
+
+	text = {
+		trigger = {
+            OR = {
+                has_country_flag = influenced_by_ROE
+                tag = ROE
+            }
+		}
+		localization_key = "[ROE.GetFlag]"
+	}
+    text = {
+		trigger = {
+            OR = {
+                has_country_flag = influenced_by_PTH
+                tag = PTH
+            }
+		}
+		localization_key = "[PTH.GetFlag]"
+	}
+    text = {
+		trigger = {
+            OR = {
+                has_country_flag = influenced_by_XAI
+                tag = XAI
+            }
+		}
+		localization_key = "[XAI.GetFlag]"
+	}
+    text = {
+		trigger = {
+            OR = {
+                has_country_flag = influenced_by_XIN
+                tag = XIN
+            }
+		}
+		localization_key = "[XIN.GetFlag]"
+	}
+    text = {
+		trigger = {
+            OR = {
+                has_country_flag = influenced_by_CRS
+                tag = CRS
+            }
+		}
+		localization_key = "[CRS.GetFlag]"
+	}
+    text = {
+		trigger = {
+            OR = {
+                has_country_flag = influenced_by_TTH
+                tag = TTH
+            }
+		}
+		localization_key = "[TTH.GetFlag]"
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = influence_map_mode_tt_not_influenced
+	}
+}
+
+defined_text = {
+    name = SphereFlags1
+
+    text = {
+		trigger = {
+            any_country = {
+                has_country_flag = influenced_by_ROE
+            }
+		}
+		localization_key = "[]"
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_PTH
+            }
+		}
+		localization_key = "[From.GetFlag]"
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_XIN
+            }
+		}
+		localization_key = "[From.GetFlag]"
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_XAI
+            }
+		}
+		localization_key = "[From.GetFlag]"
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_CRS
+            }
+		}
+		localization_key = "[From.GetFlag]"
+	}
+    text = {
+		trigger = {
+            FROM = {
+                has_country_flag = influenced_by_TTH
+            }
+		}
+		localization_key = "[From.GetFlag]"
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = influence_map_mode_tt_not_influenced
+	}
+}
+
+defined_text = {
+    name = AllianceNumber
+
+    text = {
+		trigger = {
+            FROM = {
+                OR = {
+                    has_country_flag = influenced_by_ROE
+                    tag = ROE
+                }
+            }
+		}
+		localization_key = roman_people_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                OR = {
+                    has_country_flag = influenced_by_PTH
+                    tag = PTH
+                }
+            }
+		}
+		localization_key = parthian_people_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                OR = {
+                    has_country_flag = influenced_by_XIN
+                    tag = XIN
+                }
+            }
+		}
+		localization_key = xin_people_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                OR = {
+                    has_country_flag = influenced_by_XAI
+                    tag = XAI
+                }
+            }
+		}
+		localization_key = xai_people_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                OR = {
+                    has_country_flag = influenced_by_CRS
+                    tag = CRS
+                }
+            }
+		}
+		localization_key = crs_people_tt
+	}
+    text = {
+		trigger = {
+            FROM = {
+                OR = {
+                    has_country_flag = influenced_by_TTH
+                    tag = TTH
+                }
+            }
+		}
+		localization_key = tth_people_tt
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = influence_map_mode_tt_not_influenced
+	}
+}
+
+
+
+
+
+
 
 # Influence Map Mode
 defined_text = {
 	name = GetInfluenceMapModeTooltip
 
+    text = {
+		trigger = {
+            FROM = {
+                owner = {
+                    has_country_flag = is_sphere_leader
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_sphere_leader
+	}
 	text = {
 		trigger = {
             FROM = {
@@ -261,6 +560,9 @@ defined_text = {
                         has_country_flag = influenced_by_ROE
                         has_country_flag = influenced_by_PTH
                         has_country_flag = influenced_by_XIN
+                        has_country_flag = influenced_by_XAI
+                        has_country_flag = influenced_by_CRS
+                        has_country_flag = influenced_by_TTH
                     }
                 }
             }
@@ -355,6 +657,84 @@ defined_text = {
             }
 		}
 		localization_key = influence_map_mode_tt_china_not_puppet
+	}
+    text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_CRS
+                        is_subject_of = CRS
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_cherusci_puppet
+	}
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_CRS
+                        NOT = { is_subject_of = CRS }
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_cherusci_not_puppet
+	}
+    text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_XAI
+                        is_subject_of = XAI
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_xiongnu_puppet
+	}
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_XAI
+                        NOT = { is_subject_of = XAI }
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_xiongnu_not_puppet
+	}
+    text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_TTH
+                        is_subject_of = TTH
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_teotihuacan_puppet
+	}
+	text = {
+		trigger = {
+			FROM = {
+                owner = {
+			        AND = {
+                        has_country_flag = influenced_by_TTH
+                        NOT = { is_subject_of = TTH }
+                    }
+                }
+            }
+		}
+		localization_key = influence_map_mode_tt_teotihuacan_not_puppet
 	}
 	text = {
 		trigger = {

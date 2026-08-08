@@ -2,6 +2,10 @@ nyu_puppet_han = {
 	color = rgb { 255 191 0 }
 }
 
+achaemenid_empire = {
+	color = rgb { 175 146 0 }
+}
+
 
 
 

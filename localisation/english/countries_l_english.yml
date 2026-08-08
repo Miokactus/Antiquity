@@ -29,12 +29,32 @@
  ADI_DEF: "the Kingdom of Adiabene"
  ADI_ADJ: "Adiabene"
 
+ SSA: "Armenian Kingdom"
+ SSA_DEF: "the Armenian Kingdom"
+ SSA_ADJ: "Armenian"
+
+ SSY: "Kingdom of Syria"
+ SSY_DEF: "the Kingdom of Syria"
+ SSY_ADJ: "Syrian"
+
+ SSE: "Arsacid Kingdom of Egypt"
+ SSE_DEF: "the Arsacid Kingdom of Egypt"
+ SSE_ADJ: "Egyptian"
+
+ SSP: "Kingdom of the Amyrgians"
+ SSP_DEF: "the Kingdom of the Amyrgians"
+ SSP_ADJ: "Amyrgians"
+
+ SSN: "Kingdom of the Eastern Greeks"
+ SSN_DEF: "the Kingdom of the Eastern Greeks"
+ SSN_ADJ: "Greeks"
+
 
 ## ROMAN EMPIRE NAMES ##
 
  ROE: "Roman Empire"
  ROE_DEF: "the Central Government of the Roman Empire"
- ROE_ADJ: "Romans"
+ ROE_ADJ: "Roman"
  ##
  ROE_fascism: "Magnificient Roman Empire"
  ROE_fascism_DEF: "the Magnificient Roman Empire"

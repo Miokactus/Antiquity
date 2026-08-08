@@ -50,6 +50,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROE_augustus_death }
 		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
 		}
 	}
 
@@ -72,6 +74,50 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_new_emperor }
 		mutually_exclusive = { focus = ROE_reject_the_will }
 		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_war_support = 0.05
+			hidden_effect = {
+				42 = {
+					set_state_flag = has_mutinies
+				}
+				28 = {
+					set_state_flag = has_mutinies
+				}
+				1022 = {
+					set_state_flag = has_mutinies
+				}
+				1017 = {
+					set_state_flag = has_mutinies
+				}
+				845 = {
+					set_state_flag = has_mutinies
+				}
+				3 = {
+					set_state_flag = has_mutinies
+				}
+				8 = {
+					set_state_flag = has_mutinies
+				}
+				980 = {
+					set_state_flag = has_mutinies
+				}
+				52 = {
+					set_state_flag = has_mutinies
+				}
+				848 = {
+					set_state_flag = has_mutinies
+				}
+				53 = {
+					set_state_flag = has_mutinies
+				}
+				151 = {
+					set_state_flag = has_mutinies
+				}
+				17 = {
+					set_state_flag = has_mutinies
+				}
+			}
 		}
 		ai_will_do = {
 			base = 5
@@ -85,7 +131,7 @@ focus_tree = {
 	#The Senate's Confirmation
 	focus = {
 		id = ROE_the_senate_confirmation
-		icon = GFX
+		icon = GFX_focus_GER_strengthen_the_proletarian_international
 		relative_position_id = ROE_follow_augustus_will
 		x = 0
 		y = 1
@@ -142,6 +188,24 @@ focus_tree = {
 		prerequisite = { focus = ROE_hail_augustus }
 		mutually_exclusive = { }
 		completion_reward = {
+			set_country_flag = ROE_dealt_with_the_mutinies
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_owned_by = ROE
+						has_state_flag = has_mutinies
+					}
+					remove_state_flag = has_mutinies
+					add_state_flag = unstable_order
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				add = 1500
+			}
 		}
 	}
 
@@ -209,6 +273,21 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_burden_of_war focus = ROE_all_hail_in_germania }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_war_support = 0.1
+			add_political_power = 25
+			army_experience = 50
+			every_neighbor_country = {
+				limit = {
+					NOT = {
+						is_ally_of = ROOT
+					}
+				}
+				add_opinion_modifier = {
+    				target = ROE
+    				modifier = show_of_force
+				}
+				add_war_support = 0.05
+			}
 		}
 	}
 
@@ -256,6 +335,22 @@ focus_tree = {
 			add_timed_idea = {
 				idea = ROE_army_morale_boost
 				days = 180
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_owned_by = ROE
+						has_state_flag = unstable_order
+					}
+					remove_state_flag = unstable_order
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				add = 1500
 			}
 		}
 	}
@@ -375,7 +470,7 @@ focus_tree = {
 	#Purge Opposants
 	focus = {
 		id = ROE_purge_opposants
-		icon = GFX
+		icon = GFX_focus_SIA_the_purge
 		relative_position_id = ROE_follow_augustus_will
 		x = -2
 		y = 2
@@ -513,6 +608,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_legitimise_the_reign }
 		mutually_exclusive = { }
 		completion_reward = {
+			
 		}
 	}
 
@@ -610,6 +706,10 @@ focus_tree = {
 		prerequisite = { focus = ROE_our_mining_problem }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_timed_idea = {
+				idea = ROE_empire_need_money
+				days = 365
+			}
 		}
 	}
 
@@ -629,6 +729,20 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_empire_needs_for_money }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_timed_idea = {
+				idea = ROE_roman_benefits
+				days = 220
+			}
+			every_country = {
+				limit = {
+					is_subject_of = ROE
+				}
+				add_political_power = 50
+				add_timed_idea = {
+					idea = ROE_roman_burden
+					days = 220
+				}
+			}
 		}
 	}
 
@@ -832,7 +946,16 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_new_emperor }
 		mutually_exclusive = { focus = ROE_follow_augustus_will }
 		completion_reward = {
-			
+			add_stability = -0.1
+			add_political_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 		ai_will_do = {
 			base = 5
@@ -860,7 +983,14 @@ focus_tree = {
 		prerequisite = { focus = ROE_reject_the_will }
 		mutually_exclusive = { focus = ROE_put_an_end_to_the_emperors }
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -888,7 +1018,8 @@ focus_tree = {
 		prerequisite = { focus = ROE_reject_the_will }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 
@@ -912,6 +1043,8 @@ focus_tree = {
 		prerequisite = { focus = ROE_reject_the_will }
 		mutually_exclusive = { focus = ROE_a_new_dynasty }
 		completion_reward = {
+			add_war_support = 0.05
+			add_stability = -0.05
 		}
 	}
 
@@ -1885,7 +2018,7 @@ focus_tree = {
 	#Negociate for Armenia
 	focus = {
 		id = ROE_negociate_for_armenia
-		icon = GFX
+		icon = GFX_focus_negociations_armenia
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -3
 		y = 14
@@ -2736,7 +2869,7 @@ focus_tree = {
 	#Strike a Deal with Armenia
 	focus = {
 		id = ROE_strike_a_deal_with_armenia
-		icon = GFX
+		icon = GFX_focus_negociations_armenia
 		relative_position_id = ROE_a_new_dynasty
 		x = 3
 		y = 11
@@ -2994,7 +3127,7 @@ focus_tree = {
 		id = ROE_reform_the_imperial_army
 		icon = GFX
 		relative_position_id = ROE_augustus_death
-		x = 16
+		x = 18
 		y = 0
 		cost = 8
 		ai_will_do = {

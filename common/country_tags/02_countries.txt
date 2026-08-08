@@ -50,6 +50,12 @@ PPI = "countries/Middle_Eastern.txt" #Persis
 ADI = "countries/Middle_Eastern.txt" #Adiabene
 CHA = "countries/Middle_Eastern.txt" #Characene
 
+SSY = "countries/Middle_Eastern.txt"
+SSA = "countries/Middle_Eastern.txt"
+SSE = "countries/Middle_Eastern.txt"
+SSP = "countries/Middle_Eastern.txt"
+SSN = "countries/Middle_Eastern.txt"
+
 
 ## ROMAN PROVINCES [FLAGS NEEDED]
 RR1 = "countries/Roman_Provinces.txt"

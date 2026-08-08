@@ -1,0 +1,24 @@
+state={
+	id=1203
+	name="STATE_1203"
+	provinces={
+		1467 1539 1610 9715 11674 11704 
+	}
+	history={
+		owner = ARR
+		add_core_of = ARR
+		add_core_of = CCA
+		victory_points = {
+			11674 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			#
+		}
+	}
+	manpower=48500
+	state_category = rural
+	buildings_max_level_factor=1
+	local_supplies=0
+}

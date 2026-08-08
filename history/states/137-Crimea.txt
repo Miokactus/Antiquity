@@ -1,65 +1,23 @@
-state = {
-	id = 137
-	name = "STATE_137"
-	manpower = 206160
-	
-	state_category = city
-
+state={
+	id=137
+	name="STATE_137"
+	provinces={
+		705 3722 6704 6724 9677 9680 9718 11649 
+	}
 	history = {
-
 		owner = BOP
 		add_core_of = BOP
-
+		add_claim_by = PON
 		victory_points = {
-			3686 4 # Sevastopol
+			6724 3
 		}
-
-		victory_points = {
-			9680 12 # Kerch
-		}
-
-		victory_points = {
-			6704 1 # Yalta
-		}
-
-		victory_points = {
-			705 3 # Simferopol
-		}
-
 		buildings = {
-
 			infrastructure = 2
-			dockyard = 1
-			#
-
-			3686 = {
-				naval_base = 10
-				coastal_bunker = 3
-			}
-
-			9680 = {
-				naval_base = 1
-				coastal_bunker = 1
-			}
-			
-		}
-
-		
-		
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				3686 = {
-					# 1 # Sevastopol Naval Facilties
-				}
-			}
+			arms_factory = 1
 		}
 	}
-
-	provinces = {
-		705 3686 3722 6704 6724 9677 9680 9718 11649 
-	}
-
-	local_supplies = 10.0 
+	manpower=40160
+	buildings_max_level_factor=1
+	state_category=large_town
+	local_supplies=10
 }

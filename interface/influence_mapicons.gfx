@@ -1,0 +1,14 @@
+spriteTypes = {	
+	####MAPMODE ICONS###
+	### INSERT A MAP ICON
+    ###ICONS LEADERS###
+	spriteType = {
+		name = "GFX_soi_leader_unknown"
+		texturefile = "gfx/interface/sphere_of_influence/leader/soi_leader_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SOI_GreatBritain_icon"
+		texturefile = "gfx/interface/sphere_of_influence/leader/soi_leader_gb.dds"
+	}
+}

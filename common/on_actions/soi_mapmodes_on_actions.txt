@@ -1,0 +1,31 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		### SPHERES OF INFLUENCE
+		## LEADERS
+		ROE = {
+			set_variable = { var = country_alignment_leader value = ROE }
+			set_country_flag = ENG_soi_leader_major
+			add_ideas = { GREATBRITAIN_leader }
+		}
+		## SUBJECTS
+		for_each_scope_loop = {
+			array = ROE.subjects
+			set_variable = { country_apuppet = ROE }
+		}
+		## FACTION MEMBERS
+		for_each_scope_loop = {
+			array = ROE.faction_members
+			set_variable = { country_factions = ROE }
+		}
+		## SPECIAL STATUS
+		# French Sphere
+		ARR = {
+			set_variable = { country_special_status = ROE }
+		}
+		DAC = {
+			set_variable = { country_special_status = ROE }
+		}
+        }
+    }
+}

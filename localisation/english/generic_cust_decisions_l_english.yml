@@ -48,8 +48,20 @@
  LEAVE_SPHERE_TITLE: "Leave their sphere of influence"
  LEAVE_SPHERE_ACTION_DESC: "We will break off from our §Yoppresors§!'s influence!"
 
+ influence_map_mode_tt_sphere_leader: "§Y[From.Owner.GetName]§! is the head of the §O[InfluenceGetSphereName]§!."
+ influenceview_tt_sphere_leader: "§YWe§! are the head of the §G[InfluenceGetSphereName]§!."
+ sphere_name_influence_sphere_tt: "[From.Owner.GetAdjective] Sphere"
 
  do_a_raid: "Start a raid on §6the [From.GetName]§!"
+ influence_flag_leader: "§7[From.GetName]§! is the leader"
+ roman_people_tt: "The §R[ROE.GetAdjective] Sphere§! has §Y[?global.rome_sphere_people]§! nations in it."
+ parthian_people_tt: "The §G[PTH.GetAdjective] Sphere§! has §Y[?global.parthia_sphere_people]§! nations in it."
+ xin_people_tt: "The §L[XIN.GetAdjective] Sphere§! has §Y[?global.xin_sphere_people]§! nations in it."
+ xai_people_tt: "The §7[XAI.GetAdjective] Sphere§! has §Y[?global.xai_sphere_people]§! nations in it."
+ crs_people_tt: "The §5[CRS.GetAdjective] Sphere§! has §Y[?global.crs_sphere_people]§! nations in it."
+ tth_people_tt: "The §9[TTH.GetAdjective] Sphere§! has §Y[?global.tth_sphere_people]§! nations in it."
+
+ influence_title: "Sphere of Influence"
 
 
 

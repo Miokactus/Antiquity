@@ -1,0 +1,22 @@
+state={
+	id=1209
+	name="STATE_1209"
+	provinces={
+		4327 
+	}
+	history={
+		owner = PDA
+		add_core_of = PDA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			4327 5
+		}
+	}
+	manpower = 85200
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

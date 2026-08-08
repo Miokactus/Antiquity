@@ -1,0 +1,23 @@
+# Scripted cost modifiers for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_action_modifiers = {
+
+    ### Ideology
+
+    impose_tribute = {
+        category = other
+        peace_action_type = force_government
+        enable = {
+            ROOT = {
+                has_war_with_wargoal_against = {
+                    target = FROM.FROM
+                    type = tribute_war_goal
+                }
+            }
+        }
+        cost_multiplier = 0.9
+    }
+
+
+}

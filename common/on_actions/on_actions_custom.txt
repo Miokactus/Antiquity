@@ -24,14 +24,15 @@ on_actions = {
                             is_ally_with = ROE
                             is_subject_of = ROE
                             has_country_flag = influenced_by_ROE
+                            tag = ROE
                         }
-                        is_major = no
                     }
                     set_country_flag = influenced_by_ROE
                     add_ideas = is_in_sphere_of_ROE
+                    add_to_variable = { var:global.rome_sphere_people = 1 }
                 }
             }
-            else_if = {
+            if = {
                 limit = {
                     PTH = {
                         has_country_flag = is_sphere_leader
@@ -43,14 +44,15 @@ on_actions = {
                             is_ally_with = PTH
                             is_subject_of = PTH
                             has_country_flag = influenced_by_PTH
+                            tag = PTH
                         }
-                        is_major = no
                     }
                     set_country_flag = influenced_by_PTH
                     add_ideas = is_in_sphere_of_PTH
+                    add_to_variable = { var:global.parthia_sphere_people = 1 }
                 }
             }
-            else_if = {
+            if = {
                 limit = {
                     XIN = {
                         has_country_flag = is_sphere_leader
@@ -62,14 +64,15 @@ on_actions = {
                             is_ally_with = XIN
                             is_subject_of = XIN
                             has_country_flag = influenced_by_XIN
+                            tag = XIN
                         }
-                        is_major = no
                     }
                     set_country_flag = influenced_by_XIN
                     add_ideas = is_in_sphere_of_XIN
+                    add_to_variable = { var:global.xin_sphere_people = 1 }
                 }
             }
-            else_if = {
+            if = {
                 limit = {
                     CRS = {
                         has_country_flag = is_sphere_leader
@@ -81,14 +84,15 @@ on_actions = {
                             is_ally_with = CRS
                             is_subject_of = CRS
                             has_country_flag = influenced_by_CRS
+                            tag = CRS
                         }
-                        is_major = no
                     }
                     set_country_flag = influenced_by_CRS
                     add_ideas = is_in_sphere_of_CRS
+                    add_to_variable = { var:global.crs_sphere_people = 1 }
                 }
             }
-            else_if = {
+            if = {
                 limit = {
                     XAI = {
                         has_country_flag = is_sphere_leader
@@ -105,9 +109,10 @@ on_actions = {
                     }
                     set_country_flag = influenced_by_XAI
                     add_ideas = is_in_sphere_of_XAI
+                    add_to_variable = { var:global.xai_sphere_people = 1 }
                 }
             }
-            else_if = {
+            if = {
                 limit = {
                     TTH = {
                         has_country_flag = is_sphere_leader
@@ -124,71 +129,7 @@ on_actions = {
                     }
                     set_country_flag = influenced_by_TTH
                     add_ideas = is_in_sphere_of_TTH
-                }
-            }
-        }
-    }
-
-    on_subject_free = {
-        effect = {
-            if = {
-                limit = { 
-                    ROOT = { 
-                        has_country_flag = influenced_by_ROE 
-                    }
-                }
-                ROOT = {
-                    clr_country_flag = influenced_by_ROE
-                }
-            }
-            if = {
-                limit = { 
-                    ROOT = { 
-                        has_country_flag = influenced_by_PTH
-                    }
-                }
-                ROOT = {
-                    clr_country_flag = influenced_by_PTH
-                }
-            }
-            if = {
-                limit = { 
-                    ROOT = { 
-                        has_country_flag = influenced_by_XIN
-                    }
-                }
-                ROOT = {
-                    clr_country_flag = influenced_by_XIN
-                }
-            }
-            if = {
-                limit = { 
-                    ROOT = { 
-                        has_country_flag = influenced_by_XAI
-                    }
-                }
-                ROOT = {
-                    clr_country_flag = influenced_by_XAI
-                }
-            }
-            if = {
-                limit = { 
-                    ROOT = { 
-                        has_country_flag = influenced_by_CRS
-                    }
-                }
-                ROOT = {
-                    clr_country_flag = influenced_by_CRS
-                }
-            }
-            if = {
-                limit = { 
-                    ROOT = { 
-                        has_country_flag = influenced_by_TTH
-                    }
-                }
-                ROOT = {
-                    clr_country_flag = influenced_by_TTH
+                    add_to_variable = { var:global.tth_sphere_people = 1 }
                 }
             }
         }
@@ -200,22 +141,67 @@ on_actions = {
                 limit = {
                     is_subject_of = ROE
                     NOT = { has_country_flag = influenced_by_ROE }
+                    ROE = {
+                        has_country_flag = is_sphere_leader
+                    }
                 }
                 set_country_flag = influenced_by_ROE
+                add_to_variable = { var:global.roman_sphere_people = 1 }
             }
             every_country = {
                 limit = {
                     is_subject_of = PTH
                     NOT = { has_country_flag = influenced_by_PTH }
+                    PTH = {
+                        has_country_flag = is_sphere_leader
+                    }
                 }
                 set_country_flag = influenced_by_PTH
+                add_to_variable = { var:global.parthia_sphere_people = 1 }
             }
             every_country = {
                 limit = {
                     is_subject_of = XIN
                     NOT = { has_country_flag = influenced_by_XIN }
+                    XIN = {
+                        has_country_flag = is_sphere_leader
+                    }
                 }
                 set_country_flag = influenced_by_XIN
+                add_to_variable = { var:global.xin_sphere_people = 1 }
+            }
+            every_country = {
+                limit = {
+                    is_subject_of = XAI
+                    NOT = { has_country_flag = influenced_by_XAI }
+                    XAI = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                set_country_flag = influenced_by_XAI
+                add_to_variable = { var:global.xai_sphere_people = 1 }
+            }
+            every_country = {
+                limit = {
+                    is_subject_of = CRS
+                    NOT = { has_country_flag = influenced_by_CRS }
+                    CRS = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                set_country_flag = influenced_by_CRS
+                add_to_variable = { var:global.crs_sphere_people = 1 }
+            }
+            every_country = {
+                limit = {
+                    is_subject_of = TTH
+                    NOT = { has_country_flag = influenced_by_TTH }
+                    TTH = {
+                        has_country_flag = is_sphere_leader
+                    }
+                }
+                set_country_flag = influenced_by_TTH
+                add_to_variable = { var:global.tth_sphere_people = 1 }
             }
         }
     }
@@ -398,6 +384,35 @@ on_actions = {
     			    id = XIN_heaven_mandate
     			    value = -0.05
 			    }
+            }
+        }
+    }
+
+    on_daily = {
+        effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+            if = {
+                limit = {
+                    AND = {
+                    ARR = {
+                        has_country_flag = support_from_rome
+                    }
+                    PTH = {
+                        419 = { is_controlled_by_ROOT_or_ally = yes }
+                        1000 = { is_controlled_by_ROOT_or_ally = yes }
+                        1034 = { is_controlled_by_ROOT_or_ally = yes }
+                        1204 = { is_controlled_by_ROOT_or_ally = yes }
+                        1203 = { is_controlled_by_ROOT_or_ally = yes }
+                    }
+                    }
+                }
+                ROE = {
+                    PTH = {
+                        country_event = {
+                            id = arsacid_event.35
+				            days = 2
+                        }
+                    }
+                }
             }
         }
     }

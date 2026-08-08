@@ -3,7 +3,10 @@ state = {
 	name = "STATE_200" # Zaporozhe
 	manpower = 1294082
 	state_category = town
-
+	resources = {
+		grain = 5
+		wood = 5
+	}
 	history = {
 
 		owner = SAR

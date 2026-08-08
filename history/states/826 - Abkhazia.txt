@@ -5,6 +5,7 @@ state = {
 	history = {
 		owner = CLC
 		add_core_of = CLC
+		add_core_of = PON
 		victory_points = {
 			11617 1 
 		}

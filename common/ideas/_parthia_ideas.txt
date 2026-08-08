@@ -133,6 +133,185 @@ ideas = {
 			}
 		}
 
+		PTH_citizens_militias = {
+			name = "Citizen's Militias"
+			allowed_civil_war = { always = yes }
+			picture = citizen_militia_1
+			modifier = {
+				training_time_factor = -0.25
+				conscription_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+			cancel = {
+				NOT = {
+					is_subject_of = PTH
+				}
+			}
+		}
+
+		PTH_citizens_militias_parthia = {
+			name = "Relying on Citizen's Militias"
+			allowed_civil_war = { always = yes }
+			picture = citizen_militia_1
+			modifier = {
+				training_time_factor = 0.25
+				conscription_factor = -0.1
+				consumer_goods_factor = -0.05
+			}
+			cancel = {
+				num_subjects < 1
+			}
+		}
+
+		PTH_keeping_the_status_quo = {
+			name = "Keeping the Status Quo"
+			allowed_civil_war = { always = yes }
+			picture = citizen_militia_1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+				political_power_gain = 0.3
+				subjects_autonomy_gain = -0.05
+			}
+		}
+
+		PTH_a_peoples_army = {
+			name = "A People's Army"
+			allowed_civil_war = { always = yes }
+			picture = citizen_militia_2
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.1
+				army_core_attack_factor = 0.1
+				army_defence_factor = -0.05
+			}
+		}
+
+		PTH_modernising_the_land_forces = {
+			name = "Modernising the Land Forces"
+			allowed_civil_war = { always = yes }
+			picture = ARG_subdue_dissension
+			modifier = {
+				conscription_factor = -0.2
+				war_support_factor = -0.2
+				army_attack_factor = -0.3
+				army_core_attack_factor = -0.3
+				army_defence_factor = -0.3
+			}
+		}
+
+		PTH_modernising_the_land_forces_1 = {
+			name = "Modernising the Land Forces"
+			allowed_civil_war = { always = yes }
+			picture = ARG_subdue_dissension
+			modifier = {
+				conscription_factor = -0.15
+				war_support_factor = -0.15
+				army_attack_factor = -0.2
+				army_core_attack_factor = -0.2
+				army_defence_factor = -0.2
+				cavalry_attack_factor = 0.02
+			}
+		}
+
+		PTH_modernising_the_land_forces_2 = {
+			name = "Modernising the Land Forces"
+			allowed_civil_war = { always = yes }
+			picture = ARG_subdue_dissension
+			modifier = {
+				conscription_factor = -0.05
+				war_support_factor = -0.1
+				army_attack_factor = -0.15
+				army_core_attack_factor = -0.1
+				army_defence_factor = -0.1
+				cavalry_attack_factor = 0.05
+			}
+		}
+
+		PTH_modernising_the_land_forces_3 = {
+			name = "Modernising the Land Forces"
+			allowed_civil_war = { always = yes }
+			picture = ARG_subdue_dissension
+			modifier = {
+				conscription_factor = 0.04
+				war_support_factor = 0.05
+				army_attack_factor = -0.05
+				army_core_attack_factor = -0.05
+				army_defence_factor = -0.05
+				cavalry_attack_factor = 0.07
+			}
+		}
+
+		PTH_modernising_the_land_forces_4 = {
+			name = "A New Central Command"
+			allowed_civil_war = { always = yes }
+			picture = ARG_subdue_dissension
+			modifier = {
+				conscription_factor = 0.07
+				war_support_factor = 0.1
+				army_defence_factor = 0.05
+				cavalry_attack_factor = 0.1
+			}
+		}
+
+		PTH_integrating_subjects_armies_puppet = {
+			name = "Armies Integration"
+			allowed_civil_war = { always = yes }
+			picture = HUN_treaty_of_triannon
+			targeted_modifier = {
+				tag = PTH
+			}
+			modifier = {
+				consumer_goods_factor = -0.2
+				army_attack_factor = -0.15
+				army_core_attack_factor = -0.15
+				army_defence_factor = -0.15
+			}
+			cancel = {
+				NOT = {
+					is_subject_of = PTH
+				}
+			}
+		}
+
+		PTH_integrating_subjects_armies = {
+			name = "Integrating our Subjects' Armies"
+			allowed_civil_war = { always = yes }
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				consumer_goods_factor = 0.1
+				political_power_gain = -0.3
+				subjects_autonomy_gain = -0.4
+			}
+			cancel = {
+			}
+			on_remove = {
+				capital_scope = {
+					create_unit = {
+    					division = "name = \"Imperial Cavalry\" division_template = \"Imperial Cavalrt\" start_experience_factor = 0.5"
+    					owner = ROOT
+						count = 4
+					}
+				}
+			}
+		}
+
+		PTH_use_of_heavy_cavalry = {
+			name = "Promote Cataphracts"
+			allowed_civil_war = { always = yes }
+			picture = PER_qorkhaneh
+			modifier = {
+				infantry_attack_factor = -0.15
+				cavalry_attack_factor = 0.1
+				army_org_factor = -0.1
+				breakthrough_factor = 0.1
+			}
+			cancel = {
+			}
+			on_remove = {
+			}
+		}
+
 	## PARTHIAN EMPIRE ##
 
 		PTH_strange_faith_from_the_west_idea = {
@@ -140,8 +319,8 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = POL_ideology_drift_defence
 			modifier = {
-				monthly_population = 0.3
-				political_power_cost = 0.2
+				monthly_population = 0.2
+				political_power_cost = 0.3
 			}
 		}
 
@@ -307,9 +486,12 @@ ideas = {
 			allowed_civil_war = { always = yes }
 			picture = ITA_new_roman_empire_ns
 			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.1
 				justify_war_goal_time = -0.5
-				compliance_growth_on_our_occupied_states = -0.2
-				resistance_growth_on_our_occupied_states = 0.1
+				compliance_growth_on_our_occupied_states = -0.1
+				resistance_growth_on_our_occupied_states = 0.15
 			}
 		}
 
@@ -336,7 +518,7 @@ ideas = {
 		PTH_influx_of_christians = {
 			name = "Influx of Christians"
 			allowed_civil_war = { always = yes }
-			picture = FRA_matignon_agreements
+			picture = prc_low_popular_support2
 			modifier = {
 				stability_factor = -0.05
 				weekly_manpower = 1500
@@ -349,14 +531,73 @@ ideas = {
 			}
 		}
 
+		PTH_copies_of_the_sacred_texts_idea = {
+			name = "Copies of the Sacred Texts"
+			allowed_civil_war = { always = yes }
+			picture = HABSBURG_economy
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
 		PTH_conflictual_society = {
 			name = "Conflictual Religious Beliefs"
 			allowed_civil_war = { always = yes }
-			picture = FRA_matignon_agreements
+			picture = MEX_church_power_1
 			modifier = {
 				stability_factor = -0.15
 				political_power_gain = -0.5
 				war_support_factor = 0.14
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_challenge_roman_hegemony_idea = {
+			name = "Challenge Roman Hegemony"
+			allowed_civil_war = { always = yes }
+			picture = AFG_republic_idea
+			targeted_modifier = {
+				tag = ROE
+				generate_wargoal_tension_against = -0.5
+				trade_cost_for_target_factor = 0.8
+				attack_bonus_against = 0.15
+				defense_bonus_against = -0.1
+			}
+			modifier = {
+				war_support_factor = 0.05
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_decentralisation_in_conquest_idea = {
+			name = "Decentralisation in Conquest"
+			allowed_civil_war = { always = yes }
+			picture = air_war_plans_division_focus
+			modifier = {
+				puppet_cost_factor = -0.5
+				annex_cost_factor = 0.5
+				compliance_growth_on_our_occupied_states = -0.08
+				compliance_growth = 0.08
+				war_support_factor = 0.08
+			}
+			on_remove = {
+			}
+		}
+
+		PTH_divide_to_better_conquer_idea = {
+			name = "Divide to Better Conquer"
+			allowed_civil_war = { always = yes }
+			picture = air_war_plans_division_focus
+			targeted_modifier = {
+				breakthrough_bonus_against = 0.1
+				defense_bonus_against = -0.1
+				generate_wargoal_tension_against = -0.5
+			}
+			modifier = {
+				war_support_factor = 0.05
 			}
 			on_remove = {
 			}
