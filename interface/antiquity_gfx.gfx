@@ -2,10 +2,14 @@ spriteTypes = {
 
 ## PUPPETS GFX ##
 #################
+    spriteType = {
+        name = "GFX_find_new_leader"
+        texturefile = "gfx/interface/goal/find_new_leader.dds" 
+    }
 
     spriteType = {
         name = "GFX_autonomy_tributary_icon"
-        texturefile = "gfx/interface/autonomy/autonomy_tributary_puppet.dds" # The folder and filename don't matter, as long as they are correct
+        texturefile = "gfx/interface/autonomy/autonomy_tributary_puppet.dds" 
     }
 
     spriteType = {
