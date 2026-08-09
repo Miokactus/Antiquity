@@ -63,7 +63,7 @@ focus_tree = {
 		id = ROE_follow_augustus_will
 		icon = GFX_goal_roman_tiberius_ok
 		relative_position_id = ROE_augustus_death
-		x = 7
+		x = 30
 		y = 2
 		cost = 8
 		available = { 
@@ -136,6 +136,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 8
+		relative_position_id = ROE_follow_augustus_will
 		available = { 
 		}
 		search_filters = {
@@ -971,7 +972,7 @@ focus_tree = {
 		id = ROE_a_new_dynasty
 		icon = GFX_focus_new_dynastie
 		relative_position_id = ROE_reject_the_will
-		x = 4
+		x = 20
 		y = 1
 		cost = 8
 		available = { 
@@ -2530,8 +2531,8 @@ focus_tree = {
 		id = ROE_create_new_manufactures
 		icon = GFX_focus_create_new_fact
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
-		y = 5
+		x = 0
+		y = 6
 		cost = 8
 		available = { 
 			
@@ -2539,8 +2540,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ROE_prepare_for_the_germans }
-		prerequisite = { focus = ROE_towards_militarisation }
+		prerequisite = { focus = ROE_woodworks_development }
 		mutually_exclusive = { }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -2571,8 +2571,8 @@ focus_tree = {
 		id = ROE_woodworks_development
 		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
-		y = 7
+		x = -2
+		y = 5
 		cost = 8
 		available = { 
 			
@@ -2580,7 +2580,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ROE_create_new_manufactures focus = ROE_industrial_development }
+		prerequisite = { focus = ROE_towards_militarisation focus = ROE_prepare_for_the_germans }
 		mutually_exclusive = { }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -2615,8 +2615,8 @@ focus_tree = {
 		id = ROE_appease_the_farmers
 		icon = GFX_focus_generic_farmland
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
-		y = 8
+		x = -2
+		y = 6
 		cost = 8
 		available = { 
 			
@@ -2651,8 +2651,8 @@ focus_tree = {
 		id = ROE_open_new_mines
 		icon = GFX_focus_generic_mining_industry
 		relative_position_id = ROE_a_new_dynasty
-		x = -1
-		y = 8
+		x = -4
+		y = 6
 		cost = 8
 		available = { 
 			
@@ -2687,8 +2687,8 @@ focus_tree = {
 		id = ROE_question_about_the_jews
 		icon = GFX_focus_jewish_question
 		relative_position_id = ROE_a_new_dynasty
-		x = 3
-		y = 8
+		x = 1
+		y = 10
 		cost = 8
 		available = { 
 			
@@ -2696,7 +2696,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ROE_woodworks_development }
+	prerequisite = { focus = ROE_look_to_the_eastern_menace }
 		mutually_exclusive = { }
 		completion_reward = {
 			country_event = {
@@ -2708,11 +2708,11 @@ focus_tree = {
 
 	#War, war, war!
 	focus = {
-		id = ROE_war_war
-		icon = GFX_focus_war_war
+		id = manufacturies
+		icon = GFX_manufacturies
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
-		y = 9
+		x = -2
+		y = 7
 		cost = 8
 		available = { 
 			
@@ -2722,7 +2722,26 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROE_open_new_mines }
 		prerequisite = { focus = ROE_appease_the_farmers }
-		prerequisite = { focus = ROE_question_about_the_jews }
+		prerequisite = { focus = ROE_create_new_manufactures }
+		mutually_exclusive = { }
+		completion_reward = {
+		remove_ideas = poor_industry
+		}
+	}
+	focus = {
+		id = ROE_war_war
+		icon = GFX_focus_war_war
+		relative_position_id = ROE_a_new_dynasty
+		x = -2
+		y = 8
+		cost = 8
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = manufacturies }
 		mutually_exclusive = { }
 		completion_reward = {
 			upgrade_economy_law = yes
@@ -2735,8 +2754,8 @@ focus_tree = {
 		id = ROE_our_duty_to_guard
 		icon = GFX_focus_guard
 		relative_position_id = ROE_a_new_dynasty
-		x = -1
-		y = 10
+		x = -5
+		y = 9
 		cost = 8
 		available = { 
 			
@@ -2815,8 +2834,8 @@ focus_tree = {
 		id = ROE_demand_local_tribes_submission
 		icon = GFX_focus_demande_local_tribes_submision
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
-		y = 10
+		x = -3
+		y = 9
 		cost = 8
 		available = { 
 			
@@ -2837,8 +2856,8 @@ focus_tree = {
 		id = ROE_look_to_the_eastern_menace
 		icon = GFX_focus_generic_balkans_focus
 		relative_position_id = ROE_a_new_dynasty
-		x = 3
-		y = 10
+		x = 1
+		y = 9
 		cost = 8
 		available = { 
 			
@@ -2861,8 +2880,8 @@ focus_tree = {
 		id = ROE_dacian_expedition
 		icon = GFX_focus_attack_dacian
 		relative_position_id = ROE_a_new_dynasty
-		x = 5
-		y = 11
+		x = 3
+		y = 10
 		cost = 8
 		available = { 
 			
@@ -2887,8 +2906,8 @@ focus_tree = {
 		id = ROE_strike_a_deal_with_armenia
 		icon = GFX_focus_attack_armenia
 		relative_position_id = ROE_a_new_dynasty
-		x = 3
-		y = 11
+		x = -1
+		y = 10
 		cost = 10
 		will_lead_to_war_with = PTH
 		will_lead_to_war_with = ARR
@@ -2906,14 +2925,45 @@ focus_tree = {
 			}
 		}
 	}
-
+	focus = {
+		id = ROE_attack_three_states
+		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
+		relative_position_id = ROE_a_new_dynasty
+		x = 1
+		y = 11
+		cost = 10
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = {  focus =ROE_dacian_expedition  }
+		prerequisite = { focus = ROE_question_about_the_jews }
+	prerequisite = {  focus = ROE_strike_a_deal_with_armenia }
+		mutually_exclusive = { }
+		completion_reward = {
+		    create_wargoal = {
+        type = annex_everything
+        target = IBR
+    }
+    create_wargoal = {
+        type = annex_everything
+        target = CCA
+    }
+    create_wargoal = {
+        type = annex_everything
+        target = CLC
+    }
+		}
+	}
 	#Our Northern Neighbours
 	focus = {
 		id = ROE_our_northern_neighbours
 		icon = GFX_focus_northern_smth
 		relative_position_id = ROE_a_new_dynasty
-		x = 0
-		y = 11
+		x = -4
+		y = 10
 		cost = 12
 		available = {
 			57 = {
@@ -2941,7 +2991,45 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = ROE_attack_puppet
+		icon = GFX_attack_sapaen
+		relative_position_id = ROE_a_new_dynasty
+		x = -4
+		y = 11
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_our_northern_neighbours }
 
+		mutually_exclusive = { }
+		completion_reward = {
+			    create_wargoal = {
+        type = annex_everything
+        target = THR
+    }
+		}
+	}
+## RISE OF A Nero Iulius Caesar ##
+	focus = {
+		id = ROE_Germanicus_the_goat
+		icon = GFX_focus_northern_smth
+		relative_position_id = ROE_a_new_dynasty
+		x = -2
+		y = 12
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_attack_puppet }
+		prerequisite = { focus = ROE_attack_three_states }
+
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
 ## RISE OF A FOREIGN EMPEROR ##
 
 	#Rise of A Foreign Emperor

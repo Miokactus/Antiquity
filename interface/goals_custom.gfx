@@ -1,4 +1,12 @@
 spriteTypes = {	
+		SpriteType = {
+		name = "GFX_manufacturies"
+		texturefile = "gfx/interface/goals/manufacturies.dds"
+	}
+	spriteType = {
+		name = "GFX_attack_sapaen"
+		texturefile = "gfx/interface/goals/attack_sapaen.png"
+	}
 
 	spriteType = {
 		name = "GFX_focus_northern_smth"
