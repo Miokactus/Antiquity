@@ -399,15 +399,6 @@ cultural_integration = {
 			always = yes
 		}
 		available = {
-			tooltip = {
-				any_owned_state = {
-					NOT = {
-						is_core_of = ROOT
-					}
-					compliance > 50
-				}
-			}
-			hidden_trigger = {
 			any_owned_state = {
 				OR = {
 					AND = {
@@ -418,90 +409,92 @@ cultural_integration = {
 					}
 					AND = {
 						is_core_of = ROOT
+						custom_effect_tooltip = hidden_trigger_cultural_integration
+						hidden_trigger = {
 						OR = {
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 1 } }
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 1 } }
+								}
+								NOT = { check_variable = { culture_var = 1 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 2 } }
+								}
+								NOT = { check_variable = { culture_var = 2 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 3 } }
+								}
+								NOT = { check_variable = { culture_var = 3 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 4 } }
+								}
+								NOT = { check_variable = { culture_var = 4 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 5 } }
+								}
+								NOT = { check_variable = { culture_var = 5 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 6 } }
+								}
+								NOT = { check_variable = { culture_var = 6 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 7 } }
+								}
+								NOT = { check_variable = { culture_var = 7 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 8 } }
+								}
+								NOT = { check_variable = { culture_var = 8 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 9 } }
+								}
+								NOT = { check_variable = { culture_var = 9 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 10 } }
+								}
+								NOT = { check_variable = { culture_var = 10 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 11 } }
+								}
+								NOT = { check_variable = { culture_var = 11 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 12 } }
+								}
+								NOT = { check_variable = { culture_var = 12 } }
+							}
+							AND = {
+								owner = {
+									capital_scope = { check_variable = { culture_var = 13 } }
+								}
+								NOT = { check_variable = { culture_var = 13 } }
+							}
 						}
-						NOT = { check_variable = { culture_var = 1 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 2 } }
 						}
-						NOT = { check_variable = { culture_var = 2 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 3 } }
-						}
-						NOT = { check_variable = { culture_var = 3 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 4 } }
-						}
-						NOT = { check_variable = { culture_var = 4 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 5 } }
-						}
-						NOT = { check_variable = { culture_var = 5 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 6 } }
-						}
-						NOT = { check_variable = { culture_var = 6 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 7 } }
-						}
-						NOT = { check_variable = { culture_var = 7 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 8 } }
-						}
-						NOT = { check_variable = { culture_var = 8 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 9 } }
-						}
-						NOT = { check_variable = { culture_var = 9 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 10 } }
-						}
-						NOT = { check_variable = { culture_var = 10 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 11 } }
-						}
-						NOT = { check_variable = { culture_var = 11 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 12 } }
-						}
-						NOT = { check_variable = { culture_var = 12 } }
-					}
-					AND = {
-						owner = {
-							capital_scope = { check_variable = { culture_var = 13 } }
-						}
-						NOT = { check_variable = { culture_var = 13 } }
-					}
-				}
 					}
 				}
 			}
-		}
 		}
 		visible = {
 			NOT = {

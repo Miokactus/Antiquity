@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = ROE_augustus_death
 		icon = GFX_goal_roman_augustus_death
-		x = 20
+		x = 15
 		y = 2
 		cost = 2
 		available = { 
@@ -40,7 +40,7 @@ focus_tree = {
 		id = ROE_the_new_emperor
 		icon = GFX_find_new_leader
 		relative_position_id = ROE_augustus_death
-		x = 0		
+		x = 0
 		y = 1
 		cost = 8
 		available = { 
@@ -63,7 +63,7 @@ focus_tree = {
 		id = ROE_follow_augustus_will
 		icon = GFX_goal_roman_tiberius_ok
 		relative_position_id = ROE_augustus_death
-		x = 30
+		x = 20
 		y = 2
 		cost = 8
 		available = { 
@@ -936,7 +936,7 @@ focus_tree = {
 		id = ROE_reject_the_will
 		icon = GFX_goal_roman_tiberius_nope
 		relative_position_id = ROE_augustus_death
-		x = -7
+		x = -20
 		y = 2
 		cost = 8
 		available = { 
@@ -1000,7 +1000,7 @@ focus_tree = {
 		id = ROE_prevent_a_coup
 		icon = GFX_focus_BRA_end_the_state_of_emergency
 		relative_position_id = ROE_reject_the_will
-		x = 0
+		x = 8
 		y = 2
 		cost = 3
 		ai_will_do = {
@@ -1722,7 +1722,7 @@ focus_tree = {
 		id = ROE_towards_subjects_integration
 		icon = GFX_SOV_intensify_pilot_training_program_ccp_2d_sov_compatibility
 		relative_position_id = ROE_put_an_end_to_the_emperors
-		x = 3
+		x = 4
 		y = 10
 		cost = 12
 		available = { 
@@ -2199,17 +2199,14 @@ focus_tree = {
 		prerequisite = { focus = ROE_chose_germanicus focus = ROE_recall_marcus }
 		mutually_exclusive = { }
 		completion_reward = {
-			 custom_effect_tooltip = rome_weaken_senate_tt
-			 hidden_effect = {
-				add_popularity = {
-		ideology = oligarchic
-		popularity = -0.05tip
-	}
-	add_popularity = {
-		ideology = tyranny
-		popularity = 0.05
-	}
-  }
+			add_popularity = {
+				ideology = communism
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
 		}
 	}
 
@@ -2708,7 +2705,7 @@ focus_tree = {
 
 	#War, war, war!
 	focus = {
-		id = manufacturies
+		id = ROE_improve_productivity
 		icon = GFX_manufacturies
 		relative_position_id = ROE_a_new_dynasty
 		x = -2
@@ -2741,7 +2738,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = manufacturies }
+		prerequisite = { focus = ROE_improve_productivity }
 		mutually_exclusive = { }
 		completion_reward = {
 			upgrade_economy_law = yes
@@ -2926,7 +2923,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ROE_attack_three_states
+		id = ROE_attack_the_caucasian_states
 		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
@@ -2940,21 +2937,21 @@ focus_tree = {
 		}
 		prerequisite = {  focus =ROE_dacian_expedition  }
 		prerequisite = { focus = ROE_question_about_the_jews }
-	prerequisite = {  focus = ROE_strike_a_deal_with_armenia }
+		prerequisite = {  focus = ROE_strike_a_deal_with_armenia }
 		mutually_exclusive = { }
 		completion_reward = {
 		    create_wargoal = {
-        type = annex_everything
-        target = IBR
-    }
-    create_wargoal = {
-        type = annex_everything
-        target = CCA
-    }
-    create_wargoal = {
-        type = annex_everything
-        target = CLC
-    }
+        		type = annex_everything
+        		target = IBR
+    		}
+    		create_wargoal = {
+    		    type = annex_everything
+    		    target = CCA
+    		}
+    		create_wargoal = {
+    		    type = annex_everything
+    		    target = CLC
+    		}
 		}
 	}
 	#Our Northern Neighbours
@@ -3006,10 +3003,7 @@ focus_tree = {
 
 		mutually_exclusive = { }
 		completion_reward = {
-			    create_wargoal = {
-        type = annex_everything
-        target = THR
-    }
+			
 		}
 	}
 ## RISE OF A Nero Iulius Caesar ##
@@ -3024,7 +3018,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROE_attack_puppet }
-		prerequisite = { focus = ROE_attack_three_states }
+		prerequisite = { focus = ROE_attack_the_caucasian_states }
 
 		mutually_exclusive = { }
 		completion_reward = {

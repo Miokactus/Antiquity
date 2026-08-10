@@ -32,3 +32,5 @@
  south_arabian_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §1South Arabian culture§!!"
  indian_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §OIndian culture§!!"
  korean_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §LKorean culture§!!"
+
+ hidden_trigger_cultural_integration: "You have §Ycore states§! that are not of your culture."
