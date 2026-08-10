@@ -2847,7 +2847,79 @@ focus_tree = {
 			add_ideas = ROE_germanicus_campaign
 		}
 	}
-
+	focus = {
+		id = ROE_clean_the_army_of_traitors
+		icon = GFX_focus_demande_local_tribes_submision
+		relative_position_id = ROE_a_new_dynasty
+		x = -8
+		y = 9
+		cost = 8
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_war_war }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROE_emprison_bad_generals
+		icon = GFX_focus_demande_local_tribes_submision
+		relative_position_id = ROE_a_new_dynasty
+		x = -7
+		y = 10
+		cost = 8
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_clean_the_army_of_traitors }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROE_train_army
+		icon = GFX_focus_demande_local_tribes_submision
+		relative_position_id = ROE_a_new_dynasty
+		x = -9
+		y = 10
+		cost = 8
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ROE_clean_the_army_of_traitors }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROE_the_Germanicus_army
+		icon = GFX_focus_demande_local_tribes_submision
+		relative_position_id = ROE_a_new_dynasty
+		x = -8
+		y = 11
+		cost = 8
+		available = { 
+			
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =ROE_train_army }
+		prerequisite = { focus = ROE_emprison_bad_generals }
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
 	#Look to the Eastern Menaces
 	focus = {
 		id = ROE_look_to_the_eastern_menace
@@ -3008,7 +3080,7 @@ focus_tree = {
 	}
 ## RISE OF A Nero Iulius Caesar ##
 	focus = {
-		id = ROE_Germanicus_the_goat
+		id = ROE_Germanicus_the_great_general
 		icon = GFX_focus_northern_smth
 		relative_position_id = ROE_a_new_dynasty
 		x = -2
@@ -3019,6 +3091,22 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROE_attack_puppet }
 		prerequisite = { focus = ROE_attack_the_caucasian_states }
+
+		mutually_exclusive = { }
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = ROE_Germanicus_death_in_antioche
+		icon = GFX_focus_northern_smth
+		relative_position_id = ROE_a_new_dynasty
+		x = -2
+		y = 13
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus =  ROE_Germanicus_the_great_general}
 
 		mutually_exclusive = { }
 		completion_reward = {
