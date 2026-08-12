@@ -77,7 +77,20 @@
 
  rome_weaken_senate_tt: "Add Popularity: Senatus Imperialis (Oligarchic) §R-5.00%§! Add Popularity: Senatus Imperialis (Tyrannical) §G+5.00%§!""
 
+ ROE_attack_puppet:0 "Subjugate the Sapaean Kingdom"
+ ROE_attack_puppet_desc:0 "Diplomacy with the Sapaean Kingdom has run its course. The legions march north to bring these kings to heel once and for all, reducing their realm to a client state under Roman authority."
+ ROE_good_relations_with_the_senate:0 "Foster Good Relations with the Senate"
+ ROE_good_relations_with_the_senate_desc:0 "No general, however celebrated, can act freely without the goodwill of the Senate. Cultivating allies among the senators will grant greater freedom to pursue military ambitions abroad, and shield Germanicus from the jealousies of rivals closer to the throne."
 
+ ROE_Germanicus_the_great_general:0 "Germanicus, the Great General"
+ ROE_Germanicus_the_great_general_desc:0 "Victory after victory has cemented Germanicus' reputation as one of the finest commanders Rome has ever produced. His soldiers adore him, the people celebrate him, and his name is spoken alongside the great generals of old. Such glory cannot go unrewarded."
+
+ ROE_Germanicus_death_in_antioche:0 "The Death of Germanicus in Antioch"
+ ROE_Germanicus_death_in_antioche_desc:0 "Far from the legions he led to glory, Germanicus has fallen ill in Antioch. Rumours of poison spread through the ranks and the streets alike, but whatever the truth, Rome now mourns a man many believed would shape her future for decades to come."
+ cultural_integration:0 "Cultural Integration"
+ rome_event.104.t:0 "The Death of Germanicus"
+ rome_event.104.d:0 "Emperor Germanicus, who rose from celebrated general to the throne of Rome, has died. His passing marks the end of an era defined by military triumph and the stability he brought to the Empire after years of uncertainty.\n\nThe legions he once led mourn a commander who fought alongside them in Germania and beyond. The Senate now turns to the question of succession, as the Empire must find a way to carry forward the strength Germanicus built during his reign.\n\nHis death leaves behind a legacy of conquest, reform, and an Empire that, for a time, believed itself untouchable under his rule."
+ rome_event.104.a:0 "A sombre day for Rome"
 
  ROE_augustus_death: "The Death of Augustus"
  ROE_augustus_death_desc: "Our Princeps is dead. The hopes and dreams of the roman peoples are shattered, but we are not defeated. A new emperor will rise and continue the legacy of Augustus!"

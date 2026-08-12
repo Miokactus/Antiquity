@@ -1817,7 +1817,7 @@ country_event = {
 	trigger = {
     }
 
-	picture = GFX_report_event_XIN_generic_letter
+	picture = GFX_report_event_jewish_cult
 	fire_only_once = yes
 	is_triggered_only = yes
 	mean_time_to_happen = { days = 1 }
@@ -2170,7 +2170,21 @@ country_event = {
         }
 	}
 }
-
+country_event = {
+	id = rome_event.104
+	title = rome_event.104.t
+	desc = rome_event.104.d
+	trigger = {}
+	picture = GFX_report_event_death_of_germanicus
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { 
+		name = rome_event.104.a
+	retire_character = ROE_germanicus_general 
+	retire_character = germanicus_emperor
+	}
+}
 
 
 
@@ -2233,3 +2247,4 @@ news_event = {
 		ai_chance = { factor = 20 }
 	}
 }
+##DEATH OF GERMANICUS##

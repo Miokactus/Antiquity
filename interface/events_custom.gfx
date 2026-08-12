@@ -1,5 +1,12 @@
 spriteTypes = {
-
+      spriteType = {
+        name = "GFX_report_event_death_of_germanicus"
+        texturefile = "gfx/event_pictures/report_event_death_of_germanicus.dds" 
+    }
+    spriteType = {
+        name = "GFX_report_event_jewish_cult"
+        texturefile = "gfx/event_pictures/report_event_jewish_cult.dds" 
+    }
     spriteType = {
         name = "GFX_report_event_XIN_peasants_revolt"
         texturefile = "gfx/event_pictures/report_event_XIN_peasants_revolt.dds" # The folder and filename don't matter, as long as they are correct

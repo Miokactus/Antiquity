@@ -3,7 +3,7 @@
 oob = "ROE_14"
 
 set_research_slots = 2
-
+recruit_character = ROE_Aulus_Caecina_Severus
 recruit_character = augustus_emperor
 recruit_character = tiberius_emperor
 recruit_character = roman_senate_oligarchism_comm

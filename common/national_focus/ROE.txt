@@ -2196,7 +2196,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = ROE_chose_germanicus focus = ROE_recall_marcus }
+
 		mutually_exclusive = { }
 		completion_reward = {
 			add_popularity = {
@@ -2848,10 +2848,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ROE_clean_the_army_of_traitors
+		id = ROE_good_relations_with_the_senate
 		icon = GFX_focus_demande_local_tribes_submision
 		relative_position_id = ROE_a_new_dynasty
-		x = -8
+		x = -1
 		y = 9
 		cost = 8
 		available = { 
@@ -2861,61 +2861,6 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = ROE_war_war }
-		mutually_exclusive = { }
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = ROE_emprison_bad_generals
-		icon = GFX_focus_demande_local_tribes_submision
-		relative_position_id = ROE_a_new_dynasty
-		x = -7
-		y = 10
-		cost = 8
-		available = { 
-			
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = ROE_clean_the_army_of_traitors }
-		mutually_exclusive = { }
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = ROE_train_army
-		icon = GFX_focus_demande_local_tribes_submision
-		relative_position_id = ROE_a_new_dynasty
-		x = -9
-		y = 10
-		cost = 8
-		available = { 
-			
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = ROE_clean_the_army_of_traitors }
-		mutually_exclusive = { }
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = ROE_the_Germanicus_army
-		icon = GFX_focus_demande_local_tribes_submision
-		relative_position_id = ROE_a_new_dynasty
-		x = -8
-		y = 11
-		cost = 8
-		available = { 
-			
-		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus =ROE_train_army }
-		prerequisite = { focus = ROE_emprison_bad_generals }
 		mutually_exclusive = { }
 		completion_reward = {
 		}
@@ -3103,6 +3048,9 @@ focus_tree = {
 		x = -2
 		y = 13
 		cost = 7
+			available = { 
+			date > 19.10.10
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -3110,8 +3058,15 @@ focus_tree = {
 
 		mutually_exclusive = { }
 		completion_reward = {
+				country_event = {
+				id = rome_event.104
+				days = 1
+			}
+			
 		}
 	}
+
+	
 ## RISE OF A FOREIGN EMPEROR ##
 
 	#Rise of A Foreign Emperor

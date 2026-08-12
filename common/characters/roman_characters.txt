@@ -279,6 +279,23 @@ characters = {
     		logistics_skill = 3
 		}
 	}
-
+	
+	ROE_Aulus_Caecina_Severus = {
+		name = "Aulus Caecina Severus"
+		portraits = {
+            	army = {
+					large = "GFX_leader_ROE_Aulus_Caecina_Severus"
+					small = "GFX_idea_empty_generic"
+            	}
+        	}
+		corps_commander = {
+			traits = { infantry_leader }
+    		skill = 2
+    		attack_skill = 2
+    		defense_skill = 2
+    		planning_skill = 4
+    		logistics_skill = 3
+		}
+	}
 
 }
