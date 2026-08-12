@@ -8,6 +8,8 @@ tags={
 	"Utilities"
 	"Technologies"
 }
+replace_path="gfx/loadingscreens"
+replace_path="common/national_focus"
 replace_path="common/decisions"
 replace_path="common/decisions/categories"
 replace_path="gfx/loadingscreens"
