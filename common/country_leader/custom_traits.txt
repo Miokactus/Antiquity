@@ -4,6 +4,15 @@ leader_traits = {
 		random = no
 		political_power_gain = 0.1
 	}
+	### GERMANICUS #3
+
+	allied_of_the_romanss = {
+		random = no
+		stability_factor = -0.1
+	war_support_factor = 0.05
+	attack = 0.15
+	army_speed_factor = 0.15
+	}
 
 	## Parthia
 	PTH_follower_of_jesus = {
@@ -18,6 +27,16 @@ leader_traits = {
 	}
 
 	## Rome
+	ROE_wife_of_the_1st_agustus= {
+	random = no
+	stability_factor = 0.10
+	political_power_gain = 0.15
+    }
+	ROE_the_german_slayer = {
+	random = no
+	war_support_factor = 0.05
+	army_speed_factor = 0.15
+    }
 	ROE_first_roman_emperor = {
 		random = no
 		political_power_gain = 0.2

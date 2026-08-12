@@ -1,4 +1,12 @@
 spriteTypes = {
+              spriteType = {
+        name = "GFX_report_event_crowning_of_germanicus"
+        texturefile = "gfx/event_pictures/report_event_crowning_of_germanicus.dds" 
+    }
+          spriteType = {
+        name = "GFX_report_event_death_of_Augustus_with_choice"
+        texturefile = "gfx/event_pictures/report_event_death_of_Augustus_with_choice.dds" 
+    }
       spriteType = {
         name = "GFX_report_event_death_of_germanicus"
         texturefile = "gfx/event_pictures/report_event_death_of_germanicus.dds" 

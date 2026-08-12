@@ -1,4 +1,11 @@
 spriteTypes = {	
+
+SpriteType = {
+		name = "GFX_focus_ROE_rise_of_a_new_emperor"
+		texturefile = "gfx/interface/goals/Rise_of_a_new_emperor.dds"
+	}
+
+
 		SpriteType = {
 		name = "GFX_manufacturies"
 		texturefile = "gfx/interface/goals/manufacturies.dds"

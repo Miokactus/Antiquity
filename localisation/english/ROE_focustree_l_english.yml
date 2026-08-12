@@ -73,10 +73,17 @@
  ROE_strike_a_deal_with_armenia_desc:0 "Armenia sits at a crossroads of power. Rome extends an offer - alliance now, or conquest later."
  ROE_dacian_expedition_desc:0 "The Dacian Kingdom grows bold beyond the Danube. An expedition is prepared to remind them of Rome's reach."
  
+ ROE_the_german_slayer:0 "The German Slayer"
+  ROE_wife_of_the_1st_agustus:0 "Wife of the First Augustus"
+ rome_event.106.t:0 "Germanicus Ascends"
+ rome_event.106.d:0 "With Augustus gone, the Senate and people alike turn to Germanicus. His victories in the field and his popularity among the legions make him the natural choice to take up the mantle of Emperor."
 
+ rome_event.105.t:0 "What now ?"
+ rome_event.105.d:0 "With Augustus' passing, Rome stands at a crossroads. His will names a successor and lays out his vision for the future of the Republic — but not all are convinced his chosen path is the right one.\n\nWill you honor his final wishes, or reject them and chart a new course?"
 
  rome_weaken_senate_tt: "Add Popularity: Senatus Imperialis (Oligarchic) §R-5.00%§! Add Popularity: Senatus Imperialis (Tyrannical) §G+5.00%§!""
 
+ ROE_attack_the_caucasian_states_desc:0 "With Armenia secured, the Jewish question settled, and Dacia brought to heel, Rome now turns its gaze north to the Caucasus. The petty kingdoms of Iveria, Aghwank, and Egrisi stand between the Empire and total dominance of the region — and they will not stand for long."
  ROE_attack_puppet:0 "Subjugate the Sapaean Kingdom"
  ROE_attack_puppet_desc:0 "Diplomacy with the Sapaean Kingdom has run its course. The legions march north to bring these kings to heel once and for all, reducing their realm to a client state under Roman authority."
  ROE_good_relations_with_the_senate:0 "Foster Good Relations with the Senate"

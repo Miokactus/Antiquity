@@ -50,8 +50,8 @@ focus_tree = {
 		}
 		prerequisite = { focus = ROE_augustus_death }
 		completion_reward = {
-			add_political_power = 30
-			add_stability = 0.05
+		
+			country_event = { id = rome_event.105 }
 		}
 	}
 
@@ -2162,7 +2162,7 @@ focus_tree = {
 	#Rise of A Roman Emperor
 	focus = {
 		id = ROE_the_rise_of_a_roman_emperor
-		icon = GFX_focus_AUS_lawmaking_leniency
+		icon = GFX_focus_ROE_rise_of_a_new_emperor
 		relative_position_id = ROE_a_new_dynasty
 		x = 1
 		y = 2
@@ -2187,8 +2187,8 @@ focus_tree = {
 		id = ROE_weaken_the_senate
 		icon = GFX_focus_BRA_end_the_state_of_emergency
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
-		y = 4
+		x = 10
+		y = 6
 		cost = 9
 		available = { 
 			
@@ -2196,7 +2196,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-
+		prerequisite = { focus = ROE_avenge_the_exile }
 		mutually_exclusive = { }
 		completion_reward = {
 			add_popularity = {
@@ -2215,8 +2215,8 @@ focus_tree = {
 		id = ROE_emprison_generals
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
-		y = 5
+		x = 10
+		y = 7
 		cost = 9
 		available = { 
 			
@@ -2237,7 +2237,7 @@ focus_tree = {
 		id = ROE_recall_marcus
 		icon = GFX_focus_AUS_lawmaking_leniency
 		relative_position_id = ROE_a_new_dynasty
-		x = 4
+		x = 8
 		y = 3
 		cost = 8
 		available = { 
@@ -2261,7 +2261,7 @@ focus_tree = {
 		id = ROE_the_triomphant_son
 		icon = GFX_focus_generic_monarchy_1
 		relative_position_id = ROE_a_new_dynasty
-		x = 3
+		x = 7
 		y = 4
 		cost = 9
 		available = { 
@@ -2287,7 +2287,7 @@ focus_tree = {
 		id = ROE_hold_games
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 5
+		x = 9
 		y = 4
 		cost = 9
 		available = { 
@@ -2312,7 +2312,7 @@ focus_tree = {
 		id = ROE_avenge_the_exile
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 4
+		x = 8
 		y = 5
 		cost = 9
 		available = { 
@@ -2333,7 +2333,7 @@ focus_tree = {
 		id = ROE_a_new_era_of_games
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 3
+		x = 8
 		y = 6
 		cost = 9
 		available = { 
@@ -2357,7 +2357,7 @@ focus_tree = {
 		id = ROE_industrial_development
 		icon = GFX_focus_generic_industral_devlopment_bucket
 		relative_position_id = ROE_a_new_dynasty
-		x = 5
+		x = 6
 		y = 6
 		cost = 9
 		available = { 
@@ -2401,7 +2401,7 @@ focus_tree = {
 		id = ROE_encourage_fishing
 		icon = GFX_focus_PHI_rally_the_fisherfolk
 		relative_position_id = ROE_a_new_dynasty
-		x = 5
+		x = 6
 		y = 7
 		cost = 9
 		available = { 
@@ -2451,10 +2451,7 @@ focus_tree = {
 		prerequisite = { focus = ROE_the_rise_of_a_roman_emperor }
 		mutually_exclusive = { focus = ROE_recall_marcus }
 		completion_reward = {
-			promote_character = {
-    			character = germanicus_emperor
-    			ideology = roman_paternalism
-			}
+		country_event = { id = rome_event.106 }
 		}
 	}
 
@@ -2849,7 +2846,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROE_good_relations_with_the_senate
-		icon = GFX_focus_demande_local_tribes_submision
+		icon = GFX_goal_generic_improve_relations
 		relative_position_id = ROE_a_new_dynasty
 		x = -1
 		y = 9
@@ -2863,8 +2860,12 @@ focus_tree = {
 		prerequisite = { focus = ROE_war_war }
 		mutually_exclusive = { }
 		completion_reward = {
-		}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
 	}
+}
 	#Look to the Eastern Menaces
 	focus = {
 		id = ROE_look_to_the_eastern_menace
@@ -3020,7 +3021,10 @@ focus_tree = {
 
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			  create_wargoal = {
+        		type = annex_everything
+        		target = THR
+    		}
 		}
 	}
 ## RISE OF A Nero Iulius Caesar ##
@@ -3039,6 +3043,11 @@ focus_tree = {
 
 		mutually_exclusive = { }
 		completion_reward = {
+	add_trait = {
+     			character =  germanicus_emperor
+     			ideology = roman_paternalism
+     			trait =  ROE_the_german_slayer
+			}
 		}
 	}
 	focus = {

@@ -2185,7 +2185,47 @@ country_event = {
 	retire_character = germanicus_emperor
 	}
 }
+country_event = {
+	id = rome_event.105
+	title = rome_event.105.t
+	desc = rome_event.105.d
+	trigger = {}
+	picture = GFX_report_event_death_of_Augustus_with_choice
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { 
+		 name = "Follow Augustus"
+          complete_national_focus = ROE_follow_augustus_will
+		  	add_political_power = 30
+			add_stability = 0.05
+	}
+		option = { 
+		 name = "Reject the Augustus"
+	complete_national_focus = ROE_reject_the_will
+		add_political_power = 30
+			add_stability = -0.05
+	}
+}
+###GERMANICUS EMPEROR ##
+country_event = {
+	id = rome_event.106
+	title = rome_event.106.t
+	desc = rome_event.106.d
+	trigger = {}
+	picture = GFX_report_event_crowning_of_germanicus
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 1 }
+	major = no
+	option = { 
+		 name = "Glory to Germanicus ! "
+ 	promote_character = {
+    			character = germanicus_emperor
+    			ideology = roman_paternalism
+			}
+	}
 
+}
 
 
 #Military Coup d'Etat in Rome [news]
