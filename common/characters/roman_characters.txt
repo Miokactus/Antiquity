@@ -336,4 +336,24 @@ characters = {
             traits = {  ROE_senator_trait  }
         }
 }
+ ROE_Sejanus_advisor = {
+	name = "Sejanus"
+
+	portraits = {
+		civilian = {
+			small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+		}
+	}
+
+	advisor = {
+		cost = 100
+            slot = political_advisor
+            idea_token = generalem_fortuitum
+            allowed = { original_tag = ROE } # Optional, doesn't change anything.
+            available = {
+            }
+            traits = {  ROE_senator_trait  }
+        }
+}
+
 }
