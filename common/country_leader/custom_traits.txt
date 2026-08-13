@@ -27,6 +27,12 @@ leader_traits = {
 	}
 
 	## Rome
+
+ ROE_senator_trait = {
+    random = no
+        political_power_gain = 0.15
+        oligarchic_drift = 0.05
+ }
 	ROE_wife_of_the_1st_agustus= {
 	random = no
 	stability_factor = 0.10

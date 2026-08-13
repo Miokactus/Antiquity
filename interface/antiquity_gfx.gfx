@@ -214,6 +214,10 @@ spriteTypes = {
 
 ## ROMAN EMPIRE GFX ##
    spriteType = {
+        name = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+        texturefile = "gfx/interface/ideas/Gnaeus_Calpurnius_Pis_advisor_small.dds" # The folder and filename don't matter, as long as they are correct
+    }
+   spriteType = {
         name = "GFX_livia_advisor_small"
         texturefile = "gfx/interface/ideas/livia_advisor_small.dds" # The folder and filename don't matter, as long as they are correct
     }

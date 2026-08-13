@@ -297,6 +297,7 @@ characters = {
     		logistics_skill = 3
 		}
 	}
+
  ROE_LIVIA_advisor = {
 	name = "Livia"
 
@@ -314,6 +315,25 @@ characters = {
             available = {
             }
             traits = { ROE_wife_of_the_1st_agustus }
+        }
+}
+ ROE_Gnaeus_Calpurnius_Pis_advisor = {
+	name = "Gnaeus Calpurnius Pis"
+
+	portraits = {
+		civilian = {
+			small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+		}
+	}
+
+	advisor = {
+		cost = 100
+            slot = political_advisor
+            idea_token = generalem_fortuitum
+            allowed = { original_tag = ROE } # Optional, doesn't change anything.
+            available = {
+            }
+            traits = {  ROE_senator_trait  }
         }
 }
 }
