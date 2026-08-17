@@ -2437,7 +2437,7 @@ focus_tree = {
 	#Chose Germanicus
 	focus = {
 		id = ROE_chose_germanicus
-		icon = GFX_focus_AUS_lawmaking_leniency
+		icon = GFX_focus_CHI_change_in_leadership
 		relative_position_id = ROE_a_new_dynasty
 		x = -2
 		y = 3
@@ -3030,7 +3030,7 @@ focus_tree = {
 ## RISE OF A Nero Iulius Caesar ##
 	focus = {
 		id = ROE_Germanicus_the_great_general
-		icon = GFX_focus_northern_smth
+		icon = GFX_focus_CHI_decisive_battles
 		relative_position_id = ROE_a_new_dynasty
 		x = -2
 		y = 12
@@ -3052,7 +3052,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ROE_Germanicus_death_in_antioche
-		icon = GFX_focus_northern_smth
+		icon = GFX_goal_roman_augustus_death
 		relative_position_id = ROE_a_new_dynasty
 		x = -2
 		y = 13
