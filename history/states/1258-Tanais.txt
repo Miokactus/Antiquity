@@ -1,0 +1,21 @@
+state = {
+	id = 1258
+	name = "STATE_1258"
+	manpower = 95800
+	state_category = city
+	provinces = { 9417 11559 }
+	history = {
+		owner = BOP
+		add_core_of = BOP
+		add_core_of = SAR
+		victory_points = { 9417 15 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			9417 = {
+				naval_base = 3
+			}
+		}
+	}
+}

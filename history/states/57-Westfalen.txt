@@ -1,23 +1,24 @@
 state={
 	id=57
-	name="STATE_57"
-	provinces={
-		405 3355 6513 6535 6622 9509 11346 11431 11493 
-	}
+	name = "STATE_57"
+	provinces = { 405 3355 6535 6622 9509 11346 11431 }
 	history = {
 		owner = ANI
 		add_core_of = ANI
+		victory_points = { 405 1 }
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 2
 		}
-		victory_points = {
-			405 1
-		}
+
 	}
-	manpower=51093
+	resources = {
+		steel = 8
+		gold_ingot = 3
+	}
+	manpower = 51093
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category = large_city
 	local_supplies=0.000
 }

@@ -1627,3 +1627,32 @@ SIG = {
 	color = rgb { 88 118 56 }
 	color_ui = rgb { 0 102 34 }	
 }
+
+
+
+
+
+RTA = {
+	color = rgb { 143 59 72 }
+	color_ui = rgb { 0 102 34 }	
+}
+PRA = {
+	color = rgb { 197 183 73 }
+	color_ui = rgb { 0 102 34 }	
+}
+ARA = {
+	color = rgb { 64 138 70 }
+	color_ui = rgb { 0 102 34 }	
+}
+ARV = {
+	color = rgb { 38 121 130 }
+	color_ui = rgb { 0 102 34 }	
+}
+APR = {
+	color = rgb { 79 149 146 }
+	color_ui = rgb { 0 102 34 }	
+}
+AEO = {
+	color = rgb { 60 115 83 }
+	color_ui = rgb { 0 102 34 }	
+}

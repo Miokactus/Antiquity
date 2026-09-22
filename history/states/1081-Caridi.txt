@@ -19,7 +19,7 @@ state={
 		}
 	}
 	resources = {
-		wood = 6
+		wood = 12
 	}
 	manpower=155000
 	state_category = rural

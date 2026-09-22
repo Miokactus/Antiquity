@@ -26,23 +26,33 @@ leader_traits = {
 		random = no
 	}
 
+	PTH_governor = {
+		random = no
+		political_power_factor = -0.1
+		stability_factor = -0.1
+		war_support_factor = 0.15
+	}
+
 	## Rome
 
- ROE_senator_trait = {
-    random = no
-        political_power_gain = 0.15
-        oligarchic_drift = 0.05
- }
+ 	ROE_senator_trait = {
+    	random = no
+    	political_power_gain = 0.15
+    	oligarchic_drift = 0.05
+ 	}
+
 	ROE_wife_of_the_1st_agustus= {
-	random = no
-	stability_factor = 0.10
-	political_power_gain = 0.15
+		random = no
+		stability_factor = 0.10
+		political_power_gain = 0.15
     }
+
 	ROE_the_german_slayer = {
-	random = no
-	war_support_factor = 0.05
-	army_speed_factor = 0.15
+		random = no
+		war_support_factor = 0.05
+		army_speed_factor = 0.15
     }
+
 	ROE_first_roman_emperor = {
 		random = no
 		political_power_gain = 0.2
@@ -134,6 +144,77 @@ leader_traits = {
 			attack_bonus_against = 0.1
     		defense_bonus_against = 0.1
 		}
+	}
+
+
+
+
+
+
+
+
+
+
+	consul_of_rome = {
+		random = no
+		stability_factor = 0.02
+		political_power_factor = 0.02
+	}
+
+	holder_of_the_imperium = {
+		random = no
+		war_support_factor = 0.05
+		experience_gain_army = 0.2
+	}
+
+	manufacturer_reformer = {
+		random = no
+		production_cost_industrial_complex_factor = -0.1
+		production_speed_industrial_complex_factor = 0.1
+		consumer_goods_factor = -0.05
+	}
+
+	consul_of_the_people = {
+		random = no
+		stability_factor = 0.08
+		base_fuel_gain_factor = -0.05
+		consumer_goods_factor = 0.05
+	}
+
+	diplomatic_appeaser = {
+		random = no
+		enemy_justify_war_goal_time = 0.25
+		opinion_gain_monthly_factor = 0.3
+		political_power_factor = 0.02
+	}
+
+	erratic_commander = {
+		random = no
+		stability_factor = -0.02
+		army_speed_factor = 0.05
+	}
+
+	egalitarian = {
+		random = no
+		communism_drift = 0.05
+		consumer_goods_factor = -0.1
+	}
+
+	political_commander = {
+		random = no
+		fascism_drift = 0.05
+		experience_gain_army = 0.2
+	}
+
+	senatorial_plebean = {
+		random = no
+		democratic_drift = 0.05
+		stability_factor = 0.05
+	}
+
+	celtic_representative = {
+		random = no
+		neutrality_drift = 0.05
 	}
 
 }

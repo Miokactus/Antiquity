@@ -34,6 +34,23 @@ characters = {
 		}
 	}
 
+	tiberius_emperor_absolutist = {
+		name = "Tiberius Julius Caesar Augustus"
+		portraits = {
+            	civilian = {
+                	large = "GFX_leader_ROE_tiberius"
+            		}
+        	}
+		country_leader = {
+			desc = "tiberius_desc"
+			expire = "37.3.16"
+			ideology = absolutism
+			traits = {
+				
+			}
+		}
+	}
+
 	germanicus_emperor = {
 		name = "Germanicus Julius Caesar Augustus"
 		portraits = {
@@ -212,7 +229,7 @@ characters = {
 		name = "Aulus Caecina Severus"
 		portraits = {
             	army = {
-					large = "GFX_leader_ROE_generic_statue"
+					large = "GFX_Portrait_Europe_Generic_2"
 					small = "GFX_idea_empty_generic"
             	}
         	}
@@ -239,7 +256,7 @@ characters = {
 		name = "Generalem Fortuitum"
 		portraits = {
             	army = {
-					large = "GFX_leader_ROE_generic_statue"
+					large = "GFX_Portrait_Europe_Generic_1"
 					small = "GFX_idea_empty_generic"
             	}
         	}
@@ -266,7 +283,7 @@ characters = {
 		name = "Dux Amissus"
 		portraits = {
             	army = {
-					large = "GFX_leader_ROE_generic_statue"
+					large = "GFX_Portrait_Europe_Generic_3"
 					small = "GFX_idea_empty_generic"
             	}
         	}
@@ -298,17 +315,17 @@ characters = {
 		}
 	}
 
- ROE_LIVIA_advisor = {
-	name = "Livia"
+ 	ROE_LIVIA_advisor = {
+		name = "Livia"
 
-	portraits = {
-		civilian = {
-			small = "GFX_livia_advisor_small"
+		portraits = {
+			civilian = {
+				small = "GFX_livia_advisor_small"
+			}
 		}
-	}
 
-	advisor = {
-		cost = 100
+		advisor = {
+			cost = 100
             slot = political_advisor
             idea_token = generalem_fortuitum
             allowed = { original_tag = ROE } # Optional, doesn't change anything.
@@ -316,44 +333,348 @@ characters = {
             }
             traits = { ROE_wife_of_the_1st_agustus }
         }
-}
- ROE_Gnaeus_Calpurnius_Pis_advisor = {
-	name = "Gnaeus Calpurnius Pis"
-
-	portraits = {
-		civilian = {
-			small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
-		}
 	}
 
-	advisor = {
-		cost = 100
-            slot = political_advisor
-            idea_token = generalem_fortuitum
-            allowed = { original_tag = ROE } # Optional, doesn't change anything.
+	ROE_Gnaeus_Calpurnius_Pis_advisor = {
+		name = "Gnaeus Calpurnius Pis"
+
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+
+		advisor = {
+			cost = 100
+    	    slot = political_advisor
+    	    idea_token = generalem_fortuitum
+    	    allowed = { original_tag = ROE } # Optional, doesn't change anything.
             available = {
             }
             traits = {  ROE_senator_trait  }
         }
-}
- ROE_Sejanus_advisor = {
-	name = "Sejanus"
-
-	portraits = {
-		civilian = {
-			small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
-		}
 	}
 
-	advisor = {
-		cost = 100
-            slot = political_advisor
-            idea_token = generalem_fortuitum
-            allowed = { original_tag = ROE } # Optional, doesn't change anything.
-            available = {
-            }
-            traits = {  ROE_senator_trait  }
-        }
-}
+ 	ROE_Sejanus_advisor = {
+		name = "Sejanus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = generalem_fortuitum
+    	    allowed = { original_tag = ROE } # Optional, doesn't change anything.
+    	    available = {}
+   	        traits = {  ROE_senator_trait  }
+    	}
+	}
+
+
+
+
+
+
+
+
+
+	## CONSULS 
+
+	ROE_Sextus_Pompeius = {
+		name = "Sextus Pompeius"
+		portraits = {
+			civilian = {
+				small = "GFX_sextus_pompeius_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = sextus_pompeius
+    	    available = {}
+   	        traits = { holder_of_the_imperium }
+    	}
+	}
+
+	ROE_Drusus_Julius_Caesar = {
+		name = "Drusus Julius Caesar"
+		portraits = {
+			civilian = {
+				small = "GFX_drusus_julius_caesar_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = drusus_julius_caesar
+    	    available = {}
+   	        traits = { ROE_senator_trait }
+    	}
+	}
+
+	ROE_Sisenna_Stalitius_Taurus = {
+		name = "Sisenna Stalitius Taurus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = sisenna_statilius_taurus
+    	    available = {}
+   	        traits = {  erratic_commander }
+    	}
+	}
+
+	ROE_Pomponius_Flaccus = {
+		name = "L. Pomponius Flaccus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = pomponius_flaccus
+    	    available = {}
+   	        traits = { egalitarian }
+    	}
+	}
+
+	ROE_Seius_Tubero = {
+		name = "L. Seius Tubero"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = seius_tubero
+    	    available = {}
+   	        traits = {  diplomatic_appeaser }
+    	}
+	}
+
+	ROE_Junius_Torquatus = {
+		name = "M. Junius Torquatus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = junius_torquatus
+    	    available = {}
+   	        traits = { senatorial_plebean }
+    	}
+	}
+
+	ROE_Valerius_Barbatus = {
+		name = "M. Valerius Barbatus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = valerius_barbatus
+    	    available = {}
+   	        traits = {  consul_of_the_people }
+    	}
+	}
+	
+	ROE_Haterius_Agrippa = {
+		name = "Decimus Haterius Agrippa"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = decimus_haterius_agrippa
+    	    available = {}
+   	        traits = {  manufacturer_reformer }
+    	}
+	}
+
+	ROE_Asinius_Pollio = {
+		name = "C. Asinius Pollio"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = asinius_pollio
+    	    available = {}
+   	        traits = { ROE_senator_trait }
+    	}
+	}
+
+
+
+
+
+
+
+
+	ROE_Sextus_Appuleius = {
+		name = "Sextus Appuleius"
+		portraits = {
+			civilian = {
+				small = "GFX_sextus_appuleius_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = sextus_appuleius
+    	    available = {}
+   	        traits = { consul_of_the_people }
+    	}
+	}
+
+	ROE_Norbanus_Flaccus = {
+		name = "Caius Norbanus Flaccus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = norbanus_flaccus
+    	    available = {}
+   	        traits = { celtic_representative }
+    	}
+	}
+
+	ROE_Lucius_Scribonius_Libo = {
+		name = "Lucius Scribonius Libo"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = lucius_libo
+    	    available = {}
+   	        traits = {  manufacturer_reformer }
+    	}
+	}
+
+	ROE_Caelius_Rufus = {
+		name = "C. Caelius Rufus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = caelius_rufus
+    	    available = {}
+   	        traits = { erratic_commander }
+    	}
+	}
+
+	ROE_Livineius_Regulus = {
+		name = "Marcus Livineius Regulus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = livineius_regulus
+    	    available = {}
+   	        traits = { ROE_senator_trait }
+    	}
+	}
+
+	ROE_Lucius_Norbanus_Balbus = {
+		name = "Lucius Norbanus Balbus"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = lucius_balbus
+    	    available = {}
+   	        traits = { political_commander }
+    	}
+	}
+
+	ROE_Aurelius_Cotta = {
+		name = "M. Aurelius Cotta"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = aurelius_cotta
+    	    available = {}
+   	        traits = {  erratic_commander }
+    	}
+	}
+
+	ROE_Drusus_Julius_Caesar_II = {
+		name = "Drusus Julius Caesar"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = drusus_julius_caesar_ii
+    	    available = {}
+   	        traits = {  holder_of_the_imperium }
+    	}
+	}
+
+	ROE_Sulpicius_Galba = {
+		name = "C. Sulpicius Galba"
+		portraits = {
+			civilian = {
+				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+			}
+		}
+		advisor = {
+			cost = 100
+    		slot = political_advisor
+    	    idea_token = sulpicius_galba
+    	    available = {}
+   	        traits = {  diplomatic_appeaser }
+    	}
+	}
 
 }

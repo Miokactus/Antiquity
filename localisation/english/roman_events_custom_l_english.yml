@@ -130,7 +130,41 @@
  rome_event.24.b: "A sad day."
  rome_event.24.c: "Who?"
 
-rome_event.25.t: "Strike a deal"
+ rome_event.25.t: "Strike a deal"
+
+ rome_event.26.t: "Consular Elections"
+ rome_event.26.d: "As every year, at the start of the month of Augustus, the next Consuls are to be elected for the coming year.\n\nThe number of consuls is of 2, and they are essential to the wellbeing of our nation.\n\nThis year, many senators are participating, as well as new magistrates from all across the empire. Hopefully, the next consuls will have a better relationship with us."
+ rome_event.26.a: "Optimus vincat."
+
+ rome_event.27.t: "Results of the Consular Elections"
+ rome_event.27.d: "Results are in: the newly elected consuls for this year are §Y[GetConsul1Name]§! and §G[GetConsul2Name]§!, two influencial senators. This election marks the start of the preparations for the next year in politics, that will begin in January."
+ rome_event.27.a: "Congrats to the winners" ### ADD THE CONSULS AS ADVISORS (maybe special slots? check on that)
+
+ rome_event.28.t: "The Senate is in session"
+ rome_event.28.d: "The Senate has now entered a new session, discussing about current politics, investments, budgetary measures and other things. The senators, inbetween their ornamented walls, cannot vote laws by themselves, but they can heavily influence their acceptance by the comitias below them.\n\nIf we wanted, we could intervene within the Senate's affairs to defend our interests, however, it could be seen as a sign of tensions between the aristocracy and the Chancellery, effectively damaging our relations with the Senate."
+ rome_event.28.a: "The aristocracy debates between itself."
+
+ rome_event.29.t: "The Senate has reached a conclusion"
+ rome_event.29.d: "The Senate's session has reached its conclusion today, with multiples decisions being reached. It has, however, little importance for now as they need to pass the comitias' final judgement to take effect."
+ rome_event.29.a: "This now pass to the comitias"
+
+ rome_event.30.t: "Imperial Interference in the Senate!"
+ rome_event.30.d: "The Emperor has stepped into the Senate chamber today, stopping most discussions and delivering a speech on the issues within the Principate, holding the Senators' attention for many minutes.\n\nUrging the Senate to take action regarding the current investment situation in Rome and around, many Senators weren't much pleased by the sudden Emperor's interruption, as they saw this act being an act of great disrespect.\n\nAt the end of the speech, the Emperor then asked the Senate to concentrate their efforts towards..."
+ rome_event.30.a: "...New manufactures!"
+ rome_event.30.b: "...Or maybe in new military infrastructure!"
+
+
+
+
+
+
+ rome_event.108.t: "Troubles across the Empire!"
+ rome_event.108.d: "Dire news are coming from the northern part of the Empire, near the newly conquered territories that the Barbarians stole from us!\n\nFrom officials' words, it is said that in various villages and even some cities, whispers of a rebellion are growing. They are calling to Mars for help, urging him to give them strenght for the fight to come. \n\nAccording to Gaius Calpurnius Aviola, governor of the province of Gaul Lugdunensis, roman troops are already seeing large amounts of levies assembling themselves near the territory of Brittany."
+ rome_event.108.a: "Legio, onwards!"
+
+ rome_event.109.t: "News of the defeat reaches the East!"
+ rome_event.109.d: "The news of our defeat against the germans has now reached the eastern half of our Empire, putting the doubt into our numerous officials located in these faraway provinces. In addition, reports coming from the Levant has indicated that the jews from the province of Judea have now began to form small pockets of resistance across the region, harassing our officials.\n\nSome Senators are already calling this a punishment from the Gods and are asking that the Government takes immediate action to resolve the Gods' anger."
+ rome_event.109.a: "Oh, Jupiter help us!"
 
 
 

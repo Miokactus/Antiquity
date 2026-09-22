@@ -1228,7 +1228,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CRS_royal_arminius
 			swap_ideas = {
-				remove_idea = CRS_interal_infighting
+				remove_idea = CRS_internal_infighting
 				add_idea = CRS_purge_of_the_pro_romans
 			}
 		}
@@ -1251,7 +1251,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = CRS_warning_death_arminius
 			swap_ideas = {
-				remove_idea = CRS_interal_infighting
+				remove_idea = CRS_internal_infighting
 				add_idea = CRS_pro_romans_cooperation
 			}
 		}
@@ -1273,6 +1273,24 @@ focus_tree = {
 		prerequisite = { focus = CRS_appease_the_pro_romans }
 		mutually_exclusive = { }
 		completion_reward = {
+			ROE = {
+				add_opinion_modifier = {
+    				target = CRS
+    				modifier = appeasement_with_rome
+				}
+			}
+			add_opinion_modifier = {
+    			target = ROE
+    			modifier = appeasement_with_rome
+			}
+			add_political_power = -25
+			add_stability = 0.05
+			add_war_support = -0.05
+			diplomatic_relation = {
+    			country = ROE
+    			relation = non_aggression_pact
+   				active = yes
+			}
 		}
 	}
 
@@ -1291,6 +1309,12 @@ focus_tree = {
 		prerequisite = { focus = CRS_make_peace_with_rome }
 		mutually_exclusive = { }
 		completion_reward = {
+			ROE = {
+				country_event = {
+					id = crs_event.13
+					days = 10
+				}
+			}
 		}
 	}
 
@@ -1387,6 +1411,9 @@ focus_tree = {
     			ideology = communism
     			popularity = 0.1
 			}
+			add_political_power = 50
+			add_stability = 0.05
+			add_command_power = 15
 		}
 	}
 
@@ -1405,7 +1432,13 @@ focus_tree = {
 		prerequisite = { focus = CRS_centralisation_of_power }
 		mutually_exclusive = {}
 		completion_reward = {
-			
+			add_political_power = 150
+			add_stability = 0.1
+			add_popularity = {
+    			ideology = communism
+    			popularity = 0.05
+			}
+
 		}
 	}
 }

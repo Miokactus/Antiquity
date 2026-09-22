@@ -1,17 +1,15 @@
 
 state={
 	id=31
-	name="STATE_31"
+	name = "STATE_31"
 
 	history={
 		owner = ROE
 		add_core_of = ROE
-		victory_points = {
-			6766 5 
-		}
-		victory_points = {
-			3946 8
-		}
+		victory_points = { 3946 8 }
+		victory_points = { 6766 5 }
+
+
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -24,12 +22,10 @@ state={
 
 	}
 
-	provinces={
-		929 943 3740 3749 3915 3946 3948 6759 6766 6915 6917 6931 9853 9882 9884 11699 11702 12169 
-	}
-	manpower=58250
+	provinces = { 943 3915 3946 3948 6766 6915 6917 6931 9853 11702 }
+	manpower = 58250
 	buildings_max_level_factor=1.000
-	state_category=city
+	state_category = city
 
 	local_supplies=0.0 
 }

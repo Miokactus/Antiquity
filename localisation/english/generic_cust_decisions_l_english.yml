@@ -4,6 +4,17 @@
  war_actions: "War Actions"
  tribal_actions: "Tribal Actions"
 
+
+
+
+ Consul1: "[GetConsul1Name]"
+ Consul2: "[GetConsul2Name]"
+ Consul1colour: "[GetConsul1NameColour]"
+ Consul2colour: "[GetConsul2NameColour]"
+ GFX_consul1_portrait: "[GetConsul1Portrait]"
+ GFX_consul2_portrait: "[GetConsul2Portrait]"
+ consulate_tt: "§YOpen the Consulate§!"
+
  MAPMODE_INFLUENCE_MAP_MODE_NAME: "Influence"
  MAPMODE_INFLUENCE_MAP_MODE: "§YInfluence§! map mode"
  MAPMODE_INFLUENCE_MAP_MODE_DESCRIPTION: "Shows the current influences spheres in the world. Each colour is based on the main country, while different shades can mean that an influenced country is either a puppet or independent."
@@ -28,6 +39,8 @@
  faction_manifest_gothic_alliance: ""
  svear_alliance: "Svear Tribes"
  faction_manifest_svear_alliance: ""
+
+ integrate_the_eastern_half_of_the_rhine: "Integrate the Eastern half of the Rhine"
  
 
 

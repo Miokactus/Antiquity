@@ -360,9 +360,18 @@ scripted_diplomatic_actions = {
 		receive_scripted_gui = pd_offer_peace_deal_receive
 
 		ai_desire = {
-			base = -100
+			base = 0
 			modifier = {
-				
+				add = 50
+				ROOT = {
+					tag = ROE
+				}
+				FROM = {
+					capital_scope = { check_variable = { culture_var = 5 } }
+				}
+				OR = {
+					has_country_flag = ROE_lost_to_germans
+				}
 			}
 		}
 		
@@ -544,8 +553,13 @@ scripted_diplomatic_actions = {
 		ai_desire = {
 			base = 5
 			modifier = {
-				add = 10
-				enemies_strength_ratio > 0.6
+				add = 50
+				overlord = {
+					strength_ratio = {
+    					tag = FROM
+    					ratio < 0.5
+					}
+				}
 			}
 		}
 		

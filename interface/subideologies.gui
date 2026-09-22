@@ -8,7 +8,7 @@ guiTypes = {
 		instantTextboxType = {
 			name = "subideology_zzz"
 			position = { x = 97 y = 327 }
-			font = "hoi_17mbs"
+			font = "hoi_18mbs"
 			text = "[?country_leader.GetIdeologyGroup]"
 			pdx_tooltip = "[?country_leader.GetIdeologyGroup]"
 			maxWidth = 205

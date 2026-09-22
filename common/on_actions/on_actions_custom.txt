@@ -388,7 +388,7 @@ on_actions = {
         }
     }
 
-    on_daily = {
+    on_weekly = {
         effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
             if = {
                 limit = {
@@ -416,4 +416,63 @@ on_actions = {
             }
         }
     }
+
+    on_startup = {
+        effect = {
+            ROE = {
+                country_event = {
+                    id = rome_event.26
+                    days = 30
+                }
+                set_variable = { consul1 = 0 }
+                set_variable = { consul2 = 0 }
+                add_advisor_role = {
+    				character = ROE_Sextus_Pompeius
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = drusus_julius_caesar
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Sextus_Pompeius
+    				value = no
+				}
+
+				add_advisor_role = {
+    				character = ROE_Sextus_Appuleius
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = norbanus_flaccus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Sextus_Appuleius
+    				value = no
+				}
+            }
+        }
+    }
+    on_startup = {
+        effect = {
+            ROE = {
+                country_event = {
+					id = rome_event.28
+					days = 30
+					random_days = 20
+				}
+            }
+        }
+    }
+
+    
 }

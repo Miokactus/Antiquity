@@ -75,4 +75,21 @@ characters = {
 			}
 		}
 	}
+
+	CRS_tiberius_caius_julius = {
+		name = "Tiberius Caius Julius"
+		portraits = {
+            civilian = {
+                large = "GFX_Portrait_Europe_Generic_4"
+            }
+        }
+		country_leader = {
+			desc = "CRS_tiberius_caius_julius_desc"
+			expire = "65.5.4"
+			ideology = roman_paternalism
+			traits = {
+				
+			}
+		}
+	}
 }

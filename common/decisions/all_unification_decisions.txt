@@ -227,6 +227,92 @@ unification_decisions = {
 		}
 	}
 
+    ## GERMAN TRIBAL UNIFICATION
+    integrate_the_eastern_half_of_the_rhine = {
+		fire_only_once = yes
+		icon = generic_civil_support
+		highlight_states = {
+    		highlight_state_targets = {
+        		state = 7
+				state = 35
+				state = 977
+				state = 1022
+				state = 42
+				state = 8
+				state = 980
+				state = 34
+				state = 6
+				state = 29
+				state = 28
+				state = 1261
+				state = 17
+				state = 1253
+    		}
+    		highlight_color_while_active = 3
+    		highlight_color_before_active = 2
+		}
+		cost = 150
+		allowed = {
+            OR = { 
+                original_tag = FRI
+                original_tag = CMI
+                original_tag = AMV
+                original_tag = CAU
+                original_tag = CSU
+                original_tag = USP
+                original_tag = SGI
+                original_tag = TNI
+                original_tag = CTT
+                original_tag = VGI
+                original_tag = NMI
+                original_tag = TBI
+                original_tag = ERR
+                original_tag = NSE
+                original_tag = MRA
+                original_tag = AGI
+                original_tag = CRS
+                original_tag = ANI
+                original_tag = SXA
+                original_tag = AGL
+                original_tag = VNI
+                original_tag = CRD
+                original_tag = LGI
+                original_tag = SNI
+                original_tag = BRU
+            }
+    	}
+		available = {
+			controls_state = 7
+			controls_state = 35
+			controls_state = 977
+			controls_state = 1022
+		    controls_state = 42
+			controls_state = 8
+			controls_state = 980
+			controls_state = 34
+			controls_state = 6
+			controls_state = 29
+			controls_state = 28
+			controls_state = 1261
+			controls_state = 17
+			controls_state = 1253
+		}
+		visible = {
+            has_cosmetic_tag = germanic_empire
+		}
+		complete_effect = {
+            hidden_effect = {
+                CRS_eastern_half_of_rhine_cores = yes
+            }
+            custom_effect_tooltip = germanic_empire_tooltip_owns
+		}
+		timeout_effect = {
+		}
+        ai_will_do = {
+    		base = 500
+		}
+	}
+
 
     
 

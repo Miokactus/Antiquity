@@ -5,7 +5,8 @@ state = {
 	
 	state_category = city
 	resources = {
-		grain = 1
+		grain = 5
+		steel = 5
 	}
 
 	history = {
@@ -19,6 +20,7 @@ state = {
 			#
 			arms_factory = 1
 			infrastructure = 2
+			farm = 2
 			11751 = {
 				naval_base = 5
 			}

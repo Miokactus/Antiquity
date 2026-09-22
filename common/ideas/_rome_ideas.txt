@@ -3,6 +3,36 @@ ideas = {
 		
 	## GENERIC ##
 
+		ROE_the_emperor_reigns_supreme = {
+			name = "The Supreme Emperor"
+			allowed_civil_war = { has_government = fascism }
+			picture = AFG_parliament_building
+			cancel = {
+    			NOT = {
+					has_government = fascism
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						has_government = communism
+					}
+					set_power_balance = {
+    					id = ROE_roman_senate
+   						left_side = ROE_senate_power_side
+   						right_side = ROE_emperor_power_side
+						set_value = 0.15
+					}
+				}
+			}
+			modifier = {
+				political_power_factor = 0.15
+                stability_factor = 0.15
+                war_support_factor = 0.1
+				resistance_damage_to_garrison_on_our_occupied_states = 0.15
+			}
+		}
+
 		one_party_monopoly = {
 			name = "Rome's Absolute Monopoly"
 			allowed_civil_war = { always = yes }

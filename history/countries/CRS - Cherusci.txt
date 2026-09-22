@@ -11,6 +11,7 @@ recruit_character = CRS_arminius
 recruit_character = CRS_italicus
 recruit_character = CRS_flavius
 recruit_character = CRS_segestes
+recruit_character = CRS_tiberius_caius_julius
 
 # Starting tech
 set_technology = {
@@ -50,5 +51,5 @@ add_ideas = {
 	limited_exports
 	extensive_conscription
 	CRS_teutoburg_victory
-	CRS_interal_infighting
+	CRS_internal_infighting
 }

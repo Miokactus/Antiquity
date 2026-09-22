@@ -1,0 +1,103 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_sextus_pompeius"
+        texturefile = "gfx/characters/Consuls/Sextus_Pompeius.dds" 
+    }
+    spriteType = {
+        name = "GFX_sextus_pompeius_advisor_small"
+        texturefile = "gfx/characters/Consuls/Sextus_Pompeius_small.dds" 
+    }
+
+    spriteType = {
+        name = "GFX_drusus_julius_caesar"
+        texturefile = "gfx/characters/Consuls/Drusus_Julius_Caesar.dds" 
+    }
+    spriteType = {
+        name = "GFX_drusus_julius_caesar_advisor_small"
+        texturefile = "gfx/characters/Consuls/Drusus_Julius_Caesar_small.dds" 
+    }
+
+    spriteType = {
+        name = "GFX_sisenna_statilius_taurus"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds" 
+    }
+    spriteType = {
+        name = "GFX_lucius_pomponius_flaccus"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_4.dds" 
+    }
+    spriteType = {
+        name = "GFX_lucius_seius_tubero"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds" 
+    }
+    spriteType = {
+        name = "GFX_marcus_junius_silanus_torquatus"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds" 
+    }
+    spriteType = {
+        name = "GFX_marcus_valerius_messalla_barbatus"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds" 
+    }
+    spriteType = {
+        name = "GFX_decimus_haterius_agrippa"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+    }
+    spriteType = {
+        name = "GFX_gaius_asinius_pollio"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    spriteType = {
+        name = "GFX_sextus_appuleius"
+        texturefile = "gfx/characters/Consuls/Sextus_Appuleius.dds" 
+    }
+    spriteType = {
+        name = "GFX_sextus_appuleius_advisor_small"
+        texturefile = "gfx/characters/Consuls/Sextus_Appuleius_small.dds" 
+    }
+
+    spriteType = {
+        name = "GFX_caius_norbanus_flaccus"
+        texturefile = "gfx/characters/Consuls/Caius_Norbanus_Flaccus.dds" 
+    }
+    spriteType = {
+        name = "GFX_caius_norbanus_flaccus_advisor_small"
+        texturefile = "gfx/characters/Consuls/Caius_Norbanus_Flaccus_small.dds" 
+    }
+
+
+    spriteType = {
+        name = "GFX_lucius_scribonius_libo"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_6.dds" 
+    }
+    spriteType = {
+        name = "GFX_gaius_caelius_rufus"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds" 
+    }
+    spriteType = {
+        name = "GFX_marcus_livineius_regulus"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds" 
+    }
+    spriteType = {
+        name = "GFX_lucius_norbanus_balbus"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds" 
+    }
+    spriteType = {
+        name = "GFX_drusus_julius_caesar"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_4.dds" 
+    }
+    spriteType = {
+        name = "GFX_gaius_sulpicius_galba"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds" 
+    }
+}

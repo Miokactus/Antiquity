@@ -23,7 +23,6 @@ crisis = {
 			}
 		}
 		visible = {
-			original_tag = ROE
 		}
 		complete_effect = {
 		}
@@ -63,7 +62,6 @@ crisis = {
 			}
 		}
 		visible = {
-			original_tag = ROE
 		}
 		complete_effect = {
 			custom_effect_tooltip = ROE_we_will_deal_with_mutinies
@@ -120,17 +118,12 @@ crisis = {
 			}
 		}
 		visible = {
-			original_tag = ROE
 		}
 		complete_effect = {
 		}
 
 		timeout_effect = {
-			if = {
-				limit = {
-				}
-				ROE = { country_event = rome_event.5 }
-			}
+			ROE = { country_event = rome_event.5 }
 			hidden_effect = { 
 				news_event = roman_news.2
 			}
@@ -157,7 +150,6 @@ propaganda_efforts = {
 			}
 		}
 		visible = {
-			original_tag = ROE
 		}
 		complete_effect = {
 			party_leader = {
@@ -191,10 +183,16 @@ germania_campaign = {
 			original_tag = ROE
     	}
 		available = {
-			
+			date > 16.1.1
+			NOT = {
+				OR = {
+					has_country_flag = ROE_lost_to_germans
+					has_active_mission = end_of_war
+					has_active_mission = retreating_from_tribal_lands
+				}
+			}
 		}
 		visible = {
-			original_tag = ROE
 		}
 		complete_effect = {
 		}
@@ -257,7 +255,6 @@ germania_campaign = {
 			
 		}
 		visible = {
-			original_tag = ROE
 		}
 		complete_effect = {
 		}
@@ -334,7 +331,6 @@ germania_campaign = {
 			
 		}
 		visible = {
-			original_tag = ROE
 		}
 		complete_effect = {
 			FROM = {
@@ -393,7 +389,7 @@ germania_campaign = {
 				NOT = { has_war_with = ROOT }
 			}
 		}
-		days_mission_timeout = 160
+		days_mission_timeout = 70
 		activation = {
 			
 		}
@@ -430,45 +426,114 @@ germania_campaign = {
 				original_tag = CRS
 			}
     	}
-
 		available = {
 			custom_trigger_tooltip = {
-			tooltip = ROE_cities_fight_germans
-				OR = {
-					ROE = {
-						OR = {
-							FROM = {
-								NOT = { has_war_with = ROOT }
+				tooltip = ROE_cities_fight_germans
+				ROE = {
+					OR = {
+						1079 = {
+								is_controlled_by = ROE
+						}
+						AND = {
+							1075 = {
+								is_controlled_by = ROE
+							}
+							1072 = {
+								is_controlled_by = ROE
 							}
 							OR = {
-								1079 = {
+								1070 = {
 									is_controlled_by = ROE
 								}
-								AND = {
-									1075 = {
-										is_controlled_by = ROE
-									}
-									1072 = {
-										is_controlled_by = ROE
-									}
-									OR = {
-										1070 = {
-											is_controlled_by = ROE
-										}
-										1078 = {
-											is_controlled_by = ROE
-										}
-									}
+								1078 = {
+									is_controlled_by = ROE
 								}
 							}
 						}
 					}
-				}
+				}			
 			}
 		}
-		days_mission_timeout = 360
+		days_mission_timeout = 420
 		activation = {
-			
+		}
+		cancel_trigger = {
+			any_enemy_country = {
+				limit = {
+				AND = {
+					OR = {
+						is_ally_with = CRS
+						tag = CRS
+					}
+					has_war_with = ROOT
+				}
+				}
+				controls_state = 7
+				controls_state = 35
+				controls_state = 977
+				controls_state = 1022
+				controls_state = 42
+				controls_state = 8
+				controls_state = 980
+				controls_state = 34
+				controls_state = 6
+				controls_state = 29
+				controls_state = 28
+				controls_state = 1261
+				controls_state = 17
+				controls_state = 1253
+			}
+		}
+		cancel_effect = {
+			ROE = {
+				FROM = {
+					country_event = {
+						id = rome_event.107
+						days = 5
+					}
+				}
+				add_war_support = -0.1
+				add_stability = -0.1
+				add_timed_idea = {
+    				idea = ROE_lost_to_germans
+    				days = 560
+				}
+				set_country_flag = ROE_lost_to_germans
+				remove_ideas = ROE_germanicus_campaign
+			}
+			CRS = {
+				add_war_support = 0.05
+				add_stability = 0.1
+				swap_ideas = {
+					remove_idea = CRS_teutoburg_victory
+					add_idea = CRS_domination_over_the_romans
+				}
+			}
+			CRS = {
+				transfer_state = 7
+				transfer_state = 35
+				transfer_state = 977
+				transfer_state = 1022
+				transfer_state = 42
+				transfer_state = 8
+				transfer_state = 980
+				transfer_state = 34
+				transfer_state = 6
+				transfer_state = 29
+				transfer_state = 28
+				transfer_state = 1261
+				transfer_state = 17
+				transfer_state = 1253
+				ROE = {
+					country_event = {
+						id = rome_event.108
+						days = 10
+					}
+					white_peace = {
+    					tag = CRS
+					}
+				}
+			}
 		}
 		visible = {
 			OR = {
@@ -502,6 +567,11 @@ germania_campaign = {
     				idea = CRS_lost_to_the_romans
     				days = 360
 				}
+				ROE = {
+					white_peace = {
+    					tag = CRS
+					}
+				}
 				dismantle_faction = yes
 			}
 			FROM = {
@@ -512,7 +582,7 @@ germania_campaign = {
 			ROE = {
 				FROM = {
 					country_event = {
-						id = generic_custom.23
+						id = rome_event.107
 						days = 5
 					}
 				}
@@ -531,6 +601,47 @@ germania_campaign = {
 				swap_ideas = {
 					remove_idea = CRS_teutoburg_victory
 					add_idea = CRS_domination_over_the_romans
+				}
+				if = {
+					limit = {
+						controls_state = 7
+						controls_state = 35
+						controls_state = 977
+						controls_state = 1022
+						controls_state = 42
+						controls_state = 8
+						controls_state = 980
+						controls_state = 34
+						controls_state = 6
+						controls_state = 29
+						controls_state = 28
+						controls_state = 1261
+						controls_state = 17
+						controls_state = 1253
+					}
+					transfer_state = 7
+					transfer_state = 35
+					transfer_state = 977
+					transfer_state = 1022
+					transfer_state = 42
+					transfer_state = 8
+					transfer_state = 980
+					transfer_state = 34
+					transfer_state = 6
+					transfer_state = 29
+					transfer_state = 28
+					transfer_state = 1261
+					transfer_state = 17
+					transfer_state = 1253
+					ROE = {
+						white_peace = {
+    						tag = CRS
+						}
+						country_event = {
+							id = rome_event.108
+							days = 10
+						}
+					}
 				}
 			}
 		}
@@ -776,3 +887,101 @@ roman_citizenship = {
 		}
 	}
 }
+
+
+
+roman_senate_category = {
+	ROE_senatorial_coupdetat = {
+		icon = generic_civil_support
+		is_good = no
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			communism < 0.4
+			fascism > 0.4
+		}
+		days_mission_timeout = 70
+		activation = {
+			power_balance_value = {
+    			id = ROE_roman_senate
+    			value > -0.9
+			}
+		}
+		complete_effect = {
+			remove_power_balance = {
+    			id = ROE_roman_senate
+			}
+			add_ideas = ROE_the_emperor_reigns_supreme
+			set_politics = {
+    			ruling_party = fascism
+   				elections_allowed = no
+    			last_election = "14.1.1"
+    			election_frequency = 48
+			}
+			promote_character = {
+				character = tiberius_emperor_absolutist
+				ideology = absolutism
+			}
+		}
+		timeout_effect = {
+			country_event = {
+				id = rome_event.113
+				days = 3
+			}
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+
+	overrule_the_senate = {
+		fire_only_once = yes
+		icon = generic_civil_support
+		cost = 50
+		days_mission_timeout = 20
+		is_good = no
+		allowed = {
+			original_tag = ROE
+    	}
+		activation = {
+			has_country_flag = ROE_senate_debating
+		}
+		available = {
+
+		}
+		complete_effect = {
+			clr_country_flag = ROE_senate_debating
+			country_event = {
+				id = rome_event.30
+				days = 1
+			}
+			hidden_effect = {
+				country_event = {
+					id = rome_event.28
+					days = 80
+					random_days = 30
+				}
+			}
+		}
+		timeout_effect = {
+			clr_country_flag = ROE_senate_debating
+			country_event = {
+				id = rome_event.29
+				days = 1
+			}
+			hidden_effect = {
+				country_event = {
+					id = rome_event.28
+					days = 80
+					random_days = 30
+				}
+			}
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+}
+
+roman_senate_category_decisions = {}

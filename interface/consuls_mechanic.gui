@@ -1,0 +1,103 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "consulswindow"
+		position = { x=-606 y=78}	
+		show_position = { x=543 y =80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=500 height=50%% }
+		clipping = no #TODO SEA remove it. Added for displaying coal
+		#hide_sound = menu_close_window
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_border"
+		}
+
+		instantTextboxType = {
+			name = "consuls_title"
+			position = { x = 0 y = 30 }
+			textureFile = ""
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "The Roman Consulate"
+			maxWidth = 500
+			maxHeight = 20
+			format = center
+		}
+
+		iconType = {
+			name = "consul1_portrait"
+			spriteType = "GFX_consul1_portrait"
+			position = { x = 40 y = 80 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "Consul1colour"
+		}
+
+		iconType = {
+			name = "leader_frame2"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = 32 y = 70 }	
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "consulswindow_consul1"
+			position = { x = 40 y = 295 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Consul1"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+		}
+
+		iconType = {
+			name = "consul2_portrait"
+			spriteType = "GFX_consul2_portrait"
+			position = { x = -210 y = 80 }
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "Consul2colour"
+		}
+
+		iconType = {
+			name = "leader_frame3"
+			spriteType = "GFX_pol_leader_frame"
+			position = { x = 282 y = 70 }	
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "consulswindow_consul2"
+			position = { x = 290 y = 295 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Consul2"
+			maxWidth = 155
+			maxHeight = 36
+			format = center
+		}
+
+
+		
+
+
+
+
+		buttonType = {
+			name = "close_button"
+			position = { x = -37 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+}

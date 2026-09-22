@@ -1,0 +1,17 @@
+guiTypes = {
+	containerWindowType = {
+		name = "consul_window"
+		position = { x=0 y=0 }
+		size = { width=5%% height=30 }
+
+		buttonType = {
+			name = "consulswindow_button"
+			quadTextureSprite ="GFX_consuls_mechanic_button" 
+			position = { x= 155 y = 265 }
+			Orientation = "UPPER_LEFT"
+			clicksound = click_close
+			oversound = ui_menu_over
+			buttonText = "consulate_tt"
+		}
+	}
+}

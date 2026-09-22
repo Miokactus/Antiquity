@@ -1,5 +1,5 @@
 on_actions = {
-    on_daily = {
+    on_weekly = {
         effect = {
             if = { 
                 limit = { 
@@ -199,14 +199,14 @@ on_actions = {
         }
     }
 
-    on_daily = {
+    on_weekly = {
         effect = {
             set_variable = { council_allegiance_arsacid = var:house_suren }
             add_to_variable = { council_allegiance_arsacid = var:house_karen }
             add_to_variable = { council_allegiance_arsacid = var:house_zik }
         }
     }
-    on_daily = {
+    on_weekly = {
         effect = {
             set_variable = { council_allegiance_arsacid_ws = council_allegiance_arsacid }
             divide_variable = { council_allegiance_arsacid_ws = 2500 }

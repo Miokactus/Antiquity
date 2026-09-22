@@ -1,0 +1,20 @@
+state = {
+	id = 1257
+	name = "STATE_1257"
+	manpower = 65060
+	state_category = town
+	provinces = { 6420 9571 9729 }
+	history = {
+		owner = BOP
+		add_core_of = SAR
+		add_core_of = BOP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+			9729 = {
+				naval_base = 2
+			}
+		}
+	}
+}

@@ -3,7 +3,7 @@ ideas = {
 		DAC_civil_war_appeased = {
 			name = "Dacio-Getian Appeasement"
 			allowed_civil_war = { always = yes }
-			picture = chi_war_of_resistance1
+			picture = ETH_peacekeeping_forces
 			targeted_modifier = {
 				tag = GET
 				trade_cost_for_target_factor = 0.2
@@ -54,7 +54,7 @@ ideas = {
 		GET_civil_war_appeased = {
 			name = "Dacio-Getian Civil War"
 			allowed_civil_war = { always = yes }
-			picture = chi_war_of_resistance1
+			picture = ETH_peacekeeping_forces
 			targeted_modifier = {
 				tag = DAC
 				trade_cost_for_target_factor = 0.2

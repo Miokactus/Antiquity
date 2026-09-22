@@ -193,63 +193,9 @@ country_event = {
 		name = rome_event.6.a
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
-		CRT = {
-			transfer_state = 1020
-			transfer_state = 290
-			transfer_state = 459
-			transfer_state = 460
-			transfer_state = 1021
-			transfer_state = 458
-			transfer_state = 665
-			transfer_state = 115
-			transfer_state = 116
-			transfer_state = 448
-			transfer_state = 449
-			add_state_core = 1020
-			add_state_core = 290
-			add_state_core = 459
-			add_state_core = 460
-			add_state_core = 1021
-			add_state_core = 458
-			add_state_core = 665
-			add_state_core = 115
-			add_state_core = 116
-			add_state_core = 448
-			add_state_core = 449
-		}
+		CRT_breakaway = yes
 		hidden_effect = { 
-		ANT = {
-			transfer_state = 1023
-			transfer_state = 347
-			transfer_state = 340
-			transfer_state = 339
-			transfer_state = 343
-			transfer_state = 346
-			transfer_state = 49
-			transfer_state = 356
-			transfer_state = 345
-			transfer_state = 344
-			transfer_state = 1036
-			transfer_state = 799
-			transfer_state = 677
-			transfer_state = 1185
-			transfer_state = 553
-			add_state_core = 1023
-			add_state_core = 347
-			add_state_core = 340
-			add_state_core = 339
-			add_state_core = 343
-			add_state_core = 346
-			add_state_core = 49
-			add_state_core = 356
-			add_state_core = 345
-			add_state_core = 344
-			add_state_core = 1036
-			add_state_core = 799
-			add_state_core = 677
-			add_state_core = 1185
-			add_state_core = 553
-		}
+			ANT_breakway = yes
 		}
 		CRT = { 
 			change_tag_from = ROOT 
@@ -266,63 +212,9 @@ country_event = {
 		name = rome_event.6.b
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
-		ANT = {
-			transfer_state = 1023
-			transfer_state = 347
-			transfer_state = 340
-			transfer_state = 339
-			transfer_state = 343
-			transfer_state = 346
-			transfer_state = 49
-			transfer_state = 356
-			transfer_state = 345
-			transfer_state = 344
-			transfer_state = 1036
-			transfer_state = 799
-			transfer_state = 677
-			transfer_state = 1185
-			transfer_state = 553
-			add_state_core = 1023
-			add_state_core = 347
-			add_state_core = 340
-			add_state_core = 339
-			add_state_core = 343
-			add_state_core = 346
-			add_state_core = 49
-			add_state_core = 356
-			add_state_core = 345
-			add_state_core = 344
-			add_state_core = 1036
-			add_state_core = 799
-			add_state_core = 677
-			add_state_core = 1185
-			add_state_core = 553
-		}
+		ANT_breakway = yes
 		hidden_effect = {
-		CRT = {
-			transfer_state = 1020
-			transfer_state = 290
-			transfer_state = 459
-			transfer_state = 460
-			transfer_state = 1021
-			transfer_state = 458
-			transfer_state = 665
-			transfer_state = 115
-			transfer_state = 116
-			transfer_state = 448
-			transfer_state = 449
-			add_state_core = 1020
-			add_state_core = 290
-			add_state_core = 459
-			add_state_core = 460
-			add_state_core = 1021
-			add_state_core = 458
-			add_state_core = 665
-			add_state_core = 115
-			add_state_core = 116
-			add_state_core = 448
-			add_state_core = 449
-		}
+			CRT_breakaway = yes
 		}
 		ANT = { 
 			change_tag_from = ROOT 
@@ -339,62 +231,8 @@ country_event = {
 		name = rome_event.6.c
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
-		CRT = {
-			transfer_state = 1020
-			transfer_state = 290
-			transfer_state = 459
-			transfer_state = 460
-			transfer_state = 1021
-			transfer_state = 458
-			transfer_state = 665
-			transfer_state = 115
-			transfer_state = 116
-			transfer_state = 448
-			transfer_state = 449
-			add_state_core = 1020
-			add_state_core = 290
-			add_state_core = 459
-			add_state_core = 460
-			add_state_core = 1021
-			add_state_core = 458
-			add_state_core = 665
-			add_state_core = 115
-			add_state_core = 116
-			add_state_core = 448
-			add_state_core = 449
-		}
-		ANT = {
-			transfer_state = 1023
-			transfer_state = 347
-			transfer_state = 340
-			transfer_state = 339
-			transfer_state = 343
-			transfer_state = 346
-			transfer_state = 49
-			transfer_state = 356
-			transfer_state = 345
-			transfer_state = 344
-			transfer_state = 1036
-			transfer_state = 799
-			transfer_state = 677
-			transfer_state = 1185
-			transfer_state = 553
-			add_state_core = 1023
-			add_state_core = 347
-			add_state_core = 340
-			add_state_core = 339
-			add_state_core = 343
-			add_state_core = 346
-			add_state_core = 49
-			add_state_core = 356
-			add_state_core = 345
-			add_state_core = 344
-			add_state_core = 1036
-			add_state_core = 799
-			add_state_core = 677
-			add_state_core = 1185
-			add_state_core = 553
-		}
+		CRT_breakaway = yes
+		ANT_breakway = yes
 		ROE = {
 			country_event = {
 				id = rome_event.7
@@ -423,133 +261,11 @@ country_event = {
 		name = rome_event.7.a
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
-		GAL = {
-			transfer_state = 14
-			transfer_state = 15
-			transfer_state = 29
-			transfer_state = 785
-			transfer_state = 6
-			transfer_state = 7
-			transfer_state = 35
-			transfer_state = 977
-			transfer_state = 34
-			transfer_state = 980
-			transfer_state = 1022
-			transfer_state = 42
-			transfer_state = 8
-			transfer_state = 28
-			transfer_state = 17
-			transfer_state = 18
-			transfer_state = 16
-			transfer_state = 30
-			transfer_state = 23
-			transfer_state = 24
-			transfer_state = 27
-			transfer_state = 33
-			transfer_state = 25
-			transfer_state = 19
-			transfer_state = 806
-			transfer_state = 31
-			transfer_state = 22
-			transfer_state = 26
-			transfer_state = 20
-			transfer_state = 32
-			transfer_state = 21
-			transfer_state = 845
-		}
+		GAL_breakaway_transfer = yes
 		hidden_effect = {
-		GAL = {
-			add_state_core = 14
-			add_state_core = 15
-			add_state_core = 29
-			add_state_core = 785
-			add_state_core = 6
-			add_state_core = 7
-			add_state_core = 35
-			add_state_core = 977
-			add_state_core = 34
-			add_state_core = 980
-			add_state_core = 1022
-			add_state_core = 42
-			add_state_core = 8
-			add_state_core = 28
-			add_state_core = 17
-			add_state_core = 18
-			add_state_core = 16
-			add_state_core = 30
-			add_state_core = 23
-			add_state_core = 24
-			add_state_core = 27
-			add_state_core = 33
-			add_state_core = 25
-			add_state_core = 19
-			add_state_core = 806
-			add_state_core = 31
-			add_state_core = 22
-			add_state_core = 26
-			add_state_core = 20
-			add_state_core = 32
-			add_state_core = 21
-			add_state_core = 845
-		}
-		ISP = {
-			transfer_state = 171
-			transfer_state = 790
-			transfer_state = 792
-			transfer_state = 172
-			transfer_state = 174
-			transfer_state = 791
-			transfer_state = 176
-			transfer_state = 166
-			transfer_state = 794
-			transfer_state = 165
-			transfer_state = 177
-			transfer_state = 180
-			transfer_state = 112
-			transfer_state = 181
-			transfer_state = 795
-			transfer_state = 179
-			transfer_state = 170
-			transfer_state = 788
-			transfer_state = 41
-			transfer_state = 793
-			transfer_state = 167
-			transfer_state = 168
-			transfer_state = 175
-			transfer_state = 169
-			transfer_state = 173
-			transfer_state = 789
-			transfer_state = 118
-		}
-		ISP = {
-			add_state_core = 171
-			add_state_core = 790
-			add_state_core = 792
-			add_state_core = 172
-			add_state_core = 174
-			add_state_core = 791
-			add_state_core = 176
-			add_state_core = 166
-			add_state_core = 794
-			add_state_core = 165
-			add_state_core = 177
-			add_state_core = 180
-			add_state_core = 112
-			add_state_core = 181
-			add_state_core = 795
-			add_state_core = 179
-			add_state_core = 170
-			add_state_core = 788
-			add_state_core = 41
-			add_state_core = 793
-			add_state_core = 167
-			add_state_core = 168
-			add_state_core = 175
-			add_state_core = 169
-			add_state_core = 173
-			add_state_core = 789
-			add_state_core = 118
-		}
+			GAL_breakaway_core = yes
+			ISP_breakaway_transfer = yes
+			ISP_breakaway_core = yes
 		}
 		GAL = {
 			change_tag_from = ROOT
@@ -566,133 +282,11 @@ country_event = {
 		name = rome_event.7.b
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
+		ISP_breakaway_transfer = yes
 		hidden_effect = {
-		GAL = {
-			transfer_state = 14
-			transfer_state = 15
-			transfer_state = 29
-			transfer_state = 785
-			transfer_state = 6
-			transfer_state = 7
-			transfer_state = 35
-			transfer_state = 977
-			transfer_state = 34
-			transfer_state = 980
-			transfer_state = 1022
-			transfer_state = 42
-			transfer_state = 8
-			transfer_state = 28
-			transfer_state = 17
-			transfer_state = 18
-			transfer_state = 16
-			transfer_state = 30
-			transfer_state = 23
-			transfer_state = 24
-			transfer_state = 27
-			transfer_state = 33
-			transfer_state = 25
-			transfer_state = 19
-			transfer_state = 806
-			transfer_state = 31
-			transfer_state = 22
-			transfer_state = 26
-			transfer_state = 20
-			transfer_state = 32
-			transfer_state = 21
-			transfer_state = 845
-		}
-		GAL = {
-			add_state_core = 14
-			add_state_core = 15
-			add_state_core = 29
-			add_state_core = 785
-			add_state_core = 6
-			add_state_core = 7
-			add_state_core = 35
-			add_state_core = 977
-			add_state_core = 34
-			add_state_core = 980
-			add_state_core = 1022
-			add_state_core = 42
-			add_state_core = 8
-			add_state_core = 28
-			add_state_core = 17
-			add_state_core = 18
-			add_state_core = 16
-			add_state_core = 30
-			add_state_core = 23
-			add_state_core = 24
-			add_state_core = 27
-			add_state_core = 33
-			add_state_core = 25
-			add_state_core = 19
-			add_state_core = 806
-			add_state_core = 31
-			add_state_core = 22
-			add_state_core = 26
-			add_state_core = 20
-			add_state_core = 32
-			add_state_core = 21
-			add_state_core = 845
-		}
-		ISP = {
-			add_state_core = 171
-			add_state_core = 790
-			add_state_core = 792
-			add_state_core = 172
-			add_state_core = 174
-			add_state_core = 791
-			add_state_core = 176
-			add_state_core = 166
-			add_state_core = 794
-			add_state_core = 165
-			add_state_core = 177
-			add_state_core = 180
-			add_state_core = 112
-			add_state_core = 181
-			add_state_core = 795
-			add_state_core = 179
-			add_state_core = 170
-			add_state_core = 788
-			add_state_core = 41
-			add_state_core = 793
-			add_state_core = 167
-			add_state_core = 168
-			add_state_core = 175
-			add_state_core = 169
-			add_state_core = 173
-			add_state_core = 789
-			add_state_core = 118
-		}
-		}
-		ISP = {
-			transfer_state = 171
-			transfer_state = 790
-			transfer_state = 792
-			transfer_state = 172
-			transfer_state = 174
-			transfer_state = 791
-			transfer_state = 176
-			transfer_state = 166
-			transfer_state = 794
-			transfer_state = 165
-			transfer_state = 177
-			transfer_state = 180
-			transfer_state = 112
-			transfer_state = 181
-			transfer_state = 795
-			transfer_state = 179
-			transfer_state = 170
-			transfer_state = 788
-			transfer_state = 41
-			transfer_state = 793
-			transfer_state = 167
-			transfer_state = 168
-			transfer_state = 175
-			transfer_state = 169
-			transfer_state = 173
-			transfer_state = 789
-			transfer_state = 118
+			GAL_breakaway_transfer = yes
+			GAL_breakaway_core = yes
+			ISP_breakaway_core = yes
 		}
 		ISP = {
 			change_tag_from = ROOT
@@ -710,132 +304,10 @@ country_event = {
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
 		hidden_effect = {
-		GAL = {
-			transfer_state = 14
-			transfer_state = 15
-			transfer_state = 29
-			transfer_state = 785
-			transfer_state = 6
-			transfer_state = 7
-			transfer_state = 35
-			transfer_state = 977
-			transfer_state = 34
-			transfer_state = 980
-			transfer_state = 1022
-			transfer_state = 42
-			transfer_state = 8
-			transfer_state = 28
-			transfer_state = 17
-			transfer_state = 18
-			transfer_state = 16
-			transfer_state = 30
-			transfer_state = 23
-			transfer_state = 24
-			transfer_state = 27
-			transfer_state = 33
-			transfer_state = 25
-			transfer_state = 19
-			transfer_state = 806
-			transfer_state = 31
-			transfer_state = 22
-			transfer_state = 26
-			transfer_state = 20
-			transfer_state = 32
-			transfer_state = 21
-			transfer_state = 845
-		}
-		GAL = {
-			add_state_core = 14
-			add_state_core = 15
-			add_state_core = 29
-			add_state_core = 785
-			add_state_core = 6
-			add_state_core = 7
-			add_state_core = 35
-			add_state_core = 977
-			add_state_core = 34
-			add_state_core = 980
-			add_state_core = 1022
-			add_state_core = 42
-			add_state_core = 8
-			add_state_core = 28
-			add_state_core = 17
-			add_state_core = 18
-			add_state_core = 16
-			add_state_core = 30
-			add_state_core = 23
-			add_state_core = 24
-			add_state_core = 27
-			add_state_core = 33
-			add_state_core = 25
-			add_state_core = 19
-			add_state_core = 806
-			add_state_core = 31
-			add_state_core = 22
-			add_state_core = 26
-			add_state_core = 20
-			add_state_core = 32
-			add_state_core = 21
-			add_state_core = 845
-		}
-		ISP = {
-			transfer_state = 171
-			transfer_state = 790
-			transfer_state = 792
-			transfer_state = 172
-			transfer_state = 174
-			transfer_state = 791
-			transfer_state = 176
-			transfer_state = 166
-			transfer_state = 794
-			transfer_state = 165
-			transfer_state = 177
-			transfer_state = 180
-			transfer_state = 112
-			transfer_state = 181
-			transfer_state = 795
-			transfer_state = 179
-			transfer_state = 170
-			transfer_state = 788
-			transfer_state = 41
-			transfer_state = 793
-			transfer_state = 167
-			transfer_state = 168
-			transfer_state = 175
-			transfer_state = 169
-			transfer_state = 173
-			transfer_state = 789
-			transfer_state = 118
-		}
-		ISP = {
-			add_state_core = 171
-			add_state_core = 790
-			add_state_core = 792
-			add_state_core = 172
-			add_state_core = 174
-			add_state_core = 791
-			add_state_core = 176
-			add_state_core = 166
-			add_state_core = 794
-			add_state_core = 165
-			add_state_core = 177
-			add_state_core = 180
-			add_state_core = 112
-			add_state_core = 181
-			add_state_core = 795
-			add_state_core = 179
-			add_state_core = 170
-			add_state_core = 788
-			add_state_core = 41
-			add_state_core = 793
-			add_state_core = 167
-			add_state_core = 168
-			add_state_core = 175
-			add_state_core = 169
-			add_state_core = 173
-			add_state_core = 789
-			add_state_core = 118
-		}
+			ISP_breakaway_transfer = yes
+			GAL_breakaway_transfer = yes
+			GAL_breakaway_core = yes
+			ISP_breakaway_core = yes
 		}
 		ROE = {
 			country_event = {
@@ -865,77 +337,21 @@ country_event = {
 		name = rome_event.8.a
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
-		IST = {
-			transfer_state = 102
-			transfer_state = 853
-			transfer_state = 103
-			transfer_state = 163
-			transfer_state = 109
-			transfer_state = 104
-			transfer_state = 804
-			transfer_state = 107
-			transfer_state = 105
-			transfer_state = 934
-			transfer_state = 802
-			transfer_state = 108
-			transfer_state = 803
-			transfer_state = 48
-		}
+		IST_breakaway_transfer = yes
 		THR = {
 			transfer_state = 801
 			transfer_state = 77
 			transfer_state = 971
 		}
 		hidden_effect = {
-		IST = {
-			add_state_core = 102
-			add_state_core = 853
-			add_state_core = 103
-			add_state_core = 163
-			add_state_core = 109
-			add_state_core = 104
-			add_state_core = 804
-			add_state_core = 107
-			add_state_core = 105
-			add_state_core = 934
-			add_state_core = 802
-			add_state_core = 108
-			add_state_core = 803
-			add_state_core = 48
-		}
+			IST_breakaway_core = yes
 		THR = {
 			add_state_core = 801
 			add_state_core = 77
 			add_state_core = 971
 		}
-		GRS = {
-			add_state_core = 970
-			add_state_core = 44
-			add_state_core = 106
-			add_state_core = 805
-			add_state_core = 185
-			add_state_core = 731
-			add_state_core = 184
-			add_state_core = 47
-			add_state_core = 186
-			add_state_core = 187
-			add_state_core = 182
-			add_state_core = 183
-		}
-		GRS = {
-			transfer_state = 970
-			transfer_state = 44
-			transfer_state = 106
-			transfer_state = 805
-			transfer_state = 185
-			transfer_state = 731
-			transfer_state = 184
-			transfer_state = 47
-			transfer_state = 186
-			transfer_state = 187
-			transfer_state = 182
-			transfer_state = 183
-		}
+		GRS_breakaway_transfer = yes
+		GRS_breakaway_core = yes
 		}
 		IST = {
 			change_tag_from = ROOT
@@ -953,77 +369,21 @@ country_event = {
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
 		hidden_effect = {
-		IST = {
-			transfer_state = 102
-			transfer_state = 853
-			transfer_state = 103
-			transfer_state = 163
-			transfer_state = 109
-			transfer_state = 104
-			transfer_state = 804
-			transfer_state = 107
-			transfer_state = 105
-			transfer_state = 934
-			transfer_state = 802
-			transfer_state = 108
-			transfer_state = 803
-			transfer_state = 48
-		}
-		IST = {
-			add_state_core = 102
-			add_state_core = 853
-			add_state_core = 103
-			add_state_core = 163
-			add_state_core = 109
-			add_state_core = 104
-			add_state_core = 804
-			add_state_core = 107
-			add_state_core = 105
-			add_state_core = 934
-			add_state_core = 802
-			add_state_core = 108
-			add_state_core = 803
-			add_state_core = 48
-		}
-		THR = {
-			add_state_core = 801
-			add_state_core = 77
-			add_state_core = 971
-		}
-		GRS = {
-			add_state_core = 970
-			add_state_core = 44
-			add_state_core = 106
-			add_state_core = 805
-			add_state_core = 185
-			add_state_core = 731
-			add_state_core = 184
-			add_state_core = 47
-			add_state_core = 186
-			add_state_core = 187
-			add_state_core = 182
-			add_state_core = 183
-		}
+			IST_breakaway_transfer = yes
+			IST_breakaway_core = yes
+			THR = {
+				add_state_core = 801
+				add_state_core = 77
+				add_state_core = 971
+			}
+			GRS_breakaway_core = yes
 		}
 		THR = {
 			transfer_state = 801
 			transfer_state = 77
 			transfer_state = 971
 		}
-		GRS = {
-			transfer_state = 970
-			transfer_state = 44
-			transfer_state = 106
-			transfer_state = 805
-			transfer_state = 185
-			transfer_state = 731
-			transfer_state = 184
-			transfer_state = 47
-			transfer_state = 186
-			transfer_state = 187
-			transfer_state = 182
-			transfer_state = 183
-		}
+		GRS_breakaway_transfer = yes
 		GRS = {
 			change_tag_from = ROOT
 		}
@@ -1040,71 +400,15 @@ country_event = {
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
 		hidden_effect = {
-		IST = {
-			transfer_state = 102
-			transfer_state = 853
-			transfer_state = 103
-			transfer_state = 163
-			transfer_state = 109
-			transfer_state = 104
-			transfer_state = 804
-			transfer_state = 107
-			transfer_state = 105
-			transfer_state = 934
-			transfer_state = 802
-			transfer_state = 108
-			transfer_state = 803
-			transfer_state = 48
-		}
-		GRS = {
-			transfer_state = 970
-			transfer_state = 44
-			transfer_state = 106
-			transfer_state = 805
-			transfer_state = 185
-			transfer_state = 731
-			transfer_state = 184
-			transfer_state = 47
-			transfer_state = 186
-			transfer_state = 187
-			transfer_state = 182
-			transfer_state = 183
-		}
-		IST = {
-			add_state_core = 102
-			add_state_core = 853
-			add_state_core = 103
-			add_state_core = 163
-			add_state_core = 109
-			add_state_core = 104
-			add_state_core = 804
-			add_state_core = 107
-			add_state_core = 105
-			add_state_core = 934
-			add_state_core = 802
-			add_state_core = 108
-			add_state_core = 803
-			add_state_core = 48
-		}
-		THR = {
-			add_state_core = 801
-			add_state_core = 77
-			add_state_core = 971
-		}
-		GRS = {
-			add_state_core = 970
-			add_state_core = 44
-			add_state_core = 106
-			add_state_core = 805
-			add_state_core = 185
-			add_state_core = 731
-			add_state_core = 184
-			add_state_core = 47
-			add_state_core = 186
-			add_state_core = 187
-			add_state_core = 182
-			add_state_core = 183
-		}
+			GRS_breakaway_transfer = yes
+			GRS_breakaway_core = yes
+			IST_breakaway_transfer = yes
+			IST_breakaway_core = yes
+			THR = {
+				add_state_core = 801
+				add_state_core = 77
+				add_state_core = 971
+			}
 		}
 		THR = {
 			transfer_state = 801
@@ -1149,6 +453,8 @@ country_event = {
 			transfer_state = 907
 			transfer_state = 456
 			transfer_state = 457
+			transfer_state = 454
+			transfer_state = 1221
 		}
 		EGI = {
 			change_tag_from = ROOT
@@ -1175,6 +481,8 @@ country_event = {
 			transfer_state = 907
 			transfer_state = 456
 			transfer_state = 457
+			transfer_state = 454
+			transfer_state = 1221
 		}
 		ROE = {
 			country_event = {
@@ -1204,93 +512,19 @@ country_event = {
 		name = rome_event.10.a
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
-		RRO = {
-			transfer_state = 156
-			transfer_state = 117
-			transfer_state = 849
-			transfer_state = 2
-			transfer_state = 157
-			transfer_state = 162
-			transfer_state = 161
-			transfer_state = 114
-			transfer_state = 1
-			transfer_state = 158
-			transfer_state = 735
-			transfer_state = 851
-			transfer_state = 159
-			transfer_state = 850
-			transfer_state = 160
-			transfer_state = 153
-			transfer_state = 151
-			transfer_state = 846
-			transfer_state = 847
-			transfer_state = 3
-			transfer_state = 848
-			transfer_state = 39
-			transfer_state = 736
-			transfer_state = 852
-		}
+		RRO_breakaway_transfer = yes
 		hidden_effect = {
-		AAS = {
-			transfer_state = 153
-			transfer_state = 1017
-			transfer_state = 52
-			transfer_state = 53
-			transfer_state = 1018
-			transfer_state = 152
-			transfer_state = 976
-			transfer_state = 1019
-			transfer_state = 975
-			transfer_state = 155
-			transfer_state = 974
-		}
-		AAS = {
-			add_state_core = 153
-			add_state_core = 1017
-			add_state_core = 52
-			add_state_core = 53
-			add_state_core = 1018
-			add_state_core = 152
-			add_state_core = 976
-			add_state_core = 1019
-			add_state_core = 975
-			add_state_core = 155
-			add_state_core = 974
-		}
-		RRO = {
-			add_state_core = 156
-			add_state_core = 117
-			add_state_core = 849
-			add_state_core = 2
-			add_state_core = 157
-			add_state_core = 162
-			add_state_core = 161
-			add_state_core = 114
-			add_state_core = 1
-			add_state_core = 158
-			add_state_core = 735
-			add_state_core = 851
-			add_state_core = 159
-			add_state_core = 850
-			add_state_core = 160
-			add_state_core = 153
-			add_state_core = 151
-			add_state_core = 846
-			add_state_core = 847
-			add_state_core = 3
-			add_state_core = 848
-			add_state_core = 39
-			add_state_core = 736
-			add_state_core = 852
-		}
-		ROE = {
-			delete_units = {
-				division_template = "Legio"
+			AAS_breakaway_transfer = yes
+			AAS_breakaway_core = yes
+			RRO_breakaway_core = yes
+			ROE = {
+				delete_units = {
+					division_template = "Legio"
+				}
+				delete_units = {
+					division_template = "Praetoriae Custodes"
+				}
 			}
-			delete_units = {
-				division_template = "Praetoriae Custodes"
-			}
-		}
 		}
 		RRO = { 
 			change_tag_from = ROOT 
@@ -1302,92 +536,19 @@ country_event = {
 		ai_chance = { factor = 20 }
 		original_recipient_only = yes
 		hidden_effect = {
-		RRO = {
-			transfer_state = 156
-			transfer_state = 117
-			transfer_state = 849
-			transfer_state = 2
-			transfer_state = 157
-			transfer_state = 162
-			transfer_state = 161
-			transfer_state = 114
-			transfer_state = 1
-			transfer_state = 158
-			transfer_state = 735
-			transfer_state = 851
-			transfer_state = 159
-			transfer_state = 850
-			transfer_state = 160
-			transfer_state = 151
-			transfer_state = 846
-			transfer_state = 847
-			transfer_state = 3
-			transfer_state = 848
-			transfer_state = 39
-			transfer_state = 736
-			transfer_state = 852
-		}
-		AAS = {
-			add_state_core = 153
-			add_state_core = 1017
-			add_state_core = 52
-			add_state_core = 53
-			add_state_core = 1018
-			add_state_core = 152
-			add_state_core = 976
-			add_state_core = 1019
-			add_state_core = 975
-			add_state_core = 155
-			add_state_core = 974
-		}
-		RRO = {
-			add_state_core = 156
-			add_state_core = 117
-			add_state_core = 849
-			add_state_core = 2
-			add_state_core = 157
-			add_state_core = 162
-			add_state_core = 161
-			add_state_core = 114
-			add_state_core = 1
-			add_state_core = 158
-			add_state_core = 735
-			add_state_core = 851
-			add_state_core = 159
-			add_state_core = 850
-			add_state_core = 160
-			add_state_core = 153
-			add_state_core = 151
-			add_state_core = 846
-			add_state_core = 847
-			add_state_core = 3
-			add_state_core = 848
-			add_state_core = 39
-			add_state_core = 736
-			add_state_core = 852
-		}
-		ROE = {
-			delete_units = {
-				division_template = "Legio"
-			}
-			delete_units = {
-				division_template = "Praetoriae Custodes"
+			RRO_breakaway_transfer = yes
+			AAS_breakaway_core = yes
+			RRO_breakaway_core = yes
+			ROE = {
+				delete_units = {
+					division_template = "Legio"
+				}
+				delete_units = {
+					division_template = "Praetoriae Custodes"
+				}
 			}
 		}
-		}
-		AAS = {
-			transfer_state = 153
-			transfer_state = 1017
-			transfer_state = 52
-			transfer_state = 53
-			transfer_state = 1018
-			transfer_state = 152
-			transfer_state = 976
-			transfer_state = 1019
-			transfer_state = 975
-			transfer_state = 155
-			transfer_state = 974
-		}
+		AAS_breakaway_transfer = yes
 		AAS = {
 			change_tag_from = ROOT
 		}
@@ -2026,6 +1187,639 @@ country_event = {
 }
 
 
+# Consular Elections
+country_event = {
+	id = rome_event.26
+	title = rome_event.26.t
+	desc = rome_event.26.d
+	
+	trigger = {
+		has_government = communism
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # May the best win.
+		name = rome_event.26.a
+		ai_chance = { factor = 1 }
+		trigger = {}
+		set_country_flag = ROE_consular_elections
+		add_to_variable = { consul1 = 1 }
+		add_to_variable = { consul2 = 1 }
+		ROE = {
+            country_event = {
+                id = rome_event.27
+                days = 30
+            }
+        }
+		add_stability = 0.01
+	}
+}
+
+# Consular Elections [RESULTS]
+country_event = {
+	id = rome_event.27
+	title = rome_event.27.t
+	desc = rome_event.27.d
+	
+	trigger = {
+		has_government = communism
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Congrats to the winners.
+		name = rome_event.27.a
+		ai_chance = { factor = 1 }
+		trigger = {}
+		clr_country_flag = ROE_consular_elections
+		add_political_power = 10
+		add_popularity = {
+			ideology = communism
+			popularity = 0.02
+		}
+		hidden_effect = {
+			ROE = {
+        	    country_event = {
+        	        id = rome_event.26
+        	        days = 335
+        	    }
+       		}
+			if = {
+				limit = {
+					check_variable = { consul1 = 1 }
+					check_variable = { consul2 = 1 }
+				}
+				ROE_Sextus_Pompeius = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Sextus_Appuleius = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				
+				add_advisor_role = {
+    				character = ROE_Drusus_Julius_Caesar
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = drusus_julius_caesar
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Drusus_Julius_Caesar
+    				value = no
+				}
+
+				add_advisor_role = {
+    				character = ROE_Norbanus_Flaccus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = norbanus_flaccus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Norbanus_Flaccus
+    				value = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { consul1 = 2 }
+					check_variable = { consul2 = 2 }
+				}
+				deactivate_advisor = ROE_Drusus_Julius_Caesar
+				deactivate_advisor = ROE_Norbanus_Flaccus
+				ROE_Drusus_Julius_Caesar = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Norbanus_Flaccus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+
+				add_advisor_role = {
+    				character = ROE_Sisenna_Stalitius_Taurus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = sisenna_statilius_taurus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Sisenna_Stalitius_Taurus
+    				value = no
+				}
+				add_advisor_role = {
+    				character = ROE_Lucius_Scribonius_Libo
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = lucius_libo
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Lucius_Scribonius_Libo
+    				value = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { consul1 = 3 }
+					check_variable = { consul2 = 3 }
+				}
+				deactivate_advisor = ROE_Sisenna_Stalitius_Taurus
+				deactivate_advisor = ROE_Lucius_Scribonius_Libo
+				ROE_Sisenna_Stalitius_Taurus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Lucius_Scribonius_Libo = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+
+
+				add_advisor_role = {
+    				character = ROE_Pomponius_Flaccus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = pomponius_flaccus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Pomponius_Flaccus
+    				value = no
+				}
+				add_advisor_role = {
+    				character = ROE_Caelius_Rufus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = caelius_rufus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Caelius_Rufus
+    				value = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { consul1 = 4 }
+					check_variable = { consul2 = 4 }
+				}
+				deactivate_advisor = ROE_Pomponius_Flaccus
+				deactivate_advisor = ROE_Caelius_Rufus
+				ROE_Pomponius_Flaccus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Caelius_Rufus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+
+				add_advisor_role = {
+    				character = ROE_Seius_Tubero
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = seius_tubero
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Seius_Tubero
+    				value = no
+				}
+
+				add_advisor_role = {
+    				character = ROE_Livineius_Regulus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = livineius_regulus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Livineius_Regulus
+    				value = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { consul1 = 5 }
+					check_variable = { consul2 = 5 }
+				}
+				deactivate_advisor = ROE_Seius_Tubero
+				deactivate_advisor = ROE_Livineius_Regulus
+				ROE_Seius_Tubero = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Livineius_Regulus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+
+				add_advisor_role = {
+    				character = ROE_Junius_Torquatus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = seius_tubero
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Junius_Torquatus
+    				value = no
+				}
+
+				add_advisor_role = {
+    				character = ROE_Lucius_Norbanus_Balbus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = livineius_regulus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Lucius_Norbanus_Balbus
+    				value = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { consul1 = 6 }
+					check_variable = { consul2 = 6 }
+				}
+				deactivate_advisor = ROE_Junius_Torquatus
+				deactivate_advisor = ROE_Lucius_Norbanus_Balbus
+				ROE_Junius_Torquatus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Lucius_Norbanus_Balbus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+
+				add_advisor_role = {
+    				character = ROE_Valerius_Barbatus
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = seius_tubero
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Valerius_Barbatus
+    				value = no
+				}
+
+				add_advisor_role = {
+    				character = ROE_Aurelius_Cotta
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = livineius_regulus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Aurelius_Cotta
+    				value = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { consul1 = 7 }
+					check_variable = { consul2 = 7 }
+				}
+				deactivate_advisor = ROE_Valerius_Barbatus
+				deactivate_advisor = ROE_Aurelius_Cotta
+				ROE_Valerius_Barbatus = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Aurelius_Cotta = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+
+				add_advisor_role = {
+    				character = ROE_Haterius_Agrippa
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = seius_tubero
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Haterius_Agrippa
+    				value = no
+				}
+
+				add_advisor_role = {
+    				character = ROE_Drusus_Julius_Caesar_II
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = livineius_regulus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Drusus_Julius_Caesar_II
+    				value = no
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = { consul1 = 8 }
+					check_variable = { consul2 = 8 }
+				}
+				deactivate_advisor = ROE_Haterius_Agrippa
+				deactivate_advisor = ROE_Drusus_Julius_Caesar_II
+				ROE_Haterius_Agrippa = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Drusus_Julius_Caesar_II = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+
+				add_advisor_role = {
+    				character = ROE_Asinius_Pollio
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = seius_tubero
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Asinius_Pollio
+    				value = no
+				}
+
+				add_advisor_role = {
+    				character = ROE_Sulpicius_Galba
+    				activate = yes
+    				advisor = {
+    				    slot = political_advisor
+    				    cost = 50
+    				    idea_token = livineius_regulus
+    				    traits = {
+							consul_of_rome
+     					}
+    				}
+				}
+				set_can_be_fired_in_advisor_role = {
+    				character = ROE_Sulpicius_Galba
+    				value = no
+				}
+			}
+			else = {
+				limit = {
+					check_variable = { consul1 > 8 }
+					check_variable = { consul2 > 8 }
+				}
+				deactivate_advisor = ROE_Asinius_Pollio
+				deactivate_advisor = ROE_Sulpicius_Galba
+				ROE_Asinius_Pollio = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+				ROE_Sulpicius_Galba = {
+					remove_trait = {
+    					slot = political_advisor
+    					trait = consul_of_rome
+					}
+				}
+			}
+		}
+	}
+}
+
+
+# The Senate is debating
+country_event = {
+	id = rome_event.28
+	title = rome_event.28.t
+	desc = rome_event.28.d
+	
+	trigger = {
+		has_government = communism
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # The aristocracy debates between themselves.
+		name = rome_event.28.a
+		ai_chance = { factor = 1 }
+		trigger = {}
+		set_country_flag = ROE_senate_debating
+		add_political_power = 10
+	}
+}
+
+# The Senate is debating [END]
+country_event = {
+	id = rome_event.29
+	title = rome_event.29.t
+	desc = rome_event.29.d
+	
+	trigger = {
+		has_government = communism
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Another day, another law
+		name = rome_event.29.a
+		ai_chance = { factor = 1 }
+		trigger = {}
+		add_stability = 0.02
+		random_owned_state = {
+			prioritize = { 159 21 157 47 103 852 736 161 20 }
+			add_building_construction = {
+ 				type = infrastructure
+    			level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			limit = {
+				NOT = {
+					woodwork > 2
+				}
+			}
+			add_building_construction = {
+ 				type = woodwork
+    			level = 1
+				instant_build = yes
+			}
+		}
+		add_power_balance_value = {
+    		id = ROE_roman_senate
+    		value = 0.05
+    		tooltip_side = ROE_senate_power_side
+		}
+	}
+}
+
+# The Senate is debating [INTERFERENCE]
+country_event = {
+	id = rome_event.30
+	title = rome_event.30.t
+	desc = rome_event.30.d
+	
+	trigger = {
+		has_government = communism
+    }
+
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Invest in new manufactures
+		name = rome_event.30.a
+		ai_chance = { factor = 1 }
+		trigger = {}
+		add_stability = -0.02
+		random_owned_state = {
+			prioritize = { 2 162 849 1202 160 23 29 }
+			add_building_construction = {
+ 				type = industrial_complex
+    			level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_power_balance_value = {
+    		id = ROE_roman_senate
+    		value = -0.05
+    		tooltip_side = ROE_emperor_power_side
+		}
+	}
+	option = { # Invest in new military infrastructure
+		name = rome_event.30.b
+		ai_chance = { factor = 1 }
+		trigger = {}
+		add_stability = -0.02
+		random_owned_state = {
+			prioritize = { 2 162 849 1202 160 23 29 }
+			add_building_construction = {
+ 				type = arms_factory
+    			level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		add_power_balance_value = {
+    		id = ROE_roman_senate
+    		value = -0.05
+    		tooltip_side = ROE_emperor_power_side
+		}
+	}
+}
+
 
 
 
@@ -2170,6 +1964,7 @@ country_event = {
         }
 	}
 }
+## Death of Germanicus
 country_event = {
 	id = rome_event.104
 	title = rome_event.104.t
@@ -2181,10 +1976,11 @@ country_event = {
 	major = no
 	option = { 
 		name = rome_event.104.a
-	retire_character = ROE_germanicus_general 
-	retire_character = germanicus_emperor
+		retire_character = ROE_germanicus_general 
+		retire_character = germanicus_emperor
 	}
 }
+## Death of Augustus
 country_event = {
 	id = rome_event.105
 	title = rome_event.105.t
@@ -2195,16 +1991,16 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	major = no
 	option = { 
-		 name = "Follow Augustus"
-          complete_national_focus = ROE_follow_augustus_will
-		  	add_political_power = 30
-			add_stability = 0.05
-	}
-		option = { 
-		 name = "Reject the Augustus"
-	complete_national_focus = ROE_reject_the_will
+		name = "Follow Augustus"
+        complete_national_focus = ROE_follow_augustus_will
 		add_political_power = 30
-			add_stability = -0.05
+		add_stability = 0.05
+	}
+	option = { 
+		name = "Reject the Augustus"
+		complete_national_focus = ROE_reject_the_will
+		add_political_power = 30
+		add_stability = -0.05
 	}
 }
 ###GERMANICUS EMPEROR ##
@@ -2218,13 +2014,230 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	major = no
 	option = { 
-		 name = "Glory to Germanicus ! "
- 	promote_character = {
-    			character = germanicus_emperor
-    			ideology = roman_paternalism
-			}
+		name = "Glory to Germanicus!"
+ 		promote_character = {
+    		character = germanicus_emperor
+    		ideology = roman_paternalism
+		}
 	}
 
+}
+
+
+
+
+## Surrender to the Germans
+country_event = {
+	id = rome_event.107
+	title = generic_custom.23.t
+	desc = generic_custom.23.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	option = { # Yes
+		name = generic_custom.23.a
+		ai_chance = { factor = 1 }
+		FROM = {
+			add_timed_idea = {
+				idea = war_reparations_lost
+				days = 120
+			}
+		}
+		add_timed_idea = {
+			idea = war_reparations
+			days = 120
+		}
+		FROM = {
+			every_allied_country = {
+				limit = {
+					has_war = yes
+				}
+				add_timed_idea = {
+					idea = war_reparations_lost
+					days = 120
+				}
+			}
+		}
+		white_peace = FROM
+	}
+}
+
+
+## Troubles across Gaul!
+country_event = {
+	id = rome_event.108
+	title = rome_event.108.t
+	desc = rome_event.108.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # No, no!
+		name = rome_event.108.a
+		ai_chance = { factor = 1 }
+		14 = { set_demilitarized_zone = yes }
+		15 = { set_demilitarized_zone = yes }
+		30 = { set_demilitarized_zone = yes }
+		23 = { set_demilitarized_zone = yes }
+		1260 = { set_demilitarized_zone = yes }
+		1254 = { set_demilitarized_zone = yes }
+		18 = { set_demilitarized_zone = yes }
+		27 = { set_demilitarized_zone = yes }
+		ROE = {
+			country_event = {
+				id = rome_event.109
+				days = 15
+			}
+		}
+	}
+}
+
+## Defeat reaches the East!
+country_event = {
+	id = rome_event.109
+	title = rome_event.109.t
+	desc = rome_event.109.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Jupiter, help us!
+		name = rome_event.109.a
+		ai_chance = { factor = 1 }
+		356 = { set_demilitarized_zone = yes }
+		49 = { set_demilitarized_zone = yes }
+		346 = { set_demilitarized_zone = yes }
+		343 = { set_demilitarized_zone = yes }
+		1221 = { set_demilitarized_zone = yes }
+		454 = { set_demilitarized_zone = yes }
+		553 = { set_demilitarized_zone = yes }
+		ROE = {
+			country_event = {
+				id = rome_event.110
+				days = 18
+			}
+		}
+	}
+}
+
+## Losing control in Gaul
+country_event = {
+	id = rome_event.110
+	title = rome_event.110.t
+	desc = rome_event.110.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Gaul is lost, I repeat, Gaul is lost!
+		name = rome_event.110.a
+		ai_chance = { factor = 1 }
+		ROE = {
+			country_event = {
+				id = rome_event.111
+				days = 8
+			}
+		}
+		RR4_breakaway = yes
+		PRA_breakaway = yes
+		ARA_breakaway = yes
+		ARV_breakaway = yes
+		AEO_breakaway = yes
+	}
+}
+
+## Hispania waving away
+country_event = {
+	id = rome_event.111
+	title = rome_event.111.t
+	desc = rome_event.111.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Retreat from Hispania!
+		name = rome_event.111.a
+		ai_chance = { factor = 1 }
+		ROE = {
+			country_event = {
+				id = rome_event.112
+				days = 20
+			}
+		}
+		R11_breakaway = yes
+		R12_breakaway = yes
+		APR_breakaway = yes
+		R13_breakaway = yes
+	}
+}
+
+## Northern Italy Overrun!
+country_event = {
+	id = rome_event.112
+	title = rome_event.112.t
+	desc = rome_event.112.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Abandon Rome, for we must flee
+		name = rome_event.112.a
+		ai_chance = { factor = 1 }
+		ROE = {
+			country_event = {
+				id = rome_event.113
+				days = 15
+			}
+		}
+		set_capital = {
+			state = 47
+			remember_old_capital = yes
+		}
+		RTA_breakaway = yes
+	}
+}
+
+
+## Civil War in the Empire!
+country_event = {
+	id = rome_event.113
+	title = rome_event.113.t
+	desc = rome_event.113.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Here we go again..
+		name = rome_event.113.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { # Monarchism is not welcome!
+		name = rome_event.113.b
+		ai_chance = { factor = 1 }
+		
+	}
 }
 
 

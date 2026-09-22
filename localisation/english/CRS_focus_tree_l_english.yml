@@ -1,4 +1,7 @@
 ﻿l_english:
+ ## DESC
+ arminius_desc: "Born around 18 or 17 BC, Arminius was a romano-germanic chieftain of the germanic tribe of the Cherusci, having led the desastrous defeat of the Roman empire at the Teutoburg forest in the year 9 AD."
+
 ## TRAITS
 allied_of_the_romans: "Allied to the Romans"
 king_of_the_germans: "King of the Germans"
@@ -8,6 +11,13 @@ CRS_integrate_other_tribes: "We will begin §Yintegrating§! the german tribes i
 CRS_warning_death_arminius: "In case of a §Groyal proclamation§! by Arminius, pro-romans elements could §Rrise up!§!"
 CRS_royal_arminius: "We will enact §Lpurges inside of the nobility§! to ensure that no one will stand in the way of our anti-roman §Ycrusade§!!"
 CRS_invite_germans: "We will be able to invite §Gother germanic tribes§! into our §Yalliance§! to fight the §RRomans!§!"
+
+appeasement_with_rome: "Appeasement with Rome"
+
+## PARTIES
+
+CRS_roman_governor_long: "Administratio Romana in Germania"
+CRS_roman_governor: "Administratio Romana"
 
 ## DECISIONS
 alliance_germans: "Our German Allies"
@@ -66,6 +76,16 @@ integrate_tribes: "Integrate §R[FROM.GetNameDef]§! into our tribe"
  crs_event.12.t: "§R[FROM.GetNameDef]§! is being integrated."
  crs_event.12.d: "We have succesfully integrated our puppet into our territories."
  crs_event.12.a: "Another day another banger"
+
+ crs_event.13.t: "The Cherusci are asking to become a Province!"
+ crs_event.13.d: "Envoyés from the petty tribe of the Cherusci has arrived today, bringing the news that the tribe now wants to be under our suzerainety, pledging their allegiance to us in the hopes of becoming a province of the Empire.\nMay we shall grant this request, a governor will be put in charge of the newly restored Germania immediately, with a few armies being sent with them."
+ crs_event.13.a: "Finally, the barbarians are back on tracks!"
+ crs_event.13.b: "We won, what do they want?"
+
+ crs_event.14.t: "Rome refuses Integration!"
+ crs_event.14.d: "The envoy sent by us has returned with terrible news; alas, Rome refuses that we take on the title of Germania and that we become a new province. Even if it is unfortunate, maybe it is for the better as many in our nation were worry of this agreement, which would effectively strip us of our sovereignty."
+ crs_event.14.a: "This is the last disrespect they give us!"
+ crs_event.14.b: "Suckers!"
 
 
 

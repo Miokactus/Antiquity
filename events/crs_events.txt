@@ -299,3 +299,87 @@ country_event = {
 		}
 	}
 }
+
+#The Cherusci are asking to become a province!
+country_event = {
+	id = crs_event.13
+	title = crs_event.13.t
+	desc = crs_event.13.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Great!
+		name = crs_event.13.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		puppet = {
+    		target = CRS
+   			end_wars = yes
+			end_civil_wars = yes
+		}
+		CRS = {
+			set_politics = {
+    			ruling_party = communism
+    			elections_allowed = no
+    			last_election = "14.1.1"
+    			election_frequency = 48
+    			long_name = CRS_roman_governor_long
+    			name = CRS_roman_governor
+			}
+			promote_character = {
+				character = CRS_tiberius_caius_julius
+				ideology = roman_paternalism
+			}
+			set_popularities = {
+				democratic = 0
+				neutrality = 25
+				fascism = 20
+				communism = 55
+			}
+			add_ideas = CRS_tribal_opposition
+		}
+	}
+	option = { # We won, what do they want?
+		name = crs_event.13.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		CRS = {
+			country_event = {
+				id = crs_event.14
+				days = 5
+			}
+		}
+	}
+}
+
+#Rome refuses integration
+country_event = {
+	id = crs_event.14
+	title = crs_event.14.t
+	desc = crs_event.14.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	option = { # Kill them!
+		name = crs_event.13.a
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = 50
+		add_stability = -0.15
+		add_war_support = 0.2
+		create_wargoal = {
+    		type = puppet_wargoal_focus
+   			target = ROE
+		}
+	}
+	option = { # Such disrespect!
+		name = crs_event.13.b
+		ai_chance = { factor = 1 }
+		trigger = { }
+		add_political_power = -50
+		add_stability = -0.1
+		add_war_support = 0.1
+	}
+}

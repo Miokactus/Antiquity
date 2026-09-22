@@ -1,0 +1,201 @@
+##Independent states for Rome, hidden effect version (core) & not hidden
+
+RR4_breakaway = { # Narbonensis
+	RR4 = {
+		transfer_state = 31
+		transfer_state = 22
+		transfer_state = 21
+		transfer_state = 851
+		transfer_state = 1219
+		transfer_state = 32
+		transfer_state = 1200
+		transfer_state = 735
+
+		add_state_core = 31
+		add_state_core = 22
+		add_state_core = 21
+		add_state_core = 851
+		add_state_core = 1219
+		add_state_core = 32
+		add_state_core = 1200
+		add_state_core = 735
+		set_cosmetic_tag = kingdom_of_narbonensis
+	}
+}
+
+R12_breakaway = { # Lusitania
+	R12 = {
+		transfer_state = 179
+		transfer_state = 795
+		transfer_state = 170
+		transfer_state = 112
+		transfer_state = 181
+		transfer_state = 788
+		transfer_state = 180
+		transfer_state = 171
+
+		add_state_core = 179
+		add_state_core = 795
+		add_state_core = 170
+		add_state_core = 112
+		add_state_core = 181
+		add_state_core = 788
+		add_state_core = 180
+		add_state_core = 171
+		set_cosmetic_tag = lusi_kingdom_rome
+	}
+}
+
+RTA_breakaway = { # Kingdom of Raetia
+	RTA = {
+		transfer_state = 1017
+		transfer_state = 848
+		transfer_state = 52
+		transfer_state = 153
+		transfer_state = 53
+		transfer_state = 1018
+		transfer_state = 152
+		transfer_state = 151
+		transfer_state = 3
+		transfer_state = 847
+		transfer_state = 846
+
+		add_state_core = 1017
+		add_state_core = 848
+		add_state_core = 52
+		add_state_core = 153
+		add_state_core = 53
+		add_state_core = 1018
+		add_state_core = 152
+		add_state_core = 151
+		add_state_core = 3
+		add_state_core = 847
+		add_state_core = 846
+	}
+}
+
+PRA_breakaway = { # Kingdom of Paris
+	PRA = {
+		transfer_state = 14
+		transfer_state = 30
+		transfer_state = 15
+		transfer_state = 1254
+		transfer_state = 16
+		transfer_state = 785
+		transfer_state = 24
+
+		add_state_core = 14
+		add_state_core = 30
+		add_state_core = 15
+		add_state_core = 1254
+		add_state_core = 16
+		add_state_core = 785
+		add_state_core = 24
+	}
+}
+
+ARA_breakaway = { # Confederation of Aquitaine
+	ARA = {
+		transfer_state = 1260
+		transfer_state = 33
+		transfer_state = 23
+		transfer_state = 25
+		transfer_state = 1263
+		transfer_state = 19
+		transfer_state = 806
+		transfer_state = 1255
+		transfer_state = 792
+		transfer_state = 172
+
+		add_state_core = 1260
+		add_state_core = 33
+		add_state_core = 23
+		add_state_core = 25
+		add_state_core = 1263
+		add_state_core = 19
+		add_state_core = 806
+		add_state_core = 1255
+		add_state_core = 792
+		add_state_core = 172
+	}
+}
+
+ARV_breakaway = { # Kingdom of the Arveni
+	ARV = {
+		transfer_state = 26
+		transfer_state = 20
+		transfer_state = 1223
+
+		add_state_core = 26
+		add_state_core = 20
+		add_state_core = 1223
+	}
+}
+
+APR_breakaway = { # Kingdom of the Celtiberi
+	APR = {
+		transfer_state = 165
+		transfer_state = 794
+		transfer_state = 166
+		transfer_state = 167
+
+		add_state_core = 165
+		add_state_core = 794
+		add_state_core = 166
+		add_state_core = 167
+	}
+}
+
+R11_breakaway = { # Tarraconensis
+	R11 = {
+		transfer_state = 174
+		transfer_state = 790
+		transfer_state = 791
+		transfer_state = 176
+		transfer_state = 41
+		transfer_state = 793
+		transfer_state = 175
+		transfer_state = 168
+
+		add_state_core = 174
+		add_state_core = 790
+		add_state_core = 791
+		add_state_core = 176
+		add_state_core = 41
+		add_state_core = 793
+		add_state_core = 175
+		add_state_core = 168
+		set_cosmetic_tag = tarra_kingdom_rome
+	}
+}
+
+R13_breakaway = { # Baetica
+	R13 = {
+		transfer_state = 789
+		transfer_state = 169
+		transfer_state = 173
+		transfer_state = 118
+		transfer_state = 1020
+
+		add_state_core = 789
+		add_state_core = 169
+		add_state_core = 173
+		add_state_core = 118
+		add_state_core = 1020
+		set_cosmetic_tag = baetica_kingdom_rome
+	}
+}
+
+AEO_breakaway = {
+	AEO = {
+		transfer_state = 18
+		transfer_state = 27
+		transfer_state = 1262
+		transfer_state = 845
+
+		add_state_core = 18
+		add_state_core = 27
+		add_state_core = 1262
+		add_state_core = 845
+	}
+}

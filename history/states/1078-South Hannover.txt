@@ -16,6 +16,10 @@ state={
 			526 1
 		}
 	}
+	resources = {
+		steel = 12
+		gold_ingot = 3
+	}
 	manpower=95000
 	state_category = large_town
 	buildings_max_level_factor=1.000

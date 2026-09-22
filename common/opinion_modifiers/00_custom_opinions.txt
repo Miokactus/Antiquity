@@ -49,4 +49,12 @@ opinion_modifiers = {
 	show_of_force = {
 		value = -15
 	}
+
+	appeasement_with_rome = {
+		value = 40
+	}
+
+	proclaimed_roman_superiority = {
+		value = -10
+	}
 }

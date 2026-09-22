@@ -15,6 +15,17 @@ ideas = {
 			}
 		}
 
+		CRS_tribal_opposition = {
+			name = "Tribal Opposition"
+			allowed_civil_war = { always = yes }
+			picture = EST_democratic_opposition
+			modifier = {				
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+
 		CRS_lost_to_the_romans = {
 			name = "Defeated by the Romans"
 			allowed_civil_war = { always = yes }
@@ -39,7 +50,7 @@ ideas = {
 			}
 		}
 
-		CRS_interal_infighting = {
+		CRS_internal_infighting = {
 			name = "Infighting over the Romans"
 			allowed_civil_war = { always = yes }
 			picture = RAJ_partition_chaos_bad
@@ -69,6 +80,9 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = 0.1
 				political_power_cost = -0.3
+			}
+			cancel = {
+				is_ally_with = ROE
 			}
 		}
 
@@ -120,6 +134,9 @@ ideas = {
 			targeted_modifier = {
 				trade_opinion_factor = 0.5
 			}
+			cancel = {
+				is_ally_with = ROE
+			}
 		}
 
 		CRS_united_against_rome = {
@@ -129,6 +146,9 @@ ideas = {
 			modifier = {
 				war_support_factor = 0.1
 				weekly_manpower = 500
+			}
+			cancel = {
+				is_ally_with = ROE
 			}
 		}
 

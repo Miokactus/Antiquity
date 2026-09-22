@@ -1,7 +1,7 @@
 ﻿l_english:
- AAN: "Unorganised Cultures"
- AAN_DEF: "Unorganised Cultures"
- AAN_ADJ: "Anarchists"
+ AAN: ""
+ AAN_DEF: ""
+ AAN_ADJ: ""
 
  FAL: "Unorganised Cultures"
  FAL_DEF: "Unorganised Cultures"
@@ -1304,3 +1304,40 @@ SLO_ADJ: "Sulones"
 SIG: "Silingi"
 SIG_DEF: "the Silingi"
 SIG_ADJ: "Silingi"
+
+
+RTA: "Kingdom of Raetia"
+RTA_DEF: "the Kingdom of Raetia"
+RTA_ADJ: "Raetian"
+
+PRA: "Kingdom of Paris"
+PRA_DEF: "the Kingdom of Paris"
+PRA_ADJ: "Parisian"
+
+ARA: "Aquitanian Confederation"
+ARA_DEF: "the Aquitanian Confederation"
+ARA_ADJ: "Aquitanian"
+
+ARV: "Kingdom of the Arveni"
+ARV_DEF: "the Kingdom of the Arveni"
+ARV_ADJ: "Arveni"
+
+APR: "Kingdom of the Celtiberi"
+APR_DEF: "the Kingdom of the Celtiberi"
+APR_ADJ: "Celtiberi"
+
+kingdom_of_narbonensis: "Kingdom of Narbonensis"
+kingdom_of_narbonensis_DEF: "the Kingdom of Narbonensis"
+
+lusi_kingdom_rome: "Kingdom of Lusitania"
+lusi_kingdom_rome_DEF: "the Kingdom of Lusitania"
+
+tarra_kingdom_rome: "Kingdom of Tarraconensis"
+tarra_kingdom_rome_DEF: "the Kingdom of Tarraconensis"
+
+baetica_kingdom_rome: "Kingdom of Baetica"
+baetica_kingdom_rome_DEF: "the Kingdom of Baetica"
+
+AEO: "Kingdom of the Aedui"
+AEO_DEF: "the Kingdom of the Aedui"
+AEO_ADJ: "Aeudi"

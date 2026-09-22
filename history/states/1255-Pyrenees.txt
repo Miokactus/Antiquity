@@ -1,0 +1,17 @@
+state = {
+	id = 1255
+	name = "STATE_1255"
+	manpower = 55060
+	state_category = city
+	provinces = { 929 3740 3749 6759 9882 9884 11699 12169 }
+	history = {
+		owner = ROE
+		add_core_of = ROE
+		victory_points = { 929 3 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+}

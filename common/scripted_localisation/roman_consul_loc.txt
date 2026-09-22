@@ -1,0 +1,532 @@
+defined_text = {
+	name = GetConsul1Name
+
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 0 }
+			}
+		}
+		localization_key = sextus_pompeius
+	}
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 1 }
+			}
+		}
+		localization_key = drusus_julius_caesar
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 2 }
+			}
+		}
+		localization_key = sisenna_statilius_taurus
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 3 }
+			}
+		}
+		localization_key = lucius_pomponius_flaccus
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 4 }
+			}
+		}
+		localization_key = lucius_seius_tubero
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 5 }
+			}
+		}
+		localization_key = marcus_junius_silanus_torquatus
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 6 }
+			}
+		}
+		localization_key = marcus_valerius_messalla_barbatus
+	}
+
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 7 }
+			}
+		}
+		localization_key = decimus_haterius_agrippa
+	}
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 8 }
+			}
+		}
+		localization_key = gaius_asinius_pollio
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = no_consul_elected
+	}
+}
+
+defined_text = {
+	name = GetConsul2Name
+
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 0 }
+			}
+		}
+		localization_key = sextus_appuleius
+	}
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 1 }
+			}
+		}
+		localization_key = caius_norbanus_flaccus
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 2 }
+			}
+		}
+		localization_key = lucius_scribonius_libo
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 3 }
+			}
+		}
+		localization_key = gaius_caelius_rufus
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 4 }
+			}
+		}
+		localization_key = marcus_livineius_regulus
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 5 }
+			}
+		}
+		localization_key = lucius_norbanus_balbus
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 6 }
+			}
+		}
+		localization_key = marcus_aurelius_cotta_maximus_messalinus
+	}
+
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 7 }
+			}
+		}
+		localization_key = drusus_julius_caesar
+	}
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 8 }
+			}
+		}
+		localization_key = gaius_sulpicius_galba
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = no_consul_elected
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+defined_text = {
+	name = GetConsul1Portrait
+
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 0 }
+			}
+		}
+		localization_key = "GFX_sextus_pompeius"
+	}
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 1 }
+			}
+		}
+		localization_key = "GFX_drusus_julius_caesar"
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 2 }
+			}
+		}
+		localization_key = "GFX_sisenna_statilius_taurus"
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 3 }
+			}
+		}
+		localization_key = "GFX_lucius_pomponius_flaccus"
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 4 }
+			}
+		}
+		localization_key = "GFX_lucius_seius_tubero"
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 5 }
+			}
+		}
+		localization_key = "GFX_marcus_junius_silanus_torquatus"
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 6 }
+			}
+		}
+		localization_key = "GFX_marcus_valerius_messalla_barbatus"
+	}
+
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 7 }
+			}
+		}
+		localization_key = "GFX_decimus_haterius_agrippa"
+	}
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 8 }
+			}
+		}
+		localization_key = "GFX_gaius_asinius_pollio"
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "GFX_no_consul_elected"
+	}
+}
+
+defined_text = {
+	name = GetConsul2Portrait
+
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 0 }
+			}
+		}
+		localization_key = "GFX_sextus_appuleius"
+	}
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 1 }
+			}
+		}
+		localization_key = "GFX_caius_norbanus_flaccus"
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 2 }
+			}
+		}
+		localization_key = "GFX_lucius_scribonius_libo"
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 3 }
+			}
+		}
+		localization_key = "GFX_gaius_caelius_rufus"
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 4 }
+			}
+		}
+		localization_key = "GFX_marcus_livineius_regulus"
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 5 }
+			}
+		}
+		localization_key = "GFX_lucius_norbanus_balbus"
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 6 }
+			}
+		}
+		localization_key = "GFX_marcus_aurelius_cotta_maximus_messalinus"
+	}
+
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 7 }
+			}
+		}
+		localization_key = "GFX_drusus_julius_caesar"
+	}
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 8 }
+			}
+		}
+		localization_key = "GFX_gaius_sulpicius_galba"
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = "GFX_no_consul_elected"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+defined_text = {
+	name = GetConsul1NameColour
+
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 0 }
+			}
+		}
+		localization_key = sextus_pompeius_colour
+	}
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 1 }
+			}
+		}
+		localization_key = drusus_julius_caesar_colour
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 2 }
+			}
+		}
+		localization_key = sisenna_statilius_taurus_colour
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 3 }
+			}
+		}
+		localization_key = lucius_pomponius_flaccus_colour
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul1 = 4 }
+			}
+		}
+		localization_key = lucius_seius_tubero_colour
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 5 }
+			}
+		}
+		localization_key = marcus_junius_silanus_torquatus_colour
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 6 }
+			}
+		}
+		localization_key = marcus_valerius_messalla_barbatus_colour
+	}
+
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 7 }
+			}
+		}
+		localization_key = decimus_haterius_agrippa_colour
+	}
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul1 = 8 }
+			}
+		}
+		localization_key = gaius_asinius_pollio_colour
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = no_consul_elected
+	}
+}
+
+defined_text = {
+	name = GetConsul2NameColour
+
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 0 }
+			}
+		}
+		localization_key = sextus_appuleius_colour
+	}
+	text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 1 }
+			}
+		}
+		localization_key = caius_norbanus_flaccus_colour
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 2 }
+			}
+		}
+		localization_key = lucius_scribonius_libo_colour
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 3 }
+			}
+		}
+		localization_key = gaius_caelius_rufus_colour
+	}
+    text = {
+		trigger = {
+			ROE = {
+            	check_variable = { consul2 = 4 }
+			}
+		}
+		localization_key = marcus_livineius_regulus_colour
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 5 }
+			}
+		}
+		localization_key = lucius_norbanus_balbus_colour
+	}
+    text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 6 }
+			}
+		}
+		localization_key = marcus_aurelius_cotta_maximus_messalinus_colour
+	}
+
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 7 }
+			}
+		}
+		localization_key = drusus_julius_caesar_colour
+	}
+	text = {
+		trigger = {
+            ROE = {
+            	check_variable = { consul2 = 8 }
+			}
+		}
+		localization_key = gaius_sulpicius_galba_colour
+	}
+    text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = no_consul_elected
+	}
+}

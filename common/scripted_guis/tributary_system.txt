@@ -115,6 +115,76 @@ scripted_gui = {
 }
 
 
+scripted_gui = {
+	consuls_scripted_gui = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "consul_window"
+
+		visible = {
+			tag = ROE
+		}
+		dynamic_lists = {
+		}
+		effects = {
+			consulswindow_button_click = {
+				if = {
+					limit = {
+						has_country_flag = opened_consuls
+					}
+					clr_country_flag = opened_consuls
+				}
+				else = {
+					set_country_flag = opened_consuls
+				}
+			}
+		}
+		triggers = {
+			
+		}
+		ai_enabled = {
+			always = no # Handled in a different way
+        }
+	}
+
+	consulswindow_scripted_gui = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "consulswindow"
+
+		visible = {
+			has_country_flag = opened_consuls
+		}
+		dynamic_lists = {
+		}
+		properties = {
+    		consul1_portrait = {
+    		    image = "[GetConsul1Portrait]"
+    		}
+			consul2_portrait = {
+    		    image = "[GetConsul2Portrait]"
+    		}
+		}
+		effects = {
+			close_button_click = {
+				if = {
+					limit = {
+						has_country_flag = opened_consuls
+					}
+					clr_country_flag = opened_consuls
+				}
+			}
+		}
+		triggers = {
+			
+		}
+		ai_enabled = {
+			always = no # Handled in a different way
+        }
+	}
+}
+
+
 
 scripted_gui = {
 	submissive_ideology = {

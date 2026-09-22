@@ -1,4 +1,4 @@
-﻿capital = 137
+﻿capital = 1201
 
 oob = "BOP_14"
 

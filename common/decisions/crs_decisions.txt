@@ -49,6 +49,7 @@ alliance_germans = {
 					is_subject_of = ROOT
 					is_subject_of = ROE
 					is_ally_with = ROOT
+					is_in_faction = yes
 				}
 			}
 		}

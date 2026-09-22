@@ -61,16 +61,16 @@ SSN = "countries/Middle_Eastern.txt"
 RR1 = "countries/Roman_Provinces.txt"
 RR2 = "countries/Roman_Provinces.txt"
 RR3 = "countries/Roman_Provinces.txt"
-RR4 = "countries/Roman_Provinces.txt"
+RR4 = "countries/Roman_Provinces.txt" # Narbonensis (cosmetic tag kingdom_of_narbonensis)
 RR5 = "countries/Roman_Provinces.txt"
 RR6 = "countries/Roman_Provinces.txt"
 RR7 = "countries/Roman_Provinces.txt"
 RR8 = "countries/Roman_Provinces.txt"
 RR9 = "countries/Roman_Provinces.txt"
 R10 = "countries/Roman_Provinces.txt"
-R11 = "countries/Roman_Provinces.txt"
-R12 = "countries/Roman_Provinces.txt"
-R13 = "countries/Roman_Provinces.txt"
+R11 = "countries/Roman_Provinces.txt" # Tarraconensis (cosmetic tag tarra_kingdom_rome)
+R12 = "countries/Roman_Provinces.txt" # Lusitania (cosmetic tag lusi_kingdom_rome)
+R13 = "countries/Roman_Provinces.txt" # Baetica (cosmetic tag baetica_kingdom_rome)
 R14 = "countries/Roman_Provinces.txt"
 R15 = "countries/Roman_Provinces.txt"
 R16 = "countries/Roman_Provinces.txt"
@@ -89,6 +89,15 @@ R28 = "countries/Roman_Provinces.txt"
 
 VVI = "countries/Roman_Provinces.txt" #Vienna
 RRR = "countries/Roman_Provinces.txt" #Rome
+
+## POST-ROMAN GAUL (if they lose to Germany)
+RTA = "countries/Roman_Provinces.txt" # Kingdom of Raetia (aristocratic roman-aligned kingdom)
+PRA = "countries/Roman_Provinces.txt" # Kingdom of Paris (gallo-roman nobles, unaligned)
+ARA = "countries/Roman_Provinces.txt" # Confederation of Aquitaine (germanic-aligned, aristocratic confederation)
+ARV = "countries/Roman_Provinces.txt" # Kingdom of the Arveni (germanic-aligned, celtic tribes)
+APR = "countries/Roman_Provinces.txt" # Kingdom of the Celtiberi (unaligned, celtic-roman)
+AEO = "countries/Roman_Provinces.txt" # Kingdom of the Aedui (gallo-roman kingdom)
+
 
 ## CHINESE WARLORDS
 LLU = "countries/Lulin.txt"

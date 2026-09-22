@@ -301,6 +301,14 @@ cultural_integration = {
 		target_array = ROOT.owned_controlled_states
 		target_trigger = {
 			FROM = {
+				NOT = {
+					OR = {
+						owner = {
+							tag = AAN
+							tag = FAA
+						}
+					}
+				}
 				OR = {
 					AND = {
 						owner = {
@@ -396,7 +404,14 @@ cultural_integration = {
 			political_power_gain = -0.15
 		}
 		allowed = {
-			always = yes
+			NOT = {
+				OR = {
+					owner = {
+						tag = AAN
+						tag = FAA
+					}
+				}
+			}
 		}
 		available = {
 			any_owned_state = {

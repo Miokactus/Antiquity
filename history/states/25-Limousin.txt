@@ -1,30 +1,27 @@
 
 state={
 	id=25
-	name="STATE_25"
+	name = "STATE_25"
 	manpower = 33437
 	resources = {
-		wood = 4
 		grain = 2
+		wood = 4
 	}
 
 	state_category = large_town
 	history={
 		owner = ROE
 		add_core_of = ROE
+		victory_points = { 620 5 }
 		buildings = {
 			infrastructure = 2
 		}
-		victory_points = {
-			620 5
-		}
+
 		
 		
 	}
 
-	provinces={
-		620 625 755 3598 3771 6618 6775 6792 9717 9734 9751 11718 11720 
-	}
+	provinces = { 620 625 3598 3771 6618 9751 11718 }
 
 	local_supplies=0.0 
 }

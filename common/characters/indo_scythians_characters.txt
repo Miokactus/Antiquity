@@ -1,0 +1,35 @@
+characters = {
+
+	IDS_Tanlis_Mardates = {
+		name = "Tanlis Mardates"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_Tanlis"
+            }
+        }
+		country_leader = {
+			desc = "IDS_Tanlis_Mardates_desc"
+			expire = "19.5.4"
+			ideology = oligarchism_comm
+			traits = {
+				PTH_governor
+			}
+		}
+	}
+
+	IDS_Gondophares = {
+		name = "Gondophares"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_Gondophares"
+            }
+        }
+		country_leader = {
+			desc = "IDS_Gondophares_desc"
+			expire = "30.5.4"
+			ideology = despotism_comm
+			traits = {
+			}
+		}
+	}
+}

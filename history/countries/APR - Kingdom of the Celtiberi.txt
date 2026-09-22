@@ -1,0 +1,42 @@
+capital = 167
+
+oob = "APR_14"
+
+set_research_slots = 1
+
+create_country_leader = {
+	name = "Tiberius Ekualakos"
+	desc = "TRIBAL_DESC"
+	picture = GFX_Portrait_Europe_Generic_3
+	expire = "150.5.4"
+	ideology = oligarchism_comm
+	traits = {
+	}
+}
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+set_politics = {
+	ruling_party = communism
+	election_frequency = 48
+	last_election = "14.1.1"
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 20
+	fascism = 0
+	communism = 60
+	neutrality = 20
+}
+
+add_ideas = {
+	civilian_economy 
+	limited_conscription
+	limited_exports
+}

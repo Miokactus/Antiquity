@@ -9,8 +9,8 @@ state={
 		11402 11468 
 	}
 	history = {
-		owner = ANI
-		add_core_of = ANI
+		owner = CRS
+		add_core_of = CRS
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

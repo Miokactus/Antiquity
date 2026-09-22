@@ -1,12 +1,17 @@
 ﻿l_english:
 
  ## LEADERS
- augustus_emperor_desc: "Hawk tuah!"
+ augustus_desc: "Born in September 63 BC, Augustus, then named Gaius Octavius, was the first Princeps (first of the citizens), known today as Emperor. Great nephew of Julius Caesar, dictator of Rome until 44 BC, he succedeed in stabilising the Republic after the Crisis of the Roman Republic starting from 130 BC and ending with him, in 30 BC. In -27, Octavian, through political maneuvers, was proclaimed 'augustus' (the revered), starting the regime of the Principate, a de facto quasi-autocratic regime under which the Senate, in collaboration with the Princeps, would rule over the Empire. With Livia as his wife but no real sons, Augustus would then begin to adopt promising aspirant to be his heirs, the most recent one being Tiberius Julius Caesar."
  augustus_emperor: "Imperator Caesar Augustus"
+ tiberius_desc: ""
+ germanicus_desc: ""
+ marcus_agrippa_desc: ""
+ senate_roman: ""
+ comitia_roman_reformist: ""
  god_emperor: "God Emperor Jesus Christ, Saviour of the Masses, King of Kings"
 
  ## TOOLTIPS
- ROE_cities_fight_germans: "We need to either: control the main city of the §RCherusci§!, control the main cities of the §GBructeri§! and the §CCatti§! and an additional city, either from the §HSigambri§! or the §OCauci§!. §RIf we go beyond 15% capitulation, we will surrender!§!"
+ ROE_cities_fight_germans: "We need to either: control the main city of the §RCherusci§!; control the main cities of the §GBructeri§!, the §CCatti§! and an additional city either from the §HSigambri§! or the §OCauci§!. §RIf we go beyond 15% capitulation, we will surrender!§!"
  TOBEADDED: "§RNOT YET ADDED! W.I.P.§!"
  ROE_retire_germanicus_tooltip: "§YGermanicus§! shall be rewarded with a §Gtriumph in the streets of Rome§! for his services. After that, he will be sent to §CAsia§!."
  ROE_religious_influence_low: "§YWe will be able to ignore the signs when declaring war!§!"
@@ -16,6 +21,30 @@
  show_of_force: "Show of Force"
  ROE_we_will_deal_with_mutinies: "We will deal with the mutinies, restoring order in our armies!"
  mutinies: "Army Mutinies"
+ stop_the_campaigns: "Stop the Campaigns"
+
+ ROE_dealing_with_mutinies: "With some bribes, we will be able to §Greduce the amount§! of mutinies and start §Ythe stabilisation§! of our armies!"
+ roman_senate_category: "The Senate of Rome"
+ proclaimed_roman_superiority: "Proclaimed the Romans' Superiority"
+
+ ROE_senate_debating: "The Senate is currently debating"
+ ROE_consular_elections: "Elections for the Consuls are currently ongoing"
+
+ ## BALANCE OF POWER
+ ROE_roman_senate: "Senatorial Relations"
+ ROE_senate_power_side: "Senate's Influence"
+ ROE_emperor_power_side: "Emperor's Influence"
+ ROE_balanced_neutral_range: "Status Quo"
+
+ ROE_emperor_power_low_control_range: "Low Imperial Influence"
+ ROE_emperor_power_medium_control_range: "Influencial Emperor"
+ ROE_emperor_power_high_control_range: "Powerful Chancellery"
+ ROE_emperor_power_total_control_range: "Absolute Emperor"
+ 
+ ROE_senate_power_low_control_range: "Low Senatorial Influence"
+ ROE_senate_power_medium_control_range: "Reinforced Aristocracy"
+ ROE_senate_power_high_control_range: "Influencial Senators"
+ ROE_senate_power_total_control_range: "Senatorial Oligarchy"
 
  ## TRAITS
  ROE_roman_emperor: "Princeps of the Romans"
@@ -23,6 +52,25 @@
  ROE_princeps: "First Citizen Amongst the Citizens"
  ROE_discreet_emperor: "Discreet Emperor"
  ROE_visible_emperor: "Visible Emperor"
+ consul_of_rome: "Consul of Rome"
+ holder_of_the_imperium: "Holder of the Imperium"
+ manufacturer_reformer: "Industrial Reformer"
+ consul_of_the_people: "Consul of the People"
+ diplomatic_appeaser: "Diplomatic Appeaser"
+ erratic_commander: "Erratic Commander"
+ egalitarian: "Egalitarian"
+ political_commander: "Political Commander"
+ senatorial_plebean: "Plebean Senator"
+ celtic_representative: "Celt Representative"
+ 
+ 
+
+
+
+
+
+
+
  ### EVENTS
  rome_event.19.t: "Jesus of Nazareth becomes Princeps!"
  rome_event.19.d: "In search of a new princeps, the authorities of Rome came to Palestine and across every provinces of the country. In their search, they found a man, who was said to always be kind.\n\nAs it should be the main quality of an emperor, along with piety, this man was spared, even if voices started rising asking for his condemnation. \n\nHe then arrived to Rome, was acclaimed Princeps and some even began calling him \"God Emperor\""
@@ -38,6 +86,59 @@
  rome_event.101.a: "This is no matter of the Gods, onwards!"
  rome_event.101.b: "The Gods are with us, we'll win!"
  rome_event.101.c: "We shall wait, then."
+
+
+
+
+
+ ## CONSULS LOC
+ sextus_pompeius: "Sextus Pompeius"
+ drusus_julius_caesar: "Drusus Julius Caesar"
+ sisenna_statilius_taurus: "Sisenna Stalitius Taurus"
+ lucius_pomponius_flaccus: "L. Pomponius Flaccus"
+ lucius_seius_tubero: "L. Seius Tubero"
+ marcus_junius_silanus_torquatus: "M. Junius Torquatus"
+ marcus_valerius_messalla_barbatus: "M. Valerius Barbatus"
+ decimus_haterius_agrippa: "Decimus Haterius Agrippa"
+ gaius_asinius_pollio: "C. Asinius Pollio"
+
+ no_consul_elected: "§RVACANT§!"
+
+ sextus_appuleius: "Sextus Appuleius"
+ caius_norbanus_flaccus: "Caius Norbanus Flaccus"
+ lucius_scribonius_libo: "Lucius Scribonius Libo"
+ gaius_caelius_rufus: "C. Caelius Rufus"
+ marcus_livineius_regulus: "Marcus Livineius Regulus"
+ lucius_norbanus_balbus: "Lucius Norbanus Balbus"
+ marcus_aurelius_cotta_maximus_messalinus: "M. Aurelius Cotta"
+ drusus_julius_caesar: "Drusus Julius Caesar"
+ gaius_sulpicius_galba: "C. Sulpicius Galba"
+
+
+
+
+
+ sextus_pompeius_colour: "§YSextus Pompeius§!"
+ drusus_julius_caesar_colour: "§YDrusus Julius Caesar§!"
+ sisenna_statilius_taurus_colour: "§YSisenna Stalitius Taurus§!"
+ lucius_pomponius_flaccus_colour: "§YL. Pomponius Flaccus§!"
+ lucius_seius_tubero_colour: "§YL. Seius Tubero§!"
+ marcus_junius_silanus_torquatus_colour: "§YM. Junius Torquatus§!"
+ marcus_valerius_messalla_barbatus_colour: "§YM. Valerius Barbatus§!"
+ decimus_haterius_agrippa_colour: "§YDecimus Haterius Agrippa§!"
+ gaius_asinius_pollio_colour: "§YC. Asinius Pollio§!"
+
+ no_consul_elected: "§RVACANT§!"
+
+ sextus_appuleius_colour: "§YSextus Appuleius§!"
+ caius_norbanus_flaccus_colour: "§YCaius Norbanus Flaccus§!"
+ lucius_scribonius_libo_colour: "§YLucius Scribonius Libo§!"
+ gaius_caelius_rufus_colour: "§YC. Caelius Rufus§!"
+ marcus_livineius_regulus_colour: "§YMarcus Livineius Regulus§!"
+ lucius_norbanus_balbus_colour: "§YLucius Norbanus Balbus§!"
+ marcus_aurelius_cotta_maximus_messalinus_colour: "§YM. Aurelius Cotta§!"
+ drusus_julius_caesar_colour: "§YDrusus Julius Caesar§!"
+ gaius_sulpicius_galba_colour: "§YC. Sulpicius Galba§!"
 
 
 

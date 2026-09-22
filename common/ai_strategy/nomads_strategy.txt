@@ -57,12 +57,12 @@ nomads_build_cavalry = {
     ai_strategy = {
         type = role_ratio
         id = cavalry
-        value = 300
+        value = 20
     }
     ai_strategy = {
         type = unit_ratio
         id = cavalry
-        value = 300
+        value = 40
     }
 }
 

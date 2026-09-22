@@ -1,10 +1,10 @@
 
 state={
 	id=15
-	name="STATE_15"
+	name = "STATE_15"
 	manpower = 23321
-	resources={
-		steel = 1 # was: 36
+	resources = {
+		steel = 1
 	}
 	
 	state_category = city
@@ -12,16 +12,11 @@ state={
 	history={
 		owner = ROE
 		add_core_of = ROE
+		victory_points = { 6449 3 }
 		
-		victory_points = {
-			6449 3
-		}
-		victory_points = {
-			11563 5
-		}
-		victory_points = {
-			485 3
-		}
+
+
+
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 2
@@ -41,9 +36,7 @@ state={
 		
 	}
 
-	provinces={
-		485 539 553 3534 3549 3579 6449 6569 6599 9434 9550 9578 11521 11535 11563 
-	}
+	provinces = { 539 553 3534 3549 3579 6449 6599 9550 9578 11521 11535 }
 
 	local_supplies=0.0 
 }

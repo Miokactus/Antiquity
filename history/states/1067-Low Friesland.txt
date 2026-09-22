@@ -5,7 +5,7 @@ state={
 		6241 6286 9363 9403 
 	}
 	resources = {
-		wood = 2
+		wood = 8
 	}
 	history = {
 		owner = CMI

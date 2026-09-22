@@ -609,6 +609,10 @@ country_event = {
     		end_wars = yes
     		end_civil_wars = yes
 		}
+		promote_character = {
+			character = IDS_Gondophares
+			ideology = despotism_comm
+		}
 	}
 	option = { # There's nothing we can do...
 		name = arsacid_event.10.a

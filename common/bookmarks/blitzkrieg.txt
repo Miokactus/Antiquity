@@ -10,7 +10,7 @@ bookmarks = {
 			ideology = neutrality
 			ideas={
 				CRS_teutoburg_victory
-				CRS_interal_infighting
+				CRS_internal_infighting
 			}
 			focuses = {
 				CRS_purge_the_pro_romans

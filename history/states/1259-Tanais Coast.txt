@@ -1,0 +1,21 @@
+state = {
+	id = 1259
+	name = "STATE_1259"
+	manpower = 63600
+	state_category = city
+	resources = {
+		grain = 5
+		wood = 8
+	}
+	provinces = { 3421 6445 9430 }
+	history = {
+		owner = BOP
+		add_core_of = BOP
+		add_core_of = SAR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+		}
+	}
+}

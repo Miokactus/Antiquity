@@ -1,5 +1,28 @@
 spriteTypes = {
 
+
+
+    spriteType = {
+		name = "GFX_consuls_mechanic_button"
+		texturefile = "gfx/interface/topbar/consuls_icon.png"
+	}
+
+    spriteType = {
+        name = "GFX_no_consul_elected"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds" 
+    }
+
+    spriteType = {
+        name = "GFX_consul2_portrait"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds" 
+    }
+
+    spriteType = {
+        name = "GFX_consul1_portrait"
+        texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_5.dds" 
+    }
+
+
 ## PUPPETS GFX ##
 #################
     spriteType = {
@@ -115,7 +138,7 @@ spriteTypes = {
 
     spriteType = {
         name = "GFX_leader_generic_building_2"
-        texturefile = "gfx/characters/generic_building_3.dds" # The folder and filename don't matter, as long as they are correct
+        texturefile = "gfx/characters/generic_building_2.dds" # The folder and filename don't matter, as long as they are correct
     }
 
     spriteType = {
@@ -265,7 +288,6 @@ spriteTypes = {
         texturefile = "gfx/characters/ROE_generic_statue.dds" # The folder and filename don't matter, as long as they are correct
     }
 
-
 ## CLIENT STATES OF ROME GFX ##
 
     spriteType = {
@@ -376,6 +398,21 @@ spriteTypes = {
     spriteType = {
         name = "GFX_leader_Cunobeline_portrait"
         texturefile = "gfx/characters/Cunobeline.dds"
+    }
+
+
+
+
+
+
+    spriteType = {
+        name = "GFX_leader_Gondophares"
+        texturefile = "gfx/characters/Gondophares.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_leader_Tanlis"
+        texturefile = "gfx/characters/Tanlis.dds" # The folder and filename don't matter, as long as they are correct
     }
 
 }

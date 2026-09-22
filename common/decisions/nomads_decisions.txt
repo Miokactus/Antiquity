@@ -5,7 +5,11 @@ tribal_actions = {
 		cost = 70
 		allowed = {
 			has_government = neutrality
-
+			NOT = {
+				tag = AAN
+				tag = FAL
+				tag = FAA
+			}
     	}
 		available = {
 			has_manpower > 500
@@ -24,7 +28,6 @@ tribal_actions = {
 			}
 		}
 		visible = {
-			always = yes
 		}
 		target_root_trigger = { TAG = ROOT }
 		target_trigger = {

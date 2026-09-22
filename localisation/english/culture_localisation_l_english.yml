@@ -1,6 +1,7 @@
 ﻿l_english:
  ## Scriped Localisation
  cultural_map_mode_tooltip: "[From.GetCultureMapModeTooltip]"
+ cultural_map_mode_tooltip_delayed: "[From.GetCultureMapModeTooltip] It is under the control of §G[From.Owner.GetNameDef]§!"
  culture_map_unidentified: "§Y[From.GetName]§! is of an unidentified culture."
 
  erase_culture: "Promote our Culture in §Y[From.GetName]§!"
