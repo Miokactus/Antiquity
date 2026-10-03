@@ -10,14 +10,18 @@
  xai_event.2.a: ""
  xai_event.2.b: ""
 
- xai_event.3.t: ""
- xai_event.3.d: ""
- xai_event.3.a: ""
- xai_event.3.b: ""
+ xai_event.3.t: "Appeasement with China"
+ xai_event.3.d: "We have received a message today by Xiongnu ambassadors. They are asking if we would be willing to sign a peace treaty between our nations, with them ending their raids at our northern border and us guaranteeing no intervention inside of their territory. Should we accept, this could lead to prolonged peace between our countries!"
+ xai_event.3.a: "Alright, let's sign a pact!"
+ xai_event.3.b: "What? No!"
 
- xai_event.4.t: ""
- xai_event.4.d: ""
- xai_event.4.a: ""
+ xai_event.4.t: "Appeasement with China - Acceptance"
+ xai_event.4.d: "The Chinese ambassadors have come back with good news; they declared that, by the will of their Emperor, they would agree to our pact, marking the start of an effective peace between our nations. The Right Prince celebrates, while the Military sees this as yet another feeble attempt at peace; they wish that we attack them, but now, they are cornered."
+ xai_event.4.a: "Peace it is."
+
+ xai_event.5.t: "Appeasement with China - Refusal"
+ xai_event.5.d: "An envoy has returned to the Court; with an answer from the Chinese. They are deepened to inform us that they do not wish to engage in any sort of pact with us, citing that we are 'no more than mere vassals of the Heavenly Empire', effectively treating us like petty subjects. The Military sees this as a victory, as many in our Government predicted this outcome."
+ xai_event.5.a: "Restart the Raids!"
 
 
  ## LINKED EVENTS (XAI - CHINA ) ##

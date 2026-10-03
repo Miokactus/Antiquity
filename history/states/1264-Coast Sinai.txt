@@ -1,0 +1,14 @@
+state = {
+	id = 1264
+	name = "STATE_1264"
+	manpower = 35000
+	state_category = town
+	provinces = { 4161 11922 11979 }
+	history = {
+		owner = ROE
+		add_core_of = ROE
+		add_core_of = NAB
+		add_core_of = EGI
+		victory_points = { 4161 3 }
+	}
+}

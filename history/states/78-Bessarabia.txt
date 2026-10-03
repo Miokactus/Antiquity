@@ -10,6 +10,7 @@ state=
 		
 		owner = GET
 		add_core_of = GET
+		add_core_of = DAC
 		victory_points = {
 			3707 1
 		}

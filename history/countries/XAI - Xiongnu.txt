@@ -25,8 +25,8 @@ set_power_balance = {
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
-	support_weapons = 1
+	early_swords_and_spears = 1
+	
 	basic_train = 1
 	transport = 1
 }

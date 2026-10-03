@@ -41,7 +41,7 @@ sub_units = {
 		breakthrough = 0.3 #Same as Marines/Mountaineers
 				
 		need = {
-			infantry_equipment = 100 #Same as Inf
+			swords_and_spears_archetype = 100 #Same as Inf
 			support_equipment = 10 #Same as bicycles
 		}
 

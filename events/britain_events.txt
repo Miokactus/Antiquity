@@ -1,0 +1,66 @@
+################
+#Generic EVENTS#
+################
+
+add_namespace = britain_event
+
+# Eppillus deposed, Verica proclaimed king!
+country_event = {
+	id = britain_event.1
+	title = "Eppillus deposed, Verica proclaimed king!"
+	desc = "In an unbelievable turn of events, Eppillus, king of the Atrebates, was deposed by his brother, Verica, and fled the country to the neighbouring territory of the Cantiaci. While unclear as to why, Verica has already started reinforcing his power in his new kingdom, hoping that the Romans will grant him the title of rex."
+	
+	trigger = {
+		date > 15.1.1
+		all_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						region = 2
+						region = 1
+						region = 3
+					}
+				}
+			}
+		}
+		tag = ROE
+    }
+	immediate = {
+		ATB = {
+			retire_country_leader = yes
+			add_stability = -0.1
+		}
+		CTC = {
+			retire_country_leader = yes
+			add_stability = -0.1
+		}
+	}
+	picture = GFX_report_event_XIN_generic_letter
+	fire_only_once = yes
+	option = {
+		name = "Unbeliveable!"
+		ai_chance = { factor = 1 }
+		trigger = {
+			all_country = {
+				limit = {
+					capital_scope = {
+						region = 2
+						region = 1
+						region = 3
+					}
+				}
+			}
+		}
+		add_war_support = 0.02
+	}
+	option = {
+		name = "Congrats to the king."
+		ai_chance = { factor = 1 }
+		trigger = {
+			tag = ROE
+		}
+		ATB = {
+			add_stability = 0.03
+		}
+	}
+}

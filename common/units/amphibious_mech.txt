@@ -46,7 +46,7 @@ sub_units = {
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
-			infantry_equipment
+			swords_and_spears_archetype
 			amphibious_mechanized_equipment
 		}
 
@@ -55,7 +55,7 @@ sub_units = {
 
 		need = {
 			amphibious_mechanized_equipment = 50
-			infantry_equipment = 100
+			swords_and_spears_archetype = 100
 		}
 
 		forest = {

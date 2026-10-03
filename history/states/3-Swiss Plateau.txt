@@ -12,8 +12,8 @@ state={
 	history={
 		owner = ROE
 		add_core_of = ROE
-		victory_points = { 9620 15 }
-		victory_points = { 663 10 }
+		victory_points = { 9620 2 }
+		victory_points = { 663 5 }
 		buildings = {
 		}
 		

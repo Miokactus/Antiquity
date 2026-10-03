@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Parliament_Background"
+		textureFile = "/gfx/interface/parliament_sample/parliament_background.dds"
+	}
+
+}

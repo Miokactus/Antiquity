@@ -1,6 +1,6 @@
 war_actions = {
 	total_victory = {
-		icon = generic_prepare_civil_war
+		icon = GFX_decision_generic_speech
 		target_root_trigger = { TAG = ROOT }
 		target_array = enemies
 		cost = 60
@@ -77,7 +77,7 @@ war_actions = {
 
 
 	stalemate = {
-		icon = generic_prepare_civil_war
+		icon = GFX_decision_eng_trade_unions_support
 		target_root_trigger = { TAG = ROOT }
 		target_array = enemies
 		cost = 40
@@ -148,7 +148,7 @@ war_actions = {
 	}
 
 	surrender = {
-		icon = generic_prepare_civil_war
+		icon = GFX_decision_eng_trade_unions_demand
 		target_root_trigger = { TAG = ROOT }
 		days_re_enable = 30
 		target_array = enemies
@@ -230,7 +230,7 @@ war_actions = {
 
 
 	integration_of_lands = {
-		icon = generic_civil_support
+		icon = GFX_decision_generic_confiscation
 		target_root_trigger = { TAG = ROOT }
 		target_array = ROOT.owned_controlled_states
 		target_trigger = {

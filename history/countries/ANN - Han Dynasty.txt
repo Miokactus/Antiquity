@@ -16,7 +16,7 @@ recruit_character = geng_chun
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	early_swords_and_spears = 1
 	convoys = 1
 }
 

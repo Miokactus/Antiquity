@@ -13,6 +13,8 @@ technologies = {
 	@45 = 18
 	@50 = 20
 
+	tech_trucks = {}
+
 	infantry_weapons = {
 
 		enable_equipments = {

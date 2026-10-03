@@ -1,0 +1,200 @@
+# All infantry equipment
+
+equipments = {
+
+	swords_and_spears_archetype = {
+		year = -5000
+	
+		is_archetype = yes
+		picture = GFX_archetype_early_swords_and_spears_medium
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = no
+		
+		#Misc Abilities
+		reliability = 0.5
+		maximum_speed = 3
+
+		#Defensive Abilities
+		defense = 5
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 2
+		hard_attack = 0.5
+		ap_attack = 1
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 0.5
+		
+		fuel_consumption = 0.02
+
+		build_cost_ic = 0.5
+		resources = {
+			wood = 1
+		}
+		
+	}
+
+	early_swords_and_spears = {
+		year = -5000
+		picture = GFX_early_swords_and_spears_medium
+		fuel_consumption = 0.1
+	
+		archetype = swords_and_spears_archetype
+		active = yes
+		priority = 05
+		visual_level = 0
+	}
+
+	copper_spears = {
+		year = -3000
+	
+		picture = GFX_copper_spears_medium
+		archetype = swords_and_spears_archetype
+		parent = early_swords_and_spears
+		priority = 10
+		visual_level = 1
+		fuel_consumption = 0.05
+
+		reliability = 0.2
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 2
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 10
+		ap_attack = 4
+
+		build_cost_ic = 0.4
+
+		resources = {
+			wood = 2
+			chromium = 1
+		}
+	}
+
+	iron_spears = {
+		year = -1000
+	
+		picture = GFX_iron_spears_medium
+		archetype = swords_and_spears_archetype
+		parent = copper_spears
+		priority = 10
+		visual_level = 1
+		fuel_consumption = 0.08
+
+		#Defensive Abilities
+		defense = 12
+		breakthrough = 2
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 14
+		ap_attack = 6
+		air_attack = 0
+
+		build_cost_ic = 0.8
+
+		resources = {
+			wood = 2
+			steel = 1
+		}
+	}
+
+
+
+
+	copper_swords = {
+		year = -3000
+	
+		picture = GFX_copper_swords_medium
+		archetype = swords_and_spears_archetype
+		parent = early_swords_and_spears
+		priority = 10
+		visual_level = 1
+		fuel_consumption = 0.05
+
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 2
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 4
+		ap_attack = 2
+		air_attack = 0
+
+		build_cost_ic = 0.4
+
+		resources = {
+			wood = 1
+			chromium = 2
+		}
+	}
+
+	wrought_iron_swords = {
+		year = -1000
+	
+		picture = GFX_wrought_iron_swords_medium
+		archetype = swords_and_spears_archetype
+		parent = copper_swords
+		priority = 10
+		visual_level = 1
+		fuel_consumption = 0.08
+
+		#Defensive Abilities
+		defense = 18
+		breakthrough = 3
+
+		#Offensive Abilities
+		soft_attack = 12
+		hard_attack = 6
+		ap_attack = 3
+		air_attack = 0
+
+		build_cost_ic = 0.8
+
+		resources = {
+			wood = 1
+			steel = 1
+		}
+	}
+
+	cast_iron_swords = {
+		year = 0
+	
+		picture = GFX_cast_iron_swords_medium
+		archetype = swords_and_spears_archetype
+		parent = wrought_iron_swords
+		priority = 10
+		visual_level = 1
+		fuel_consumption = 0.1
+
+		#Defensive Abilities
+		defense = 22
+		breakthrough = 3
+
+		#Offensive Abilities
+		soft_attack = 14
+		hard_attack = 8
+		ap_attack = 5
+		air_attack = 0
+
+		build_cost_ic = 1.2
+
+		resources = {
+			wood = 1
+			steel = 2
+		}
+	}
+}

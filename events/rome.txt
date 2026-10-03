@@ -18,7 +18,7 @@ country_event = {
 	major = yes
 	option = {
 		add_political_power = -50
-			add_stability = -0.1
+		add_stability = -0.1
 		name = rome_event.1.a
 		ai_chance = { factor = 20 }
 		trigger = { }
@@ -29,6 +29,9 @@ country_event = {
 			retire_country_leader = yes
 		}
 		set_global_flag = AUG_DEATH
+		set_temp_variable = { temp_member = 1 }
+		set_temp_variable = { temp_seats = -30 }
+		modify_parliament_seat = yes
 	}
 }
 
@@ -1699,126 +1702,36 @@ country_event = {
 }
 
 
-# The Senate is debating
-country_event = {
-	id = rome_event.28
-	title = rome_event.28.t
-	desc = rome_event.28.d
-	
-	trigger = {
-		has_government = communism
-    }
 
-	picture = GFX_report_event_XIN_generic_letter
-	is_triggered_only = yes
-	option = { # The aristocracy debates between themselves.
-		name = rome_event.28.a
-		ai_chance = { factor = 1 }
-		trigger = {}
-		set_country_flag = ROE_senate_debating
-		add_political_power = 10
-	}
-}
 
-# The Senate is debating [END]
-country_event = {
-	id = rome_event.29
-	title = rome_event.29.t
-	desc = rome_event.29.d
-	
-	trigger = {
-		has_government = communism
-    }
 
-	picture = GFX_report_event_XIN_generic_letter
-	is_triggered_only = yes
-	option = { # Another day, another law
-		name = rome_event.29.a
-		ai_chance = { factor = 1 }
-		trigger = {}
-		add_stability = 0.02
-		random_owned_state = {
-			prioritize = { 159 21 157 47 103 852 736 161 20 }
-			add_building_construction = {
- 				type = infrastructure
-    			level = 1
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 1
-		}
-		random_owned_state = {
-			limit = {
-				NOT = {
-					woodwork > 2
-				}
-			}
-			add_building_construction = {
- 				type = woodwork
-    			level = 1
-				instant_build = yes
-			}
-		}
-		add_power_balance_value = {
-    		id = ROE_roman_senate
-    		value = 0.05
-    		tooltip_side = ROE_senate_power_side
-		}
-	}
-}
 
-# The Senate is debating [INTERFERENCE]
-country_event = {
-	id = rome_event.30
-	title = rome_event.30.t
-	desc = rome_event.30.d
-	
-	trigger = {
-		has_government = communism
-    }
 
-	picture = GFX_report_event_XIN_generic_letter
-	is_triggered_only = yes
-	option = { # Invest in new manufactures
-		name = rome_event.30.a
-		ai_chance = { factor = 1 }
-		trigger = {}
-		add_stability = -0.02
-		random_owned_state = {
-			prioritize = { 2 162 849 1202 160 23 29 }
-			add_building_construction = {
- 				type = industrial_complex
-    			level = 1
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 1
-		}
-		add_power_balance_value = {
-    		id = ROE_roman_senate
-    		value = -0.05
-    		tooltip_side = ROE_emperor_power_side
-		}
-	}
-	option = { # Invest in new military infrastructure
-		name = rome_event.30.b
-		ai_chance = { factor = 1 }
-		trigger = {}
-		add_stability = -0.02
-		random_owned_state = {
-			prioritize = { 2 162 849 1202 160 23 29 }
-			add_building_construction = {
- 				type = arms_factory
-    			level = 1
-				instant_build = yes
-			}
-			add_extra_state_shared_building_slots = 1
-		}
-		add_power_balance_value = {
-    		id = ROE_roman_senate
-    		value = -0.05
-    		tooltip_side = ROE_emperor_power_side
-		}
-	}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

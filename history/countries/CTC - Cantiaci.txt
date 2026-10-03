@@ -5,16 +5,6 @@ oob = "ENG_14"
 set_research_slots = 1
 
 create_country_leader = {
-    name = "Vodenos"
-    desc = "VODENOS_DESC" 
-    picture = GFX_leader_monarchy_generic1
-    expire = "15.1.4"
-    ideology = chieftain
-    traits = {
-    }
-}
-
-create_country_leader = {
     name = "Eppillus"
     desc = "EPPILLUS_DESC" 
     picture = GFX_leader_monarchy_generic3
@@ -24,15 +14,25 @@ create_country_leader = {
     }
 }
 
+create_country_leader = {
+    name = "Vodenos"
+    desc = "VODENOS_DESC" 
+    picture = GFX_leader_monarchy_generic1
+    expire = "15.1.4"
+    ideology = chieftain
+    traits = {
+    }
+}
+
 ROE = { 
 	set_autonomy = {
     	target = CTC
-    	autonomous_state = autonomy_puppet
+    	autonomous_state = autonomy_tributary
 	}
 }
 
 set_technology = {
-	infantry_weapons = 1
+	early_swords_and_spears = 1
 }
 
 set_politics = {
@@ -52,4 +52,5 @@ add_ideas = {
     limited_exports 
     limited_conscription
     civilian_economy 
+    CTC_roman_interferences_in_politics
 }

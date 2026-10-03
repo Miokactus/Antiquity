@@ -23,7 +23,7 @@ add_to_faction = HAE
 
 # Starting tech
 set_technology = {
-	infantry_weapons = 1
+	early_swords_and_spears = 1
 }
 
 

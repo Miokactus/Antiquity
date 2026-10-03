@@ -43,13 +43,13 @@ sub_units = {
 		suppression_factor = 0.20
 
 		essential = {
-			infantry_equipment
+			swords_and_spears_archetype
 			support_equipment
 		}
 		
 		need = {
 			support_equipment = 10
-			infantry_equipment = 40
+			swords_and_spears_archetype = 40
 		}
 
 		same_support_type = military_police # blocks adding other MP types to template
@@ -105,14 +105,14 @@ sub_units = {
 		recon = 1 #Recon: 1
 
 		essential = {
-			infantry_equipment
+			swords_and_spears_archetype
 			support_equipment
 			motorbike_equipment
 		}
 		
 		need = {
 			support_equipment = 5 #MP: 10
-			infantry_equipment = 20 #MP: 40
+			swords_and_spears_archetype = 20 #MP: 40
 			motorbike_equipment = 20
 		}
 

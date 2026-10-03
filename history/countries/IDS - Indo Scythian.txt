@@ -18,7 +18,7 @@ PTH = {
 
 # Starting tech
 set_technology = {
-	infantry_weapons
+	early_swords_and_spears
 	basic_train
 	early_destroyer
 	transport

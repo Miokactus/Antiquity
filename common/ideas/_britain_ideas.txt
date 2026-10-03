@@ -1,0 +1,80 @@
+ideas = {
+	country = {
+		
+	## GENERIC ##
+
+		ATB_the_threat_from_the_east = {
+			name = "The Threat from the East"
+			allowed_civil_war = { always = yes }
+			picture = generic_volunteer_expedition_bonus
+			on_remove = {
+			}
+			cancel = {
+				CVL = {
+					OR = {
+						is_subject_of = ATB
+						exists = no
+					}
+				}
+			}
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.08
+				stability_factor = -0.05
+				experience_gain_army_factor = 0.05
+			}
+		}
+
+		ATB_dynastic_infighting = {
+			name = "Dynastic Infighting"
+			allowed_civil_war = { always = yes }
+			picture = RAJ_kingmaker
+			on_remove = {
+			}
+			cancel = {
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.15
+				army_defence_factor = -0.1
+			}
+		}
+
+
+		CVL_hegemony_over_the_east = {
+			name = "Hegemony over Eastern Albion"
+			allowed_civil_war = { always = yes }
+			picture = HUN_turul_association_idea
+			on_remove = {
+			}
+			cancel = {
+			}
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.1
+				resistance_growth_on_our_occupied_states = 0.1
+			}
+		}
+
+
+		CTC_roman_interferences_in_politics = {
+			name = "Roman Interferences in Politics"
+			allowed_civil_war = { always = yes }
+			picture = AST_liberty_loans
+			on_remove = {
+			}
+			cancel = {
+				CTC = {
+					NOT = {
+						is_subject_of = ROE
+					}
+				}
+			}
+			modifier = {
+				war_support_factor = -0.05
+				political_advisor_cost_factor = 0.5
+				political_power_factor = -0.2
+			}
+		}
+	}
+}

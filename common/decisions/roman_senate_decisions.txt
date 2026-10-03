@@ -1,0 +1,469 @@
+roman_senate_decision_category = {
+	introduce_an_imperial_bill = {
+		icon = GFX_decision_ger_mefo_bills
+		days_re_enable = 40
+		cost = 40
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			NOT = {
+				has_country_flag = ROE_senate_debating
+				has_country_flag = comitia_voting
+			}
+			custom_trigger_tooltip = {
+				tooltip = ROE_senate_enough_senators
+				check_variable = { parliament_seat_array^0 > 100 }
+			}
+		}
+		complete_effect = {
+			country_event = {
+				id = roman_senate.1
+				days = 1
+			}
+		}
+		ai_will_do = {
+    		base = 1
+			modifier = {
+				has_war = no
+				has_political_power > 80
+				add = 10
+			}
+		}
+	}
+
+	favour_the_gallic_aristocrats = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		cost = 50
+		days_re_enable = 15
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			any_owned_state = {
+				OR = {
+					region = 208
+					region = 19
+					region = 20
+					region = 5
+					region = 7
+				}
+			}
+		}
+		days_remove = 60
+		complete_effect = {
+			custom_effect_tooltip = ROE_add_5_senators_gaul
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 5 }
+			modify_parliament_seat = yes
+			add_timed_idea = {
+				idea = ROE_investing_in_gaul
+				days = 60
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						region = 208
+						region = 19
+						region = 20
+						region = 5
+					}
+					is_coastal = yes
+				}
+    			add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						region = 208
+						region = 19
+						region = 20
+						region = 5
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						region = 208
+						region = 19
+						region = 20
+						region = 5
+					}
+					infrastructure < 10
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+    		base = 1
+			modifier = {
+				check_variable = { parliament_seat_array^0 < 100 }
+				factor = 10
+			}
+		}
+	}
+
+	favour_the_hispanic_aristocrats = {
+		icon = GFX_decision_hol_attract_foreign_investors
+		cost = 50
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			any_owned_state = {
+				OR = {
+					region = 209
+					region = 41
+					region = 210
+				}
+			}
+		}
+		days_re_enable = 15
+		days_remove = 60
+		complete_effect = {
+			custom_effect_tooltip = ROE_add_5_senators_hispania
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 5 }
+			modify_parliament_seat = yes
+			add_timed_idea = {
+				idea = ROE_investing_in_hispania
+				days = 60
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						region = 209
+						region = 41
+						region = 210
+					}
+					is_coastal = yes
+				}
+    			add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						region = 209
+						region = 41
+						region = 210
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_state = {
+				limit = {
+					OR = {
+						region = 209
+						region = 41
+						region = 210
+					}
+					infrastructure < 10
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+    		base = 1
+			modifier = {
+				check_variable = { parliament_seat_array^0 < 100 }
+				factor = 10
+			}
+		}
+	}
+
+	appoint_dissident_senators_as_governor = {
+		icon = GFX_decision_SWI_no_elected_president
+		cost = 30
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+		}
+		days_re_enable = 140
+		days_remove = 10
+		complete_effect = {
+			custom_effect_tooltip = ROE_shuffle_senators_as_governors
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 8 }
+			modify_parliament_seat = yes
+			add_timed_idea = {
+				idea = ROE_dissent_in_the_senate
+				days = 140
+			}
+			add_command_power = 15
+		}
+		ai_will_do = {
+    		base = 1
+			modifier = {
+				check_variable = { parliament_seat_array^0 < 100 }
+				factor = 10
+			}
+		}
+	}
+	
+	promise_investments_in_italia = {
+		icon = GFX_decision_generic_welfare
+		cost = 50
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			random_owned_state = {
+				region = 23
+			}
+		}
+		days_re_enable = 150
+		complete_effect = {
+			custom_effect_tooltip = ROE_add_10_senators_italia
+			custom_effect_tooltip = ROE_add_10_senators_italia_warning
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 10 }
+			modify_parliament_seat = yes
+			activate_mission = promise_investments_in_italia_mission
+		}
+		ai_will_do = {
+    		base = 1
+			modifier = {
+				check_variable = { parliament_seat_array^0 < 100 }
+				factor = 10
+			}
+		}
+	}
+	
+	promise_investments_in_italia_mission = {
+		icon = GFX_decision_generic_welfare
+		cost = 50
+		days_mission_timeout = 80
+		priority = 1000
+		is_good = yes
+		activation = {
+			always = no
+		}
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			any_state_in = {
+				strategic_region = 23
+				owner = {
+					OR = {
+						has_built = {
+    						type = farm
+   							value > 2
+						}
+						has_built = {
+    						type = mine
+   							value > 1
+						}
+						has_built = {
+    						type = woodwork
+   							value > 3
+						}
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			custom_effect_tooltip = ROE_keep_10_senators_italia
+		}
+		complete_effect = {
+			custom_effect_tooltip = ROE_add_10_senators_italia_warning
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = -20 }
+			modify_parliament_seat = yes
+		}
+		ai_will_do = {
+    		base = 30
+		}
+	}
+
+	test_minus_seats = {
+		icon = GFX_decision_ger_mefo_bills
+		cost = 1
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = -5 }
+			modify_parliament_seat = yes
+		}
+	}
+	
+	test_plus_seats = {
+		icon = GFX_decision_ger_mefo_bills
+		cost = 1
+		allowed = {
+			original_tag = ROE
+    	}
+		available = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 5 }
+			modify_parliament_seat = yes
+		}
+	}
+	
+	senate_in_session = {
+		icon = GFX_decision_generic_break_treaty
+		days_mission_timeout = 15
+		priority = 1000
+		is_good = yes
+		allowed = {
+			original_tag = ROE
+    	}
+		activation = {
+			has_country_flag = ROE_senate_debating
+		}
+		available = {
+			NOT = {
+				has_country_flag = ROE_senate_debating
+			}
+		}
+		cancel_trigger = {
+			check_variable = { parliament_seat_array^0 < 100 }
+		}
+		cancel_effect = {
+			clr_country_flag = ROE_senate_debating
+			clr_country_flag = ROE_senate_voting_military
+			clr_country_flag = ROE_senate_voting_civilian
+			clr_country_flag = ROE_senate_voting_cities
+			country_event = {
+				id = roman_senate.6
+				days = 1
+			}
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = ROE_senate_debating
+			country_event = {
+				id = roman_senate.2
+				days = 1
+			}
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+	
+	comitia_voting_decision = {
+		icon = GFX_decision_generic_break_treaty
+		days_mission_timeout = 20
+		priority = 1000
+		is_good = yes
+		allowed = {
+			original_tag = ROE
+    	}
+		activation = {
+			has_country_flag = comitia_voting
+		}
+		available = {
+			NOT = {
+				has_country_flag = comitia_voting
+			}
+		}
+		cancel_trigger = {
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			clr_country_flag = comitia_voting
+			if = {
+				limit = {
+					has_country_flag = ROE_senate_voting_military
+					has_stability > 0.5
+				}
+				set_country_flag = comitia_yes
+				country_event = {
+					id = roman_senate.3
+				}
+				else = {
+					limit = {
+						has_country_flag = ROE_senate_voting_military
+						has_stability < 0.5
+					}
+					country_event = {
+						id = roman_senate.3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = ROE_senate_voting_civilian
+					has_stability > 0.5
+				}
+				set_country_flag = comitia_yes
+				country_event = {
+					id = roman_senate.4
+				}
+				else = {
+					limit = {
+						has_country_flag = ROE_senate_voting_civilian
+						has_stability < 0.5
+					}
+					country_event = {
+						id = roman_senate.4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = ROE_senate_voting_cities
+					has_stability > 0.5
+				}
+				set_country_flag = comitia_yes
+				country_event = {
+					id = roman_senate.5
+				}
+				else = {
+					limit = {
+						has_country_flag = ROE_senate_voting_cities
+						has_stability < 0.5
+					}
+					country_event = {
+						id = roman_senate.5
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

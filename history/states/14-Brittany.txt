@@ -13,6 +13,7 @@ state={
 		1000.1.1 = {
 			owner = WSG
 			add_core_of = WSG
+			remove_core_of = ROE
 		}
 		
 		victory_points = {

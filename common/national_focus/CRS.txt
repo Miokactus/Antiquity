@@ -930,7 +930,7 @@ focus_tree = {
 			add_tech_bonus = {
     			bonus = 0.2
     			uses = 1
-    			category = infantry_weapons
+    			category = early_swords_and_spears
 			}
 			add_unit_bonus = {
   				category_light_infantry = {

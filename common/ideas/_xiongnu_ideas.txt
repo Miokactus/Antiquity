@@ -190,5 +190,17 @@ ideas = {
 			}
 		}
 
+		XAI_our_chinese_neighbours = {
+			name = "Our Chinese Neighbours"
+			allowed_civil_war = { always = yes }
+			picture = CHI_cradle_of_civilization
+			
+			modifier = {
+				war_support_factor = 0.05
+				command_power_gain_mult = 0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+
 	}
 }

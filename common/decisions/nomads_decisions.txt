@@ -18,7 +18,7 @@ tribal_actions = {
     				infantry_equipment_1 > 100
 				}
 				has_equipment = {
-    				infantry_equipment > 100
+    				swords_and_spears_archetype > 100
 				}
 			}
 			FROM = {
@@ -77,11 +77,11 @@ tribal_actions = {
 			if = {
 				limit = {
 					has_equipment = {
-						infantry_equipment > 100
+						swords_and_spears_archetype > 100
 					}
 				}
 				add_equipment_to_stockpile = {
-					type = infantry_equipment
+					type = swords_and_spears_archetype
 					amount = -100
 					producer = ROOT
 				}

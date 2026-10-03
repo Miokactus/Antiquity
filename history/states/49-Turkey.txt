@@ -14,7 +14,7 @@ state={
 		owner = ROE
 		add_core_of = ROE
 		victory_points = {
-			11747 15
+			11747 7
 		}
 		victory_points = {
 			804 5 

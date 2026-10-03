@@ -1,10 +1,35 @@
 spriteTypes = {
 
-## IDEOLOGIES GFX ##
-####################
-
 ### OTHERS ###
 ##############
+
+	spriteType = {
+		name = "GFX_utilities_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_utilities_tab.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_wheeled_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_utilities_tab.dds"
+		noOfFrames = 2
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## GENERIC ##
 
@@ -17,14 +42,249 @@ spriteTypes = {
 
 
     SpriteType = {
-		name = "GFX_archetype_infantry_equipment_medium"
-		texturefile = "gfx/interface/archetypes/infantry_equipment.dds"
+		name = "GFX_archetype_early_swords_and_spears_medium"
+		texturefile = "gfx/interface/archetypes/early_swords_and_spears.dds"
 	}
 
     SpriteType = {
-		name = "GFX_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/infantry_weapons.dds"
+		name = "GFX_early_swords_and_spears_medium"
+		texturefile = "gfx/interface/technologies/early_swords_and_spears.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_copper_spears_medium"
+		texturefile = "gfx/interface/technologies/copper_spears.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_iron_spears_medium"
+		texturefile = "gfx/interface/technologies/iron_spears.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_copper_swords_medium"
+		texturefile = "gfx/interface/technologies/copper_swords.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_wrought_iron_swords_medium"
+		texturefile = "gfx/interface/technologies/wrought_iron_swords.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cast_iron_swords_medium"
+		texturefile = "gfx/interface/technologies/cast_iron_swords.dds"
+	}
+
+
+
+
+	SpriteType = {
+		name = "GFX_thick_clothing_medium"
+		texturefile = "gfx/interface/technologies/thick_clothing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_shield_medium"
+		texturefile = "gfx/interface/technologies/shield.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_wooden_shields_medium"
+		texturefile = "gfx/interface/technologies/wooden_shields.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_leather_shields_medium"
+		texturefile = "gfx/interface/technologies/leather_shields.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_forged_shields_medium"
+		texturefile = "gfx/interface/technologies/forged_shields.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_chain_armor_medium"
+		texturefile = "gfx/interface/technologies/chain_armor.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_branded_armor_medium"
+		texturefile = "gfx/interface/technologies/branded_armor.dds"
+	}
+	
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_ceremonial_headwear_medium"
+		texturefile = "gfx/interface/technologies/ceremonial_headwear.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_leather_helmet_medium"
+		texturefile = "gfx/interface/technologies/leather_helmet.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_neck_guards_medium"
+		texturefile = "gfx/interface/technologies/neck_guards.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_reinforced_helmets_medium"
+		texturefile = "gfx/interface/technologies/reinforced_helmets.dds"
+	}
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_horse_medium"
+		texturefile = "gfx/interface/technologies/horse.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_horse_domestication_medium"
+		texturefile = "gfx/interface/technologies/horse_domestication.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_camel_medium"
+		texturefile = "gfx/interface/technologies/camel.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_camel_domestication_medium"
+		texturefile = "gfx/interface/technologies/camel_domestication.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cloth_saddle_medium"
+		texturefile = "gfx/interface/technologies/cloth_saddle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_leather_saddle_medium"
+		texturefile = "gfx/interface/technologies/leather_saddle.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_bow_medium"
+		texturefile = "gfx/interface/technologies/mobile_bow.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_horse_cavalry_medium"
+		texturefile = "gfx/interface/technologies/horse_cavalry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_camel_cavalry_medium"
+		texturefile = "gfx/interface/technologies/camel_cavalry.dds"
+	}
+
+
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_archetype_wheel_medium"
+		texturefile = "gfx/interface/technologies/archetype_wheel.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_archetype_primitive_cart_medium"
+		texturefile = "gfx/interface/technologies/archetype_primitive_cart.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_primitive_cart_medium"
+		texturefile = "gfx/interface/technologies/primitive_cart.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_4_wheeled_carts_medium"
+		texturefile = "gfx/interface/technologies/4_wheeled_carts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_2_wheeled_carts_medium"
+		texturefile = "gfx/interface/technologies/2_wheeled_carts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	SpriteType = { 
+		name = "GFX_unit_spear_lancers_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_spear_lancers_icon.dds" 
+		noOfFrames = 2
+	}
+
+	SpriteType = { 
+		name = "GFX_unit_spear_lancers_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spear_lancers_icon.dds" 
+		noOfFrames = 2
+	}
+
+
+	SpriteType = { 
+		name = "GFX_unit_shielded_infantry_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_shielded_infantry_icon.dds" 
+		noOfFrames = 2
+	}
+
+	SpriteType = { 
+		name = "GFX_unit_shielded_infantry_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_shielded_infantry_icon.dds" 
+		noOfFrames = 2
+	}
+
+
+
+
+
 
 	SpriteType = {
 		name = "GFX_infantry_weapons1_medium"

@@ -4,9 +4,10 @@
  grain_desc: "Grain is used to feed your population and armies. If your level of grain reserves is too low, famines might occur, armies will rise up and your country will fall into a state of despair."
  PRODUCTION_MATERIALS_GOLD_INGOT: "Gold"
  PRODUCTION_MATERIALS_WOOD: "Wood"
- wood_desc: ""
+ wood_desc: "Wood is used for everyday appliances, military goods and various other things; wood is truly crucial to a society."
  PRODUCTION_MATERIALS_STEEL: "Iron"
- steel_desc: "Iron."
+ PRODUCTION_MATERIALS_CHROMIUM: "Copper"
+ gold_ingot_desc: "Gold, amongst other precious metals, is essential for any modern economy. From running manufactures to paying armies, everything costs gold."
 
 
  temporary_state_resource_grain: "Grain"

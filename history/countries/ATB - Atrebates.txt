@@ -5,16 +5,6 @@ oob = "ENG_14"
 set_research_slots = 1
 
 create_country_leader = {
-    name = "Eppillus"
-    desc = "EPPILLUS_DESC" 
-    picture = GFX_leader_monarchy_generic3
-    expire = "15.2.1"
-    ideology = chieftain
-    traits = {
-    }
-}
-
-create_country_leader = {
     name = "Verica"
     desc = "VERICA_DESC" 
     picture = GFX_leader_Verica_portrait
@@ -24,8 +14,18 @@ create_country_leader = {
     }
 }
 
+create_country_leader = {
+    name = "Eppillus"
+    desc = "EPPILLUS_DESC" 
+    picture = GFX_leader_monarchy_generic3
+    expire = "15.2.1"
+    ideology = chieftain
+    traits = {
+    }
+}
+
 set_technology = {
-	infantry_weapons = 1
+	early_swords_and_spears = 1
 }
 
 set_politics = {
@@ -45,4 +45,6 @@ add_ideas = {
     limited_exports 
     limited_conscription
     civilian_economy 
+    ATB_the_threat_from_the_east
+    ATB_dynastic_infighting
 }

@@ -10,6 +10,7 @@ state=
 	{
 		owner = GET
 		add_core_of = GET
+		add_core_of = DAC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

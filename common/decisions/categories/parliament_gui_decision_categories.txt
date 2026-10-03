@@ -1,0 +1,19 @@
+roman_senate_decision_category = {
+	icon = usa_congress
+
+	allowed = { 
+		original_tag = ROE
+	}
+	visible = {
+		has_government = communism
+		NOT = {
+			has_country_flag = senate_dissolved
+		}
+		tag = ROE
+	}
+
+	priority = 1000
+
+	scripted_gui = parliament_gui
+	visible_when_empty = yes
+}

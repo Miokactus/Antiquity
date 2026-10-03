@@ -1,0 +1,455 @@
+technologies = {
+
+	wheel = {
+
+		enable_equipments = {
+			wheel
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = primitive_cart
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3500
+		folder = {
+			name = wheeled_folder
+			position = { x = 6 y = -1 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	primitive_cart = {
+
+		enable_equipments = {
+			primitive_cart
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = 4_wheel_carts
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = human_motorization
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = wooden_chariots
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -2500
+		folder = {
+			name = wheeled_folder
+			position = { x = 6 y = 3 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wooden_chariots = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = reinforced_chariots
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = wagons
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -1500
+		folder = {
+			name = wheeled_folder
+			position = { x = 10 y = 7 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	reinforced_chariots = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 20
+		folder = {
+			name = wheeled_folder
+			position = { x = 10 y = 20 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wagons = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = primitive_logistics
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -750
+		folder = {
+			name = wheeled_folder
+			position = { x = 13 y = 10 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	primitive_logistics = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = wagon_trains
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -150
+		folder = {
+			name = wheeled_folder
+			position = { x = 13 y = 15 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wagon_trains = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 20
+		folder = {
+			name = wheeled_folder
+			position = { x = 13 y = 20 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+
+
+
+	human_motorization = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = horse_drawn_transport
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = camel_drawn_transport
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -1500
+		folder = {
+			name = wheeled_folder
+			position = { x = 6 y = 7 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	horse_drawn_transport = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = throat_and_girth_harness
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = wheeled_folder
+			position = { x = 4 y = 12 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	camel_drawn_transport = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = throat_and_girth_harness
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = wheeled_folder
+			position = { x = 8 y = 12 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	throat_and_girth_harness = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = breastplate
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -200
+		folder = {
+			name = wheeled_folder
+			position = { x = 6 y = 16 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	breastplate = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 20
+		folder = {
+			name = wheeled_folder
+			position = { x = 6 y = 20 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	4_wheel_carts = {
+
+		enable_equipments = {
+			4_wheeled_carts
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = 2_wheel_carts
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -1500
+		folder = {
+			name = wheeled_folder
+			position = { x = 2 y = 7 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	2_wheel_carts = {
+
+		enable_equipments = {
+			2_wheeled_carts
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = wheeled_folder
+			position = { x = 2 y = 12 }
+		}
+
+		categories = {
+			carts
+			chariots
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

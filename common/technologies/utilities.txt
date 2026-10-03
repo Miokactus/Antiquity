@@ -1,0 +1,1055 @@
+technologies = {
+
+	early_swords_and_spears = {
+
+		enable_equipments = {
+			early_swords_and_spears
+		}
+
+		enable_subunits = {
+			infantry
+		}
+
+		path = {
+			leads_to_tech = copper_spears
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = copper_swords
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -5000
+		folder = {
+			name = utilities_folder
+			position = { x = 2 y = 0 }
+		}
+
+		categories = {
+			swords_and_spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	copper_spears = {
+
+		enable_equipments = {
+			copper_spears
+		}
+
+		enable_subunits = {
+			spear_lancers
+		}
+
+		path = {
+			leads_to_tech = iron_spears
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = utilities_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			swords_and_spears
+			spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	iron_spears = {
+
+		enable_equipments = {
+			iron_spears
+		}
+
+		path = {
+			leads_to_tech = throwing_spears
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = melee_spears
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = -1000
+		folder = {
+			name = utilities_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			swords_and_spears
+			spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	throwing_spears = {
+
+		enable_equipments = {
+		}
+
+		spear_lancers = {
+			attack = -0.05
+			defense = 0.1
+		}
+
+		research_cost = 1.5
+		start_year = 0
+		folder = {
+			name = utilities_folder
+			position = { x = -1 y = 12 }
+		}
+
+		XOR = { melee_spears }
+
+		categories = {
+			swords_and_spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	melee_spears = {
+
+		enable_equipments = {
+		}
+
+		spear_lancers = {
+			attack = 0.1
+			defense = -0.05
+		}
+
+		research_cost = 1.5
+		start_year = 0
+		folder = {
+			name = utilities_folder
+			position = { x = 1 y = 12 }
+		}
+
+		XOR = { throwing_spears }
+
+		categories = {
+			swords_and_spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+
+
+	copper_swords = {
+
+		enable_equipments = {
+			copper_swords
+		}
+
+		path = {
+			leads_to_tech = wrought_iron_swords
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = utilities_folder
+			position = { x = 4 y = 4 }
+		}
+
+		categories = {
+			swords_and_spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wrought_iron_swords = {
+
+		enable_equipments = {
+			wrought_iron_swords
+		}
+
+		path = {
+			leads_to_tech = cast_iron_swords
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = -1000
+		folder = {
+			name = utilities_folder
+			position = { x = 4 y = 8 }
+		}
+
+		categories = {
+			swords_and_spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	cast_iron_swords = {
+
+		enable_equipments = {
+			cast_iron_swords
+		}
+
+		research_cost = 3
+		start_year = 0
+		folder = {
+			name = utilities_folder
+			position = { x = 4 y = 12 }
+		}
+
+		categories = {
+			swords_and_spears
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	thick_clothing = {
+
+		enable_equipments = {
+			thick_clothing
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = wooden_shields
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = chain_armor
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = -5000
+		folder = {
+			name = utilities_folder
+			position = { x = 11 y = 0 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	chain_armor = {
+
+		enable_equipments = {
+		}
+
+		category_ = {
+			defense = 0.05
+			breakthrough = -0.02
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = branded_armor
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = -300
+		folder = {
+			name = utilities_folder
+			position = { x = 11 y = 11 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	branded_armor = {
+
+		enable_equipments = {
+			branded_armor
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = reinforced_helmets
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = 20
+		folder = {
+			name = utilities_folder
+			position = { x = 11 y = 16 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wooden_shields = {
+
+		enable_equipments = {
+			wooden_shields
+		}
+
+		enable_subunits = {
+			shielded_infantry
+		}
+
+		path = {
+			leads_to_tech = leather_shields
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = utilities_folder
+			position = { x = 9 y = 4 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	leather_shields = {
+
+		enable_equipments = {
+			leather_shields
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = forged_shields
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = -500
+		folder = {
+			name = utilities_folder
+			position = { x = 9 y = 8 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	forged_shields = {
+
+		enable_equipments = {
+			forged_shields
+		}
+
+		enable_subunits = {
+		}
+
+		research_cost = 3
+		start_year = 20
+		folder = {
+			name = utilities_folder
+			position = { x = 9 y = 16 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+	ceremonial_headwear = {
+
+		enable_equipments = {
+			ceremonial_headwear
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = leather_helmet
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -5000
+		folder = {
+			name = utilities_folder
+			position = { x = 13 y = 0 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	leather_helmet = {
+
+		enable_equipments = {
+			leather_helmet
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = neck_guards
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = utilities_folder
+			position = { x = 13 y = 4 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	neck_guards = {
+
+		enable_equipments = {
+			neck_guards
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = reinforced_helmets
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 20
+		folder = {
+			name = utilities_folder
+			position = { x = 13 y = 16 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	reinforced_helmets = {
+
+		enable_equipments = {
+			reinforced_helmets
+		}
+
+		enable_subunits = {
+		}
+
+		research_cost = 3
+		start_year = 20
+		folder = {
+			name = utilities_folder
+			position = { x = 12 y = 20 }
+		}
+
+		categories = {
+			thick_clothing
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	horse_domestication = {
+
+		enable_equipments = {
+			horse
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = cloth_saddle
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = horse_cavalry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = utilities_folder
+			position = { x = 17 y = 4 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	horse_cavalry = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+			cavalry
+		}
+
+		research_cost = 1.5
+		start_year = -1000
+		folder = {
+			name = utilities_folder
+			position = { x = 19 y = 2 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	camel_domestication = {
+
+		enable_equipments = {
+			camel
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = cloth_saddle
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = camel_cavalry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = utilities_folder
+			position = { x = 17 y = 8 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	camel_cavalry = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+			camelry
+		}
+
+		research_cost = 1.5
+		start_year = -1000
+		folder = {
+			name = utilities_folder
+			position = { x = 19 y = 10 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	cloth_saddle = {
+
+		enable_equipments = {
+			cloth_saddle
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = primitive_stirrup
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = leather_saddle
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = goods_transportation
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ceremonial_caravan
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = mobile_bow
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -1000
+		folder = {
+			name = utilities_folder
+			position = { x = 19 y = 6 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	goods_transportation = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = camel_trade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -100
+		folder = {
+			name = utilities_folder
+			position = { x = 23 y = 8 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	ceremonial_caravan = {
+
+		enable_equipments = {
+		}
+
+		camelry = {
+			modifier_army_sub_unit_cavalry_speed_factor = 0.05
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = camel_trade
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -250
+		folder = {
+			name = utilities_folder
+			position = { x = 22 y = 12 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	camel_trade = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = organised_camel_trains
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 15
+		folder = {
+			name = utilities_folder
+			position = { x = 25 y = 10 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	organised_camel_trains = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+		}
+
+		research_cost = 1.5
+		start_year = 20
+		folder = {
+			name = utilities_folder
+			position = { x = 28 y = 10 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	primitive_stirrup = {
+
+		enable_equipments = {
+		}
+
+		category_cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+			modifier_army_sub_unit_cavalry_speed_factor = 0.1
+		}
+
+		show_effect_as_desc = yes
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = heavy_cavalry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = -250
+		folder = {
+			name = utilities_folder
+			position = { x = 22 y = 0 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	leather_saddle = {
+
+		enable_equipments = {
+			leather_saddle
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = heavy_cavalry
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		start_year = -100
+		folder = {
+			name = utilities_folder
+			position = { x = 23 y = 4 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	heavy_cavalry = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = armored_horses
+			research_cost_coeff = 1
+		}
+		research_cost = 4
+		start_year = 15
+		folder = {
+			name = utilities_folder
+			position = { x = 25 y = 2 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	armored_horses = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+		}
+
+		research_cost = 3
+		start_year = 20
+		folder = {
+			name = utilities_folder
+			position = { x = 28 y = 2 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	mobile_bow = {
+
+		enable_equipments = {
+			mobile_bow
+		}
+
+		enable_subunits = {
+		}
+
+		path = {
+			leads_to_tech = horse_archery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = camel_archery
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 15
+		folder = {
+			name = utilities_folder
+			position = { x = 26 y = 6 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	horse_archery = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+		}
+
+		research_cost = 1.5
+		start_year = 25
+		folder = {
+			name = utilities_folder
+			position = { x = 30 y = 4 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	camel_archery = {
+
+		enable_equipments = {
+		}
+
+		enable_subunits = {
+		}
+
+		research_cost = 2
+		start_year = 25
+		folder = {
+			name = utilities_folder
+			position = { x = 30 y = 8 }
+		}
+
+		categories = {
+			animal_domestication
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

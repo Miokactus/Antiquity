@@ -1,0 +1,389 @@
+###########################
+### ROMAN SENATE EVENTS ###
+###########################
+
+add_namespace = roman_senate
+
+
+# Today's Order
+country_event = {
+	id = roman_senate.1
+	title = roman_senate.1.t
+	desc = roman_senate.1.d
+	trigger = {
+    }
+	picture = GFX_report_event_ROE_senate_generic
+	is_triggered_only = yes
+	after = {
+		set_country_flag = ROE_senate_debating
+	}
+	timeout_days = 5
+	option = { # Military financing
+		name = roman_senate.1.a
+		ai_chance = { factor = 1 }
+		trigger = {}
+		set_country_flag = ROE_senate_voting_military
+	}
+	option = { # Civilian financing
+		name = roman_senate.1.b
+		ai_chance = { factor = 1 }
+		trigger = {}
+		set_country_flag = ROE_senate_voting_civilian
+	}
+	option = { # City development
+		name = roman_senate.1.c
+		ai_chance = { factor = 1 }
+		trigger = {}
+		set_country_flag = ROE_senate_voting_cities
+	}
+}
+
+# End of the vote
+country_event = {
+	id = roman_senate.2
+	title = roman_senate.2.t
+	desc = roman_senate.2.d
+	trigger = {
+    }
+	picture = GFX_report_event_ROE_senate_generic
+	is_triggered_only = yes
+	timeout_days = 5
+	immediate = {
+		set_country_flag = comitia_voting
+	}
+	option = { # Military financing
+		name = roman_senate.2.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = ROE_senate_voting_military
+		}
+		add_command_power = 15
+		army_experience = 10
+	}
+	option = { # Civilian financing
+		name = roman_senate.2.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = ROE_senate_voting_civilian
+		}
+		add_political_power = 20
+	}
+	option = { # City development
+		name = roman_senate.2.c
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = ROE_senate_voting_cities
+		}
+		add_political_power = 10
+		add_manpower = 15000
+	}
+}
+
+
+# The Comitias - Military answer
+country_event = {
+	id = roman_senate.3
+	title = roman_senate.3.t
+	desc = roman_senate.3.d
+	trigger = {
+    }
+	picture = GFX_report_event_ROE_senate_generic
+	is_triggered_only = yes
+	immediate = {
+		custom_effect_tooltip = {
+			tooltip = ROE_lost_8_senators
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = -8 }
+			modify_parliament_seat = yes
+		}
+	}
+	option = { # Military financing
+		name = roman_senate.3.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = comitia_yes
+		}
+		clr_country_flag = comitia_yes
+		clr_country_flag = ROE_senate_voting_military
+		random_owned_controlled_state = {
+    		add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			limit = {
+				is_coastal = yes
+			}
+    		add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	option = { # Military financing NO
+		name = roman_senate.3.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { has_country_flag = comitia_yes }
+		}
+		clr_country_flag = ROE_senate_voting_military
+		add_stability = -0.03
+		add_popularity = {
+			ideology = communism
+			popularity = -0.02
+		}
+	}
+}
+
+
+
+# The Comitias - Civilian answer
+country_event = {
+	id = roman_senate.4
+	title = roman_senate.4.t
+	desc = roman_senate.4.d
+	trigger = {
+    }
+	picture = GFX_report_event_ROE_senate_generic
+	is_triggered_only = yes
+	immediate = {
+		custom_effect_tooltip = {
+			tooltip = ROE_lost_8_senators
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = -8 }
+			modify_parliament_seat = yes
+		}
+	}
+	option = { # Civilian financing
+		name = roman_senate.4.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = comitia_yes
+		}
+		clr_country_flag = comitia_yes
+		clr_country_flag = ROE_senate_voting_civilian
+		random_owned_controlled_state = {
+    		add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_controlled_state = {
+			limit = {
+				infrastructure < 10
+			}
+    		add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				infrastructure < 10
+			}
+    		add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				infrastructure < 10
+			}
+    		add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	option = { # Civilian financing NO
+		name = roman_senate.4.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { has_country_flag = comitia_yes }
+		}
+		clr_country_flag = ROE_senate_voting_civilian
+		add_stability = -0.03
+		add_popularity = {
+			ideology = communism
+			popularity = -0.02
+		}
+	}
+}
+
+
+# The Comitias - Funding Cities
+country_event = {
+	id = roman_senate.5
+	title = roman_senate.5.t
+	desc = roman_senate.5.d
+	trigger = {
+    }
+	picture = GFX_report_event_ROE_senate_generic
+	is_triggered_only = yes
+	immediate = {
+		custom_effect_tooltip = {
+			tooltip = ROE_lost_8_senators
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = -8 }
+			modify_parliament_seat = yes
+		}
+	}
+	option = { # Cities financing
+		name = roman_senate.5.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			has_country_flag = comitia_yes
+		}
+		clr_country_flag = comitia_yes
+		clr_country_flag = ROE_senate_voting_cities
+		random_owned_controlled_state = {
+			limit = {
+				OR = {
+					infrastructure < 10
+					AND = {
+						infrastructure > 3
+						infrastructure < 10
+					}
+				}
+			}
+    		add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				OR = {
+					infrastructure < 10
+					AND = {
+						infrastructure > 3
+						infrastructure < 10
+					}
+				}
+			}
+    		add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_list = {
+			10 = {
+				add_victory_points = {
+					province = 11506
+					value = 5
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 6613
+					value = 5
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 3589
+					value = 5
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 6906
+					value = 5
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 4098
+					value = 3
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 9817
+					value = 3
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 3690
+					value = 3
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 11818
+					value = 3
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 11829
+					value = 3
+				}
+			}
+			10 = {
+				add_victory_points = {
+					province = 1005
+					value = 3
+				}
+			}
+		}
+	}
+	option = { # Funding cities NO
+		name = roman_senate.5.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			NOT = { has_country_flag = comitia_yes }
+		}
+		clr_country_flag = ROE_senate_voting_cities
+		add_stability = -0.03
+		add_popularity = {
+			ideology = communism
+			popularity = -0.02
+		}
+	}
+}
+
+
+# The Senate does not pass the bill!
+country_event = {
+	id = roman_senate.6
+	title = roman_senate.6.t
+	desc = roman_senate.6.d
+	trigger = {
+    }
+	picture = GFX_report_event_ROE_senate_generic
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = { # These senators!
+		name = roman_senate.6.a
+		ai_chance = { factor = 1 }
+		trigger = {
+		}
+		custom_effect_tooltip = {
+			tooltip = ROE_lost_15_senators
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = -15 }
+			modify_parliament_seat = yes
+		}
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.02
+		}
+	}
+}

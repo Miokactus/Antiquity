@@ -1,15 +1,40 @@
 equipments = {
 
-	carriage_equipment = {
-		year = 5
+	wheel = {
+		year = -3500
 
 		is_archetype = yes
-		picture = archetype_motorized_equipment		
+		picture = GFX_archetype_wheel_medium		
 		is_buildable = no
-		type = {
-			#infantry #Removing inf type 
-			motorized
+		type = motorized
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		maximum_speed = 10
+		reliability = 0.8
+		hardness = 0.1
+
+		breakthrough = 3
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 2.5
+		resources = {
+			wood = 1
 		}
+		
+		fuel_consumption = 0.1
+	}
+
+	primitive_cart_archetype = { # 
+		year = -2500
+
+		is_archetype = yes
+		picture = GFX_archetype_primitive_cart_medium		
+		is_buildable = no
+		type = motorized
 		group_by = archetype
 		
 		interface_category = interface_category_land
@@ -26,69 +51,84 @@ equipments = {
 		build_cost_ic = 2.5
 		resources = {
 			wood = 2
-			steel = 1
 		}
-		
-		fuel_consumption = 1.2
+
+		fuel_consumption = 0.2
+	}
+
+	primitive_cart = {
+		year = -2500
+		picture = GFX_primitive_cart_medium
+		fuel_consumption = 0.1
+		type = {
+			train
+			motorized
+		}
+	
+		archetype = primitive_cart_archetype
+		priority = 5
+		visual_level = 0
 		supply_truck = yes
 	}
 
-	carriage_equipment_0 = { # Introducing WW1 style trucks
-		year = 5
+	4_wheeled_carts = {
+		year = -1500
 
-		archetype = carriage_equipment
+		archetype = primitive_cart_archetype
+		parent = primitive_cart
 		priority = 30
-		maximum_speed = 10
-		reliability = 0.65
-		breakthrough = 2			
-	}
-
-	carriage_equipment_1 = {
-		year = 16
-
-		archetype = carriage_equipment
-		parent = carriage_equipment_0
-		priority = 30			
-	}
-
-
-	motorbike_equipment = {
-		year = 16
-
-		is_archetype = yes
-		picture = archetype_motorized_equipment
-		is_buildable = no
-		type = {
-			motorized
-			support
-		}
-		group_by = archetype
+		
+		type = train
+		picture = GFX_4_wheeled_carts_medium		
+		supply_truck = yes
 		
 		interface_category = interface_category_land
 		
-		maximum_speed = 12
-		reliability = 0.9
-		#hardness = 0
+		maximum_speed = 10
+		reliability = 0.8
+		hardness = 0.1
 
-		breakthrough = 1
+		breakthrough = 3
 
 		#Space taken in convoy
-		lend_lease_cost = 2
+		lend_lease_cost = 5
 
-		build_cost_ic = 1.5
+		build_cost_ic = 2.5
 		resources = {
-			#grain = 1
-			wood = 1
-			steel = 1
+			wood = 2
 		}
-		
-		fuel_consumption = 0.5
+
+		fuel_consumption = 0.3
 	}
 
-	motorbike_equipment_1 = {
+	2_wheeled_carts = {
+		year = -500
 
-		archetype = motorbike_equipment
-		priority = 1 #Very low
+		archetype = primitive_cart_archetype
+		parent = 4_wheeled_carts
+		priority = 30
+		
+		type = train
+		picture = GFX_2_wheeled_carts_medium		
+		supply_truck = yes
+		
+		interface_category = interface_category_land
+		
+		maximum_speed = 10
+		reliability = 0.8
+		hardness = 0.1
+
+		breakthrough = 3
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 2.5
+		resources = {
+			wood = 1
+		}
+
+		fuel_consumption = 0.3
 	}
 
 }

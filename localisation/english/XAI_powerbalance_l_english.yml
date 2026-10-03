@@ -1,4 +1,6 @@
 ﻿l_english:
+ XAI_tuqi_kings: "The Tuqi Kings"
+
  XAI_right_king_side: "Worthy Prince of the Right" ## Prime Minister, civilian matters
  XAI_left_king_side: "Worthy Prince of the Left" ## Heir, commander in chief
  XAI_balanced_neutral_range: "Status Quo"
@@ -12,3 +14,17 @@
  XAI_left_king_side_medium_control_range: "Militarised Court"
  XAI_left_king_side_high_control_range: "Assured Succession"
  XAI_left_king_side_total_control_range: "Total Centralisation"
+
+
+ ## DECISIONS
+
+ concessions_to_the_civilians: "Concessions to the Civilians"
+ undermine_the_luandi: "Undermine the Luandi"
+ make_contacts_with_discontent_generals: "Establish Contacts with Discontent Generals"
+ meet_with_military_officials: "Meet with Military Officials"
+ bribe_disloyal_elements: "Bribe Disloyal Elements"
+
+
+ XAI_loyal_to_the_right: "Is loyal to the Right Prince"
+ XAI_loyal_general: "§Y[THIS.GetName]§! will become §Gloyal§! to the Right Prince!"
+ XAI_disloyal_general: "§Y[THIS.GetName]§! will §Rlose its loyalty§! to the Right Prince!"

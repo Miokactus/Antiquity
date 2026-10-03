@@ -13,7 +13,7 @@ equipments = {
 		
 		interface_category = interface_category_land
 		
-		active = yes
+		active = no
 		
 		#Misc Abilities
 		reliability = 0.9
@@ -50,7 +50,7 @@ equipments = {
 		fuel_consumption = 0.1
 	
 		archetype = infantry_equipment
-		active = yes
+		active = no
 		priority = 05
 		visual_level = 0
 	}

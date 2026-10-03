@@ -1,0 +1,71 @@
+﻿l_english:
+ ## DECISIONS LOC ##
+ roman_senate_decision_category:0 "The Roman Senate§!"
+ roman_senate_decision_category_desc:0 "Established after the end of §Lthe Roman monarchy§!, the Senate has been a key institution in the gestion of our Republic. The Senators, while being about 600, do not always siege all together, or very rarely, and only around 200 Senators are called together at a given time. While finding compromises and passing political arrangements, §Gwe can gain support from Senators§!, then using this support to pass §Ysenatus-consulta§! that would benefit us. However, if we negligate too much the members of the Senate, they could decide §Rto take revenge on us and vote against our proposed bills§!."
+
+ introduce_an_imperial_bill: "Introduce an Imperial Bill"
+ senate_in_session: "Senate in Session"
+ comitia_voting_decision: "The Comitias are Voting.."
+ favour_the_gallic_aristocrats: "Grant Favours to Gallic Aristocrats"
+ favour_the_hispanic_aristocrats: "Grant Favours to Hispanic Aristocrats"
+ appoint_dissident_senators_as_governor: "Exile Dissidents to Faraway Provinces"
+ promise_investments_in_italia: "Promise Investments in Italia"
+ promise_investments_in_italia_mission: "Realise the Promised Investments in Italia!"
+
+ 
+ ROE_senate_enough_senators: "We need to have §Ythe support§! of §G101 Senators§! out of the §2200 Senators§! that are in the Senate."
+ comitia_voting: "The Comitias are voting"
+
+ ## SCRIPTED GUIS
+ parliament_gui_title:0 "The Senate"
+ parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"
+ parliament_seat_text:0 "Seat [?temp_seat|Y0]"
+ parliament_member_text:0 "[GetParliamentPartyName] - [?parliament_seat_array^parliament_member_index] Seats"
+ parliament_modify_button_tt:0 "§GCtrl+Click§! to add §Y5§! Seats from [GetParliamentPartyName]\n§GShift+Click§! to subtract §Y5§! Seats from [GetParliamentPartyName]"
+
+ party_1_text:0 "§RLoyal Senators§!"
+ party_2_text:0 "§YDisloyal Senators§!"
+
+ ROE_lost_8_senators: "We §Ylost§! the support of §R8 Senators§! following this bill."
+ ROE_lost_15_senators: "We §Ylost§! the support of §R15 Senators§! following this defeat in the Senate."
+ ROE_add_5_senators_gaul: "We will §Ggain§! the support of §55 Senators§! by investing in §YGaul§!."
+ ROE_add_5_senators_hispania: "We will §Ggain§! the support of §55 Senators§! by investing in §YHispania§!."
+ ROE_add_10_senators_italia: "We will §Ggain§! the support of §510 Senators§! by promising to invest in §YItalia§!!"
+ ROE_keep_10_senators_italia: "We will §Gsecure§! the support of the §510 Senators§! thanks to the investments in §YItalia§!!"
+ ROE_add_10_senators_italia_warning: "§RIf we do not respect our engagements, we will suffer from great consequences from the Senators of §!§YItalia§!§R, losing the support of up to 20 Senators!§!"
+ ROE_shuffle_senators_as_governors: "By sending some Senators into.. foreign provinces, we will be able to §Ggain§! the support of §58 New Senators§!!"
+
+
+
+
+ ## ROMAN EMPIRE EVENTS ##
+ roman_senate.1.t: "Senate: Order of the Day"
+ roman_senate.1.d: "The Senate has now been united, as per the wish of the Emperor, and is awaiting the order of the day that will be discussed inside of the Curia. The 600 Senators, unable to be housed or united together at one time, have sent 200 of them to decide and debate."
+ roman_senate.1.a: "Let's push for military investments"
+ roman_senate.1.b: "Convince them to build more civilian equipments"
+ roman_senate.1.c: "Why not funding smaller cities?"
+
+ roman_senate.2.t: "The Senate comes to a Conclusion"
+ roman_senate.2.d: "The current session of the Senate has come to a verdict; the bill proposed by the Emperor has been accepted, and the senatus-consulta will now be passed down to the comitias, hoping that it will be accepted there too."
+ roman_senate.2.a: "A victory for our military!"
+ roman_senate.2.b: "Our citizens will be loyal!"
+ roman_senate.2.c: "Cities should look more like Rome!"
+
+ roman_senate.3.t: "Verdict of the Comitias: Military Bill"
+ roman_senate.3.d: "The voting process of the comitias has come to a conclusion, with all comitias returning back their decision. The senatus-consulta sent by the Senate will not be law until we count the votes and these represent more than 50% of the comitia's voters."
+ roman_senate.3.a: "Glory! The People of Rome are ready for War!"
+ roman_senate.3.b: "A blow to the established order"
+
+ roman_senate.4.t: "Verdict of the Comitias: Civilian Bill"
+ roman_senate.4.d: "The voting process of the comitias has come to a conclusion, with all comitias returning back their decision. The senatus-consulta sent by the Senate will not be law until we count the votes and these represent more than 50% of the comitia's voters."
+ roman_senate.4.a: "The civilians will be thankful"
+ roman_senate.4.b: "A blow to the established order"
+
+ roman_senate.5.t: "Verdict of the Comitias: Funding Cities"
+ roman_senate.5.d: "The voting process of the comitias has come to a conclusion, with all comitias returning back their decision. The senatus-consulta sent by the Senate will not be law until we count the votes and these represent more than 50% of the comitia's voters."
+ roman_senate.5.a: "Citizens, arise!"
+ roman_senate.5.b: "A blow to the established order"
+
+ roman_senate.6.t: "The Senate dismiss the Bill!"
+ roman_senate.6.d: "Desastrous! The Senators, while not even finishing to examine the newest bill we proposed, have dismissed it! Citing recurrent imperial interferences within the Senate's affairs, the Senators seems to want to teach the Chancellery a lesson. In the current swing, a bunch of Senators then declared their support to the dismissing of the bill, damaging even more the Senate's loyalty to us."
+ roman_senate.6.a: "These damned Senators!"

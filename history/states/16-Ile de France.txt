@@ -20,26 +20,7 @@ state = {
 
 		buildings = {
 			infrastructure = 2
-
-            9523 = {
-			    landmark_eiffel_tower = {
-			        level = 1
-			        allowed = {
-			            has_dlc = "Gotterdammerung"
-			        }
-			    }
-			}
-			9534 = {
-				# The Renault factories on Île Seguin in Billancourt
-				# 1
-			}
-		}
-		
-		1939.1.1 = {
-			buildings = {
-				#
-				#
-			}
+			industrial_complex = 1
 		}
 	}
 

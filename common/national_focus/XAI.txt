@@ -34,7 +34,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_reinforce_the_council
-		icon = GFX_unknown
+		icon = GFX_focus_SWI_dissolve_the_federal_council
 		x = 14
 		y = 1
 		cost = 10
@@ -63,6 +63,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			add_political_power = 50
+			add_power_balance_value = {
+    			id = XAI_tuqi_kings
+    			value = 0.05
+    			tooltip_side = XAI_left_king_side
+			}
 		}
 
 		ai_will_do = {
@@ -83,6 +88,11 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.08
 			add_war_support = -0.05
+			add_power_balance_value = {
+    			id = XAI_tuqi_kings
+    			value = -0.1
+    			tooltip_side = XAI_right_king_side
+			}
 			random_owned_controlled_state = {
 				add_building_construction = {
     				type = industrial_complex
@@ -144,7 +154,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_strenghten_local_leaders
-		icon = GFX_unknown
+		icon = GFX_focus_generic_sympathetic_judges
 		x = 18
 		y = 1
 		cost = 10
@@ -162,7 +172,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_reduce_the_amount_of_cavalry
-		icon = GFX_unknown
+		icon = GFX_goal_generic_cavalry
 		x = 17
 		y = 2
 		cost = 10
@@ -180,7 +190,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_ask_for_more_tributes
-		icon = GFX_unknown
+		icon = GFX_focus_generic_monetary_union
 		x = 19
 		y = 2
 		cost = 10
@@ -245,7 +255,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_negociations_with_the_chinese
-		icon = GFX_unknown
+		icon = GFX_focus_generic_welfare
 		x = 15
 		y = 5
 		cost = 10
@@ -1391,7 +1401,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_towards_integrating_tributaries
-		icon = GFX_unknown
+		icon = GFX_focus_generic_subjugation
 		x = 11
 		y = 4
 		cost = 10
@@ -1457,7 +1467,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_reorganise_the_court
-		icon = GFX_unknown
+		icon = GFX_focus_generic_improve_the_administration
 		x = 6
 		y = 1
 		cost = 10
@@ -1482,7 +1492,7 @@ focus_tree = {
 		prerequisite = { focus = XAI_reorganise_the_court }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = XAI_our_chinese_neighbours
 		}
 
 		ai_will_do = {
@@ -1492,7 +1502,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_appeasement_at_the_border
-		icon = GFX_unknown
+		icon = GFX_focus_generic_commission
 		x = 6
 		y = 3
 		cost = 10
@@ -1500,7 +1510,14 @@ focus_tree = {
 		mutually_exclusive = { focus = XAI_continue_the_raids }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			744 = {
+				owner = {
+					country_event = {
+						id = xai_event.3
+						days = 5
+					}
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -1545,7 +1562,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_ready_the_cavalry
-		icon = GFX_unknown
+		icon = GFX_focus_FIN_strengthen_military_administration
 		x = 8
 		y = 5
 		cost = 10
@@ -1618,7 +1635,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_hegemony_over_the_steppes
-		icon = GFX_unknown
+		icon = GFX_SOV_demand_eastern_poland_ccp_2d_sov_compatibility
 		x = 9
 		y = 6
 		cost = 10
@@ -1706,7 +1723,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_foment_unrest_in_china
-		icon = GFX_unknown
+		icon = GFX_focus_chi_one_china_policy
 		x = 9
 		y = 7
 		cost = 10

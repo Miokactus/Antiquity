@@ -989,7 +989,7 @@
  rubber_desc:0 "Rubber is important for the construction of most vehicles."
  tungsten_desc:0 "Tungsten is a rare hard metal mainly used for anti-tank munitions, but also machine tools and specialized parts."
  steel_desc:0 "Iron is the primary metal for most types of military machinery, whether it be weapons or ships."
- chromium_desc:0 "Chromium is a metal used for the construction of advanced engines."
+ chromium_desc:0 "Copper is used for various purposes, from shields to attires for horses or even funerary elements."
  gold_ingot_desc: "Gold is required to finance the State and production of anything within the realm."
  CLAIM_LIST_DESC:0 "Countries with claims on this state."
  SUPPLY_MAPICON_SUPPORTED_LIMITED_DESC:0 "This node could support more supplies, but is limited by some §R'bottlenecks'§! in its route.\nConsider improving §Ginfrastructure§! along the route.\nImprove also the naval bases if the route includes the sea path.\nThink then about necessary amount of convoys and escorts."

@@ -1,0 +1,84 @@
+﻿l_english:
+ ### UTILITIES (infantry, horse & armor)
+ utilities_folder: "Utilities"
+ UTILITIES_SWORDS_SPEARS_TITLE: "SWORDS & SPEARS"
+ UTILITIES_ARMOR_TITLE: "ARMOR"
+ UTILITIES_ANIMALS_TITLE: "ANIMAL DOMESTICATION"
+
+ swords_and_spears_archetype: "Melee Weapons"
+ early_swords_and_spears: "Early Swords & Spears"
+ early_swords_and_spears: "Early Swords and Spears"
+ copper_spears: "Copper Spears"
+ copper_swords: "Copper Swords"
+ iron_spears: "Iron Spears"
+ wrought_iron_swords: "Wrought Iron Swords"
+ cast_iron_swords: "Cast Iron Swords"
+ throwing_spears: "Throwing Spears"
+ melee_spears: "Melee Spears"
+
+ thick_clothing: "Thick Clothing"
+ wooden_shields: "Wooden Shields"
+ leather_shields: "Leather Shields"
+ ceremonial_headwear: "Ceremonial Headwear"
+ leather_helmet: "Leather Helmet"
+ chain_armor: "Chain Armor"
+ forged_shields: "Forged Shields"
+ branded_armor: "Branded Armor"
+ neck_guards: "Neck Guards"
+ reinforced_helmets: "Reinforced Helmets"
+
+ horse_domestication: "Horse Domestication"
+ camel_domestication: "Camel Domestication"
+ horse_cavalry: "Horse Cavalry"
+ cloth_saddle: "Cloth Saddle"
+ camel_cavalry: "Camel Cavalry"
+ primitive_stirrup: "Primitive Stirrup"
+ leather_saddle: "Leather Saddle"
+ heavy_cavalry: "Heavy Cavalry"
+ armored_horses: "Armored Horses"
+ goods_transportation: "Goods Transportation"
+ ceremonial_caravan: "Ceremonial Caravan"
+ camel_trade: "Camel Trade"
+ organised_camel_trains: "Organised Camel Trains"
+ mobile_bow: "Mobile Bow"
+ horse_archery: "Horse Archery"
+ camel_archery: "Camel Archery"
+
+
+ camel: "Camel"
+ horse: "Horse"
+
+ shield_archetype: "Shield"
+
+
+ ### SUPPORT (carts, wheel)
+ wheeled_folder: "Wheeled Technology"
+ WHEELED_CARTS_TITLE: "CARTS & WAGONS"
+ primitive_cart_archetype: "Carts"
+
+ wheel: "Wheel"
+ primitive_cart: "Primitive Carts"
+ wodden_chariots: "Wooden Chariots"
+ reinforced_chariots: "Reinforced Chariots"
+ wagons: "Wagons"
+ primitive_logistics: "Primitive Logistics"
+ wagon_trains: "Wagon Trains"
+
+ human_motorization: "Human Motorization"
+ horse_drawn_transport: "Horse-drawn Transport"
+ camel_drawn_transport: "Camel-drawn Transport"
+ throat_and_girth_harness: "Throat-and-girth Harness"
+ breastplate: "Breastplate"
+
+ 4_wheel_carts: "4-Wheeled Carts"
+ 2_wheel_carts: "2-Wheeled Carts"
+
+
+
+
+ ### UNITS
+
+ spear_lancers: "Spear Lancers"
+ spear_lancers_desc: "A type of infantry unit that uses long spears instead of swords. Usually used as support or main attack."
+ shielded_infantry: "Shielded Infantry"
+ shielded_infantry_desc: "Infantry units equipped with shields for enhanced protection."

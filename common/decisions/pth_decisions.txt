@@ -971,7 +971,7 @@ parthia_instigate_revolts = {
     		#		infantry_equipment_1 > 200
 			#	}
 			#	has_equipment = {
-    		#		infantry_equipment > 200
+    		#		swords_and_spears_archetype > 200
 			#	}
 			#}
 		}
@@ -1029,7 +1029,7 @@ parthia_instigate_revolts = {
     		#		infantry_equipment_1 > 200
 			#	}
 			#	has_equipment = {
-    		#		infantry_equipment > 200
+    		#		swords_and_spears_archetype > 200
 			#	}
 			#}
 		}

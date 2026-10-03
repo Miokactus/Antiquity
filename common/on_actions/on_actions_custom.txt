@@ -462,17 +462,6 @@ on_actions = {
             }
         }
     }
-    on_startup = {
-        effect = {
-            ROE = {
-                country_event = {
-					id = rome_event.28
-					days = 30
-					random_days = 20
-				}
-            }
-        }
-    }
 
     
 }

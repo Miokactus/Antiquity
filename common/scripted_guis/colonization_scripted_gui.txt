@@ -49,7 +49,7 @@ scripted_gui = {
 					add_political_power = -80
 					add_manpower = -500
 					add_equipment_to_stockpile = {
-						type = infantry_equipment
+						type = swords_and_spears_archetype
 						amount = -250
 					}
 				}
@@ -59,7 +59,7 @@ scripted_gui = {
 					add_political_power = 65
 					add_manpower = 400
 					add_equipment_to_stockpile = {
-						type = infantry_equipment
+						type = swords_and_spears_archetype
 						amount = 200
 					}
 				}
@@ -89,7 +89,7 @@ scripted_gui = {
 			}
 			colonize11_click_enabled = {
 				check_variable = { ROOT.political_power > 80 }
-				check_variable = { ROOT.num_equipment@infantry_equipment > 80 }
+				check_variable = { ROOT.num_equipment@swords_and_spears_archetype > 80 }
 			}
 			recall_visible = {
 				FROM  = {

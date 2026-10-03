@@ -97,25 +97,93 @@ country_event = {
 }
 
 
-##
+## Appeasement at the border
 country_event = {
 	id = xai_event.3
 	title = xai_event.3.t
 	desc = xai_event.3.d
-	
 	trigger = {
     }
-
 	picture = GFX_report_event_XIN_generic_battle
 	mean_time_to_happen = { days = 1 }
 	is_triggered_only = yes
 	fire_only_once = yes
-	option = {
+	option = { # Alright; let's not attack each others
 		name = xai_event.3.a
 		ai_chance = { factor = 1 }
+		add_war_support = -0.05
+		add_stability = 0.05
+		FROM = {
+			country_event = {
+				id = xai_event.4
+				days = 2
+			}
+		}
+	}
+	option = { # What? You're our subjects!
+		name = xai_event.3.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+		add_stability = -0.05
+		FROM = {
+			country_event = {
+				id = xai_event.5
+				days = 2
+			}
+		}
 	}
 }
 
+## Appeasement at the border
+country_event = {
+	id = xai_event.4
+	title = xai_event.4.t
+	desc = xai_event.4.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Sign the non agression pact
+		name = xai_event.4.a
+		ai_chance = { factor = 1 }
+		add_war_support = -0.05
+		add_stability = 0.05
+		diplomatic_relation = {
+    		country = FROM
+    		relation = guarantee
+    		active = yes
+		}
+		FROM = {
+			diplomatic_relation = {
+    			country = XAI
+    			relation = guarantee
+    			active = yes
+			}
+		}
+	}
+}
+
+## Appeasement at the border
+country_event = {
+	id = xai_event.5
+	title = xai_event.5.t
+	desc = xai_event.5.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Launch more raids!
+		name = xai_event.5.a
+		ai_chance = { factor = 1 }
+		add_war_support = -0.05
+		add_stability = 0.05
+		set_country_flag = XAI_chinese_refused_appeasement
+	}
+}
 
 
 
