@@ -63,7 +63,7 @@
 
 
  rome_event.12.t: "A Roman Deal: Carve up Armenia"
- rome_event.12.d: "An envoy from Rome arrived today at the Capital, with a deal.\n\They are asking us to put pression on Armenia to gain territories. We would get the eastern part of the country while Rome would get the eastern part and a de facto protectorate.\n\We cannot stand against Rome alone and they decided that even if we did not agree, they would attack Armenia and would get what they wanted, with or without us."
+ rome_event.12.d: "An envoy from Rome arrived today at the Capital, with a deal.\n\nThey are asking us to put pression on Armenia to gain territories. We would get the eastern part of the country while Rome would get the eastern part and a de facto protectorate.\n\nWe cannot stand against Rome alone and they decided that even if we did not agree, they would attack Armenia and would get what they wanted, with or without us."
  rome_event.12.a: "Yes"
  rome_event.12.b: "Why not a compromise?"
  rome_event.12.c: "No!"

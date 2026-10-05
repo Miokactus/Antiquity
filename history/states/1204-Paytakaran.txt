@@ -13,11 +13,6 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
-			dockyard = 1
-			4473 = {
-				naval_base = 2
-			}
-			#
 		}
 	}
 	manpower=15000

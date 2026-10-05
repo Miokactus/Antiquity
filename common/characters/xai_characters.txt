@@ -90,7 +90,7 @@ characters = {
 		name = "Tribal Institutions"
 		portraits = {
             civilian = {
-                large = "generic_nomadic_tribes2"
+                large = "GFX_leader_generic_nomadic_tribes2"
             }
         }
 		country_leader = {
@@ -106,7 +106,7 @@ characters = {
 		name = "Hulanzhi"
 		portraits = {
             civilian = {
-                large = "generic_nomadic_tribes2"
+                large = "GFX_leader_generic_nomadic_tribes2"
             }
         }
 		country_leader = {
@@ -122,7 +122,7 @@ characters = {
 		name = "Yituzhiyashi"
 		portraits = {
             civilian = {
-                large = "generic_nomadic_tribes2"
+                large = "GFX_leader_generic_nomadic_tribes2"
             }
         }
 		country_leader = {

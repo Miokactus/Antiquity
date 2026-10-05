@@ -42,12 +42,12 @@ sub_units = {
 		
 		essential = {
 			support_equipment
-			carriage_equipment
+			#
 		}
 
 		need = {
 			support_equipment = 20
-			carriage_equipment = 10
+			# = 10
 		}
 
 		same_support_type = signal_company

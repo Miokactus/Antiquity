@@ -16,9 +16,12 @@ on_actions = {
                                 is_core_of = LYC
                                 is_core_of = CAP
                                 is_core_of = NAB
+                                is_core_of = THR
+                                is_core_of = PON
                             }
                         }
                         set_variable = { culture_var = 1 } # Roman
+                        
                     }
                     else_if = {
                         limit = {
@@ -171,6 +174,214 @@ on_actions = {
                             }
                         }
                         set_variable = { culture_var = 13 } # Korean
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    on_startup = {
+        effect = {
+            every_country = {
+                if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 1 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        iron_spears = 1
+                        copper_swords = 1
+                        thick_clothing = 1
+                        wooden_shields = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 2 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        thick_clothing = 1
+                        wooden_shields = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                        horse_cavalry = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 3 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        iron_swords = 1
+                        copper_swords = 1
+                        iron_spears = 1
+                        thick_clothing = 1
+                        wooden_shields = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                        horse_cavalry = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 4 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                        horse_cavalry = 1
+                        cloth_saddle = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 5 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 6 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                        horse_cavalry = 1
+                        cloth_saddle = 1
+                        leather_saddle = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 7 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 8 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 9 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 10 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 11 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 12 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        horse_domestication = 1
+                        horse_cavalry = 1
+                        convoy = 1
+                    }
+                }
+                else_if = {
+                    limit = {
+                        capital_scope = { check_variable = { culture_var = 13 }}
+                    }
+                    set_technology = {
+                        early_swords_and_spears = 1
+                        copper_spears = 1
+                        copper_swords = 1
+                        wooden_shields = 1
+                        thick_clothing = 1
+                        ceremonial_headwear = 1
+                        convoy = 1
                     }
                 }
             }

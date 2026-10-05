@@ -36,7 +36,7 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 1000
+		manpower = 500
 
 		#Misc Abilities
 		training_time = 90
@@ -47,8 +47,8 @@ sub_units = {
 		supply_consumption = 0.1
 	
 		need = {
-			swords_and_spears_archetype = 500
-			thick_clothing1 = 500
+			swords_and_spears_archetype = 200
+			thick_clothing1 = 200
 		}
 	}
 
@@ -131,7 +131,7 @@ sub_units = {
 		max_strength = 30
 		max_organisation = 80
 		default_morale = 0.3
-		manpower = 1000
+		manpower = 500
 
 		#Misc Abilities
 		training_time = 80
@@ -142,7 +142,8 @@ sub_units = {
 		supply_consumption = 0.2
 	
 		need = {
-			shield_archetype = 500
+			swords_and_spears_archetype = 200
+			shield_archetype = 200
 		}
 
 	}
@@ -537,11 +538,11 @@ sub_units = {
 		supply_consumption = 0.065
 	
 		# this is what moves us and sets speed
-		transport = carriage_equipment
+		
 	
 		need = {
 			swords_and_spears_archetype = 100
-			carriage_equipment = 35
+			# = 35
 		}
 
 		forest = {

@@ -139,14 +139,13 @@ sub_units = {
 		essential = {
 			swords_and_spears_archetype
 			support_equipment
-			carriage_equipment
+			#
 		}
 
-		transport = carriage_equipment
 		need = {
 			swords_and_spears_archetype = 40
 			support_equipment = 10
-			carriage_equipment = 20
+			# = 20
 		}
 
 		forest = {
@@ -723,7 +722,6 @@ sub_units = {
 			helicopter_equipment
 		}
 
-		transport = carriage_equipment 
 		need = {
 			swords_and_spears_archetype = 20
 			support_equipment = 10

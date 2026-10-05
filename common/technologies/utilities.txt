@@ -107,7 +107,7 @@ technologies = {
 		}
 
 		spear_lancers = {
-			attack = -0.05
+			hard_attack = -0.05
 			defense = 0.1
 		}
 
@@ -135,7 +135,7 @@ technologies = {
 		}
 
 		spear_lancers = {
-			attack = 0.1
+			hard_attack = 0.1
 			defense = -0.05
 		}
 
@@ -627,6 +627,23 @@ technologies = {
 	}
 
 	camel_domestication = {
+
+		allow = {
+			ROOT = {
+				any_owned_state = {
+					OR = {
+						region = 127
+						region = 216
+						region = 273
+						region = 237
+						region = 196
+						region = 268
+						region = 145
+						region = 146
+					}
+				}
+			}
+		}
 
 		enable_equipments = {
 			camel

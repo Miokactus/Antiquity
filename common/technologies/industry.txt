@@ -47,10 +47,6 @@ technologies = {
             industry
             cat_production
         }
-        modifier = {
-            factor = 10
-				date > "16.1.1"
-        }
         ai_will_do = {
             factor = 40
 						
@@ -76,10 +72,7 @@ technologies = {
             industry
             cat_production
         }
-        modifier = {
-            factor = 10
-				date > "20.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 						
@@ -109,10 +102,7 @@ technologies = {
             industry
             cat_production
         }
-        modifier = {
-            factor = 10
-				date > "24.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 			
@@ -135,10 +125,7 @@ technologies = {
             cat_production
         }
         XOR = { streamlined_line }
-        modifier = {
-            factor = 10
-				date > "28.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 						
@@ -161,10 +148,7 @@ technologies = {
             cat_production
         }
         XOR = { flexible_line }
-        modifier = {
-            factor = 10
-				date > "28.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 			
@@ -190,10 +174,7 @@ technologies = {
             industry
             cat_production
         }
-        modifier = {
-            factor = 2
-				date > "16.1.1"
-        }
+        
         ai_will_do = {
             factor = 1
 
@@ -220,10 +201,7 @@ technologies = {
             industry
             cat_production
         }
-        modifier = {
-            factor = 2
-				date > "16.1.1"
-        }
+        
         ai_will_do = {
             factor = 1
 
@@ -255,10 +233,7 @@ technologies = {
             concentrated_industry_category
         }
         XOR = { dispersed_industry }
-        modifier = {
-            factor = 2
-				NOT = { tag = GER }
-        }
+      
         ai_will_do = {
             factor = 25
 
@@ -314,10 +289,7 @@ technologies = {
             industry
             concentrated_industry_category
         }
-        modifier = {
-            factor = 10
-				date > "16.1.1"
-        }
+        
         ai_will_do = {
             factor = 20
 						
@@ -343,10 +315,7 @@ technologies = {
             industry
             concentrated_industry_category
         }
-        modifier = {
-            factor = 10
-				date > "20.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 			
@@ -372,10 +341,7 @@ technologies = {
             industry
             concentrated_industry_category
         }
-        modifier = {
-            factor = 10
-				date > "24.1.1"
-        }
+      
         ai_will_do = {
             factor = 15
 						
@@ -397,10 +363,7 @@ technologies = {
             industry
             concentrated_industry_category
         }
-        modifier = {
-            factor = 5
-				date > "26.1.9"
-        }
+        
         ai_will_do = {
             factor = 4
 			
@@ -432,10 +395,7 @@ technologies = {
             dispersed_industry_category
         }
         XOR = { concentrated_industry }
-        modifier = {
-            factor = 2
-				tag = GER
-        }
+       
         ai_will_do = {
             factor = 25
 
@@ -491,10 +451,7 @@ technologies = {
             industry
             dispersed_industry_category
         }
-        modifier = {
-            factor = 10
-				date > "16.1.1"
-        }
+        
         ai_will_do = {
             factor = 20
 						
@@ -520,10 +477,7 @@ technologies = {
             industry
             dispersed_industry_category
         }
-        modifier = {
-            factor = 10
-				date > "20.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 						
@@ -549,10 +503,7 @@ technologies = {
             industry
             dispersed_industry_category
         }
-        modifier = {
-            factor = 10
-				date > "24.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 						
@@ -574,10 +525,7 @@ technologies = {
             industry
             dispersed_industry_category
         }
-        modifier = {
-            factor = 10
-				date > "28.1.1"
-        }
+        
         ai_will_do = {
             factor = 15
 			
@@ -608,10 +556,7 @@ technologies = {
             industry
             synth_resources
         }
-        modifier = {
-            factor = 2
-				grain > 10
-        }
+        
         ai_will_do = {
             factor = 1
 			modifier = {
@@ -695,10 +640,7 @@ technologies = {
             industry
             synth_resources
         }
-        modifier = {
-            tag = USA
-				factor = 0.5
-        }
+        
         ai_will_do = {
             factor = 5
 			modifier = {
@@ -756,10 +698,7 @@ technologies = {
             industry
             synth_resources
         }
-        modifier = {
-            tag = USA
-				factor = 0.5
-        }
+        
         ai_will_do = {
             factor = 5
 			modifier = {
@@ -809,10 +748,7 @@ technologies = {
             industry
             synth_resources
         }
-        modifier = {
-            tag = USA
-				factor = 0.5
-        }
+        
         ai_will_do = {
             factor = 5
 			modifier = {
@@ -854,10 +790,7 @@ technologies = {
             industry
             synth_resources
         }
-        modifier = {
-            tag = USA
-				factor = 0.5
-        }
+       
         ai_will_do = {
             factor = 5
 			modifier = {
@@ -895,10 +828,7 @@ technologies = {
             industry
             synth_resources
         }
-        modifier = {
-            tag = USA
-				factor = 0.5
-        }
+        
         ai_will_do = {
             factor = 5
 			modifier = {
@@ -945,15 +875,7 @@ technologies = {
             synth_resources
             cat_synth_oil
         }
-        modifier = {
-            OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 5
-        }
+        
         ai_will_do = {
             factor = 5
 			modifier = {
@@ -996,15 +918,7 @@ technologies = {
             synth_resources
             cat_synth_oil
         }
-        modifier = {
-            OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-        }
+        
         ai_will_do = {
             factor = 1
 			modifier = {
@@ -1052,15 +966,7 @@ technologies = {
             synth_resources
             cat_synth_oil
         }
-        modifier = {
-            OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-        }
+        
         ai_will_do = {
             factor = 1
 			modifier = {
@@ -1108,15 +1014,7 @@ technologies = {
             synth_resources
             cat_synth_oil
         }
-        modifier = {
-            OR = {
-					tag = GER
-					tag = ITA
-					tag = JAP
-				}
-				has_war = yes
-				factor = 25
-        }
+        
         ai_will_do = {
             factor = 1
 			modifier = {
@@ -1155,10 +1053,7 @@ technologies = {
             synth_resources
             cat_synth_oil
         }
-        modifier = {
-            factor = 0.5
-				grain > 10
-        }
+        
         ai_will_do = {
             factor = 0.5
 			modifier = {
@@ -1192,14 +1087,7 @@ technologies = {
             synth_resources
             cat_synth_rubber
         }
-        modifier = {
-            OR = {
-					tag = GER
-					tag = ITA
-				}
-				has_war = yes
-				factor = 15
-        }
+        
         ai_will_do = {
             factor = 1
 			modifier = {
@@ -1246,14 +1134,7 @@ technologies = {
             synth_resources
             cat_synth_rubber
         }
-        modifier = {
-            OR = {
-					tag = GER
-					tag = ITA
-				}
-				has_war = yes
-				factor = 15
-        }
+        
         ai_will_do = {
             factor = 1
 			modifier = {
@@ -1295,14 +1176,7 @@ technologies = {
             synth_resources
             cat_synth_rubber
         }
-        modifier = {
-            OR = {
-					tag = GER
-					tag = ITA
-				}
-				has_war = yes
-				factor = 15
-        }
+        
         ai_will_do = {
             factor = 1
 			modifier = {
@@ -1340,10 +1214,7 @@ technologies = {
             synth_resources
             cat_synth_rubber
         }
-        modifier = {
-            factor = 0.5
-				wood > 10
-        }
+        
         ai_will_do = {
             factor = 0.5
 			modifier = {
@@ -1380,10 +1251,7 @@ technologies = {
             industry
             construction_tech
         }
-        modifier = {
-            factor = 5
-				date > "16.1.1"
-        }
+        
         ai_will_do = {
             factor = 50
 			
@@ -1405,17 +1273,6 @@ technologies = {
             industry
             construction_tech
             excavation_tech
-        }
-        modifier = {
-            factor = 5.0
-				OR = {
-					grain > 0
-					aluminium > 0
-					wood > 0
-					
-					steel > 0
-					chromium > 0
-				}
         }
         ai_will_do = {
             factor = 1
@@ -1465,10 +1322,7 @@ technologies = {
             industry
             construction_tech
         }
-        modifier = {
-            factor = 10
-				date > "16.1.1"
-        }
+        
         ai_will_do = {
             factor = 4
 			
@@ -1491,17 +1345,7 @@ technologies = {
             construction_tech
             excavation_tech
         }
-        modifier = {
-            factor = 5.0
-				OR = {
-					grain > 0
-					aluminium > 0
-					wood > 0
-					
-					steel > 0
-					chromium > 0
-				}
-        }
+        
         ai_will_do = {
             factor = 1
 			
@@ -1550,10 +1394,7 @@ technologies = {
             industry
             construction_tech
         }
-        modifier = {
-            factor = 1.5
-				has_war = yes
-        }
+        
         ai_will_do = {
             factor = 10
 			
@@ -1586,17 +1427,7 @@ technologies = {
             construction_tech
             excavation_tech
         }
-        modifier = {
-            factor = 5.0
-				OR = {
-					grain > 0
-					aluminium > 0
-					wood > 0
-					
-					steel > 0
-					chromium > 0
-				}
-        }
+        
         ai_will_do = {
             factor = 1
 			
@@ -1645,10 +1476,7 @@ technologies = {
             industry
             construction_tech
         }
-        modifier = {
-            factor = 10
-				date > "22.1.1"
-        }
+        
         ai_will_do = {
             factor = 4
 			
@@ -1671,17 +1499,7 @@ technologies = {
             construction_tech
             excavation_tech
         }
-        modifier = {
-            factor = 5.0
-				OR = {
-					grain > 0
-					aluminium > 0
-					wood > 0
-					
-					steel > 0
-					chromium > 0
-				}
-        }
+        
         ai_will_do = {
             factor = 1
 			
@@ -1726,10 +1544,7 @@ technologies = {
             industry
             construction_tech
         }
-        modifier = {
-            factor = 10
-				date > "28.1.1"
-        }
+        
         ai_will_do = {
             factor = 4
 			
@@ -1752,17 +1567,7 @@ technologies = {
             construction_tech
             excavation_tech
         }
-        modifier = {
-            factor = 5.0
-				OR = {
-					grain > 0
-					aluminium > 0
-					wood > 0
-					
-					steel > 0
-					chromium > 0
-				}
-        }
+        
         ai_will_do = {
             factor = 2
 			

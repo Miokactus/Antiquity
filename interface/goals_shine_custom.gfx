@@ -1,5 +1,5 @@
 spriteTypes = {
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_manufacturies_shine"
 		texturefile = "gfx/interface/goals/manufacturies.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -29,7 +29,8 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-SpriteType = {
+
+	SpriteType = {
 		name = "GFX_focus_northern_smth_shine"
 		texturefile = "gfx/interface/goals/northern_smth.png"
 		effectFile = "gfx/FX/buttonstate.lua"
@@ -245,7 +246,6 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-}
 	SpriteType = {
 		name = "GFX_focus_new_dynastie_shine"
 		texturefile = "gfx/interface/goals/new_dynastie.png"
@@ -370,7 +370,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 
-SpriteType = {
+	SpriteType = {
 	name = "GFX_find_new_leader_shine"
 	texturefile = "gfx/interface/goals/find_new_leader.dds"
 	effectFile = "gfx/FX/buttonstate.lua"
@@ -399,7 +399,7 @@ SpriteType = {
 		animationtexturescale = { x = 1.0 y = 1.0 }
 	}
 	legacy_lazy_load = no
-}
+	}
 
 	SpriteType = {
 		name = "GFX_goal_roman_augustus_death_shine"
@@ -858,7 +858,7 @@ SpriteType = {
 		}
 		legacy_lazy_load = no
 	}
-}
+
 	SpriteType = {
 	name = "GFX_focus_XIN_push_bronze_coins_shine"
 	texturefile = "gfx/interface/goals/XIN_push_bronze_coins.dds"
@@ -1617,6 +1617,5 @@ SpriteType = {
 		animationtexturescale = { x = 1.0 y = 1.0 }
 	}
 	legacy_lazy_load = no
-}
-
+	}
 }

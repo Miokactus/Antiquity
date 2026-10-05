@@ -28,10 +28,7 @@ state = {
 			#
 			dockyard = 1
 			#
-			6050 = {
-				naval_base = 5
-				coastal_bunker = 3
-			}
+			
 		}
 
 		

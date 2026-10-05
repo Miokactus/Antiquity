@@ -94,14 +94,14 @@ sub_units = {
 		}		
 		
 		combat_width = 1
-		transport = carriage_equipment
+		
 
 		essential = {
-			carriage_equipment
+			#
 		}
 		need = {
 			anti_tank_equipment = 36
-			carriage_equipment = 50
+			# = 50
 		}
 		manpower = 500
 		max_organisation = 0

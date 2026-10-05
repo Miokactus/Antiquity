@@ -25,7 +25,14 @@ set_country_flag = influenced_by_ROE
 
 # Starting tech
 set_technology = {
-	early_swords_and_spears = 1
+    early_swords_and_spears = 1
+    copper_spears = 1
+    copper_swords = 1
+    thick_clothing = 1
+    wooden_shields = 1
+    ceremonial_headwear = 1
+    horse_domestication = 1
+	#convoy = 1
 }
 
 

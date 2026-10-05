@@ -150,7 +150,7 @@ HAE = "countries/European.txt" # Haelsingar
 
 
 
-## SOUTH-ASIAN STATES [FLAGS NEEDED]
+## SOUTH-ASIAN STATES
 QQA = "countries/Asian.txt" #Qiang people
 ZZH = "countries/Asian.txt" #Zhangzhung
 CCL = "countries/Asian.txt" #Chin Lin
@@ -262,7 +262,7 @@ SLO = "countries/European.txt" # Sulones
 SIG = "countries/European.txt" # Silingi
 
 
-## BRITANNIA [FLAGS NEEDED]
+## BRITANNIA
 DMN = "countries/Damnonii.txt"
 DRG = "countries/Durotriges.txt"
 ATB = "countries/Atrebates.txt"
@@ -296,7 +296,7 @@ STE = "countries/Smertae.txt"
 CRV = "countries/Cornavii.txt"
 DLG = "countries/Decantae_Lugi.txt"
 
-## IRELAND [FLAGS NEEDED]
+## IRELAND
 WNO = "countries/Wenniknioi.txt"
 ERD = "countries/Erdinoi.txt"
 MGT = "countries/Magnatai.txt"

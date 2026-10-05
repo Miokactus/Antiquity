@@ -43,7 +43,7 @@ sub_units = { #Per ALbin Bus
 				
 		need = {
 			support_equipment = 5
-			carriage_equipment = 1
+			# = 1
 			swords_and_spears_archetype = 2
 		}
 

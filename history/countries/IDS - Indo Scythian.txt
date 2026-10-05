@@ -18,10 +18,15 @@ PTH = {
 
 # Starting tech
 set_technology = {
-	early_swords_and_spears
-	basic_train
-	early_destroyer
-	transport
+    early_swords_and_spears = 1
+    copper_spears = 1
+    copper_swords = 1
+    thick_clothing = 1
+    wooden_shields = 1
+    ceremonial_headwear = 1
+    horse_domestication = 1
+	#convoy = 1
+	horse_cavalry = 1
 }
 
 set_convoys = 15

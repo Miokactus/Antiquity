@@ -46,4 +46,40 @@ technologies = {
             level = 1
         }
     }
+
+    atomic_research = {
+        allow = {
+            always = no
+        }
+    }
+
+    armored_train = {
+        allow = {
+            always = no
+        }
+    }
+
+    railway_gun = {
+        allow = {
+            always = no
+        }
+    }
+
+    amphibious_mechanized_infantry = {
+        allow = {
+            always = no
+        }
+    }
+
+    jungle_tanks = {
+        allow = {
+            always = no
+        }
+    }
+
+    mechanised_infantry = {
+        allow = {
+            always = no
+        }
+    }
 }

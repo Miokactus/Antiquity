@@ -1,0 +1,1222 @@
+### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+### Operations
+# Operations will randomly pick from national pools until exhausted
+# You can specify a strategic region for which an order name will be drawn
+# if any enemy province along the frontline matches this strategic region, this sub-pool will be considered and used in preference to default.
+# Whether this 'historical' name pool is exhausted is dependent on the define: HISTORICAL_ORDER_NAME_EXHAUSTION
+# Strategic region index '0' is the generic national pool.
+# You can specify the same name in several regions, though I would suggest not doing this too often, for performance reasons.
+# After this, a first and second will be randomly picked from the default pool
+# The prefix must be provided for all pools
+
+default = {
+	male = {
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
+		surnames = { }
+		callsigns = { }
+	}
+	#female = {
+	#	names = { "Juliette" "Anna" }
+	#	surnames = { }
+	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
+	#}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+
+
+	#Operations - treat these as keys, not strings.
+	prefix = o_operation
+
+	operation = {
+		0 = { o_default_operation }
+	}
+
+	use_geographical_default_operation_names = yes
+	offensive_operation_suffix = o_strat_offensive_default
+	defensive_operation_suffix = o_strat_defensive_default
+	naval_operation_suffix = o_strat_naval_default
+
+}
+
+
+XIN = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+WPC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+LLU = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+RYY = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+ANH = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+HEB = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+CJG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+NYU = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+LUO = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+ANN = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+
+
+
+
+
+ROE = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+MAU = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+LYC = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+THR = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+AAN = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+CAP = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+BOP = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+PON = {
+	male = {
+		names = { Appius Aulus Caius Gaius Cnaeus Gnaeus Decimus Kaeso Lucius Mamercus Manius Marcus Numerius Publius Quintus Servius Sextus Spurius Tiberius Titus  }
+	}
+	female = {
+		names = { Agrippina Antonia Cornelia Faustina Julia Livia Messalina Sabina Valeria }
+	}
+	surnames = { Julius Cornelius Claudius Fabius Valerius Tullius Aemilius Antonius Sempronius Junius Licinius Domitius Flavius Horatius Marcius Pompeius Scipio Octavius Lucretius Aurelius }
+	callsigns = { }
+}
+
+
+SAV = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+AYD = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+CER = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+ANU = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+SAT = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+YAU = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+CLO = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+PDA = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+MTH = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+MMD = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+MTI = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+IDS = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+CTU = {
+	male = {
+		names = { Arjuna Yudhishthira Bhima Nakula Sahadeva Karna Krishna Rama Lakshmana Bharata Shatrughna Ashoka Chandragupta Chanakya Harsha Vikramaditya Draupadi Sita Radha Savitri Shakuntala Damayanti Gargi Maitreyi Anasuya Kausalya Kaikeyi Sumitra Vasudeva Devaki Nanda Yashoda Balarama  }
+	}
+	female = {
+		names = { Pradyumna Aniruddha Abhimanyu Parikshit Janamejaya Manu Vyasa Valmiki Agastya Vashishta Vishwamitra Bharadwaja Atri Gautama Jamadagni }
+	}
+	surnames = { Maurya Gupta Kushana Vakataka Chola Chera Pandya Chalukya Pallava Rashtrakuta Satavahana Shunga Kanva Kalinga Ikshvaku Paurava Yadu Kuru Panchala Lichchhavi Shakya Vrishni Bhanja Kadamba Ganga }
+	callsigns = { }
+}
+
+
+
+
+
+
+
+SAR = {
+	names = { Tomyris Atey Respendial Skilurus Palakus Saumacus Amage Spargapises Idanthyrsus Taxacis Scopasis Sangiban Goar Beorgor Babai }
+	surnames = { }
+	callsigns = { }
+}
+
+SCY = {
+	names = { Tomyris Atey Respendial Skilurus Palakus Saumacus Amage Spargapises Idanthyrsus Taxacis Scopasis Sangiban Goar Beorgor Babai }
+	surnames = { }
+	callsigns = { }
+}
+
+YUZ = {
+	names = { Tomyris Atey Respendial Skilurus Palakus Saumacus Amage Spargapises Idanthyrsus Taxacis Scopasis Sangiban Goar Beorgor Babai }
+	surnames = { }
+	callsigns = { }
+}
+
+XAI = {
+	names = { Tomyris Atey Respendial Skilurus Palakus Saumacus Amage Spargapises Idanthyrsus Taxacis Scopasis Sangiban Goar Beorgor Babai }
+	surnames = { }
+	callsigns = { }
+}
+
+
+
+PTH = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+BBA = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+PPI = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+ADI = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+CHA = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+SSY = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+SSA = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+SSE = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+SSP = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+SSN = {
+	names = { Arsace Orore Phraate Pacorus Tiridate Artaban Gotarze Vardane Vonone Vologese Mithridate Sinatruce Mousa Anilaeus Asinaeus Surena Sanamoares Izate Monobaze Gondophares }
+	surnames = { }
+	callsigns = { }
+}
+
+
+
+
+
+CRS = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+TTO = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+GNI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+EDS = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+DNT = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+BRG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+THT = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+HVI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+AVV = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+OSG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+LTH = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+FIR = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+NJR = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+GVG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+GGG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+FVA = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+RMI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+GNN = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+RGR = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+BBG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+GAU = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+STO = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+EVG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+VNL = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+VAG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+FRV = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+FTH = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+TAE = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+ENI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+AGX = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+ART = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+RRN = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+ADG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+HAE = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+FRI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+CMI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+AMV = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+CAU = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+CSU = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+USP = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+SGI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+TNI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+CTT = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+VGI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+NMI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+TBI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+ERR = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+NSE = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+MRA = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+AGI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+ANI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+SXA = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+AGL = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+VNI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+CRD = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+LGI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+SNI = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+BRU = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+CCH = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+SDD = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+NTN = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+WRG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+LMM = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+AVP = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+ERG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+VDV = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+GGP = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+GTO = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+VRN = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+NSV = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+FRD = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+BRD = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+MSG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+SLO = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+SIG = {
+	names = { Arminius Thusnelda Ariovistus Alaric Genseric Odoacre Theodoric Marbod Chindaswinthe Vercingetorix Boudicca Brennus Ambiorix Vercassivellaunos Cartimandua Camulogene Commios Dumnorix }
+	surnames = { }
+	callsigns = { }
+}
+
+
+
+
+
+DMN = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+DRG = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+ATB = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+BGA = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+RGN = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CTC = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+DMA = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+SLE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+DBN = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CVL = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+TVE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+ICC = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+ORE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CMO = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CRL = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+BGE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+PRI = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+NOV = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+SGA = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+ODN = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+NDM = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+VIE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+EPD = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+TAX = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CLI = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CRE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CRG = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CEI = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+STE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+CRV = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+DLG = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+WNO = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+ERD = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+MGT = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+AVE = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+GGA = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+UDA = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+WLI = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+IWR = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+BIG = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+KRD = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+MNP = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+KKO = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+EBN = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+WLT = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+DRI = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}
+
+RBG = {
+	names = { Cunobeline Caratacus Boudicca Prasutagus Cartimandua Venutius Togodumnus Adminius Vepotalus Commius Tincomarus Eppillus Verica Dubnovellaunus Addedomarus Tasciovanus Epaticcus Segovax Cingetorix Carvilius Taximagulus Mandubracius Cassivellaunus Antedios Dumnocoveros Tigirseno Asvios Bodvocus Corisios Tancorix Cunomorus Maglocunus Boudila Catuvolcus Ambiorix Dumnorix Diviciacus Litaviccus Cavarillus Correctus Vindex }
+	surnames = { }
+	callsigns = { }
+}

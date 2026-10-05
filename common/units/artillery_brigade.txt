@@ -100,16 +100,16 @@ sub_units = {
 		}
 
 		combat_width = 3
-		transport = carriage_equipment
+		
 		manpower = 500
 
 		essential = {
-			carriage_equipment
+			#
 		}
 
 		need = {
 			artillery_equipment = 36
-			carriage_equipment = 36
+			# = 36
 		}
 		
 		max_strength = 0.6
@@ -253,10 +253,10 @@ sub_units = {
 		}		
 
 		combat_width = 3
-		transport = carriage_equipment
+		
 		need = {
 			rocket_artillery_equipment = 36
-			carriage_equipment = 36
+			# = 36
 		}
 		
 		manpower = 500
@@ -332,7 +332,7 @@ sub_units = {
 
 		need = {
 			motorized_rocket_equipment = 20
-			carriage_equipment = 15
+			# = 15
 		}
 		
 		manpower = 500

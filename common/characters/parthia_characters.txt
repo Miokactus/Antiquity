@@ -66,7 +66,7 @@ characters = {
 		name = "Tribal Administration"
 		portraits = {
             	civilian = {
-                	large = "generic_nomadic_tribes2"
+                	large = "GFX_leader_generic_nomadic_tribes2"
             	}
         	}
 		country_leader = {

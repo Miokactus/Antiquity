@@ -13406,7 +13406,7 @@
 13404;255;252;20;land;false;mountain;5
 13405;255;252;21;land;true;plains;6
 13406;255;252;22;land;true;plains;6
-13407;255;252;23;land;true;plains;6
-13408;255;252;24;land;true;plains;6
+13407;255;252;23;land;false;plains;6
+13408;255;252;24;land;false;plains;6
 13409;255;252;25;land;false;desert;7
-13410;255;252;26;land;true;desert;7
+13410;255;252;26;land;false;desert;7

@@ -1129,21 +1129,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_generic_bg2"
 			}
 
-			iconType = {
-				name = "oil_icon"
-				position = { x=0 y=2 }
-				spriteType = "GFX_resources_strip"
-				frame = 1
-				#pdx_tooltip = "PRODUCTION_MATERIALS_OIL"
-			}
-
-			buttonType = {
-				name = "oil_checkbox"
-				position = { x = 22 y = 1 }
-				quadTextureSprite ="GFX_generic_checkbox"
-				Orientation = "UPPER_LEFT"
-				clicksound = click_checkbox
-			}
+			
 
 			iconType = {
 				name = "rubber_icon"
@@ -1224,21 +1210,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				clicksound = click_checkbox
 			}
-			iconType = {
-				name = "coal_icon"
-				position = { x=346 y=2 }
-				spriteType = "GFX_resources_strip"
-				frame = 7
-				#pdx_tooltip = "PRODUCTION_MATERIALS_CHROMIUM"
-			}
-
-			buttonType = {
-				name = "coal_checkbox"
-				position = { x = 359 y = 1 }
-				quadTextureSprite ="GFX_generic_checkbox"
-				Orientation = "UPPER_LEFT"
-				clicksound = click_checkbox
-			}
+			
 		}
 
 		buttonType = {
