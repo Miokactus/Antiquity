@@ -2,7 +2,7 @@
 
 equipments = {
 
-	horse = {
+	horse_domestication = {
 		year = -3000
 	
 		is_archetype = yes
@@ -37,11 +37,23 @@ equipments = {
 		
 		fuel_consumption = 0.08
 
-		build_cost_ic = 0.2
+		build_cost_ic = 0.5
 		
 	}
 
-	camel = {
+	horse_domestication_1 = {
+		year = -3000
+	
+		picture = GFX_horse_medium
+		archetype = horse_domestication
+		parent = horse_domestication
+		type = infantry
+		interface_category = interface_category_land
+		
+		active = no
+	}
+
+	camel_domestication = {
 		year = -3000
 	
 		is_archetype = yes
@@ -76,8 +88,20 @@ equipments = {
 		
 		fuel_consumption = 0.08
 
-		build_cost_ic = 0.2
+		build_cost_ic = 0.5
 		
+	}
+
+	camel_domestication_1 = {
+		year = -3000
+	
+		picture = GFX_camel_medium
+		archetype = camel_domestication
+		parent = camel_domestication
+		type = infantry
+		interface_category = interface_category_land
+		
+		active = no
 	}
 
 	cloth_saddle = {
@@ -123,7 +147,7 @@ equipments = {
 		picture = GFX_cloth_saddle_medium
 		fuel_consumption = 0.1
 	
-		archetype = thick_clothing
+		archetype = cloth_saddle
 		active = no
 		priority = 05
 		visual_level = 0
@@ -163,6 +187,13 @@ equipments = {
 		priority = 10
 		visual_level = 1
 		fuel_consumption = 0.02
+		type = infantry
+		group_by = archetype
+		interface_category = interface_category_land
+		
+		is_archetype = yes
+		
+		active = no
 
 		#Defensive Abilities
 		defense = 5
@@ -178,5 +209,12 @@ equipments = {
 		resources = {
 			wood = 1
 		}
+	}
+	mobile_bow_0 = {
+		year = -100
+		archetype = mobile_bow
+		priority = 10
+		visual_level = 1
+		is_convertable = no
 	}
 }

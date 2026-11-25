@@ -1,17 +1,2029 @@
 focus_tree = {
-	id = AAB_focus
-	
+	id = ARR_focus
+
 	country = {
 		factor = 0
-		
 		modifier = {
-			add = 10
+			add = 100
 			tag = ARR
 		}
 	}
 
 	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 5500 }
 
-	continuous_focus_position = { x = 50 y = 1500 }
-	
+	focus = {
+		id = armenia_rules
+		icon = GFX_focus_AFG_retire_the_uncles
+		x = 2
+		y = 0
+		cost = 6
+
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			unlock_decision_category_tooltip = ARR_parthian_threat
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = armenia_crumbles
+		icon = GFX_focus_ARR_armenia_crumbles
+		x = 10
+		y = 0
+		cost = 6
+
+
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			has_country_flag = vonones_is_deposed
+		}
+		completion_reward = {
+			add_stability = -0.05
+		}
+	}
+
+	focus = {
+		id = all_hail_vonones
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		cost = 6
+
+		prerequisite = { focus = armenia_rules }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = proclaim_the_interregnum
+		icon = GFX_focus_generic_monarchy_1
+		x = 10
+		y = 2
+		cost = 6
+
+		prerequisite = { focus = armenia_crumbles }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			promote_character = {
+				character = ARR_interregnum
+				ideology = oligarchism_comm
+			}
+			swap_ideas = {
+				remove_idea = ARR_illegitimate_king
+				add_idea = ARR_interregnum
+			}
+		}
+	}
+
+	focus = {
+		id = reassure_the_nobility
+		icon = GFX_focus_generic_protectionism
+		x = 0
+		y = 2
+		cost = 6
+
+		prerequisite = { focus = all_hail_vonones }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reassure_the_nobility completed"
+		}
+	}
+
+	focus = {
+		id = envoys_to_rome
+		icon = GFX_focus_XIN_expedition_to_daqin
+		x = 4
+		y = 2
+		cost = 6
+
+		prerequisite = { focus = all_hail_vonones }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus envoys_to_rome completed"
+		}
+	}
+
+	focus = {
+		id = the_nobility_wakes
+		icon = GFX_focus_generic_monarchy_2
+		x = 8
+		y = 3
+		cost = 6
+
+		prerequisite = { focus = proclaim_the_interregnum }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 20
+			add_timed_idea = {
+				add_idea = ARR_nobility_woken
+				days = 210
+			}
+		}
+	}
+
+	focus = {
+		id = the_king_rules_from_afar
+		icon = GFX_focus_ARR_the_king_rules_from_afar
+		x = 12
+		y = 3
+		cost = 6
+
+		prerequisite = { focus = proclaim_the_interregnum }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_ideas = ARR_emprisoned_king
+		}
+	}
+
+	focus = {
+		id = buy_the_peasants_support
+		icon = GFX_focus_generic_land_reform
+		x = 0
+		y = 3
+		cost = 6
+
+		prerequisite = { focus = reassure_the_nobility }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus buy_the_peasants_support completed"
+		}
+	}
+
+	focus = {
+		id = legimitise_the_illegitimate
+		icon = GFX_SOV_call_for_aid_ccp_2d_sov_compatibility
+		x = 4
+		y = 3
+		cost = 6
+
+		prerequisite = { focus = envoys_to_rome }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus legimitise_the_illegitimate completed"
+		}
+	}
+
+	focus = {
+		id = gather_support_from_parthia
+		icon = GFX_focus_ARR_gather_support_from_parthia
+		x = 7
+		y = 4
+		cost = 6
+
+		prerequisite = { focus = the_nobility_wakes }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARR_pressions_from_parthia
+				add_idea = ARR_support_from_parthia
+			}
+		}
+	}
+
+	focus = {
+		id = promote_anti_roman_sentiment
+		icon = GFX_goal_unknown
+		x = 9
+		y = 4
+		cost = 6
+
+		prerequisite = { focus = the_nobility_wakes }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_war_support = 0.03
+			add_stability = -0.02
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = redistribution_of_state_farms
+		icon = GFX_focus_generic_agricultural_subsidies
+		x = 11
+		y = 4
+		cost = 6
+
+		prerequisite = { focus = the_king_rules_from_afar }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = farm
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = farm
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = the_people_s_will_for_a_king
+		icon = GFX_focus_ARR_the_will_for_a_king
+		x = 13
+		y = 4
+		cost = 6
+
+		prerequisite = { focus = the_king_rules_from_afar }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_people_s_will_for_a_king completed"
+		}
+	}
+
+	focus = {
+		id = an_invite_to_syria
+		icon = GFX_focus_GER_align_middle_east
+		x = 2
+		y = 4
+		cost = 4
+
+		prerequisite = { focus = buy_the_peasants_support }
+		prerequisite = { focus = legimitise_the_illegitimate }
+		available = {
+			date > 15.1.1
+		}
+		ai_will_do = {
+			factor = 150
+		}
+
+		completion_reward = {
+			country_event = {
+				id = armenian_event.1
+				days = 1
+			}
+		}
+	}
+
+	focus = {
+		id = loyalty_within_the_army
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 6
+
+		prerequisite = { focus = gather_support_from_parthia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			army_experience = 15
+			add_command_power = 5
+			add_political_power = 15
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+		}
+	}
+
+	focus = {
+		id = discrimination_against_roman_citizens
+		icon = GFX_focus_generic_execution
+		x = 9
+		y = 5
+		cost = 6
+
+		prerequisite = { focus = promote_anti_roman_sentiment }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			ROE = {
+				add_opinion_modifier = {
+    				target = ARR
+    				modifier = persecutions
+				}
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = dismantle_the_cavalry
+		icon = GFX_focus_generic_army_doctrines_2
+		x = 12
+		y = 5
+		cost = 6
+
+		prerequisite = { focus = redistribution_of_state_farms }
+		prerequisite = { focus = the_people_s_will_for_a_king }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus dismantle_the_cavalry completed"
+		}
+	}
+
+	focus = {
+		id = a_common_aristocratic_front
+		icon = GFX_goal_unknown
+		x = 8
+		y = 7
+		cost = 6
+
+		prerequisite = { focus = loyalty_within_the_army }
+		prerequisite = { focus = discrimination_against_roman_citizens }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_common_aristocratic_front completed"
+		}
+	}
+
+	focus = {
+		id = a_united_peasantry
+		icon = GFX_goal_unknown
+		x = 12
+		y = 7
+		cost = 6
+
+		prerequisite = { focus = dismantle_the_cavalry }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_united_peasantry completed"
+		}
+	}
+
+	focus = {
+		id = put_an_end_to_the_interregnum
+		icon = GFX_focus_ARR_put_an_end_interregnum
+		x = 10
+		y = 10
+		cost = 6
+
+		prerequisite = { focus = a_common_aristocratic_front }
+		prerequisite = { focus = a_united_peasantry }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			remove_ideas = ARR_emprisoned_king
+		}
+	}
+
+	focus = {
+		id = the_republic_is_proclaimed
+		icon = GFX_goal_unknown
+		x = 3
+		y = 12
+		cost = 6
+
+		prerequisite = { focus = put_an_end_to_the_interregnum }
+		mutually_exclusive = { focus = the_kingdom_endures }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARR_interregnum
+				add_idea = ARR_a_new_republic
+			}
+		}
+	}
+
+	focus = {
+		id = the_kingdom_endures
+		icon = GFX_focus_ARR_the_kingdom_endures
+		x = 10
+		y = 12
+		cost = 6
+
+		prerequisite = { focus = put_an_end_to_the_interregnum }
+		mutually_exclusive = { focus = the_republic_is_proclaimed }
+		mutually_exclusive = { focus = the_army_assumes_power }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARR_interregnum
+				add_idea = ARR_rejuvenated_kingdom
+			}
+		}
+	}
+
+	focus = {
+		id = the_army_assumes_power
+		icon = GFX_focus_PER_communist_afghanistan_intervention
+		x = 17
+		y = 12
+		cost = 6
+
+		prerequisite = { focus = put_an_end_to_the_interregnum }
+		mutually_exclusive = { focus = the_kingdom_endures }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARR_interregnum
+				add_idea = ARR_military_dictature
+			}
+		}
+	}
+
+	focus = {
+		id = a_popular_republic
+		icon = GFX_goal_unknown
+		x = 0
+		y = 14
+		cost = 6
+
+		prerequisite = { focus = the_republic_is_proclaimed }
+		mutually_exclusive = { focus = an_aristocratic_republic }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARR_a_new_republic
+				add_idea = ARR_a_popular_republic
+			}
+		}
+	}
+
+	focus = {
+		id = an_aristocratic_republic
+		icon = GFX_goal_unknown
+		x = 6
+		y = 14
+		cost = 6
+
+		prerequisite = { focus = the_republic_is_proclaimed }
+		mutually_exclusive = { focus = a_popular_republic }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARR_a_new_republic
+				add_idea = ARR_an_aristocratic_republic
+			}
+		}
+	}
+
+	focus = {
+		id = the_coronation_of_artaxias_iii
+		icon = GFX_focus_ARR_coronation_artaxias_iii
+		x = 10
+		y = 14
+		cost = 6
+
+		prerequisite = { focus = the_kingdom_endures }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_coronation_of_artaxias_iii completed"
+		}
+	}
+
+	focus = {
+		id = rebirth_of_the_armored_cavalry
+		icon = GFX_goal_unknown
+		x = 17
+		y = 14
+		cost = 6
+
+		prerequisite = { focus = the_army_assumes_power }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus rebirth_of_the_armored_cavalry completed"
+		}
+	}
+
+	focus = {
+		id = institute_representative_elections
+		icon = GFX_goal_unknown
+		x = -1
+		y = 15
+		cost = 6
+
+		prerequisite = { focus = a_popular_republic }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus institute_representative_elections completed"
+		}
+	}
+
+	focus = {
+		id = establish_local_councils
+		icon = GFX_focus_generic_elections
+		x = 1
+		y = 15
+		cost = 6
+
+		prerequisite = { focus = a_popular_republic }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus establish_local_councils completed"
+		}
+	}
+
+	focus = {
+		id = envoys_to_the_great_powers
+		icon = GFX_focus_ARR_envoys_to_the_great_powers
+		x = 3
+		y = 15
+		cost = 6
+		
+		prerequisite = { focus = a_popular_republic focus = an_aristocratic_republic }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus envoys_to_the_great_powers completed"
+		}
+	}
+
+	focus = {
+		id = our_roman_senate
+		icon = GFX_focus_CHI_registry_of_property
+		x = 5
+		y = 15
+		cost = 6
+
+		prerequisite = { focus = an_aristocratic_republic }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus our_roman_senate completed"
+		}
+	}
+
+	focus = {
+		id = establish_a_census_suffrage
+		icon = GFX_goal_unknown
+		x = 7
+		y = 15
+		cost = 6
+
+		prerequisite = { focus = an_aristocratic_republic }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus establish_a_census_suffrage completed"
+		}
+	}
+
+	focus = {
+		id = a_popular_king
+		icon = GFX_goal_unknown
+		x = 9
+		y = 15
+		cost = 6
+
+		prerequisite = { focus = the_coronation_of_artaxias_iii }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_popular_king completed"
+		}
+	}
+
+	focus = {
+		id = appeasement_with_parthia
+		icon = GFX_goal_unknown
+		x = 11
+		y = 15
+		cost = 6
+
+		prerequisite = { focus = the_coronation_of_artaxias_iii }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus appeasement_with_parthia completed"
+		}
+	}
+
+	focus = {
+		id = large_scale_military_training
+		icon = GFX_goal_unknown
+		x = 17
+		y = 15
+		cost = 6
+
+		prerequisite = { focus = rebirth_of_the_armored_cavalry }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus large_scale_military_training completed"
+		}
+	}
+
+	focus = {
+		id = proclaim_the_state_assembly
+		icon = GFX_goal_unknown
+		x = -1
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = institute_representative_elections }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus proclaim_the_state_assembly completed"
+		}
+	}
+
+	focus = {
+		id = reform_the_administration
+		icon = GFX_focus_PER_national_museum
+		x = 1
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = establish_local_councils }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reform_the_administration completed"
+		}
+	}
+
+	focus = {
+		id = legimitise_the_new_regime
+		icon = GFX_goal_unknown
+		x = 3
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = envoys_to_the_great_powers }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus legimitise_the_new_regime completed"
+		}
+	}
+
+	focus = {
+		id = reform_the_office_of_the_sparapet
+		icon = GFX_goal_unknown
+		x = 5
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = our_roman_senate }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reform_the_office_of_the_sparapet completed"
+		}
+	}
+
+	focus = {
+		id = restrict_the_peasants_votes
+		icon = GFX_focus_ARG_keep_it_in_the_party
+		x = 7
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = establish_a_census_suffrage }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus restrict_the_peasants_votes completed"
+		}
+	}
+
+	focus = {
+		id = maintain_the_romans_influence
+		icon = GFX_goal_unknown
+		x = 9
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = a_popular_king }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus maintain_the_romans_influence completed"
+		}
+	}
+
+	focus = {
+		id = increased_trade_with_the_arsacid
+		icon = GFX_goal_unknown
+		x = 11
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = appeasement_with_parthia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus increased_trade_with_the_arsacid completed"
+		}
+	}
+
+	focus = {
+		id = weaken_the_nobility
+		icon = GFX_goal_unknown
+		x = 16
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = large_scale_military_training }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus weaken_the_nobility completed"
+		}
+	}
+
+	focus = {
+		id = bribe_the_peasants
+		icon = GFX_goal_unknown
+		x = 18
+		y = 17
+		cost = 6
+
+		prerequisite = { focus = large_scale_military_training }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus bribe_the_peasants completed"
+		}
+	}
+
+	focus = {
+		id = the_republic_stands_strong
+		icon = GFX_goal_unknown
+		x = 0
+		y = 18
+		cost = 6
+
+		prerequisite = { focus = reform_the_administration }
+		prerequisite = { focus = proclaim_the_state_assembly }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_republic_stands_strong completed"
+		}
+	}
+
+	focus = {
+		id = unveil_the_great_projects
+		icon = GFX_focus_generic_farming
+		x = 3
+		y = 18
+		cost = 6
+
+		prerequisite = { focus = legimitise_the_new_regime }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus unveil_the_great_projects completed"
+		}
+	}
+
+	focus = {
+		id = the_nobility_reigns_supreme
+		icon = GFX_goal_unknown
+		x = 6
+		y = 18
+		cost = 6
+
+		prerequisite = { focus = restrict_the_peasants_votes }
+		prerequisite = { focus = reform_the_office_of_the_sparapet }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_nobility_reigns_supreme completed"
+		}
+	}
+
+	focus = {
+		id = a_new_era_for_armenia
+		icon = GFX_goal_unknown
+		x = 10
+		y = 18
+		cost = 6
+
+		prerequisite = { focus = increased_trade_with_the_arsacid }
+		prerequisite = { focus = maintain_the_romans_influence }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_new_era_for_armenia completed"
+		}
+	}
+
+	focus = {
+		id = send_envoys_to_rome
+		icon = GFX_goal_unknown
+		x = 16
+		y = 18
+		cost = 6
+
+		prerequisite = { focus = weaken_the_nobility }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus send_envoys_to_rome completed"
+		}
+	}
+
+	focus = {
+		id = deal_with_parthian_expansionism
+		icon = GFX_goal_unknown
+		x = 18
+		y = 18
+		cost = 6
+
+		prerequisite = { focus = bribe_the_peasants }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus deal_with_parthian_expansionism completed"
+		}
+	}
+
+	focus = {
+		id = envoys_to_the_north
+		icon = GFX_focus_generic_caucasus_kingdoms
+		x = 3
+		y = 20
+		cost = 6
+
+		prerequisite = { focus = unveil_the_great_projects }
+		prerequisite = { focus = the_republic_stands_strong }
+		prerequisite = { focus = the_nobility_reigns_supreme }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus envoys_to_the_north completed"
+		}
+	}
+
+	focus = {
+		id = expand_the_artashat_farmlands
+		icon = GFX_focus
+		x = 9
+		y = 20
+		cost = 6
+
+		prerequisite = { focus = a_new_era_for_armenia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus expand_the_artashat_farmlands completed"
+		}
+	}
+
+	focus = {
+		id = cooperation_with_the_nobility
+		icon = GFX_goal_unknown
+		x = 11
+		y = 20
+		cost = 6
+
+		prerequisite = { focus = a_new_era_for_armenia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus cooperation_with_the_nobility completed"
+		}
+	}
+
+	focus = {
+		id = an_eternal_dictature
+		icon = GFX_goal_unknown
+		x = 17
+		y = 20
+		cost = 6
+
+		prerequisite = { focus = send_envoys_to_rome }
+		prerequisite = { focus = deal_with_parthian_expansionism }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ARR_military_dictature
+				add_idea = ARR_eternal_dictature
+			}
+		}
+	}
+
+	focus = {
+		id = integrate_the_albanians
+		icon = GFX_goal_unknown
+		x = 2
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = envoys_to_the_north }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus integrate_the_albanians completed"
+		}
+	}
+
+	focus = {
+		id = sweep_the_egrisi
+		icon = GFX_focus_generic_attack_colci
+		x = 4
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = envoys_to_the_north }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus sweep_the_egrisi completed"
+		}
+	}
+
+	focus = {
+		id = large_manufacturing_programs
+		icon = GFX_manufacturies
+		x = 7
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = expand_the_artashat_farmlands }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus large_manufacturing_programs completed"
+		}
+	}
+
+	focus = {
+		id = the_cavalry_reborn
+		icon = GFX_focus_generic_horse_studs
+		x = 9
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = expand_the_artashat_farmlands }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_cavalry_reborn completed"
+		}
+	}
+
+	focus = {
+		id = grant_gifts_to_the_aristocrats
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 11
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = cooperation_with_the_nobility }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus grant_gifts_to_the_aristocrats completed"
+		}
+	}
+
+	focus = {
+		id = open_new_mines_in_northern_armenia
+		icon = GFX_focus_generic_mining_industry
+		x = 13
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = cooperation_with_the_nobility }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus open_new_mines_in_northern_armenia completed"
+		}
+	}
+
+	focus = {
+		id = militarisation_of_education
+		icon = GFX_goal_unknown
+		x = 16
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = an_eternal_dictature }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus militarisation_of_education completed"
+		}
+	}
+
+	focus = {
+		id = raise_taxes_for_war
+		icon = GFX_goal_unknown
+		x = 18
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = an_eternal_dictature }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus raise_taxes_for_war completed"
+		}
+	}
+
+	focus = {
+		id = legimitise_the_military_government
+		icon = GFX_goal_unknown
+		x = 20
+		y = 22
+		cost = 6
+
+		prerequisite = { focus = an_eternal_dictature }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus legimitise_the_military_government completed"
+		}
+	}
+
+	focus = {
+		id = integrate_iberia
+		icon = GFX_goal_unknown
+		x = 3
+		y = 23
+		cost = 6
+
+		prerequisite = { focus = integrate_the_albanians }
+		prerequisite = { focus = sweep_the_egrisi }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus integrate_iberia completed"
+		}
+	}
+
+	focus = {
+		id = reform_artashat_s_infrastructure
+		icon = GFX_focus_ARR_reform_artashat_infrastructure
+		x = 10
+		y = 23
+		cost = 6
+
+		prerequisite = { focus = grant_gifts_to_the_aristocrats }
+		prerequisite = { focus = the_cavalry_reborn }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reform_artashat_s_infrastructure completed"
+		}
+	}
+
+	focus = {
+		id = the_superior_cavalry
+		icon = GFX_goal_generic_cavalry
+		x = 17
+		y = 23
+		cost = 6
+
+		prerequisite = { focus = militarisation_of_education }
+		prerequisite = { focus = raise_taxes_for_war }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_superior_cavalry completed"
+		}
+	}
+
+	focus = {
+		id = reform_the_cult_around_the_sparapet
+		icon = GFX_focus_PER_legacy_of_greatness
+		x = 19
+		y = 23
+		cost = 6
+
+		prerequisite = { focus = legimitise_the_military_government }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reform_the_cult_around_the_sparapet completed"
+		}
+	}
+
+	focus = {
+		id = enforce_control_of_the_clergy
+		icon = GFX_focus_PER_revive_old_ways
+		x = 21
+		y = 23
+		cost = 6
+
+		prerequisite = { focus = legimitise_the_military_government }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus enforce_control_of_the_clergy completed"
+		}
+	}
+
+	focus = {
+		id = the_beacon_of_democracy
+		icon = GFX_goal_unknown
+		x = 0
+		y = 24
+		cost = 6
+
+		prerequisite = { focus = the_republic_stands_strong }
+		prerequisite = { focus = integrate_iberia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_beacon_of_democracy completed"
+		}
+	}
+
+	focus = {
+		id = masters_of_the_caucasus
+		icon = GFX_focus_SOV_transcaucasian_republic
+		x = 6
+		y = 24
+		cost = 6
+
+		prerequisite = { focus = the_nobility_reigns_supreme }
+		prerequisite = { focus = integrate_iberia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus masters_of_the_caucasus completed"
+		}
+	}
+
+	focus = {
+		id = look_towards_rome
+		icon = GFX_focus_ARR_look_towards_rome
+		x = 8
+		y = 25
+		cost = 6
+
+		prerequisite = { focus = reform_artashat_s_infrastructure }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus look_towards_rome completed"
+		}
+	}
+
+	focus = {
+		id = the_eastern_threat
+		icon = GFX_focus_generic_attack_parthians
+		x = 12
+		y = 25
+		cost = 6
+
+		prerequisite = { focus = reform_artashat_s_infrastructure }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus the_eastern_threat completed"
+		}
+	}
+
+	focus = {
+		id = contact_the_northern_nomads
+		icon = GFX_goal_unknown
+		x = 17
+		y = 25
+		cost = 6
+
+		prerequisite = { focus = the_superior_cavalry }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus contact_the_northern_nomads completed"
+		}
+	}
+
+	focus = {
+		id = deification_of_the_sparapet
+		icon = GFX_focus_PER_glory_of_cyrus
+		x = 20
+		y = 25
+		cost = 6
+
+		prerequisite = { focus = reform_the_cult_around_the_sparapet }
+		prerequisite = { focus = enforce_control_of_the_clergy }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus deification_of_the_sparapet completed"
+		}
+	}
+
+	focus = {
+		id = contact_the_caulci
+		icon = GFX_goal_unknown
+		x = 7
+		y = 26
+		cost = 6
+
+		prerequisite = { focus = look_towards_rome }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus contact_the_caulci completed"
+		}
+	}
+
+	focus = {
+		id = establish_embassies_with_pontus
+		icon = GFX_goal_unknown
+		x = 9
+		y = 26
+		cost = 6
+
+		prerequisite = { focus = look_towards_rome }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus establish_embassies_with_pontus completed"
+		}
+	}
+
+	focus = {
+		id = bribe_the_emperor_s_court
+		icon = GFX_goal_unknown
+		x = 11
+		y = 26
+		cost = 6
+
+		prerequisite = { focus = the_eastern_threat }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus bribe_the_emperor_s_court completed"
+		}
+	}
+
+	focus = {
+		id = contacts_in_media_atropatene
+		icon = GFX_goal_unknown
+		x = 13
+		y = 26
+		cost = 6
+
+		prerequisite = { focus = the_eastern_threat }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus contacts_in_media_atropatene completed"
+		}
+	}
+
+	focus = {
+		id = combined_raids_on_the_caucasus_kingdoms
+		icon = GFX_goal_unknown
+		x = 16
+		y = 26
+		cost = 6
+
+		prerequisite = { focus = contact_the_northern_nomads }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus combined_raids_on_the_caucasus_kingdoms completed"
+		}
+	}
+
+	focus = {
+		id = integration_of_sophene
+		icon = GFX_goal_unknown
+		x = 18
+		y = 26
+		cost = 6
+
+		prerequisite = { focus = contact_the_northern_nomads }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus integration_of_sophene completed"
+		}
+	}
+
+	focus = {
+		id = negociations_over_reunification
+		icon = GFX_focus_ARR_negociations_over_reunification
+		x = 8
+		y = 28
+		cost = 6
+
+		prerequisite = { focus = establish_embassies_with_pontus }
+		prerequisite = { focus = contact_the_caulci }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus negociations_over_reunification completed"
+		}
+	}
+
+	focus = {
+		id = raid_the_southern_border
+		icon = GFX_goal_unknown
+		x = 12
+		y = 27
+		cost = 6
+
+		prerequisite = { focus = bribe_the_emperor_s_court }
+		prerequisite = { focus = contacts_in_media_atropatene }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus raid_the_southern_border completed"
+		}
+	}
+
+	focus = {
+		id = unify_the_caucasus
+		icon = GFX_goal_unknown
+		x = 17
+		y = 28
+		cost = 6
+
+		prerequisite = { focus = combined_raids_on_the_caucasus_kingdoms }
+		prerequisite = { focus = integration_of_sophene }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus unify_the_caucasus completed"
+		}
+	}
+
+	focus = {
+		id = pontus_is_ours
+		icon = GFX_goal_unknown
+		x = 6
+		y = 30
+		cost = 6
+
+		prerequisite = { focus = negociations_over_reunification }
+		mutually_exclusive = { focus = our_roman_enemies }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus pontus_is_ours completed"
+		}
+	}
+
+	focus = {
+		id = our_roman_enemies
+		icon = GFX_goal_unknown
+		x = 10
+		y = 30
+		cost = 6
+
+		prerequisite = { focus = negociations_over_reunification }
+		mutually_exclusive = { focus = pontus_is_ours }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus our_roman_enemies completed"
+		}
+	}
+
+	focus = {
+		id = lay_claims_on_adiabene
+		icon = GFX_focus_generic_redrawn_borders
+		x = 12
+		y = 28
+		cost = 6
+
+		prerequisite = { focus = raid_the_southern_border }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus lay_claims_on_adiabene completed"
+		}
+	}
+
+	focus = {
+		id = a_new_dawn_on_armenia
+		icon = GFX_goal_unknown
+		x = 19
+		y = 29
+		cost = 6
+
+		prerequisite = { focus = deification_of_the_sparapet }
+		prerequisite = { focus = unify_the_caucasus }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_new_dawn_on_armenia completed"
+		}
+	}
+
+	focus = {
+		id = reintegration_of_pontus
+		icon = GFX_focus_generic_negociate_pontus
+		x = 5
+		y = 31
+		cost = 6
+
+		prerequisite = { focus = pontus_is_ours }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reintegration_of_pontus completed"
+		}
+	}
+
+	focus = {
+		id = overlordship_over_the_egrisi
+		icon = GFX_goal_unknown
+		x = 7
+		y = 31
+		cost = 6
+
+		prerequisite = { focus = pontus_is_ours }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus overlordship_over_the_egrisi completed"
+		}
+	}
+
+	focus = {
+		id = an_alliance_with_the_devil
+		icon = GFX_goal_unknown
+		x = 10
+		y = 31
+		cost = 6
+
+		prerequisite = { focus = our_roman_enemies }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus an_alliance_with_the_devil completed"
+		}
+	}
+
+	focus = {
+		id = use_internal_tensions
+		icon = GFX_goal_unknown
+		x = 12
+		y = 29
+		cost = 6
+
+		prerequisite = { focus = lay_claims_on_adiabene }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus use_internal_tensions completed"
+		}
+	}
+
+	focus = {
+		id = pans_towards_asia_minor
+		icon = GFX_focus_generic_levant_and_anatolia
+		x = 19
+		y = 30
+		cost = 6
+
+		prerequisite = { focus = a_new_dawn_on_armenia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus pans_towards_asia_minor completed"
+		}
+	}
+
+	focus = {
+		id = attack_the_cimmerian_kingdom
+		icon = GFX_focus_generic_attack_bop
+		x = 6
+		y = 32
+		cost = 6
+
+		prerequisite = { focus = overlordship_over_the_egrisi }
+		prerequisite = { focus = reintegration_of_pontus }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus attack_the_cimmerian_kingdom completed"
+		}
+	}
+
+	focus = {
+		id = masses_anti_roman_opposition
+		icon = GFX_focus_ARR_masses_anti_roman_opposition
+		x = 9
+		y = 32
+		cost = 6
+
+		prerequisite = { focus = an_alliance_with_the_devil }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus masses_anti_roman_opposition completed"
+		}
+	}
+
+	focus = {
+		id = a_pact_with_the_nomads
+		icon = GFX_goal_unknown
+		x = 11
+		y = 32
+		cost = 6
+
+		prerequisite = { focus = an_alliance_with_the_devil }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus a_pact_with_the_nomads completed"
+		}
+	}
+
+	focus = {
+		id = buy_out_the_egrisi
+		icon = GFX_goal_unknown
+		x = 18
+		y = 31
+		cost = 6
+
+		prerequisite = { focus = pans_towards_asia_minor }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus buy_out_the_egrisi completed"
+		}
+	}
+
+	focus = {
+		id = attack_pontus
+		icon = GFX_focus_generic_attack_pontus
+		x = 20
+		y = 31
+		cost = 6
+
+		prerequisite = { focus = pans_towards_asia_minor }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus attack_pontus completed"
+		}
+	}
+
+	focus = {
+		id = achieve_polemon_s_dream
+		icon = GFX_focus_ARR_achieve_polemons_dream
+		x = 6
+		y = 33
+		cost = 6
+
+		prerequisite = { focus = attack_the_cimmerian_kingdom }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus achieve_polemon_s_dream completed"
+		}
+	}
+
+	focus = {
+		id = contact_the_germans
+		icon = GFX_focus_ARR_contact_the_germans
+		x = 10
+		y = 33
+		cost = 6
+
+		prerequisite = { focus = masses_anti_roman_opposition }
+		prerequisite = { focus = a_pact_with_the_nomads }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus contact_the_germans completed"
+		}
+	}
+
+	focus = {
+		id = push_towards_syria
+		icon = GFX_goal_unknown
+		x = 19
+		y = 32
+		cost = 6
+
+		prerequisite = { focus = buy_out_the_egrisi }
+		prerequisite = { focus = attack_pontus }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus push_towards_syria completed"
+		}
+	}
+
+	focus = {
+		id = bring_down_the_princeps
+		icon = GFX_goal_unknown
+		x = 10
+		y = 34
+		cost = 6
+
+		prerequisite = { focus = contact_the_germans }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus bring_down_the_princeps completed"
+		}
+	}
+
+	focus = {
+		id = reclaim_jerusalem
+		icon = GFX_goal_unknown
+		x = 18
+		y = 33
+		cost = 6
+
+		prerequisite = { focus = push_towards_syria }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus reclaim_jerusalem completed"
+		}
+	}
+
+	focus = {
+		id = take_control_of_cappadocia
+		icon = GFX_goal_unknown
+		x = 20
+		y = 33
+		cost = 6
+
+		prerequisite = { focus = push_towards_syria }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus take_control_of_cappadocia completed"
+		}
+	}
+
+	focus = {
+		id = restoration_of_the_armenian_empire
+		icon = GFX_goal_unknown
+		x = 19
+		y = 34
+		cost = 6
+
+		prerequisite = { focus = reclaim_jerusalem }
+		prerequisite = { focus = take_control_of_cappadocia }
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus restoration_of_the_armenian_empire completed"
+		}
+	}
+
 }
+
+# Localization file auto-generated: localisation/english/arr_ARR_focus_l_english.yml

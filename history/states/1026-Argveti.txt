@@ -4,16 +4,17 @@ state={
 	provinces={
 		1530 6669 6671 
 	}
-	manpower = 15
+	manpower = 49560
 	history = {
 		owner = IBR
 		add_core_of = IBR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			industrial_complex = 1
+			arms_factory = 1
 		}
 	}
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }

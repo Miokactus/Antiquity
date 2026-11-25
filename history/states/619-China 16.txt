@@ -1,18 +1,18 @@
 state={
 	id=619
-	name="STATE_619"
-	resources={
-		aluminium=2
-		chromium=2
+	name = "STATE_619"
+	resources = {
+		aluminium = 2
+		chromium = 2
 	}
-	provinces={
-		5016 7790 
-	}
+	provinces = { 5016 7790 }
 	history = {
-		owner = AAN
+		owner = WPC
+		controller = WPC
+		add_core_of = WPC
 	}
-	manpower=1430700
+	manpower = 1430700
 	buildings_max_level_factor=1
-	state_category=pastoral
+	state_category = pastoral
 	local_supplies=0
 }

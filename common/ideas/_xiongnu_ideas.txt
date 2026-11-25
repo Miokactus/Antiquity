@@ -202,5 +202,126 @@ ideas = {
 			}
 		}
 
+
+		XAI_reorganising_the_court = {
+			name = "Reorganising the Court"
+			allowed_civil_war = { always = yes }
+			picture = JAP_press_association_idea
+			
+			modifier = {
+				power_balance_weekly = -0.001
+				consumer_goods_factor = -0.15
+				stability_factor = -0.1
+				political_power_factor = -0.1
+			}
+		}
+
+		XAI_no_peace_with_the_chinese = {
+			name = "No Peace with the Chinese"
+			allowed_civil_war = { always = yes }
+			picture = HUN_the_rakosi_battalion_idea
+			cancel = {
+				744 = {
+					owner = {
+						XAI = {
+							is_subject_of = FROM
+						}
+					}
+				}
+			}
+			targeted_modifier = {
+				tag = XIN
+				attack_bonus_against = 0.05
+				trade_cost_for_target_factor = 1
+				extra_trade_to_target_factor = -1
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		XAI_renewed_formation_of_danghu = {
+			name = "Formation of New Danghu"
+			allowed_civil_war = { always = yes }
+			picture = PER_qorkhaneh
+			cancel = {
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				compliance_growth_on_our_occupied_states = 0.1
+				army_attack_speed_factor = 0.05
+			}
+		}
+
+		XAI_the_grand_chanyu = {
+			name = "The Grand Chanyu"
+			allowed_civil_war = { always = yes }
+			picture = AST_liberty_loans
+			cancel = {
+			}
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				command_power_gain_mult = 0.15
+				experience_gain_army = 0.15
+			}
+		}
+
+		XAI_a_new_hegemon = {
+			name = "A New Hegemon"
+			allowed_civil_war = { always = yes }
+			picture = SOV_restore_the_glory_of_the_motherland_ccp_sov_compatibility
+			cancel = {
+			}
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				command_power_gain_mult = 0.15
+				experience_gain_army = 0.15
+			}
+		}
+
+		XAI_balanced_council = {
+			name = "A Balanced Council"
+			allowed_civil_war = { always = yes }
+			picture = generic_constitutional_guarantees
+			cancel = {
+			}
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+
+		XAI_rightist_council = {
+			name = "A Rightist Council"
+			allowed_civil_war = { always = yes }
+			picture = generic_constitutional_guarantees
+			cancel = {
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.2
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+
+		XAI_good_neighbour = {
+			name = "Good Neighbour Policy"
+			allowed_civil_war = { always = yes }
+			picture = generic_constitutional_guarantees
+			cancel = {
+			}
+			targeted_modifier = {
+				tag = XIN
+				trade_cost_for_target_factor = -0.5
+				trade_opinion_factor = 0.5
+			}
+			modifier = {
+				experience_gain_army_factor = 0.15
+			}
+		}
 	}
 }

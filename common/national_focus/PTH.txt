@@ -71,7 +71,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_a_decentralised_government
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PTH_a_decentralised_government
 		x = 3
 		y = 1
 		cost = 10
@@ -588,7 +588,13 @@ focus_tree = {
 		prerequisite = { focus = PTH_appeasement_with_rome }
 
 		ai_will_do = {
-			factor = 1
+			base = 0
+			modifier = {
+				add = 1
+				ARR = {
+					has_completed_focus = an_invite_to_syria
+				}
+			}
 		}
 
 		completion_reward = {
@@ -603,7 +609,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_establish_contact_with_the_nomads
-		icon = GFX_focus_generic_horse_studs
+		icon = GFX_focus_PTH_establish_contacts_with_the_nomads
 		x = 8
 		y = 3
 		cost = 10
@@ -632,6 +638,7 @@ focus_tree = {
 				}
 				country_event = {
 					id = arsacid_event.28
+					days = 1
 				}
 			}
 		}
@@ -639,16 +646,33 @@ focus_tree = {
 
 	focus = {
 		id = PTH_intervention_in_armenia
-		icon = GFX_focus_attacking_armenia
+		icon = GFX_focus_attack_armenia
 		x = 10
 		y = 3
 		cost = 10
 
 		prerequisite = { focus = PTH_escalate_the_conflict }
 		prerequisite = { focus = PTH_assume_the_council_s_powers }
-
+		bypass = {
+			NOT = {
+				ARR = {
+					has_country_leader = {
+						character = ARR_vonones_i
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		available = {
+			ARR = {
+				has_country_leader = {
+					character = ARR_vonones_i
+					ruling_only = yes
+				}
+			}
+		}
 		ai_will_do = {
-			factor = 1
+			base = 0
 		}
 
 		completion_reward = {
@@ -936,7 +960,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_promote_zoroastrianism
-		icon = GFX_goal_unknown
+		icon = GFX_focus_PTH_promote_zoroastrianism
 		x = 14
 		y = 4
 		cost = 10
@@ -1585,7 +1609,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_reclaim_the_east
-		icon = GFX_focus_generic_annex_country_2
+		icon = GFX_focus_PTH_reclaim_the_east
 		x = 8
 		y = 6
 		cost = 10
@@ -1683,7 +1707,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_reform_the_achaemenid_empire
-		icon = GFX_focus_CZE_bohemia_crown
+		icon = GFX_focus_PTH_reform_the_achaemenid_empire
 		x = 10
 		y = 9
 		cost = 10
@@ -2056,7 +2080,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_conquer_armenia
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 11
 		y = 18
 		cost = 10
@@ -2090,7 +2114,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_christianise_the_coast
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 9
 		y = 18
 		cost = 10
@@ -2131,7 +2155,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_christianise_the_eastern_roman_lands
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 10
 		y = 19
 		cost = 10
@@ -2338,7 +2362,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_the_faraway_kingdom_of_samatata
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 16
 		y = 18
 		cost = 10
@@ -2366,7 +2390,7 @@ focus_tree = {
 
 	focus = {
 		id = PTH_the_city_states_of_the_east
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 18
 		y = 18
 		cost = 10

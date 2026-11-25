@@ -2153,6 +2153,34 @@ country_event = {
 	}
 }
 
+## Broke promise of peace
+country_event = {
+	id = rome_event.114
+	title = rome_event.114.t
+	desc = rome_event.114.d
+	
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Here we go again..
+		name = rome_event.114.a
+		ai_chance = { factor = 1 }
+		add_war_support = -0.02
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.08
+		}
+		custom_effect_tooltip = ROE_lose_20_senators
+		set_temp_variable = { temp_member = 1 }
+		set_temp_variable = { temp_seats = -20 }
+		modify_parliament_seat = yes
+	}
+}
+
 
 #Military Coup d'Etat in Rome [news]
 news_event = {

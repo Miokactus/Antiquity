@@ -1,0 +1,120 @@
+characters = {
+	ARR_vonones_i = {
+		name = "Vonones I"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ARR_vonones_i"
+            }
+        }
+		country_leader = {
+			desc = "VONONES_DESC"
+			expire = "38.5.4"
+			ideology = oligarchism_comm
+			traits = {
+				
+			}
+		}
+	}
+
+	ARR_interregnum = {
+		name = "Interregnum"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_military_council"
+            }
+        }
+		country_leader = {
+			desc = "INTERREGNUM_DESC"
+			expire = "250.5.4"
+			ideology = oligarchism_comm
+			traits = {
+				
+			}
+		}
+	}
+
+	ARR_state_assembly = {
+		name = "Assembly of Armenia"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_comitia"
+            }
+        }
+		country_leader = {
+			desc = "AST_ARMENIA_DESC"
+			expire = "250.5.4"
+			ideology = popular_assemblies
+			traits = {
+				
+			}
+		}
+	}
+
+	ARR_armenian_senate = {
+		name = "Senate of Armenia"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_senate_rome"
+            }
+        }
+		country_leader = {
+			desc = "SEN_ARMENIA_DESC"
+			expire = "250.5.4"
+			ideology = oligarchism_comm
+			traits = {
+				
+			}
+		}
+	}
+
+	ARR_artaxias_iii = {
+		name = "Artaxias III"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_military_council"
+            }
+        }
+		country_leader = {
+			desc = "ARTAXIAS_DESC"
+			expire = "80.5.4"
+			ideology = oligarchism_comm
+			traits = {
+				
+			}
+		}
+	}
+
+	ARR_armenian_army = {
+		name = "Armenian Army"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_military_council"
+            }
+        }
+		country_leader = {
+			desc = "ARMENIAN_ARMY_DESC"
+			expire = "250.5.4"
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+
+	ARR_sparapet = {
+		name = "Sparapet"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_ROE_military_council"
+            }
+        }
+		country_leader = {
+			desc = "SPARAPET_DESC"
+			expire = "250.5.4"
+			ideology = military_junta
+			traits = {
+				
+			}
+		}
+	}
+}

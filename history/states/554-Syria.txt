@@ -4,6 +4,10 @@ state={
 	provinces={
 		 4111 4486 7184 
 	}
+	resources = {
+		grain = 3
+		chromium = 4
+	}
 	history = {
 		owner = NAB
 		add_core_of = NAB

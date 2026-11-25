@@ -41,7 +41,12 @@ spriteTypes = {
     }
 
     spriteType = {
-        name = "GFX_autonomy_satrap_custom_icon"
+        name = "GFX_autonomy_satrap_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_tributary_puppet.dds" # The folder and filename don't matter, as long as they are correct
+    }
+
+    spriteType = {
+        name = "GFX_autonomy_personal_union_icon"
         texturefile = "gfx/interface/autonomy/autonomy_tributary_puppet.dds" # The folder and filename don't matter, as long as they are correct
     }
 
@@ -371,6 +376,11 @@ spriteTypes = {
     spriteType = {
         name = "GFX_leader_PTH_artabanus_ii"
         texturefile = "gfx/characters/PTH_artabanus_ii.dds"
+    }
+
+    spriteType = {
+        name = "GFX_leader_ARR_vonones_i"
+        texturefile = "gfx/characters/ARR_vonones_i.dds"
     }
 
 ## GERMANIA GFX ##

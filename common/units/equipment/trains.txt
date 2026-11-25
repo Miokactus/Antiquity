@@ -29,7 +29,7 @@ equipments = {
 
 		archetype = train_equipment
 		priority = 10
-
+		active = no
 		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
 
 		build_cost_ic = 70
@@ -45,7 +45,7 @@ equipments = {
 		archetype = train_equipment
 		parent = train_equipment_1
 		priority = 20
-
+		active = no
 		build_cost_ic = 50
 		resources = {
 			steel = 1
@@ -59,7 +59,7 @@ equipments = {
 		archetype = train_equipment
 		parent = train_equipment_1
 		priority = 30
-
+		active = no
 		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
 		air_attack = 18
 

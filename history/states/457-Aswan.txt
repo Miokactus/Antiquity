@@ -3,7 +3,9 @@ state=
 	id=457
 	name="STATE_457" # Arabian Desert
 	manpower = 120194
-	
+	resources = {
+		gold_ingot = 2
+	}
 	state_category = wasteland
 	
 	history = {

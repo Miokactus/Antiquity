@@ -1,0 +1,20 @@
+﻿l_english:
+ ARR_parthian_threat: "The Parthian Threat"
+ upcoming_parthian_invasion: "Upcoming Parthian Intervention"
+ persecutions: "Persecutions"
+
+ ## EVENTS
+
+ armenian_event.1.t: "An Invite to Syria"
+ armenian_event.1.d: "Great news! The roman governor of Syria, Silanus, has invited our king, Vonones, to his court in Antioch for a diplomatic meeting of high importance. It is unknown about what they will talk about, but many are seeing this gesture as a first step towards increased peace with Rome and protection against the Parthians, whom are ready to ravage Armenia! Hopefully, nothing bad happens during the travel, as Vonones is expected to return to Artashat soon enough."
+ armenian_event.1.a: "Bon voyage!"
+
+ armenian_event.2.t: "Vonones Emprisoned in Syria!"
+ armenian_event.2.d: "In a strange turn of event, Vonones has been emprisoned in Syria, although in a very luxurious prison! The governor has already dispatched an envoy to Artashat, explaining that the King was merely in prolonged vacation and that he shall return, one day or another. However, until then, he insisted that Vonones was still King of Armenia, and that under no circumstance he shall be considered deposed.n\nThe nobility immediately rose up, asking for the rights to elect or appoint a new King, without much success. Thus, an interregnum that does not say its name starts in Armenia."
+ armenian_event.2.a: "What?"
+ armenian_event.2.b: "A good gesture from our friends."
+ armenian_event.2.c: "Keep good hold of him."
+
+ armenian_event.3.t: ""
+ armenian_event.3.d: ""
+ armenian_event.3.a: ""

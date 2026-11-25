@@ -1,0 +1,7 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_steppe_russia"
+		texturefile = "gfx/interface/parliament_sample/steppe_russia.dds"	
+	}
+
+}

@@ -8,7 +8,7 @@ unification_decisions = {
     }
     priority = 50
     picture = GFX_decision_category_picture
-    icon = POL_category
+    icon = GFX_decision_category_generic_propaganda
     visible_when_empty = no
 }
 
@@ -21,7 +21,34 @@ war_actions = {
     }
     priority = 80
     picture = GFX_decision_category_picture
-    icon = POL_category
+    icon = GFX_decision_category_usa_intervention_mandate
+    visible_when_empty = no
+}
+
+horse_domestication_category = {
+    allowed = {
+        always = no
+    }
+    visible = {
+        has_tech = horse_domestication
+    }
+    priority = 1500
+    picture = GFX_decision_category_picture
+    icon = GFX_RAJ_decision_investment_infra_icon
+    visible_when_empty = yes
+    scripted_gui = horse_scripted_gui
+}
+
+## ARMENIA
+ARR_parthian_threat = {
+    allowed = {
+        tag = ARR
+    }
+    visible = {
+    }
+    priority = 50
+    picture = GFX_decision_category_picture
+    icon = GFX_decision_category_generic_propaganda
     visible_when_empty = no
 }
 
@@ -51,7 +78,7 @@ parthian_crisis = {
     }
     priority = 80
     picture = GFX_decision_category_picture
-    icon = POL_category
+    icon = GFX_decision_category_power_struggle
     visible_when_empty = no
 }
 
@@ -92,7 +119,7 @@ parthian_administration_flags = {
     }
     priority = 30
     picture = GFX_decision_category_picture
-    icon = POL_category
+    icon = GFX_decision_category_usa_congress
     visible_when_empty = yes
     scripted_gui = arsacid_scripted_gui_flags
 }
@@ -155,9 +182,6 @@ tuqi_kings_council = {
         has_power_balance = {
 			id = XAI_tuqi_kings
 		}
-        NOT = {
-            has_completed_focus = XAI_towards_integrating_tributaries
-        }
     }
     priority = 60
     picture = GFX_decision_category_picture
@@ -167,8 +191,7 @@ tuqi_kings_council = {
 
 xiongnu_foment_unrest_in_china = {
     allowed = {
-        always = yes
-        tag = XAI
+        original_tag = XAI
     }
     visible = {
         has_completed_focus = XAI_foment_unrest_in_china
@@ -176,35 +199,30 @@ xiongnu_foment_unrest_in_china = {
     priority = 20
     picture = GFX_decision_category_picture
     icon = POL_category
-    visible_when_empty = no
+}
+
+xiongnu_raids = {
+    allowed = {
+        original_tag = XAI
+    }
+    visible = {
+        has_completed_focus = XAI_continue_the_raids
+    }
+    priority = 20
+    picture = GFX_decision_category_picture
+    icon = POL_category
 }
 
 ## TRIBAL
 tribal_actions = {
     allowed = {
-        OR = {
-			has_government = neutrality
-			has_government = communism
-		}
+		has_government = neutrality
         NOT = {
             tag = XAI
         }
     }
     visible = {
-        OR = {
-			has_government = neutrality
-			tag = JIN
-			tag = MAH
-			tag = EYE
-			tag = BAE
-			tag = GOR
-			tag = MMD
-			tag = SAV
-			tag = CTU
-			tag = CLO
-			tag = CER
-			tag = MTI
-		}
+		has_government = neutrality
     }
     priority = 10
     picture = GFX_decision_category_picture
@@ -400,7 +418,7 @@ korean_situation_xin = {
         XIN = {
             has_completed_focus = XIN_the_korean_problem
         }
-        always = no
+        is_debug = yes
     }
     priority = 10
     picture = GFX_decision_category_picture
@@ -411,12 +429,24 @@ korean_situation_xin = {
 sino_xiongnu_relations = {
     allowed = {
         original_tag = XIN
+        original_tag = XAI
     }
     visible = {
-        XIN = {
-            has_completed_focus = XIN_sino_xiongnu_relations
+        OR = {
+            if = {
+                limit = {
+                    XIN = {
+                        exists = yes
+                    }
+                }
+                tag = XIN
+                else = {
+                    tag = ANN
+                }
+            }
         }
-        always = no
+        tag = XAI
+        is_debug = yes
     }
     priority = 10
     picture = GFX_decision_category_picture

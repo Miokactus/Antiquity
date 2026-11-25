@@ -8,14 +8,15 @@ state={
 		owner = EYA
 		add_core_of = EYA
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {
 			7021 2
 		}
 	}
-	manpower=15000
+	manpower=120000
 	buildings_max_level_factor=1.000
 	state_category=town
 	local_supplies=0.000

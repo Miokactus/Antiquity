@@ -13,13 +13,8 @@ tribal_actions = {
     	}
 		available = {
 			has_manpower > 500
-			OR = {
-				has_equipment = {
-    				infantry_equipment_1 > 100
-				}
-				has_equipment = {
-    				swords_and_spears_archetype > 100
-				}
+			has_equipment = {
+    			swords_and_spears_archetype > 100
 			}
 			FROM = {
 				NOT = {
@@ -60,18 +55,6 @@ tribal_actions = {
 				country_event = {
 					id = tribal.2
 					days = 2
-				}
-			}
-			if = {
-				limit = {
-					has_equipment = {
-						infantry_equipment_1 > 100
-					}
-				}
-				add_equipment_to_stockpile = {
-					type = infantry_equipment_1
-					amount = -100
-					producer = ROOT
 				}
 			}
 			if = {

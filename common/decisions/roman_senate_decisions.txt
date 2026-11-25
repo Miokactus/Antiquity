@@ -6,6 +6,11 @@ roman_senate_decision_category = {
 		allowed = {
 			original_tag = ROE
     	}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
+		}
 		available = {
 			NOT = {
 				has_country_flag = ROE_senate_debating
@@ -39,6 +44,11 @@ roman_senate_decision_category = {
 		allowed = {
 			original_tag = ROE
     	}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
+		}
 		available = {
 			any_owned_state = {
 				OR = {
@@ -125,6 +135,11 @@ roman_senate_decision_category = {
 		allowed = {
 			original_tag = ROE
     	}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
+		}
 		available = {
 			any_owned_state = {
 				OR = {
@@ -209,6 +224,11 @@ roman_senate_decision_category = {
     	}
 		available = {
 		}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
+		}
 		days_re_enable = 140
 		days_remove = 10
 		complete_effect = {
@@ -242,6 +262,11 @@ roman_senate_decision_category = {
 				region = 23
 			}
 		}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
+		}
 		days_re_enable = 150
 		complete_effect = {
 			custom_effect_tooltip = ROE_add_10_senators_italia
@@ -263,7 +288,7 @@ roman_senate_decision_category = {
 	promise_investments_in_italia_mission = {
 		icon = GFX_decision_generic_welfare
 		cost = 50
-		days_mission_timeout = 80
+		days_mission_timeout = 200
 		priority = 1000
 		is_good = yes
 		activation = {
@@ -272,6 +297,11 @@ roman_senate_decision_category = {
 		allowed = {
 			original_tag = ROE
     	}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
+		}
 		available = {
 			any_state_in = {
 				strategic_region = 23
@@ -312,9 +342,15 @@ roman_senate_decision_category = {
 		cost = 1
 		allowed = {
 			original_tag = ROE
+			is_debug = yes
     	}
 		available = {
 			is_debug = yes
+		}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
 		}
 		complete_effect = {
 			set_temp_variable = { temp_member = 1 }
@@ -328,9 +364,15 @@ roman_senate_decision_category = {
 		cost = 1
 		allowed = {
 			original_tag = ROE
+			is_debug = yes
     	}
 		available = {
 			is_debug = yes
+		}
+		visible = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
 		}
 		complete_effect = {
 			set_temp_variable = { temp_member = 1 }
@@ -464,6 +506,27 @@ roman_senate_decision_category = {
 		}
 		ai_will_do = {
 			base = 2
+		}
+	}
+	
+	dissolve_the_senate = {
+		icon = GFX_decision_generic_break_treaty
+		priority = 1000
+		cost = 150
+		allowed = {
+			original_tag = ROE
+		}
+		available = {
+			NOT = {
+				has_country_flag = senate_dissolved
+			}
+		}
+		complete_effect = {
+			set_country_flag = senate_dissolved
+			country_event = {
+				id = roman_senate.7
+				days = 1
+			}
 		}
 	}
 }

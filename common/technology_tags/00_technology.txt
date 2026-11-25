@@ -9,6 +9,7 @@ technology_categories = {
 	carts
 	chariots
 	spears
+	siege_equipment_cat
 
 
 
@@ -16,6 +17,7 @@ technology_categories = {
 
 
 	#### FOR VANILLA PURPOSES
+	motorized_equipment
 	light_air
 	medium_air
 	heavy_air
@@ -158,6 +160,14 @@ technology_folders = {
 	}
 
 	wheeled_folder = {
+		ledger = army
+	}
+
+	siege_equipment_folder = {
+		ledger = army
+	}
+
+	industrial_folder = {
 		ledger = army
 	}
 

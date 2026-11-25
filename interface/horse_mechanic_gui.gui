@@ -1,0 +1,64 @@
+guiTypes = {
+	containerWindowType = {
+		name = "horse_gui"
+		position = { x = 30 y = 0 }
+		size = { width = 500 height= 520 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window"
+		}
+
+		iconType = {
+			name = "test_steppe"
+			spriteType = "GFX_steppe_russia"
+			position = { x= -210 y = -20 }
+			Orientation = "center"
+		}
+
+		instantTextBoxType = {
+			name = "horse_gui_title"
+			position = { x = 0 y = 30 }
+			font = "hoi_24header"
+			text = "HORSE_GUI_TITLE"
+			maxWidth = 500
+			maxHeight = 24
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "horse_gui_percentage"
+			position = { x = 0 y = 100 }
+			font = "hoi_20header"
+			text = "HORSE_GUI_PERCENT"
+			maxWidth = 500
+			maxHeight = 24
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "horse_gui_fertile_states"
+			position = { x = 20 y = 140 }
+			font = "hoi_18header"
+			text = "HORSE_GUI_FERTILE_STATES"
+			maxWidth = 400
+			maxHeight = 24
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "horse_gui_production"
+			position = { x = 20 y = 180 }
+			font = "hoi_18header"
+			text = "HORSE_GUI_PRODUCTION"
+			maxWidth = 400
+			maxHeight = 24
+			format = left
+		}
+
+
+		
+
+
+	}
+}

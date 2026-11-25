@@ -3,7 +3,8 @@ state={
 	name = "STATE_1173"
 	provinces = { 7702 13385 }
 	history = {
-		owner = KKC
+		owner = WPC
+		controller = WPC
 		add_core_of = KKC
 		victory_points = { 7702 1 }
 

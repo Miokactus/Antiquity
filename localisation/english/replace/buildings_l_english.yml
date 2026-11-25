@@ -170,14 +170,16 @@
 
  mine: "Mine"
  mine_plural: "Mines"
- mine_desc: ""
+ mine_desc: "A mine used to find gold or steel in rich areas of the world. Thanks to it, you too can be rich!"
  farm: "Farm"
  farm_plural: "Farms"
- farm_desc: ""
+ farm_desc: "Used to grow crops and grain, it is essential for countries without any access either to trade or too poor to afford trading."
  woodwork: "Woodwork"
  woodwork_plural: "Woodworks"
- woodwork_desc: ""
-
+ woodwork_desc: "Pillar of a nation, woodworks are useful to gain wood from neighbouring forests or plains, depending on where you're located."
+ aqueduct: "Aqueduct"
+ aqueduct_plural: "Aqueducts"
+ aqueduct_desc: "Transporting water from one point to another, aqueducts are vital for modern societies, allowing for large cities to sustain themselves thanks to faraway water sources."
 
 
 

@@ -23,6 +23,19 @@
  xai_event.5.d: "An envoy has returned to the Court; with an answer from the Chinese. They are deepened to inform us that they do not wish to engage in any sort of pact with us, citing that we are 'no more than mere vassals of the Heavenly Empire', effectively treating us like petty subjects. The Military sees this as a victory, as many in our Government predicted this outcome."
  xai_event.5.a: "Restart the Raids!"
 
+ xai_event.6.t: "Korean Envoys"
+ xai_event.6.d: "Grave news are coming from the North; the Xiongnu, under the leadership of their Chanyu, has declared that the Korean Peninsula will soon be forced to submit to their power, one way or another."
+ xai_event.6.a: "These pesky Xiongnu!"
+
+ xai_event.7.t: "The Role of the Chanyu"
+ xai_event.7.d: "While we do not engage into large reforms, we still need a bit of clarification over the role of the Chanyu, the grand leader of the steppes. As most of the power lies within the Council's hands, the Chanyu still acts as the principal figure in our Empire. What should it represent?"
+ xai_event.7.a: "A military commander!"
+ xai_event.7.b: "A ceremonial head of state."
+
+ xai_event.8.t: "Raids on the Chinese North"
+ xai_event.8.d: "Our forces are now mobilised around the northern border of the Chinese nation, waiting for orders to cross and raid their wealthy cities."
+ xai_event.8.a: "Onwards!"
+
 
  ## LINKED EVENTS (XAI - CHINA ) ##
  ################################## 

@@ -201,3 +201,84 @@ tuqi_kings_council = {
 		}
 	}
 }
+
+xiongnu_foment_unrest_in_china = {}
+
+
+
+xiongnu_raids = {
+	raid_the_chinese_north = {
+		icon = GFX_decision_generic_police_action
+		cost = 40
+		target_root_trigger = { TAG = ROOT }
+		state_target = yes
+		days_re_enable = 50
+		target_trigger = { 
+			FROM = {
+				NOT = {
+					owner = {
+						is_subject_of = ROOT
+						is_ally_with = ROOT
+					}
+				}
+				owner = {
+					OR = {
+						tag = XIN
+						tag = ANN
+						any_country = {
+							limit = {
+								is_ally_with = XIN
+							}
+						}
+					}
+				}
+				NOT = {
+					is_capital = yes
+					is_owned_by = ROOT
+				}
+				OR = {
+					state = 760
+					state = 756
+					state = 616
+					state = 621
+					state = 611
+					state = 610
+					state = 746
+					state = 616
+					state = 589
+					state = 618
+					state = 586
+				}
+			}
+		}
+		allowed = {
+			tag = XAI
+		}
+		available = {
+			FROM = {
+				owner = {
+					NOT = {
+						has_country_flag = XAI_raiding
+					}
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = XAI_continue_the_raids
+		}
+		complete_effect = {
+			owner = {
+				country_event = {
+					id = xai_event.8
+					days = 3
+				}
+				set_country_flag = XAI_raiding
+			}
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+			base = 2
+		}
+	}	
+}

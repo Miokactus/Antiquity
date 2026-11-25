@@ -8,11 +8,9 @@ tags={
 	"Utilities"
 	"Technologies"
 }
-replace_path="common/decisions"
-replace_path="common/decisions/categories"
 replace_path="gfx/loadingscreens"
 replace_path="history/states"
 replace_path="map/*"
 name="Hearts of Marble"
-supported_version="1.19.*"
+supported_version="1.20.*"
 remote_file_id="3674769404"

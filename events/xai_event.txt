@@ -185,10 +185,127 @@ country_event = {
 	}
 }
 
+## Warning to the Koreans
+country_event = {
+	id = xai_event.6
+	title = xai_event.6.t
+	desc = xai_event.6.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_battle
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Those pesty Xiongnu!
+		name = xai_event.6.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+		add_stability = -0.05
+	}
+}
 
+## Role of the Chanyu
+country_event = {
+	id = xai_event.7
+	title = xai_event.7.t
+	desc = xai_event.7.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # A strong leader over all the steppe!
+		name = xai_event.7.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+		add_stability = -0.05
+		add_power_balance_value = {
+    		id = XAI_tuqi_kings
+    		value = 0.05
+    		tooltip_side = XAI_left_king_side
+		}
+		add_trait = {
+    		character = wulei_chanyu
+			ideology = nomadism
+     		trait = strong_commander
+		}
+	}
+	option = { # A ceremonial head of state
+		name = xai_event.7.b
+		ai_chance = { factor = 1 }
+		add_war_support = -0.05
+		add_stability = 0.05
+		add_power_balance_value = {
+    		id = XAI_tuqi_kings
+    		value = -0.05
+    		tooltip_side = XAI_right_king_side
+		}
+		add_trait = {
+    		character = wulei_chanyu
+			ideology = nomadism
+     		trait = ceremonial_chanyu
+		}
+	}
+}
 
+## Raiding the Chinese North
+country_event = {
+	id = xai_event.8
+	title = xai_event.8.t
+	desc = xai_event.8.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #
+		name = xai_event.8.a
+		ai_chance = { factor = 1 }
+		random_list = {
+    		50 = {
+        		set_country_flag = XAI_raiding_succesful
+    		}
+			30 = {
+        		set_country_flag = XAI_raiding_failed
+    		}
+		}
+		country_event = {
+			id = xai_event.9
+			days = 10
+		}
+	}
+}
 
-
+## Raiding the Chinese North - Results
+country_event = {
+	id = xai_event.9
+	title = xai_event.9.t
+	desc = xai_event.9.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { #
+		name = xai_event.9.a
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = XAI_raiding_succesful }
+		add_war_support = 0.05
+		add_stability = 0.05
+		clr_country_flag = XAI_raiding_succesful
+	}
+	option = { #
+		name = xai_event.9.b
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = XAI_raiding_failed }
+		add_war_support = -0.05
+		add_stability = -0.05
+		clr_country_flag = XAI_raiding_failed
+	}
+}
 
 
 

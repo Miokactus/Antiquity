@@ -1,0 +1,7 @@
+﻿l_english:
+ horse_domestication_category: "Horse Management"
+ 
+ HORSE_GUI_TITLE: "Gestion of the Livestock"
+ HORSE_GUI_PERCENT: "Production %"
+ HORSE_GUI_FERTILE_STATES: "Number of §Gfertile§! states: [?country_fertile_states] states"
+ HORSE_GUI_PRODUCTION: "Our monthly §Yproduction§!: [?horse_monthly_prod] horses"

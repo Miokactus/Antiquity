@@ -1,0 +1,22 @@
+scripted_gui = {
+	horse_scripted_gui = {
+		context_type = decision_category
+		window_name = "horse_gui"
+
+		visible = {
+			has_tech = horse_domestication
+		}
+
+		properties = {
+			properties = {
+    			
+			}
+		}
+
+		triggers = {
+		}
+
+		effects = {
+		}
+	}
+}

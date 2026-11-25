@@ -15,8 +15,11 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			#
-			
-
+			3996 = {
+			    landmark_giza = {
+			        level = 1
+			    }
+			}
 		}
 		victory_points = {
 			7011 5

@@ -4,6 +4,10 @@ state={
 	provinces={
 		2088 4918 10743 10784 12862 
 	}
+	resources = {
+		gold_ingot = 7
+		steel = 2
+	}
 	history = {
 		owner = AKM
 		add_core_of = AKM

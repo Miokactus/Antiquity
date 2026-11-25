@@ -1,16 +1,17 @@
 ﻿capital = 1030
 
-oob = "SSS_14"
+oob = "WPC_14"
 
 set_research_slots = 1
 
 create_country_leader = {
-	name = "Protectorate Authority"
+	name = "Li Chong"
 	desc = "THRACE_DESC"
 	picture = GFX_leader_PON_pythodoris
 	expire = "150.5.4"
 	ideology = colonial_government
 	traits = {
+		protector_general
 	}
 }
 

@@ -387,3 +387,28 @@ country_event = {
 		}
 	}
 }
+
+# The Senate is dissolved!
+country_event = {
+	id = roman_senate.7
+	title = roman_senate.7.t
+	desc = roman_senate.7.d
+	trigger = {
+    }
+	picture = GFX_report_event_ROE_senate_generic
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = { # Imperator sum!
+		name = roman_senate.7.a
+		ai_chance = { factor = 1 }
+		trigger = {
+		}
+		custom_effect_tooltip = {
+			tooltip = ROE_senate_dissolved
+			set_temp_variable = { temp_member = 3 }
+			set_temp_variable = { temp_seats = 200 }
+			modify_parliament_seat = yes
+		}
+	}
+}

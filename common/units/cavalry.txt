@@ -44,7 +44,7 @@ sub_units = {
 	
 		need = {
 			swords_and_spears_archetype = 250
-			horse = 250
+			horse_domestication = 250
 		}
 
 		forest = {
@@ -113,7 +113,7 @@ sub_units = {
 	
 		need = {
 			swords_and_spears_archetype = 250
-			camel = 250
+			camel_domestication = 250
 		}
 
 		forest = {

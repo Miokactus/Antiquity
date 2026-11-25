@@ -113,6 +113,10 @@ technologies = {
 
 	reinforced_chariots = {
 
+		dependencies = {
+			wrought_iron_manufacturing = 1
+		}
+
 		enable_equipments = {
 			
 		}
@@ -273,6 +277,10 @@ technologies = {
 
 	horse_drawn_transport = {
 
+		dependencies = {
+			horse_domestication = 1
+		}
+
 		enable_equipments = {
 			
 		}
@@ -304,6 +312,10 @@ technologies = {
 	}
 
 	camel_drawn_transport = {
+
+		dependencies = {
+			camel_domestication = 1
+		}
 
 		enable_equipments = {
 			
@@ -368,6 +380,10 @@ technologies = {
 	}
 
 	breastplate = {
+
+		dependencies = {
+			bloomery = 1
+		}
 
 		enable_equipments = {
 			

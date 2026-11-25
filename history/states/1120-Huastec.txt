@@ -7,6 +7,11 @@ state={
 	history = {
 		owner = HAT
 		add_core_of = HAT
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+		}
 	}
 	manpower = 95000
 	state_category = large_town

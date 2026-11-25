@@ -10,6 +10,11 @@ state={
 		victory_points = {
 			6928 2
 		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 	manpower=95000
 	buildings_max_level_factor=1.000

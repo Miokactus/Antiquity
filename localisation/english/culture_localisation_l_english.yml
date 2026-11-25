@@ -6,7 +6,7 @@
 
  erase_culture: "Promote our Culture in §Y[From.GetName]§!"
 
- culture_map_roman_tt: "§Y[From.GetName]§! is of the §RRoman culture§!."
+ culture_map_roman_tt: "§Y[From.GetName]§! is of the §RGreco-Roman culture§!."
  culture_map_parthian_tt: "§Y[From.GetName]§! is of the §GParthian culture§!."
  culture_map_chinese_tt: "§Y[From.GetName]§! is of the §8Chinese culture§!."
  culture_map_xiongnu_tt: "§Y[From.GetName]§! is of the §4Xiongnu culture§!."
@@ -20,7 +20,7 @@
  culture_map_indian_tt: "§Y[From.GetName]§! is of the §OIndian culture§!."
  culture_map_korean_tt: "§Y[From.GetName]§! is of the §LKorean culture§!."
 
- roman_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §RRoman culture§!!"
+ roman_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §RGreco-Roman culture§!!"
  parthian_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §GParthian culture§!!"
  chinese_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §8Chinese culture§!!"
  xiongnu_culture_convert: "After our cultural program, §Y[From.GetName]§! will become of the §4Xiongnu culture§!!"

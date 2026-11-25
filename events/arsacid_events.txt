@@ -835,7 +835,7 @@ country_event = {
 	picture = GFX_report_event_XIN_generic_letter
 	fire_only_once = yes
 	is_triggered_only = yes
-	option = { # Glory to Artaxas III
+	option = { # Glory to Artaxias III
 		name = arsacid_event.15.a
 		ai_chance = { 
 			factor = 1
@@ -852,13 +852,13 @@ country_event = {
 			}
 		}
 		promote_character = {
-			character = ARR_artaxas_iii
+			character = ARR_artaxias_iii
     		ideology = oligarchism_comm
 		}
 	}
 	option = { # We will fight!
 		name = arsacid_event.15.b
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 0.5 }
 		trigger = { }
 		PTH = {
 			country_event = {

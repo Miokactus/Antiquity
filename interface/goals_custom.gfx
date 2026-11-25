@@ -1,12 +1,11 @@
 spriteTypes = {	
 
-SpriteType = {
+	SpriteType = {
 		name = "GFX_focus_ROE_rise_of_a_new_emperor"
 		texturefile = "gfx/interface/goals/Rise_of_a_new_emperor.dds"
 	}
 
-
-		SpriteType = {
+	SpriteType = {
 		name = "GFX_manufacturies"
 		texturefile = "gfx/interface/goals/manufacturies.dds"
 	}
@@ -312,5 +311,271 @@ SpriteType = {
 		name = "GFX_focus_PLACEHOLDER"
 		texturefile = "gfx/interface/goals/focus_PLACEHOLDER.dds"
 	}
+
+	SpriteType = {
+	name = "GFX_focus_generic_western_china"
+	texturefile = "gfx/interface/goals/generic_western_china.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_south_china"
+	texturefile = "gfx/interface/goals/generic_south_china.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_redrawn_borders"
+	texturefile = "gfx/interface/goals/generic_redrawn_borders.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_protectionism"
+	texturefile = "gfx/interface/goals/generic_protectionism.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_north_china"
+	texturefile = "gfx/interface/goals/generic_north_china.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_mountain_economy"
+	texturefile = "gfx/interface/goals/generic_mountain_economy.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_levant_and_anatolia"
+	texturefile = "gfx/interface/goals/generic_levant_and_anatolia.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_land_reform"
+	texturefile = "gfx/interface/goals/generic_land_reform.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_farming"
+	texturefile = "gfx/interface/goals/generic_farming.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_execution"
+	texturefile = "gfx/interface/goals/generic_execution.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_eurasia"
+	texturefile = "gfx/interface/goals/generic_eurasia.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_elections"
+	texturefile = "gfx/interface/goals/generic_elections.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_desert_warfare"
+	texturefile = "gfx/interface/goals/generic_desert_warfare.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_coastal_china"
+	texturefile = "gfx/interface/goals/generic_coastal_china.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_castle"
+	texturefile = "gfx/interface/goals/generic_castle.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_caesar"
+	texturefile = "gfx/interface/goals/generic_caesar.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_british_isles"
+	texturefile = "gfx/interface/goals/generic_british_isles.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_the_kingdom_endures"
+	texturefile = "gfx/interface/goals/ARR_the_kingdom_endures.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_caucasus_kingdoms"
+	texturefile = "gfx/interface/goals/generic_caucasus_kingdoms.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_attack_colci"
+	texturefile = "gfx/interface/goals/generic_attack_colci.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_attack_parthians"
+	texturefile = "gfx/interface/goals/generic_attack_parthians.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_put_an_end_interregnum"
+	texturefile = "gfx/interface/goals/ARR_put_an_end_interregnum.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_negociate_pontus"
+	texturefile = "gfx/interface/goals/generic_negociate_pontus.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_attack_pontus"
+	texturefile = "gfx/interface/goals/generic_attack_pontus.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_envoys_to_the_great_powers"
+	texturefile = "gfx/interface/goals/ARR_envoys_to_the_great_powers.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_PTH_the_northern_expedition"
+	texturefile = "gfx/interface/goals/PTH_the_northern_expedition.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_the_king_rules_from_afar"
+	texturefile = "gfx/interface/goals/ARR_the_king_rules_from_afar.dds"
+}
+
+SpriteType = {
+	name = "GFX_focus_PTH_reclaim_the_east"
+	texturefile = "gfx/interface/goals/PTH_reclaim_the_east.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_unite_the_korean_kingdoms"
+	texturefile = "gfx/interface/goals/XAI_unite_the_korean_kingdoms.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_the_korean_threat"
+	texturefile = "gfx/interface/goals/XAI_the_korean_threat.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_attack_yilou"
+	texturefile = "gfx/interface/goals/XAI_attack_yilou.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_neutralise_buyeo"
+	texturefile = "gfx/interface/goals/XAI_neutralise_buyeo.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_the_role_of_the_chanyu"
+	texturefile = "gfx/interface/goals/XAI_the_role_of_the_chanyu.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_empower_the_right_wing"
+	texturefile = "gfx/interface/goals/XAI_empower_the_right_wing.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_stabilise_the_balance_of_power"
+	texturefile = "gfx/interface/goals/XAI_stabilise_the_balance_of_power.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_great_chanyu"
+	texturefile = "gfx/interface/goals/XAI_great_chanyu.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_XAI_centralise_the_confederation"
+	texturefile = "gfx/interface/goals/XAI_centralise_the_confederation.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_PTH_establish_contacts_with_the_nomads"
+	texturefile = "gfx/interface/goals/PTH_establish_contacts_with_the_nomads.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_PTH_reform_the_achaemenid_empire"
+	texturefile = "gfx/interface/goals/PTH_reform_the_achaemenid_empire.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_PTH_promote_zoroastrianism"
+	texturefile = "gfx/interface/goals/PTH_promote_zoroastrianism.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_PTH_a_decentralised_government"
+	texturefile = "gfx/interface/goals/PTH_a_decentralised_government.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_armenia_crumbles"
+	texturefile = "gfx/interface/goals/ARR_armenia_crumbles.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_coronation_artaxias_iii"
+	texturefile = "gfx/interface/goals/ARR_coronation_artaxias_iii.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_reform_artashat_infrastructure"
+	texturefile = "gfx/interface/goals/ARR_reform_artashat_infrastructure.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_contact_the_germans"
+	texturefile = "gfx/interface/goals/ARR_contact_the_germans.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_masses_anti_roman_opposition"
+	texturefile = "gfx/interface/goals/ARR_masses_anti_roman_opposition.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_achieve_polemons_dream"
+	texturefile = "gfx/interface/goals/ARR_achieve_polemons_dream.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_generic_attack_bop"
+	texturefile = "gfx/interface/goals/generic_attack_bop.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_negociations_over_reunification"
+	texturefile = "gfx/interface/goals/ARR_negociations_over_reunification.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_look_towards_rome"
+	texturefile = "gfx/interface/goals/ARR_look_towards_rome.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_gather_support_from_parthia"
+	texturefile = "gfx/interface/goals/ARR_gather_support_from_parthia.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_ARR_the_will_for_a_king"
+	texturefile = "gfx/interface/goals/ARR_the_will_for_a_king.png"
+}
+
+SpriteType = {
+	name = "GFX_focus_new_infrastructures"
+	texturefile = "gfx/interface/goals/new_infrastructures.dds"
+}
+
 
 }

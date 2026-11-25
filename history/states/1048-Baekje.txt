@@ -8,10 +8,12 @@ state={
 		owner = BAE
 		add_core_of = BAE
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
 		}
 	}
-	manpower = 15000
+	manpower = 156000
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

@@ -1,0 +1,1226 @@
+technologies = {
+
+	@1 = 0
+	@2 = 3.7
+	@2.5 = 7
+	@3 = 10.9
+	@3.5 = 14
+	@4 = 19
+	@4.5 = 22
+	@4.7 = 23
+	@5 = 25.9
+	@6 = 30.6
+	@7 = 34.8
+
+
+	open_fire_smelting = {
+
+		production_factory_max_efficiency_factor = 0.1
+
+		enable_equipments = {}
+
+		path = {
+			leads_to_tech = primitive_smelting
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -9000
+		folder = {
+			name = industrial_folder
+			position = { x = 0 y = @1 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	primitive_smelting = {
+
+		production_factory_max_efficiency_factor = 0.1
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = advanced_pottery_kiln
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = copper_manufacturing
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = pottery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = simple_brickworks
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -6000
+		folder = {
+			name = industrial_folder
+			position = { x = 0 y = @2 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	copper_manufacturing = {
+
+		industrial_capacity_factory = 0.05
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = arsenic_based_alloys
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -4500
+		folder = {
+			name = industrial_folder
+			position = { x = 2 y = @2.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	arsenic_based_alloys = {
+
+		enable_building = {
+			building = mine
+            level = 2
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = industrial_folder
+			position = { x = 3 y = 10 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	advanced_pottery_kiln = {
+
+		production_factory_max_efficiency_factor = 0.1
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = bloomery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tin_manufacturing
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = lead_smelting
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3000
+		folder = {
+			name = industrial_folder
+			position = { x = 0 y = @3 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	tin_manufacturing = {
+
+		industrial_capacity_factory = 0.05
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = bronze_alloys
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -2500
+		folder = {
+			name = industrial_folder
+			position = { x = 2 y = @3.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	bronze_alloys = {
+
+		enable_building = {
+			building = woodwork
+            level = 3
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = -1100
+		folder = {
+			name = industrial_folder
+			position = { x = 2 y = 18 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	lead_smelting = {
+
+		industrial_capacity_factory = 0.1
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = primitive_plumbing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -2500
+		folder = {
+			name = industrial_folder
+			position = { x = 8 y = @3.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	pottery = {
+
+		supply_node_range = 0.1
+		production_speed_buildings_factor = 0.05
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = ceramics
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -4500
+		folder = {
+			name = industrial_folder
+			position = { x = 5 y = @2.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	ceramics = {
+
+		political_power_factor = 0.05
+		stability_factor = 0.02
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = -2500
+		folder = {
+			name = industrial_folder
+			position = { x = 5 y = @3.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	simple_brickworks = {
+
+		production_cost_industrial_complex_factor = -0.1
+		production_cost_arms_factory_factor = -0.1
+
+		path = {
+			leads_to_tech = aqueducts
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -4500
+		folder = {
+			name = industrial_folder
+			position = { x = 8 y = @2.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	aqueducts = {
+
+		enable_building = {
+			building = aqueduct
+            level = 1
+		}
+
+		path = {
+			leads_to_tech = primitive_plumbing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -2500
+		folder = {
+			name = industrial_folder
+			position = { x = 10 y = @3.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	primitive_plumbing = {
+
+		monthly_population = 0.05
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = water_distribution_system
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = industrial_folder
+			position = { x = 9 y = @4.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	water_distribution_system= {
+
+		monthly_population = 0.05
+		stability_factor = 0.05
+
+		dependencies = {
+			primitive_plumbing = 1
+			sewage_drain = 1
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = water_distribution_system
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 20
+		folder = {
+			name = industrial_folder
+			position = { x = 9 y = @7 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	bloomery = {
+
+		production_factory_max_efficiency_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = blast_furnace
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = wrought_iron_manufacturing
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = glass_smelting_techniques
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -1000
+		folder = {
+			name = industrial_folder
+			position = { x = 0 y = @4 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	glass_smelting_techniques = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = glass_blowing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -750
+		folder = {
+			name = industrial_folder
+			position = { x = 5 y = @4.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	glass_blowing = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = glass_blowing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = industrial_folder
+			position = { x = 5 y = @5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wrought_iron_manufacturing = {
+
+		industrial_capacity_factory = 0.05
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = cast_iron_manufacturing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -750
+		folder = {
+			name = industrial_folder
+			position = { x = 2 y = @4.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	blast_furnace = {
+
+		production_factory_max_efficiency_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = cast_iron_manufacturing
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = industrial_folder
+			position = { x = 0 y = @5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	cast_iron_manufacturing = {
+
+		industrial_capacity_factory = 0.1
+		production_lack_of_resource_penalty_factor = -0.1
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+
+		research_cost = 1.5
+		start_year = 20
+		folder = {
+			name = industrial_folder
+			position = { x = 2 y = @7 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+
+
+
+
+	organised_paths = {
+
+		enable_building = {
+			building = rail_way
+            level = 1
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = paved_roads
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -9000
+		folder = {
+			name = industrial_folder
+			position = { x = 12 y = @1 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	paved_roads = {
+
+		production_cost_industrial_complex_factor = -0.1
+		army_speed_factor = 0.1
+
+		enable_building = {
+			building = rail_way
+            level = 2
+		}
+
+		dependencies = {
+			simple_brickworks = 1
+		}
+
+		path = {
+			leads_to_tech = layered_roads
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -4500
+		folder = {
+			name = industrial_folder
+			position = { x = 12 y = @2.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	layered_roads = {
+
+		army_org_regain = 0.05
+		army_speed_factor = 0.05
+		political_power_factor = 0.05
+
+		enable_building = {
+			building = rail_way
+            level = 4
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = sewage_drain
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = industrial_folder
+			position = { x = 12 y = @4.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	sewage_drain = {
+
+		army_org_regain = 0.05
+		monthly_population = 0.05
+
+		enable_building = {
+			building = rail_way
+            level = 5
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 15
+		folder = {
+			name = industrial_folder
+			position = { x = 12 y = @6 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+
+
+	primitive_stoneworks = {
+
+		production_speed_buildings_factor = 0.05
+		global_building_slots_factor = 0.20
+
+		enable_building = {
+			building = land_fort
+            level = 1
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = neolithic_building
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -9000
+		folder = {
+			name = industrial_folder
+			position = { x = 18 y = @1 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	neolithic_building = {
+
+		enable_building = {
+			building = infrastructure
+            level = 2
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = lime_mortar
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -6000
+		folder = {
+			name = industrial_folder
+			position = { x = 18 y = @2 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	lime_mortar = {
+
+		production_speed_buildings_factor = 0.1
+
+		enable_building = {
+			building = land_fort
+            level = 2
+		}
+
+		enable_building = {
+			building = naval_fort
+            level = 1
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = brick_architecture
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -4500
+		folder = {
+			name = industrial_folder
+			position = { x = 18 y = @2.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	brick_architecture = {
+
+		enable_building = {
+			building = infrastructure
+            level = 4
+		}
+
+		production_speed_buildings_factor = 0.05
+		global_building_slots_factor = 0.20
+		industrial_capacity_dockyard = 0.1
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = fired_bricks
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = carved_stone
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -2500
+		folder = {
+			name = industrial_folder
+			position = { x = 18 y = @3.5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	fired_bricks = {
+
+		enable_building = {
+			building = infrastructure
+            level = 6
+		}
+
+		production_speed_buildings_factor = 0.05
+		global_building_slots_factor = 0.20
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = hydraulic_mortar
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -1000
+		folder = {
+			name = industrial_folder
+			position = { x = 16 y = @4 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	hydraulic_mortar = {
+
+		enable_building = {
+			building = infrastructure
+            level = 8
+		}
+
+		enable_building = {
+			building = naval_fort
+            level = 3
+		}
+
+		production_speed_buildings_factor = 0.05
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = roman_bricks
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = reinforced_buildings
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -250
+		folder = {
+			name = industrial_folder
+			position = { x = 16 y = @4.7 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	roman_bricks = {
+		
+		production_speed_buildings_factor = 0.1
+		global_building_slots_factor = 0.20
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = industrial_folder
+			position = { x = 14 y = @5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	reinforced_buildings = {
+
+		enable_building = {
+			building = infrastructure
+            level = 10
+		}
+
+		enable_building = {
+			building = naval_fort
+            level = 5
+		}
+
+		production_speed_buildings_factor = 0.1
+		global_building_slots_factor = 0.40
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 15
+		folder = {
+			name = industrial_folder
+			position = { x = 18 y = @6 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	carved_stone = {
+
+		enable_building = {
+			building = land_fort
+            level = 3
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = advanced_stone_carving
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -1000
+		folder = {
+			name = industrial_folder
+			position = { x = 20 y = @4 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	advanced_stone_carving = {
+
+		enable_building = {
+			building = land_fort
+            level = 5
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 10
+		folder = {
+			name = industrial_folder
+			position = { x = 20 y = @5 }
+		}
+
+		categories = {
+			industry
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

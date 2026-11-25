@@ -21,6 +21,13 @@ ROE = {
 	}
 }
 
+PON = { 
+	set_autonomy = {
+    	target = CLC
+    	autonomous_state = autonomy_personal_union
+	}
+}
+
 set_country_flag = influenced_by_ROE
 
 # Starting tech

@@ -52,7 +52,7 @@ ideas = {
 
 
 		GET_civil_war_appeased = {
-			name = "Dacio-Getian Civil War"
+			name = "Dacio-Getian Appeasement"
 			allowed_civil_war = { always = yes }
 			picture = ETH_peacekeeping_forces
 			targeted_modifier = {

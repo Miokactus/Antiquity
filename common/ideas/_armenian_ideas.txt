@@ -1,0 +1,158 @@
+ideas = {
+	country = {
+		ARR_illegitimate_king = {
+			name = "An Illegitimate King"
+			desc = "Vonones became king in 12, after fleeing from the Parthian Empire due to a civil war between him and his nephew, Artabanus II. Establishing himself as King of Armenia, he is highly regarded by the nobles and even the Romans as a poorly adequate king for Armenia, effectively making him widely impopular and illegitimate in the country."
+			allowed_civil_war = { always = yes }
+			picture = ARR_idea_illegitimate_king
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				political_power_factor = -0.15
+			}
+		}
+
+		ARR_pressions_from_parthia = {
+			name = "Pressions from Parthia"
+			desc = "With Vonones being a renegate in the eyes of Artabanus II, Parthia grows ever more close to war with Armenia and Rome over his presence as king. Should he stay on the throne for too long without reform or appeasement, Armenia might be the theatre of the next great war."
+			allowed_civil_war = { always = yes }
+			picture = ARR_idea_pressions_from_parthia
+			targeted_modifier = {
+				tag = PTH
+				extra_trade_to_target_factor = -0.5
+				trade_cost_for_target_factor = 0.5
+				defense_bonus_against = 0.05
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = 0.05
+			}
+		}
+
+		ARR_interregnum = {
+			name = "Interregnum"
+			desc = ""
+			allowed_civil_war = { always = yes }
+			picture = PLACEHOLDER_idea_icon
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		ARR_support_from_parthia = {
+			name = "Support from Parthia"
+			desc = ""
+			allowed_civil_war = { always = yes }
+			picture = PLACEHOLDER_idea_icon
+			targeted_modifier = {
+				tag = PTH
+				extra_trade_to_target_factor = 0.2
+				trade_cost_for_target_factor = -0.2
+			}
+			modifier = {
+				party_popularity_stability_factor = 0.25
+				improve_relations_maintain_cost_factor = -0.25
+				trade_opinion_factor = 0.1
+			}
+		}
+
+		ARR_nobility_woken = {
+			name = "A Nobility Awoken"
+			desc = ""
+			allowed_civil_war = { always = yes }
+			picture = PLACEHOLDER_idea_icon
+			modifier = {
+				communism_drift = 0.02
+				stability_weekly = 0.01
+				drift_defence_factor = 0.25
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		ARR_emprisoned_king = {
+			name = "Ruling from Afar"
+			desc = ""
+			allowed_civil_war = { always = yes }
+			picture = ROM_king_carol_ii_handled
+			modifier = {
+				experience_gain_army_factor = -0.2
+				encryption_factor = -0.5
+				conscription_factor = -0.3
+				max_command_power_mult = -0.5 
+			}
+		}
+
+		ARR_rejuvenated_kingdom = {
+			name = "A Rejuvenated Kingdom"
+			desc = ""
+			allowed_civil_war = { always = yes }
+			picture = ARR_rejuvenated_kingdom_idea
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+		}
+
+		ARR_military_dictature = {
+			name = "Military Dictature"
+			desc = ""
+			allowed_civil_war = { has_government = fascism }
+			picture = ARG_military_government
+			modifier = {
+				fascism_drift = 0.02
+				political_power_gain = 0.2
+				war_support_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+
+		ARR_eternal_dictature = {
+			name = "An Eternal Dictature"
+			desc = ""
+			allowed_civil_war = { has_government = fascism }
+			picture = PLACEHOLDER_idea_icon
+			modifier = {
+				political_power_gain = 0.4
+				war_support_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+
+		ARR_a_new_republic = {
+			name = "Newborn Republic"
+			desc = ""
+			allowed_civil_war = { has_government = communism }
+			picture = AFG_republic_idea
+			modifier = {
+				communism_drift = 0.02
+				democratic_drift = 0.02
+				war_support_factor = -0.2
+				stability_factor = -0.2
+			}
+		}
+
+		ARR_an_aristocratic_republic = {
+			name = "An Aristocratic Republic"
+			desc = ""
+			allowed_civil_war = { has_government = communism }
+			picture = ROM_king_carol_ii_hedonist
+			modifier = {
+				stability_factor = 0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		ARR_a_popular_republic = {
+			name = "A Popular Republic"
+			desc = ""
+			allowed_civil_war = { has_government = democratic }
+			picture = ARG_social_welfare_fund_ns
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+
+	}
+}

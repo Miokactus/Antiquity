@@ -11,7 +11,19 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_wheeled_folder_tab"
-		textureFile = "gfx/interface/techtree/techtree_utilities_tab.dds"
+		textureFile = "gfx/interface/techtree/techtree_wheeled_tab.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_siege_equipment_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_siege_equipment_tab.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_industrial_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_industrial_tab.dds"
 		noOfFrames = 2
 	}
 
@@ -201,6 +213,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_wheel_medium"
+		texturefile = "gfx/interface/technologies/archetype_wheel.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_archetype_primitive_cart_medium"
 		texturefile = "gfx/interface/technologies/archetype_primitive_cart.dds"
 	}
@@ -216,8 +233,358 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_4_wheel_carts_medium"
+		texturefile = "gfx/interface/technologies/4_wheeled_carts.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_2_wheeled_carts_medium"
 		texturefile = "gfx/interface/technologies/2_wheeled_carts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_2_wheel_carts_medium"
+		texturefile = "gfx/interface/technologies/2_wheeled_carts.dds"
+	}
+
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_primitive_stirrup_medium"
+		texturefile = "gfx/interface/technologies/primitive_stirrup.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_cavalry_medium"
+		texturefile = "gfx/interface/technologies/heavy_cavalry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armored_horses_medium"
+		texturefile = "gfx/interface/technologies/armored_horses.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_bow_medium"
+		texturefile = "gfx/interface/technologies/mobile_bow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_bow_0_medium"
+		texturefile = "gfx/interface/technologies/mobile_bow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_horse_archery_medium"
+		texturefile = "gfx/interface/technologies/horse_archery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_camel_archery_medium"
+		texturefile = "gfx/interface/technologies/camel_archery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goods_transportation_medium"
+		texturefile = "gfx/interface/technologies/goods_transportation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ceremonial_caravan_medium"
+		texturefile = "gfx/interface/technologies/ceremonial_caravan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_camel_trade_medium"
+		texturefile = "gfx/interface/technologies/camel_trade.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_organised_camel_trains_medium"
+		texturefile = "gfx/interface/technologies/organised_camel_trains.dds"
+	}
+
+
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_open_fire_smelting_medium"
+		texturefile = "gfx/interface/technologies/open_fire_smelting.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_primitive_smelting_medium"
+		texturefile = "gfx/interface/technologies/primitive_smelting.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_copper_manufacturing_medium"
+		texturefile = "gfx/interface/technologies/copper_manufacturing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_arsenic_based_alloys_medium"
+		texturefile = "gfx/interface/technologies/arsenic_based_alloys.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_pottery_medium"
+		texturefile = "gfx/interface/technologies/pottery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ceramics_medium"
+		texturefile = "gfx/interface/technologies/ceramics.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_simple_brickworks_medium"
+		texturefile = "gfx/interface/technologies/simple_brickworks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_pottery_kiln_medium"
+		texturefile = "gfx/interface/technologies/advanced_pottery_kiln.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tin_manufacturing_medium"
+		texturefile = "gfx/interface/technologies/tin_manufacturing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_lead_smelting_medium"
+		texturefile = "gfx/interface/technologies/lead_smelting.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bronze_alloys_medium"
+		texturefile = "gfx/interface/technologies/bronze_alloys.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_aqueducts_medium"
+		texturefile = "gfx/interface/technologies/aqueducts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bloomery_medium"
+		texturefile = "gfx/interface/technologies/bloomery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_wrought_iron_manufacturing_medium"
+		texturefile = "gfx/interface/technologies/wrought_iron_manufacturing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cast_iron_manufacturing_medium"
+		texturefile = "gfx/interface/technologies/cast_iron_manufacturing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_blast_furnace_medium"
+		texturefile = "gfx/interface/technologies/blast_furnace.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_glass_smelting_techniques_medium"
+		texturefile = "gfx/interface/technologies/glass_smelting_techniques.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_glass_blowing_medium"
+		texturefile = "gfx/interface/technologies/glass_blowing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_primitive_plumbing_medium"
+		texturefile = "gfx/interface/technologies/primitive_plumbing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_water_distribution_system_medium"
+		texturefile = "gfx/interface/technologies/water_distribution_system.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_organised_paths_medium"
+		texturefile = "gfx/interface/technologies/organised_paths.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_paved_roads_medium"
+		texturefile = "gfx/interface/technologies/paved_roads.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_layered_roads_medium"
+		texturefile = "gfx/interface/technologies/layered_roads.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_sewage_drain_medium"
+		texturefile = "gfx/interface/technologies/sewage_drain.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_primitive_stoneworks_medium"
+		texturefile = "gfx/interface/technologies/primitive_stoneworks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_neolithic_building_medium"
+		texturefile = "gfx/interface/technologies/neolithic_building.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_lime_mortar_medium"
+		texturefile = "gfx/interface/technologies/lime_mortar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_brick_architecture_medium"
+		texturefile = "gfx/interface/technologies/brick_architecture.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fired_bricks_medium"
+		texturefile = "gfx/interface/technologies/fired_bricks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_hydraulic_mortar_medium"
+		texturefile = "gfx/interface/technologies/hydraulic_mortar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_roman_bricks_medium"
+		texturefile = "gfx/interface/technologies/roman_bricks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_reinforced_buildings_medium"
+		texturefile = "gfx/interface/technologies/reinforced_buildings.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_carved_stone_medium"
+		texturefile = "gfx/interface/technologies/carved_stone.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_stone_carving_medium"
+		texturefile = "gfx/interface/technologies/advanced_stone_carving.dds"
+	}
+
+
+
+
+
+
+
+
+
+
+	SpriteType = {
+		name = "GFX_siege_equipment_medium"
+		texturefile = "gfx/interface/technologies/siege_equipment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_siege_engineers_medium"
+		texturefile = "gfx/interface/technologies/siege_engineers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_early_siege_machinery_medium"
+		texturefile = "gfx/interface/technologies/early_siege_machinery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_primitive_siege_towers_medium"
+		texturefile = "gfx/interface/technologies/primitive_siege_towers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_large_siege_towers_medium"
+		texturefile = "gfx/interface/technologies/large_siege_towers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_wooden_battering_rams_medium"
+		texturefile = "gfx/interface/technologies/wooden_battering_rams.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_wrought_battering_rams_medium"
+		texturefile = "gfx/interface/technologies/wrought_battering_rams.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_forged_battering_rams_medium"
+		texturefile = "gfx/interface/technologies/forged_battering_rams.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_crossbow_artillery_medium"
+		texturefile = "gfx/interface/technologies/crossbow_artillery.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_oxybeles_medium"
+		texturefile = "gfx/interface/technologies/oxybeles.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_bronze_crossbow_triggers_medium"
+		texturefile = "gfx/interface/technologies/bronze_crossbow_triggers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_early_ballista_medium"
+		texturefile = "gfx/interface/technologies/early_ballista.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_reinforced_ballista_medium"
+		texturefile = "gfx/interface/technologies/reinforced_ballista.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_miniaturisation_efforts_medium"
+		texturefile = "gfx/interface/technologies/miniaturisation_efforts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_polybolos_medium"
+		texturefile = "gfx/interface/technologies/polybolos.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_scorpio_medium"
+		texturefile = "gfx/interface/technologies/scorpio.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
+	}
+
+	SpriteType = {
+		name = "GFX__medium"
+		texturefile = "gfx/interface/technologies/.dds"
 	}
 
 	SpriteType = {
@@ -265,6 +632,18 @@ spriteTypes = {
 	SpriteType = { 
 		name = "GFX_unit_spear_lancers_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spear_lancers_icon.dds" 
+		noOfFrames = 2
+	}
+
+	SpriteType = { 
+		name = "GFX_unit_siege_support_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_siege_support_icon.dds" 
+		noOfFrames = 2
+	}
+
+	SpriteType = { 
+		name = "GFX_unit_siege_support_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_siege_support_icon.dds" 
 		noOfFrames = 2
 	}
 

@@ -1,16 +1,12 @@
 state={
 	id=1200
-	name="STATE_1200"
-	provinces={
-		780 3589 6784 
-	}
+	name = "STATE_1200"
+	provinces = { 780 3589 6784 }
 	history = {
 		owner = ROE
 		add_core_of = ROE
 		add_core_of = VVI
-		victory_points = {
-			3589 8
-		}
+		victory_points = { 3589 1 }
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -18,7 +14,7 @@ state={
 		}
 	}
 	state_category = large_town
-	manpower=65960
+	manpower = 65960
 	buildings_max_level_factor=1
 	local_supplies=0
 }

@@ -89,7 +89,16 @@ bookmarks = {
 
 		# minors from DLC ####
 
-
+		ARR = {
+			history = ARR_AUGUSTUSDEATH_DESC
+			ideology = communism
+			ideas = {
+				ARR_illegitimate_king
+				ARR_pressions_from_parthia
+			}
+			focuses = {
+			}
+		}
 
 
 		effect = {

@@ -1,6 +1,6 @@
 ﻿l_english:
- ### UTILITIES (infantry, horse & armor)
- utilities_folder: "Utilities"
+ ### UTILITIES (infantry, horse_domestication & armor)
+ utilities_folder: "Weapons & Domestication"
  UTILITIES_SWORDS_SPEARS_TITLE: "SWORDS & SPEARS"
  UTILITIES_ARMOR_TITLE: "ARMOR"
  UTILITIES_ANIMALS_TITLE: "ANIMAL DOMESTICATION"
@@ -17,9 +17,11 @@
  melee_spears: "Melee Spears"
 
  thick_clothing: "Thick Clothing"
+ thick_clothing_1: "Thick Clothing"
  wooden_shields: "Wooden Shields"
  leather_shields: "Leather Shields"
  ceremonial_headwear: "Ceremonial Headwear"
+ ceremonial_headwear1: "Ceremonial Headwear"
  leather_helmet: "Leather Helmet"
  chain_armor: "Chain Armor"
  forged_shields: "Forged Shields"
@@ -31,6 +33,7 @@
  camel_domestication: "Camel Domestication"
  horse_cavalry: "Horse Cavalry"
  cloth_saddle: "Cloth Saddle"
+ cloth_saddle1: "Cloth Saddle"
  camel_cavalry: "Camel Cavalry"
  primitive_stirrup: "Primitive Stirrup"
  leather_saddle: "Leather Saddle"
@@ -41,24 +44,26 @@
  camel_trade: "Camel Trade"
  organised_camel_trains: "Organised Camel Trains"
  mobile_bow: "Mobile Bow"
+ mobile_bow_0: "Mobile Bow"
  horse_archery: "Horse Archery"
  camel_archery: "Camel Archery"
 
 
- camel: "Camel"
- horse: "Horse"
+ camel_domestication_1: "Camel"
+ horse_domestication_1: "Horse"
 
  shield_archetype: "Shield"
 
 
  ### SUPPORT (carts, wheel)
  wheeled_folder: "Wheeled Technology"
+ wheeled_folder_desc: "For modern societies, carts & other wheeled equipment are essential for transport of men and resources, allowing trade to be more fluid."
  WHEELED_CARTS_TITLE: "CARTS & WAGONS"
  primitive_cart_archetype: "Carts"
 
  wheel: "Wheel"
  primitive_cart: "Primitive Carts"
- wodden_chariots: "Wooden Chariots"
+ wooden_chariots: "Wooden Chariots"
  reinforced_chariots: "Reinforced Chariots"
  wagons: "Wagons"
  primitive_logistics: "Primitive Logistics"
@@ -70,11 +75,83 @@
  throat_and_girth_harness: "Throat-and-girth Harness"
  breastplate: "Breastplate"
 
- 4_wheel_carts: "4-Wheeled Carts"
- 2_wheel_carts: "2-Wheeled Carts"
+ 4_wheeled_carts: "4 Wheeled Carts"
+ 2_wheeled_carts: "2 Wheeled Carts"
+ 4_wheel_carts: "4 Wheeled Carts"
+ 2_wheel_carts: "2 Wheeled Carts"
 
 
+ ### SIEGE EQUIPMENT (ballista, etc..)
+ siege_equipment_folder: "Siege Equipment"
+ siege_equipment_folder_desc: "Used to blitz through sieges, siege equipment is one of the main equipment necessary for large combats."
+ SIEGE_EQUIPMENT_TITLE: "SIEGE EQUIPMENT"
 
+ siege_equipment_1: "Siege Equipment"
+ siege_equipment: "Siege Equipment"
+ siege_engineers: "Siege Engineers"
+ early_siege_machinery: "Early Siege Machinery"
+ early_ballista: "Early Ballista"
+ reinforced_ballista: "Reinforced Ballista"
+ miniaturisation_efforts: "Miniaturisation Efforts"
+ polybolos: "Polybolos"
+ scorpio: "Scorpio"
+
+ crossbow_artillery: "Crossbow Artillery"
+ oxybeles: "Oxybeles"
+ bronze_crossbow_triggers: "Bronze Crossbow Triggers"
+
+ primitive_siege_towers: "Primitive Siege Towers"
+ large_siege_towers: "Large Siege Towers"
+ wall_mounted_crossbows: "Wall-Mounted Crossbows"
+ wooden_battering_rams: "Wooden Battering Rams"
+ wrought_battering_rams: "Wrought Battering Rams"
+ forged_battering_rams: "Forged Battering Rams"
+
+
+ ### INDUSTRIAL (kilns, metallurgy..)
+ industrial_folder: "Manufacturing & Construction"
+ industrial_folder_desc: "Through the discovery of new smelting techniques or new construction methods, manufacturing processes are something a society can't live without."
+ INDUSTRIAL_TITLE: "MANUFACTURING"
+ ROADS_INDUSTRIAL_TITLE: "ROADS TECHNOLOGY"
+ CONSTRUCTION_INDUSTRIAL_TITLE: "CONSTRUCTION & ARCHITECTURE"
+
+ open_fire_smelting: "Open Fire Smelting"
+ primitive_smelting: "Primitive Smelting"
+ copper_manufacturing: "Copper Manufacturing"
+ arsenic_based_alloys: "Arsenic-based Alloys"
+ pottery: "Pottery"
+ ceramics: "Ceramics"
+ simple_brickworks: "Simple Brickworks"
+ advanced_pottery_kiln: "Advanced Pottery Kiln"
+ tin_manufacturing: "Tin Manufacturing"
+ lead_smelting: "Lead Smelting"
+ aqueducts: "Aqueducts"
+ bronze_alloys: "Bronze Alloys"
+
+ bloomery: "Bloomery"
+ wrought_iron_manufacturing: "Wrought Iron Manufacturing"
+ glass_smelting_techniques: "Glass Smelting Techniques"
+ glass_blowing: "Glass Blowing"
+ blast_furnace: "Blast Furnace"
+ cast_iron_manufacturing: "Cast Iron Manufacturing"
+
+ primitive_plumbing: "Primitive Plumbing"
+ water_distribution_system: "Water Distribution System"
+ organised_paths: "Organised Paths"
+ paved_roads: "Paved Roads"
+ layered_roads: "Layered Roads"
+ sewage_drain: "Sewage Drain"
+
+ primitive_stoneworks: "Primitive Stoneworks"
+ neolithic_building: "Neolithic Building"
+ lime_mortar: "Lime Mortar"
+ brick_architecture: "Brick Architecture"
+ fired_bricks: "Fired Bricks"
+ carved_stone: "Carved Stone Techniques"
+ advanced_stone_carving: "Advanced Stone Carving"
+ hydraulic_mortar: "Hydraulic Mortar"
+ roman_bricks: "Roman Bricks"
+ reinforced_buildings: "Reinforced Buildings"
 
  ### UNITS
 
@@ -82,3 +159,6 @@
  spear_lancers_desc: "A type of infantry unit that uses long spears instead of swords. Usually used as support or main attack."
  shielded_infantry: "Shielded Infantry"
  shielded_infantry_desc: "Infantry units equipped with shields for enhanced protection."
+ siege_support: "Siege Support"
+ siege_support_desc: "Engineers equipped with large siege machinery, boosting the damages made to large armies at the cost of slow movement."
+ irregular_infantry: "Levees"

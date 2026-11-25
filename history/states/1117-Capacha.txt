@@ -7,9 +7,14 @@ state={
 	history = {
 		owner = CHP
 		add_core_of = CHP
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
 	}
 	manpower = 95000
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

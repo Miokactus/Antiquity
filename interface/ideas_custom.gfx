@@ -20,4 +20,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/empty_generic.dds"	
 	}
 
+	SpriteType = {
+		name = "ARR_rejuvenated_kingdom_idea"
+		texturefile = "gfx/interface/ideas/ARR_rejuvenated_kingdom_idea.dds"	
+	}
+
 }

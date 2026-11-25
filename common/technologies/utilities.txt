@@ -38,6 +38,10 @@ technologies = {
 
 	copper_spears = {
 
+		dependencies = {
+			copper_manufacturing = 1
+		}
+
 		enable_equipments = {
 			copper_spears
 		}
@@ -69,6 +73,10 @@ technologies = {
 	}
 
 	iron_spears = {
+
+		dependencies = {
+			bloomery = 1
+		}
 
 		enable_equipments = {
 			iron_spears
@@ -163,6 +171,10 @@ technologies = {
 
 	copper_swords = {
 
+		dependencies = {
+			copper_manufacturing = 1
+		}
+
 		enable_equipments = {
 			copper_swords
 		}
@@ -190,6 +202,10 @@ technologies = {
 
 	wrought_iron_swords = {
 
+		dependencies = {
+			wrought_iron_manufacturing = 1
+		}
+
 		enable_equipments = {
 			wrought_iron_swords
 		}
@@ -216,6 +232,10 @@ technologies = {
 	}
 
 	cast_iron_swords = {
+
+		dependencies = {
+			cast_iron_manufacturing = 1
+		}
 
 		enable_equipments = {
 			cast_iron_swords
@@ -255,7 +275,7 @@ technologies = {
 	thick_clothing = {
 
 		enable_equipments = {
-			thick_clothing
+			thick_clothing_1
 		}
 
 		enable_subunits = {
@@ -289,10 +309,14 @@ technologies = {
 
 	chain_armor = {
 
+		dependencies = {
+			bloomery = 1
+		}
+
 		enable_equipments = {
 		}
 
-		category_ = {
+		category_thick_clothing = {
 			defense = 0.05
 			breakthrough = -0.02
 		}
@@ -414,6 +438,10 @@ technologies = {
 
 	forged_shields = {
 
+		dependencies = {
+			wrought_iron_manufacturing = 1
+		}
+
 		enable_equipments = {
 			forged_shields
 		}
@@ -441,8 +469,11 @@ technologies = {
 
 	ceremonial_headwear = {
 
+		acclimatization_cold_climate_gain_factor = 0.05
+		acclimatization_hot_climate_gain_factor = 0.05
+
 		enable_equipments = {
-			ceremonial_headwear
+			
 		}
 
 		enable_subunits = {
@@ -471,8 +502,11 @@ technologies = {
 
 	leather_helmet = {
 
+		acclimatization_cold_climate_gain_factor = 0.1
+		org_loss_when_moving = -0.1
+
 		enable_equipments = {
-			leather_helmet
+			
 		}
 
 		enable_subunits = {
@@ -501,8 +535,12 @@ technologies = {
 
 	neck_guards = {
 
+		army_defence_factor = 0.05
+		heat_attrition_factor = 0.05
+		winter_attrition_factor = -0.05
+
 		enable_equipments = {
-			neck_guards
+			
 		}
 
 		enable_subunits = {
@@ -530,6 +568,12 @@ technologies = {
 	}
 
 	reinforced_helmets = {
+
+		dependencies = {
+			branded_armor = 1
+    		neck_guards = 1
+			wrought_iron_manufacturing = 1
+		}
 
 		enable_equipments = {
 			reinforced_helmets
@@ -568,8 +612,21 @@ technologies = {
 
 	horse_domestication = {
 
+		allow = {
+			ROOT = {
+				any_owned_state = {
+					OR = {
+						is_on_continent = europe
+						is_on_continent = asia
+						is_on_continent = africa
+						is_on_continent = middle_east
+					}
+				}
+			}
+		}
+
 		enable_equipments = {
-			horse
+			horse_domestication_1
 		}
 
 		enable_subunits = {
@@ -646,7 +703,7 @@ technologies = {
 		}
 
 		enable_equipments = {
-			camel
+			camel_domestication_1
 		}
 
 		enable_subunits = {
@@ -706,7 +763,7 @@ technologies = {
 	cloth_saddle = {
 
 		enable_equipments = {
-			cloth_saddle
+			cloth_saddle1
 		}
 
 		enable_subunits = {
@@ -755,6 +812,9 @@ technologies = {
 
 	goods_transportation = {
 
+		supply_node_range = 0.1
+		heat_attrition_factor = -0.1
+
 		enable_equipments = {
 		}
 
@@ -788,7 +848,8 @@ technologies = {
 		}
 
 		camelry = {
-			modifier_army_sub_unit_cavalry_speed_factor = 0.05
+			defense = 0.02
+			movement = 0.2
 		}
 
 		enable_subunits = {
@@ -817,10 +878,18 @@ technologies = {
 
 	camel_trade = {
 
+		supply_node_range = 0.15
+		heat_attrition_factor = -0.1
+
 		enable_equipments = {
 		}
 
 		enable_subunits = {
+		}
+
+		dependencies = {
+			goods_transportation = 1
+    		ceremonial_caravan = 1
 		}
 
 		path = {
@@ -869,6 +938,10 @@ technologies = {
 	}
 
 	primitive_stirrup = {
+
+		dependencies = {
+			bloomery = 1
+		}
 
 		enable_equipments = {
 		}
@@ -943,6 +1016,11 @@ technologies = {
 		enable_subunits = {
 		}
 
+		dependencies = {
+			primitive_stirrup = 1
+    		leather_saddle = 1
+		}
+
 		path = {
 			leads_to_tech = armored_horses
 			research_cost_coeff = 1
@@ -964,6 +1042,10 @@ technologies = {
 	}
 
 	armored_horses = {
+
+		dependencies = {
+			wrought_iron_manufacturing = 1
+		}
 
 		enable_equipments = {
 		}
@@ -990,7 +1072,7 @@ technologies = {
 	mobile_bow = {
 
 		enable_equipments = {
-			mobile_bow
+			mobile_bow_0
 		}
 
 		enable_subunits = {

@@ -124,6 +124,7 @@ guiTypes = {
 				size = { width = 422 height = 100%% }
 				slotsize = { width = 79 height = 156 }
 				max_slots = { x = 7 y = 1 }
+				max_slots_horizontal = 6
 				format = "UPPER_LEFT"
 			}
 		}
@@ -260,6 +261,7 @@ guiTypes = {
 				size = { width = 400 height = 100%% }
 				slotsize = { width = 79 height = 46 }
 				max_slots_vertical = 1
+				max_slots_horizontal = 6
 				format = "UPPER_LEFT"
 			}
 		}	

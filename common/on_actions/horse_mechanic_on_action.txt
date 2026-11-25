@@ -1,0 +1,59 @@
+on_never = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					has_tech = horse_domestication
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_major = yes
+						}
+					}
+					ROOT = {
+						set_variable = { country_fertile_states = ROOT.owned_controlled_states }
+						multiply_variable = { country_fertile_states = 5 }
+						round_variable = country_fertile_states
+					}
+					else = {
+						ROOT = {
+							set_variable = { country_fertile_states = ROOT.owned_controlled_states }
+							multiply_variable = { country_fertile_states = 10 }
+							round_variable = country_fertile_states
+						}
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					has_tech = horse_domestication
+				}
+				if = {
+					limit = {
+						ROOT = {
+							is_major = yes
+						}
+					}
+					ROOT = {
+						set_variable = { country_fertile_states = ROOT.owned_controlled_states }
+						multiply_variable = { country_fertile_states = 5 }
+						round_variable = country_fertile_states
+					}
+					else = {
+						ROOT = {
+							set_variable = { country_fertile_states = ROOT.owned_controlled_states }
+							multiply_variable = { country_fertile_states = 10 }
+							round_variable = country_fertile_states
+						}
+					}
+				}
+			}
+		}
+	}
+}
+	

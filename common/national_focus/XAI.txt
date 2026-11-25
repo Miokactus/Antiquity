@@ -22,7 +22,7 @@ focus_tree = {
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
-		mutually_exclusive = { focus = PTH_enact_political_reforms }
+		mutually_exclusive = { focus = XAI_enact_political_reforms }
 		completion_reward = {
 			add_ideas = XAI_keep_the_old
 		}
@@ -42,7 +42,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = XAI_the_system_of_old }
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			}
+			activate_advisor = XAI_worthy_king_of_the_left
+			activate_advisor = XAI_worthy_king_of_the_right
 		}
 
 		ai_will_do = {
@@ -52,7 +57,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_stabilise_the_balance_of_power
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_stabilise_the_balance_of_power
 		x = 13
 		y = 2
 		cost = 10
@@ -77,7 +82,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_empower_the_right_wing
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_empower_the_right_wing
 		x = 15
 		y = 2
 		cost = 10
@@ -118,7 +123,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_find_the_right_equilibrium
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 14
 		y = 3
 		cost = 10
@@ -126,7 +131,23 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = XAI_stabilise_the_balance_of_power focus = XAI_empower_the_right_wing }
 		completion_reward = {
-			
+			if = {
+				limit = {
+					has_completed_focus = XAI_stabilise_the_balance_of_power
+				}
+				add_political_power = 20
+				add_ideas = XAI_balanced_council
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = XAI_empower_the_right_wing
+				}
+				add_political_power = -20
+				add_ideas = XAI_rightist_council
+			}
+			else = {
+				custom_effect_tooltip = XAI_find_the_right_equilibrium_tt
+			}
 		}
 
 		ai_will_do = {
@@ -136,7 +157,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_the_role_of_the_chanyu
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_the_role_of_the_chanyu
 		x = 14
 		y = 4
 		cost = 10
@@ -144,7 +165,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = XAI_find_the_right_equilibrium }
 		completion_reward = {
-			
+			country_event = {
+				id = xai_event.7
+				days = 1
+			}
 		}
 
 		ai_will_do = {
@@ -296,10 +320,11 @@ focus_tree = {
 			if = {
 				limit = {
 					XIN = { exists = no }
+					ANN = { exists = yes }
 				}
 				create_wargoal = {
 					type = annex_everything
-					target = XIN
+					target = ANN
 				}
 			}
 		}
@@ -311,7 +336,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_reintegrate_the_southern_territories
-		icon = GFX_unknown
+		icon = GFX_focus_generic_north_china
 		x = 18
 		y = 6
 		cost = 10
@@ -320,7 +345,14 @@ focus_tree = {
 		prerequisite = { focus = XAI_strike_while_theyre_weak }
 		mutually_exclusive = { focus = XAI_further_than_before }
 		completion_reward = {
-			
+			add_state_core = 760
+			add_state_core = 756
+			add_state_core = 616
+			add_state_core = 621
+			add_state_core = 611
+			add_state_core = 610
+			add_state_core = 746
+			add_state_core = 616
 		}
 
 		ai_will_do = {
@@ -330,7 +362,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_further_than_before
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 16
 		y = 6
 		cost = 10
@@ -339,7 +371,20 @@ focus_tree = {
 		prerequisite = { focus = XAI_strike_while_theyre_weak }
 		mutually_exclusive = { focus = XAI_reintegrate_the_southern_territories }
 		completion_reward = {
-			
+			add_state_core = 760
+			add_state_core = 756
+			add_state_core = 616
+			add_state_core = 621
+			add_state_core = 611
+			add_state_core = 610
+			add_state_core = 746
+			add_state_core = 616
+			add_state_core = 609
+			add_state_core = 608
+			add_state_core = 614
+			add_state_core = 615
+			add_state_core = 622
+			add_state_core = 283
 		}
 
 		ai_will_do = {
@@ -349,7 +394,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_good_neighbour_policy
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 14
 		y = 6
 		cost = 10
@@ -357,7 +402,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = XAI_negociations_with_the_chinese }
 		completion_reward = {
-			
+			add_ideas = XAI_good_neighbour
 		}
 
 		ai_will_do = {
@@ -367,7 +412,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_the_korean_threat
-		icon = GFX_goal_generic_major_war
+		icon = GFX_focus_XAI_the_korean_threat
 		x = 20
 		y = 4
 		cost = 10
@@ -375,7 +420,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		prerequisite = { focus = XAI_prepare_for_the_worst }
 		completion_reward = {
-			
+			every_country = {
+				limit = {
+					capital_scope = {
+						is_korean = yes
+					}
+				}
+				country_event = {
+					id = xai_event.6
+					days = 2
+				}
+			}
 		}
 
 		ai_will_do = {
@@ -385,7 +440,7 @@ focus_tree = {
 
 	focus = { ## Buyeo
 		id = XAI_neutralise_buyeo
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_neutralise_buyeo
 		x = 19
 		y = 5
 		cost = 10
@@ -407,7 +462,7 @@ focus_tree = {
 
 	focus = { ## Yilou
 		id = XAI_attack_yilou
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_attack_yilou
 		x = 21
 		y = 5
 		cost = 10
@@ -419,7 +474,10 @@ focus_tree = {
     			type = annex_everything
     			target = YLI
 			}
-			
+			create_wargoal = {
+    			type = annex_everything
+    			target = DGB
+			}
 		}
 
 		ai_will_do = {
@@ -429,7 +487,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_unite_the_korean_kingdoms
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_unite_the_korean_kingdoms
 		x = 20
 		y = 6
 		cost = 10
@@ -1312,7 +1370,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_centralise_the_confederation
-		icon = GFX_focus_generic_home_defense
+		icon = GFX_focus_XAI_centralise_the_confederation
 		x = 8
 		y = 1
 		cost = 10
@@ -1340,7 +1398,11 @@ focus_tree = {
 		prerequisite = { focus = XAI_enact_political_reforms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			add_command_power = 15
 		}
 
 		ai_will_do = {
@@ -1350,14 +1412,16 @@ focus_tree = {
 
 	focus = {
 		id = XAI_formation_of_new_danghu
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 11
 		y = 2
 		cost = 10
 		prerequisite = { focus = XAI_reinforce_the_chanyu }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = XAI_renewed_formation_of_danghu
+			add_command_power = 15
+			army_experience = 10
 		}
 
 		ai_will_do = {
@@ -1374,7 +1438,16 @@ focus_tree = {
 		prerequisite = { focus = XAI_formation_of_new_danghu }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			every_owned_state = {
+				limit = {
+					NOT = {
+						is_core_of = XAI
+					}
+				}
+				set_compliance = 70
+				add_resistance = -30
+			}
+			add_war_support = 0.02
 		}
 
 		ai_will_do = {
@@ -1391,7 +1464,8 @@ focus_tree = {
 		prerequisite = { focus = XAI_formation_of_new_danghu }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_political_power = 30
+			add_stability = 0.03
 		}
 
 		ai_will_do = {
@@ -1424,6 +1498,13 @@ focus_tree = {
 					add_core_of = XAI
 				}
 			}
+			add_stability = -0.08
+			add_war_support = -0.05
+			add_power_balance_value = {
+    			id = XAI_tuqi_kings
+    			value = -0.05
+    			tooltip_side = XAI_right_king_side
+			}
 		}
 
 		ai_will_do = {
@@ -1433,14 +1514,18 @@ focus_tree = {
 
 	focus = {
 		id = XAI_great_chanyu
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_great_chanyu
 		x = 10
 		y = 5
 		cost = 10
 		prerequisite = { focus = XAI_towards_integrating_tributaries }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = XAI_the_grand_chanyu
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
 		}
 
 		ai_will_do = {
@@ -1450,7 +1535,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_empire_of_many_nations
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 12
 		y = 5
 		cost = 10
@@ -1474,7 +1559,10 @@ focus_tree = {
 		prerequisite = { focus = XAI_enact_political_reforms }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_timed_idea = {
+				idea = XAI_reorganising_the_court
+				days = 256
+			}
 		}
 
 		ai_will_do = {
@@ -1493,6 +1581,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = XAI_our_chinese_neighbours
+			add_political_power = 20
 		}
 
 		ai_will_do = {
@@ -1535,7 +1624,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		mutually_exclusive = { focus = XAI_appeasement_at_the_border }
 		completion_reward = {
-			
+			add_ideas = XAI_no_peace_with_the_chinese
+			unlock_decision_tooltip = {
+    			decision = raid_the_chinese_north
+    			show_effect_tooltip = yes
+    			show_modifiers = yes
+			}
 		}
 
 		ai_will_do = {
@@ -1553,6 +1647,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_ideas = XAI_cavalry_onwards
+			army_experience = 30
+			navy_experience = 15
 		}
 
 		ai_will_do = {
@@ -1645,7 +1741,7 @@ focus_tree = {
 		prerequisite = { focus = XAI_empire_of_many_nations }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			
+			add_ideas = XAI_a_new_hegemon
 		}
 
 		ai_will_do = {
@@ -1655,7 +1751,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_unite_the_western_tribes
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 7
 		y = 7
 		cost = 10
@@ -1695,7 +1791,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_strike_at_the_eastern_korean
-		icon = GFX_unknown
+		icon = GFX_focus_XAI_the_korean_threat
 		x = 11
 		y = 7
 		cost = 10
@@ -1750,7 +1846,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_revenge_against_the_yuezhi
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 8
 		y = 8
 		cost = 10
@@ -1776,7 +1872,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_an_empire_of_the_west
-		icon = GFX_unknown
+		icon = GFX_focus_generic_eurasia
 		x = 8
 		y = 9
 		cost = 10
@@ -1787,42 +1883,27 @@ focus_tree = {
 			custom_effect_tooltip = XAI_eurasian_cores
 			hidden_effect = {
 			EAR = {
-				every_owned_state = {
-					limit = {
-						is_core_of = EAR
-					}
+				every_core_state = {
 					add_core_of = XAI
 				}
 			}
 			FNI = {
-				every_owned_state = {
-					limit = {
-						is_core_of = FNI
-					}
+				every_core_state = {
 					add_core_of = XAI
 				}
 			}
 			TSA = {
-				every_owned_state = {
-					limit = {
-						is_core_of = TSA
-					}
+				every_core_state = {
 					add_core_of = XAI
 				}
 			}
 			STI = {
-				every_owned_state = {
-					limit = {
-						is_core_of = STI
-					}
+				every_core_state = {
 					add_core_of = XAI
 				}
 			}
 			AES = {
-				every_owned_state = {
-					limit = {
-						is_core_of = AES
-					}
+				every_core_state = {
 					add_core_of = XAI
 				}
 			}
@@ -1851,7 +1932,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_war_on_china
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 10
 		y = 8
 		cost = 10
@@ -1906,7 +1987,7 @@ focus_tree = {
 
 	focus = {
 		id = XAI_chinese_conception_of_royalty
-		icon = GFX_unknown
+		icon = GFX_goal_unknown
 		x = 10
 		y = 9
 		cost = 10

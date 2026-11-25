@@ -1600,6 +1600,7 @@ focus_tree = {
     			id = XIN_heaven_mandate
     			value = -0.05
 			}
+			add_stability = 0.02
 		}
 		ai_will_do = {
 			factor = 5

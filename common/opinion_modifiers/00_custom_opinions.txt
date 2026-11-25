@@ -57,4 +57,9 @@ opinion_modifiers = {
 	proclaimed_roman_superiority = {
 		value = -10
 	}
+
+
+	persecutions = {
+		value = -20
+	}
 }

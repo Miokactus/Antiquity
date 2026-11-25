@@ -4,13 +4,12 @@ state={
 
 	history={
 		owner = XAI
-		add_core_of = XAI
-		
+		add_core_of = WHU
 		
 		
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			arms_factory = 2
 		}
 
 	}

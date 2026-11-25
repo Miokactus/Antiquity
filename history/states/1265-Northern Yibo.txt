@@ -1,0 +1,15 @@
+state = {
+	id = 1265
+	name = "STATE_1265"
+	manpower = 15600
+	state_category = pastoral
+	provinces = { 1239 1668 4764 7332 7405 7784 10290 10680 12662 }
+	history = {
+		owner = XAI
+		add_core_of = WPC
+		victory_points = { 1668 1 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+}

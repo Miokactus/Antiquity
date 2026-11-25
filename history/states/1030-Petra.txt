@@ -4,6 +4,10 @@ state={
 	provinces={
 		1015 4017 4115 
 	}
+	resources = {
+		gold_ingot = 2
+		steel = 6
+	}
 	history = {
 		owner = NAB
 		add_core_of = NAB
@@ -18,7 +22,7 @@ state={
 		}
 	}
 	state_category = town
-	manpower= 15
+	manpower= 35200
 	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

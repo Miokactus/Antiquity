@@ -16,6 +16,13 @@
  ROE_senate_enough_senators: "We need to have §Ythe support§! of §G101 Senators§! out of the §2200 Senators§! that are in the Senate."
  comitia_voting: "The Comitias are voting"
 
+ ROE_add_10_senators: "We will gain §Ythe support§! of §G10 Senators§!"
+ ROE_add_5_senators: "We will gain §Ythe support§! of §G5 Senators§!!"
+ ROE_lose_10_senators: "We will lose §Ythe support§! of §R10 Senators§!!"
+ ROE_lose_5_senators: "We will lose §Ythe support§! of §R5 Senators§!!"
+ ROE_lose_20_senators: "We will lose §Ythe support§! of §R20 Senators§!!"
+ ROE_senate_dissolved: "The Senate has been §Rdissolved§!, and the Senators have been sent back to their provinces."
+
  ## SCRIPTED GUIS
  parliament_gui_title:0 "The Senate"
  parliament_main_icon_tt:0 "[GetParliamentSeatName] - [GetParliamentPartyName]"

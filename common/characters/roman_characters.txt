@@ -434,7 +434,7 @@ characters = {
 		name = "L. Pomponius Flaccus"
 		portraits = {
 			civilian = {
-				small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+				small = "GFX_drusus_julius_caesar_advisor_small"
 			}
 		}
 		advisor = {

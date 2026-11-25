@@ -47,15 +47,27 @@ recruit_character = ROE_Sulpicius_Galba
 
 set_autonomy = {
 	target = DRG
-	autonomous_state = autonomy_colony
+	autonomous_state = autonomy_tributary
+}
+DRG = {
+	set_country_flag = is_tributary
 }
 set_autonomy = {
 	target = DMN
-	autonomous_state = autonomy_colony
+	autonomous_state = autonomy_tributary
+}
+DMN = {
+	set_country_flag = is_tributary
 }
 set_autonomy = {
 	target = BGA
-	autonomous_state = autonomy_colony
+	autonomous_state = autonomy_tributary
+}
+BGA = {
+	set_country_flag = is_tributary
+}
+CTC = {
+	set_country_flag = is_tributary
 }
 
 # Starting tech
@@ -69,6 +81,12 @@ set_technology = {
     ceremonial_headwear = 1
     horse_domestication = 1
 	#convoy = 1
+	wheel = 1
+	primitive_cart = 1
+	arsenic_based_alloys = 1
+	tin_manufacturing = 1
+	lead_smelting = 1
+	
 }
 
 set_war_support = 0.2

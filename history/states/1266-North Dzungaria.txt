@@ -1,0 +1,15 @@
+state = {
+	id = 1266
+	name = "STATE_1266"
+	manpower = 28920
+	state_category = rural
+	provinces = { 1708 1844 4714 4823 4849 7693 7737 12590 12737 }
+	history = {
+		owner = XAI
+		add_core_of = WPC
+		victory_points = { 4823 2 }
+		buildings = {
+			infrastructure = 1
+		}
+	}
+}

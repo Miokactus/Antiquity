@@ -53,6 +53,24 @@ characters = {
 		}
 	}
 
+	huduershidaogao_chanyu_communism = {
+		name = "Huduershidaogao"
+		portraits = {
+            civilian = {
+                large = "GFX_leader_nomadic_leader_xai"
+            }
+        }
+		country_leader = {
+			desc = "huduer_desc"
+			expire = "46.5.4"
+			ideology = monarchism
+			traits = {
+				XAI_nomadic_leader
+				XAI_chanyu
+			}
+		}
+	}
+
 	xubu_chanyu = {
 		name = "Xubu"
 		portraits = {
@@ -162,6 +180,44 @@ characters = {
             }
             traits = { mass_assault_expert }
         }
+    }
+
+
+
+
+
+
+
+	XAI_worthy_king_of_the_right = {
+        name = "Worthy King of the Right"
+        portraits = {
+            civilian = {
+                small = "GFX_Gnaeus_Calpurnius_Pis_advisor_small"
+            }
+        }
+        advisor = {
+			cost = 50
+    		slot = political_advisor
+    	    idea_token = worthy_king_of_the_right
+    	    available = {}
+   	        traits = { worthy_king_of_the_right }
+    	}
+    }
+
+	XAI_worthy_king_of_the_left = {
+        name = "Worthy King of the Left"
+        portraits = {
+            civilian = {
+                small = "GFX_drusus_julius_caesar_advisor_small"
+            }
+        }
+        advisor = {
+			cost = 50
+    		slot = political_advisor
+    	    idea_token = worthy_king_of_the_left
+    	    available = {}
+   	        traits = { worthy_king_of_the_left }
+    	}
     }
 
 }

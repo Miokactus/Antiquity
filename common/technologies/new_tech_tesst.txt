@@ -9,6 +9,19 @@ technologies = {
             building = nuclear_facility
             level = 1
         }
+        enable_building = {
+            building = naval_supply_hub
+            level = 1
+        }
+        enable_building = {
+            building = naval_headquarters
+            level = 1
+        }
+
+        enable_building = {
+            building = rocket_site
+            level = 1
+        }
     }
 
 	secret_tech_sea = {

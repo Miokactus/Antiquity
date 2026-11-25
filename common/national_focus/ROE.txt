@@ -63,7 +63,7 @@ focus_tree = {
 		id = ROE_follow_augustus_will
 		icon = GFX_goal_roman_tiberius_ok
 		relative_position_id = ROE_augustus_death
-		x = 20
+		x = 16
 		y = 2
 		cost = 8
 		available = { 
@@ -499,6 +499,10 @@ focus_tree = {
 			add_political_power = 50
 			add_command_power = 15
 			army_experience = 30
+			custom_effect_tooltip = ROE_add_5_senators
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 5 }
+			modify_parliament_seat = yes
 		}
 	}
 
@@ -568,6 +572,10 @@ focus_tree = {
     			value = -0.05
     			tooltip_side = ROE_emperor_power_side
 			}
+			custom_effect_tooltip = ROE_add_10_senators
+			set_temp_variable = { temp_member = 1 }
+			set_temp_variable = { temp_seats = 10 }
+			modify_parliament_seat = yes
 		}
 	}
 
@@ -612,6 +620,9 @@ focus_tree = {
 		prerequisite = { focus = ROE_legitimise_the_reign }
 		mutually_exclusive = { }
 		completion_reward = {
+			army_experience = 15
+			add_command_power = 20
+			navy_experience = 15
 		}
 	}
 
@@ -631,7 +642,8 @@ focus_tree = {
 		prerequisite = { focus = ROE_legitimise_the_reign }
 		mutually_exclusive = { }
 		completion_reward = {
-			
+			add_war_support = -0.05
+			add_ideas = ROE_era_of_peace
 		}
 	}
 
@@ -759,7 +771,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = ROE_roman_benefits
-				days = 220
+				days = 460
 			}
 			every_country = {
 				limit = {
@@ -768,7 +780,7 @@ focus_tree = {
 				add_political_power = 50
 				add_timed_idea = {
 					idea = ROE_roman_burden
-					days = 220
+					days = 460
 				}
 			}
 		}
@@ -777,7 +789,7 @@ focus_tree = {
 	#
 	focus = {
 		id = ROE_woodworks_in_lutecia
-		icon = GFX_goal_unknown
+		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		relative_position_id = ROE_follow_augustus_will
 		x = 1
 		y = 11
@@ -987,7 +999,7 @@ focus_tree = {
 		id = ROE_reject_the_will
 		icon = GFX_goal_roman_tiberius_nope
 		relative_position_id = ROE_augustus_death
-		x = -20
+		x = -16
 		y = 2
 		cost = 8
 		available = { 
@@ -1023,7 +1035,7 @@ focus_tree = {
 		id = ROE_a_new_dynasty
 		icon = GFX_focus_new_dynastie
 		relative_position_id = ROE_reject_the_will
-		x = 20
+		x = 16
 		y = 1
 		cost = 8
 		available = { 
@@ -1051,7 +1063,7 @@ focus_tree = {
 		id = ROE_prevent_a_coup
 		icon = GFX_focus_BRA_end_the_state_of_emergency
 		relative_position_id = ROE_reject_the_will
-		x = 8
+		x = 6
 		y = 2
 		cost = 3
 		ai_will_do = {
@@ -1081,7 +1093,7 @@ focus_tree = {
 	#Put an End to the Emperors
 	focus = {
 		id = ROE_put_an_end_to_the_emperors
-		icon = GFX_focus_AUS_disregard_the_treaties
+		icon = GFX_focus_generic_execution
 		relative_position_id = ROE_reject_the_will
 		x = -4
 		y = 1
@@ -1690,6 +1702,7 @@ focus_tree = {
 				ideology = democratic
     			popularity = 0.1
 			}
+			add_ideas = ROE_shining_example_of_democracy
 		}
 	}
 
@@ -1765,6 +1778,8 @@ focus_tree = {
 		prerequisite = { focus = ROE_shining_example_of_democracy focus = ROE_the_senate_absolute_control }
 		mutually_exclusive = { }
 		completion_reward = {
+			add_manpower = -25600
+			add_war_support = 0.08
 		}
 	}
 
@@ -2047,7 +2062,7 @@ focus_tree = {
 	#Look East
 	focus = {
 		id = ROE_look_east
-		icon = GFX_focus_PER_middle_east_protectorate
+		icon = GFX_focus_generic_attack_parthians
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -3
 		y = 13
@@ -2120,7 +2135,7 @@ focus_tree = {
 	#The Dacian Question
 	focus = {
 		id = ROE_the_dacian_question
-		icon = GFX_goal_unknown
+		icon = GFX_focus_attack_dacian
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -5
 		y = 14
@@ -2140,7 +2155,7 @@ focus_tree = {
 	#Look North
 	focus = {
 		id = ROE_look_north
-		icon = GFX_goal_unknown
+		icon = GFX_focus_northern_smth
 		relative_position_id = ROE_put_an_end_to_the_emperors
 		x = -7
 		y = 13
@@ -2238,7 +2253,7 @@ focus_tree = {
 		id = ROE_weaken_the_senate
 		icon = GFX_focus_BRA_end_the_state_of_emergency
 		relative_position_id = ROE_a_new_dynasty
-		x = 10
+		x = 8
 		y = 6
 		cost = 9
 		available = { 
@@ -2266,7 +2281,7 @@ focus_tree = {
 		id = ROE_emprison_generals
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 10
+		x = 8
 		y = 7
 		cost = 9
 		available = { 
@@ -2288,7 +2303,7 @@ focus_tree = {
 		id = ROE_recall_marcus
 		icon = GFX_focus_AUS_lawmaking_leniency
 		relative_position_id = ROE_a_new_dynasty
-		x = 8
+		x = 6
 		y = 3
 		cost = 8
 		available = { 
@@ -2312,7 +2327,7 @@ focus_tree = {
 		id = ROE_the_triomphant_son
 		icon = GFX_focus_generic_monarchy_1
 		relative_position_id = ROE_a_new_dynasty
-		x = 7
+		x = 5
 		y = 4
 		cost = 9
 		available = { 
@@ -2338,7 +2353,7 @@ focus_tree = {
 		id = ROE_hold_games
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 9
+		x = 7
 		y = 4
 		cost = 9
 		available = { 
@@ -2363,7 +2378,7 @@ focus_tree = {
 		id = ROE_avenge_the_exile
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 8
+		x = 6
 		y = 5
 		cost = 9
 		available = { 
@@ -2384,7 +2399,7 @@ focus_tree = {
 		id = ROE_a_new_era_of_games
 		icon = GFX_goal_unknown
 		relative_position_id = ROE_a_new_dynasty
-		x = 8
+		x = 6
 		y = 6
 		cost = 9
 		available = { 
@@ -2408,7 +2423,7 @@ focus_tree = {
 		id = ROE_industrial_development
 		icon = GFX_focus_generic_industral_devlopment_bucket
 		relative_position_id = ROE_a_new_dynasty
-		x = 6
+		x = 4
 		y = 6
 		cost = 9
 		available = { 
@@ -2452,7 +2467,7 @@ focus_tree = {
 		id = ROE_encourage_fishing
 		icon = GFX_focus_PHI_rally_the_fisherfolk
 		relative_position_id = ROE_a_new_dynasty
-		x = 6
+		x = 4
 		y = 7
 		cost = 9
 		available = { 
@@ -2490,7 +2505,7 @@ focus_tree = {
 		id = ROE_chose_germanicus
 		icon = GFX_focus_CHI_change_in_leadership
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -3
 		y = 3
 		cost = 8
 		available = { 
@@ -2511,7 +2526,7 @@ focus_tree = {
 		id = ROE_towards_militarisation
 		icon = GFX_focus_towards_militarisation
 		relative_position_id = ROE_a_new_dynasty
-		x = -3
+		x = -4
 		y = 4
 		cost = 9
 		available = { 
@@ -2540,7 +2555,7 @@ focus_tree = {
 		id = ROE_prepare_for_the_germans
 		icon = GFX_focus_guard
 		relative_position_id = ROE_a_new_dynasty
-		x = -1
+		x = -2
 		y = 4
 		cost = 9
 		available = { 
@@ -2576,7 +2591,7 @@ focus_tree = {
 		id = ROE_create_new_manufactures
 		icon = GFX_focus_create_new_fact
 		relative_position_id = ROE_a_new_dynasty
-		x = 0
+		x = -1
 		y = 6
 		cost = 8
 		available = { 
@@ -2616,7 +2631,7 @@ focus_tree = {
 		id = ROE_woodworks_development
 		icon = GFX_focus_SWE_beneath_sticks_and_stone
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -3
 		y = 5
 		cost = 8
 		available = { 
@@ -2660,7 +2675,7 @@ focus_tree = {
 		id = ROE_appease_the_farmers
 		icon = GFX_focus_generic_farmland
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -3
 		y = 6
 		cost = 8
 		available = { 
@@ -2696,7 +2711,7 @@ focus_tree = {
 		id = ROE_open_new_mines
 		icon = GFX_focus_generic_mining_industry
 		relative_position_id = ROE_a_new_dynasty
-		x = -4
+		x = -5
 		y = 6
 		cost = 8
 		available = { 
@@ -2732,7 +2747,7 @@ focus_tree = {
 		id = ROE_question_about_the_jews
 		icon = GFX_focus_jewish_question
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
+		x = 0
 		y = 10
 		cost = 8
 		available = { 
@@ -2756,7 +2771,7 @@ focus_tree = {
 		id = ROE_improve_productivity
 		icon = GFX_manufacturies
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -3
 		y = 7
 		cost = 8
 		available = { 
@@ -2777,7 +2792,7 @@ focus_tree = {
 		id = ROE_war_war
 		icon = GFX_focus_war_war
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -3
 		y = 8
 		cost = 8
 		available = { 
@@ -2799,7 +2814,7 @@ focus_tree = {
 		id = ROE_our_duty_to_guard
 		icon = GFX_focus_guard
 		relative_position_id = ROE_a_new_dynasty
-		x = -5
+		x = -6
 		y = 9
 		cost = 8
 		available = { 
@@ -2879,7 +2894,7 @@ focus_tree = {
 		id = ROE_demand_local_tribes_submission
 		icon = GFX_focus_demande_local_tribes_submision
 		relative_position_id = ROE_a_new_dynasty
-		x = -3
+		x = -4
 		y = 9
 		cost = 8
 		available = { 
@@ -2895,11 +2910,12 @@ focus_tree = {
 			add_ideas = ROE_germanicus_campaign
 		}
 	}
+
 	focus = {
 		id = ROE_good_relations_with_the_senate
 		icon = GFX_goal_generic_improve_relations
 		relative_position_id = ROE_a_new_dynasty
-		x = -1
+		x = -2
 		y = 9
 		cost = 8
 		available = { 
@@ -2915,14 +2931,15 @@ focus_tree = {
 				ideology = communism
 				popularity = 0.05
 			}
+		}
 	}
-}
+	
 	#Look to the Eastern Menaces
 	focus = {
 		id = ROE_look_to_the_eastern_menace
 		icon = GFX_focus_generic_balkans_focus
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
+		x = 0
 		y = 9
 		cost = 8
 		available = { 
@@ -2946,7 +2963,7 @@ focus_tree = {
 		id = ROE_dacian_expedition
 		icon = GFX_focus_attack_dacian
 		relative_position_id = ROE_a_new_dynasty
-		x = 3
+		x = 2
 		y = 10
 		cost = 8
 		available = { 
@@ -2972,7 +2989,7 @@ focus_tree = {
 		id = ROE_strike_a_deal_with_armenia
 		icon = GFX_focus_attack_armenia
 		relative_position_id = ROE_a_new_dynasty
-		x = -1
+		x = -2
 		y = 10
 		cost = 10
 		will_lead_to_war_with = PTH
@@ -2995,7 +3012,7 @@ focus_tree = {
 		id = ROE_attack_the_caucasian_states
 		icon = GFX_SOV_consolidate_power_ccp_2d_sov_compatibility
 		relative_position_id = ROE_a_new_dynasty
-		x = 1
+		x = 0
 		y = 11
 		cost = 10
 		available = { 
@@ -3028,7 +3045,7 @@ focus_tree = {
 		id = ROE_our_northern_neighbours
 		icon = GFX_focus_northern_smth
 		relative_position_id = ROE_a_new_dynasty
-		x = -6
+		x = -7
 		y = 10
 		cost = 12
 		available = {
@@ -3062,7 +3079,7 @@ focus_tree = {
 		id = ROE_attack_puppet
 		icon = GFX_attack_sapaen
 		relative_position_id = ROE_a_new_dynasty
-		x = -4
+		x = -5
 		y = 11
 		cost = 7
 		search_filters = {
@@ -3090,7 +3107,7 @@ focus_tree = {
 		id = ROE_Germanicus_the_great_general
 		icon = GFX_focus_CHI_decisive_battles
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -3
 		y = 12
 		cost = 7
 		search_filters = {
@@ -3112,7 +3129,7 @@ focus_tree = {
 		id = ROE_Germanicus_death_in_antioche
 		icon = GFX_goal_roman_augustus_death
 		relative_position_id = ROE_a_new_dynasty
-		x = -2
+		x = -3
 		y = 13
 		cost = 7
 			available = { 

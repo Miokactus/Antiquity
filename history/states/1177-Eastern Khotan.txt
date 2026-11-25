@@ -1,11 +1,10 @@
 state={
 	id=1177
-	name="STATE_1177"
-	provinces={
-		4973 10911 
-	}
+	name = "STATE_1177"
+	provinces = { 4973 10911 }
 	history = {
-		owner = NYA
+		owner = WPC
+		controller = WPC
 		add_core_of = NYA
 		victory_points = { 4973 3 }
 		buildings = {
@@ -14,7 +13,7 @@ state={
 			arms_factory = 1
 		}
 	}
-	manpower=24000
+	manpower = 24000
 	state_category = large_town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

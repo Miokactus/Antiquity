@@ -13,6 +13,17 @@
  eurasian_empire_DEF: "the Grand Eurasian Empire"
  eurasian_empire_ADJ: "Eurasian"
 
+ raid_the_chinese_north: "Raid §Y[FROM.GetName]§!"
+
+ xiongnu_raids: "Raids on the Chinese North"
+
+ strong_commander: "Strong Chanyu"
+ ceremonial_chanyu: "Ceremonial Chanyu"
+ worthy_king_of_the_right: "Worthy King of the Right"
+ worthy_king_of_the_left: "Worthy King of the Left"
+
+ XAI_find_the_right_equilibrium_tt: "§RThe right equilibrium will be found when we make a decision.§!"
+
  ## FOCUS
  XAI_industrial_effort: "Industrial Effort"
  XAI_construction_effort: "Construction Effort"

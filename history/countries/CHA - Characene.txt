@@ -35,6 +35,8 @@ set_technology = {
     ceremonial_headwear = 1
     horse_domestication = 1
 	#convoy = 1
+wheel = 1
+primitive_cart = 1
 }
 
 set_politics = {

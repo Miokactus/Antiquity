@@ -1,11 +1,10 @@
 state={
 	id=1176
-	name="STATE_1176"
-	provinces={
-		8112 
-	}
+	name = "STATE_1176"
+	provinces = { 8112 }
 	history = {
-		owner = KHT
+		owner = WPC
+		controller = WPC
 		add_core_of = KHT
 		victory_points = { 8112 5 }
 		buildings = {
@@ -14,7 +13,7 @@ state={
 			arms_factory = 1
 		}
 	}
-	manpower=24000
+	manpower = 24000
 	state_category = town
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

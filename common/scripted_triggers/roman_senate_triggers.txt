@@ -1,3 +1,76 @@
 has_senate_support = {
 	check_variable = { parliament_seat_array^1 > 100 }
 }
+
+is_korean = {
+	OR = {
+		state = 328
+		state = 717
+		state = 409
+		state = 408
+		state = 1199
+		state = 1065
+		state = 1064
+		state = 1063
+		state = 527
+		state = 1044
+		state = 1032
+		state = 1048
+		state = 1045
+		state = 525
+		state = 1047
+		state = 1046
+	}
+}
+
+is_roman = {
+	has_variable = { culture_var = 1 }
+}
+
+is_parthian = {
+	has_variable = { culture_var = 2 }
+}
+
+is_chinese = {
+	has_variable = { culture_var = 3 }
+}
+
+is_scythian = {
+	has_variable = { culture_var = 4 }
+}
+
+is_germanic = {
+	has_variable = { culture_var = 5 }
+}
+
+is_xiongnu = {
+	has_variable = { culture_var = 6 }
+}
+
+is_armenian = {
+	has_variable = { culture_var = 7 }
+}
+
+is_mauretanian = {
+	has_variable = { culture_var = 8 }
+}
+
+is_britannic = {
+	has_variable = { culture_var = 9 }
+}
+
+is_celtic = {
+	has_variable = { culture_var = 10 }
+}
+
+is_south_arabian = {
+	has_variable = { culture_var = 11 }
+}
+
+is_indian = {
+	has_variable = { culture_var = 12 }
+}
+
+is_korean = {
+	has_variable = { culture_var = 13 }
+}

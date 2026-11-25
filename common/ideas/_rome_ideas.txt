@@ -500,5 +500,36 @@ ideas = {
 			}
 		}
 
+		ROE_era_of_peace = {
+			name = "The Era of Peace"
+			allowed_civil_war = { always = yes }
+			picture = SWI_spirit_of_helvetia_passive_peace
+			on_remove = {
+				country_event = {
+					id = rome_event.114
+					days = 1
+				}
+			}
+			cancel = {
+				has_war = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_buildings_factor = 0.15
+				stability_factor = 0.1
+			}
+		}
+
+		ROE_shining_example_of_democracy = {
+			name = "A Shining Example of Democracy"
+			allowed_civil_war = { has_government = democratic }
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				stability_factor = 0.08
+				democratic_drift = 0.001
+				drift_defence_factor = 0.5
+			}
+		}
+
 	}
 }

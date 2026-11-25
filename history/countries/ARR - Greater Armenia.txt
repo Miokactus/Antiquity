@@ -1,20 +1,17 @@
-﻿capital = 352
+﻿capital = 230
 
 oob = "ARR_14"
 
 set_research_slots = 1
 
-create_country_leader = {
-	name = "Vonones I"
-	desc = "PONTUS_DESC"
-	picture = GFX_leader_generic_building_3
-	expire = "38.5.4"
-	ideology = despotism_comm
-	traits = {
-	}
-}
 
-recruit_character = ARR_artaxas_iii
+recruit_character = ARR_vonones_i
+recruit_character = ARR_interregnum
+recruit_character = ARR_artaxias_iii
+recruit_character = ARR_state_assembly
+recruit_character = ARR_armenian_senate
+recruit_character = ARR_armenian_army
+recruit_character = ARR_sparapet
 
 # Starting tech
 set_technology = {
@@ -25,7 +22,10 @@ set_technology = {
     wooden_shields = 1
     ceremonial_headwear = 1
     horse_domestication = 1
+	horse_cavalry = 1
 	#convoy = 1
+	wheel = 1
+	primitive_cart = 1
 }
 
 
@@ -42,6 +42,10 @@ set_popularities = {
 	neutrality = 0
 }
  
-add_ideas = limited_exports
-add_ideas = limited_conscription
-add_ideas = civilian_economy
+add_ideas = {
+	limited_exports
+	limited_conscription
+	civilian_economy
+	ARR_illegitimate_king
+	ARR_pressions_from_parthia
+}

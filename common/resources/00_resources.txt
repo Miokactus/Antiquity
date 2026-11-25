@@ -38,4 +38,6 @@ resources = {
 
 	oil = {}
 	coal = {}
+	tungsten = {}
+	rubber = {}
 }

@@ -1,0 +1,574 @@
+technologies = {
+
+	siege_equipment = {
+
+		enable_equipments = {
+			siege_equipment_1
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = siege_engineers
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = early_siege_machinery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = primitive_siege_towers
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -3500
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 0 y = 12 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	siege_engineers = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			siege_support
+		}
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 3 y = 3 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	early_siege_machinery = {
+
+		enable_equipments = {
+			early_siege_machinery
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = early_ballista
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = crossbow_artillery
+			research_cost_coeff = 1
+		}
+
+		
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 3 y = 12 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	early_ballista = {
+
+		enable_equipments = {
+			early_ballista
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = reinforced_ballista
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = miniaturisation_efforts
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -200
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 6 y = 7 }
+		}
+		XOR = { crossbow_artillery }
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	reinforced_ballista = {
+
+		enable_equipments = {
+			reinforced_ballista
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = polybolos
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -50
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 9 y = 4 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	miniaturisation_efforts = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = polybolos
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -50
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 9 y = 10 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	polybolos = {
+
+		enable_equipments = {
+			polybolos
+		}
+
+		enable_subunits = {
+			
+		}
+
+		dependencies = {
+			reinforced_ballista = 1
+    		miniaturisation_efforts = 1
+		}
+
+		path = {
+			leads_to_tech = scorpio
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 15
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 12 y = 7 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	scorpio = {
+
+		dependencies = {
+			wrought_iron_manufacturing = 1
+		}
+
+		enable_equipments = {
+			scorpio
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 20
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 15 y = 7 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+	crossbow_artillery = {
+
+		enable_equipments = {
+			crossbow_artillery
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = oxybeles
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bronze_crossbow_triggers
+			research_cost_coeff = 1
+		}
+
+		XOR = { early_ballista }
+
+		research_cost = 1.5
+		start_year = -200
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 6 y = 17 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	oxybeles = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = -50
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 9 y = 14 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	bronze_crossbow_triggers = {
+
+		dependencies = {
+			bronze_alloys = 1
+		}
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = wall_mounted_crossbows
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -50
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 9 y = 20 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wall_mounted_crossbows = {
+
+		enable_equipments = {
+			
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = wall_mounted_crossbows
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 15
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 12 y = 22 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+
+
+
+	primitive_siege_towers = {
+
+		enable_equipments = {
+			primitive_siege_towers
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = large_siege_towers
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = wooden_battering_rams
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -500
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 3 y = 22 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	large_siege_towers = {
+
+		dependencies = {
+			tin_manufacturing = 1
+		}
+
+		enable_equipments = {
+			large_siege_towers
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = wall_mounted_crossbows
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -200
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 6 y = 22 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wooden_battering_rams = {
+
+		enable_equipments = {
+			wooden_battering_rams
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = wrought_battering_rams
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -200
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 6 y = 26 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	wrought_battering_rams = {
+
+		dependencies = {
+			wrought_iron_manufacturing = 1
+		}
+
+		enable_equipments = {
+			wrought_battering_rams
+		}
+
+		enable_subunits = {
+			
+		}
+
+		path = {
+			leads_to_tech = forged_battering_rams
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = -50
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 9 y = 26 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+
+	forged_battering_rams = {
+
+		dependencies = {
+			cast_iron_manufacturing = 1
+		}
+
+		enable_equipments = {
+			forged_battering_rams
+		}
+
+		enable_subunits = {
+			
+		}
+
+		research_cost = 1.5
+		start_year = 15
+		folder = {
+			name = siege_equipment_folder
+			position = { x = 12 y = 26 }
+		}
+
+		categories = {
+			siege_equipment_cat
+		}
+
+		ai_will_do = {
+			base = 2
+		}
+	}
+}

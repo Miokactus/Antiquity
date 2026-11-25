@@ -1,0 +1,97 @@
+################
+#Generic EVENTS#
+################
+
+add_namespace = armenian_event
+
+# Vonones Goes to Syria
+country_event = {
+	id = armenian_event.1
+	title = armenian_event.1.t
+	desc = armenian_event.1.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Bon Voyage!
+		name = armenian_event.1.a
+		ai_chance = { factor = 1 }
+		country_event = {
+			id = armenian_event.2
+			days = 15
+		}
+		ROE = {
+			country_event = {
+				id = armenian_event.2
+				days = 15
+			}
+		}
+		PTH = {
+			country_event = {
+				id = armenian_event.2
+				days = 15
+			}
+		}
+	}
+}
+
+# Vonones emprisoned by Rome!
+country_event = {
+	id = armenian_event.2
+	title = armenian_event.2.t
+	desc = armenian_event.2.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # Incredible!
+		name = armenian_event.2.a
+		ai_chance = { factor = 1 }
+		trigger = { tag = ARR }
+		set_country_flag = vonones_is_deposed
+		set_rule = {
+    		can_not_declare_war = yes
+		}
+		set_rule = {
+			can_join_factions = no
+		}
+		complete_national_focus = armenia_crumbles
+	}
+	option = { # A Good Gesture from our Friends
+		name = armenian_event.2.b
+		ai_chance = { factor = 1 }
+		trigger = { tag = PTH }
+		add_stability = 0.05
+	}
+	option = { # Take Good Care of Him
+		name = armenian_event.2.c
+		ai_chance = { factor = 1 }
+		trigger = { tag = ROE }
+		add_political_power = 20
+		set_country_flag = vonones_in_syria
+	}
+}
+
+# 
+country_event = {
+	id = armenian_event.3
+	title = armenian_event.3.t
+	desc = armenian_event.3.d
+	trigger = {
+    }
+	picture = GFX_report_event_XIN_generic_letter
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = { # 
+		name = armenian_event.3.a
+		ai_chance = { factor = 1 }
+		
+	}
+	option = { # 
+		name = armenian_event.3.b
+		ai_chance = { factor = 0.2 }
+		
+	}
+}

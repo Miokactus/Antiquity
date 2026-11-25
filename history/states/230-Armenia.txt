@@ -11,10 +11,13 @@ state={
 		add_core_of = IBR
 		add_core_of = ARR
 		victory_points = {
-			12320 3
+			12320 15
 		}
 		victory_points = {
 			12441 1
+		}
+		victory_points = {
+			6997 2
 		}
 		buildings = {
 			infrastructure = 2

@@ -217,4 +217,35 @@ leader_traits = {
 		neutrality_drift = 0.05
 	}
 
+	protector_general = {
+		random = no
+		stability_factor = 0.05
+		required_garrison_factor = -0.5
+		resistance_target = -0.5
+	}
+
+
+
+	strong_commander = {
+		random = no
+		war_support_factor = 0.02
+	}
+
+	ceremonial_chanyu = {
+		random = no
+		stability_factor = 0.02
+	}
+
+	worthy_king_of_the_right = {
+		random = no
+		consumer_goods_factor = -0.05
+		cic_construction_boost_factor = 0.1
+	}
+
+	worthy_king_of_the_left = {
+		random = no
+		supply_factor = 0.15
+		industrial_capacity_factory = 0.1
+	}
+
 }

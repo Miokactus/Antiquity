@@ -187,7 +187,7 @@ on_actions = {
             every_country = {
                 if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 1 }}
+                        capital_scope = { check_variable = { culture_var = 1 }} # Roman
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -198,11 +198,28 @@ on_actions = {
                         wooden_shields = 1
                         ceremonial_headwear = 1
                         horse_domestication = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        paved_roads = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        wrought_iron_manufacturing = 1
+                        brick_architecture = 1
+                        aqueducts = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 2 }}
+                        capital_scope = { check_variable = { culture_var = 2 }} # Parthian
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -214,11 +231,28 @@ on_actions = {
                         horse_domestication = 1
                         horse_cavalry = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        paved_roads = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        brick_architecture = 1
+                        advanced_pottery_kiln = 1
+                        aqueducts = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 3 }}
+                        capital_scope = { check_variable = { culture_var = 3 }} # Chinese
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -232,11 +266,34 @@ on_actions = {
                         horse_domestication = 1
                         horse_cavalry = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        paved_roads = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        wrought_iron_manufacturing = 1
+                        brick_architecture = 1
+                        ceramics = 1
+                        tin_manufacturing = 1
+                        blast_furnace = 1
+                        lead_smelting = 1
+                        aqueducts = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 4 }}
+                        capital_scope = { check_variable = { culture_var = 4 }} # Scythian
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -248,11 +305,24 @@ on_actions = {
                         horse_cavalry = 1
                         cloth_saddle = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 5 }}
+                        capital_scope = { check_variable = { culture_var = 5 }} # Germanic
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -263,11 +333,26 @@ on_actions = {
                         ceremonial_headwear = 1
                         horse_domestication = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 6 }}
+                        capital_scope = { check_variable = { culture_var = 6 }} # Xiongnu
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -281,11 +366,27 @@ on_actions = {
                         cloth_saddle = 1
                         leather_saddle = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        paved_roads = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 7 }}
+                        capital_scope = { check_variable = { culture_var = 7 }} # Armenian
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -296,11 +397,29 @@ on_actions = {
                         ceremonial_headwear = 1
                         horse_domestication = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        paved_roads = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        brick_architecture = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        aqueducts = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 8 }}
+                        capital_scope = { check_variable = { culture_var = 8 }} # Mauretanian
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -310,11 +429,29 @@ on_actions = {
                         thick_clothing = 1
                         ceremonial_headwear = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        paved_roads = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        brick_architecture = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        aqueducts = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 9 }}
+                        capital_scope = { check_variable = { culture_var = 9 }} # Britannic
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -324,11 +461,26 @@ on_actions = {
                         thick_clothing = 1
                         ceremonial_headwear = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 10 }}
+                        capital_scope = { check_variable = { culture_var = 10 }} # Celtic
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -338,11 +490,24 @@ on_actions = {
                         thick_clothing = 1
                         ceremonial_headwear = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 11 }}
+                        capital_scope = { check_variable = { culture_var = 11 }} # South Arabian
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -352,11 +517,24 @@ on_actions = {
                         thick_clothing = 1
                         ceremonial_headwear = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 12 }}
+                        capital_scope = { check_variable = { culture_var = 12 }} # Indian
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -368,11 +546,26 @@ on_actions = {
                         horse_domestication = 1
                         horse_cavalry = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        popup = no
                     }
                 }
                 else_if = {
                     limit = {
-                        capital_scope = { check_variable = { culture_var = 13 }}
+                        capital_scope = { check_variable = { culture_var = 13 }} # Korean
                     }
                     set_technology = {
                         early_swords_and_spears = 1
@@ -382,6 +575,21 @@ on_actions = {
                         thick_clothing = 1
                         ceremonial_headwear = 1
                         convoy = 1
+                        wheel = 1
+                        primitive_cart = 1
+
+                        open_fire_smelting = 1
+                        primitive_smelting = 1
+                        organised_paths = 1
+                        primitive_stoneworks = 1
+                        neolithic_building = 1
+                        lime_mortar = 1
+                        simple_brickworks = 1
+                        pottery = 1
+                        copper_manufacturing = 1
+                        advanced_pottery_kiln = 1
+                        bloomery = 1
+                        popup = no
                     }
                 }
             }

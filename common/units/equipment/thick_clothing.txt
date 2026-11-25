@@ -22,7 +22,7 @@ equipments = {
 		#Defensive abilities
 		defense = 15
 		breakthrough = 3
-		hardness = 1
+		hardness = 0.15
 		armor_value = 0
 
 		#Offensive Abilities
@@ -43,10 +43,9 @@ equipments = {
 		
 	}
 
-	thick_clothing1 = {
+	thick_clothing_1 = {
 		year = -5000
 		picture = GFX_thick_clothing_medium
-		fuel_consumption = 0.1
 	
 		archetype = thick_clothing
 		active = no
@@ -74,7 +73,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 15
 		breakthrough = 3
-		hardness = 1
+		hardness = 0.1
 		armor_value = 5
 
 		#Offensive Abilities
@@ -107,7 +106,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 20
 		breakthrough = 3
-		hardness = 2
+		hardness = 0.2
 		armor_value = 5
 
 		#Offensive Abilities
@@ -135,7 +134,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 25
 		breakthrough = 3
-		hardness = 4
+		hardness = 0.3
 		armor_value = 5
 
 		#Offensive Abilities
@@ -163,7 +162,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 30
 		breakthrough = 3
-		hardness = 7
+		hardness = 0.4
 		armor_value = 5
 
 		#Offensive Abilities
@@ -189,7 +188,7 @@ equipments = {
 	
 		picture = GFX_chain_armor_medium
 		archetype = thick_clothing
-		parent = thick_clothing1
+		parent = thick_clothing_1
 		priority = 10
 		visual_level = 1
 		fuel_consumption = 0.1
@@ -271,7 +270,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 3
-		hardness = 0
+		hardness = 0.02
 		armor_value = 0
 
 		#Offensive Abilities
@@ -295,7 +294,6 @@ equipments = {
 	ceremonial_headwear1 = {
 		year = -5000
 		picture = GFX_ceremonial_headwear_medium
-		fuel_consumption = 0.1
 	
 		archetype = ceremonial_headwear
 		active = no

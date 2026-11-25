@@ -6,9 +6,6 @@ roman_senate_decision_category = {
 	}
 	visible = {
 		has_government = communism
-		NOT = {
-			has_country_flag = senate_dissolved
-		}
 		tag = ROE
 	}
 
